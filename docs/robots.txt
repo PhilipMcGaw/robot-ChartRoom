@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://chartroom.philipmcgaw.com/sitemap.xml
