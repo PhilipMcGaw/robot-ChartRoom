@@ -1,0 +1,57 @@
+# Chartroom
+
+Chartroom is the central engineering knowledge base for the Robots project by Philip McGaw.
+
+## Purpose
+
+Chartroom records cross-project engineering knowledge: system architecture, communications, engineering decisions, development guidance, simulation and test, ROS 2/Gazebo course material, tutorials, and the overall roadmap.
+
+## Repository boundaries
+
+- Chartroom — cross-project engineering architecture, rationale, decisions, reusable guidance, and roadmap.
+- CuttleOS — robot-side software implementation, including Cockpit, Control, and DataLogger.
+- SquidLink — ROS 2/Gazebo simulation and SiL/HiL integration testing.
+- NautiPi — physical hardware, electronics, PCBs, embedded projects, and hardware reference material.
+
+## Authority
+
+Chartroom is authoritative for cross-project architecture, engineering rationale, significant decisions, reusable guidance, and the overall roadmap.
+CuttleOS is authoritative for robot-side software implementation.
+SquidLink is authoritative for simulation and simulation-side integration testing.
+NautiPi is authoritative for physical hardware design.
+
+## Key documentation
+
+- Architecture: /architecture/overview/
+- Communications: /architecture/communications/
+- NATS: /architecture/nats/
+- Robot profiles: /architecture/robot-profiles/
+- CuttleOS: /cuttleos/
+- Cockpit: /cockpit/
+- DataLogger: /datalogger/
+- HIL & SiL: /hil-sil/
+- ROS 2: /ros2/
+- ROS 2 course: /ros2/course/
+- Gazebo: /ros2/gazebo/
+- Development: /development/
+- Engineering decisions: /decisions/
+- Roadmap: /roadmap/
+
+## Live software demonstration
+
+CuttleOS Cockpit demonstration: https://cuttleos.philipmcgaw.com/
+
+## Source repositories
+
+- https://github.com/PhilipMcGaw/robot-ChartRoom
+- https://github.com/PhilipMcGaw/robot-CuttleOS
+- https://github.com/PhilipMcGaw/robot-SquidLink
+- https://github.com/PhilipMcGaw/robot-NautiPi
+
+## Project author
+
+Philip McGaw: https://philipmcgaw.com/
+
+## Documentation licence
+
+Chartroom documentation and original documentation content are licensed under CC BY-NC-SA 4.0. Repository-specific licences apply to the other Robots project repositories and to their respective code and hardware.
