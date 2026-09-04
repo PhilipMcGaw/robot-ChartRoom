@@ -25,6 +25,10 @@ The documentation source is held in the `docs/` directory and is built with MkDo
 
 Chartroom is the place to look when information applies across repository boundaries or when the reason for an engineering decision is more important than the implementation detail.
 
+## Documentation standard
+
+The **[Robots Project Documentation Standard](docs/development/documentation-standard.md)** is the single source of truth for project-wide documentation conventions. CuttleOS, SquidLink, and NautiPi should follow that standard rather than maintaining separate copies of the rules.
+
 ## Robots repositories
 
 Chartroom documents the relationships between the current Robots repositories:
