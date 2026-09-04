@@ -4,6 +4,14 @@
 
 It is the place for information that spans the individual robot repositories: system architecture, interfaces, engineering decisions, development guidance, simulation and test, tutorials, and the project roadmap.
 
+## Live demonstration
+
+The current **CuttleOS Cockpit** demonstration is available at:
+
+**[Open the CuttleOS Cockpit demo](https://cuttleos.philipmcgaw.com/)**
+
+The demonstration shows the operator-facing software interface. The implementation itself remains authoritative in the CuttleOS repository; Chartroom records the architecture, rationale, and cross-project context.
+
 ## The Robots project
 
 The Robots project is deliberately split into four related repositories. Each has a defined responsibility, while Chartroom records the engineering context that connects them.
