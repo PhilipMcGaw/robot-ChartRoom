@@ -56,6 +56,7 @@ nav:
       - Development Environment: development/environment.md
       - Testing: development/testing.md
       - Deployment: development/deployment.md
+      - Raspberry Pi Deployment: development/raspberry-pi-deployment.md
   - Tutorials:
       - Overview: tutorials/index.md
   - Engineering Decisions:
