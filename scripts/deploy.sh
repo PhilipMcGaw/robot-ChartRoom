@@ -8,6 +8,9 @@ VENV="$REPO_DIR/.venv"
 
 cd "$REPO_DIR"
 
+echo "==> Updating Chartroom repository"
+git pull --ff-only
+
 echo "==> Building Chartroom"
 
 if [ ! -x "$VENV/bin/mkdocs" ]; then
