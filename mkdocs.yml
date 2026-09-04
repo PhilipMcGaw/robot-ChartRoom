@@ -1,0 +1,47 @@
+site_name: Chartroom
+site_description: Engineering knowledge base for the Robots project
+site_url: https://chartroom.philipmcgaw.com/
+
+theme:
+  name: material
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - pymdownx.details
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.tabbed
+
+nav:
+  - Home: index.md
+  - Architecture:
+      - System Overview: architecture/overview.md
+      - Communications: architecture/communications.md
+      - NATS: architecture/nats.md
+      - Robot Profiles: architecture/robot-profiles.md
+  - Robots:
+      - CuttleOS: cuttleos/index.md
+      - Cockpit: cockpit/index.md
+      - DataLogger: datalogger/index.md
+  - Simulation & Test:
+      - HIL & SiL: hil-sil/index.md
+      - ROS 2: ros2/index.md
+      - Gazebo: ros2/gazebo.md
+  - Development:
+      - Development Environment: development/environment.md
+      - Testing: development/testing.md
+      - Deployment: development/deployment.md
+  - Tutorials:
+      - Overview: tutorials/index.md
+  - Engineering Decisions:
+      - Overview: decisions/index.md
+  - Roadmap: roadmap.md
