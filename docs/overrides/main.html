@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+
+{% block extrahead %}
+  {{ super() }}
+  <meta name="description" content="{{ page.meta.description | default(config.site_description, true) }}">
+  <meta property="og:site_name" content="Chartroom">
+  <meta property="og:title" content="{{ page.title }} — Chartroom">
+  <meta property="og:description" content="{{ page.meta.description | default(config.site_description, true) }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ page.canonical_url }}">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "{{ config.site_url }}#website",
+        "url": "{{ config.site_url }}",
+        "name": "Chartroom",
+        "description": "Engineering knowledge base for the Robots project",
+        "publisher": {"@id": "https://philipmcgaw.com/#person"}
+      },
+      {
+        "@type": "WebPage",
+        "@id": "{{ page.canonical_url }}#webpage",
+        "url": "{{ page.canonical_url }}",
+        "name": {{ page.title | tojson }},
+        "description": {{ page.meta.description | default(config.site_description, true) | tojson }},
+        "isPartOf": {"@id": "{{ config.site_url }}#website" },
+        "about": {"@type": "Thing", "name": "Robots project engineering knowledge" }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://philipmcgaw.com/#person",
+        "name": "Philip McGaw",
+        "url": "https://philipmcgaw.com/",
+        "sameAs": [
+          "https://github.com/PhilipMcGaw"
+        ]
+      }
+    ]
+  }
+  </script>
+{% endblock %}
+
+{% block footer %}
+  {{ super() }}
+  <div class="md-footer-meta__inner md-grid" style="padding-bottom: 0.8rem;">
+    <div class="md-copyright">
+      Project by <a href="https://philipmcgaw.com/">Philip McGaw</a>
+    </div>
+  </div>
+{% endblock %}
