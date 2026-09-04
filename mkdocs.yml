@@ -34,7 +34,19 @@ nav:
       - DataLogger: datalogger/index.md
   - Simulation & Test:
       - HIL & SiL: hil-sil/index.md
-      - ROS 2: ros2/index.md
+      - ROS 2:
+          - Overview: ros2/index.md
+          - Course: ros2/course/index.md
+          - Workstation Setup: ros2/course/00-workstation.md
+          - NATS Core Networking: ros2/course/01-nats-networking.md
+          - Robot Description: ros2/course/02-robot-description.md
+          - ROS 2 Fundamentals: ros2/course/03-ros2-fundamentals.md
+          - Gazebo: ros2/course/04-gazebo.md
+          - Vehicle Model: ros2/course/05-vehicle-model.md
+          - Sensors and Camera: ros2/course/06-sensors-and-camera.md
+          - NATS ↔ ROS 2 Bridge: ros2/course/07-nats-ros2-bridge.md
+          - HiL & SiL Scenarios: ros2/course/08-hil-sil-scenarios.md
+          - Testbot: ros2/course/09-testbot-physical-to-ros2.md
       - Gazebo: ros2/gazebo.md
   - Development:
       - Development Environment: development/environment.md
