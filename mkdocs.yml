@@ -57,6 +57,7 @@ nav:
       - Testing: development/testing.md
       - Deployment: development/deployment.md
       - Raspberry Pi Deployment: development/raspberry-pi-deployment.md
+      - Documentation Standard: development/documentation-standard.md
   - Tutorials:
       - Overview: tutorials/index.md
   - Engineering Decisions:
