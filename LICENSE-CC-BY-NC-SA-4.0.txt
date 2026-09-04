@@ -1,0 +1,8 @@
+Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
+
+This licence applies to the documentation and other original content in the Chartroom repository unless a file or directory states otherwise.
+
+The full licence terms are available at:
+https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
+
+In summary, you may share and adapt the material provided that you give appropriate credit, do not use it for commercial purposes, and distribute adaptations under the same licence.
