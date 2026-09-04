@@ -2,7 +2,7 @@
 
 Chartroom is the central engineering knowledge base for the Robots project.
 
-It records the architecture, engineering rationale, design decisions, development guidance, tutorials, test strategy, and project roadmap that span the individual Robots repositories.
+It records the architecture, engineering rationale, design decisions, development guidance, tutorials, deployment and commissioning procedures, hardware documentation references, test strategy, FAQs, troubleshooting knowledge, and project roadmap that span the individual Robots repositories.
 
 ## Documentation
 
@@ -18,16 +18,26 @@ The documentation source is held in the `docs/` directory and is built with MkDo
 - `docs/datalogger/` — cross-project knowledge concerning DataLogger; implementation-specific documentation remains in CuttleOS where DataLogger is currently hosted.
 - `docs/hil-sil/` — hardware-in-the-loop and software-in-the-loop architecture and engineering guidance.
 - `docs/ros2/` — ROS 2 and simulation knowledge relevant to the wider project.
-- `docs/development/` — development environment, testing, deployment, and documentation guidance.
+- `docs/development/` — development environment, testing, deployment, hardware documentation, and documentation guidance.
 - `docs/tutorials/` — reusable engineering and development tutorials.
 - `docs/decisions/` — significant engineering decisions and their rationale.
 - `docs/roadmap.md` — cross-project roadmap.
 
-Chartroom is the place to look when information applies across repository boundaries or when the reason for an engineering decision is more important than the implementation detail.
+Chartroom is the place to look when information applies across repository boundaries or when the reason for an engineering decision, deployment procedure, operational experience, or troubleshooting note is more important than the implementation detail.
 
 ## Documentation standard
 
 The **[Robots Project Documentation Standard](docs/development/documentation-standard.md)** is the single source of truth for project-wide documentation conventions. CuttleOS, SquidLink, and NautiPi should follow that standard rather than maintaining separate copies of the rules.
+
+## Hardware documentation
+
+Chartroom can hold references to manuals, datasheets, installation guides, configuration guides, and application notes for robot hardware.
+
+For COTS components, the preferred source is the manufacturer's official documentation. Where documentation is publicly available from the manufacturer, Chartroom should link to that source rather than redistribute a copy. Hardware documentation entries should identify the manufacturer, part number or model, document type, and document revision or publication date where available.
+
+Third-party documentation remains subject to its own copyright and licence terms. The Chartroom repository licence applies to original Chartroom content, not to manufacturer's documentation or other third-party material.
+
+See the [hardware documentation policy](docs/development/hardware-documentation.md) for the full guidance.
 
 ## Robots repositories
 
@@ -58,7 +68,7 @@ Chartroom documents the system as a whole. It should not become a second copy of
 - **CuttleOS** is authoritative for robot-side software implementation.
 - **SquidLink** is authoritative for simulation, ROS 2, Gazebo, and simulation-side integration testing.
 - **NautiPi** is authoritative for physical hardware design and embedded hardware-project material.
-- **Chartroom** is authoritative for cross-project architecture, engineering rationale, significant decisions, reusable guidance, and the overall roadmap.
+- **Chartroom** is authoritative for cross-project architecture, engineering rationale, significant decisions, reusable guidance, deployment and commissioning procedures, operational knowledge, hardware documentation references, FAQs, troubleshooting guidance, and the overall roadmap.
 
 Where information belongs to a single repository, document it there and link to it from Chartroom where useful.
 
