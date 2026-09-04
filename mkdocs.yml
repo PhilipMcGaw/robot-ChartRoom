@@ -2,8 +2,11 @@ site_name: Chartroom
 site_description: Engineering knowledge base for the Robots project
 site_url: https://chartroom.philipmcgaw.com/
 
+# Keep the site machine-readable as well as human-readable. The override adds
+# page metadata and Schema.org JSON-LD to the generated HTML.
 theme:
   name: material
+  custom_dir: docs/overrides
   features:
     - navigation.sections
     - navigation.expand
