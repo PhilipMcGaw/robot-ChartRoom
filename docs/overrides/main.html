@@ -2,6 +2,7 @@
 
 {% block extrahead %}
   {{ super() }}
+  {% if page %}
   <meta name="description" content="{{ page.meta.description | default(config.site_description, true) }}">
   <meta property="og:site_name" content="Chartroom">
   <meta property="og:title" content="{{ page.title }} — Chartroom">
@@ -41,6 +42,7 @@
     ]
   }
   </script>
+  {% endif %}
 {% endblock %}
 
 {% block footer %}
