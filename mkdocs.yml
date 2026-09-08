@@ -32,6 +32,7 @@ nav:
       - Communications: architecture/communications.md
       - NATS: architecture/nats.md
       - Robot Profiles: architecture/robot-profiles.md
+      - Embedded Node Profiles: architecture/embedded-nodes.md
   - Robots:
       - CuttleOS: cuttleos/index.md
       - Cockpit: cockpit/index.md
@@ -64,3 +65,5 @@ nav:
   - Engineering Decisions:
       - Overview: decisions/index.md
   - Roadmap: roadmap.md
+
+

@@ -26,6 +26,7 @@ NautiPi is authoritative for physical hardware design.
 - Communications: /architecture/communications/
 - NATS: /architecture/nats/
 - Robot profiles: /architecture/robot-profiles/
+- Embedded node profiles: /architecture/embedded-nodes/
 - CuttleOS: /cuttleos/
 - Cockpit: /cockpit/
 - DataLogger: /datalogger/
@@ -55,3 +56,5 @@ Philip McGaw: https://philipmcgaw.com/
 ## Documentation licence
 
 Chartroom documentation and original documentation content are licensed under CC BY-NC-SA 4.0. Repository-specific licences apply to the other Robots project repositories and to their respective code and hardware.
+
+
