@@ -49,7 +49,7 @@ Chartroom documents the relationships between the current Robots repositories:
 
 The repositories are deliberately separate. Their interfaces, architectural relationships, and significant cross-project decisions are documented in Chartroom.
 
-Each of the three project repositories should link back to Chartroom so that the documentation remains discoverable from the implementation and hardware repositories.
+Each of the three implementation repositories should link back to Chartroom so that the documentation remains discoverable from the implementation and hardware repositories.
 
 ## Repository structure
 
