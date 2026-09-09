@@ -1,6 +1,6 @@
 # RovMaker Edge research notes
 
-RovMaker Edge is an open-source underwater robot project from ROVMAKER, created as an educational and exploratory ROV and based on ArduSub. It is a useful historical reference for the physical ROV architecture, pressure housing, buoyancy, penetrators, propulsion, and integration of Raspberry Pi and Pixhawk-class hardware.
+RovMaker Edge is an open-source underwater robot project from ROVMAKER, created as an educational and exploratory ROV and based on ArduSub. It is a useful historical reference for physical ROV architecture, pressure housing, buoyancy, penetrators, propulsion, and integration of Raspberry Pi and Pixhawk-class hardware.
 
 This is comparative research and design inspiration, not a specification or project dependency.
 
@@ -62,6 +62,40 @@ The project shows modular subsea connectors, cable penetrators, an MS5837 depth-
 
 This is relevant to the project's distributed sensor and RS-485 work. In particular, the idea of standardising mechanical penetrator interfaces while allowing different electrical functions is worth considering for future ROV payload modules.
 
+## Additional open ROV references
+
+Several of the supplied references broaden the historical comparison beyond RovMaker itself:
+
+### OpenROV electronics
+
+The [OpenROV electronics repository](https://github.com/OpenROV/openrov-electronics) is a particularly useful hardware reference. It contains schematics, Gerbers, and data packages for several generations of controller, power, lighting, IMU/depth, topside adapter, and BeagleBone interface boards. The v2.6–v2.8 controller evolved into an all-in-one power/control board around an ATmega2560 with substantial I/O and a BeagleBone interface.
+
+The important lesson is architectural rather than component-specific: an embedded controller can own deterministic I/O, power/control interfaces, and low-level sensors while a more capable Linux computer provides higher-level networking, video, and operator functionality. The repository's history is also useful for studying how a real open hardware platform evolved through multiple board revisions.
+
+OpenROV's associated [Cockpit repository](https://github.com/OpenROV/openrov-cockpit) is relevant to the wider Cockpit research. It describes a web-centric tele-robotic control system with browser-based video, configurable gamepad/joystick control, telemetry recording, plugins, multiple motor configurations, and support for embedded Linux plus microcontrollers. This is strong historical evidence for the direction of a browser-based, vehicle-agnostic operator interface.
+
+### TechMonkeyBusiness OpenSource ROV
+
+The [TechMonkeyBusiness OpenSource ROV](https://www.techmonkeybusiness.com/articles/OpenSource_ROV.html) is valuable less for its exact hardware and more for its engineering process. The project deliberately separates the control and video systems, uses two Arduinos over a long CAT5 tether for control data, monitors battery voltage, and documents experiments in long-cable serial communications, ESC calibration, sensor integration, thruster testing, pressure testing, wire sealing, and tether management.
+
+Its pressure-vessel work is particularly useful: a uPVC pressure tube with O-ring end seals is analysed and pressure-tested, and the project includes dedicated experiments for cable-gland and wire-sealing techniques. The project also records practical bath and pool trials rather than stopping at CAD and bench testing.
+
+These are useful reminders to treat tether communications, sealing, pressure testing, propulsion testing, and subsystem integration as engineering test subjects in their own right.
+
+### Blue Robotics control-board discussion
+
+The [Blue Robotics control-board comparison discussion](https://discuss.bluerobotics.com/t/control-board-options-pros-and-cons/812) provides a useful historical comparison between OpenROV and Blue Robotics controller approaches. The discussion highlights the current limits of the OpenROV 2.8 controller's power/current capability and the consequences of trying to drive more or larger thrusters than the board was designed for.
+
+The main lesson is to treat controller selection as a system-level electrical design decision. Motor/ESC count, continuous and peak current, power-distribution capability, I/O, sensor interfaces, and desired operating envelope must be considered together rather than selecting a controller solely on processor capability or software features.
+
+### ArduPilot ROV project discussion
+
+The [ArduPilot ROV project discussion](https://discuss.ardupilot.org/t/your-own-remotely-operated-vehicle-rov-project/7951) contains a useful long-form example of a hybrid ROV evolving through several hardware configurations. The project combines OpenROV controller hardware, Blue Robotics T100/BlueESC propulsion, BlueROV2 mechanical components, Raspberry Pi, Pixhawk, Fathom-X, external power distribution, leak sensing, and pressure testing.
+
+The discussion is particularly useful for the practical integration details: controller current limits can become the limiting factor even when the mechanical platform supports additional thrusters; power distribution may need to move outside a pressure housing; cable routing and watertight power connections can become major integration tasks; and vacuum testing of watertight compartments should precede water testing.
+
+This provides a useful real-world comparison with RovMaker's separate power/electronics volumes and with the intended separation between ROV Control, onboard computing, and Cockpit.
+
 ## Relevance to the current ROV
 
 The strongest areas for further comparison are:
@@ -73,20 +107,25 @@ The strongest areas for further comparison are:
 - adjustable ballast and trim;
 - propulsion characterisation before vehicle integration;
 - thermal management of ESC electronics;
-- Raspberry Pi plus dedicated control hardware; and
+- Raspberry Pi plus dedicated control hardware;
+- controller current capability versus the actual propulsion envelope;
+- separation of video and vehicle-control paths where appropriate;
+- long-tether communications and power-distribution design; and
 - documenting mechanical dimensions and service procedures sufficiently for reproduction.
 
-The project is particularly useful alongside the RoboCenter, Blue Robotics, and OOMWOO references. Together they provide several different approaches to the same question: where should mechanical, power, low-level control, high-level computing, communications, and operator-interface responsibilities sit?
+The projects are particularly useful as a group because they provide several different approaches to the same engineering problem. OpenROV demonstrates an integrated embedded-controller/Linux architecture and an early browser-based Cockpit. TechMonkeyBusiness demonstrates low-cost, explicitly tested subsystem engineering. RovMaker demonstrates modular pressure housings, penetrators, ballast, and propulsion development. The Blue Robotics and ArduPilot discussions expose practical limits and integration problems encountered when combining these approaches.
+
+These references should inform design reviews and test plans without turning the current ROV into a copy of any one historical platform.
 
 ## Engineering caveats
 
-Although the project is described as open-source, the Hackaday project page currently shows no uploaded files and no formal instructions, and the project has not been actively updated for many years. Public discussions also indicate that users had difficulty obtaining some of the design files and control information. Treat the project as a research/reference source rather than assuming that it is a complete reproducible open-source design.
+Although several of these projects are described as open-source, their documentation, licences, hardware availability, and maintenance status differ. Treat historical component specifications and performance claims as project data requiring independent engineering verification before reuse.
 
-The published depth and component claims should likewise be treated as project claims requiring independent engineering verification before reuse.
+The RovMaker Edge Hackaday project currently shows limited uploaded project material and has not been actively developed for many years. OpenROV is also a historical platform, although its repositories remain useful for studying real hardware and software evolution. Forum discussions are valuable evidence of engineering experience but should not be treated as authoritative specifications.
 
 ## Status
 
-**Research / ROV design inspiration.** No RovMaker hardware or software dependency is planned.
+**Research / ROV design inspiration.** No RovMaker, OpenROV, TechMonkeyBusiness, Blue Robotics, or ArduPilot hardware/software dependency is planned.
 
 ## Read later
 
@@ -95,3 +134,8 @@ The published depth and component claims should likewise be treated as project c
 - [RovMaker Edge project logs](https://hackaday.io/project/27781/logs)
 - [ROVMAKER community open-source documentation discussion](https://forum.rovmaker.org/t/topic/879)
 - [RovMaker Edge CAD on GrabCAD](https://grabcad.com/library/rovmaker-edge-open-source-underwater-robot-1)
+- [OpenROV electronics](https://github.com/OpenROV/openrov-electronics)
+- [OpenROV Cockpit](https://github.com/OpenROV/openrov-cockpit)
+- [TechMonkeyBusiness OpenSource ROV](https://www.techmonkeybusiness.com/articles/OpenSource_ROV.html)
+- [Blue Robotics control-board discussion](https://discuss.bluerobotics.com/t/control-board-options-pros-and-cons/812)
+- [ArduPilot ROV project discussion](https://discuss.ardupilot.org/t/your-own-remotely-operated-vehicle-rov-project/7951)
