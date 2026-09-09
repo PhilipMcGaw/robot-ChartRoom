@@ -60,6 +60,31 @@ The module could be based on a small MCU/display combination similar in concept 
 
 **Read later:** [SwarmBot optional face research](research/swarmbot-face.md).
 
+### Maker's Pet 120 mm robot — SwarmBot and MarsBot inspiration
+
+Review the [Maker's Pet 120 mm Arduino/ROS 2 Self-Driving Robot Build Pack](research/makers-pet-120mm.md) as a reference for small terrestrial robotics, particularly SwarmBot and MarsBot.
+
+Areas worth studying include:
+
+- compact differential-drive construction;
+- ESP32 low-level control and a dedicated motor-driver board;
+- wheel encoders and closed-loop motor control;
+- optional 360° 2D LiDAR as a replaceable sensing/autonomy payload;
+- 3D-printable, modular mechanical interfaces;
+- staged progression from teleoperation through mapping to autonomous navigation;
+- ROS 2 integration and multi-robot operation; and
+- the unusually complete build, bring-up, troubleshooting, CAD, firmware, and software documentation.
+
+For **SwarmBot**, the strongest value is as an educational reference and as inspiration for optional autonomy/sensing modules. For **MarsBot**, it is a useful small-scale platform for testing differential-drive, LiDAR, mapping, navigation, and autonomous-exploration concepts before transferring them to a larger rover.
+
+The 360° LiDAR approach is not currently considered appropriate for the underwater ROV, and there is no requirement to reproduce the Maker's Pet chassis. It is also not currently a K-9 design direction: a 360° LiDAR would need a mechanically and aesthetically appropriate mounting solution before it could be considered.
+
+Maker's Pet should also be monitored as a continuing source of robotics research; its wider material includes low-cost LiDAR integration, ROS 2, and the OOMWOO open-source robot project.
+
+**Status:** Research / design inspiration. No Maker's Pet hardware or software dependency is planned.
+
+**Read later:** [Maker's Pet 120 mm research](research/makers-pet-120mm.md).
+
 ### Cross-project Cockpit architecture
 
 Continue evolving Cockpit towards a reusable operator/programming interface capable of supporting different robot types and operating modes, including ROV engineering operation and SwarmBot classroom programming.
