@@ -1,6 +1,6 @@
 # Autonomous UAV ground station research notes
 
-The Hackster.io **Autonomous Drone / UAV Project For Plane** is a useful reference for the wider Robots software architecture, particularly the separation of a vehicle/flight-control system from a richer ground-station interface. The project is an open-source work in progress by The Architect, published in 2019, and describes an autonomous RC plane with more than 20 planned flight modes, experimental Raspberry Pi AI flight functions, environmental sensors, and a self-made dashboard. citeturn0search0
+The Hackster.io **Autonomous Drone / UAV Project For Plane** is a useful reference for the wider Robots software architecture, particularly the separation of a vehicle/flight-control system from a richer ground-station interface. The project is an open-source work in progress by The Architect, published in 2019, and describes an autonomous RC plane with more than 20 planned flight modes, experimental Raspberry Pi AI flight functions, environmental sensors, and a self-made dashboard.
 
 This is comparative research and design inspiration, not a specification or project dependency.
 
@@ -18,7 +18,7 @@ The project combines several processing platforms rather than relying on one com
 - three-axis magnetometer; and
 - servo output.
 
-The exact division of responsibility between these devices is not sufficiently documented on the Hackster page, so it should not be assumed to represent a sound final architecture. It is nevertheless useful as a reference for heterogeneous embedded systems and for asking where sensing, control, communications, and higher-level computation should live. citeturn0view0
+The exact division of responsibility between these devices is not sufficiently documented on the Hackster page, so it should not be assumed to represent a sound final architecture. It is nevertheless useful as a reference for heterogeneous embedded systems and for asking where sensing, control, communications, and higher-level computation should live.
 
 ## Ground-station ideas
 
@@ -32,7 +32,7 @@ Potential lessons for Cockpit include:
 - separation between operator-facing functions and low-level vehicle control; and
 - designing the UI around the vehicle's available capabilities rather than around a fixed hardware screen.
 
-The project page says the ground station was intended to support more than 20 flight modes and experimental AI flight, although the page does not establish that all of these features were completed. Treat these as project goals rather than validated capabilities. citeturn0search0
+The project page says the ground station was intended to support more than 20 flight modes and experimental AI flight, although the page does not establish that all of these features were completed. Treat these as project goals rather than validated capabilities.
 
 ## Sensors and environmental data
 
@@ -44,7 +44,7 @@ Useful questions to compare with our architecture:
 - Which sensor data should be retained as raw samples?
 - Which values should be converted into higher-level state before transmission?
 - How should sensor health and calibration state be represented?
-- Which data belong in the vehicle controller versus the datalogger?
+- Which data belong in the vehicle controller versus the Datalogger?
 
 ## Relevance to the Robots ecosystem
 
@@ -60,7 +60,7 @@ For the **ROV**, the project reinforces the general principle that the operator 
 
 ## Design cautions
 
-The Hackster page is a work-in-progress project and its schematic is explicitly marked as incomplete. The available documentation does not establish the final control-loop architecture, safety behaviour, timing guarantees, or successful completion of the advertised autonomous modes. citeturn0view0
+The Hackster page is a work-in-progress project and its schematic is explicitly marked as incomplete. The available documentation does not establish the final control-loop architecture, safety behaviour, timing guarantees, or successful completion of the advertised autonomous modes.
 
 Therefore:
 
