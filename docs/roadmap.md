@@ -138,6 +138,26 @@ This supports the existing **ROV - HiL-and-SiL** direction and the goal of makin
 
 **Read later:** [RoboCenter research notes](research/robocenter.md), which contains the surviving primary-source links, including the [RoboCenter materials index](https://robocenter.net/materials/), [HighROV manuals](https://robocenter.net/media/documents/HighROV_Manual_RUS.pdf), [MUR Thruster 200 specification](https://robocenter.net/documents/77/%D0%A1%D0%BF%D0%B5%D1%86%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%86%D0%B8%D1%8F_MUR_Thruster_200.pdf), [MUR simulator](https://simulator.robocenter.org/), [MUR firmware](https://github.com/murproject/rov_firmware), and [RovUI](https://github.com/murproject/RovUI).
 
+### Documentation and technical communication design
+
+Use Mayer's Principles of Multimedia Learning as a reference when producing technical information across the Robots ecosystem. Although the Raspberry Pi Foundation source is aimed at computing education, its guidance on cognitive load, information structure, visual signalling, and the relationship between words and diagrams is applicable to classroom material, engineering documentation, datasheets, presentations, and public-facing technical writing.
+
+Areas worth applying include:
+
+- **coherence:** remove information that does not support the document's purpose;
+- **signalling:** deliberately direct attention to important information;
+- **redundancy:** avoid unnecessary repetition of identical information in different forms;
+- **spatial and temporal contiguity:** keep related explanations and visuals together;
+- **segmenting:** break complex subjects into manageable stages;
+- **pre-training:** introduce important terms, components, and relationships before complex material; and
+- **modality:** use diagrams and demonstrations with concise explanation rather than dense blocks of duplicated text where appropriate.
+
+Apply the principles according to the audience and document type rather than making every document look like a classroom lesson. In particular, use them when developing ROS 2/classroom material, engineering design and build documentation, datasheets and interface specifications, project READMEs, presentations, press releases, and architecture diagrams.
+
+**Status:** Research / documentation design reference. These principles are not yet a formal ChartRoom documentation standard.
+
+**Read later:** [Raspberry Pi Foundation — How to design and present clear computing lessons](https://www.raspberrypi.org/blog/how-to-design-and-present-clear-computing-lessons-mayers-principles/), [Designing Multimedia for Clarity](https://static.raspberrypi.org/files/curriculum/quickreads/QR32_Mayers_Principles_1_17_04_2026.pdf), and [Raspberry Pi Foundation Quick Reads](https://www.raspberrypi.org/teach/pedagogy/quick-reads).
+
 ### K-9 back-button screens and displays
 
 Keep a small K-9-specific research track for the rear/back-button assembly, particularly the screens/displays associated with the buttons. Capture visual references before fixing the mechanical, electrical, or UI implementation.
