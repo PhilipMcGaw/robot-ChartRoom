@@ -39,6 +39,27 @@ The architecture should preserve the separation between the educational programm
 
 **Status:** Planned concept. The educational programming interface, safe program representation, SwarmBot control interface, and classroom workflow have not yet been implemented.
 
+### SwarmBot optional face/display module
+
+Evaluate an optional small front-mounted face/display module for SwarmBot. The module should be a replaceable payload, not a requirement for robot operation.
+
+Potential uses include:
+
+- simple animated eyes and expressions;
+- expressions linked to robot state, such as idle, running, stopped, error, charging, or waiting;
+- IMU- or motion-driven eye movement;
+- optional touch interaction;
+- a small local diagnostic/status view; and
+- providing immediate visual feedback from student programs.
+
+The architectural boundary should remain explicit: **SwarmBot core** owns movement, sensors, communications, and safety; the **optional face module** owns display, animation, local interaction, and personality. The face must not become part of the control or safety path.
+
+The module could be based on a small MCU/display combination similar in concept to the [Schematik ESP32-C6 DeskBuddy](https://www.schematik.io/projects/build-an-esp-c6-touch-lcd-gadget), which demonstrates simple expressive graphics, touch interaction, and IMU-responsive eyes on a self-contained ESP32-C6 display module.
+
+**Status:** Read later / design inspiration. No display, controller, mechanical interface, or animation architecture has been selected.
+
+**Read later:** [SwarmBot optional face research](research/swarmbot-face.md).
+
 ### Cross-project Cockpit architecture
 
 Continue evolving Cockpit towards a reusable operator/programming interface capable of supporting different robot types and operating modes, including ROV engineering operation and SwarmBot classroom programming.
