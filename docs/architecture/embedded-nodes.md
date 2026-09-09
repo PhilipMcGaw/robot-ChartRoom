@@ -1,7 +1,6 @@
 # Embedded node profiles
 
-This page records the common ATtiny1614 node interface used by the ROV Light Module
-and CTD where practical. The hardware source of truth is the corresponding KiCad
+This page records the common ATtiny1614 node interface. The ROV Light Module is the current definitive playground and reference implementation; CTD support is deferred. The hardware source of truth is the corresponding KiCad
 project in NautiPi.
 
 ## Common software contract
@@ -41,7 +40,7 @@ approximately 600 mA LED current subject to final validation. Thermal management
 planned around water proximity/cooling and NTC feedback; it remains a commissioning
 and thermal-test item.
 
-## CTD profile
+## CTD profile (deferred)
 
 KiCad mapping for the ATtiny1614 on the CTD:
 
@@ -104,10 +103,82 @@ collision-managed discovery: it queries progressively smaller portions of the un
 space until one node responds, then assigns the next available address. The gateway
 should retain a local mapping of unique ID, address, node type, and last-seen status,
 and publish duplicate, missing, and uncommissioned-node conditions through NATS.
+## Connector roles
+
+For the three-PCB Light Module stack, `J4` plugs into `J7` and `J8` plugs into `J9`.
+These are internal stack connections. `J1` is a diagnostic port used during design
+and commissioning; it is not the production robot connection. `J6` is the final
+interface to the rest of the robot.
+## Light Module interface details
+
+`J6` is the production interface to the robot. Its input voltage is **12–18 VDC
+nominal**, with a **24 VDC maximum operating input**. Do not exceed 24 VDC.
+
+`J1` is the AVR UPDI diagnostic/programming header. The built-in feedback LED is
+not part of the standard UPDI header, but is placed on an otherwise unused header
+pin to provide visual status/feedback from the microcontroller during design,
+commissioning, and operation.
+
+The Light Module input voltage is measured through a 51 kΩ / 12 kΩ divider:
+
+`Vmeasure = V_in × 12 / (51 + 12)`
+
+| Input voltage | Expected Vmeasure |
+| ------------: | ----------------: |
+|        12 VDC |            2.29 V |
+|        18 VDC |            3.43 V |
+|        24 VDC |            4.57 V |
+
+These values assume ideal resistor values; component tolerance and supply variation
+will introduce small differences.
+## TH1/D11 multiplexed temperature feedback
+
+A1/D1 is multiplexed between status indication and temperature feedback:
+
+- Output low: D11 is on for status indication.
+- Output high: TH1 is connected directly to the 5 V rail and may self-heat; this
+  state should be avoided or limited to brief controlled intervals.
+- High-impedance analogue input: TH1 sinks current through the R8 and D11/R14 paths,
+  providing an indicative temperature measurement.
+
+TH1 is located near the high-power LED D1. D11 provides local status indication for
+RS-485 and other conditions that cannot be reported through the data link.
+
+The following indicative response assumes R8 = 10 kΩ, R14 = 1 kΩ, a 5 V rail, TH1
+= 10 kΩ at 25 °C with B = 3590 K, and a green D11 Vf approximately 2.1 V when forward biased. The D11 glow is expected and normal. Actual
+values require calibration with the assembled board and the LED's measured Vf.
+
+| Temperature | TH1 resistance | A1 voltage | 10-bit ADC | D11 state |
+|---:|---:|---:|---:|:---|
+| 0 °C | 30.1 kΩ | 3.75 V | 768 | off |
+| 10 °C | 18.9 kΩ | 3.27 V | 669 | off |
+| 20 °C | 12.3 kΩ | 2.88 V | 589 | glowing |
+| 25 °C | 10.0 kΩ | 2.83 V | 580 | glowing |
+| 30 °C | 8.20 kΩ | 2.78 V | 569 | glowing |
+| 40 °C | 5.62 kΩ | 2.66 V | 544 | glowing |
+| 50 °C | 3.94 kΩ | 2.51 V | 514 | glowing |
+| 60 °C | 2.82 kΩ | 2.34 V | 478 | glowing |
+| 70 °C | 2.06 kΩ | 2.15 V | 439 | glowing |
+| 80 °C | 1.53 kΩ | 1.94 V | 397 | glowing |
+| 90 °C | 1.16 kΩ | 1.73 V | 354 | glowing |
+| 100 °C | 889 Ω | 1.53 V | 313 | glowing |
+## CTD NTC and TDS
+
+The CTD NTC is connected via `J1`, exposed to the water, and directly measures water temperature. Its
+measurement is an input to the CTD total dissolved solids (TDS) calculation. This
+is distinct from the Light Module NTC, which monitors the high-power LED temperature.
+## CTD connector roles
+
+The CTD connector design is distinct from the Light Module. `J6` is the UPDI
+programming/diagnostic interface and `J7` is the external interface to the robot.
+`J2` plugs into `J3`, and `J4` plugs into `J5`, forming the CTD board stack.
 ## Status
 
-The interface is a design baseline. Firmware consolidation, bus testing, thermal
-validation, sensor calibration, and full ROV integration remain separate verification
-activities.
+The Light Module is the current implementation target for firmware consolidation, commissioning, bus testing, and thermal validation. The CTD profile remains a documented future profile; CTD firmware work and sensor calibration are deferred.
 
+## Transducer modularity
+
+The CTD is intentionally a combined logical transducer because conductivity, temperature, and pressure are interdependent measurements: temperature compensates conductivity, pressure provides depth, and the three values support derived salinity and density calculations.
+
+Other sensing functions should remain separate RS-485/Modbus nodes where practical. Optical absorbance, turbidity, pH, dissolved oxygen, and ORP should not be added to the CTD merely to reduce node count. The shared Arduino PCB, pin map, firmware framework, commissioning process, diagnostics, and Modbus interface should be reused across these modules, while sensor-specific analogue and conditioning circuitry remains local to each node.
 

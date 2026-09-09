@@ -33,6 +33,7 @@ nav:
       - NATS: architecture/nats.md
       - Robot Profiles: architecture/robot-profiles.md
       - Embedded Node Profiles: architecture/embedded-nodes.md
+      - CTD Design Provenance: architecture/ctd-design-provenance.md
   - Robots:
       - CuttleOS: cuttleos/index.md
       - Cockpit: cockpit/index.md
@@ -65,5 +66,6 @@ nav:
   - Engineering Decisions:
       - Overview: decisions/index.md
   - Roadmap: roadmap.md
+
 
 
