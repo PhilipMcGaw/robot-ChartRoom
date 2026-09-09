@@ -184,6 +184,31 @@ This supports the existing **ROV - HiL-and-SiL** direction and the goal of makin
 
 **Read later:** [RoboCenter research notes](research/robocenter.md), which contains the surviving primary-source links, including the [RoboCenter materials index](https://robocenter.net/materials/), [HighROV manuals](https://robocenter.net/media/documents/HighROV_Manual_RUS.pdf), [MUR Thruster 200 specification](https://robocenter.net/documents/77/%D0%A1%D0%BF%D0%B5%D1%86%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%86%D0%B8%D1%8F_MUR_Thruster_200.pdf), [MUR simulator](https://simulator.robocenter.org/), [MUR firmware](https://github.com/murproject/rov_firmware), and [RovUI](https://github.com/murproject/RovUI).
 
+### RovMaker Edge — ROV mechanical, electrical, and test inspiration
+
+Review [RovMaker Edge](research/rovmaker-edge.md) as a historical open-ROV reference, particularly for pressure-housing design, modular penetrators, buoyancy/trim, propulsion characterisation, and the boundary between Linux computing and dedicated vehicle-control hardware.
+
+Areas worth studying include:
+
+- separate battery and electronics pressure volumes;
+- modular cable penetrators and connector interfaces;
+- vacuum leak testing before water testing;
+- adjustable ballast and trim rather than fixed buoyancy assumptions;
+- propulsion/ESC characterisation before vehicle integration;
+- thermal paths for enclosed ESC electronics;
+- six-thruster vectored propulsion and control allocation;
+- Raspberry Pi plus dedicated control hardware;
+- controller current capability versus the actual propulsion envelope;
+- long-tether communications and power-distribution design;
+- separation of video and vehicle-control paths; and
+- serviceable mechanical interfaces and documented commissioning procedures.
+
+Use the associated OpenROV, TechMonkeyBusiness, Blue Robotics, and ArduPilot references to compare alternative implementations and real-world integration problems. The aim is not to reproduce any historical ROV, but to use the combined evidence to improve pressure testing, propulsion testing, power architecture, controller selection, tether design, and subsystem ownership in the current ROV.
+
+**Status:** Research / design inspiration. No RovMaker, OpenROV, TechMonkeyBusiness, Blue Robotics, or ArduPilot hardware/software dependency is planned.
+
+**Read later:** [RovMaker Edge research](research/rovmaker-edge.md), [OpenROV electronics](https://github.com/OpenROV/openrov-electronics), [OpenROV Cockpit](https://github.com/OpenROV/openrov-cockpit), [TechMonkeyBusiness OpenSource ROV](https://www.techmonkeybusiness.com/articles/OpenSource_ROV.html), [Blue Robotics control-board discussion](https://discuss.bluerobotics.com/t/control-board-options-pros-and-cons/812), and [ArduPilot ROV project discussion](https://discuss.ardupilot.org/t/your-own-remotely-operated-vehicle-rov-project/7951).
+
 ### T3chFlicks Smart Buoy and Sofar Spotter — environmental sensing references
 
 Study the [T3chFlicks Smart Buoy](research/t3chflicks-smart-buoy.md) and the commercial [Sofar Ocean Spotter](research/sofar-spotter.md) as complementary references for environmental sensing, autonomous instrumentation, data acquisition, and deployment.
