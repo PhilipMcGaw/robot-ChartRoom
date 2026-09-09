@@ -184,6 +184,31 @@ This supports the existing **ROV - HiL-and-SiL** direction and the goal of makin
 
 **Read later:** [RoboCenter research notes](research/robocenter.md), which contains the surviving primary-source links, including the [RoboCenter materials index](https://robocenter.net/materials/), [HighROV manuals](https://robocenter.net/media/documents/HighROV_Manual_RUS.pdf), [MUR Thruster 200 specification](https://robocenter.net/documents/77/%D0%A1%D0%BF%D0%B5%D1%86%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%86%D0%B8%D1%8F_MUR_Thruster_200.pdf), [MUR simulator](https://simulator.robocenter.org/), [MUR firmware](https://github.com/murproject/rov_firmware), and [RovUI](https://github.com/murproject/RovUI).
 
+### T3chFlicks Smart Buoy and Sofar Spotter — environmental sensing references
+
+Study the [T3chFlicks Smart Buoy](research/t3chflicks-smart-buoy.md) and the commercial [Sofar Ocean Spotter](research/sofar-spotter.md) as complementary references for environmental sensing, autonomous instrumentation, data acquisition, and deployment.
+
+The Smart Buoy is useful as a low-cost, educational implementation: Arduino-based local acquisition, power scheduling, GPS/radio/SD logging, a Raspberry Pi base station, database, and Vue dashboard. Its documented limitations and proposed V2 improvements are particularly valuable engineering lessons.
+
+Spotter provides a commercial comparison point. Its platform combines surface sensing, onboard time-series storage, satellite/cellular telemetry, remote configuration, a dashboard/API, and Smart Mooring sensor expansion. The Spotter Configurator is also useful as a reference for presenting a technically complex modular system as a structured deployment/configuration workflow.
+
+Areas worth studying include:
+
+- raw versus derived measurement retention;
+- local acquisition, timestamping, filtering, and calibration;
+- power management and autonomous operation;
+- waterproofing, serviceability, and deployment;
+- local persistence during communications loss;
+- modular sensor interfaces;
+- dashboard/API separation from acquisition hardware; and
+- configuration of common hardware platforms for different missions.
+
+For the project's CTD and environmental sensor work, compare these systems with the intended local acquisition → communications → Datalogger → Cockpit architecture. Do not treat Sofar's Bristlemouth, communications services, or cloud platform as dependencies.
+
+**Status:** Research / inspiration and commercial reference. No T3chFlicks or Sofar Ocean dependency is planned.
+
+**Read later:** [T3chFlicks Smart Buoy research](research/t3chflicks-smart-buoy.md), [Sofar Spotter research](research/sofar-spotter.md), [Sofar Spotter](https://www.sofarocean.com/products/spotter), [Spotter Configurator](https://spotter-configurator.sofarocean.com/), and [Sofar Ocean support/documentation](https://www.sofarocean.com/support).
+
 ### Documentation and technical communication design
 
 Use Mayer's Principles of Multimedia Learning as a reference when producing technical information across the Robots ecosystem. Although the Raspberry Pi Foundation source is aimed at computing education, its guidance on cognitive load, information structure, visual signalling, and the relationship between words and diagrams is applicable to classroom material, engineering documentation, datasheets, presentations, and public-facing technical writing.
