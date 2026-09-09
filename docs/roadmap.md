@@ -138,6 +138,14 @@ This supports the existing **ROV - HiL-and-SiL** direction and the goal of makin
 
 **Read later:** [RoboCenter research notes](research/robocenter.md), which contains the surviving primary-source links, including the [RoboCenter materials index](https://robocenter.net/materials/), [HighROV manuals](https://robocenter.net/media/documents/HighROV_Manual_RUS.pdf), [MUR Thruster 200 specification](https://robocenter.net/documents/77/%D0%A1%D0%BF%D0%B5%D1%86%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%86%D0%B8%D1%8F_MUR_Thruster_200.pdf), [MUR simulator](https://simulator.robocenter.org/), [MUR firmware](https://github.com/murproject/rov_firmware), and [RovUI](https://github.com/murproject/RovUI).
 
+### K-9 back-button screens and displays
+
+Keep a small K-9-specific research track for the rear/back-button assembly, particularly the screens/displays associated with the buttons. Capture visual references before fixing the mechanical, electrical, or UI implementation.
+
+**Status:** Read later / design research.
+
+**Read later:** [K-9 Read Later](k9-read-later.md).
+
 ### Cross-project vehicle validation
 
 Use substantially different vehicle types to validate whether Cockpit and the supporting software architecture are genuinely reusable rather than accidentally being an ROV-specific implementation.
