@@ -87,6 +87,57 @@ The JPL project is also a useful example of making a robotics platform approacha
 
 **Read later:** [NASA JPL Open Source Rover](https://github.com/nasa-jpl/open-source-rover) and [OSR rover code](https://github.com/nasa-jpl/osr-rover-code).
 
+### RoboCenter ROV inspiration
+
+Review the surviving RoboCenter/MUR material as a reference for a complete ROV development stack. The material is useful because it covers mechanical construction, open thrusters, payloads, embedded control, telemetry, operator UI, simulation, and practical air/pool testing. It should be treated as design inspiration and comparative research, not as a project specification or software dependency.
+
+#### Mechanical
+
+- study the OpenThruster projects as a reference for accessible, inspectable, modular propulsion hardware;
+- evaluate replaceable thruster guards/ducts as part of the mechanical protection strategy;
+- retain a modular frame with defined attachment points for propulsion, buoyancy, cameras, lights, and payloads;
+- treat manipulators, cameras, and other payloads as replaceable modules; and
+- include buoyancy, sealing, cable routing, and serviceability in the mechanical/electrical design loop.
+
+#### Electrical and embedded
+
+- compare RoboCenter's separation between high-level commands and low-level actuator/sensor control with the existing ROV Control boundary;
+- expose useful actuator and driver state through the normal telemetry model rather than treating propulsion as a black box;
+- define clear interfaces for additional sensors, lights, cameras, manipulators, and future payload electronics;
+- compare their practical underwater power, Ethernet, sealed-electronics, and service-connection approach with the ROV electrical architecture; and
+- explicitly document actuator fault handling, communications loss, limits, and safe-state behaviour.
+
+#### Software architecture
+
+The HighROV documentation describes a useful conceptual flow: receive operator commands; update sensors; update vehicle telemetry; control thrusters from current demand and state; publish actuator telemetry; control payloads; and return telemetry to the operator interface.
+
+Use this as a comparison against the existing **Cockpit → Control → Datalogger** separation. The useful lesson is responsibility and ownership, not the specific RoboCenter implementation or protocol.
+
+Also investigate the `PayloadTool` abstraction (`init`, `update`, `commit`) and MUR IDE as possible references for payload modules, vehicle profiles, and a common programming/simulation workflow.
+
+#### Cockpit / operator UI
+
+The HighROV UI provides a useful comparison for Cockpit: a central camera view surrounded by dedicated telemetry, diagnostic/message, thrust-limit, controller/regulator, and logging functions. Also study configurable gamepad control and the idea of a UI that can be adapted to a custom vehicle rather than being permanently tied to one hardware build.
+
+Compare these ideas with Blue Robotics Cockpit and other ROV interfaces before making implementation decisions. The aim is to make Cockpit a generic robotics operator interface while retaining clear engineering/debug views.
+
+#### HiL / SiL and testing
+
+Use the RoboCenter simulator and MUR IDE as references for:
+
+- running control software against a simulated vehicle before hardware;
+- repeatable missions and operator workflows;
+- testing telemetry and UI behaviour without a pool test;
+- separating air/debug tests from wet/pool tests;
+- keeping simulation and hardware models conceptually aligned; and
+- recording sufficient state to reproduce test failures.
+
+This supports the existing **ROV - HiL-and-SiL** direction and the goal of making simulation a normal engineering tool.
+
+**Status:** Research / inspiration. No RoboCenter software dependency is planned.
+
+**Read later:** [RoboCenter research notes](research/robocenter.md), which contains the surviving primary-source links, including the [RoboCenter materials index](https://robocenter.net/materials/), [HighROV manuals](https://robocenter.net/media/documents/HighROV_Manual_RUS.pdf), [MUR Thruster 200 specification](https://robocenter.net/documents/77/%D0%A1%D0%BF%D0%B5%D1%86%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%86%D0%B8%D1%8F_MUR_Thruster_200.pdf), [MUR simulator](https://simulator.robocenter.org/), [MUR firmware](https://github.com/murproject/rov_firmware), and [RovUI](https://github.com/murproject/RovUI).
+
 ### Cross-project vehicle validation
 
 Use substantially different vehicle types to validate whether Cockpit and the supporting software architecture are genuinely reusable rather than accidentally being an ROV-specific implementation.
