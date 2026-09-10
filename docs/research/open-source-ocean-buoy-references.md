@@ -6,12 +6,23 @@ A focused set of academic, student, and open-source buoy projects relevant to th
 
 https://github.com/sk-t3ch/smart-buoy
 https://magazine.raspberrypi.com/articles/smart-buoy
+https://gitlab.com/t3chflicks/smart-buoy
+https://hackaday.io/project/166572-smart-buoy/details
+https://www.hackster.io/t3chflicks/smart-buoy-summary-7d1a7b
 
-T3chFlicks developed an Arduino buoy with a Raspberry Pi base station and Vue dashboard. The prototype measured wave height/period/power/direction, water temperature, air temperature/humidity/pressure, GPS, and electrical status. It used solar power, battery-aware scheduled operation, nRF24 radio, local processing/storage experiments, and a shore/base-station dashboard.
+T3chFlicks developed an Arduino buoy with a Raspberry Pi base station and Vue dashboard. The prototype measured wave height/period/power/direction, water temperature, air temperature/humidity/pressure, GPS, and electrical status. It used solar power, battery-aware scheduled operation, nRF24 radio, local processing/storage experiments, and a shore/base-station dashboard. The original GitLab repository was created in March 2019 and later moved to GitHub.
 
-The project is particularly valuable as a **case study/post-mortem**. Contemporary documentation describes practical problems including sensor accuracy, memory constraints, waterproofing, storage, and limited deployment duration. T3chFlicks proposed a later version using an open/resealable enclosure, ESP32 + LoRa, and more processing onboard.
+The project was created by **T3chFlicks, a small UK technology education and services company**. Public company records identify **Stephanie Katherine Andrews** and **Sebastian Edward Kelly** as the two directors/people with significant control of T3CH FLICKS LTD. Contemporary project material generally refers to Stephanie as **Steph** and Sebastian as **Seb**.
 
-**Relevance:** direct historical baseline for Smart Buoy. Use it to understand what a low-cost prototype can achieve and, equally importantly, what prevents a prototype becoming a persistent scientific instrument.
+The Smart Buoy originated from Steph's undergraduate dissertation work on the impact of sea-level rise in Grenada. The Raspberry Pi/MagPi and HackSpace coverage says she found it difficult to obtain reliable, continuous coastal data and that this motivated the team to build an inexpensive system capable of producing meaningful measurements. The buoy was subsequently built and deployed in Grenada, with the team also discussing the project with the Grenadian government.
+
+Contemporary documentation is particularly valuable as a **case study/post-mortem**. The team openly documented problems with sensor accuracy, memory constraints, waterproofing, storage, wave-property algorithms, and deployment. They identified an inability to reprogram the sealed buoy as a major design mistake and proposed an open/resealable enclosure, a more capable ESP32-class controller, LoRa, and additional onboard processing for a possible version 2.
+
+The Hackaday and Hackster material also shows a useful full-stack engineering chain: embedded acquisition → radio link → Raspberry Pi base station → database/server → Vue dashboard, with a fake-data generator for dashboard development. One T3chFlicks team member was specifically described as the web developer who built the Vue dashboard.
+
+**Relevance:** direct historical baseline for Smart Buoy. Use it to understand what a low-cost prototype can achieve and, equally importantly, what prevents a prototype becoming a persistent scientific instrument. It is also a useful reference for the way a small multidisciplinary team can combine environmental research, electronics, mechanical design, software, data visualisation, and education.
+
+**Open research question:** the public material establishes Stephanie Katherine Andrews as Steph and links Smart Buoy to her undergraduate dissertation, but the university and dissertation title have not yet been conclusively established. Do not infer them from unrelated name matches.
 
 ## OLB — Open LoRa Buoy
 
@@ -77,6 +88,24 @@ The wider research programme explicitly considers the whole system: hydrodynamic
 
 **Status:** Read later — secondary.
 
+## Related contemporary research
+
+### Small wave-buoy literature
+
+A 2025 review of atmospheric and ocean measuring buoys explicitly lists the **T3chFlicks education-focused Smart Buoy** alongside Sofar Spotter, FZ-series buoys, MELODI, ADWSD, miniwave buoys, and other small wave-measurement platforms.
+
+https://faculty.washington.edu/jmt3rd/Publications/Cavaleri_etal_2025.pdf
+
+**Relevance:** useful evidence that the T3chFlicks project has value as a documented low-cost buoy reference beyond the maker community. It also provides a route into comparative literature on small wave buoys.
+
+### Good Buoy / marine-mammal sensing follow-on
+
+A 2025 ISEF project explicitly used a scaled version of the T3chFlicks **Good Buoy** design as a reference and performed structural stress analysis, 3D printing, buoyancy/stability testing, and environmental sensing. The implementation used an ESP32-class controller, battery, solar panels, and a planned LTE/hydrophone interface.
+
+https://sciforum.net/manuscripts/27172/slides.pdf
+
+**Relevance:** useful example of a later educational project taking an existing open buoy design and adding explicit structural analysis, deployment testing, and a new sensing application. It is a secondary reference rather than a design dependency.
+
 ## Cross-project lessons
 
 ### 1. Prototype versus instrument
@@ -138,4 +167,4 @@ The goal is not to reproduce any one reference design. The references should be 
 
 **Medium priority:** UWA DGPS water-level buoy.
 
-**Secondary:** McLeod/Maynooth wave-powered data buoy.
+**Secondary:** McLeod/Maynooth wave-powered data buoy; 2025 Good Buoy/I​SEF follow-on.
