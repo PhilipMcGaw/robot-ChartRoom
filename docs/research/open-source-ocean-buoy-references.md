@@ -35,6 +35,32 @@ Dreyer et al. developed an open-source coastal drifter using LoRa. The design ta
 
 **Status:** Read later — high priority.
 
+## Smart Buoy communications — 868 MHz LoRa baseline
+
+Recent review of the radio choice suggests retaining **868 MHz LoRa as the baseline communications technology**, but treating the radio and antenna as a measured engineering subsystem rather than simply selecting a module.
+
+An experimental 868 MHz LoRa study specifically examining water-surface communication demonstrated feasibility and measured 160 m over-water communication with a buffered antenna arrangement, compared with 80 m for the unbuffered arrangement. The study reinforces that the air/water interface can significantly affect antenna performance. Water's high permittivity and conductivity make antenna placement and matching important. [1]
+
+For the Smart Buoy concept, the practical design target should therefore be an antenna **above the waterline**, mechanically separated from conductive structures, with antenna height treated as a validation parameter. A nominal target of roughly **200–500 mm above mean water level** is a useful engineering starting point, not a guaranteed requirement. Testing should cover antenna height, buoy orientation, sea state, range, RSSI/SNR, packet delivery ratio, reconnection behaviour, and energy consumed per successful telemetry packet.
+
+The communications architecture should remain transport-independent at the application layer. The buoy telemetry protocol should not depend on LoRa-specific features so that an alternative sub-GHz PHY can be evaluated without redesigning sensing, logging, or the backend.
+
+### Alternative radio technologies to investigate
+
+**868 MHz FSK/GFSK:** worthwhile alternative if higher data rate, shorter airtime, or simpler PHY behaviour becomes more valuable than LoRa's maximum link budget. It should be treated as an experimental comparison against LoRa rather than a replacement assumption.
+
+**433 MHz LoRa/FSK:** potentially attractive because of the lower frequency and longer wavelength, and therefore worth investigating for difficult water-surface geometries. The larger antenna and UK regulatory conditions must be considered before selecting it.
+
+**2.4 GHz Wi-Fi/BLE/802.15.4:** useful for local or high-bandwidth functions but not currently preferred for the primary buoy-to-shore telemetry link. The water-surface environment and free-space/link-budget requirements favour sub-GHz for the long-range low-data-rate link.
+
+### UK regulatory constraint
+
+The Smart Buoy is intended for UK use, so the radio design must be based on the **current Ofcom IR2030 conditions**, not simply the generic term "868 MHz ISM". Licence-exempt short-range devices operate on a shared, non-protected/non-interference basis, and permitted power, bandwidth, duty cycle, channel access, and other conditions depend on the specific sub-band and device category. [2]
+
+In particular, the attractive higher-power 869.4–869.65 MHz provisions shown in Ofcom material have specific channel-access requirements and must not be treated as a blanket 500 mW LoRa allowance. The selected radio configuration must be checked against the current UK interface requirements and the applicable ETSI harmonised requirements before deployment or productisation. [2]
+
+**Status:** Design direction — 868 MHz LoRa baseline; alternative PHY/frequency options remain **Read later / experimental**, pending measured link testing and regulatory review.
+
 ## Low-Cost, Modular Mooring Buoy — Brendon Chan
 
 https://www.brendon-chan.com/projects-1/mooring-buoy
@@ -141,7 +167,9 @@ Brendon Chan's towing-tank validation, the UWA work on pitch/roll, and McLeod's 
 
 ### 6. Communications should be chosen around deployment
 
-The projects provide useful alternatives rather than a single prescribed solution: nRF24 for the T3chFlicks prototype, LoRa for OLB, and radio gateway architectures in the Reconstrained project. Future Smart Buoy communications should be selected from range, energy, data-rate, infrastructure, cost, recovery, and deployment requirements rather than familiarity with a particular radio.
+The projects provide useful alternatives rather than a single prescribed solution: nRF24 for the T3chFlicks prototype, LoRa for OLB, and radio gateway architectures in the Reconstrained project. The current design direction is **868 MHz LoRa as the baseline**, with **868 MHz FSK/GFSK and 433 MHz LoRa/FSK retained as alternatives for measured comparison**. The radio choice should ultimately be based on range, energy, data rate, antenna behaviour at the water surface, regulatory constraints, infrastructure, cost, recovery, and deployment requirements.
+
+For the LoRa baseline, the validation plan should explicitly include antenna height above water, antenna matching/counterpoise, buoy orientation, sea state, RSSI/SNR, packet delivery ratio, reconnect behaviour, and energy per successful telemetry packet. A nominal antenna position around 200–500 mm above mean water level is a starting design target, not a validated requirement.
 
 ### 7. Open hardware is most useful when it includes the complete engineering chain
 
@@ -154,7 +182,7 @@ A useful engineering progression emerging from these references is:
 1. **Bench prototype** — sensor acquisition, timestamping, local storage, power measurement.
 2. **Instrument validation** — calibration, derived measurements, repeatability, ground-truth comparison.
 3. **Environmental test** — enclosure, buoyancy, motion, thermal behaviour, water ingress, recovery.
-4. **Communications test** — range, duty cycle, packet loss, reconnection, local buffering.
+4. **Communications test** — range, duty cycle, packet loss, reconnection, local buffering, antenna height, and water-surface effects.
 5. **Short deployment** — unattended operation with complete health telemetry.
 6. **Extended deployment** — battery/solar endurance and environmental robustness.
 7. **Fleet operation** — configuration management, authenticated firmware updates, rollback/recovery, fleet health, and common data/API infrastructure.
@@ -167,4 +195,10 @@ The goal is not to reproduce any one reference design. The references should be 
 
 **Medium priority:** UWA DGPS water-level buoy.
 
-**Secondary:** McLeod/Maynooth wave-powered data buoy; 2025 Good Buoy/I​SEF follow-on.
+**Secondary:** McLeod/Maynooth wave-powered data buoy; 2025 Good Buoy/ISEF follow-on; 868 MHz LoRa water-surface antenna study.
+
+## Sources
+
+[1] M. S. Al-Husainy et al., “Design, Implementation, and Measurement Procedure of Underwater and Water Surface Antenna for LoRa Communication”, *Sensors*, 2021. https://www.mdpi.com/1424-8220/21/4/1337
+
+[2] Ofcom, “Short-range devices” and UK Interface Requirement IR2030. https://www.ofcom.org.uk/spectrum/radio-equipment/short-range-devices
