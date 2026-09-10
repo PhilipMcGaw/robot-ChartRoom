@@ -23,7 +23,7 @@ KiCad mapping for the ATtiny1614 on the Light Module:
 | 2 | A0/D0 | LED PWM |
 | 3 | A1/D1 | Status LED / NTC feedback input |
 | 4 | A2/D2 | Built-in LED |
-| 5 | A3/D3 | Expansion |
+| 5 | A3/D3 | PCB function-ID resistor strap (analogue read) |
 | 6 | D4/RXD | RS-485 receive |
 | 7 | D5/TXD | RS-485 transmit |
 | 8 | A6/D6/SDA | I²C SDA |
@@ -46,41 +46,68 @@ KiCad mapping for the ATtiny1614 on the CTD:
 
 | Pin | Board label | Function |
 |---|---|---|
-| 2 | A0/D0 | CTD board-specific input |
-| 3 | A1/D1 | CTD board-specific input |
+| 2 | A0/D0 | TDS excitation PWM, approximately 3.6 kHz at 50% duty |
+| 3 | A1/D1 | CTD NTC / board-specific analogue input |
 | 4 | A2/D2 | Built-in LED |
-| 5 | A3/D3 | RS-485 direction |
+| 5 | A3/D3 | PCB function-ID resistor strap (analogue read) |
 | 6 | D4/RXD | RS-485 receive |
 | 7 | D5/TXD | RS-485 transmit |
 | 8 | A6/D6 | Top-board SDA |
 | 9 | A7/D7 | Top-board SCL |
 | 10 | UPDI | Programming |
 | 11 | A8/D8 | Input-voltage measurement |
-| 12 | A9/D9 | Top-board temperature |
-| 13 | A10/D10/SCK | Top-board TDS |
+| 12 | A9/D9 | TDS analogue feedback input |
+| 13 | A10/D10/SCK | Expansion / available peripheral pin |
 
-Unlike the Light Module, the CTD profile uses a firmware-controlled RS-485 direction
-pin. A common framework must express that as a capability/profile setting.
+The CTD profile uses hardware PWM on A0/D0 for the TDS excitation waveform and
+analogue sampling on A9/D9 for TDS feedback. The CTD profile uses the shared A3/D3 PCB function-ID strap. The RS-485 interface
+uses automatic direction control, so no MCU direction GPIO is required or assigned.
+
+## PCB function identification
+
+All new devices based on the Light/CTD controller shall include a resistor network connected to `A3/D3` to identify the function of the populated PCB. Existing legacy boards may remain exceptions until their hardware is revised.
+
+A resistor network connected to `A3/D3` identifies the function of the populated PCB. The shared firmware reads this analogue strap during startup and uses the decoded value to select the compatible feature profile or reject incompatible firmware. This approach follows the resistor-coded address-selection method described in [Choosing resistor values for setting ADDR on the MCP23018](https://philipmcgaw.com/choosing-resistor-values-for-setting-addr-on-the-mcp23018/).
+
+The PCB function ID is a hardware capability/type identifier, not a Modbus address. The Modbus address remains a separate robot-local value stored in EEPROM. This allows the same firmware framework to support multiple node types while preventing an incompatible firmware image from operating a board under the wrong profile.
+
+The resistor values and ADC acceptance bands must be selected with sufficient tolerance and noise margin. The function ID should be sampled before the pin is assigned to any feature peripheral, and an invalid or ambiguous reading should put the node into a safe diagnostic state.
+## PCB function resistor codes
+
+The initial function-code resistor assignments are:
+
+| Function | Divider ratio | R1 | R2 |
+|---|---:|---:|---:|
+| Function 1 - Light | 1/16 (0.0625) | 4k7 | Open circuit |
+| Function 2 - CTD | 3/16 (0.1875) | 910R | 3k9 |
+| Function 3 - Reserved | 5/16 (0.3125) | 1k5 | 3k3 |
+| Function 4 - Reserved | 7/16 (0.4375) | 2k4 | 2k4 in series with 430R |
+| Function 5 - Reserved | 9/16 (0.5625) | 2k4 in series with 430R | 2k4 |
+| Function 6 - Reserved | 11/16 (0.6875) | 3k3 | 1k5 |
+| Function 7 - Reserved | 13/16 (0.8125) | 3k9 | 910R |
+| Function 8 - Reserved | 15/16 (0.9375) | Open circuit | 4k7 |
+
+The values and tolerance approach are based on [Choosing resistor values for setting ADDR on the MCP23018](https://philipmcgaw.com/choosing-resistor-values-for-setting-addr-on-the-mcp23018/). The final ADC acceptance bands must be checked against the ATtiny reference, resistor tolerance, supply variation, noise, and input leakage. The theoretical ratio for Function 8 is 15/16 = 0.9375; the source article gives 0.9357 in its table.
 
 ## Address allocation
 
-Modbus addresses are allocated in blocks of ten for operational clarity. The address
+Modbus addresses are allocated in blocks of ten for operational clarity and are written in hexadecimal. The address
 block is a convention; the factory unique ID and node-reported type remain the
 authoritative identity.
 
 | Address range | Node type |
 |---|---|
-| 10–19 | Light Modules |
-| 20–29 | Motor controllers |
-| 30–39 | CTD and environmental sensors |
-| 40–49 | Thrusters and actuators |
-| 50–59 | Cameras |
-| 60–69 | Navigation |
-| 70–239 | Future node types |
-| 240–247 | Service and diagnostics |
+| `0x0A–0x13` | Light Modules |
+| `0x14–0x1D` | Motor controllers |
+| `0x1E–0x27` | CTD and environmental sensors |
+| `0x28–0x31` | Thrusters and actuators |
+| `0x32–0x3B` | Cameras |
+| `0x3C–0x45` | Navigation |
+| `0x46–0xEF` | Future node types |
+| `0xF0–0xF7` | Service and diagnostics |
 
 This provides 23 complete ten-address type blocks while retaining a service range.
-The current Light Module population should therefore use addresses `10–19`.
+The current Light Module population should therefore use addresses `0x0A–0x13`.
 ## Commissioning and robot transfer
 
 The ATtiny1614 factory serial number is the permanent node identity. The Modbus
@@ -181,4 +208,12 @@ The Light Module is the current implementation target for firmware consolidation
 The CTD is intentionally a combined logical transducer because conductivity, temperature, and pressure are interdependent measurements: temperature compensates conductivity, pressure provides depth, and the three values support derived salinity and density calculations.
 
 Other sensing functions should remain separate RS-485/Modbus nodes where practical. Optical absorbance, turbidity, pH, dissolved oxygen, and ORP should not be added to the CTD merely to reduce node count. The shared Arduino PCB, pin map, firmware framework, commissioning process, diagnostics, and Modbus interface should be reused across these modules, while sensor-specific analogue and conditioning circuitry remains local to each node.
+
+
+
+
+
+
+
+
 
