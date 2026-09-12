@@ -1,0 +1,109 @@
+MATE ROV Competition — ROV Engineering Requirements Summary
+===============================================================
+
+Purpose
+-------
+Summary of useful engineering practices from the MATE ROV Competition for
+application to the ChartRoom ROV. Competition-specific limits are deliberately
+excluded; the aim is to adopt good engineering requirements rather than copy
+competition rules.
+
+Recommended requirements
+-------------------------
+
+SAFETY
+- Maintain a documented ROV safety case covering electrical, mechanical,
+  thermal, pressure, propulsion, tether, software, and operational hazards.
+- Maintain pre-deployment, operation, and recovery checklists.
+- Loss of command/communications shall place the vehicle in a defined safe
+  state within a specified timeout (target: <= 1 s).
+- Loss of tether power shall disable propulsion within a specified timeout
+  (target: <= 1 s).
+- Recovery from a communications fault shall require an explicit propulsion
+  re-enable.
+- Exposed propulsion components shall have effective guards.
+- Accessible sharp edges, uncontrolled cutting hazards, and mechanical
+  pinch points shall be eliminated or protected.
+
+MECHANICAL AND ENVIRONMENTAL
+- Provide dedicated mechanical tether strain relief independent of electrical
+  conductors and connectors.
+- Define a maximum operating depth and design pressure for every pressure
+  enclosure.
+- Hydrostatically test pressure-rated enclosures before operational use.
+- Record pressure-test results against enclosure identity and revision.
+- Document and validate the environmental protection method for every wet
+  electrical connection.
+- Major subsystems should be replaceable without unnecessary disassembly of
+  unrelated systems.
+
+ELECTRICAL AND POWER
+- Every connector shall be rated for its voltage, current, environment, and
+  required mating cycles.
+- Wiring shall have defined routing, strain relief, abrasion protection, and
+  identification.
+- Characterise ROV power consumption under representative maximum-load
+  conditions while submerged.
+- Record bus voltage, steady-state current, peak current, and major subsystem
+  loads.
+- Implement configurable propulsion power/current limiting.
+
+SOFTWARE, CONTROL, AND VIDEO
+- Keep propulsion safety, timeout, neutral, and E-stop functions under the
+  Control subsystem rather than the pilot UI.
+- Make vehicle-control software testable without physical hardware.
+- Use SIL/HiL testing before physical deployment where reasonably practicable.
+- Provide a primary pilot camera with adequate field of view and latency.
+- Detect and clearly indicate loss of the primary pilot video feed.
+
+SYSTEM ARCHITECTURE
+- Maintain a System Integration Diagram showing power, communications,
+  control, propulsion, sensors, video, payloads, and safety interfaces.
+- Keep clear ownership boundaries between Cockpit, Control, Datalogger, and
+  HiL/SiL.
+- Preserve modular interfaces so hardware and software can be replaced or
+  simulated independently.
+
+TEST AND VERIFICATION
+- Progress testing from subsystem tests through integration tests to complete
+  vehicle tests.
+- Retain test results against the relevant hardware and software revision.
+- Use measured data rather than nominal component values where practical,
+  particularly for propulsion and power budgets.
+
+ENGINEERING DOCUMENTATION
+- Record significant design decisions, including requirements, alternatives,
+  selection criteria, evidence, decision, and consequences.
+- Maintain documentation so that a competent engineer unfamiliar with the
+  project can understand, operate, maintain, and modify the ROV.
+- Treat the engineering knowledge base as controlled project documentation,
+  not merely as a collection of build notes.
+
+Most valuable MATE-derived additions for ChartRoom
+---------------------------------------------------
+1. Formal safety case and operational checklists.
+2. Explicit communications/power-loss safe-state requirements.
+3. Proper mechanical tether strain relief.
+4. Defined depth ratings and hydrostatic testing of pressure housings.
+5. Measured submerged full-load power/current testing.
+6. Configurable propulsion power limiting.
+7. Formal System Integration Diagram.
+8. SIL/HiL as part of the normal control-software verification process.
+9. Design-decision records.
+10. Revision-controlled test evidence.
+
+What NOT to copy
+----------------
+MATE competition-specific constraints such as competition supply limits,
+mandatory connectors/fuses, vehicle mass limits, competition depth limits,
+specific tether dimensions, crew arrangements, or documentation page limits
+should not become ChartRoom requirements unless they serve an independent
+design purpose.
+
+Overall conclusion
+------------------
+The most useful lesson from MATE is that the ROV should be treated as a
+systems-engineering project. The existing ChartRoom architecture of Cockpit,
+Control, Datalogger, NATS communications, and HiL/SiL is already well aligned
+with this approach. The main gap is to make safety, verification, measured
+performance, and engineering documentation explicit requirements.
