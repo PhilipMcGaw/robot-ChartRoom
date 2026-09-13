@@ -169,11 +169,11 @@ The HAT extension should **not** become the vehicle controller.
 
 The HAT extension is responsible for translating requested hardware outputs into PCA9685 PWM signals.
 
-This is consistent with the existing ChartRoom principle that propulsion safety, timeout, neutral, and E-stop belong to the Control subsystem rather than the pilot UI. fileciteturn5file0L60-L74
+This is consistent with the existing ChartRoom principle that propulsion safety, timeout, neutral, and E-stop belong to the Control subsystem rather than the pilot UI.
 
 ## NATS
 
-The existing architecture retains **NATS** as the chosen communication middleware. MQTT is not part of the design. fileciteturn5file5L498-L517
+The existing architecture retains **NATS** as the chosen communication middleware. MQTT is not part of the design.
 
 The proposed boundary is:
 
