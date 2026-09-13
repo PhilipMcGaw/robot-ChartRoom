@@ -3,8 +3,6 @@ site_description: Engineering knowledge base for the Robots project
 site_url: https://chartroom.philipmcgaw.com/
 copyright: 'Project by <a href="https://philipmcgaw.com/">Philip McGaw</a>'
 
-# Keep the site machine-readable as well as human-readable. The override adds
-# page metadata and Schema.org JSON-LD to the generated HTML.
 theme:
   name: material
   custom_dir: docs/overrides
@@ -33,6 +31,7 @@ nav:
       - NATS: architecture/nats.md
       - Robot Profiles: architecture/robot-profiles.md
       - Embedded Node Profiles: architecture/embedded-nodes.md
+      - BlueOS and Adeept Robot HAT: architecture/blueos-adeept-robot-hat.md
       - CTD Design Provenance: architecture/ctd-design-provenance.md
   - Robots:
       - CuttleOS: cuttleos/index.md
@@ -66,6 +65,3 @@ nav:
   - Engineering Decisions:
       - Overview: decisions/index.md
   - Roadmap: roadmap.md
-
-
-
