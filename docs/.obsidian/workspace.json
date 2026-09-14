@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "architecture/blueos-adeept-robot-hat.md",
+                "file": "architecture/overview.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "blueos-adeept-robot-hat"
+              "title": "overview"
             }
           }
         ]
@@ -188,8 +188,13 @@
       "bases:Create new base": false
     }
   },
-  "active": "fea499bb8e4a4380",
+  "active": "8d012b906a9fe947",
   "lastOpenFiles": [
+    "architecture/nats.md",
+    "architecture/embedded-nodes.md",
+    "architecture/ctd-design-provenance.md",
+    "architecture/communications.md",
+    "architecture/blueos-adeept-robot-hat.md",
     "repository-index.md",
     "k9-read-later.md",
     "index.md"
