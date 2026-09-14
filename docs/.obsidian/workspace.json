@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
+                "file": "architecture/blueos-adeept-robot-hat.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "blueos-adeept-robot-hat"
             }
           }
         ]
@@ -189,5 +189,9 @@
     }
   },
   "active": "fea499bb8e4a4380",
-  "lastOpenFiles": []
+  "lastOpenFiles": [
+    "repository-index.md",
+    "k9-read-later.md",
+    "index.md"
+  ]
 }

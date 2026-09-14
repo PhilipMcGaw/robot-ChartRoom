@@ -1,3 +1,15 @@
+---
+title: Robot Profiles
+description: Configuration and capability model for common software across robot types.
+type: architecture
+status: maintained
+authority: Chartroom
+tags:
+  - architecture
+  - robot-profiles
+  - embedded-nodes
+---
+
 # Robot Profiles
 
 Robot profiles define the configuration and capabilities that allow common software to operate different robot configurations.
@@ -16,4 +28,3 @@ logical feature is present on the same pin. The KiCad schematics and PCB files i
 NautiPi are authoritative for those mappings.
 
 See [Embedded node profiles](embedded-nodes.md).
-

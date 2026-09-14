@@ -1,3 +1,14 @@
+---
+title: Roadmap
+description: Intended evolution of the Robots ecosystem and its development infrastructure.
+type: roadmap
+status: maintained
+authority: Chartroom
+tags:
+  - roadmap
+  - planning
+---
+
 # Roadmap
 
 The roadmap records the intended evolution of the Robots ecosystem and its supporting development infrastructure.

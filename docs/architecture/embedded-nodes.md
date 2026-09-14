@@ -1,3 +1,16 @@
+---
+title: Embedded Node Profiles
+description: Common embedded-node interface and hardware boundary for distributed robot I/O.
+type: architecture
+status: maintained
+authority: Chartroom
+tags:
+  - architecture
+  - embedded-nodes
+  - rs-485
+  - modbus
+---
+
 # Embedded node profiles
 
 This page records the common ATtiny1614 node interface. The ROV Light Module is the current definitive playground and reference implementation; CTD support is deferred. The hardware source of truth is the corresponding KiCad
@@ -208,7 +221,6 @@ The Light Module is the current implementation target for firmware consolidation
 The CTD is intentionally a combined logical transducer because conductivity, temperature, and pressure are interdependent measurements: temperature compensates conductivity, pressure provides depth, and the three values support derived salinity and density calculations.
 
 Other sensing functions should remain separate RS-485/Modbus nodes where practical. Optical absorbance, turbidity, pH, dissolved oxygen, and ORP should not be added to the CTD merely to reduce node count. The shared Arduino PCB, pin map, firmware framework, commissioning process, diagnostics, and Modbus interface should be reused across these modules, while sensor-specific analogue and conditioning circuitry remains local to each node.
-
 
 
 

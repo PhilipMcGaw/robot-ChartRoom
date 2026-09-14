@@ -1,3 +1,16 @@
+---
+title: ROS 2
+description: ROS 2 learning material and simulation boundary for the Robots project.
+type: learning
+status: maintained
+authority: Chartroom
+tags:
+  - ros2
+  - gazebo
+  - simulation
+  - learning
+---
+
 # ROS 2
 
 ROS 2 provides the robotics middleware and tooling used by the simulation and development environment.

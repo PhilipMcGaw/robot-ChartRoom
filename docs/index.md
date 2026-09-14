@@ -1,3 +1,14 @@
+---
+title: Chartroom
+description: Cross-project engineering knowledge base for the Robots project.
+type: hub
+status: maintained
+authority: Chartroom
+tags:
+  - chartroom
+  - robots-project
+---
+
 # Chartroom
 
 **Chartroom** is the central engineering knowledge base for the Robots project.

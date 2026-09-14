@@ -1,3 +1,15 @@
+---
+title: NATS
+description: NATS Core messaging at the Robots application boundary.
+type: architecture
+status: maintained
+authority: Chartroom
+tags:
+  - architecture
+  - communications
+  - nats
+---
+
 # NATS
 
 NATS is the selected middleware for communication between Robots components.

@@ -1,3 +1,16 @@
+---
+title: Communications
+description: Communication paths, interfaces, and transport mechanisms across the Robots ecosystem.
+type: architecture
+status: maintained
+authority: Chartroom
+tags:
+  - architecture
+  - communications
+  - rs-485
+  - nats
+---
+
 # Communications
 
 Documentation of communication paths, interfaces, and transport mechanisms used by the Robots ecosystem.
