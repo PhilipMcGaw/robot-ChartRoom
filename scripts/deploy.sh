@@ -4,23 +4,37 @@ set -euo pipefail
 SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
 REPO_DIR="$(cd -- "$SCRIPT_DIR/.." && pwd)"
 SITE_DIR="${SITE_DIR:-$REPO_DIR/site}"
-MKDOCS_BIN="${MKDOCS_BIN:-$REPO_DIR/.venv/bin/mkdocs}"
+CONTENT_DIR="${CONTENT_DIR:-$REPO_DIR/docs}"
+QUARTZ_DIR="${QUARTZ_DIR:-$REPO_DIR/quartz}"
 
 cd "$REPO_DIR"
 
-echo "==> Building Chartroom static site"
+echo "==> Building Chartroom static site with Quartz"
 
-if [ ! -x "$MKDOCS_BIN" ]; then
-    if command -v mkdocs >/dev/null 2>&1; then
-        MKDOCS_BIN="$(command -v mkdocs)"
-    else
-        echo "ERROR: MkDocs was not found."
-        echo "       Install it in $REPO_DIR/.venv or set MKDOCS_BIN."
-        exit 1
-    fi
+if [ ! -d "$CONTENT_DIR" ]; then
+    echo "ERROR: Content directory not found: $CONTENT_DIR"
+    exit 1
 fi
 
-"$MKDOCS_BIN" build --clean --strict --site-dir "$SITE_DIR"
+if [ ! -f "$QUARTZ_DIR/package.json" ]; then
+    echo "ERROR: Quartz checkout not found: $QUARTZ_DIR"
+    exit 1
+fi
+
+if ! command -v node >/dev/null 2>&1 || ! command -v npm >/dev/null 2>&1; then
+    echo "ERROR: Quartz requires Node.js and npm."
+    exit 1
+fi
+
+if [ ! -x "$QUARTZ_DIR/node_modules/.bin/quartz" ]; then
+    echo "==> Installing Quartz dependencies"
+    npm --prefix "$QUARTZ_DIR" ci
+fi
+
+echo "==> Generating static site"
+npm --prefix "$QUARTZ_DIR" exec -- quartz build \
+    --directory "$CONTENT_DIR" \
+    --output "$SITE_DIR"
 
 echo "==> Static site created"
 echo "    $SITE_DIR"
