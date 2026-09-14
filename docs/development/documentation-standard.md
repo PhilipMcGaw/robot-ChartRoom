@@ -1,3 +1,4 @@
+
 # Robots Project Documentation Standard
 
 This document defines the documentation standard for the Robots project. It is the single source of truth for project-wide documentation conventions used by Chartroom, CuttleOS, SquidLink, and NautiPi.
@@ -139,3 +140,14 @@ When an authoritative implementation changes, review dependent documentation for
 Do not silently leave duplicated documentation stale. If duplication is unavoidable, identify the authoritative source and update the dependent copy when the material relationship changes.
 
 The objective is not to eliminate every repeated sentence. The objective is to eliminate competing versions of the truth.
+---
+title: "Robots Project Documentation Standard"
+description: "Shared documentation and technical communication standard for the Robots project."
+type: guidance
+status: maintained
+authority: Chartroom
+tags:
+  - development
+  - documentation
+  - standards
+---

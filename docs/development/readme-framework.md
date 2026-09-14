@@ -1,3 +1,4 @@
+
 # README Framework
 
 Meaningful project and module directories should contain a `README.md` when they form a useful documentation boundary.
@@ -38,3 +39,13 @@ Use explicit evidence-based terms such as `planned`, `implemented`, `tested`, `b
 ## Style
 
 Follow the [Robots Project Documentation Standard](documentation-standard.md), including British English, Oxford commas, clear technical prose, and consistent SI-unit formatting.
+---
+title: "README Framework"
+description: "Framework for consistent repository and project README files."
+type: guidance
+status: maintained
+authority: Chartroom
+tags:
+  - development
+  - documentation
+---

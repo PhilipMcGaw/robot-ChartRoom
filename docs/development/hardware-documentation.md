@@ -1,3 +1,4 @@
+
 # Hardware documentation
 
 Chartroom records the information needed to understand, deploy, operate, maintain, and troubleshoot robot hardware. It does not replace the engineering definition of the hardware held in NautiPi.
@@ -44,3 +45,14 @@ When a component is fitted to a particular robot, Chartroom may record which mod
 ## Documentation licensing
 
 Third-party documentation remains subject to its own copyright and licence terms. The Chartroom repository licence applies to original Chartroom content, not to manufacturer's manuals, datasheets, images, or other third-party material.
+---
+title: "Hardware Documentation"
+description: "Guidance for documenting physical hardware and engineering evidence."
+type: guidance
+status: maintained
+authority: Chartroom
+tags:
+  - development
+  - hardware
+  - documentation
+---

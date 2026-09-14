@@ -1,3 +1,4 @@
+
 # Autonomous UAV ground station research notes
 
 The Hackster.io **Autonomous Drone / UAV Project For Plane** is a useful reference for the wider Robots software architecture, particularly the separation of a vehicle/flight-control system from a richer ground-station interface. The project is an open-source work in progress by The Architect, published in 2019, and describes an autonomous RC plane with more than 20 planned flight modes, experimental Raspberry Pi AI flight functions, environmental sensors, and a self-made dashboard.
@@ -77,3 +78,13 @@ Therefore:
 **Status:** Research / design inspiration. No dependency or architecture decision has been adopted from this project.
 
 **Read later:** Review the project's source repository, dashboard implementation, schematic, and progress videos if the autonomous-mode or ground-station architecture becomes relevant to Cockpit or MarsBot.
+---
+title: "Autonomous UAV ground station research notes"
+description: "Research notes on autonomous UAV ground stations."
+type: research
+status: reference
+authority: Chartroom
+tags:
+  - research
+  - autonomy
+---

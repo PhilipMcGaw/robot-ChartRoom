@@ -1,3 +1,4 @@
+
 # Gazebo fundamentals
 
 ## Objective
@@ -34,3 +35,14 @@ Do not introduce realistic hydrodynamics, NATS, Cockpit, Control, or hardware ye
 - [ ] ROS 2 and Gazebo exchange the required data.
 - [ ] Simulation time is understood and works for relevant nodes.
 - [ ] The launch sequence is repeatable.
+---
+title: "Gazebo fundamentals"
+description: "Course material covering Gazebo fundamentals."
+type: course
+status: maintained
+authority: Chartroom
+tags:
+  - ros2
+  - gazebo
+  - learning
+---

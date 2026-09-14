@@ -1,3 +1,4 @@
+
 # K-9 Read Later
 
 This page collects references worth revisiting for the K-9 project. Items are research and design inspiration, not project requirements.
@@ -13,3 +14,14 @@ This page collects references worth revisiting for the K-9 project. Items are re
 Review this video specifically for ideas about the screens/displays associated with the rear/back-button area of K-9. Treat it as a visual reference to revisit during the mechanical, electrical, and UI design of the rear panel.
 
 **Status:** Read later / design inspiration. The implementation details have not been extracted or validated.
+---
+title: "K-9 Read Later"
+description: "Reading list and retained notes for future K-9 development."
+type: research
+status: draft
+authority: Chartroom
+tags:
+  - k9
+  - research
+  - read-later
+---

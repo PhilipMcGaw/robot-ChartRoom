@@ -1,3 +1,4 @@
+
 # SB Components MotorShield research notes
 
 The **SB Components MotorShield** is a Raspberry Pi motor-control board providing four DC-motor channels, direction/speed control, indicator LEDs, and simple sensor interfaces. Its Python library exposes motors as objects and provides grouped motor control, while the accompanying GUI supports independent direction and speed settings. citeturn0search0turn0search10
@@ -36,3 +37,14 @@ The board is a convenience/prototyping product, not a safety-rated motor control
 **Status:** Research / prototype inspiration. No hardware dependency planned.
 
 **Read later:** Review the driver implementation and determine whether the logical motor abstraction is useful for SwarmBot's hardware interface.
+---
+title: "SB Components MotorShield research notes"
+description: "Research notes on the SB Components MotorShield."
+type: research
+status: reference
+authority: Chartroom
+tags:
+  - research
+  - electronics
+  - motors
+---

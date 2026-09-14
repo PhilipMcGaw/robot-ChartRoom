@@ -1,3 +1,4 @@
+
 # NATS Core networking
 
 ## Objective
@@ -39,3 +40,14 @@ Do not introduce JetStream.
 - [ ] Subject wildcards are understood and tested.
 - [ ] Request/reply is understood and tested.
 - [ ] The same network model can later be used by the RPi without changing the HiL/SiL ROS architecture.
+---
+title: "NATS Core networking"
+description: "Course exercise for NATS Core networking in the Robots environment."
+type: course
+status: maintained
+authority: Chartroom
+tags:
+  - ros2
+  - nats
+  - learning
+---

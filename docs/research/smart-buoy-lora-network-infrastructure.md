@@ -1,3 +1,4 @@
+
 # Smart Buoy LoRa Network Infrastructure
 
 ## Data path to a PHP/MySQL server
@@ -62,3 +63,15 @@ Buoy radio package
   → MySQL/MariaDB
   → PHP API, dashboard, or CSV export
 ```
+---
+title: "Smart Buoy LoRa Network Infrastructure"
+description: "Research notes on Smart Buoy LoRa network infrastructure."
+type: research
+status: reference
+authority: Chartroom
+tags:
+  - research
+  - buoy
+  - lora
+  - communications
+---

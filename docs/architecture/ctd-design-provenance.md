@@ -1,3 +1,4 @@
+
 # CTD design provenance
 
 ## Conductivity probe
@@ -51,4 +52,14 @@ These references describe design provenance; the Cuttlefish/ROV implementation m
 
 
 
-
+---
+title: "CTD Design Provenance"
+description: "Design provenance and engineering context for the conductivity, temperature, and depth system."
+type: architecture
+status: maintained
+authority: Chartroom
+tags:
+  - architecture
+  - ctd
+  - hardware
+---

@@ -1,3 +1,4 @@
+
 # SwarmBot optional face/display module
 
 The SwarmBot project could support an optional small front-mounted face/display module. The module should be treated as a replaceable payload rather than a requirement for the robot to operate.
@@ -40,3 +41,14 @@ The face should therefore be considered both a human-robot-interaction feature a
 ## Status
 
 **Status:** Read later / design inspiration. No display, controller, mechanical interface, or animation architecture has been selected for SwarmBot.
+---
+title: "SwarmBot optional face/display module"
+description: "Research notes on an optional SwarmBot face and display module."
+type: research
+status: reference
+authority: Chartroom
+tags:
+  - research
+  - swarmbot
+  - frontend
+---

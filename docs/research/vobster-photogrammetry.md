@@ -1,3 +1,4 @@
+
 # Vobster Photogrammetry Project
 
 ## Source
@@ -78,3 +79,14 @@ The Vobster project is a practical recreational/commercial photogrammetry projec
 - [Vobster Photogrammetry Project](https://3dmb.uk/project/vobster-photogrammetry-project/)
 - [3dMB ROV Underwater Photogrammetry & Mapping](https://3dmb.uk/rov-underwater-photogrammetry-and-mapping/)
 - [3dMB](https://3dmb.uk/)
+---
+title: "Vobster Photogrammetry Project"
+description: "Research notes on the Vobster Photogrammetry Project."
+type: research
+status: reference
+authority: Chartroom
+tags:
+  - research
+  - photogrammetry
+  - rov
+---

@@ -1,3 +1,4 @@
+
 # Build and inspect a small ROS 2 robot
 
 ## Purpose
@@ -170,3 +171,14 @@ Open RViz2 and inspect the `RobotModel` and `TF` displays. Confirm that the chas
 - camera behaviour;
 - NATS integration; or
 - physical ROV operation.
+---
+title: "Build and inspect a small ROS 2 robot"
+description: "Course exercise for building and inspecting a small ROS 2 robot description."
+type: course
+status: maintained
+authority: Chartroom
+tags:
+  - ros2
+  - robot-description
+  - learning
+---

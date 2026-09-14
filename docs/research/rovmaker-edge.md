@@ -1,3 +1,4 @@
+
 # RovMaker Edge research notes
 
 RovMaker Edge is an open-source underwater robot project from ROVMAKER, created as an educational and exploratory ROV and based on ArduSub. It is a useful historical reference for physical ROV architecture, pressure housing, buoyancy, penetrators, propulsion, and integration of Raspberry Pi and Pixhawk-class hardware.
@@ -139,3 +140,13 @@ The RovMaker Edge Hackaday project currently shows limited uploaded project mate
 - [TechMonkeyBusiness OpenSource ROV](https://www.techmonkeybusiness.com/articles/OpenSource_ROV.html)
 - [Blue Robotics control-board discussion](https://discuss.bluerobotics.com/t/control-board-options-pros-and-cons/812)
 - [ArduPilot ROV project discussion](https://discuss.ardupilot.org/t/your-own-remotely-operated-vehicle-rov-project/7951)
+---
+title: "RovMaker Edge research notes"
+description: "Research notes on the RovMaker Edge platform."
+type: research
+status: reference
+authority: Chartroom
+tags:
+  - research
+  - rov
+---

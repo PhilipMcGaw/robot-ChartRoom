@@ -1,3 +1,4 @@
+
 # Vehicle model and actuation
 
 ## Objective
@@ -39,3 +40,14 @@ Simulated vehicles belong to SquidLink under its ROS 2 workspace; this lesson ex
 - [ ] Forward, turning, and vertical responses are measurable.
 - [ ] Vehicle parameters are identified as justified values or placeholders.
 - [ ] The model is ready for sensor integration.
+---
+title: "Vehicle model and actuation"
+description: "Course material covering vehicle modelling and actuation."
+type: course
+status: maintained
+authority: Chartroom
+tags:
+  - ros2
+  - gazebo
+  - learning
+---

@@ -1,3 +1,4 @@
+
 # OSOYOO robotics research notes
 
 OSOYOO is a useful reference for **educational, low-cost robotics and staged learning** rather than as a source of architecture to copy. Its current catalogue spans Arduino, ESP32, Raspberry Pi, Raspberry Pi Pico, Micro:bit, sensors, motor-driver boards, robot-car platforms, mecanum vehicles, tank vehicles, displays, and IoT learning kits. citeturn0search0
@@ -113,3 +114,13 @@ Do not adopt OSOYOO's hardware, software, Blynk/MQTT examples, or specific robot
 **Status:** Research / educational robotics reference. No OSOYOO hardware or software dependency is planned.
 
 **Read later:** Review the current ESP32, Raspberry Pi, differential-drive, mecanum, and Mars Explorer platforms, concentrating on their curriculum structure, interfaces, and documentation rather than product selection.
+---
+title: "OSOYOO robotics research notes"
+description: "Research notes on OSOYOO robotics material."
+type: research
+status: reference
+authority: Chartroom
+tags:
+  - research
+  - robotics
+---

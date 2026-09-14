@@ -1,3 +1,4 @@
+
 # ROS 2 application fundamentals
 
 ## Objective
@@ -68,3 +69,13 @@ Do not invent the ROV application protocol here. The NATS contract is the applic
 - [ ] A launch file starts a small application graph.
 - [ ] Basic QoS behaviour is understood.
 - [ ] The ROS graph can be inspected from the command line.
+---
+title: "ROS 2 application fundamentals"
+description: "Course material covering ROS 2 application fundamentals."
+type: course
+status: maintained
+authority: Chartroom
+tags:
+  - ros2
+  - learning
+---

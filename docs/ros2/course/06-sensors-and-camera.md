@@ -1,3 +1,4 @@
+
 # Sensors and camera
 
 ## Objective
@@ -40,3 +41,15 @@ Cockpit should receive simulated camera output through the same application-faci
 - [ ] Sensor timestamps use the correct simulation-time model.
 - [ ] A simulated camera produces a usable stream.
 - [ ] Camera transport remains separate from NATS application messaging.
+---
+title: "Sensors and camera"
+description: "Course material covering simulated sensors and camera integration."
+type: course
+status: maintained
+authority: Chartroom
+tags:
+  - ros2
+  - gazebo
+  - sensors
+  - learning
+---

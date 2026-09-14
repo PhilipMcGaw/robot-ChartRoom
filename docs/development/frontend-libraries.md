@@ -1,3 +1,4 @@
+
 # Frontend Libraries
 
 This document records frontend libraries that have been selected, evaluated, or identified as potentially useful to the Robots project.
@@ -30,3 +31,14 @@ If adopted, prefer importing only the required Anime.js modules rather than addi
 ### Authority
 
 This page records the project-level evaluation and rationale. Any implementation-specific dependency configuration belongs to the CuttleOS repository.
+---
+title: "Frontend Libraries"
+description: "Evaluation and selection guidance for frontend libraries used by the Robots project."
+type: guidance
+status: maintained
+authority: Chartroom
+tags:
+  - development
+  - frontend
+  - cuttleos
+---

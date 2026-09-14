@@ -1,3 +1,4 @@
+
 # Raspberry Pi deployment
 
 This document defines the project-level procedure for deploying a robot computer based on Raspberry Pi OS. It is intentionally maintained in Chartroom rather than in the software package being deployed. The same procedure should be usable for CuttleOS and for future robot-side software stacks, with repository-specific implementation details linked from here.
@@ -223,3 +224,14 @@ The private deployment directory contains robot-specific configuration such as N
 | ROS 2/Gazebo simulation | SquidLink |
 
 Chartroom describes the intended deployment process without becoming a second copy of the implementation. When commands, paths, service names, or provisioning behaviour change, the relevant software repository is the implementation authority and this page should be updated when the project-level procedure changes.
+---
+title: "Raspberry Pi Deployment"
+description: "Deployment and provisioning guidance for Raspberry Pi robot hosts."
+type: guidance
+status: maintained
+authority: Chartroom
+tags:
+  - development
+  - raspberry-pi
+  - deployment
+---

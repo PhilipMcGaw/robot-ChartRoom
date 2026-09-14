@@ -1,3 +1,4 @@
+
 # ROS 2 / Gazebo Course
 
 This is the practical ROS 2 and Gazebo learning path developed for the Robots project.
@@ -28,3 +29,14 @@ A lesson is complete when its practical checks pass. Reading the material is not
 The course may link to reusable ROS 2 concepts and the dedicated [Gazebo](../gazebo.md) reference page where appropriate.
 
 Project-specific implementation belongs in [SquidLink](https://github.com/PhilipMcGaw/robot-SquidLink), not in this course.
+---
+title: "ROS 2 / Gazebo Course"
+description: "Practical ROS 2 and Gazebo learning path for the Robots project."
+type: course
+status: maintained
+authority: Chartroom
+tags:
+  - ros2
+  - gazebo
+  - learning
+---

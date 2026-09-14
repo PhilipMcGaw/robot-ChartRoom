@@ -1,3 +1,4 @@
+
 # DFRobot EC library
 
 ## Conductivity reference for the CTD sensor
@@ -38,3 +39,14 @@ The useful architectural lesson is to keep raw acquisition, calibration, physica
 **Status:** Research / reference implementation. Not selected as the CTD implementation and not a project dependency.
 
 **Read later:** [DFRobot_EC](https://github.com/DFRobot/DFRobot_EC), [DFRobot_EC10](https://github.com/DFRobot/DFRobot_EC10), and [DFRobot Analog EC Sensor K=10 documentation](https://wiki.dfrobot.com/dfr0300-h/).
+---
+title: "DFRobot EC library"
+description: "Research notes on the DFRobot electrical-conductivity library."
+type: research
+status: reference
+authority: Chartroom
+tags:
+  - research
+  - sensing
+  - ctd
+---

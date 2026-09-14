@@ -1,3 +1,4 @@
+
 # Learn Robotics — Raspberry Pi Robot Video Streaming
 
 ## Source
@@ -52,3 +53,14 @@ The tutorial relies on the RemoteMe platform, so its end-to-end architecture sho
 ## Read later
 
 - [Learn Robotics — Video Streaming Raspberry Pi Robot & Camera](https://www.learnrobotics.org/blog/video-streaming-raspberry-pi-robot-camera/)
+---
+title: "Learn Robotics — Raspberry Pi Robot Video Streaming"
+description: "Research notes on Raspberry Pi robot video streaming."
+type: research
+status: reference
+authority: Chartroom
+tags:
+  - research
+  - raspberry-pi
+  - video
+---

@@ -1,3 +1,4 @@
+
 # CPS 5 underwater drone research notes
 
 The **CPS 5** (Custom Printed Submarine) is a useful ROV reference because it combines a compact 3D-printable vehicle, structured build documentation, a tether, enclosed electronics, camera integration, and an explicit progression through multiple prototypes. The current CPS material describes a vehicle approximately 230 × 384 × 102 mm, with five motors, self-stabilisation/depth-hold features, 1080p live video, and a tethered architecture. citeturn1search1
@@ -45,3 +46,13 @@ CPS 5 is a maker/educational platform and should not be treated as a certified p
 **Status:** Research / design inspiration.
 
 **Read later:** Review the CPS 5 CAD/BOM structure, tether implementation, electronics-pipe arrangement, camera integration, and documentation workflow.
+---
+title: "CPS 5 underwater drone research notes"
+description: "Research notes on the CPS 5 underwater drone."
+type: research
+status: reference
+authority: Chartroom
+tags:
+  - research
+  - rov
+---

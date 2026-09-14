@@ -1,3 +1,4 @@
+
 # BorgCube ROV research notes
 
 **BorgCube ROV** is a long-running open ROV project by Tim Wilkinson. It is useful as a practical reference for integrating propulsion, buoyancy/stability, Raspberry Pi computing, watertight enclosures, servo-driven payloads, and operator software. The project explicitly targets manoeuvrability, a robotic arm, stereo vision, and an Oculus-compatible pilot interface. citeturn1search0
@@ -56,3 +57,13 @@ This is historical project research, not a validated ROV design specification. S
 **Status:** Research / design inspiration.
 
 **Read later:** Review the software repository, controller PCB history, PID/balance implementation, enclosure arrangement, and payload/arm integration.
+---
+title: "BorgCube ROV research notes"
+description: "Research notes on the BorgCube ROV."
+type: research
+status: reference
+authority: Chartroom
+tags:
+  - research
+  - rov
+---

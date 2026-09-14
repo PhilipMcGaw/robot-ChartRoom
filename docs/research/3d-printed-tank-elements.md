@@ -1,3 +1,4 @@
+
 # 3D-printed tank takes on the elements
 
 ## Source
@@ -41,3 +42,13 @@ It should therefore be treated as design inspiration and evidence that the conce
 ## Status
 
 **Research / mechanical design inspiration.** No tank drivetrain or tracked chassis dependency is planned.
+---
+title: "3D-printed tank takes on the elements"
+description: "Research notes on 3D-printed tank elements."
+type: research
+status: reference
+authority: Chartroom
+tags:
+  - research
+  - robot-hardware
+---

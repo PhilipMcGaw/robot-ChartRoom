@@ -1,3 +1,4 @@
+
 # 8BitRobots Module research notes
 
 The Hackaday.io **8BitRobots Module** project by Tim Wilkinson is particularly relevant to the Robots ecosystem because it explores a common hardware, software, and 3D-printed module intended to make small educational robots easier to build and program. The project is therefore a strong reference for **SwarmBot** and for the idea of reusable robot infrastructure rather than one-off vehicles. citeturn2view0
@@ -38,3 +39,13 @@ The project is historical inspiration rather than a recommendation to reproduce 
 **Status:** Research / design inspiration.
 
 **Read later:** Examine the module hardware, software architecture, Blockly integration, and mechanical standardisation for ideas applicable to SwarmBot and Test in a Box.
+---
+title: "8BitRobots Module research notes"
+description: "Research notes on the 8BitRobots module."
+type: research
+status: reference
+authority: Chartroom
+tags:
+  - research
+  - robot-hardware
+---

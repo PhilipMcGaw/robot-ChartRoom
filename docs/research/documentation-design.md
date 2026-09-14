@@ -1,3 +1,4 @@
+
 # Documentation and technical communication design
 
 This page collects research and design references for writing clear technical information across the Robots ecosystem, including classroom material, project documentation, datasheets, presentations, and public-facing technical communication.
@@ -40,3 +41,13 @@ A useful distinction is:
 > **Technical accuracy is necessary, but presentation determines how easily that accuracy can be understood and used.**
 
 **Status:** Read later / documentation design reference. These principles are not yet a formal ChartRoom documentation standard.
+---
+title: "Documentation and technical communication design"
+description: "Research and design notes for project documentation and technical communication."
+type: research
+status: reference
+authority: Chartroom
+tags:
+  - research
+  - documentation
+---

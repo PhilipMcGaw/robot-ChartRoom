@@ -1,3 +1,4 @@
+
 # Miharix WiFi RC
 
 ## Source
@@ -62,3 +63,14 @@ For SwarmBot, WiFi should be treated as a transport option while safety, command
 ## Status
 
 **Research / educational and operator-interface inspiration.** No dependency on the Miharix hardware or software is planned.
+---
+title: "Miharix WiFi RC"
+description: "Research notes on the Miharix WiFi RC platform."
+type: research
+status: reference
+authority: Chartroom
+tags:
+  - research
+  - robotics
+  - communications
+---

@@ -1,3 +1,4 @@
+
 # Community robotics and sensing references
 
 A collection of small robotics, ROV, environmental-sensing, video, and embedded-development projects supplied for review. These are references and sources of design inspiration, not project dependencies.
@@ -175,3 +176,14 @@ The strongest recurring themes from this batch are:
 **General inspiration:** Raspberry Pi car, tiny autonomous robot, EWON home robot, motor-car toy.
 
 These references should feed the existing **Test in a Box**, **SwarmBot**, **ROV**, **Smart Buoy/environmental sensing**, **Cockpit**, and **HiL/SiL** work rather than creating separate hardware projects for each reference.
+---
+title: "Community robotics and sensing references"
+description: "Collected community robotics and sensing references."
+type: research
+status: reference
+authority: Chartroom
+tags:
+  - research
+  - robotics
+  - sensing
+---

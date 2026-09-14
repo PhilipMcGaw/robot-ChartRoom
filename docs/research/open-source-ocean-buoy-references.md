@@ -1,3 +1,4 @@
+
 # Open-source ocean buoy and environmental sensing references
 
 A focused set of academic, student, and open-source buoy projects relevant to the Smart Buoy work. These are **research/read-later references**, not project dependencies. The purpose is to compare engineering approaches, deployment experience, measurement validation, power budgets, communications, and the transition from prototype to useful scientific instrument.
@@ -202,3 +203,14 @@ The goal is not to reproduce any one reference design. The references should be 
 [1] M. S. Al-Husainy et al., “Design, Implementation, and Measurement Procedure of Underwater and Water Surface Antenna for LoRa Communication”, *Sensors*, 2021. https://www.mdpi.com/1424-8220/21/4/1337
 
 [2] Ofcom, “Short-range devices” and UK Interface Requirement IR2030. https://www.ofcom.org.uk/spectrum/radio-equipment/short-range-devices
+---
+title: "Open-source ocean buoy and environmental sensing references"
+description: "References for open-source ocean buoys and environmental sensing."
+type: research
+status: reference
+authority: Chartroom
+tags:
+  - research
+  - buoy
+  - sensing
+---

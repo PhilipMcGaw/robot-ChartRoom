@@ -1,3 +1,4 @@
+
 # ZeroBot Raspberry Pi Zero FPV robot research notes
 
 The Hackaday.io **ZeroBot** is a compact Raspberry Pi Zero W-based, browser-controlled FPV robot by Max.K. It is a useful reference for small terrestrial robots, particularly the relationship between onboard computing, browser-based operator control, video, telemetry, motor control, power management, and compact 3D-printed mechanical packaging. The project began in 2017 and evolved into a ZeroBot Pro revision with battery monitoring, headlights, camera controls, and safe shutdown. citeturn0view0
@@ -127,3 +128,14 @@ Therefore:
 **Status:** Research / design inspiration. No ZeroBot software or hardware dependency is planned.
 
 **Read later:** Review the ZeroBot source repository and mechanical files, particularly the browser control/video implementation, power telemetry, and compact chassis/serviceability decisions.
+---
+title: "ZeroBot Raspberry Pi Zero FPV robot research notes"
+description: "Research notes on the ZeroBot Raspberry Pi Zero FPV robot."
+type: research
+status: reference
+authority: Chartroom
+tags:
+  - research
+  - raspberry-pi
+  - robotics
+---

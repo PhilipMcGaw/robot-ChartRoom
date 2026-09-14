@@ -1,3 +1,4 @@
+
 # Sofar Ocean Spotter research notes
 
 The [Sofar Ocean Spotter](https://www.sofarocean.com/products/spotter) is a useful commercial reference for autonomous ocean sensing. It provides a professional comparison point for the [T3chFlicks Smart Buoy](https://github.com/sk-t3ch/smart-buoy) and for the project's own CTD and distributed-sensor architecture.
@@ -148,3 +149,13 @@ For ROV use, the same principle may apply to payload and environmental sensors, 
 - [Sofar Ocean support and documentation](https://www.sofarocean.com/support)
 - [Bristlemouth](https://bristlemouth.org/)
 - [T3chFlicks Smart Buoy](https://github.com/sk-t3ch/smart-buoy)
+---
+title: "Sofar Ocean Spotter"
+description: "Research notes on the Sofar Ocean Spotter."
+type: research
+status: reference
+authority: Chartroom
+tags:
+  - research
+  - ocean-sensing
+---
