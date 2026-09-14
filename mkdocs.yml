@@ -27,6 +27,7 @@ markdown_extensions:
 
 nav:
   - Home: index.md
+  - Repository Index: repository-index.md
   - Architecture:
       - System Overview: architecture/overview.md
       - Communications: architecture/communications.md
@@ -66,6 +67,5 @@ nav:
   - Engineering Decisions:
       - Overview: decisions/index.md
   - Roadmap: roadmap.md
-
 
 
