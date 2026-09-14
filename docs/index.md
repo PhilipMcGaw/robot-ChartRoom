@@ -8,7 +8,6 @@ tags:
   - chartroom
   - robots-project
 ---
-
 # Chartroom
 
 **Chartroom** is the central engineering knowledge base for the Robots project.
