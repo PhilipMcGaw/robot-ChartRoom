@@ -1,3 +1,12 @@
+---
+title: "Documentation and technical communication design"
+description: "Documentation page covering Documentation and technical communication design."
+type: research
+status: reference
+authority: Chartroom
+tags:
+  - research
+---
 
 # Documentation and technical communication design
 
@@ -41,13 +50,3 @@ A useful distinction is:
 > **Technical accuracy is necessary, but presentation determines how easily that accuracy can be understood and used.**
 
 **Status:** Read later / documentation design reference. These principles are not yet a formal ChartRoom documentation standard.
----
-title: "Documentation and technical communication design"
-description: "Research and design notes for project documentation and technical communication."
-type: research
-status: reference
-authority: Chartroom
-tags:
-  - research
-  - documentation
----

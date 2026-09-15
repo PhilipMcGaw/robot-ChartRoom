@@ -1,3 +1,12 @@
+---
+title: "ESA ExoMy — Software Instructions"
+description: "Documentation page covering ESA ExoMy — Software Instructions."
+type: research
+status: reference
+authority: Chartroom
+tags:
+  - research
+---
 
 # ESA ExoMy — Software Instructions
 
@@ -120,14 +129,3 @@ Likewise, Docker should not automatically become a requirement for every robot. 
 
 - [ExoMy Software Instructions](https://github.com/esa-prl/ExoMy/wiki/Software-Instructions)
 - [ExoMy repository](https://github.com/esa-prl/ExoMy)
----
-title: "ESA ExoMy — Software Instructions"
-description: "Research notes and retained instructions for ESA ExoMy software."
-type: research
-status: reference
-authority: Chartroom
-tags:
-  - research
-  - robotics
-  - software
----

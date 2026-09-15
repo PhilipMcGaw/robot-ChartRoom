@@ -1,3 +1,12 @@
+---
+title: "Maka Niu — low-cost deep-sea imaging and sensing platform"
+description: "Documentation page covering Maka Niu — low-cost deep-sea imaging and sensing platform."
+type: research
+status: reference
+authority: Chartroom
+tags:
+  - research
+---
 
 # Maka Niu — low-cost deep-sea imaging and sensing platform
 
@@ -82,14 +91,3 @@ It is **not** a direct design for the current tethered ROV architecture: its wir
 - Raspberry Pi, *Extreme Raspberry Pi: projects taking Raspberry Pi to its very limits*.
 - Croff Bell et al., *Maka Niu: A low-cost, modular imaging and sensor platform to increase observation capabilities of the deep ocean*, Frontiers in Marine Science, 2022.
 - Croff Bell et al., *Low-Cost, Deep-Sea Imaging and Analysis Tools for Deep-Sea Exploration: A Collaborative Design Study*, Frontiers in Marine Science, 2022.
----
-title: "Maka Niu — low-cost deep-sea imaging and sensing platform"
-description: "Research notes on the Maka Niu deep-sea imaging and sensing platform."
-type: research
-status: reference
-authority: Chartroom
-tags:
-  - research
-  - rov
-  - sensing
----

@@ -1,3 +1,12 @@
+---
+title: "OSOYOO robotics research notes"
+description: "Documentation page covering OSOYOO robotics research notes."
+type: research
+status: reference
+authority: Chartroom
+tags:
+  - research
+---
 
 # OSOYOO robotics research notes
 
@@ -114,13 +123,3 @@ Do not adopt OSOYOO's hardware, software, Blynk/MQTT examples, or specific robot
 **Status:** Research / educational robotics reference. No OSOYOO hardware or software dependency is planned.
 
 **Read later:** Review the current ESP32, Raspberry Pi, differential-drive, mecanum, and Mars Explorer platforms, concentrating on their curriculum structure, interfaces, and documentation rather than product selection.
----
-title: "OSOYOO robotics research notes"
-description: "Research notes on OSOYOO robotics material."
-type: research
-status: reference
-authority: Chartroom
-tags:
-  - research
-  - robotics
----

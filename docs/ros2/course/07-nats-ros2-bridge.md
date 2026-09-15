@@ -1,3 +1,14 @@
+---
+title: "NATS ↔ ROS 2 bridge"
+description: "Documentation page covering NATS ↔ ROS 2 bridge."
+type: course
+status: maintained
+authority: Chartroom
+tags:
+  - ros2
+  - learning
+  - nats
+---
 
 # NATS ↔ ROS 2 bridge
 
@@ -39,14 +50,3 @@ Preserve established NATS subjects, payload formats, units, safety boundaries, a
 - [ ] Simulated telemetry returns through the bridge.
 - [ ] Cockpit-facing application data remains NATS-based.
 - [ ] ROS 2 remains an internal HiL/SiL implementation detail.
----
-title: "NATS ↔ ROS 2 bridge"
-description: "Course material covering the NATS Core to ROS 2 bridge boundary."
-type: course
-status: maintained
-authority: Chartroom
-tags:
-  - ros2
-  - nats
-  - learning
----

@@ -1,3 +1,12 @@
+---
+title: "SwarmBot optional face/display module"
+description: "Documentation page covering SwarmBot optional face/display module."
+type: research
+status: reference
+authority: Chartroom
+tags:
+  - research
+---
 
 # SwarmBot optional face/display module
 
@@ -41,14 +50,3 @@ The face should therefore be considered both a human-robot-interaction feature a
 ## Status
 
 **Status:** Read later / design inspiration. No display, controller, mechanical interface, or animation architecture has been selected for SwarmBot.
----
-title: "SwarmBot optional face/display module"
-description: "Research notes on an optional SwarmBot face and display module."
-type: research
-status: reference
-authority: Chartroom
-tags:
-  - research
-  - swarmbot
-  - frontend
----

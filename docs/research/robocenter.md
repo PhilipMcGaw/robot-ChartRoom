@@ -1,3 +1,12 @@
+---
+title: "RoboCenter ROV research notes"
+description: "Documentation page covering RoboCenter ROV research notes."
+type: research
+status: reference
+authority: Chartroom
+tags:
+  - research
+---
 
 # RoboCenter ROV research notes
 
@@ -97,13 +106,3 @@ This supports the existing **ROV - HiL-and-SiL** direction and the aim of making
 - Which UI functions belong in Cockpit core versus vehicle-specific plugins/modules?
 - Can the existing ROV HiL/SiL environment reproduce the useful MUR simulator workflow while retaining our NATS architecture?
 - Which propulsion telemetry is worth standardising before adding more actuator hardware?
----
-title: "RoboCenter ROV research notes"
-description: "Research notes on the RoboCenter ROV."
-type: research
-status: reference
-authority: Chartroom
-tags:
-  - research
-  - rov
----

@@ -1,14 +1,13 @@
-
-# Development Environment
-
-Development environment requirements and setup instructions for working on the Robots ecosystem.
 ---
 title: "Development Environment"
-description: "Development environment guidance for the Robots project."
+description: "Documentation page covering Development Environment."
 type: guidance
 status: maintained
 authority: Chartroom
 tags:
-  - development
-  - environment
+  - documentation
 ---
+
+# Development Environment
+
+Development environment requirements and setup instructions for working on the Robots ecosystem.

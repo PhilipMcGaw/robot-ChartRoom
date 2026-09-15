@@ -1,3 +1,12 @@
+---
+title: "ZeroBot Raspberry Pi Zero FPV robot research notes"
+description: "Documentation page covering ZeroBot Raspberry Pi Zero FPV robot research notes."
+type: research
+status: reference
+authority: Chartroom
+tags:
+  - research
+---
 
 # ZeroBot Raspberry Pi Zero FPV robot research notes
 
@@ -128,14 +137,3 @@ Therefore:
 **Status:** Research / design inspiration. No ZeroBot software or hardware dependency is planned.
 
 **Read later:** Review the ZeroBot source repository and mechanical files, particularly the browser control/video implementation, power telemetry, and compact chassis/serviceability decisions.
----
-title: "ZeroBot Raspberry Pi Zero FPV robot research notes"
-description: "Research notes on the ZeroBot Raspberry Pi Zero FPV robot."
-type: research
-status: reference
-authority: Chartroom
-tags:
-  - research
-  - raspberry-pi
-  - robotics
----

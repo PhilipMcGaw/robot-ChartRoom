@@ -1,3 +1,12 @@
+---
+title: "Autonomous UAV ground station research notes"
+description: "Documentation page covering Autonomous UAV ground station research notes."
+type: research
+status: reference
+authority: Chartroom
+tags:
+  - research
+---
 
 # Autonomous UAV ground station research notes
 
@@ -78,13 +87,3 @@ Therefore:
 **Status:** Research / design inspiration. No dependency or architecture decision has been adopted from this project.
 
 **Read later:** Review the project's source repository, dashboard implementation, schematic, and progress videos if the autonomous-mode or ground-station architecture becomes relevant to Cockpit or MarsBot.
----
-title: "Autonomous UAV ground station research notes"
-description: "Research notes on autonomous UAV ground stations."
-type: research
-status: reference
-authority: Chartroom
-tags:
-  - research
-  - autonomy
----

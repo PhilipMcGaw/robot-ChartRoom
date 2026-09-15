@@ -1,3 +1,12 @@
+---
+title: "BlueOS and Adeept Robot HAT"
+description: "Documentation page covering BlueOS and Adeept Robot HAT."
+type: architecture
+status: maintained
+authority: Chartroom
+tags:
+  - architecture
+---
 
 # BlueOS and Adeept Robot HAT
 
@@ -319,14 +328,3 @@ This should allow the project to reuse mature BlueOS infrastructure while retain
 - [BlueOS Extensions](https://blueos.cloud/docs/stable/development/extensions/)
 - [BlueOS GitHub](https://github.com/bluerobotics/BlueOS)
 - [Blue Robotics Cockpit](https://github.com/bluerobotics/cockpit)
----
-title: "BlueOS and Adeept Robot HAT"
-description: "Reference notes on BlueOS and the Adeept Robot HAT."
-type: research
-status: reference
-authority: Chartroom
-tags:
-  - blueos
-  - robot-hardware
-  - research
----

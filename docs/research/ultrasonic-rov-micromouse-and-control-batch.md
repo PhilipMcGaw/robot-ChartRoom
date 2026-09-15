@@ -1,3 +1,12 @@
+---
+title: "Ultrasonic, ROV, I/O expansion, and micromouse references"
+description: "Documentation page covering Ultrasonic, ROV, I/O expansion, and micromouse references."
+type: research
+status: reference
+authority: Chartroom
+tags:
+  - research
+---
 
 # Ultrasonic, ROV, I/O expansion, and micromouse references
 
@@ -137,14 +146,3 @@ The Joshua CCL Micromouse project is a more advanced example of a self-contained
 - Compare ultrasonic, LiDAR, and stereo-vision interfaces for SwarmBot/MarsBot.
 - Consider whether an MCU-as-I²C-peripheral pattern is useful for ROV peripheral hardware or Smart Buoy sensor aggregation.
 - Extract calibration/diagnostic exercises from Micromouse for the HiL/SiL validation roadmap.
----
-title: "Ultrasonic, ROV, I/O expansion, and micromouse references"
-description: "Collected references on ultrasonic systems, ROVs, I/O expansion, and micromouse projects."
-type: research
-status: reference
-authority: Chartroom
-tags:
-  - research
-  - rov
-  - electronics
----

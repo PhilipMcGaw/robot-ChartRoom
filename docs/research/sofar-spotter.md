@@ -1,3 +1,12 @@
+---
+title: "Sofar Ocean Spotter research notes"
+description: "Documentation page covering Sofar Ocean Spotter research notes."
+type: research
+status: reference
+authority: Chartroom
+tags:
+  - research
+---
 
 # Sofar Ocean Spotter research notes
 
@@ -149,13 +158,3 @@ For ROV use, the same principle may apply to payload and environmental sensors, 
 - [Sofar Ocean support and documentation](https://www.sofarocean.com/support)
 - [Bristlemouth](https://bristlemouth.org/)
 - [T3chFlicks Smart Buoy](https://github.com/sk-t3ch/smart-buoy)
----
-title: "Sofar Ocean Spotter"
-description: "Research notes on the Sofar Ocean Spotter."
-type: research
-status: reference
-authority: Chartroom
-tags:
-  - research
-  - ocean-sensing
----

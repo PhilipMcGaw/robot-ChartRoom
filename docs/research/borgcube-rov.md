@@ -1,3 +1,12 @@
+---
+title: "BorgCube ROV research notes"
+description: "Documentation page covering BorgCube ROV research notes."
+type: research
+status: reference
+authority: Chartroom
+tags:
+  - research
+---
 
 # BorgCube ROV research notes
 
@@ -57,13 +66,3 @@ This is historical project research, not a validated ROV design specification. S
 **Status:** Research / design inspiration.
 
 **Read later:** Review the software repository, controller PCB history, PID/balance implementation, enclosure arrangement, and payload/arm integration.
----
-title: "BorgCube ROV research notes"
-description: "Research notes on the BorgCube ROV."
-type: research
-status: reference
-authority: Chartroom
-tags:
-  - research
-  - rov
----

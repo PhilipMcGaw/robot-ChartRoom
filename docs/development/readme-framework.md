@@ -1,3 +1,12 @@
+---
+title: "README Framework"
+description: "Documentation page covering README Framework."
+type: guidance
+status: maintained
+authority: Chartroom
+tags:
+  - documentation
+---
 
 # README Framework
 
@@ -39,13 +48,3 @@ Use explicit evidence-based terms such as `planned`, `implemented`, `tested`, `b
 ## Style
 
 Follow the [Robots Project Documentation Standard](documentation-standard.md), including British English, Oxford commas, clear technical prose, and consistent SI-unit formatting.
----
-title: "README Framework"
-description: "Framework for consistent repository and project README files."
-type: guidance
-status: maintained
-authority: Chartroom
-tags:
-  - development
-  - documentation
----

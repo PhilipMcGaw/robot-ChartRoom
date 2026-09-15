@@ -1,3 +1,12 @@
+---
+title: "Smart Buoy LoRa Network Infrastructure"
+description: "Documentation page covering Smart Buoy LoRa Network Infrastructure."
+type: research
+status: reference
+authority: Chartroom
+tags:
+  - research
+---
 
 # Smart Buoy LoRa Network Infrastructure
 
@@ -63,15 +72,3 @@ Buoy radio package
   → MySQL/MariaDB
   → PHP API, dashboard, or CSV export
 ```
----
-title: "Smart Buoy LoRa Network Infrastructure"
-description: "Research notes on Smart Buoy LoRa network infrastructure."
-type: research
-status: reference
-authority: Chartroom
-tags:
-  - research
-  - buoy
-  - lora
-  - communications
----

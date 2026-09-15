@@ -1,15 +1,13 @@
-
-# Testing
-
-Testing strategy, test environments, and verification practices for the Robots ecosystem.
 ---
 title: "Testing"
-description: "Testing principles and evidence boundaries for the Robots project."
+description: "Documentation page covering Testing."
 type: guidance
 status: maintained
 authority: Chartroom
 tags:
-  - development
-  - testing
-  - validation
+  - documentation
 ---
+
+# Testing
+
+Testing strategy, test environments, and verification practices for the Robots ecosystem.

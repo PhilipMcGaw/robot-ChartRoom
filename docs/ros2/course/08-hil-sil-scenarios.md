@@ -1,3 +1,14 @@
+---
+title: "Repeatable HiL/SiL scenarios"
+description: "Documentation page covering Repeatable HiL/SiL scenarios."
+type: course
+status: maintained
+authority: Chartroom
+tags:
+  - ros2
+  - learning
+  - simulation
+---
 
 # Repeatable HiL/SiL scenarios
 
@@ -42,15 +53,3 @@ A scenario must produce enough data to determine whether the expected behaviour 
 - [ ] Pass/fail criteria are explicit.
 - [ ] The scenario runs offline without physical hardware.
 - [ ] Later RPi/NATS HiL can use the same ROS/Gazebo model without architectural changes.
----
-title: "Repeatable HiL/SiL scenarios"
-description: "Course material covering repeatable HiL and SiL scenarios."
-type: course
-status: maintained
-authority: Chartroom
-tags:
-  - ros2
-  - hil
-  - sil
-  - learning
----

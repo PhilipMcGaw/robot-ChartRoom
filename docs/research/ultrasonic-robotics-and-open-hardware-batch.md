@@ -1,3 +1,12 @@
+---
+title: "Ultrasonic robotics, open hardware, and educational references"
+description: "Documentation page covering Ultrasonic robotics, open hardware, and educational references."
+type: research
+status: reference
+authority: Chartroom
+tags:
+  - research
+---
 
 # Ultrasonic robotics, open hardware, and educational references
 
@@ -103,14 +112,3 @@ The drawing-robot material demonstrates a complete engineering workflow around a
 - Investigate ultrasonic/acoustic sensing as a possible ROV or Smart Buoy payload.
 - Review the Obsidian ESP32 hardware files for MCU/SBC interface ideas, without treating the historical board as a current hardware recommendation.
 - Extract a staged Test in a Box exercise from the Drawing Robot progression: actuator → calibration → kinematics → path → validation.
----
-title: "Ultrasonic robotics, open hardware, and educational references"
-description: "Collected references on ultrasonic robotics, open hardware, and education."
-type: research
-status: reference
-authority: Chartroom
-tags:
-  - research
-  - robotics
-  - education
----

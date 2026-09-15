@@ -1,3 +1,12 @@
+---
+title: "Raspberry Pi deployment"
+description: "Documentation page covering Raspberry Pi deployment."
+type: guidance
+status: maintained
+authority: Chartroom
+tags:
+  - documentation
+---
 
 # Raspberry Pi deployment
 
@@ -224,14 +233,3 @@ The private deployment directory contains robot-specific configuration such as N
 | ROS 2/Gazebo simulation | SquidLink |
 
 Chartroom describes the intended deployment process without becoming a second copy of the implementation. When commands, paths, service names, or provisioning behaviour change, the relevant software repository is the implementation authority and this page should be updated when the project-level procedure changes.
----
-title: "Raspberry Pi Deployment"
-description: "Deployment and provisioning guidance for Raspberry Pi robot hosts."
-type: guidance
-status: maintained
-authority: Chartroom
-tags:
-  - development
-  - raspberry-pi
-  - deployment
----

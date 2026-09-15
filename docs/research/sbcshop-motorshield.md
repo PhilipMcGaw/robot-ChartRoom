@@ -1,3 +1,12 @@
+---
+title: "SB Components MotorShield research notes"
+description: "Documentation page covering SB Components MotorShield research notes."
+type: research
+status: reference
+authority: Chartroom
+tags:
+  - research
+---
 
 # SB Components MotorShield research notes
 
@@ -37,14 +46,3 @@ The board is a convenience/prototyping product, not a safety-rated motor control
 **Status:** Research / prototype inspiration. No hardware dependency planned.
 
 **Read later:** Review the driver implementation and determine whether the logical motor abstraction is useful for SwarmBot's hardware interface.
----
-title: "SB Components MotorShield research notes"
-description: "Research notes on the SB Components MotorShield."
-type: research
-status: reference
-authority: Chartroom
-tags:
-  - research
-  - electronics
-  - motors
----

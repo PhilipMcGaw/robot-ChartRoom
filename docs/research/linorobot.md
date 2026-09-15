@@ -1,3 +1,12 @@
+---
+title: "LinoRobot — ROS robot platform research notes"
+description: "Documentation page covering LinoRobot — ROS robot platform research notes."
+type: research
+status: reference
+authority: Chartroom
+tags:
+  - research
+---
 
 # LinoRobot — ROS robot platform research notes
 
@@ -61,14 +70,3 @@ LinoRobot is primarily useful as a ROS/mobile-robot reference. Its hardware and 
 **Status:** Research / design inspiration.
 
 **Read later:** Examine the repository/project structure, ROS packages, robot description, sensor integration, and navigation examples for ideas that can be adapted to the ROS 2 Jazzy learning path.
----
-title: "LinoRobot — ROS robot platform research notes"
-description: "Research notes on the LinoRobot platform."
-type: research
-status: reference
-authority: Chartroom
-tags:
-  - research
-  - ros2
-  - robotics
----

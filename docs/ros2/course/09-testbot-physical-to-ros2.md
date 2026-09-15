@@ -1,3 +1,13 @@
+---
+title: "Testbot: physical build to ROS 2 description"
+description: "Documentation page covering Testbot: physical build to ROS 2 description."
+type: course
+status: maintained
+authority: Chartroom
+tags:
+  - ros2
+  - learning
+---
 
 # Testbot: physical build to ROS 2 description
 
@@ -69,14 +79,3 @@ Do not edit dimensions from memory. Take measurements from the physical Testbot 
 - that the model is a validated digital twin.
 
 The next stage should add Gazebo physics and differential-drive control. Add the CuttleOS NATS bridge only after the local ROS 2/Gazebo loop is repeatable.
----
-title: "Testbot: physical build to ROS 2 description"
-description: "Course exercise connecting the physical Testbot record to a ROS 2 description."
-type: course
-status: maintained
-authority: Chartroom
-tags:
-  - ros2
-  - testbot
-  - learning
----

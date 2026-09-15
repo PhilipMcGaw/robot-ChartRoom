@@ -1,3 +1,12 @@
+---
+title: "RovMaker Edge research notes"
+description: "Documentation page covering RovMaker Edge research notes."
+type: research
+status: reference
+authority: Chartroom
+tags:
+  - research
+---
 
 # RovMaker Edge research notes
 
@@ -140,13 +149,3 @@ The RovMaker Edge Hackaday project currently shows limited uploaded project mate
 - [TechMonkeyBusiness OpenSource ROV](https://www.techmonkeybusiness.com/articles/OpenSource_ROV.html)
 - [Blue Robotics control-board discussion](https://discuss.bluerobotics.com/t/control-board-options-pros-and-cons/812)
 - [ArduPilot ROV project discussion](https://discuss.ardupilot.org/t/your-own-remotely-operated-vehicle-rov-project/7951)
----
-title: "RovMaker Edge research notes"
-description: "Research notes on the RovMaker Edge platform."
-type: research
-status: reference
-authority: Chartroom
-tags:
-  - research
-  - rov
----

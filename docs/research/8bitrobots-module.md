@@ -1,3 +1,12 @@
+---
+title: "8BitRobots Module research notes"
+description: "Documentation page covering 8BitRobots Module research notes."
+type: research
+status: reference
+authority: Chartroom
+tags:
+  - research
+---
 
 # 8BitRobots Module research notes
 
@@ -39,13 +48,3 @@ The project is historical inspiration rather than a recommendation to reproduce 
 **Status:** Research / design inspiration.
 
 **Read later:** Examine the module hardware, software architecture, Blockly integration, and mechanical standardisation for ideas applicable to SwarmBot and Test in a Box.
----
-title: "8BitRobots Module research notes"
-description: "Research notes on the 8BitRobots module."
-type: research
-status: reference
-authority: Chartroom
-tags:
-  - research
-  - robot-hardware
----

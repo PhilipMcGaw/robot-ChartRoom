@@ -1,3 +1,13 @@
+---
+title: "Robots project repository index"
+description: "Documentation page covering Robots project repository index."
+type: index
+status: maintained
+authority: Chartroom
+tags:
+  - index
+  - repositories
+---
 
 # Robots project repository index
 
@@ -138,14 +148,3 @@ integration.
    references alone.
 5. Record explicit evidence for software tests, bench tests, physical tests,
    and production validation separately.
----
-title: "Robots Project Repository Index"
-description: "Index of the attached repositories, their responsibilities, and their authoritative context."
-type: index
-status: maintained
-authority: Chartroom
-tags:
-  - index
-  - repositories
-  - architecture
----

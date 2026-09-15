@@ -1,3 +1,12 @@
+---
+title: "UKMARS and Micromouse reference"
+description: "Documentation page covering UKMARS and Micromouse reference."
+type: research
+status: reference
+authority: Chartroom
+tags:
+  - research
+---
 
 # UKMARS and Micromouse reference
 
@@ -65,13 +74,3 @@ The key lesson is that **diagnostics and calibration are part of the platform**,
 - Compare UKMARSBOT's repository structure with the intended Test in a Box structure.
 - Review the sensor-board and mechanical modularity for ideas applicable to SwarmBot.
 - Extract calibration and observability patterns from Micromouse for `ROV - HiL-and-SiL`.
----
-title: "UKMARS and Micromouse reference"
-description: "Reference notes on UKMARS and Micromouse projects."
-type: research
-status: reference
-authority: Chartroom
-tags:
-  - research
-  - robotics
----

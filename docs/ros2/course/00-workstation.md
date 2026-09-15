@@ -1,3 +1,14 @@
+---
+title: "Workstation setup — Ubuntu, ROS 2, and Gazebo"
+description: "Documentation page covering Workstation setup — Ubuntu, ROS 2, and Gazebo."
+type: course
+status: maintained
+authority: Chartroom
+tags:
+  - ros2
+  - learning
+  - gazebo
+---
 
 # Workstation setup — Ubuntu, ROS 2, and Gazebo
 
@@ -205,15 +216,3 @@ Then take a VMware snapshot. This provides a known-good workstation baseline.
 - [ ] `colcon` is available.
 - [ ] The SquidLink workspace can be created.
 - [ ] The VM is suitable for a baseline snapshot.
----
-title: "Workstation setup — Ubuntu, ROS 2, and Gazebo"
-description: "Course exercise for preparing an Ubuntu, ROS 2, and Gazebo workstation."
-type: course
-status: maintained
-authority: Chartroom
-tags:
-  - ros2
-  - gazebo
-  - learning
-  - setup
----
