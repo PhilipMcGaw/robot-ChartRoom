@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+      <title>Quartz 4</title>
+      <link>https://quartz.jzhao.xyz</link>
+      <description>Last 10 notes on Quartz 4</description>
+      <generator>Quartz -- quartz.jzhao.xyz</generator>
+      <item>
+    <title>BlueOS and Adeept Robot HAT</title>
+    <link>https://quartz.jzhao.xyz/architecture/blueos-adeept-robot-hat</link>
+    <guid>https://quartz.jzhao.xyz/architecture/blueos-adeept-robot-hat</guid>
+    <description><![CDATA[ Documentation page covering BlueOS and Adeept Robot HAT. ]]></description>
+    <pubDate>Tue, 15 Sep 2026 05:36:46 GMT</pubDate>
+  </item><item>
+    <title>CTD design provenance</title>
+    <link>https://quartz.jzhao.xyz/architecture/ctd-design-provenance</link>
+    <guid>https://quartz.jzhao.xyz/architecture/ctd-design-provenance</guid>
+    <description><![CDATA[ Documentation page covering CTD design provenance. ]]></description>
+    <pubDate>Tue, 15 Sep 2026 05:36:46 GMT</pubDate>
+  </item><item>
+    <title>Cockpit</title>
+    <link>https://quartz.jzhao.xyz/cockpit/</link>
+    <guid>https://quartz.jzhao.xyz/cockpit/</guid>
+    <description><![CDATA[ Documentation page covering Cockpit. ]]></description>
+    <pubDate>Tue, 15 Sep 2026 05:36:46 GMT</pubDate>
+  </item><item>
+    <title>DataLogger</title>
+    <link>https://quartz.jzhao.xyz/datalogger/</link>
+    <guid>https://quartz.jzhao.xyz/datalogger/</guid>
+    <description><![CDATA[ Documentation page covering DataLogger. ]]></description>
+    <pubDate>Tue, 15 Sep 2026 05:36:46 GMT</pubDate>
+  </item><item>
+    <title>Deployment</title>
+    <link>https://quartz.jzhao.xyz/development/deployment</link>
+    <guid>https://quartz.jzhao.xyz/development/deployment</guid>
+    <description><![CDATA[ Documentation page covering Deployment. ]]></description>
+    <pubDate>Tue, 15 Sep 2026 05:36:46 GMT</pubDate>
+  </item><item>
+    <title>Robots Project Documentation Standard</title>
+    <link>https://quartz.jzhao.xyz/development/documentation-standard</link>
+    <guid>https://quartz.jzhao.xyz/development/documentation-standard</guid>
+    <description><![CDATA[ Documentation page covering Robots Project Documentation Standard. ]]></description>
+    <pubDate>Tue, 15 Sep 2026 05:36:46 GMT</pubDate>
+  </item><item>
+    <title>Development Environment</title>
+    <link>https://quartz.jzhao.xyz/development/environment</link>
+    <guid>https://quartz.jzhao.xyz/development/environment</guid>
+    <description><![CDATA[ Documentation page covering Development Environment. ]]></description>
+    <pubDate>Tue, 15 Sep 2026 05:36:46 GMT</pubDate>
+  </item><item>
+    <title>Frontend Libraries</title>
+    <link>https://quartz.jzhao.xyz/development/frontend-libraries</link>
+    <guid>https://quartz.jzhao.xyz/development/frontend-libraries</guid>
+    <description><![CDATA[ Documentation page covering Frontend Libraries. ]]></description>
+    <pubDate>Tue, 15 Sep 2026 05:36:46 GMT</pubDate>
+  </item><item>
+    <title>Hardware documentation</title>
+    <link>https://quartz.jzhao.xyz/development/hardware-documentation</link>
+    <guid>https://quartz.jzhao.xyz/development/hardware-documentation</guid>
+    <description><![CDATA[ Documentation page covering Hardware documentation. ]]></description>
+    <pubDate>Tue, 15 Sep 2026 05:36:46 GMT</pubDate>
+  </item><item>
+    <title>Raspberry Pi deployment</title>
+    <link>https://quartz.jzhao.xyz/development/raspberry-pi-deployment</link>
+    <guid>https://quartz.jzhao.xyz/development/raspberry-pi-deployment</guid>
+    <description><![CDATA[ Documentation page covering Raspberry Pi deployment. ]]></description>
+    <pubDate>Tue, 15 Sep 2026 05:36:46 GMT</pubDate>
+  </item>
+    </channel>
+  </rss>

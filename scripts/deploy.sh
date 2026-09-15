@@ -32,9 +32,12 @@ if [ ! -x "$QUARTZ_DIR/node_modules/.bin/quartz" ]; then
 fi
 
 echo "==> Generating static site"
-npm --prefix "$QUARTZ_DIR" exec -- quartz build \
-    --directory "$CONTENT_DIR" \
-    --output "$SITE_DIR"
+(
+    cd "$QUARTZ_DIR"
+    npm run quartz -- build \
+        --directory "$CONTENT_DIR" \
+        --output "$SITE_DIR"
+)
 
 echo "==> Static site created"
 echo "    $SITE_DIR"
