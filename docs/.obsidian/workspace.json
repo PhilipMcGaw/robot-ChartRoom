@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
+                "file": "cuttleos/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -195,11 +195,13 @@
   },
   "active": "fea499bb8e4a4380",
   "lastOpenFiles": [
+    "cockpit/index.md",
+    "k9-read-later.md",
+    "index.md",
     "hil-sil/index.md",
     "architecture/blueos-adeept-robot-hat.md",
     "datalogger/index.md",
     "cuttleos/index.md",
-    "cockpit/index.md",
     "architecture/robot-profiles.md",
     "architecture/overview.md",
     "architecture/nats.md",
@@ -207,8 +209,6 @@
     "architecture/ctd-design-provenance.md",
     "architecture/communications.md",
     "roadmap.md",
-    "repository-index.md",
-    "k9-read-later.md",
-    "index.md"
+    "repository-index.md"
   ]
 }
