@@ -33,6 +33,7 @@ nav:
       - Robot Profiles: architecture/robot-profiles.md
       - Embedded Node Profiles: architecture/embedded-nodes.md
       - BlueOS and Adeept Robot HAT: architecture/blueos-adeept-robot-hat.md
+      - ArduSub Flight Controller Options: architecture/ardusub-flight-controller-options.md
       - CTD Design Provenance: architecture/ctd-design-provenance.md
   - Robots:
       - CuttleOS: cuttleos/index.md

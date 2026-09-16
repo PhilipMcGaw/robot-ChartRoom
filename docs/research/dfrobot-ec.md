@@ -9,6 +9,38 @@ tags:
 ---
 
 # DFRobot EC library
+## DFR0300-H product reference
+
+The DFR0300-H is DFRobot's laboratory-grade, analogue K=10 conductivity sensor kit for high-conductivity liquids. DFRobot positions it for seawater, concentrated brine, mariculture, aquariums, and wastewater/high-EC testing; it is not the low-conductivity K=1 variant.
+
+### Published specifications
+
+| Item | DFRobot specification |
+|---|---|
+| Signal-board supply | 3.0–5.0 V |
+| Signal-board output | 0–3.2 V analogue |
+| Signal-board size | 42 × 32 mm |
+| Board probe connector | BNC |
+| Board signal connector | PH2.0-3Pin Gravity |
+| Signal-board accuracy | ±5% full scale |
+| Probe type | Laboratory grade, K=10 |
+| Cell constant | 10 ± 2 |
+| Detection range | 10–100 mS/cm |
+| Probe temperature range | 0–40 °C |
+| Cable length | 100 ± 2 cm |
+| Stated probe life | More than 0.5 year, dependent on use and environment |
+
+The kit contains one probe, one signal-conversion board, four 12.88 mS/cm standard-buffer solutions, one Gravity analogue cable, two waterproof gaskets, a BNC connector cap, four M3 × 10 nylon pillars, and eight M3 × 5 screws.
+
+The board pinout is: pin 1 = GND, pin 2 = VCC (3.0–5.0 V), and pin 3 = analogue output (0–3.2 V). Because the output is analogue, a Raspberry Pi deployment needs an external ADC; an Arduino-class board can use an analogue input directly.
+
+### Use and maintenance constraints
+
+The kit has no temperature sensor. DFRobot recommends adding a temperature sensor, such as a waterproof DS18B20, and passing both voltage and temperature to the EC10 library for compensation. The supplied laboratory probe should not be left immersed continuously. Its platinum-black electrode surface must not be touched and should only be rinsed with distilled water. The probe should be rinsed and dried between different test liquids to prevent cross-contamination.
+
+DFRobot's current product page and setup guide describe single-point calibration with the supplied 12.88 mS/cm standard. Calibration commands are `ENTEREC`, `CALEC`, and `EXITEC`; the resulting parameters are saved in the controller EEPROM. The separate K=1 library and older documentation may refer to two-point calibration, so the K=1 and K=10 procedures must not be mixed.
+
+**Official references:** [DFRobot DFR0300-H product page](https://www.dfrobot.com/product-1797.html), [DFRobot DFR0300-H Wiki](https://wiki.dfrobot.com/dfr0300-h), [DFRobot K=10 setup guide](https://wiki.dfrobot.com/dfr0300-h/docs/20395), and [DFRobot_EC10 library](https://github.com/DFRobot/DFRobot_EC10).
 
 ## Conductivity reference for the CTD sensor
 
