@@ -8,26 +8,26 @@ It records the architecture, engineering rationale, design decisions, developmen
 
 The published documentation is available at **https://chartroom.philipmcgaw.com/**.
 
-The documentation source is held in the `docs/` directory and is built with MkDocs. The repository's `mkdocs.yml` file defines the documentation site and navigation.
+The documentation source is held in the Obsidian-formatted `source/` vault and is built with Quartz. The repository's `scripts/deploy.sh` file defines the established site build; `mkdocs.yml` remains an auxiliary configuration.
 
 ### Where to find information
 
-- `docs/architecture/` — cross-project architecture, communications, NATS, and robot profiles.
-- `docs/cuttleos/` — cross-project knowledge concerning CuttleOS; implementation-specific documentation remains in CuttleOS.
-- `docs/cockpit/` — cross-project knowledge concerning Cockpit; implementation-specific documentation remains in CuttleOS where Cockpit is currently hosted.
-- `docs/datalogger/` — cross-project knowledge concerning DataLogger; implementation-specific documentation remains in CuttleOS where DataLogger is currently hosted.
-- `docs/hil-sil/` — hardware-in-the-loop and software-in-the-loop architecture and engineering guidance.
-- `docs/ros2/` — ROS 2 and simulation knowledge relevant to the wider project.
-- `docs/development/` — development environment, testing, deployment, hardware documentation, and documentation guidance.
-- `docs/tutorials/` — reusable engineering and development tutorials.
-- `docs/decisions/` — significant engineering decisions and their rationale.
-- `docs/roadmap.md` — cross-project roadmap.
+- `source/architecture/` — cross-project architecture, communications, NATS, and robot profiles.
+- `source/cuttleos/` — cross-project knowledge concerning CuttleOS; implementation-specific documentation remains in CuttleOS.
+- `source/cockpit/` — cross-project knowledge concerning Cockpit; implementation-specific documentation remains in CuttleOS where Cockpit is currently hosted.
+- `source/datalogger/` — cross-project knowledge concerning DataLogger; implementation-specific documentation remains in CuttleOS where DataLogger is currently hosted.
+- `source/hil-sil/` — hardware-in-the-loop and software-in-the-loop architecture and engineering guidance.
+- `source/ros2/` — ROS 2 and simulation knowledge relevant to the wider project.
+- `source/development/` — development environment, testing, deployment, hardware documentation, and documentation guidance.
+- `source/tutorials/` — reusable engineering and development tutorials.
+- `source/decisions/` — significant engineering decisions and their rationale.
+- `source/roadmap.md` — cross-project roadmap.
 
 Chartroom is the place to look when information applies across repository boundaries or when the reason for an engineering decision, deployment procedure, operational experience, or troubleshooting note is more important than the implementation detail.
 
 ## Documentation standard
 
-The **[Robots Project Documentation Standard](docs/development/documentation-standard.md)** is the single source of truth for project-wide documentation conventions. CuttleOS, SquidLink, and NautiPi should follow that standard rather than maintaining separate copies of the rules.
+The **[Robots Project Documentation Standard](source/development/documentation-standard.md)** is the single source of truth for project-wide documentation conventions. CuttleOS, SquidLink, and NautiPi should follow that standard rather than maintaining separate copies of the rules.
 
 ## Hardware documentation
 
@@ -37,7 +37,7 @@ For COTS components, the preferred source is the manufacturer's official documen
 
 Third-party documentation remains subject to its own copyright and licence terms. The Chartroom repository licence applies to original Chartroom content, not to manufacturer's documentation or other third-party material.
 
-See the [hardware documentation policy](docs/development/hardware-documentation.md) for the full guidance.
+See the [hardware documentation policy](source/development/hardware-documentation.md) for the full guidance.
 
 ## Robots repositories
 
@@ -55,7 +55,7 @@ Each of the three implementation repositories should link back to Chartroom so t
 
 ```text
 robot-ChartRoom/
-├── docs/              # Documentation source
+├── source/            # Obsidian-formatted documentation source
 ├── scripts/           # Documentation and deployment utilities
 ├── mkdocs.yml         # MkDocs configuration
 └── README.md          # Repository overview

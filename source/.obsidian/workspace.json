@@ -1,24 +1,24 @@
 {
   "main": {
-    "id": "8d16291fe874be3a",
+    "id": "ee7f504afbcebe38",
     "type": "split",
     "children": [
       {
-        "id": "a70a73cd70ad31f3",
+        "id": "f6810a491f66e1c2",
         "type": "tabs",
         "children": [
           {
-            "id": "fea499bb8e4a4380",
+            "id": "e2926824bc5bb3b4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "cuttleos/index.md",
+                "file": "TermiPeople/gemma_peter.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "gemma_peter"
             }
           }
         ]
@@ -27,15 +27,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "db5699766a3aeec7",
+    "id": "d98debc1b3fe0b76",
     "type": "split",
     "children": [
       {
-        "id": "0b65d31cfa32eb86",
+        "id": "3eea07e8469c457f",
         "type": "tabs",
         "children": [
           {
-            "id": "8d012b906a9fe947",
+            "id": "5cfe9c05203c7afa",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -50,7 +50,7 @@
             }
           },
           {
-            "id": "eb2e11d0f81067e2",
+            "id": "ce828c378462b479",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -67,14 +67,11 @@
             }
           },
           {
-            "id": "fc703533decd7ed1",
+            "id": "0189184522cdf996",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {
-                "showSearch": false,
-                "searchQuery": ""
-              },
+              "state": {},
               "icon": "lucide-bookmark",
               "title": "Bookmarks"
             }
@@ -86,20 +83,20 @@
     "width": 300
   },
   "right": {
-    "id": "abb84f7aa5091222",
+    "id": "f934a2af5fc2691f",
     "type": "split",
     "children": [
       {
-        "id": "5aef9633e5988872",
+        "id": "ffeaacb337038d19",
         "type": "tabs",
         "children": [
           {
-            "id": "0dd7cc6f262f97bc",
+            "id": "906c288be39515b2",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "index.md",
+                "file": "Sites/termiwiki/back_to_pong.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,21 +110,21 @@
             }
           },
           {
-            "id": "02246eded9067458",
+            "id": "a2f9df705236d956",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "index.md",
+                "file": "TO-1552 - ELEC - T264 Fuse Test/TO-1552.F.MP4",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links"
+              "title": "Outgoing links from TO-1552.F"
             }
           },
           {
-            "id": "f8a5cb4cce01c0d5",
+            "id": "ccedab60885f0c68",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -142,7 +139,7 @@
             }
           },
           {
-            "id": "1821bed96ba57a33",
+            "id": "d38e8626fc9fe2aa",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -156,21 +153,34 @@
             }
           },
           {
-            "id": "678e241dea2894b7",
+            "id": "dc4647269debe5f9",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "index.md",
+                "file": "TO-1552 - ELEC - T264 Fuse Test/TO-1552.F.MP4",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of TO-1552.F"
+            }
+          },
+          {
+            "id": "6d27223384f7ba7f",
+            "type": "leaf",
+            "state": {
+              "type": "file-properties",
+              "state": {
+                "file": "upsu_webcam.md"
+              },
+              "icon": "lucide-info",
+              "title": "File properties"
             }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -179,36 +189,68 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "powerexplorer:Power Explorer: Search everywhere": false,
-      "powerexplorer:Power Explorer: New page from template": false,
-      "powerexplorer:Power Explorer: Power apps launcher": false,
-      "obsidian-kanban:Create new board": false,
+      "markdown-importer:Open format converter": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "bases:Create new base": false
+      "bases:Create new base": false,
+      "powerexplorer:Power Explorer: Search everywhere": false,
+      "powerexplorer:Power Explorer: New page from template": false,
+      "powerexplorer:Power Explorer: Power apps launcher": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-kanban:Create new board": false
     }
   },
-  "active": "fea499bb8e4a4380",
+  "active": "5cfe9c05203c7afa",
   "lastOpenFiles": [
-    "cockpit/index.md",
-    "k9-read-later.md",
-    "index.md",
-    "hil-sil/index.md",
-    "architecture/blueos-adeept-robot-hat.md",
-    "datalogger/index.md",
-    "cuttleos/index.md",
-    "architecture/robot-profiles.md",
-    "architecture/overview.md",
-    "architecture/nats.md",
-    "architecture/embedded-nodes.md",
-    "architecture/ctd-design-provenance.md",
-    "architecture/communications.md",
-    "roadmap.md",
-    "repository-index.md"
+    "Media/gem.jpg",
+    "TermiPeople/ben_a_lee.md",
+    "area51_website.md",
+    "zaphod.md",
+    "tiley_marner.md",
+    "tiley_marner.md.sb-00e1bca4-2dYQPk",
+    "theo_z.md",
+    "theo_z.md.sb-00e1bca4-v7V01s",
+    "systems.md",
+    "sphere_vs.md",
+    "sinisteros.md",
+    "safety_officer.md",
+    "rob_stanton.md",
+    "rob_stanton.md.sb-00e1bca4-CYPuxy",
+    "plymouth_geeks.md",
+    "people.md",
+    "old_members.md",
+    "notes.md",
+    "myths_legends.md",
+    "misc_exec.md",
+    "member_noticesupdate-08-12-2006_15-30.md",
+    "matt_farrell.md",
+    "matt_farrell.md.sb-00e1bca4-T6tPdH",
+    "lanuary_2015.md",
+    "kevin_w.md",
+    "kevin_w.md.sb-00e1bca4-vA1W7Q",
+    "kev_tsang.md",
+    "kev_tsang.md.sb-00e1bca4-Tt4dTG",
+    "josh_moore.md",
+    "josh_moore.md.sb-00e1bca4-lOBP8M",
+    "jason_space_gould.md",
+    "jason_space_gould.md.sb-00e1bca4-LzTDj8",
+    "james_swainsbury.md",
+    "james_swainsbury.md.sb-00e1bca4-muL89q",
+    "how_and_why_to_encrypt_your_email.md",
+    "Glossary",
+    "Media/ziggy.png",
+    "Media/theo.jpg",
+    "Media/termisoc2015.jpg",
+    "Media/termisoc-logo.jpg",
+    "Media/termisoc-logo-small.jpg",
+    "Media/termisoc_lan.jpg",
+    "Media/termisoc_flyer2.jpg",
+    "Media/termisoc_flyer.jpg",
+    "Media/termisoc_carrot.jpg",
+    "Media/termihouse2.jpg"
   ]
 }

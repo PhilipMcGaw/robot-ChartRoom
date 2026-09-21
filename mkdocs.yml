@@ -5,7 +5,7 @@ copyright: 'Project by <a href="https://philipmcgaw.com/">Philip McGaw</a>'
 
 theme:
   name: material
-  custom_dir: docs/overrides
+  custom_dir: source/overrides
   features:
     - navigation.sections
     - navigation.expand

@@ -4,7 +4,7 @@ set -euo pipefail
 SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
 REPO_DIR="$(cd -- "$SCRIPT_DIR/.." && pwd)"
 SITE_DIR="${SITE_DIR:-$REPO_DIR/site}"
-CONTENT_DIR="${CONTENT_DIR:-$REPO_DIR/docs}"
+CONTENT_DIR="${CONTENT_DIR:-$REPO_DIR/source}"
 QUARTZ_DIR="${QUARTZ_DIR:-$REPO_DIR/quartz}"
 
 cd "$REPO_DIR"

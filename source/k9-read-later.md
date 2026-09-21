@@ -12,6 +12,8 @@ tags:
 
 This page collects references worth revisiting for the K-9 project. Items are research and design inspiration, not project requirements.
 
+For the structured comparison of K-9 prop/model evidence against storyline history, see the [K-9 prop and storyline tracker](research/k9-prop-and-storyline-tracker.md).
+
 ## Back buttons and displays
 
 ### Rear/back-button screens and display design
