@@ -11,8 +11,7 @@ tags:
 
 # Robots project repository index
 
-This index records the attached repositories inspected on 14 September 2026.
-It is a navigation aid and cross-repository understanding record; the source
+This index is a navigation aid and cross-repository understanding record; the source
 repositories remain authoritative for their own implementation and evidence.
 
 ## Authority map
@@ -92,7 +91,7 @@ binary/reference collections are included in the totals.
 
 | Repository | Files | Main areas |
 |---|---:|---|
-| `robot-ChartRoom` | 73 | `docs/`, `scripts/`, MkDocs configuration |
+| `robot-ChartRoom` | Current source tree | `source/`, `quartz/`, `scripts/`, and generated `site/` output |
 | `robot-CuttleOS` | 393 | `cockpit/`, `control/`, `datalogger/`, `frontend/`, `assets/`, `configs/`, `tests/`, `docs/`, deployment scripts |
 | `robot-SquidLink` | 57 | `ros2_ws/`, `vehicles/`, `configs/`, `scenarios/`, `tests/`, `docs/` |
 | `robot-NautiPi` | 6,226 | ROV CTD, ROV lighting, ROV main body and navigator, K9, Testbot, MarsBot, weather station, traffic light, CAD/PCB/reference media |
@@ -101,7 +100,8 @@ binary/reference collections are included in the totals.
 
 The central documentation site is organised into architecture, robot-specific
 pages, HiL/SiL and ROS 2 course material, development guidance, decisions,
-research, and the roadmap. `mkdocs.yml` is the navigation source.
+research, and the roadmap. The canonical documentation source is `source/`, and
+`scripts/deploy.sh` builds it with the vendored Quartz site generator.
 
 ### CuttleOS (`/Users/skippy/Git/robot-CuttleOS`)
 
