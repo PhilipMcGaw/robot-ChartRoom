@@ -13,10 +13,26 @@ The project is by **Luke Ditria**, whose work includes edge-compute and ecologic
 - **AutoEcology:** https://www.auto-ecology.com/
 - **WILDLABS author profile:** https://wildlabs.net/en/members/luked
 - **WILDLABS project discussion:** https://wildlabs.net/en/discussion/mini-ai-wildlife-monitor
+- **WILDLABS edge-AI discussion:** https://wildlabs.net/en/discussion/ai-edge-compute-based-wildlife-detection
+- **Custom-model training video:** https://youtu.be/I69lAtA2pP0
+- **Luke Ditria's deep-learning tutorials:** https://github.com/LukeDitria/pytorch_tutorials
+- **Mothbox project:** https://digital-naturalism-laboratories.github.io/Mothbox/
 
 **Technical authority:** `LukeDitria/mini_ai_camera` is the primary source for the monitor's software, configuration, installation, and supported Raspberry Pi platforms. `LukeDitria/RasPi_YOLO` is the related source for model training and deployment workflows.
 
 The WILDLABS material provides useful project provenance and discussion of field constraints. The Hackster coverage provides secondary reporting on the later solar-powered revision.
+
+## External resources and project provenance
+
+There is evidence that Luke's work developed within the wider edge-AI and conservation community, but I have **not** found a statement from Luke identifying a particular project as the direct design inspiration for the Mini AI Wildlife Monitor.
+
+The clearest provenance is WILDLABS. When Luke introduced his earlier edge-compute wildlife detector there in February 2025, he said that he had "just come across this site" and that it was exactly what he had been looking for. The discussion covers low-power object detection, field deployment, solar-battery operation, datasets, annotation problems, and model deployment. Luke subsequently used the discussion to exchange information with other wildlife-AI practitioners. In particular, he said he was looking for additional dataset sources and discussed annotation pollution and automated relabelling. [See WILDLABS discussion.]
+
+Luke also points people to his own custom-model training material. In August 2025, when asked how to train a model for the Raspberry Pi AI Camera, he directed the questioner to his custom-model training video. His wider pytorch_tutorials repository provides additional background material on deep-learning implementation, although it is not specific evidence for the wildlife monitor's design.
+
+The **Mothbox** project is particularly relevant to our research because it is another wildlife/insect-monitoring camera platform, and it was explicitly mentioned in discussion of Luke's project. However, the available evidence shows another participant raising Mothbox as a comparison; it does **not** establish that Luke based his design on Mothbox.
+
+For that reason, these should be recorded as **related resources and provenance**, rather than described as confirmed design inspirations.
 
 ## System summary
 
@@ -75,6 +91,28 @@ There are multiple generations of the project, so model claims need to be tied t
 The current `mini_ai_camera` README documents a default compiled `yolov8n.rpk` model configuration. The related training repository also documents YOLOv8 workflows and contains a TODO noting that YOLO11 export to the IMX500 had not yet been tested in that repository revision.
 
 Separately, Hackster's May/June 2026 coverage of the solar-powered revision reports that Ditria trained a YOLO11n model for 52 local species and exported the model for the IMX500. This is a useful description of the later field configuration, but it should not be conflated with the version/configuration currently documented in the repository README.
+
+## Potential application to fish identification
+
+The same general architecture could be investigated for species-level fish identification, but this remains a **research candidate, not an adopted design**.
+
+Luke's public material supports the general concept of running object-detection and identification models locally for ecological monitoring. His later public description of the mini monitor states that the system uses YOLO11n to identify local bird species. [See Luke's 2026 project description.] I have not found evidence that Luke has already deployed this particular monitor for fish identification.
+
+For an ROV application, the key question is whether the camera can consistently provide enough information for the model to distinguish the target species. Luke notes that the IMX500 processing path is limited to 640 × 480 pixels for this application and that the target therefore needs to occupy enough of the image to be discernible. He also notes that the required image detail depends on the species.
+
+An ROV has a potentially useful advantage over a fixed wildlife camera: it can deliberately approach a target and control camera distance. That does not remove the underwater problems of turbidity, backscatter, variable illumination, colour attenuation, motion blur, occlusion, and visually similar species.
+
+A sensible investigation would therefore be:
+
+1. select a small number of visually distinguishable target species;
+2. collect representative underwater imagery at the intended operating distance;
+3. annotate fish bounding boxes and species labels;
+4. train and validate a compact detector/classifier;
+5. measure performance separately for detection and species identification;
+6. test false positives and false negatives under varying visibility and lighting; and
+7. compare IMX500-class inference with a higher-capacity platform such as Raspberry Pi 5 plus Hailo where the target occupies too few pixels.
+
+This should remain a research input to future CuttleOS perception work rather than a dependency on Luke's implementation.
 
 ## Relevance to the Robots project
 
