@@ -2,30 +2,36 @@
 
 This project is a useful reference for compact, low-power edge-AI sensing systems, particularly where camera processing, local inference, data logging, and autonomous power management must operate without continuous cloud connectivity.
 
-## Source
+## Primary sources
 
-The project is by **Luke Ditria**, an engineer with a PhD in machine learning and BEng. His current work includes **AutoEcology**, which develops edge-compute and ecological-monitoring systems.
+The project is by **Luke Ditria**, whose work includes edge-compute and ecological-monitoring systems.
 
-- **Video:** https://youtu.be/GxocHfgGO6o
 - **Project repository:** https://github.com/LukeDitria/mini_ai_camera
+- **Model training/export repository:** https://github.com/LukeDitria/RasPi_YOLO
+- **Build video:** https://youtu.be/qhY_3XCSYsM
+- **Video supplied for this research:** https://youtu.be/GxocHfgGO6o
 - **AutoEcology:** https://www.auto-ecology.com/
-- **Author:** https://www.auto-ecology.com/
+- **WILDLABS author profile:** https://wildlabs.net/en/members/luked
+- **WILDLABS project discussion:** https://wildlabs.net/en/discussion/mini-ai-wildlife-monitor
 
-The supplied social-media screenshots identify the video as a recent update to the author's **Mini AI Wildlife Monitor** and show the outdoor solar-powered installation.
+**Technical authority:** `LukeDitria/mini_ai_camera` is the primary source for the monitor's software, configuration, installation, and supported Raspberry Pi platforms. `LukeDitria/RasPi_YOLO` is the related source for model training and deployment workflows.
+
+The WILDLABS material provides useful project provenance and discussion of field constraints. The Hackster coverage provides secondary reporting on the later solar-powered revision.
 
 ## System summary
 
-The current version combines:
+The current project is based around:
 
 - Raspberry Pi Zero 2 W;
 - Raspberry Pi AI Camera using the Sony IMX500;
-- a solar-powered supply using AutoEcology's PV Pi;
+- solar-powered operation using the author's PV Pi hardware;
 - local AI inference;
-- a YOLO11n object-detection model;
-- local identification of bird species; and
-- long-duration outdoor operation.
+- YOLO-family object detection; and
+- local wildlife/bird identification.
 
-The author's public project information states that the software has also been verified on a Raspberry Pi 5. The current repository uses Python 3.13 or later, Raspberry Pi OS Trixie, Picamera2, the IMX500 software stack, OpenCV, and uv for Python environment management.
+The project's README states that the software has been verified on a Raspberry Pi 5 and Raspberry Pi Zero 2 W with Raspberry Pi OS Trixie, and requires system-wide Python 3.13 or later. It uses Picamera2, the IMX500 software stack, OpenCV, and `uv` for Python environment management.
+
+The project has evolved through several hardware configurations. Earlier versions used a Raspberry Pi 5 with a Hailo-based AI accelerator; later versions moved inference onto the Sony IMX500 in the Raspberry Pi AI Camera and used the smaller Raspberry Pi Zero 2 W.
 
 ## Relevant engineering features
 
@@ -33,11 +39,11 @@ The author's public project information states that the software has also been v
 
 The AI inference is performed locally rather than sending image data to a remote service. This is directly relevant to robot systems where bandwidth, latency, privacy, or intermittent connectivity can make cloud inference unsuitable.
 
-The current project uses the IMX500's neural-network capability and a YOLO-based detector. The repository includes a compiled model and configuration for limiting the classes that are detected.
+The related `RasPi_YOLO` repository documents training and export workflows for both the Sony IMX500 and Hailo accelerators.
 
 ### Event-based data handling
 
-The current software does not simply save every frame. Its configuration includes:
+The current `mini_ai_camera` configuration includes:
 
 - confidence and IoU thresholds;
 - a maximum inference rate;
@@ -46,19 +52,29 @@ The current software does not simply save every frame. Its configuration include
 - a circular pre-capture video buffer; and
 - optional image, video, and JSON-data output.
 
+The default configuration documented by the repository includes a 3-second pre-capture buffer, an EMA smoothing factor of 0.2, an event-activation threshold of 0.8, and an event-deactivation threshold of 0.5.
+
 This is a useful pattern for CuttleOS sensor workloads: process continuously, but persist detailed data only when an event justifies it.
 
 ### Autonomous power
 
-The outdoor installation combines the Raspberry Pi Zero 2 W and AI Camera with the PV Pi solar power-management hardware.
+The outdoor installation combines the Raspberry Pi Zero 2 W and AI Camera with solar power and the author's PV Pi hardware.
 
-AutoEcology describes the PV Pi as providing solar battery charging and power management for Raspberry Pi and other single-board computers. Its stated capabilities include battery monitoring, controlled shutdown/restart behaviour, and scheduled operation.
-
-This is particularly relevant to remote CuttleOS nodes and other autonomous sensing platforms.
+Secondary reporting on the latest revision describes a LiFePO₄ battery system and a PV Pi HAT with maximum-power-point tracking, battery charging, battery telemetry, a real-time clock, and power scheduling. These details should be treated as project-specific implementation information rather than requirements for the Robots project.
 
 ### Service-based operation
 
-The software includes an installation command that creates systemd services. This is relevant to the CuttleOS deployment model, where long-running robot services should be managed by the operating system rather than by an interactive shell.
+The software includes an installation command that creates systemd services. The repository documents using `systemctl` and `journalctl` to manage and inspect the services.
+
+This is relevant to the CuttleOS deployment model, where long-running robot services should be managed by the operating system rather than by an interactive shell.
+
+## Model provenance and versioning
+
+There are multiple generations of the project, so model claims need to be tied to the relevant revision.
+
+The current `mini_ai_camera` README documents a default compiled `yolov8n.rpk` model configuration. The related training repository also documents YOLOv8 workflows and contains a TODO noting that YOLO11 export to the IMX500 had not yet been tested in that repository revision.
+
+Separately, Hackster's May/June 2026 coverage of the solar-powered revision reports that Ditria trained a YOLO11n model for 52 local species and exported the model for the IMX500. This is a useful description of the later field configuration, but it should not be conflated with the version/configuration currently documented in the repository README.
 
 ## Relevance to the Robots project
 
@@ -76,6 +92,12 @@ Potentially useful ideas to investigate include:
 
 These concepts may inform future CuttleOS perception, remote-node, or autonomous-sensing designs, but they should not be treated as project requirements until separately evaluated.
 
+## Field constraints
+
+The WILDLABS project discussion provides useful practical context. Ditria notes that the IMX500 processing path is limited to a 640 × 480 image size for this application, meaning that the target must occupy enough of the image to be discernible. He also distinguishes this from higher-resolution approaches using a Raspberry Pi 5 and Hailo accelerator.
+
+This is an important engineering consideration for future robotic perception work: detector compute performance is only one part of the system. Target angular size, optics, sensor resolution, inference resolution, model capacity, illumination, and motion all affect detection and classification performance.
+
 ## Related research
 
 The project is especially relevant to the existing Chartroom research concerning:
@@ -89,8 +111,8 @@ The project is especially relevant to the existing Chartroom research concerning
 
 ## Verification notes
 
-The social-media screenshots supplied during research show the author's profile, the outdoor installation, and the statement that the monitor had been operating outside for approximately six months while detecting and identifying birds.
+The supplied social-media screenshots show the author's profile, the outdoor installation, and the solar-powered wildlife-monitor concept.
 
-Independent public sources provide additional technical detail. The author's GitHub repository documents the current software and supported Raspberry Pi platforms. AutoEcology describes the wider edge-AI and ecological-monitoring work, including the PV Pi power-management system.
+The primary GitHub repository and related model repository have now been identified and checked. WILDLABS provides additional project history and discussion, while Hackster provides secondary reporting on the later solar-powered revision.
 
-Specific hardware, model, power, enclosure, and environmental-performance claims should be verified against the original project documentation before being used as engineering requirements or design inputs.
+Specific hardware, model, power, enclosure, environmental-performance, and field-runtime claims should be verified against the relevant project revision before being used as engineering requirements or design inputs.
