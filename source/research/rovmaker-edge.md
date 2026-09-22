@@ -146,6 +146,7 @@ The RovMaker Edge Hackaday project currently shows limited uploaded project mate
 - [RovMaker Edge CAD on GrabCAD](https://grabcad.com/library/rovmaker-edge-open-source-underwater-robot-1)
 - [OpenROV electronics](https://github.com/OpenROV/openrov-electronics)
 - [OpenROV Cockpit](https://github.com/OpenROV/openrov-cockpit)
+- [OpenROV historical overview — Wikipedia](https://en.wikipedia.org/wiki/OpenROV)
 - [TechMonkeyBusiness OpenSource ROV](https://www.techmonkeybusiness.com/articles/OpenSource_ROV.html)
 - [Blue Robotics control-board discussion](https://discuss.bluerobotics.com/t/control-board-options-pros-and-cons/812)
 - [ArduPilot ROV project discussion](https://discuss.ardupilot.org/t/your-own-remotely-operated-vehicle-rov-project/7951)
