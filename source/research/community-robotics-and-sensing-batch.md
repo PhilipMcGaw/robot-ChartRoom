@@ -126,6 +126,16 @@ https://www.instructables.com/Arduino-Weather-Station-AWS/
 
 **Relevance:** reference for a low-cost environmental station and for presenting weather/environmental measurements as a coherent system rather than a collection of independent sensors. Useful to compare with the Smart Buoy and weather-station work.
 
+The supplied reference images show a tipping-bucket rain-gauge mechanism associated with this weather-station research:
+
+![Tipping-bucket rain-gauge mechanism overview.](../assets/research/weather-station/tipping-bucket-rain-gauge-overview.jpg)
+
+*Tipping-bucket rain-gauge mechanism overview, supplied as `IMG_2003.JPG`.*
+
+![Detailed tipping-bucket rain-gauge construction drawing.](../assets/research/weather-station/tipping-bucket-rain-gauge-detail.jpg)
+
+*Detailed tipping-bucket rain-gauge construction drawing, supplied as `IMG_2185.JPG`. The drawing bears an external `vwl...` mark; source attribution and publication permission remain to be confirmed.*
+
 ### Reed-switch anemometer
 
 https://www.instructables.com/How-to-Build-Your-Own-Anemometer-Using-Reed-Switch/
