@@ -84,6 +84,8 @@ It may inform beginner tutorials, small-robot sensor exercises, and comparisons 
 
 BerryBot should remain a reference platform rather than a hardware dependency. SwarmBot's own robot-control, communications, safety, multi-robot, and physical-test decisions must be defined separately. The BerryBot pinout is not a SwarmBot pinout, and the booklet does not establish compatibility with NATS, ROS 2, HiL/SiL, or the Testbot.
 
+The supplied [PicoBricks Go guide](evidence/picobricks-go-guide.pdf) is a companion reference for Bluetooth control of REX and BerryBot platforms. It documents version-specific Arduino, MicroPython, and block-programming workflows. Its ESP32 board-package and MicroPython version instructions should be rechecked before use and are not current SwarmBot requirements.
+
 ## Provenance
 
 - Source: user-supplied [BerryBot Project booklet](evidence/berrybot-project-booklet.pdf).

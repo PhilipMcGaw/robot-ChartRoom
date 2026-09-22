@@ -31,6 +31,7 @@ Prefer primary sources and stable official documentation. Preserve provenance ra
 
 - [Baited remote underwater video systems (BRUVS)](baited-remote-underwater-video-systems.md) — survey design, deployment, and video-analysis reference.
 - [BerryBot reference for SwarmBot education](swarmbot-berrybot-reference.md) — RP2040 educational robot hardware, programming, and behaviour reference.
+- [Elementary AUV and ROV education reference](elementary-auv-rov-education.md) — translated educational, safety, payload, and control reference.
 - [Geo-Positioning Buoy Project reference](geo-positioning-buoy-project.md) — small surface-buoy mechanical and fleet-control reference.
 
 ## Research status
