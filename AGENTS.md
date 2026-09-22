@@ -16,12 +16,13 @@ Chartroom is not the implementation authority for CuttleOS, SquidLink, or NautiP
 - source/development/ — development, testing, deployment, hardware documentation, and documentation standards.
 - source/tutorials/ — reusable engineering and development tutorials.
 - source/decisions/ — significant engineering decisions and their rationale.
-- source/research/ — research and reference notes where present; distinguish these from validated decisions.
+- source/research/ — research and reference notes; distinguish these from validated decisions.
 - quartz/ — vendored Quartz build engine and Chartroom-specific Quartz configuration/layout.
 - scripts/ — build and deployment scripts.
 - site/ — generated static output. Regenerate it; do not hand-edit it.
 - README.md — repository orientation and contribution guidance.
-- mkdocs.yml — legacy/auxiliary documentation configuration; the established deployment script currently builds with Quartz.
+
+Project architecture, repository authority, and current build/deployment facts are maintained in MASTER_CONTEXT.md. These working rules define agent behaviour and editing discipline; they are not a second project-status document.
 
 ## Unavailable reference projects
 
@@ -63,11 +64,11 @@ Keep front matter consistent with nearby pages. Do not invent dates, test result
 
 The repository is shared project memory and is model-agnostic. Agents MUST read applicable AGENTS.md files, inspect current files before changing them, preserve unrelated work, avoid copying private reasoning into project files, record concise conclusions and uncertainty, prefer small reviewable changes, and use Git history as the audit trail.
 
-Do not overwrite another contributor''s work. If a shared file has changed during the task, re-read it and reconcile the update before writing.
+Do not overwrite another contributor's work. If a shared file has changed during the task, re-read it and reconcile the update before writing.
 
 ## Scripts, build, and deployment
 
-Inspect scripts/deploy.sh before changing build or deployment behaviour. The normal local build is scripts/deploy.sh, which builds Quartz from source/ into site/.
+Inspect scripts/deploy.sh before changing build or deployment behaviour.
 
 Building and publishing are separate operations. Do not deploy merely to test a content or styling change. Treat any rsync --delete or production-host command as a destructive production operation. Do not run production deployment unless explicitly requested.
 

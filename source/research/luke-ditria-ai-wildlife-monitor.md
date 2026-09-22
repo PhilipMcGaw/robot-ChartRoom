@@ -1,3 +1,16 @@
+---
+title: "Luke Ditria — Mini Raspberry Pi AI Wildlife Monitor"
+description: "Research into Luke Ditria's compact Raspberry Pi and IMX500 edge-AI wildlife monitor, its provenance, and possible relevance to robotic perception."
+type: research
+status: reference
+authority: Chartroom
+tags:
+  - research
+  - edge-ai
+  - wildlife
+  - computer-vision
+---
+
 # Luke Ditria — Mini Raspberry Pi AI Wildlife Monitor
 
 This project is a useful reference for compact, low-power edge-AI sensing systems, particularly where camera processing, local inference, data logging, and autonomous power management must operate without continuous cloud connectivity.

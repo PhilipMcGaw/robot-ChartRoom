@@ -8,7 +8,7 @@ It records the architecture, engineering rationale, design decisions, developmen
 
 The published documentation is available at **https://chartroom.philipmcgaw.com/**.
 
-The documentation source is held in the Obsidian-formatted `source/` vault and is built with Quartz. The repository's `scripts/deploy.sh` file defines the established site build; `mkdocs.yml` remains an auxiliary configuration.
+The documentation source is held in the Obsidian-formatted `source/` vault and is built with Quartz. The repository's `scripts/deploy.sh` file defines the established site build.
 
 ### Where to find information
 
@@ -57,7 +57,7 @@ Each of the three implementation repositories should link back to Chartroom so t
 robot-ChartRoom/
 ├── source/            # Obsidian-formatted documentation source
 ├── scripts/           # Documentation and deployment utilities
-├── mkdocs.yml         # MkDocs configuration
+├── quartz/            # Vendored Quartz site generator
 └── README.md          # Repository overview
 ```
 
