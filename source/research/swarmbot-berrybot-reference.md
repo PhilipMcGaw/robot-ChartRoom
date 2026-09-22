@@ -1,6 +1,6 @@
 ---
-title: "BerryBot educational robot reference"
-description: "Reference notes on the Robotistan BerryBot educational robot, its RP2040 board, and programming workflow."
+title: "BerryBot reference for SwarmBot education"
+description: "Reference notes on BerryBot as an educational hardware and programming comparison for SwarmBot."
 date: 2026-09-22
 tags:
   - research
@@ -13,11 +13,11 @@ status: reference
 authority: Chartroom
 ---
 
-# BerryBot educational robot reference
+# BerryBot reference for SwarmBot education
 
 ## Scope
 
-This page records reference information from the supplied BerryBot booklet. BerryBot is an educational mobile robot kit intended to teach assembly, programming, sensing, and basic autonomous behaviours. The material is useful as a teaching and interface reference; it is not a Chartroom implementation, project requirement, or validation of the Robots project's control architecture.
+This page records reference information from the supplied BerryBot booklet. BerryBot is an educational mobile robot kit intended to teach assembly, programming, sensing, and basic autonomous behaviours. It is particularly relevant to the planned SwarmBot and Test in a Box educational direction. The material is useful as a teaching and interface reference; it is not a Chartroom implementation, project requirement, or validation of the Robots project's control architecture.
 
 ## Hardware overview
 
@@ -68,7 +68,7 @@ The final booklet page provides a BerryBot pinout for the RP2040 board. The labe
 
 The diagram should be treated as board-revision-specific. The extracted text representation cannot preserve the diagram's physical layout, and the booklet should be consulted before wiring or assigning a pin. Any project firmware should verify the actual board revision and library definitions rather than relying on this summary alone.
 
-## Relevance to Chartroom
+## Relevance to SwarmBot and Test in a Box
 
 BerryBot is useful as a compact example of an educational progression:
 
@@ -80,7 +80,9 @@ Assembly
   -> repeatable exercises and debugging
 ```
 
-It may inform beginner tutorials, small-robot sensor exercises, and comparisons of RP2040-based educational platforms. It does not replace the project's own NATS, safety, HiL/SiL, ROS 2, or physical Testbot context.
+It may inform beginner tutorials, small-robot sensor exercises, and comparisons of RP2040-based educational platforms. Its staged progression from block programming to MicroPython or Arduino, then to sensor-driven behaviours, is a useful comparison for the planned SwarmBot classroom workflow.
+
+BerryBot should remain a reference platform rather than a hardware dependency. SwarmBot's own robot-control, communications, safety, multi-robot, and physical-test decisions must be defined separately. The BerryBot pinout is not a SwarmBot pinout, and the booklet does not establish compatibility with NATS, ROS 2, HiL/SiL, or the Testbot.
 
 ## Provenance
 

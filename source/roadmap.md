@@ -50,6 +50,8 @@ The architecture should preserve the separation between the educational programm
 
 **Status:** Planned concept. The educational programming interface, safe program representation, SwarmBot control interface, and classroom workflow have not yet been implemented.
 
+**Read later:** [BerryBot reference for SwarmBot education](research/swarmbot-berrybot-reference.md).
+
 ### SwarmBot optional face/display module
 
 Evaluate an optional small front-mounted face/display module for SwarmBot. The module should be a replaceable payload, not a requirement for robot operation.
