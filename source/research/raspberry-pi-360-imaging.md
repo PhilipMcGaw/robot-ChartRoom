@@ -24,7 +24,15 @@ The Kogeto Dot is a small panoramic lens intended to produce a circular image th
 
 The lens was protected during modification with blue tape, although another removable masking material would also work. The unnecessary portion of the lens assembly was trimmed away, and the rough edges were sanded afterwards.
 
+![Kogeto Dot lens after modification, with blue tape protecting the optical assembly.](../assets/research/kogeto_dot_protect.jpg)
+
+*Kogeto Dot lens during modification, with blue tape used as temporary protection.*
+
 The camera module has a fixed-focus lens. In the original setup, the focus was fixed on the centre of the lens rather than the useful outer panoramic image, so the camera had to be carefully adjusted or reseated until the captured image was acceptably focused and centred.
+
+![Kogeto Dot product packaging.](../assets/research/kogeto_dot.jpg)
+
+*Original Kogeto Dot packaging, identifying the pocket-sized 360° panoramic lens.*
 
 ## Raspberry Pi rig
 
@@ -32,12 +40,17 @@ The Kogeto Dot was mounted over a Raspberry Pi camera module. The physical arran
 
 The original notes mention repeatedly reseating the camera to improve centring. The useful image boundary was kept within the captured frame so that the de-projection step would not clip the outer part of the scene.
 
-The original photographs referenced media named:
+The restored photographs are:
 
-- `skippy/kogeto_dot.jpg`
-- `skippy/kogeto_dot_protect.jpg`
+- `kogeto_dot.jpg` — product packaging.
+- `kogeto_dot_protect.jpg` — modified lens with temporary protection.
+- `raw_image_keyto_dot.jpg` — raw circular image from the Dot-mounted camera.
 
-Those media files were not included with the pasted source material and have not been recreated here.
+The raw image is retained as a calibration record before de-projection:
+
+![Raw circular image from the Kogeto Dot-mounted camera.](../assets/research/raw_image_keyto_dot.jpg)
+
+*Raw circular camera image before de-polar transformation. The filename is preserved as supplied; “keyto” is treated as a filename typo rather than corrected provenance.*
 
 ## Image geometry
 
