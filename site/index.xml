@@ -6,65 +6,65 @@
       <description>Last 10 notes on Quartz 4</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>BlueOS and Adeept Robot HAT</title>
-    <link>https://quartz.jzhao.xyz/architecture/blueos-adeept-robot-hat</link>
-    <guid>https://quartz.jzhao.xyz/architecture/blueos-adeept-robot-hat</guid>
-    <description><![CDATA[ Documentation page covering BlueOS and Adeept Robot HAT. ]]></description>
-    <pubDate>Tue, 15 Sep 2026 05:36:46 GMT</pubDate>
+    <title>BlueOS and Blue Robotics Cockpit SITL Test</title>
+    <link>https://quartz.jzhao.xyz/development/blueos-cockpit-sitl-test</link>
+    <guid>https://quartz.jzhao.xyz/development/blueos-cockpit-sitl-test</guid>
+    <description><![CDATA[ A hardware-free test plan for BlueOS, ArduSub SITL, and Blue Robotics Cockpit. ]]></description>
+    <pubDate>Sat, 26 Sep 2026 10:55:58 GMT</pubDate>
   </item><item>
-    <title>CTD design provenance</title>
-    <link>https://quartz.jzhao.xyz/architecture/ctd-design-provenance</link>
-    <guid>https://quartz.jzhao.xyz/architecture/ctd-design-provenance</guid>
-    <description><![CDATA[ Documentation page covering CTD design provenance. ]]></description>
-    <pubDate>Tue, 15 Sep 2026 05:36:46 GMT</pubDate>
+    <title>Stratospheric weather-balloon camera experiment — NateintheWild / Light Side Up</title>
+    <link>https://quartz.jzhao.xyz/research/stratospheric-balloon-camera-nate-luebbe</link>
+    <guid>https://quartz.jzhao.xyz/research/stratospheric-balloon-camera-nate-luebbe</guid>
+    <description><![CDATA[ Stratospheric weather-balloon camera experiment — NateintheWild / Light Side Up Source Threads: www.threads.com/share/BASpfsLTxo/ Account: NateintheWild (Nate Luebbe) Captured from a Threads post viewed on 23 September 2026. ]]></description>
+    <pubDate>Wed, 23 Sep 2026 17:25:13 GMT</pubDate>
   </item><item>
-    <title>Cockpit</title>
-    <link>https://quartz.jzhao.xyz/cockpit/</link>
-    <guid>https://quartz.jzhao.xyz/cockpit/</guid>
-    <description><![CDATA[ Documentation page covering Cockpit. ]]></description>
-    <pubDate>Tue, 15 Sep 2026 05:36:46 GMT</pubDate>
+    <title>Research and reference</title>
+    <link>https://quartz.jzhao.xyz/research/</link>
+    <guid>https://quartz.jzhao.xyz/research/</guid>
+    <description><![CDATA[ Research notes and external references for the Robots project. ]]></description>
+    <pubDate>Tue, 22 Sep 2026 20:45:10 GMT</pubDate>
   </item><item>
-    <title>DataLogger</title>
-    <link>https://quartz.jzhao.xyz/datalogger/</link>
-    <guid>https://quartz.jzhao.xyz/datalogger/</guid>
-    <description><![CDATA[ Documentation page covering DataLogger. ]]></description>
-    <pubDate>Tue, 15 Sep 2026 05:36:46 GMT</pubDate>
+    <title>Community robotics and sensing references</title>
+    <link>https://quartz.jzhao.xyz/research/community-robotics-and-sensing-batch</link>
+    <guid>https://quartz.jzhao.xyz/research/community-robotics-and-sensing-batch</guid>
+    <description><![CDATA[ Documentation page covering Community robotics and sensing references. ]]></description>
+    <pubDate>Tue, 22 Sep 2026 20:38:48 GMT</pubDate>
   </item><item>
-    <title>Deployment</title>
-    <link>https://quartz.jzhao.xyz/development/deployment</link>
-    <guid>https://quartz.jzhao.xyz/development/deployment</guid>
-    <description><![CDATA[ Documentation page covering Deployment. ]]></description>
-    <pubDate>Tue, 15 Sep 2026 05:36:46 GMT</pubDate>
+    <title>Roadmap</title>
+    <link>https://quartz.jzhao.xyz/roadmap</link>
+    <guid>https://quartz.jzhao.xyz/roadmap</guid>
+    <description><![CDATA[ Intended evolution of the Robots ecosystem and its development infrastructure. ]]></description>
+    <pubDate>Tue, 22 Sep 2026 20:33:03 GMT</pubDate>
   </item><item>
-    <title>Robots Project Documentation Standard</title>
-    <link>https://quartz.jzhao.xyz/development/documentation-standard</link>
-    <guid>https://quartz.jzhao.xyz/development/documentation-standard</guid>
-    <description><![CDATA[ Documentation page covering Robots Project Documentation Standard. ]]></description>
-    <pubDate>Tue, 15 Sep 2026 05:36:46 GMT</pubDate>
+    <title>RovMaker Edge research notes</title>
+    <link>https://quartz.jzhao.xyz/research/rovmaker-edge</link>
+    <guid>https://quartz.jzhao.xyz/research/rovmaker-edge</guid>
+    <description><![CDATA[ Documentation page covering RovMaker Edge research notes. ]]></description>
+    <pubDate>Tue, 22 Sep 2026 09:49:29 GMT</pubDate>
   </item><item>
-    <title>Development Environment</title>
-    <link>https://quartz.jzhao.xyz/development/environment</link>
-    <guid>https://quartz.jzhao.xyz/development/environment</guid>
-    <description><![CDATA[ Documentation page covering Development Environment. ]]></description>
-    <pubDate>Tue, 15 Sep 2026 05:36:46 GMT</pubDate>
+    <title>K-9 timeline</title>
+    <link>https://quartz.jzhao.xyz/projects/k9-timeline</link>
+    <guid>https://quartz.jzhao.xyz/projects/k9-timeline</guid>
+    <description><![CDATA[ Timeline of K-9 versions, appearances, prop changes, and surviving display or replica evidence. ]]></description>
+    <pubDate>Mon, 21 Sep 2026 23:00:00 GMT</pubDate>
   </item><item>
-    <title>Frontend Libraries</title>
-    <link>https://quartz.jzhao.xyz/development/frontend-libraries</link>
-    <guid>https://quartz.jzhao.xyz/development/frontend-libraries</guid>
-    <description><![CDATA[ Documentation page covering Frontend Libraries. ]]></description>
-    <pubDate>Tue, 15 Sep 2026 05:36:46 GMT</pubDate>
+    <title>PiWars Robot</title>
+    <link>https://quartz.jzhao.xyz/projects/piwars-robot</link>
+    <guid>https://quartz.jzhao.xyz/projects/piwars-robot</guid>
+    <description><![CDATA[ Family PiWars robot project and design-history note. ]]></description>
+    <pubDate>Mon, 21 Sep 2026 23:00:00 GMT</pubDate>
   </item><item>
-    <title>Hardware documentation</title>
-    <link>https://quartz.jzhao.xyz/development/hardware-documentation</link>
-    <guid>https://quartz.jzhao.xyz/development/hardware-documentation</guid>
-    <description><![CDATA[ Documentation page covering Hardware documentation. ]]></description>
-    <pubDate>Tue, 15 Sep 2026 05:36:46 GMT</pubDate>
+    <title>Baited remote underwater video systems (BRUVS)</title>
+    <link>https://quartz.jzhao.xyz/research/baited-remote-underwater-video-systems</link>
+    <guid>https://quartz.jzhao.xyz/research/baited-remote-underwater-video-systems</guid>
+    <description><![CDATA[ Reference notes on BRUVS survey design, deployment, and video analysis. ]]></description>
+    <pubDate>Mon, 21 Sep 2026 23:00:00 GMT</pubDate>
   </item><item>
-    <title>Raspberry Pi deployment</title>
-    <link>https://quartz.jzhao.xyz/development/raspberry-pi-deployment</link>
-    <guid>https://quartz.jzhao.xyz/development/raspberry-pi-deployment</guid>
-    <description><![CDATA[ Documentation page covering Raspberry Pi deployment. ]]></description>
-    <pubDate>Tue, 15 Sep 2026 05:36:46 GMT</pubDate>
+    <title>Elementary AUV and ROV education reference</title>
+    <link>https://quartz.jzhao.xyz/research/elementary-auv-rov-education</link>
+    <guid>https://quartz.jzhao.xyz/research/elementary-auv-rov-education</guid>
+    <description><![CDATA[ English synthesis of Russian ElementaryAUV and ElementaryROV teaching material for underwater robotics education. ]]></description>
+    <pubDate>Mon, 21 Sep 2026 23:00:00 GMT</pubDate>
   </item>
     </channel>
   </rss>
