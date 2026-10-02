@@ -234,7 +234,7 @@ Use the associated OpenROV, TechMonkeyBusiness, Blue Robotics, and ArduPilot ref
 
 ### T3chFlicks Smart Buoy and Sofar Spotter — environmental sensing references
 
-Study the [T3chFlicks Smart Buoy](research/t3chflicks-smart-buoy.md) and the commercial [Sofar Ocean Spotter](research/sofar-spotter.md) as complementary references for environmental sensing, autonomous instrumentation, data acquisition, and deployment.
+Study the [T3chFlicks Smart Buoy](research/open-source-ocean-buoy-references.md#t3chflicks-smart-buoy) and the commercial [Sofar Ocean Spotter](research/sofar-spotter.md) as complementary references for environmental sensing, autonomous instrumentation, data acquisition, and deployment.
 
 The Smart Buoy is useful as a low-cost, educational implementation: Arduino-based local acquisition, power scheduling, GPS/radio/SD logging, a Raspberry Pi base station, database, and Vue dashboard. Its documented limitations and proposed V2 improvements are particularly valuable engineering lessons.
 
@@ -255,7 +255,7 @@ For the project's CTD and environmental sensor work, compare these systems with 
 
 **Status:** Research / inspiration and commercial reference. No T3chFlicks or Sofar Ocean dependency is planned.
 
-**Read later:** [T3chFlicks Smart Buoy research](research/t3chflicks-smart-buoy.md), [Sofar Spotter research](research/sofar-spotter.md), [Sofar Spotter](https://www.sofarocean.com/products/spotter), [Spotter Configurator](https://spotter-configurator.sofarocean.com/), and [Sofar Ocean support/documentation](https://www.sofarocean.com/support).
+**Read later:** [T3chFlicks Smart Buoy research](research/open-source-ocean-buoy-references.md#t3chflicks-smart-buoy), [Sofar Spotter research](research/sofar-spotter.md), [Sofar Spotter](https://www.sofarocean.com/products/spotter), [Spotter Configurator](https://spotter-configurator.sofarocean.com/), and [Sofar Ocean support/documentation](https://www.sofarocean.com/support).
 
 ### Documentation and technical communication design
 
