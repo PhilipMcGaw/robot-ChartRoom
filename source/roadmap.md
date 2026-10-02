@@ -52,6 +52,16 @@ The architecture should preserve the separation between the educational programm
 
 **Read later:** [BerryBot reference for SwarmBot education](research/swarmbot-berrybot-reference.md).
 
+### ConstantRobotics video pipeline and low-latency research
+
+Review the [ConstantRobotics/RapidPixel video research](research/constantrobotics-video-pipeline.md) as a reference for the ROV video path. Focus on low-latency capture, hardware H.264/HEVC encoding, RTP and MediaMTX streaming, Raspberry Pi pipelines, tracking, image enhancement, and recording as an independent consumer of the encoded stream.
+
+Use the material to define measurements rather than adopting the commercial libraries as project dependencies. The immediate objective is to build a measured latency budget from capture through display and compare it with the existing [GTG-1 research](research/gtg-1-glass-to-glass-latency.md).
+
+**Status:** Research candidate.
+
+**Read later:** [ConstantRobotics video pipeline research](research/constantrobotics-video-pipeline.md)
+
 ### SwarmBot optional face/display module
 
 Evaluate an optional small front-mounted face/display module for SwarmBot. The module should be a replaceable payload, not a requirement for robot operation.
