@@ -290,3 +290,15 @@ Where common interfaces are justified, share them at the Cockpit/application bou
 **Status:** Planned architectural validation.
 
 Detailed milestones will be migrated from the existing project roadmap and maintained here as the central project view.
+
+### GTG-1 glass-to-glass video latency measurement
+
+Retrieve and review the official [GTG-1 datasheet](https://www.constantrobotics.com/s/GTG-1_Datasheet_v100.pdf) from ConstantRobotics. Use the [GTG-1 product page](https://www.constantrobotics.com/gtg-1) as the primary catalogue reference.
+
+The purpose is to establish the instrument's detailed electrical, measurement-accuracy, environmental, operating, and measurement-method characteristics before deciding whether to use it as an ROV video-latency test instrument or as a reference for a lower-cost in-house fixture.
+
+The current research note records the manufacturer's published product-page information: 1 ms measurement resolution, measurements up to 999 ms, minimum/maximum/average/instantaneous values, a 10 s window for minimum/maximum/average, 1 s pulse intervals, 90 × 70 × 20 mm dimensions, and 555 g weight with case.
+
+**Status:** Read later / test-and-measurement research. No GTG-1 purchase or project requirement has been established.
+
+**Read later:** [GTG-1 research](research/gtg-1-glass-to-glass-latency.md).
