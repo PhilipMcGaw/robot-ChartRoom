@@ -58,6 +58,8 @@ Future project-history entries could capture:
 - photographs of construction, testing, and competition days;
 - lessons learned from family collaboration and physical testing.
 
+For future PiWars design work, [Cactus Craft Project 1 Terra](https://cactuscraft.com/collections/all-products/products/project-1-terra-548) is recorded as an external design reference. Its suitability for a PiWars robot has not been assessed.
+
 ## Provenance
 
 - Source: user-supplied project description titled “PiWars Robot”.
