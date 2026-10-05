@@ -35,6 +35,7 @@ Prefer primary sources and stable official documentation. Preserve provenance ra
 - [Elementary AUV and ROV education reference](elementary-auv-rov-education.md) — translated educational, safety, payload, and control reference.
 - [Geo-Positioning Buoy Project reference](geo-positioning-buoy-project.md) — small surface-buoy mechanical and fleet-control reference.
 - [ROVSCP marine geotechnical profiling paper](rovscp-marine-geotechnical-profiling.md) — critical review of an ROV-mounted sediment penetrometer proposal and its evidence limits.
+- [PiWars VT-72B idea](piwars-vt-72b.md) — tracked recovery-vehicle concept and possible modular competition mechanisms.
 - [Sensea Raspberry Pi underwater camera](sensea-underwater-camera.md) — low-cost underwater imaging, temperature logging, and enclosure reference.
 
 ## Research status
