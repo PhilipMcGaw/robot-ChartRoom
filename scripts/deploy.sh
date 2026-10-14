@@ -9,6 +9,12 @@ QUARTZ_DIR="${QUARTZ_DIR:-$REPO_DIR/quartz}"
 
 cd "$REPO_DIR"
 
+QUARTZ_BUILD_DIR="$(mktemp -d "${TMPDIR:-/tmp}/chartroom-quartz.XXXXXX")"
+cleanup() {
+    rm -rf "$QUARTZ_BUILD_DIR"
+}
+trap cleanup EXIT
+
 echo "==> Building Chartroom static site with Quartz"
 
 if [ ! -d "$CONTENT_DIR" ]; then
@@ -31,9 +37,17 @@ if [ ! -x "$QUARTZ_DIR/node_modules/.bin/quartz" ]; then
     npm --prefix "$QUARTZ_DIR" ci
 fi
 
+echo "==> Preparing isolated Quartz build"
+cp -R "$QUARTZ_DIR/quartz" "$QUARTZ_BUILD_DIR/quartz"
+cp "$QUARTZ_DIR/package.json" "$QUARTZ_BUILD_DIR/package.json"
+if [ -f "$QUARTZ_DIR/package-lock.json" ]; then
+    cp "$QUARTZ_DIR/package-lock.json" "$QUARTZ_BUILD_DIR/package-lock.json"
+fi
+ln -s "$QUARTZ_DIR/node_modules" "$QUARTZ_BUILD_DIR/node_modules"
+
 echo "==> Generating static site"
 (
-    cd "$QUARTZ_DIR"
+    cd "$QUARTZ_BUILD_DIR"
     npm run quartz -- build \
         --directory "$CONTENT_DIR" \
         --output "$SITE_DIR"

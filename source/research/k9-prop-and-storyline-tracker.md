@@ -276,6 +276,43 @@ The source states that Mat Irvine had been K-9's sole operator since around 1990
 
 **Evidence classification:** Later/secondary visual reference supplied by the user. The timeline is useful for generating episode-by-episode comparison tasks, but its labels, image captions, operator history, and prop identities remain provisional until tied to production documentation or directly dated screen evidence.
 
+## The Doctor Who Companion archive
+
+The [K-9 tag archive](https://thedoctorwhocompanion.com/tag/k9/) is useful as a discovery index, but individual articles should be assessed separately.
+
+- [John Leeson thought K-9 would be axed after his first appearance](https://thedoctorwhocompanion.com/2026/05/26/john-leeson-thought-k9-would-be-axed-from-doctor-who-after-his-first-appearance/) — useful production evidence for separating John Leeson's voice role from Mat Irvine's physical operation, and for documenting the prop's difficulty during studio recording. It also supports the claim that K-9 was initially expected to be a one-story character.
+- [The Never Ending Story of K9](https://thedoctorwhocompanion.com/2017/01/05/the-never-ending-story-of-k9/) — useful secondary overview of *K9 and Company*, *The Five Doctors*, *School Reunion*, *The Sarah Jane Adventures*, and the separate *K-9* spin-off development history. Use it to identify continuity and production questions, not as sole evidence.
+- [The Collector's Corner: Denys Fisher Leela](https://thedoctorwhocompanion.com/2020/06/21/the-collectors-corner-10-the-denys-fisher-leela/) — useful licensed-product lead because it notes the later addition of a K-9 figure to the Denys Fisher Doctor Who range. This belongs in the licensed-product register and must not be used as screen-prop evidence.
+- [The New K9 Design Revealed](https://thedoctorwhocompanion.com/2017/05/11/the-new-k9-design-revealed/) — useful for the separate K-9 film/spin-off design history and the boundary between BBC-owned visual design and the character rights associated with Bob Baker and Paul Tams.
+
+The archive also contains reviews, Big Finish coverage, quizzes, and general companion articles. Those may help with release and appearance discovery, but they should not be promoted into the prop register without a more direct source.
+
+## Source review and recommended use
+
+The reviewed links should be used according to the following evidence hierarchy:
+
+| Source | Source value | What to extract |
+|---|---|---|
+| [Tony Harding interview](https://thedoctorwhocompanion.com/2023/08/28/the-fendahl-files-k9s-creator-speaks-an-exclusive-interview-with-tony-harding/) | High: interview transcript based on a 1980 recording with K-9's designer | Original design brief, build schedule, decisions made under production pressure, later modifications, and Harding's own distinction between design and operation |
+| [John Leeson interview](https://thedoctorwhocompanion.com/2026/05/26/john-leeson-thought-k9-would-be-axed-from-doctor-who-after-his-first-appearance/) | Medium-high: direct performer recollection reproduced by a secondary publication | Confirmation that Leeson voiced K-9 while Mat Irvine operated the prop; evidence of operational difficulty and the expectation that K-9 might be a one-story character |
+| [Affirmative, Master — NZDWFC archive](https://doctorwho.org.nz/archive/tsv41/affirmativemaster.html) | Medium: detailed fan publication and production summary | Mechanism list, early sketches, head enlargement, radio control, chain drive, colour, collar, antennae, and operational problems; verify against Harding and dated production evidence |
+| [The Prop Gallery K-9 side panel](https://www.thepropgallery.com/k-9-side-panel-the-armageddon-factor) | High for the object described, subject to provenance | Screen-use claim, serial/date, component identity, ownership or custody history, photographs, measurements, and any chain-of-custody documentation |
+| [Cut Price Miracles — Doctor Who Cuttings Archive](https://www.cuttingsarchive.org/index.php/Cut_Price_Miracles) | Medium: archival contemporary cutting | Dated evidence of Harding's role and BBC visual-effects context; preserve the publication date and original wording if transcribed |
+| [Dog Days — DWM Special](https://pocketmags.com/doctor-who-magazine/43/articles/dog-days) | Potentially high: specialist publication, but access may be limited | Production-department history, Tony Harding's career, K-9 design context, and later prop maintenance or exhibition history |
+| [The Never Ending Story of K9](https://thedoctorwhocompanion.com/2017/01/05/the-never-ending-story-of-k9/) | Medium-low: secondary overview | Leads for *K9 and Company*, *School Reunion*, *The Sarah Jane Adventures*, and the separate *K-9* spin-off; verify claims against episodes, production interviews, or official documentation |
+| [The New K9 Design Revealed](https://thedoctorwhocompanion.com/2017/05/11/the-new-k9-design-revealed/) | Medium for later spin-off history; not evidence for the classic BBC prop | Design-rights boundary, later 3D-printed or film-model development, and the separation between the BBC visual design and later K-9 productions |
+| [The Who Archive](https://www.whoarchive.org/) | Potentially high institutional lead | Search for catalogued K-9 props, concept art, production photographs, custody records, or future collection access |
+| [National Film and Sci-Fi Museum](https://nationalfilmandscifimuseum.com/) | High for current institutional display information | Confirm which K-9 is displayed, its stated provenance, display dates, owner/loan information, and whether the museum has a catalogue entry |
+
+### Recommended research order
+
+1. Obtain and transcribe the full Tony Harding interview, preserving its original 1980 provenance.
+2. Capture the exact John Leeson and Mat Irvine operational claims, then compare them with production photographs and *The Invisible Enemy* recording documentation.
+3. Contact or inspect the Prop Gallery listing for provenance and component-level evidence.
+4. Check *Dog Days* and the Cuttings Archive for dated contemporary material.
+5. Use the secondary articles to generate episode and production questions, not to close them.
+6. Query the Who Archive and National Film and Sci-Fi Museum for object records before adding any museum or surviving-prop identity as confirmed.
+
 ## Further research leads
 
 These sources are stronger than a general fan-wiki summary and are worth following for the prop/storyline comparison.
