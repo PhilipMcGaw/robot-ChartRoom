@@ -50,3 +50,16 @@ Review this video specifically for ideas about the screens/displays associated w
 - Read the article and record its hardware, software, and configuration requirements.
 - Assess latency, reliability, network/security assumptions, and compatibility with the intended Raspberry Pi and camera.
 - Compare the approach with the existing Chartroom video-pipeline research before adopting anything.
+
+## Autonomous lake-mapping catamaran — read later
+
+**Reference:** [Circuit Digest: Autonomous lake mapping catamaran steers with air propellers and not a rudder — two years of iteration](https://circuitdigest.com/news/autonomous-lake-mapping-catamaran-steers-with-air-propellers-and-not-a-rudder-two-years-of-iteration)
+
+**Potential relevance:** Surface-vehicle navigation and control, air-propeller propulsion/steering without a conventional rudder, autonomous lake mapping, and lessons from iterative prototyping. Review for possible ideas applicable to the Geo-Positioning Buoy Project and other surface-robot concepts.
+
+**Status:** Read later — not yet reviewed or validated for our designs.
+
+**Next actions:**
+- Review the vehicle layout, propulsion and steering arrangement, and mapping/navigation stack.
+- Identify what was learned through the reported two years of iteration.
+- Separate directly documented design details from assumptions before considering any adaptation.
