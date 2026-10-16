@@ -46,6 +46,8 @@ New technical claims SHOULD identify their source where practical: repository pa
 
 When sources disagree, preserve the disagreement, identify the authoritative source, explain the decision or uncertainty, and do not silently choose a convenient interpretation.
 
+When recording engineering evidence, distinguish retained source material from recollection, inference, proposed wording, and unresolved claims. Do not fill gaps with plausible assumptions or present a question, draft, or general engineering explanation as evidence that a particular design, action, test, or result occurred. Attribute work to an individual only when the source or an explicit account supports that attribution. Keep numerical claims traceable to a source or clearly label them as approximate or recalled. Record material conflicts and unknowns plainly, and prefer a narrower supported claim over a broader unsupported one.
+
 Hardware documentation SHOULD identify the manufacturer, model or part number, document type, revision/date where known, and an official source link where available. Do not redistribute third-party manuals when a stable official link is sufficient.
 
 Use Markdown footnotes for citations when source criticism or provenance matters. Use ordinary Markdown links for project navigation and external documentation.
@@ -85,5 +87,13 @@ Before editing: inspect relevant source files and conventions; decide whether th
 After editing: validate Markdown/front matter; check affected links and media; run an appropriate local build or validation when safe; inspect rendered output for substantial layout changes; do not deploy unless explicitly requested; and summarise changes, validation, and uncertainty.
 
 ## Git workflow
+
+On Windows, use GitHub Desktop as the default interface for repository status, reviewing diffs, staging selected files, committing, fetching, integrating remote changes, and pushing. Do not assume Git is unavailable because `git` is not on PowerShell's `PATH`.
+
+Use command-line Git only when GitHub Desktop cannot perform a required operation, is unavailable, or repeatable automation is materially more appropriate. On Windows, use a repository helper such as `tools/github-desktop-git.cmd` when present. If no helper is available, use the documented GitHub Desktop bundled Git executable for the current host; recheck its path and version after GitHub Desktop upgrades. On macOS, use command-line Git from this repository's working directory and the machine's configured authentication.
+
+On Windows host `GBR-3N87GR3`, the documented GitHub Desktop 3.6.7 executable is `C:\Users\philip.mcgaw\AppData\Local\GitHubDesktop\app-3.6.7\resources\app\git\cmd\git.exe` (`git version 2.53.0.windows.4`, checked 2026-10-09). Use it when the Desktop interface cannot perform a required operation; recheck after upgrades.
+
+Before pushing, fetch the configured remote and integrate its latest branch into the task branch. Resolve divergence while preserving unrelated work, then review the final diff and push. Do not expose credentials or tokens.
 
 Use focused changes with clear commit messages. After a requested change has been validated, create the focused commit and push it to the configured remote and current working branch as part of the normal workflow, unless the user explicitly asks to stop before committing or pushing, or a concrete blocker prevents it. Before staging, inspect the complete status and diff so that unrelated work is not included. Do not rewrite history, force-push, reset unrelated work, or include unrelated changes. The default branch is main unless the repository states otherwise.
