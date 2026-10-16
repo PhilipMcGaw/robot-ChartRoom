@@ -58,7 +58,13 @@ All newly authored project prose, comments, commit messages, and documentation M
 
 Use British spellings such as organisation, behaviour, colour, centre, and licence; Oxford commas where useful; ISO dates (YYYY-MM-DD); and SI symbols with a non-breaking space between values and units, such as 10 mm, 5 V, and 25 °C.
 
+Use `program` for computer software and `programme` for an organised activity or series. Use `licence` as a noun and `license` as a verb. For month-and-year references in prose, write `April 2025`; retain ISO dates for full dates and numeric formats where filenames, code, data, or external conventions require them.
+
+When reporting an imperial measurement from a source, retain the source value and give an approximate SI equivalent in parentheses where useful. Round conversions to a precision supported by the source, and keep conversions outside verbatim quotations. Use Unicode characters where they are semantically correct and readable.
+
 Use precise status terms such as designed, planned, implemented, simulated, bench-tested, validated, and production-proven. Preserve quotations, code, identifiers, URLs, product names, and official third-party spellings exactly.
+
+Use RFC 2119 terms (`MUST`, `MUST NOT`, `SHOULD`, `SHOULD NOT`, and `MAY`) only when deliberately stating a requirement or recommendation; do not use them casually.
 
 Keep front matter consistent with nearby pages. Do not invent dates, test results, or implementation details.
 
