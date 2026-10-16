@@ -56,6 +56,10 @@ Use Markdown footnotes for citations when source criticism or provenance matters
 
 All newly authored project prose, comments, commit messages, and documentation MUST use British English, clear technical language, and consistent terminology.
 
+For technical explanations and procedures, use relevant ASD-STE100 principles: choose familiar, specific words; keep terminology consistent; and use clear sentence structure. Do not force controlled vocabulary into established technical terms, quotations, code, or natural narrative. Do not claim full ASD-STE100 compliance unless requested and checked against the current official specification, including its applicable rules and dictionary.
+
+Use gender-neutral wording for roles and groups when gender is irrelevant. Use a person's stated name and pronouns; do not infer gender or pronouns. If they are unknown, repeat the person's name or role, or use singular `they`. Preserve gendered wording in quotations and historical source material, and distinguish it from editorial wording.
+
 Use British spellings such as organisation, behaviour, colour, centre, and licence; Oxford commas where useful; ISO dates (YYYY-MM-DD); and SI symbols with a non-breaking space between values and units, such as 10 mm, 5 V, and 25 °C.
 
 Use `program` for computer software and `programme` for an organised activity or series. Use `licence` as a noun and `license` as a verb. For month-and-year references in prose, write `April 2025`; retain ISO dates for full dates and numeric formats where filenames, code, data, or external conventions require them.
