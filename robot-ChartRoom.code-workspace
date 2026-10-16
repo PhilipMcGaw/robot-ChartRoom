@@ -66,8 +66,7 @@
   },
   "extensions": {
     "recommendations": [
-      "openai.chatgpt",
-      "FanaticPythoner.better-todo-tree"
+      "openai.chatgpt"
     ]
   }
 }
