@@ -56,6 +56,10 @@ This is historical project research, not a validated ROV design specification. S
 
 The Hackaday project page still lists a GitHub software repository, but that repository URL currently returns 404, as reported during this review. I could not identify a working mirror. The project page, logs, and hardware files remain available, but they do not replace the missing software source.
 
+===== Related research =====
+
+Compare this historical frame and control project with the [[sites:chartroom:research:cps-5|CPS 5]] build record and the [[sites:chartroom:research:blue-robotics-software-setup|BlueROV2 software setup]]. The [[sites:chartroom:research:rov-overview-and-applications|ROV overview]] summarises the shared system boundaries.
+
 ===== Sources =====
 
   * [[https://hackaday.io/project/8343-borgcube-rov|Hackaday.io — BorgCube ROV]], project description and component links.

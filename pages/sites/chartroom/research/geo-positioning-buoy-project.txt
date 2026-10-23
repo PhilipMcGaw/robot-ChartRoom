@@ -63,6 +63,8 @@ The GPB is most useful as a comparative reference for:
 
 It should remain separate from the Smart Buoy environmental-sensing concept. The GPB is a model-yacht positioning platform, and its Bluetooth control, battery, thruster, hull, and operating assumptions do not establish suitability for environmental sensing, long-duration deployment, seawater, or underwater use.
 
+For environmental-monitoring buoy designs and network architecture, see [[sites:chartroom:research:remote-environmental-monitoring-buoy|Remote Environmental Monitoring Buoy]], [[sites:chartroom:research:open-source-ocean-buoy-references|open-source ocean buoy references]], and [[sites:chartroom:research:smart-buoy-lora-network-infrastructure|Smart Buoy LoRa infrastructure]]. [[sites:chartroom:research:sofar-spotter|Sofar Spotter]] provides a commercial comparison.
+
 ===== Provenance =====
 
   * Source: user-supplied {{:sites:chartroom:research:evidence:csmyc-geo-positioning-buoy-project-v10.pdf?linkonly|csmyc-geo-positioning-buoy-project-v10.pdf}}.

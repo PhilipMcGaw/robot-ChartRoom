@@ -102,6 +102,8 @@ Useful comparison areas include:
 
 The Smart Buoy's documented V2 proposals — resealable access, ESP32/LoRa, and more local wave-data processing — provide a useful bridge between the educational prototype and the more integrated commercial architecture.
 
+For the proposed Chartroom network design, see [[sites:chartroom:research:remote-environmental-monitoring-buoy|Remote Environmental Monitoring Buoy]] and [[sites:chartroom:research:smart-buoy-lora-network-infrastructure|Smart Buoy LoRa infrastructure]]. The [[sites:chartroom:research:open-source-ocean-buoy-references|open-source buoy notes]] include the Smart Buoy project used in this comparison.
+
 ===== Relevance to project architecture =====
 
 For the CTD and other environmental sensor nodes, investigate whether the following pattern is appropriate:

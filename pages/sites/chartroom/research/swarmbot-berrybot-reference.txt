@@ -80,6 +80,8 @@ BerryBot should remain a reference platform rather than a hardware dependency. S
 
 The supplied {{:sites:chartroom:research:evidence:picobricks-go-guide.pdf?linkonly|PicoBricks Go guide}} is a companion reference for Bluetooth control of REX and BerryBot platforms. It documents version-specific Arduino, MicroPython, and block-programming workflows. Its ESP32 board-package and MicroPython version instructions should be rechecked before use and are not current SwarmBot requirements.
 
+For other educational robotics structures, see [[sites:chartroom:research:community-robotics-and-sensing-batch|community robotics and sensing]], [[sites:chartroom:research:ukmars-micromouse-reference|UKMARS and Micromouse]], and [[sites:chartroom:research:elementary-auv-rov-education|Elementary AUV and ROV education]].
+
 ===== Provenance =====
 
   * Source: user-supplied {{:sites:chartroom:research:evidence:berrybot-project-booklet.pdf?linkonly|BerryBot Project booklet}}.

@@ -24,30 +24,84 @@ Research pages should make the following clear where relevant:
 
 Prefer primary sources and stable official documentation. Preserve provenance rather than silently converting secondary reporting into project fact.
 
-===== New reference notes =====
+===== Research catalogue =====
 
-  * [[sites:chartroom:research:mate-clovis-crush-depth-scylla|Clovis Community College Crush Depth / Scylla]] — MATE 2025 software and vehicle design report.
-  * [[sites:chartroom:research:mate-texas-am-oceanus|Texas A&M Team Oceanus]] — MATE ROV and float monorepo with simulation, CAD, and wiring documentation.
-  * [[sites:chartroom:research:mate-uconn-underwater-robotics|UConn Underwater Robotics Club]] — MATE 2026 ROS 2, vehicle, arm, and video-control architecture.
-  * [[sites:chartroom:research:mate-cwrubotix|CWRUbotix MATE ROV software]] — ROS 2 software workspace, development setup, and tests.
-  * [[sites:chartroom:research:mate-project-trident|Project Trident]] — MATE 2026 ROV and crew-facing mission management overview.
-  * [[sites:chartroom:research:mate-aquaphoton-academy|Aquaphoton Academy]] — MATE 2024 technical report with integration diagrams and safety appendices.
-  * [[sites:chartroom:research:uwrov-design-archive|UWROV ROV design archive]] — multi-year vehicle designs, CAD, and team technical documentation.
-  * [[sites:chartroom:research:seaperch-build-and-testing|SeaPerch build and testing resources]] — educational ROV construction, buoyancy, performance testing, and troubleshooting.
-  * [[sites:chartroom:research:aquabot-underwater-manipulation|Aquabot underwater manipulation research]] — research vehicle integration, visual input, and autonomous manipulation.
-  * [[sites:chartroom:research:rumarino-robosub-software|RUMarino RoboSub software reference]] — AUV software divisions, ROS architecture, and simulation.
-  * [[sites:chartroom:research:osu-uwrt-nereus-simulator|OSU UWRT Nereus simulator]] — config-driven ROS 2 underwater-robot simulation and operator viewer.
+The links below cover all research notes. Use the related-research links within a note to move between sources on the same topic.
 
-  * [[sites:chartroom:research:k9-read-later|K-9 Read Later]] — K-9 project references awaiting review.
+==== Underwater robotics and ROVs ====
 
-  * [[sites:chartroom:research:baited-remote-underwater-video-systems|Baited remote underwater video systems (BRUVS)]] — survey design, deployment, and video-analysis reference.
-  * [[sites:chartroom:research:swarmbot-berrybot-reference|BerryBot reference for SwarmBot education]] — RP2040 educational robot hardware, programming, and behaviour reference.
-  * [[sites:chartroom:research:constantrobotics-video-pipeline|ConstantRobotics video pipeline and low-latency research]] — capture, encoding, streaming, tracking, enhancement, recording, and Raspberry Pi video-pipeline references.
-  * [[sites:chartroom:research:elementary-auv-rov-education|Elementary AUV and ROV education reference]] — translated educational, safety, payload, and control reference.
-  * [[sites:chartroom:research:geo-positioning-buoy-project|Geo-Positioning Buoy Project reference]] — small surface-buoy mechanical and fleet-control reference.
-  * [[sites:chartroom:research:rovscp-marine-geotechnical-profiling|ROVSCP marine geotechnical profiling paper]] — critical review of an ROV-mounted sediment penetrometer proposal and its evidence limits.
-  * [[sites:chartroom:research:piwars-vt-72b|PiWars VT-72B idea]] — tracked recovery-vehicle concept and possible modular competition mechanisms.
-  * [[sites:chartroom:research:sensea-underwater-camera|Sensea Raspberry Pi underwater camera]] — low-cost underwater imaging, temperature logging, and enclosure reference.
+  * [[sites:chartroom:research:rov-overview-and-applications|ROV overview and applications]]
+  * [[sites:chartroom:research:blue-robotics-software-setup|Blue Robotics BlueROV2 software setup]]
+  * [[sites:chartroom:research:borgcube-rov|BorgCube ROV]]
+  * [[sites:chartroom:research:cps-5|CPS 5 underwater drone]]
+  * [[sites:chartroom:research:mate-aquaphoton-academy|Aquaphoton Academy MATE technical report]]
+  * [[sites:chartroom:research:mate-clovis-crush-depth-scylla|Crush Depth / Scylla MATE technical report]]
+  * [[sites:chartroom:research:mate-cwrubotix|CWRUbotix MATE ROV software]]
+  * [[sites:chartroom:research:mate-project-trident|Project Trident]]
+  * [[sites:chartroom:research:mate-rov-requirements-summary|MATE ROV engineering requirements summary]]
+  * [[sites:chartroom:research:mate-texas-am-oceanus|Texas A&M Team Oceanus]]
+  * [[sites:chartroom:research:mate-uconn-underwater-robotics|UConn Underwater Robotics Club]]
+  * [[sites:chartroom:research:mts-rov-photo-challenge-2025|2025 MTS ROV Photo Challenge]]
+  * [[sites:chartroom:research:robocenter|RoboCenter ROV]]
+  * [[sites:chartroom:research:rovmaker-edge|RovMaker Edge]]
+  * [[sites:chartroom:research:seaperch-build-and-testing|SeaPerch build and testing]]
+  * [[sites:chartroom:research:uwrov-design-archive|UWROV design archive]]
+
+==== Underwater imaging, survey, and simulation ====
+
+  * [[sites:chartroom:research:aquabot-underwater-manipulation|Aquabot underwater manipulation]]
+  * [[sites:chartroom:research:baited-remote-underwater-video-systems|Baited remote underwater video systems (BRUVS)]]
+  * [[sites:chartroom:research:osu-uwrt-nereus-simulator|OSU UWRT Nereus simulator]]
+  * [[sites:chartroom:research:rovscp-marine-geotechnical-profiling|ROVSCP marine geotechnical profiling]]
+  * [[sites:chartroom:research:rumarino-robosub-software|RUMarino RoboSub software]]
+  * [[sites:chartroom:research:sensea-underwater-camera|Sensea Raspberry Pi underwater camera]]
+  * [[sites:chartroom:research:vobster-photogrammetry|Vobster photogrammetry project]]
+
+==== Video, imaging, and remote operation ====
+
+  * [[sites:chartroom:research:constantrobotics-video-pipeline|ConstantRobotics video pipeline]]
+  * [[sites:chartroom:research:gtg-1-glass-to-glass-latency|GTG-1 glass-to-glass latency measurement]]
+  * [[sites:chartroom:research:learnrobotics-rpi-video-streaming|Learn Robotics Raspberry Pi video streaming]]
+  * [[sites:chartroom:research:raspberry-pi-360-imaging|Raspberry Pi 360-degree imaging]]
+  * [[sites:chartroom:research:stratospheric-balloon-camera-nate-luebbe|Stratospheric balloon camera experiment]]
+  * [[sites:chartroom:research:autonomous-uav-ground-station|Autonomous UAV ground station]]
+  * [[sites:chartroom:research:luke-ditria-ai-wildlife-monitor|Luke Ditria AI wildlife monitor]]
+  * [[sites:chartroom:research:maka-niu-deep-sea-platform|Maka Niu deep-sea imaging platform]]
+  * [[sites:chartroom:research:zerobot|ZeroBot Raspberry Pi robot]]
+
+==== Buoys and environmental sensing ====
+
+  * [[sites:chartroom:research:geo-positioning-buoy-project|Geo-Positioning Buoy Project]]
+  * [[sites:chartroom:research:iot-field-lessons-solar-cellular-bus-signs|Solar cellular bus-sign field lessons]]
+  * [[sites:chartroom:research:open-source-ocean-buoy-references|Open-source ocean buoy references]]
+  * [[sites:chartroom:research:remote-environmental-monitoring-buoy|Remote environmental monitoring buoy]]
+  * [[sites:chartroom:research:smart-buoy-lora-network-infrastructure|Smart Buoy LoRa network infrastructure]]
+  * [[sites:chartroom:research:sofar-spotter|Sofar Spotter]]
+  * [[sites:chartroom:research:dfrobot-ec|DFRobot EC library]]
+  * [[sites:chartroom:research:gy-91-mpu9250-assessment|GY-91 MPU-9250/9255 IMU assessment]]
+
+==== Robotics, education, and hardware ====
+
+  * [[sites:chartroom:research:3d-printed-tank-elements|3D-printed tank takes on the elements]]
+  * [[sites:chartroom:research:8bitrobots-module|8BitRobots Module]]
+  * [[sites:chartroom:research:community-robotics-and-sensing-batch|Community robotics and sensing references]]
+  * [[sites:chartroom:research:documentation-design|Documentation and technical communication design]]
+  * [[sites:chartroom:research:elementary-auv-rov-education|Elementary AUV and ROV education]]
+  * [[sites:chartroom:research:esa-exomy-software-instructions|ESA ExoMy software instructions]]
+  * [[sites:chartroom:research:k9-prop-and-storyline-tracker|K-9 prop and storyline tracker]]
+  * [[sites:chartroom:research:k9-read-later|K-9 Read Later]]
+  * [[sites:chartroom:research:linorobot|LinoRobot ROS platform]]
+  * [[sites:chartroom:research:makers-pet-120mm|Maker's Pet 120 mm robot]]
+  * [[sites:chartroom:research:miharix-wifi-rc|Miharix WiFi RC]]
+  * [[sites:chartroom:research:osoyoo|OSOYOO robotics references]]
+  * [[sites:chartroom:research:pca9685|PCA9685 PWM/servo driver]]
+  * [[sites:chartroom:research:piwars-vt-72b|PiWars VT-72B idea]]
+  * [[sites:chartroom:research:sbcshop-motorshield|SB Components MotorShield]]
+  * [[sites:chartroom:research:swarmbot-berrybot-reference|BerryBot reference for SwarmBot education]]
+  * [[sites:chartroom:research:swarmbot-face|SwarmBot optional face/display module]]
+  * [[sites:chartroom:research:ukmars-micromouse-reference|UKMARS and Micromouse reference]]
+  * [[sites:chartroom:research:ultrasonic-robotics-and-open-hardware-batch|Ultrasonic robotics and open hardware]]
+  * [[sites:chartroom:research:ultrasonic-rov-micromouse-and-control-batch|Ultrasonic, ROV, and micromouse references]]
 
 ===== Research status =====
 

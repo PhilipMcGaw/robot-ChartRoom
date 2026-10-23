@@ -81,6 +81,10 @@ This aligns well with the existing separation between vehicle control, Datalogge
 
 The Vobster project is a practical recreational/commercial photogrammetry project, not a specification for underwater surveying. Its camera equipment, processing workflow, and survey methodology should therefore be treated as inspiration rather than requirements. Photogrammetric accuracy, scale, georeferencing, and reconstruction quality need to be validated for the intended application.
 
+===== Related research =====
+
+For a different underwater survey method, see [[sites:chartroom:research:baited-remote-underwater-video-systems|BRUVS]]. The [[sites:chartroom:research:sensea-underwater-camera|Sensea camera]] and [[sites:chartroom:research:aquabot-underwater-manipulation|Aquabot manipulation project]] provide other underwater-imaging examples. [[sites:chartroom:research:rovscp-marine-geotechnical-profiling|ROVSCP]] concerns seabed strength measurements rather than visual mapping.
+
 ===== Read later =====
 
   * [[https://3dmb.uk/project/vobster-photogrammetry-project/|Vobster Photogrammetry Project]]

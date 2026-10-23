@@ -27,6 +27,10 @@ Nereus is worth reviewing for the separation of robot and environment configurat
 
 Nereus targets underwater robotics and may include AUV-oriented assumptions. A feature list does not establish the accuracy of a simulation model or suitability for a particular vehicle. Review the README, configuration packs, documentation, and project activity before deciding whether any component can be reused or compared with Chartroom's simulation work.
 
+===== Related research =====
+
+For another underwater-robot software reference, see [[sites:chartroom:research:rumarino-robosub-software|RUMarino]]. [[sites:chartroom:research:mate-texas-am-oceanus|Team Oceanus]] also documents software-in-the-loop work for an ROV. The [[sites:chartroom:research:mate-cwrubotix|CWRUbotix]] and [[sites:chartroom:research:mate-uconn-underwater-robotics|UConn]] notes cover MATE ROS 2 workspaces.
+
 ===== Sources =====
 
   * [OSU UWRT Nereus repository](https://github.com/osu-uwrt/nereus), accessed 2026-10-23. Project description, README, and source code.

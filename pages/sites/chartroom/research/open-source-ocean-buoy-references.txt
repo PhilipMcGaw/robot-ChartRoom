@@ -118,6 +118,8 @@ The wider research programme explicitly considers the whole system: hydrodynamic
 
 ===== Related contemporary research =====
 
+For the proposed Chartroom network and server-side data path, see [[sites:chartroom:research:remote-environmental-monitoring-buoy|Remote Environmental Monitoring Buoy]] and [[sites:chartroom:research:smart-buoy-lora-network-infrastructure|Smart Buoy LoRa infrastructure]]. [[sites:chartroom:research:geo-positioning-buoy-project|Geo-Positioning Buoy]] and [[sites:chartroom:research:sofar-spotter|Sofar Spotter]] provide additional platform comparisons.
+
 ==== Small wave-buoy literature ====
 
 A 2025 review of atmospheric and ocean measuring buoys explicitly lists the **T3chFlicks education-focused Smart Buoy** alongside Sofar Spotter, FZ-series buoys, MELODI, ADWSD, miniwave buoys, and other small wave-measurement platforms.

@@ -27,6 +27,10 @@ The page is useful as an example of how a student team separates autonomy, perce
 
 The published page is brief and does not provide enough detail to establish the interfaces, test coverage, or current implementation state of each division. Its explicit competition reference is RoboSub 2024, so check the team's source repositories and newer material before treating it as current practice. Do not infer that the described AUV stack maps directly to a tethered ROV.
 
+===== Related research =====
+
+For underwater-robot simulation and ROS 2 examples, see the [[sites:chartroom:research:osu-uwrt-nereus-simulator|Nereus simulator]], [[sites:chartroom:research:mate-texas-am-oceanus|Team Oceanus SITL reference]], [[sites:chartroom:research:mate-cwrubotix|CWRUbotix]], and [[sites:chartroom:research:mate-uconn-underwater-robotics|UConn]]. These notes describe different teams and system goals; compare their documented interfaces and test context.
+
 ===== Sources =====
 
   * [RUMarino software overview](https://www.rumarino.org/software), accessed 2026-10-23. Team-published summary of its RoboSub 2024 software divisions.

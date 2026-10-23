@@ -25,6 +25,10 @@ The repository is useful for reviewing software structure and team development p
 
 This is a season-specific software workspace. The repository README is the source for the 2025–2026 setup; do not assume its ROS version, package layout, or device allocation remains current in later seasons. The README alone does not establish the safety or reliability of its vehicle.
 
+===== Related research =====
+
+Compare its multi-computer ROS 2 workspace with [[sites:chartroom:research:mate-uconn-underwater-robotics|UConn]] and the reported control/video architecture in [[sites:chartroom:research:mate-clovis-crush-depth-scylla|Crush Depth / Scylla]]. The [[sites:chartroom:research:osu-uwrt-nereus-simulator|Nereus simulator]] is a related reference for ROS 2 underwater-robot software.
+
 ===== Visual references =====
 
 The software repository is focused on code and setup rather than vehicle photography. CWRUbotix's [MATE ROV team page](https://www.cwrubotix.org/mate_rov.html) includes a vehicle photograph, but it depicts an earlier team vehicle and is not a picture of the 2025–2026 software project. No explicit image reuse licence was found, so the photo is linked rather than copied.

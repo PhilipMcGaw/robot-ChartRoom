@@ -67,6 +67,10 @@ Prepared from user-supplied pasted reference text reviewed 2026-09-21. The paste
 
 These are general reference articles. Numerical claims and classifications should be verified against primary manufacturer, standards, academic, or project-specific sources before being used for design decisions.
 
+===== Related research =====
+
+For project examples, compare [[sites:chartroom:research:blue-robotics-software-setup|BlueROV2's software and commissioning guide]], [[sites:chartroom:research:cps-5|CPS 5]], and [[sites:chartroom:research:borgcube-rov|BorgCube]]. Competition-team reports are collected in the [[sites:chartroom:research:mate-clovis-crush-depth-scylla|Scylla]], [[sites:chartroom:research:mate-texas-am-oceanus|Team Oceanus]], [[sites:chartroom:research:mate-uconn-underwater-robotics|UConn]], and [[sites:chartroom:research:mate-cwrubotix|CWRUbotix]] notes.
+
 ===== Status =====
 
 Reference material only. No project requirement or architecture decision is established by this page.

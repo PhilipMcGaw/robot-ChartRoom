@@ -132,6 +132,8 @@ For the ROV, keep three concerns measurable and independently testable:
 
 Together with the [[sites:chartroom:research:gtg-1-glass-to-glass-latency|GTG-1 research note]], this provides a basis for building an empirical video-latency budget.
 
+The [[sites:chartroom:research:learnrobotics-rpi-video-streaming|Learn Robotics streaming reference]] provides another Raspberry Pi example. For underwater camera and survey use cases, see [[sites:chartroom:research:sensea-underwater-camera|Sensea]], [[sites:chartroom:research:baited-remote-underwater-video-systems|BRUVS]], and [[sites:chartroom:research:vobster-photogrammetry|Vobster photogrammetry]].
+
 ===== What this research does not establish =====
 
 This research does **not** establish a ConstantRobotics software dependency, selected camera, codec, streaming protocol, Raspberry Pi model, onboard tracking requirement, dehazing/denoising requirement, or target glass-to-glass latency.

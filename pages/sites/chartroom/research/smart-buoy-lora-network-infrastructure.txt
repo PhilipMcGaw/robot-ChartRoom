@@ -66,7 +66,7 @@ Buoy radio package
   → PHP API, dashboard, or CSV export
 </code>
 
-
+For the wider buoy design and deployment context, see [[sites:chartroom:research:remote-environmental-monitoring-buoy|Remote Environmental Monitoring Buoy]], [[sites:chartroom:research:open-source-ocean-buoy-references|open-source ocean buoy references]], [[sites:chartroom:research:geo-positioning-buoy-project|Geo-Positioning Buoy]], and [[sites:chartroom:research:sofar-spotter|Sofar Spotter]].
 
 ~~REFNOTES~~
 ---------

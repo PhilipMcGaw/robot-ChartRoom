@@ -67,6 +67,10 @@ Blue Robotics' architecture is built around its own hardware and the MAVLink/Ard
 
 The existing NATS-based communications architecture remains preferable for this project. In particular, NATS should not be replaced by MAVLink merely to resemble BlueOS/Cockpit.
 
+===== Related research =====
+
+For alternative team architectures, see [[sites:chartroom:research:mate-clovis-crush-depth-scylla|Crush Depth / Scylla]], [[sites:chartroom:research:mate-texas-am-oceanus|Team Oceanus]], [[sites:chartroom:research:mate-uconn-underwater-robotics|UConn]], and [[sites:chartroom:research:mate-cwrubotix|CWRUbotix]]. The [[sites:chartroom:research:rov-overview-and-applications|ROV overview]] provides broader subsystem context.
+
 ===== Status =====
 
 **Research / architecture and commissioning inspiration.** No BlueOS, ArduSub, or MAVLink dependency is planned.

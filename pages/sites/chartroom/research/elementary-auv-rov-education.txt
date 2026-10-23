@@ -129,6 +129,8 @@ This material is most useful in four places:
 
 The material does not prove that the current ROV, SwarmBot, NATS, ROS 2, HiL/SiL, or Testbot systems implement these capabilities. Physical validation must remain tied to the project's own hardware, software, test evidence, and safety records.
 
+For complementary construction and testing material, see [[sites:chartroom:research:seaperch-build-and-testing|SeaPerch]]. The [[sites:chartroom:research:swarmbot-berrybot-reference|BerryBot]] and [[sites:chartroom:research:ukmars-micromouse-reference|UKMARS]] notes cover small educational robots and staged programming exercises.
+
 ===== Provenance and limitations =====
 
   * Sources: user-supplied Russian course and operating material for ElementaryAUV and ElementaryROV.

@@ -66,6 +66,8 @@ A useful progression inspired by these projects would be:
 
 The key lesson is that **diagnostics and calibration are part of the platform**, not temporary developer conveniences.
 
+For additional examples of staged robotics learning and open hardware, see [[sites:chartroom:research:community-robotics-and-sensing-batch|community robotics and sensing]], [[sites:chartroom:research:swarmbot-berrybot-reference|BerryBot]], and [[sites:chartroom:research:ultrasonic-robotics-and-open-hardware-batch|ultrasonic robotics and open hardware]].
+
 ===== Read later =====
 
   * Compare UKMARSBOT's repository structure with the intended Test in a Box structure.

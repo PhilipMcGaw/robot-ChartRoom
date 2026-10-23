@@ -44,6 +44,10 @@ The CPS 5 also demonstrates that a small vehicle can provide useful stabilisatio
 
 CPS 5 is a maker/educational platform and should not be treated as a certified pressure-vessel, tether, propulsion, or safety specification. Published performance figures are project claims and require independent validation before being used as engineering requirements. The commercial course and associated material should also be distinguished from an independently reproducible open-source engineering baseline.
 
+===== Related research =====
+
+For other build and architecture examples, see [[sites:chartroom:research:borgcube-rov|BorgCube]], the [[sites:chartroom:research:blue-robotics-software-setup|BlueROV2 software setup]], and the [[sites:chartroom:research:mate-clovis-crush-depth-scylla|Crush Depth / Scylla MATE report]]. [[sites:chartroom:research:seaperch-build-and-testing|SeaPerch]] covers construction and testing for an educational ROV.
+
 ===== Sources =====
 
   * [[https://www.instructables.com/Overview-of-the-CPS-5-Underwater-Drone/|Instructables — Overview of the CPS 5 Underwater Drone]]

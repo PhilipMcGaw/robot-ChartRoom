@@ -27,6 +27,10 @@ The clear division between the pilot/autopilot path and ROS 2's arm and camera f
 
 The repository covers the software components documented by the team; it does not describe every electrical, mechanical, or safety interface of the vehicle. Its software division is one team's design choice, not evidence that all ROV control should sit outside ROS 2. Confirm the current season and dependencies before attempting to build or reuse the code.
 
+===== Related research =====
+
+Compare the split between piloting, arm control, and video with [[sites:chartroom:research:mate-cwrubotix|CWRUbotix]] and [[sites:chartroom:research:mate-clovis-crush-depth-scylla|Crush Depth / Scylla]]. For video transport and latency considerations, see the [[sites:chartroom:research:constantrobotics-video-pipeline|video-pipeline research]].
+
 ===== Visual references =====
 
 The README includes an architecture diagram and software interface details. The repository does not declare a media reuse licence, so this page links to the README instead of reproducing its diagram.

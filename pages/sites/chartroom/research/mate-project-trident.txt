@@ -27,6 +27,10 @@ The vehicle overview may be useful for considering mission support beyond piloti
 
 The source is the team's own promotional and project overview, not a detailed engineering report or published codebase. Its performance, depth, cost, and feature statements are team claims. Treat planned or early-development items as proposals unless supported by released design files, software, or test evidence.
 
+===== Related research =====
+
+For technical reports and software detail from other teams, see [[sites:chartroom:research:mate-clovis-crush-depth-scylla|Crush Depth / Scylla]], [[sites:chartroom:research:mate-texas-am-oceanus|Team Oceanus]], and [[sites:chartroom:research:mate-aquaphoton-academy|Aquaphoton Academy]]. The [[sites:chartroom:research:mate-rov-requirements-summary|MATE requirements summary]] records broader engineering lessons and cautions.
+
 ===== Visual references =====
 
 The [Project Trident website](https://www.tridentrov.org/) provides rendered views and team descriptions of TRI26, its claw, MMT interface, and OpenBot. Image reuse terms are not stated on the page, so this note links to those visuals instead of copying them into Chartroom.

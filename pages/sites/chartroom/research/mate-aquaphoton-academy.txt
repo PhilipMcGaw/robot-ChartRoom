@@ -25,6 +25,10 @@ This report is a useful example of how a competition team connects vehicle desig
 
 The report is a team-produced record for the 2024 Explorer Class vehicle. ATE Central's catalogue describes the report but does not independently validate the team's claims. Its diagrams and images are visible in the report; the record does not provide an image-reuse licence.
 
+===== Related research =====
+
+For another team-produced report with software and control detail, see [[sites:chartroom:research:mate-clovis-crush-depth-scylla|Crush Depth / Scylla]]. The [[sites:chartroom:research:mate-rov-requirements-summary|MATE requirements summary]] compares engineering practices drawn from the competition references.
+
 ===== Visual references =====
 
 The [technical report record](https://ate.is/index.php?ID=46414&P=FullRecord) links to the team's PDF, which includes vehicle and system illustrations. This page links to the source report rather than copying its images.

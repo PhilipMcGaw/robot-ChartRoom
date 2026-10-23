@@ -29,6 +29,10 @@ This report is a strong comparison for software and architecture review. It reco
 
 The report describes one team's 2025 competition vehicle and its own implementation. Its latency observations and performance claims are not independent measurements. The team says code was split across three repositories, but the report itself is the accessible architectural overview; check any linked source code and test evidence before treating details as current or transferable.
 
+===== Related research =====
+
+Compare its software and control choices with the public workspaces from [[sites:chartroom:research:mate-texas-am-oceanus|Team Oceanus]], [[sites:chartroom:research:mate-uconn-underwater-robotics|UConn]], and [[sites:chartroom:research:mate-cwrubotix|CWRUbotix]]. The broader [[sites:chartroom:research:mate-rov-requirements-summary|MATE requirements summary]] gathers transferable engineering practices across competition references.
+
 ===== Visual references =====
 
 The report contains vehicle photographs, system diagrams, and control-interface figures. Its online copy does not state a reuse licence, so this page links to the source rather than copying those images into Chartroom.

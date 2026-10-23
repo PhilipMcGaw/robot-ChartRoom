@@ -68,6 +68,8 @@ This concept complements:
 
 The infrastructure note contains the current server-ingestion direction, including authenticated packets, raw-packet retention, decoded measurements, and dashboard/API access.
 
+For additional buoy designs and field references, see [[sites:chartroom:research:open-source-ocean-buoy-references|open-source ocean buoy references]], [[sites:chartroom:research:geo-positioning-buoy-project|Geo-Positioning Buoy]], and [[sites:chartroom:research:sofar-spotter|Sofar Spotter]]. The [[sites:chartroom:research:community-robotics-and-sensing-batch|community sensing references]] also include weather-station examples.
+
 ===== Attribution =====
 
 The following quotation was included in the source material:

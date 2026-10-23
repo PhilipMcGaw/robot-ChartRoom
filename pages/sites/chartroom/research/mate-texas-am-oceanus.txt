@@ -27,6 +27,10 @@ This is a useful whole-project reference because one repository brings together 
 
 The repository represents a competition project and includes a previous-season archive alongside current work. Its top-level descriptions are team-authored and may change during the season. Check the date, branch, and subteam status of a specific file before treating it as the team's current design.
 
+===== Related research =====
+
+For other MATE software architectures, see [[sites:chartroom:research:mate-clovis-crush-depth-scylla|Crush Depth / Scylla]], [[sites:chartroom:research:mate-uconn-underwater-robotics|UConn]], and [[sites:chartroom:research:mate-cwrubotix|CWRUbotix]]. The [[sites:chartroom:research:osu-uwrt-nereus-simulator|Nereus simulator]] and [[sites:chartroom:research:rumarino-robosub-software|RUMarino]] notes cover complementary simulation and AUV software references. For the Oceanus float context, see [[sites:chartroom:research:open-source-ocean-buoy-references|open-source ocean buoy references]].
+
 ===== Visual references =====
 
 The repository's CAD and documentation directories are the team's source for vehicle visuals. The repository does not show a clear licence for reuse of its media, so use its pages to view the current material rather than copying images into Chartroom.

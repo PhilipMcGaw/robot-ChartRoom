@@ -76,6 +76,8 @@ BRUVS is a useful reference for separating:
 
 For any future project use, the survey design, camera system, bait handling, animal-welfare and environmental permissions, storage plan, analysis method, and validation criteria would need to be defined separately. A successful recording would establish that footage was captured; it would not by itself establish species-identification accuracy or ecological conclusions.
 
+For related camera and survey references, see [[sites:chartroom:research:vobster-photogrammetry|Vobster photogrammetry]], the [[sites:chartroom:research:sensea-underwater-camera|Sensea underwater camera]], and the [[sites:chartroom:research:constantrobotics-video-pipeline|video-pipeline research]].
+
 ===== Provenance =====
 
   * Source: user-supplied {{:sites:chartroom:research:evidence:wwf-rapid-assessment-tool-4-bruvs.pdf?linkonly|wwf-rapid-assessment-tool-4-bruvs.pdf}}.
