@@ -8,11 +8,11 @@ status          = reference
 authority       = Chartroom
 ~~
 
-**BorgCube ROV** is a long-running open ROV project by Tim Wilkinson. It is useful as a practical reference for integrating propulsion, buoyancy/stability, Raspberry Pi computing, watertight enclosures, servo-driven payloads, and operator software. The project explicitly targets manoeuvrability, a robotic arm, stereo vision, and an Oculus-compatible pilot interface. source reference unavailable (turn1search0)
+**BorgCube ROV** is a long-running open ROV project by Tim Wilkinson. It is useful as a practical reference for integrating propulsion, buoyancy/stability, Raspberry Pi computing, watertight enclosures, servo-driven payloads, and operator software. The project explicitly targets manoeuvrability, a robotic arm, stereo vision, and an Oculus-compatible pilot interface.
 
 ===== Architecture and vehicle design =====
 
-BorgCube uses a modular frame based on Actobotics aluminium channel rather than relying solely on round PVC tube. The project uses Raspberry Pi Compute Module hardware and multiple watertight enclosures, with waterproof servos for the eventual manipulator. source reference unavailable (turn1search0, turn1search10)
+BorgCube uses a modular frame based on Actobotics aluminium channel rather than relying solely on round PVC tube. The project uses Raspberry Pi Compute Module hardware and multiple watertight enclosures, with waterproof servos for the eventual manipulator. These details are described on the [project page](https://hackaday.io/project/8343-borgcube-rov) and its [component list](https://hackaday.io/project/8343/components).
 
 The project logs are especially useful because they expose real integration problems rather than only the finished vehicle. Examples include:
 
@@ -22,7 +22,7 @@ The project logs are especially useful because they expose real integration prob
   * poor initial mass distribution affecting neutral attitude;
   * iterative controller PCB redesign;
   * custom printed internal mounts; and
-  * modular tube and board mounting. source reference unavailable (turn1search0, turn1search2)
+  * modular tube and board mounting. The [project logs](https://hackaday.io/project/8343/logs) record these development updates.
 
 ===== Relevance to the ROV =====
 
@@ -48,22 +48,23 @@ These are useful candidates for repeatable ROV bench and wet-test procedures.
 
 ===== Mechanical/serviceability lessons =====
 
-The move from simple laser-cut internal supports to purpose-designed 3D-printed mounts is a useful example of prototype evolution. Internal components should have positive mechanical retention, defined cable routing, and service access rather than relying on temporary mounting methods. source reference unavailable (turn1search2)
+The move from simple laser-cut internal supports to purpose-designed 3D-printed mounts is a useful example of prototype evolution. Internal components should have positive mechanical retention, defined cable routing, and service access rather than relying on temporary mounting methods. The project describes this change in its [internal-mount log](https://hackaday.io/project/8343/log/42730).
 
 ===== Caveats =====
 
 This is historical project research, not a validated ROV design specification. Some components and techniques are dated, and the project should not be treated as evidence that a particular thruster, pressure housing, protection device, or control architecture is suitable for a modern vehicle.
 
+The Hackaday project page still lists a GitHub software repository, but that repository URL currently returns 404, as reported during this review. I could not identify a working mirror. The project page, logs, and hardware files remain available, but they do not replace the missing software source.
+
 ===== Sources =====
 
-  * [[https://hackaday.io/project/8343-borgcube-rov|Hackaday.io — BorgCube ROV]]
-  * [[https://hackaday.io/project/8343/logs|BorgCube project logs]]
-  * [[https://hackaday.io/project/8343/files|BorgCube files]]
-  * [[https://github.com/aanon4/borgcube-rov|BorgCube software repository]]
+  * [[https://hackaday.io/project/8343-borgcube-rov|Hackaday.io — BorgCube ROV]], project description and component links.
+  * [[https://hackaday.io/project/8343/logs|BorgCube project logs]], development history and hardware updates.
+  * [[https://hackaday.io/project/8343/files|BorgCube files]], including downloadable thruster and mounting models.
 
 **Status:** Research / design inspiration.
 
-**Read later:** Review the software repository, controller PCB history, PID/balance implementation, enclosure arrangement, and payload/arm integration.
+**Further review:** Check the controller PCB history, PID/balance implementation, enclosure arrangement, and payload/arm integration in the surviving project logs. The software repository cannot currently be reviewed from its linked URL.
 
 
 
