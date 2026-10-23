@@ -10,7 +10,7 @@ authority       = Chartroom
 
 ===== Source =====
 
-The retained source is the user-supplied PDF {{:sites:chartroom:research:evidence:smithsonian-how-to-build-an-rov.pdf?linkonly|Smithsonian: How to Build an ROV}}. The document has not yet been reviewed for technical content, publication details, or reuse permissions. This page makes no claims about its recommendations or suitability for a project build.
+The retained source is the user-supplied PDF {{:sites:chartroom:research:evidence:smithsonian-how-to-build-an-rov.pdf?linkonly|Smithsonian: How to Build an ROV}}, available from the [Smithsonian National Museum of Natural History](https://naturalhistory.si.edu/sites/default/files/media/file/how-build-rov-ver-1.pdf). The document has not yet been reviewed for technical content, publication details, or reuse permissions. This page makes no claims about its recommendations or suitability for a project build.
 
 ~~REFNOTES~~
 ---------
