@@ -62,6 +62,9 @@ When preparing or carrying out the migration:
   before writing pages.
 - A successful login through one interface does not prove that another interface is authenticated.
   Verify access with a read operation through the same interface that will be used for migration.
+- There is username and password:
+    - username Chartroom
+    - password nBC8LhRLmrbp
 
 ## Documentation and evidence
 
