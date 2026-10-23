@@ -13,6 +13,11 @@ authority       = Chartroom
   * [[https://3dmb.uk/project/vobster-photogrammetry-project/|3dMB — Vobster Photogrammetry Project]]
   * [[https://3dmb.uk/rov-underwater-photogrammetry-and-mapping/|3dMB — Underwater Photogrammetry & Mapping]]
   * [[https://3dmb.uk/|3dMB]]
+  * [[https://www.vobster.com/|Vobster Quay official website]]
+
+===== Site and personal context =====
+
+Vobster Quay is an open-water activity centre in Somerset, with scuba diving, freediving, and swimming. The contributor who supplied this context reports having dived there in the UK, including as part of an open-water course. This firsthand context is separate from the 3dMB photogrammetry project account.
 
 ===== Summary =====
 
