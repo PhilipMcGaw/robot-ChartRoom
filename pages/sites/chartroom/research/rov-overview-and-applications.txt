@@ -67,6 +67,8 @@ Prepared from user-supplied pasted reference text reviewed 2026-09-21. The paste
 
 These are general reference articles. Numerical claims and classifications should be verified against primary manufacturer, standards, academic, or project-specific sources before being used for design decisions.
 
+The [Deep Ocean Education Project's “What is an ROV?” page](https://deepoceaneducation.org/resources/what-is-an-rov/) links to an illustrated fact sheet hosted by [NOAA Ocean Exploration](https://oceanexplorer.noaa.gov/wp-content/uploads/2025/04/rov-fact-sheet.pdf). The fact sheet provides a visual guide to common components, including cameras, lights, sample baskets, a manipulator arm, tether, thrusters, syntactic foam, davit, and control room. It is an educational overview, not a technical specification. Its photographs include named credits, so link to the source rather than copying the images into Chartroom.
+
 ===== Related research =====
 
 For operational examples from deep-ocean research, see the [[sites:chartroom:research:noc-rov-fleet|National Oceanography Centre ROV fleet]]. For project examples, compare [[sites:chartroom:research:blue-robotics-software-setup|BlueROV2's software and commissioning guide]], [[sites:chartroom:research:cps-5|CPS 5]], and [[sites:chartroom:research:borgcube-rov|BorgCube]]. Competition-team reports are collected in the [[sites:chartroom:research:mate-clovis-crush-depth-scylla|Scylla]], [[sites:chartroom:research:mate-texas-am-oceanus|Team Oceanus]], [[sites:chartroom:research:mate-uconn-underwater-robotics|UConn]], and [[sites:chartroom:research:mate-cwrubotix|CWRUbotix]] notes.
