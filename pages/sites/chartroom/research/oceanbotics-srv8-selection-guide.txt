@@ -1,0 +1,57 @@
+====== Oceanbotics SRV-8 series selection guide ======
+{{tag>research, rov, oceanbotics, vehicle-selection, mission-planning, payload }}
+
+~~META:
+description     = Oceanbotics' vendor guide to selecting an SRV-8 series ROV by depth, current conditions, and payload needs.
+type            = research
+status          = reference
+authority       = Chartroom
+~~
+
+===== Scope =====
+
+This note summarises Oceanbotics' product selection guide for its SRV-8 series remotely operated vehicles (ROVs). It records the vendor's selection framework and model comparison as presented in the article. It is not an independent assessment or a project specification.
+
+===== Selection framework =====
+
+The guide asks operators to consider three mission factors:
+
+  * **Operating depth** — the target depth range for the work;
+  * **Water conditions** — from calm or sheltered sites to strong currents; and
+  * **Operational work and payload** — from observation to light intervention, survey, or heavier manipulation.
+
+This is a useful high-level checklist for comparing a vehicle with a mission. The article does not state current speeds or quantified station-keeping limits for its water-condition categories, and its payload descriptions are qualitative.
+
+===== SRV-8 series comparison =====
+
+The article's comparison table reports:
+
+^ Model ^ Stated maximum depth ^ Relative station-keeping label ^ Portability ^
+| SRV-8C | 350 m | Standard | One transport case |
+| SRV-8 | 350 m | Enhanced | Two transport cases |
+| SRV-8X | 1,200 m | Maximum | Two transport cases |
+
+The vendor describes the SRV-8C for portable observation and inspection, the SRV-8 for intervention and mapping, and the SRV-8X for deeper surveys and more demanding integrations. The page does not provide enough information to compare payload mass, current limits, or operating performance under defined test conditions. Consult current product datasheets for engineering decisions.
+
+===== Relevance =====
+
+The selection factors can inform a mission requirements checklist: record the operating depth, current and station-keeping needs, payload mass and power, task type, and transport constraints before choosing or designing a vehicle. The SRV-8 model comparison is an example of how a manufacturer maps those needs to a product range; its labels should not be treated as standard ROV classes or directly compared with other vendors' terminology.
+
+===== Visual reference =====
+
+The [Oceanbotics guide](https://oceanbotics.com/how-to-choose-the-right-rov-a-3-step-rov-selection-guide-for-subsea-missions/) includes photographs of the SRV-8, SRV-8C, and SRV-8X. Image reuse terms are not stated, so this note links to the source rather than copying the images into Chartroom.
+
+===== Source =====
+
+  * [How to Choose the Right ROV: 3-Step ROV Selection Guide for Subsea Missions](https://oceanbotics.com/how-to-choose-the-right-rov-a-3-step-rov-selection-guide-for-subsea-missions/), Oceanbotics, published 2026-09-04; accessed 2026-10-23. Model specifications and suitability statements are vendor claims.
+
+===== Related research =====
+
+For general vehicle subsystems, ROV classes, and operating considerations, see [[sites:chartroom:research:rov-overview-and-applications|ROV overview and applications]].
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
