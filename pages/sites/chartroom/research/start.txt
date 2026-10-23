@@ -43,6 +43,7 @@ The links below cover all research notes. Use the related-research links within 
   * [[sites:chartroom:research:mate-texas-am-oceanus|Texas A&M Team Oceanus]]
   * [[sites:chartroom:research:mate-uconn-underwater-robotics|UConn Underwater Robotics Club]]
   * [[sites:chartroom:research:mts-rov-photo-challenge-2025|2025 MTS ROV Photo Challenge]]
+  * [[sites:chartroom:research:underwater-robotics-competitions-overview|Underwater robotics competitions overview]]
   * [[sites:chartroom:research:robocenter|RoboCenter ROV]]
   * [[sites:chartroom:research:rovmaker-edge|RovMaker Edge]]
   * [[sites:chartroom:research:seaperch-build-and-testing|SeaPerch build and testing]]

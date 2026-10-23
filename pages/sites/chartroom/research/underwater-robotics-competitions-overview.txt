@@ -1,0 +1,46 @@
+====== Underwater robotics competitions overview ======
+{{tag>research, competition, underwater-robotics, rov, auv, education }}
+
+~~META:
+description     = RoboNation's historical survey of student underwater robotics competitions and vehicle types.
+type            = research
+status          = reference
+authority       = Chartroom
+~~
+
+===== Scope =====
+
+This note records a 2020 RoboNation article that surveys student competitions involving underwater remotely operated vehicles (ROVs), autonomous underwater vehicles (AUVs), and surface vessels. It is a historical discovery aid, not a current competition directory.
+
+===== What the article covers =====
+
+The article compares competitions by vehicle type and intended participant experience. It discusses SeaPerch and the MATE ROV Competition, as well as the National Underwater Robotics Competition, RoboSub, Singapore AUV Challenge, RoboBoat, European Robotics League, and RobotX.
+
+The article presents competition missions as a way to distinguish the events and describes MATE as combining vehicle tasks with technical documentation, presentations, and team communication. These are descriptions from the article's publication period; consult each organiser's current material for present-day formats and requirements.
+
+===== Relevance =====
+
+This survey helps identify different educational and technical pathways across ROV, AUV, and surface-vehicle competitions. It can support further research into mission design, student team projects, and software or vehicle architectures published by participating teams.
+
+===== Limitations =====
+
+The article was published on 2020-09-21. Its event dates, locations, class structure, eligibility guidance, and participation figures are historical and may be obsolete. It is published by RoboNation and attributed to Blue Robotics, so its descriptions are secondary promotional material rather than current competition rules. Use current organiser publications to establish event details or requirements.
+
+===== Visual reference =====
+
+The [article](https://robonation.org/stories/press/which-underwater-robotics-competition-is-right-for-you/) includes competition photographs. Image reuse terms are not stated here, so view them at the source rather than copying them into Chartroom.
+
+===== Source =====
+
+  * [Which Underwater Robotics Competition is Right for You?](https://robonation.org/stories/press/which-underwater-robotics-competition-is-right-for-you/), RoboNation, 2020-09-21; article attributed to Blue Robotics. Accessed 2026-10-23.
+
+===== Related research =====
+
+For MATE team examples and engineering lessons, see the [[sites:chartroom:research:mate-rov-requirements-summary|MATE ROV engineering requirements summary]] and the individual team notes in the research catalogue. For autonomous underwater software, see [[sites:chartroom:research:rumarino-robosub-software|RUMarino RoboSub software]].
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
