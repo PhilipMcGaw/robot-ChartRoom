@@ -8,15 +8,16 @@ Chartroom is not the implementation authority for CuttleOS, SquidLink, or NautiP
 
 ## Repository structure
 
-- source/ — DokuWiki page text (`.txt`) and retained media for the `sites:chartroom` namespace; nested directories map to namespaces.
-- source/architecture/ — cross-project architecture, communications, NATS, robot profiles, and system boundaries.
-- source/cuttleos/, source/cockpit/, source/datalogger/ — cross-project knowledge for the robot software areas.
-- source/hil-sil/ — hardware-in-the-loop and software-in-the-loop knowledge.
-- source/ros2/ — ROS 2 and Gazebo learning and integration material.
-- source/development/ — development, testing, deployment, hardware documentation, and documentation standards.
-- source/tutorials/ — reusable engineering and development tutorials.
-- source/decisions/ — significant engineering decisions and their rationale.
-- source/research/ — research and reference notes; distinguish these from validated decisions.
+- pages/sites/chartroom/ — DokuWiki page text (`.txt`); nested directories map to namespaces.
+- media/sites/chartroom/ — retained media, with paths matching DokuWiki media IDs.
+- pages/sites/chartroom/architecture/ — cross-project architecture, communications, NATS, robot profiles, and system boundaries.
+- pages/sites/chartroom/cuttleos/, pages/sites/chartroom/cockpit/, pages/sites/chartroom/datalogger/ — cross-project knowledge for the robot software areas.
+- pages/sites/chartroom/hil-sil/ — hardware-in-the-loop and software-in-the-loop knowledge.
+- pages/sites/chartroom/ros2/ — ROS 2 and Gazebo learning and integration material.
+- pages/sites/chartroom/development/ — development, testing, deployment, hardware documentation, and documentation standards.
+- pages/sites/chartroom/tutorials/ — reusable engineering and development tutorials.
+- pages/sites/chartroom/decisions/ — significant engineering decisions and their rationale.
+- pages/sites/chartroom/research/ — research and reference notes; distinguish these from validated decisions.
 - README.md — repository orientation and contribution guidance.
 
 Project architecture, repository authority, and current build/deployment facts are maintained in MASTER_CONTEXT.md. These working rules define agent behaviour and editing discipline; they are not a second project-status document.
@@ -27,27 +28,27 @@ The former TermiSoc reference project is not part of the current workspace. Do n
 
 ## Source-of-truth rules
 
-1. source/ is the canonical source for Chartroom content.
+1. pages/sites/chartroom/ and media/sites/chartroom/ are the canonical DokuWiki import files for Chartroom content.
 2. The implementation repositories are authoritative for repository-specific behaviour: CuttleOS for robot-side software, SquidLink for ROS 2/Gazebo/simulation, and NautiPi for physical hardware and embedded projects.
 3. Do not duplicate implementation documentation in Chartroom unless the cross-project view adds clear value.
 4. When duplicating a fact for cross-project context, link to the authoritative repository or document.
 5. Engineering decisions MUST distinguish proposed, designed, implemented, simulated, bench-tested, validated, and production-proven states.
 6. Do not present an assumption or unverified research note as implemented or validated behaviour.
 7. Preserve existing documentation unless the task explicitly requests correction, removal, or restructuring.
-8. Keep source/ as the canonical content until the DokuWiki import and rendered pages have been checked.
+8. Keep pages/sites/chartroom/ and media/sites/chartroom/ as the canonical import files until the DokuWiki import and rendered pages have been checked.
 9. Do not add credentials, private keys, tokens, passwords, or private operational data.
 
 ## DokuWiki destination
 
 The intended DokuWiki destination for Chartroom is the `sites:chartroom` namespace at
 <https://labbook.skippy.org.uk/doku.php/sites/chartroom/>. The migration has not yet been
-completed. Until it is complete and confirmed, `source/` remains the canonical Chartroom
-content source. Quartz, its Node.js/npm build, deployment scripts, and generated static output have been removed from this repository.
+completed. Until it is complete and confirmed, pages/sites/chartroom/ and media/sites/chartroom/ remain the canonical Chartroom import files. Quartz, its Node.js/npm build, deployment scripts, and generated static output have been removed from this repository.
 
 When preparing or carrying out the migration:
 
 - Preserve the directory hierarchy as DokuWiki namespaces. Use each `start.txt` as the corresponding namespace start page.
 - Keep page content in core DokuWiki syntax and use namespace IDs for internal links. Check rendered pages and links after import; do not assume optional plugins are installed.
+- Use the page metadata format demonstrated in `pages/sites/chartroom/start.txt`: a `{{tag>...}}` directive, followed by a `~~META: ... ~~` block with description, type, status, and authority fields. Keep metadata values accurate for each page.
 - Use the Labbook connector with an API token configured in its authentication settings. Do not
   store or repeat tokens, passwords, or other credentials in this repository or its documentation.
   Verify access by reading the target namespace before writing pages.
@@ -101,13 +102,13 @@ Do not overwrite another contributor's work. If a shared file has changed during
 ## Publishing
 
 This repository no longer contains a static-site build or publishing workflow. The DokuWiki
-import is still incomplete; retain `source/` until the destination pages and links have been
+import is still incomplete; retain `pages/sites/chartroom/` until the destination pages and links have been
 checked. Do not claim that the previous static site URL redirects to DokuWiki unless that change
 has been verified outside this repository.
 
 ## Editing workflow
 
-Before editing: inspect relevant source files and conventions; decide whether the change belongs in source/ or repository guidance; check links, front matter, diagrams, and repository paths; and consult the authoritative implementation repository for repository-specific claims.
+Before editing: inspect relevant source files and conventions; decide whether the change belongs in pages/sites/chartroom/, media/sites/chartroom/, or repository guidance; check links, front matter, diagrams, and repository paths; and consult the authoritative implementation repository for repository-specific claims.
 
 After editing: validate Markdown/front matter; check affected links and media. When DokuWiki access is available, check the rendered destination pages. Summarise changes, validation, and uncertainty.
 

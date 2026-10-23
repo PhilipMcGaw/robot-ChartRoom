@@ -1,0 +1,44 @@
+====== ROS 2 / Gazebo Course ======
+{{tag>ros2, learning, gazebo }}
+
+~~META:
+description     = Documentation page covering ROS 2 / Gazebo Course.
+type            = course
+status          = maintained
+authority       = Chartroom
+~~
+
+This is the practical ROS 2 and Gazebo learning path developed for the Robots project.
+
+The course is maintained in Chartroom because the knowledge is reusable across the Robots repositories. SquidLink owns the ROS 2/Gazebo implementation and simulation infrastructure; Chartroom owns the learning material.
+
+===== Course path =====
+
+^ Lesson ^ Result ^
+| [[sites:chartroom:ros2:course:00-workstation|Workstation Setup]] | Known-good Ubuntu, ROS 2 Jazzy, Gazebo Harmonic, RViz2, and colcon environment |
+| [[sites:chartroom:ros2:course:01-nats-networking|NATS Core Networking]] | Working NATS Core network independently of the physical robot |
+| [[sites:chartroom:ros2:course:02-robot-description|Robot Description]] | Xacro → URDF → TF → RViz2 |
+| [[sites:chartroom:ros2:course:03-ros2-fundamentals|ROS 2 Fundamentals]] | Nodes, topics, services, parameters, launch, and QoS |
+| [[sites:chartroom:ros2:course:04-gazebo|Gazebo]] | Simple model running through ROS 2/Gazebo integration |
+| [[sites:chartroom:ros2:course:05-vehicle-model|Vehicle Model]] | Vehicle, thrusters, and progressively more realistic motion |
+| [[sites:chartroom:ros2:course:06-sensors-and-camera|Sensors and Camera]] | IMU, depth, heading, and simulated camera |
+| [[sites:chartroom:ros2:course:07-nats-ros2-bridge|NATS ↔ ROS 2 Bridge]] | Application contract mapped to ROS 2 without exposing ROS 2 to Cockpit or Control |
+| [[sites:chartroom:ros2:course:08-hil-sil-scenarios|HiL/SiL Scenarios]] | Repeatable integration tests and evidence |
+| [[sites:chartroom:ros2:course:09-testbot-physical-to-ros2|Testbot: Physical Build to ROS 2]] | Testbot working example from physical record to ROS 2 description |
+
+===== Completion principle =====
+
+A lesson is complete when its practical checks pass. Reading the material is not itself evidence of a working system.
+
+===== Supporting material =====
+
+The course may link to reusable ROS 2 concepts and the dedicated [[sites:chartroom:ros2:gazebo|Gazebo]] reference page where appropriate.
+
+Project-specific implementation belongs in [[https://github.com/PhilipMcGaw/robot-SquidLink|SquidLink]], not in this course.
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

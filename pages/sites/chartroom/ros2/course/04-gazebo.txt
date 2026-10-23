@@ -1,0 +1,51 @@
+====== Gazebo fundamentals ======
+{{tag>ros2, learning, gazebo }}
+
+~~META:
+description     = Documentation page covering Gazebo fundamentals.
+type            = course
+status          = maintained
+authority       = Chartroom
+~~
+
+===== Objective =====
+
+Introduce Gazebo Harmonic and the ROS 2/Gazebo integration without yet introducing underwater physics or the NATS application bridge.
+
+Reuse the simple robot from the robot-description lesson where practical. This isolates Gazebo integration from ROV complexity.
+
+<code text>
+Xacro / URDF
+    ↓
+ROS 2
+    ↓
+ros_gz
+    ↓
+Gazebo
+</code>
+
+===== Exercises =====
+
+  - Start Gazebo reliably.
+  - Spawn the simple robot.
+  - Inspect visual and collision geometry.
+  - Confirm the ROS 2/Gazebo connection.
+  - Introduce simulation time and understand ''/clock'' and ''use_sim_time''.
+  - Establish a repeatable launch procedure.
+
+Do not introduce realistic hydrodynamics, NATS, Cockpit, Control, or hardware yet.
+
+===== Exit criteria =====
+
+  * [ ] Gazebo starts reliably.
+  * [ ] The model spawns.
+  * [ ] ROS 2 and Gazebo exchange the required data.
+  * [ ] Simulation time is understood and works for relevant nodes.
+  * [ ] The launch sequence is repeatable.
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

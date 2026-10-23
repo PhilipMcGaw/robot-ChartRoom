@@ -1,0 +1,61 @@
+====== IoT field lessons: solar-powered cellular bus departure signs ======
+{{tag>research, read-later, iot, remote-monitoring }}
+
+~~META:
+description     = Research note on field lessons from solar-powered cellular bus signs for remote robotic sensor systems.
+type            = research
+status          = read-later
+authority       = Chartroom
+stage          = research
+topics         = IoT, telemetry, low-power embedded systems, fault recovery, remote monitoring
+~~
+
+**Status:** Read later / awaiting review
+**Purpose:** Extract field-proven lessons relevant to Robot Code, particularly the LoRa weather station and buoy, remote sensor nodes, and ROV support systems. This is research material, not an adopted design or roadmap commitment.
+
+===== Sources =====
+
+  * Reddit discussion: [[https://www.reddit.com/r/IOT/s/8IL6NicXs3|Four and a half years of cellular bus signs from scratch: what worked, what didn't, and how I ended up in IoT]]
+  * Project story: [[https://pidgeiot.com/stories/departure-board/|PidgeIoT — Departure board]]
+
+===== Summary =====
+
+The case study describes three solar-powered, cellular-connected real-time bus departure signs operated over approximately four and a half years. Its value is the operational experience: power consumption, firmware recovery, diagnostics, and the cost and complexity of maintaining devices in the field.
+
+==== Lessons worth reviewing ====
+
+  - **Optimise the load before increasing generation.** The Reddit summary reports that display panels drew approximately 2.8 W even with their LEDs off. Reducing quiescent consumption was more effective than simply fitting a larger solar panel. For battery-powered Robot Code nodes, measure sleep current, regulator losses, wake-up transients, and radio transmit energy before sizing the energy source.
+  - **Treat recovery logic as a state machine.** A battery fault and repeated resets interacted with a cellular modem's network-attachment restriction, making recovery harder. Avoid unbounded retries and reboot loops; distinguish sensor, radio, power, and firmware faults, and use bounded retries with back-off.
+  - **Keep diagnostics across resets.** A persistent fault caused repeated watchdog resets, while logs were erased on each reboot. Preserve reset-cause flags, boot counters, and a compact last-fault record; retain telemetry until it can be sent.
+  - **Make remote observability part of the initial design.** The signs initially lacked useful remote visibility. A custom telemetry and device-management platform was later developed to avoid unsuitable commercial polling costs and dependencies. For Robot Code, a simple last-seen indicator, stale-data alert, and diagnostic telemetry could provide much of the immediate value.
+  - **Validate the whole deployed system.** Test power budgets, message frequency and payload sizes, storage growth, reconnect behaviour, and failure recovery under realistic conditions—not only during a successful bench demonstration.
+
+===== Relevance to Robot Code =====
+
+  * **LoRa weather station and buoy:** favour low-power operation, scheduled sampling and transmission, and measurement-led battery sizing. Rain detection can wake a node when needed; temperature nodes can sample and transmit periodically.
+  * **PHP/MySQL telemetry backend:** the experience supports keeping the data path and stored telemetry under project control rather than taking on a proprietary cloud dependency without a clear benefit.
+  * **Gateway and embedded nodes:** include bounded retry/back-off behaviour, reset-cause reporting, uptime, battery voltage, and radio-health diagnostics where the hardware supports them.
+  * **ROV systems:** persistent fault records and useful remote diagnostics are transferable lessons, although the bus sign's cellular-specific behaviour is not directly applicable to an ROV.
+
+===== Important caveat =====
+
+The bus signs used cellular connectivity and frequent polling of an external real-time data service. Robot Code's LoRa nodes have a different communications and power profile. Cellular data costs, network attachment restrictions, and modem-specific recovery behaviour must not be assumed to apply to LoRa.
+
+===== Review questions =====
+
+  * What are the measured sleep, idle, sampling, and transmit currents for each node?
+  * Which fault and reset details should survive power loss or watchdog reset?
+  * What is the retry/back-off policy for sensor reads, LoRa transmission, and gateway/backend delivery?
+  * How will the backend distinguish a valid unchanged reading from a node that has stopped reporting?
+  * Which lessons from the PidgeIoT implementation are applicable, and what hardware/software trade-offs does its detailed story reveal?
+
+===== Workflow =====
+
+**Find → Read later → Review → Incorporate or delete.** Do not treat this case study as an adopted architecture or promote it to the roadmap until reviewed.
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

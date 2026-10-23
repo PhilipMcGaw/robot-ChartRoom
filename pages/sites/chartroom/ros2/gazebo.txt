@@ -1,0 +1,20 @@
+====== Gazebo ======
+{{tag>ros2, learning, gazebo }}
+
+~~META:
+description     = Documentation page covering Gazebo.
+type            = learning
+status          = maintained
+authority       = Chartroom
+~~
+
+Gazebo provides physics simulation for the Robots HIL and SiL environment.
+
+Detailed integration notes will be added as the simulation architecture develops.
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

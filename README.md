@@ -6,26 +6,26 @@ It records the architecture, engineering rationale, design decisions, developmen
 
 ## Documentation
 
-The intended DokuWiki destination is the [`sites:chartroom` namespace](https://labbook.skippy.org.uk/doku.php/sites/chartroom/). The import has not yet been verified, so DokuWiki page text and retained media in `source/` remain the migration copy. Page files use `.txt`; nested paths map to namespaces under `sites:chartroom`, and `start.txt` is each namespace landing page. The former static site was available at <https://chartroom.philipmcgaw.com/>; this repository does not configure a redirect.
+The intended DokuWiki destination is the [`sites:chartroom` namespace](https://labbook.skippy.org.uk/doku.php/sites/chartroom/). The import has not yet been verified, so DokuWiki page text in `pages/sites/chartroom/` and retained media in `media/sites/chartroom/` remain the migration copy. Page files use `.txt`; nested paths map to namespaces under `sites:chartroom`, and `start.txt` is each namespace landing page. The former static site was available at <https://chartroom.philipmcgaw.com/>; this repository does not configure a redirect.
 
 ### Where to find information
 
-- `source/architecture/` — cross-project architecture, communications, NATS, and robot profiles.
-- `source/cuttleos/` — cross-project knowledge concerning CuttleOS; implementation-specific documentation remains in CuttleOS.
-- `source/cockpit/` — cross-project knowledge concerning Cockpit; implementation-specific documentation remains in CuttleOS where Cockpit is currently hosted.
-- `source/datalogger/` — cross-project knowledge concerning DataLogger; implementation-specific documentation remains in CuttleOS where DataLogger is currently hosted.
-- `source/hil-sil/` — hardware-in-the-loop and software-in-the-loop architecture and engineering guidance.
-- `source/ros2/` — ROS 2 and simulation knowledge relevant to the wider project.
-- `source/development/` — development environment, testing, deployment, hardware documentation, and documentation guidance.
-- `source/tutorials/` — reusable engineering and development tutorials.
-- `source/decisions/` — significant engineering decisions and their rationale.
-- `source/roadmap.txt` — cross-project roadmap.
+- `pages/sites/chartroom/architecture/` — cross-project architecture, communications, NATS, and robot profiles.
+- `pages/sites/chartroom/cuttleos/` — cross-project knowledge concerning CuttleOS; implementation-specific documentation remains in CuttleOS.
+- `pages/sites/chartroom/cockpit/` — cross-project knowledge concerning Cockpit; implementation-specific documentation remains in CuttleOS where Cockpit is currently hosted.
+- `pages/sites/chartroom/datalogger/` — cross-project knowledge concerning DataLogger; implementation-specific documentation remains in CuttleOS where DataLogger is currently hosted.
+- `pages/sites/chartroom/hil-sil/` — hardware-in-the-loop and software-in-the-loop architecture and engineering guidance.
+- `pages/sites/chartroom/ros2/` — ROS 2 and simulation knowledge relevant to the wider project.
+- `pages/sites/chartroom/development/` — development environment, testing, deployment, hardware documentation, and documentation guidance.
+- `pages/sites/chartroom/tutorials/` — reusable engineering and development tutorials.
+- `pages/sites/chartroom/decisions/` — significant engineering decisions and their rationale.
+- `pages/sites/chartroom/roadmap.txt` — cross-project roadmap.
 
 Chartroom is the place to look when information applies across repository boundaries or when the reason for an engineering decision, deployment procedure, operational experience, or troubleshooting note is more important than the implementation detail.
 
 ## Documentation standard
 
-The **[Robots Project Documentation Standard](source/development/documentation-standard.txt)** is the single source of truth for project-wide documentation conventions. CuttleOS, SquidLink, and NautiPi should follow that standard rather than maintaining separate copies of the rules.
+The **[Robots Project Documentation Standard](pages/sites/chartroom/development/documentation-standard.txt)** is the single source of truth for project-wide documentation conventions. CuttleOS, SquidLink, and NautiPi should follow that standard rather than maintaining separate copies of the rules.
 
 ## Hardware documentation
 
@@ -35,7 +35,7 @@ For COTS components, the preferred source is the manufacturer's official documen
 
 Third-party documentation remains subject to its own copyright and licence terms. The Chartroom repository licence applies to original Chartroom content, not to manufacturer's documentation or other third-party material.
 
-See the [hardware documentation policy](source/development/hardware-documentation.txt) for the full guidance.
+See the [hardware documentation policy](pages/sites/chartroom/development/hardware-documentation.txt) for the full guidance.
 
 ## Robots repositories
 
@@ -53,7 +53,8 @@ Each of the three implementation repositories should link back to Chartroom so t
 
 ```text
 robot-ChartRoom/
-├── source/            # DokuWiki page text and media
+├── pages/sites/chartroom/ # DokuWiki page text
+├── media/sites/chartroom/ # DokuWiki media
 ├── AGENTS.md          # Repository working rules
 ├── MASTER_CONTEXT.md  # Project context
 └── README.md          # Repository overview
