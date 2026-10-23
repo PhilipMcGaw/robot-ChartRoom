@@ -10,6 +10,8 @@ authority       = Chartroom
 
 **BorgCube ROV** is a long-running open ROV project by Tim Wilkinson. It is useful as a practical reference for integrating propulsion, buoyancy/stability, Raspberry Pi computing, watertight enclosures, servo-driven payloads, and operator software. The project explicitly targets manoeuvrability, a robotic arm, stereo vision, and an Oculus-compatible pilot interface.
 
+This project is separate from ROVmaker's similarly named [[sites:chartroom:research:rovmaker-stem-kits-and-learning-resources|BORG CUBE STEM kit]]; the sources reviewed do not indicate a connection between them.
+
 ===== Architecture and vehicle design =====
 
 BorgCube uses a modular frame based on Actobotics aluminium channel rather than relying solely on round PVC tube. The project uses Raspberry Pi Compute Module hardware and multiple watertight enclosures, with waterproof servos for the eventual manipulator. These details are described on the [project page](https://hackaday.io/project/8343-borgcube-rov) and its [component list](https://hackaday.io/project/8343/components).
