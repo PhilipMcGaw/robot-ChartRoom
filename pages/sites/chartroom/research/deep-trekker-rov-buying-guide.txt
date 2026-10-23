@@ -1,0 +1,56 @@
+====== Deep Trekker ROV buying guide ======
+{{tag>research, rov, vehicle-selection, mission-planning, sonar, payload }}
+
+~~META:
+description     = Deep Trekker's vendor guide to matching ROV features and product packages to subsea missions.
+type            = research
+status          = reference
+authority       = Chartroom
+~~
+
+===== Scope =====
+
+This note summarises Deep Trekker's ROV buying guide, updated 2026-08-12. It records the guide's mission-selection factors and examples. The guide is published by an ROV manufacturer and promotes its own products; it is not an independent comparison or a project specification.
+
+===== Selection factors =====
+
+The guide recommends choosing a vehicle and package by considering:
+
+  * the mission tasks and required tools;
+  * portability and access to the deployment site;
+  * current conditions and the vehicle's ability to hold position;
+  * water clarity and the value of imaging sonar; and
+  * operating depth and tether configuration.
+
+It also recommends starting with typical use and required functions when setting a budget, since optional sensors and navigation equipment can add substantial cost. These factors can help structure a requirements discussion, but the guide's product recommendations are specific to Deep Trekker vehicles.
+
+===== Vendor examples and limits =====
+
+The guide uses Deep Trekker's DTG3, PHOTON, PIVOT, REVOLUTION, and SPECTRA models to illustrate different mission needs. It describes examples involving sonar for low-visibility work, positioning systems for repeatable inspections, and different vehicle packages for observation, recovery, and intervention tasks.
+
+The guide includes manufacturer specifications and current-performance claims, including current-handling statements for specific models. These depend on vehicle configuration and operating conditions. Check the current product datasheet and test conditions before using any figure for selection or design.
+
+Deep Trekker's own ROV capability classes are presented in the guide as a buying aid. They are not a universal classification standard and must not be confused with competition class levels such as MATE's.
+
+===== Relevance =====
+
+The guide reinforces a mission-first selection process: define tasks, environmental conditions, depth, portability, and payloads before comparing vehicle packages. The treatment of visibility and current also highlights that cameras alone may not provide enough situational awareness for every inspection.
+
+===== Visual reference =====
+
+The [Deep Trekker buying guide](https://www.deeptrekker.com/resources/rov-buying-guide) includes photographs of the company's ROV range and example deployments. Image reuse terms are not stated, so this note links to the source rather than copying the images into Chartroom.
+
+===== Source =====
+
+  * [The Complete Underwater ROV Buying Guide 2026](https://www.deeptrekker.com/resources/rov-buying-guide), Deep Trekker, updated 2026-08-12; accessed 2026-10-23. Product features, specifications, and mission suitability are vendor claims.
+
+===== Related research =====
+
+For a shorter vendor selection example focused on depth, current, and payload, see the [[sites:chartroom:research:oceanbotics-srv8-selection-guide|Oceanbotics SRV-8 series selection guide]]. For general ROV systems and operating considerations, see [[sites:chartroom:research:rov-overview-and-applications|ROV overview and applications]].
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
