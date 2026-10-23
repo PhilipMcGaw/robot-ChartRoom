@@ -22,6 +22,14 @@ Chartroom is not the implementation authority for CuttleOS, SquidLink, or NautiP
 
 Project architecture, repository authority, and current build/deployment facts are maintained in MASTER_CONTEXT.md. These working rules define agent behaviour and editing discipline; they are not a second project-status document.
 
+## Agent context and resource discovery
+
+- At the start of a task, read `AGENTS.md` and `MASTER_CONTEXT.md` before inspecting or changing project files. Check for more-specific `AGENTS.md` files that apply to the target area before editing.
+- Use `MASTER_CONTEXT.md` for stable project context, repository authority, and current project facts. Follow the source-of-truth rules below when implementation details or evidence are relevant.
+- Keep project searches scoped to this repository and sources that are relevant to the task. Do not inspect unrelated parent or sibling folders or personal data to fill gaps. Consult another repository or external source when the task requires it or identifies it as authoritative, subject to sandbox permissions. If a required source is unavailable, state that and continue with work that does not depend on it.
+- A user-provided attachment may be read at the exact path the user supplied when the task explicitly requires it and sandbox permissions allow it. Do not inspect adjacent paths. Keep project changes inside this repository.
+- These instructions do not grant access beyond the active sandbox or tool permissions.
+
 ## Unavailable reference projects
 
 The former TermiSoc reference project is not part of the current workspace. Do not recreate or add TermiSoc pages or reference content to Chartroom unless explicitly requested and supported by an available source.
@@ -37,6 +45,8 @@ The former TermiSoc reference project is not part of the current workspace. Do n
 7. Preserve existing documentation unless the task explicitly requests correction, removal, or restructuring.
 8. Keep pages/sites/chartroom/ and media/sites/chartroom/ as the canonical import files until the DokuWiki import and rendered pages have been checked.
 9. Do not add credentials, private keys, tokens, passwords, or private operational data.
+
+When sources disagree, preserve the disagreement, identify the authoritative source, and explain any uncertainty. Prefer current implementation or retained test evidence for behaviour, then current decisions and canonical documentation, then `MASTER_CONTEXT.md`, then older research or recollection.
 
 ## DokuWiki destination
 
@@ -79,6 +89,8 @@ Define an unfamiliar abbreviation or acronym at first use on each page, then use
 
 For technical explanations and procedures, use relevant ASD-STE100 principles: choose familiar, specific words; keep terminology consistent; and use clear sentence structure. Do not force controlled vocabulary into established technical terms, quotations, code, or natural narrative. Do not claim full ASD-STE100 compliance unless requested and checked against the current official specification, including its applicable rules and dictionary.
 
+Prefer suitable non-AI images when available. Before adding an image, check that its licence permits the intended use and follow its attribution and redistribution terms.
+
 Use gender-neutral wording for roles and groups when gender is irrelevant. Use a person's stated name and pronouns; do not infer gender or pronouns. If they are unknown, repeat the person's name or role, or use singular `they`. Preserve gendered wording in quotations and historical source material, and distinguish it from editorial wording.
 
 Use British spellings such as organisation, behaviour, colour, centre, and licence; Oxford commas where useful; ISO dates (YYYY-MM-DD); and SI symbols with a non-breaking space between values and units, such as 10 mm, 5 V, and 25 °C.
@@ -101,10 +113,7 @@ Do not overwrite another contributor's work. If a shared file has changed during
 
 ## Publishing
 
-This repository no longer contains a static-site build or publishing workflow. The DokuWiki
-import is still incomplete; retain `pages/sites/chartroom/` until the destination pages and links have been
-checked. Do not claim that the previous static site URL redirects to DokuWiki unless that change
-has been verified outside this repository.
+This repository no longer contains a static-site build or publishing workflow. The DokuWiki import is still incomplete; retain `pages/sites/chartroom/` until the destination pages and links have been checked. Do not claim that the previous static site URL redirects to DokuWiki unless that change has been verified outside this repository.
 
 ## Editing workflow
 
@@ -113,6 +122,10 @@ Before editing: inspect relevant source files and conventions; decide whether th
 After editing: validate Markdown/front matter; check affected links and media. When DokuWiki access is available, check the rendered destination pages. Summarise changes, validation, and uncertainty.
 
 ## Git workflow
+
+Before editing, inspect the complete working-tree status and relevant diffs. Preserve unrelated changes, and stage only files required for the task.
+
+Review the staged diff before committing. Use focused changes with clear, imperative commit subjects of 72 characters or fewer.
 
 On Windows, use GitHub Desktop as the default interface for repository status, reviewing diffs, staging selected files, committing, fetching, integrating remote changes, and pushing. Do not assume Git is unavailable because `git` is not on PowerShell's `PATH`.
 
