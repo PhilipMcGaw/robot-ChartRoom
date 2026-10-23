@@ -1,0 +1,37 @@
+====== SeaPerch build and testing resources ======
+{{tag>research, rov, education, testing, buoyancy }}
+
+~~META:
+description     = SeaPerch educational ROV build, ballast, performance-testing, and troubleshooting resources.
+type            = research
+status          = reference
+authority       = Chartroom
+date           = 2026-10-23
+~~
+
+===== Scope =====
+
+SeaPerch is an educational remotely operated vehicle (ROV) programme. This note reviews its public resource library as a source of build and test methods. It does not treat SeaPerch design details as requirements for the Robots project.
+
+===== What the resource library contains =====
+
+The official library provides a build manual, parts list, construction videos, and lesson materials. The listed 2021 manual has earlier archived editions; the library also lists a 2025 class-pack preparation document. Test and troubleshooting resources cover mass, volume and ballast, and testing buoyancy, control, guidance, speed, and friction.
+
+===== Relevance =====
+
+The materials offer a clear, staged way to teach and record basic vehicle construction and pool testing. The ballast and performance-testing lessons may help structure repeatable observations before changing a design. The project could also be a useful reference when preparing introductory ROV exercises.
+
+===== Limitations =====
+
+SeaPerch is designed for education and its example vehicle is comparatively simple. Its manual and lesson sequence do not establish that its construction methods, components, or test limits are suitable for a different vehicle. Confirm the revision of any manual used; the library lists multiple historical editions.
+
+===== Sources =====
+
+  * [SeaPerch Resource Library](https://seaperch.org/resources/library/), accessed 2026-10-23. Official index of build manuals, parts list, ballast and testing lessons, and troubleshooting resources.
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

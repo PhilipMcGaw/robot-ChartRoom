@@ -1,0 +1,41 @@
+====== Aquabot underwater manipulation research ======
+{{tag>research, rov, manipulation, computer-vision, autonomy }}
+
+~~META:
+description     = Columbia Aquabot research project on self-improving autonomous underwater manipulation.
+type            = research
+status          = reference
+authority       = Chartroom
+date           = 2026-10-23
+~~
+
+===== Scope =====
+
+Aquabot is a research system for autonomous underwater manipulation. The source repository labels its entry “ICRA 2025”, while the project page's citation identifies a 2024 arXiv preprint. This note records the team's public project and reproduction materials without resolving the publication history. It is not a validated design for the Robots project.
+
+===== What the project documents =====
+
+The project page describes a system that learns from human demonstrations and then uses additional data to improve manipulation policies. It reports experiments involving object grasping, sorting, and retrieval. The code repository's reproduction list names a QYSEA FIFISH V-EVO remotely operated vehicle (ROV), additional camera hardware, and the manufacturer's developer software development kit (SDK). The repository lists a USD 1,500 SDK price; this is the repository's stated price, not a current quote.
+
+The documentation discusses camera placement and visual input as part of the manipulation system. It also describes practical integration choices around the vehicle and added camera. These are the authors' reported setup details, not independent performance measurements.
+
+===== Relevance =====
+
+Aquabot is worth reading for its approach to learning from demonstrations and for the system integration needed for underwater manipulation. It may inform questions about camera placement, visual input, payload integration, data collection, and the boundary between vehicle control and higher-level manipulation logic. The authors report a 41% speed improvement over human teleoperation in their experiments; that is a project result and should be interpreted in the paper's task and evaluation context.
+
+===== Limitations =====
+
+The project page says the authors open-sourced hardware and software implementation details, but the repository's reproduction list still depends on a commercial ROV and vendor SDK. This is therefore not a self-contained, low-cost vehicle build. The reported performance result is from the authors' experiments and is not an independent comparison. Distinguish documented setup from claims supported by the paper's methods and evaluation.
+
+===== Sources =====
+
+  * [Aquabot project page: Self-Improving Autonomous Underwater Manipulation](https://aquabot.cs.columbia.edu/), accessed 2026-10-23.
+  * [Aquabot source repository and setup notes](https://github.com/cvlab-columbia/aquabot), accessed 2026-10-23.
+  * [arXiv preprint, Self-Improving Autonomous Underwater Manipulation](https://arxiv.org/abs/2410.18969), cited by the project page; consult the paper for the research method and evaluation.
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

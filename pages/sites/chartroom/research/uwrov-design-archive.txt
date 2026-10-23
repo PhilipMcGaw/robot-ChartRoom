@@ -1,0 +1,39 @@
+====== UWROV ROV design archive ======
+{{tag>research, rov, mechanical, design, competition }}
+
+~~META:
+description     = Team-published archive of UWROV vehicles, CAD, and technical documentation.
+type            = research
+status          = reference
+authority       = Chartroom
+date           = 2026-10-23
+~~
+
+===== Scope =====
+
+This page records a public student-team archive of remotely operated vehicle (ROV) designs. It is a design reference, not a specification for the Robots project or evidence that any described feature has been independently tested here.
+
+===== What the archive contains =====
+
+The University of Washington ROV team says it designs and builds a new vehicle each year and presents an archive spanning fourteen years. The archive links computer-aided design (CAD) models and technical documentation for several vehicles, including Barreleye, Boxfish, Boxfish 2.0, and the 2025–2026 Conduit.
+
+The team describes Conduit as using a rotating buoyancy arm to passively maintain pitch, a gantry-style manipulator, and a system for changing tools underwater. Earlier entries describe changes to manipulators, ballasting, electrical systems, controls, and vehicle frames. These are the team's descriptions; this note does not independently assess their performance.
+
+===== Relevance =====
+
+The archive is useful for studying design iteration across successive competition vehicles. CAD and technical reports can help identify how the team documents mechanical packaging, manipulator choices, vehicle layout, and changes between designs. The multi-year sequence is more useful for comparing trade-offs than treating one vehicle as a universal template.
+
+===== Limitations =====
+
+The designs address the team's competition missions, resources, and operating conditions. The archive does not establish suitability for the Robots project's ROV, nor does a published design description prove a feature's reliability outside the reported context. Check each vehicle's own CAD and technical report before relying on a detail; archive coverage and linked documents vary by year.
+
+===== Sources =====
+
+  * [UWROV, Past ROVs and design archive](https://uwrov.org/rovs), accessed 2026-10-23. Team-published descriptions and links to CAD and technical documents.
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

@@ -1,0 +1,40 @@
+====== RUMarino RoboSub software reference ======
+{{tag>research, auv, software, ros, simulation }}
+
+~~META:
+description     = RUMarino team's public overview of software for its RoboSub autonomous underwater vehicle.
+type            = research
+status          = reference
+authority       = Chartroom
+date           = 2026-10-23
+~~
+
+===== Scope =====
+
+RUMarino is a University of Puerto Rico at Mayagüez student team whose public software page describes work for its RoboSub autonomous underwater vehicle (AUV). This is an AUV-adjacent software reference, not an ROV implementation guide.
+
+===== What the team describes =====
+
+The team's software overview describes divisions for software architecture, computer vision, embedded systems, control, sonar, and simulation. It says the architecture connects vehicle components and software modules using the Robot Operating System (ROS) stack, and identifies mission control, state-based control, embedded Arduino use, underwater object detection, sonar processing, and ROS plus multiphysics simulation for software testing.
+
+The page specifically refers to tasks for the RoboSub 2024 competition. It is a high-level team overview, not a detailed interface specification or complete technical report.
+
+===== Relevance =====
+
+The page is useful as an example of how a student team separates autonomy, perception, control, embedded work, sonar, and simulation responsibilities. Those boundaries may help prompt architecture questions for the Robots project, while the AUV mission context should remain explicit when comparing systems.
+
+===== Limitations =====
+
+The published page is brief and does not provide enough detail to establish the interfaces, test coverage, or current implementation state of each division. Its explicit competition reference is RoboSub 2024, so check the team's source repositories and newer material before treating it as current practice. Do not infer that the described AUV stack maps directly to a tethered ROV.
+
+===== Sources =====
+
+  * [RUMarino software overview](https://www.rumarino.org/software), accessed 2026-10-23. Team-published summary of its RoboSub 2024 software divisions.
+  * [RUMarino autonomy-stack repository](https://github.com/Rumarino-Team/autonomy-stack), source-code repository linked for further inspection; repository contents and current activity should be checked before reuse.
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

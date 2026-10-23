@@ -1,0 +1,40 @@
+====== OSU UWRT Nereus simulator ======
+{{tag>research, underwater, auv, ros2, simulation, testing }}
+
+~~META:
+description     = Open-source config-driven underwater-robot simulator and pool viewer from OSU Underwater Robotics Team.
+type            = research
+status          = reference
+authority       = Chartroom
+date           = 2026-10-23
+~~
+
+===== Scope =====
+
+Nereus is an open-source simulator and operator viewer from the Ohio State University Underwater Robotics Team (OSU UWRT). The repository describes it as a tool for underwater robots using the Robot Operating System 2 (ROS 2). It is a software reference, not evidence that the Robots project's simulator currently has equivalent features.
+
+===== What the repository describes =====
+
+The project README describes a configuration-driven simulator intended to test a real ROS 2 robot stack without changing that stack. Robot, pool, course, and topic configuration is stored in YAML packs. The simulator publishes simulated sensor and camera data, receives thruster commands, and scores runs. A pool viewer provides a 3D scene and can connect to the simulator or a real robot.
+
+The README lists six-degree-of-freedom marine dynamics, delayed thrusters, several sensor types, stereo cameras, point clouds, and simulated task mechanisms. These are repository feature descriptions; this note does not verify their fidelity or test coverage.
+
+===== Relevance =====
+
+Nereus is worth reviewing for the separation of robot and environment configuration from simulator code, and for the stated aim of using the same ROS 2 interfaces with simulated and real vehicles. Its viewer and run scoring also provide examples to consider for operator feedback and repeatable mission trials.
+
+===== Limitations =====
+
+Nereus targets underwater robotics and may include AUV-oriented assumptions. A feature list does not establish the accuracy of a simulation model or suitability for a particular vehicle. Review the README, configuration packs, documentation, and project activity before deciding whether any component can be reused or compared with Chartroom's simulation work.
+
+===== Sources =====
+
+  * [OSU UWRT Nereus repository](https://github.com/osu-uwrt/nereus), accessed 2026-10-23. Project description, README, and source code.
+  * [OSU UWRT organisation](https://github.com/osu-uwrt), team repositories and activity.
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

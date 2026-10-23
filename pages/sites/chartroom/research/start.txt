@@ -26,6 +26,12 @@ Prefer primary sources and stable official documentation. Preserve provenance ra
 
 ===== New reference notes =====
 
+  * [[sites:chartroom:research:uwrov-design-archive|UWROV ROV design archive]] — multi-year vehicle designs, CAD, and team technical documentation.
+  * [[sites:chartroom:research:seaperch-build-and-testing|SeaPerch build and testing resources]] — educational ROV construction, buoyancy, performance testing, and troubleshooting.
+  * [[sites:chartroom:research:aquabot-underwater-manipulation|Aquabot underwater manipulation research]] — research vehicle integration, visual input, and autonomous manipulation.
+  * [[sites:chartroom:research:rumarino-robosub-software|RUMarino RoboSub software reference]] — AUV software divisions, ROS architecture, and simulation.
+  * [[sites:chartroom:research:osu-uwrt-nereus-simulator|OSU UWRT Nereus simulator]] — config-driven ROS 2 underwater-robot simulation and operator viewer.
+
   * [[sites:chartroom:research:k9-read-later|K-9 Read Later]] — K-9 project references awaiting review.
 
   * [[sites:chartroom:research:baited-remote-underwater-video-systems|Baited remote underwater video systems (BRUVS)]] — survey design, deployment, and video-analysis reference.
