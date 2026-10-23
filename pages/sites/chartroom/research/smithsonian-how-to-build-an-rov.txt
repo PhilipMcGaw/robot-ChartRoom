@@ -1,0 +1,19 @@
+====== Smithsonian: How to Build an ROV ======
+{{tag>research, rov, education, design }}
+
+~~META:
+description     = Smithsonian reference titled How to Build an ROV.
+type            = research
+status          = reference
+authority       = Chartroom
+~~
+
+===== Source =====
+
+The retained source is the user-supplied PDF {{:sites:chartroom:research:evidence:smithsonian-how-to-build-an-rov.pdf?linkonly|Smithsonian: How to Build an ROV}}. The document has not yet been reviewed for technical content, publication details, or reuse permissions. This page makes no claims about its recommendations or suitability for a project build.
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

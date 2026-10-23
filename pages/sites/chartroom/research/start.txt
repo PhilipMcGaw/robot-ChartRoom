@@ -35,6 +35,7 @@ The links below cover all research notes. Use the related-research links within 
   * [[sites:chartroom:research:diyrov-google-sites-build|DIY ROV Google Sites build]]
   * [[sites:chartroom:research:reddit-mariana-trench-rov-discussion|Reddit discussion: DIY Mariana Trench ROV]]
   * [[sites:chartroom:research:instructables-diy-submersible-rov|DIY Submersible ROV]]
+  * [[sites:chartroom:research:smithsonian-how-to-build-an-rov|Smithsonian: How to Build an ROV]]
   * [[sites:chartroom:research:baltic-rov-selection-guide|Baltic ROV selection guide]]
   * [[sites:chartroom:research:boxfish-rov-selection-guide|Boxfish ROV selection guide]]
   * [[sites:chartroom:research:deep-trekker-rov-buying-guide|Deep Trekker ROV buying guide]]
