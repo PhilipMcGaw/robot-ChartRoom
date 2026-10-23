@@ -31,6 +31,7 @@ The links below cover all research notes. Use the related-research links within 
 ==== Underwater robotics and ROVs ====
 
   * [[sites:chartroom:research:bit-driven-circuits-rov|Bit Driven Circuits submersible ROV]]
+  * [[sites:chartroom:research:blue-dot-model-c-rov|Blue Dot Model C ROV]]
   * [[sites:chartroom:research:diyrov-google-sites-build|DIY ROV Google Sites build]]
   * [[sites:chartroom:research:reddit-mariana-trench-rov-discussion|Reddit discussion: DIY Mariana Trench ROV]]
   * [[sites:chartroom:research:instructables-diy-submersible-rov|DIY Submersible ROV]]

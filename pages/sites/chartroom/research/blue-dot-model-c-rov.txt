@@ -1,0 +1,53 @@
+====== Blue Dot Model C ROV ======
+{{tag>research, rov, underwater, diy, open-source, raspberry-pi }}
+
+~~META:
+description     = Open-source software and maker-focused ROV kit with 3D-printed hardware and Android control.
+type            = research
+status          = reference
+authority       = Blue Dot ROV project materials
+~~
+
+===== Scope =====
+
+This note summarises the Blue Dot Model C remotely operated vehicle (ROV), introduced in a Reddit post as an open-source kit. The project combines 3D-printed vehicle parts, off-the-shelf electronics, a Raspberry Pi, software, and an Android control app. The Reddit post and current product pages describe different camera specifications, so the exact hardware revision is not clear.
+
+===== Vehicle and control architecture =====
+
+The Reddit post describes a Raspberry Pi-controlled vehicle with a 5-megapixel camera, 3D-printed propellers and structural parts, and a topside Wi-Fi module connected to the vehicle through a Category 5 (Cat 5) Ethernet tether. An Android app provides piloting controls and camera tilt. The post says the app sends throttle and camera-tilt values as UTF-8 characters to the onboard Raspberry Pi.
+
+The project's current product page describes an 8-megapixel camera with adjustable tilt. This differs from the 5-megapixel camera described in the Reddit post; the sources do not identify which Model C revision accounts for the difference.
+
+The Reddit post divides the onboard Python software into camera streaming, motor-driver control, and command decoding/control scripts. The linked Archimedes GitHub repository describes itself as Python 3 control software for the Model C and lists the GNU General Public License version 3.0 (GPL-3.0). The software repository's licence does not establish the licence for the separate hardware files.
+
+===== Published dimensions and depth claims =====
+
+The current product page lists dimensions of 12 × 12 × 9 inches (about 305 × 305 × 229 mm), an assembled mass of about 5 lb (2.3 kg), and a payload capacity of 2–3 lb (about 0.9–1.4 kg). It states that the Model C has been tested to 60 ft (about 18 m) and is designed for 100 ft (about 30 m). These are supplier claims on the product page; no test report or independent validation was available in the reviewed material.
+
+The product page describes the Model C as a maker-focused kit with replaceable and remixable 3D-printed parts, off-the-shelf electronics, and an Android application. The site provides assembly and user manuals, software, design downloads, and a community forum. The product page showed the electronics and dome kit as out of stock when reviewed; availability can change.
+
+===== Visual reference and licensing =====
+
+The Reddit post includes photographs of the assembled ROV, tether, and piloting setup, plus a video of pool use. The Blue Dot site also shows the vehicle and components. These provide useful visual references, but the reviewed pages do not state image reuse terms. Link to the original pages rather than copying images into Chartroom. The hardware download terms should also be checked separately before redistributing or modifying those files.
+
+===== Limitations =====
+
+The Reddit post is a project introduction, and the product page is supplier material. Neither is an independent assessment of performance, safety, or suitability for a particular mission. The depth statements are not a substitute for a test record. The product page's version and availability details may change.
+
+===== Sources =====
+
+  * [Meet my new open source ROV kit!!!](https://www.reddit.com/r/rov/comments/dyxbur/meet_my_new_open_source_rov_kit/), r/rov; accessed 2026-10-23. Post author's account is deleted, but post content and discussion remain visible.
+  * [Blue Dot Model C product page](https://www.bluedotrov.com/product-page/model-c-exploration-kit), supplier description, dimensions, payload, and depth claims; accessed 2026-10-23.
+  * [Blue Dot ROV](https://www.bluedotrov.com/), project overview and links to manuals, downloads, and software; accessed 2026-10-23.
+  * [Archimedes software repository](https://github.com/costassoler/Archimedes), Model C Python software; repository identifies GPL-3.0 licence; accessed 2026-10-23.
+
+===== Related research =====
+
+For a BlueROV2-derived build using BlueOS and ArduSub, see the [[sites:chartroom:research:diyrov-google-sites-build|DIY ROV Google Sites build]]. For other maker-built designs, compare the [[sites:chartroom:research:bit-driven-circuits-rov|Bit Driven Circuits ROV]] and [[sites:chartroom:research:instructables-diy-submersible-rov|DIY Submersible ROV]]. The [[sites:chartroom:research:rov-overview-and-applications|ROV overview]] provides broader subsystem context.
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
