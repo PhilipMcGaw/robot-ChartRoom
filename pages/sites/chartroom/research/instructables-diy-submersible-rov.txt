@@ -1,0 +1,50 @@
+====== DIY Submersible ROV ======
+{{tag>research, rov, diy, arduino, tether, control, propulsion }}
+
+~~META:
+description     = A maker-built submersible ROV with vectored thrusters, depth and heading hold, and a tethered video link.
+type            = research
+status          = reference
+authority       = Chartroom
+~~
+
+===== Scope =====
+
+This note records an Instructables project titled “DIY Submersible ROV”. The original page was not retrievable through available web access during this review, so the hardware summary below relies on the Arduino blog's project overview and an archived repost of the author's description. It is not a complete review of the eight-step Instructable.
+
+===== Project summary =====
+
+The Arduino blog describes a vehicle with a PVC frame and six thrusters, including depth and heading hold. It reports an Arduino Mega and first-person-view camera on the vehicle, with an Ethernet cable routed inside a polypropylene rope to a surface station. An Arduino Uno and on-screen display shield provide additional information at the surface.
+
+The archived author description says the control transmitter was separate from the surface control box. This separates the pilot's handheld controls from the tether connection; it does not mean the vehicle was wireless. The author also describes vectored side thrusters and separate thrusters for diving and surfacing.
+
+The author presents the Instructable as a resource for people considering a build, rather than as a complete set of build instructions. The available summaries do not provide enough detail to reproduce or assess the design.
+
+===== Relevance =====
+
+This is a useful maker-scale example of combining vectored propulsion, depth and heading hold, onboard control, video, and a tether built into a rope. The architecture illustrates how a surface station can relay video and status while the pilot uses a separate handheld transmitter.
+
+===== Limitations =====
+
+The original Instructable could not be checked directly for its full steps, photographs, code, component details, or test records. The Arduino article is a short secondary summary, and the repost is not the original project page. Treat all project details as reported descriptions; do not infer depth rating, pressure-housing safety, or validated operating performance from them.
+
+===== Visual reference =====
+
+The [Instructable](https://www.instructables.com/DIY-Submersible-ROV/) is titled as an eight-step build with pictures. The [Arduino blog summary](https://blog.arduino.cc/2018/05/31/diy-submersible-rov-flies-through-the-water/) also links to pool-test and control-box videos. Image and video reuse terms are not established here, so they remain linked at source.
+
+===== Sources =====
+
+  * [DIY Submersible ROV](https://www.instructables.com/DIY-Submersible-ROV/), Instructables, by the project author; original page not accessible for direct review, accessed 2026-10-23.
+  * [DIY submersible ROV flies through the water](https://blog.arduino.cc/2018/05/31/diy-submersible-rov-flies-through-the-water/), Arduino Blog, 2018-05-31. Secondary project summary.
+  * [DIY Submersible ROV](https://jpralves.net/post/2018/05/24/diy-submersible-rov.html), João Alves, 2018-05-24. Reposted project summary and author description.
+
+===== Related research =====
+
+For a school-built MATE vehicle and its reported tether arrangement, see the [[sites:chartroom:research:mate-scottish-school-rov|Scottish school MATE ROV project]]. For general ROV systems, see [[sites:chartroom:research:rov-overview-and-applications|ROV overview and applications]].
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
