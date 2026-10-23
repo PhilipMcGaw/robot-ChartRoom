@@ -4,7 +4,8 @@
 
 Chartroom is the central engineering knowledge base for the Robots project. It explains how the repositories fit together, why important engineering choices were made, and where shared guidance belongs.
 
-Site: https://chartroom.philipmcgaw.com/
+Intended DokuWiki namespace: https://labbook.skippy.org.uk/doku.php/sites/chartroom/
+Previous static site URL: https://chartroom.philipmcgaw.com/
 Repository: https://github.com/PhilipMcGaw/robot-ChartRoom
 
 ## Unavailable reference projects
@@ -43,16 +44,13 @@ When a page concerns one repository, link to that repository rather than copying
 - Preserve third-party names, quotations, code, URLs, and official terminology.
 - Do not invent test results, hardware revisions, repository behaviour, or deployment state.
 
-## Build and publishing
+## Documentation source and publishing
 
-The source of truth is source/. The established build path is scripts/deploy.sh, which uses the vendored Quartz checkout in quartz/ and writes generated output to site/.
-
-- Edit source/ for content.
-- Edit quartz/quartz.config.ts or quartz/quartz.layout.ts for Chartroom site configuration and visual presentation.
-- Edit scripts/ only when build/deployment behaviour itself needs to change.
-- Never hand-edit site/.
-- Building locally is not publishing. Do not run production deployment unless explicitly requested.
-- The deployment script contains rsync --delete behaviour; treat it as destructive and production-only.
+The DokuWiki destination is the `sites:chartroom` namespace, but the import has not yet been
+verified. Keep `source/` as the canonical migration copy until destination pages and links have
+been checked. This repository no longer contains Quartz, a Node.js/npm build, deployment scripts,
+or generated static output. Any redirect from the previous static site URL must be configured
+outside this repository and independently verified.
 
 ## Working with the wider Robots project
 
@@ -74,6 +72,5 @@ Important cross-project relationships include:
 3. Check the authoritative implementation repository when the claim is repository-specific.
 4. Preserve provenance, uncertainty, and existing links.
 5. Validate Markdown/front matter and affected links.
-6. Build or inspect the rendered site when practical.
-7. Leave generated output to the established build process.
-8. Report any build or deployment blocker clearly.
+6. Inspect rendered DokuWiki pages when access is available.
+7. Report any access or migration blocker clearly.

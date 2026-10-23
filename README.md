@@ -6,9 +6,7 @@ It records the architecture, engineering rationale, design decisions, developmen
 
 ## Documentation
 
-The published documentation is available at **https://chartroom.philipmcgaw.com/**.
-
-The documentation source is held in the Obsidian-formatted `source/` vault and is built with Quartz. The repository's `scripts/deploy.sh` file defines the established site build.
+The intended DokuWiki destination is the [`sites:chartroom` namespace](https://labbook.skippy.org.uk/doku.php/sites/chartroom/). The import has not yet been verified, so Markdown pages and media in `source/` remain the migration copy. The former static site was available at <https://chartroom.philipmcgaw.com/>; this repository does not configure a redirect.
 
 ### Where to find information
 
@@ -55,9 +53,9 @@ Each of the three implementation repositories should link back to Chartroom so t
 
 ```text
 robot-ChartRoom/
-├── source/            # Obsidian-formatted documentation source
-├── scripts/           # Documentation and deployment utilities
-├── quartz/            # Vendored Quartz site generator
+├── source/            # Documentation source retained for DokuWiki migration
+├── AGENTS.md          # Repository working rules
+├── MASTER_CONTEXT.md  # Project context
 └── README.md          # Repository overview
 ```
 

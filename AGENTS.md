@@ -17,9 +17,6 @@ Chartroom is not the implementation authority for CuttleOS, SquidLink, or NautiP
 - source/tutorials/ — reusable engineering and development tutorials.
 - source/decisions/ — significant engineering decisions and their rationale.
 - source/research/ — research and reference notes; distinguish these from validated decisions.
-- quartz/ — vendored Quartz build engine and Chartroom-specific Quartz configuration/layout.
-- scripts/ — build and deployment scripts.
-- site/ — generated static output. Regenerate it; do not hand-edit it.
 - README.md — repository orientation and contribution guidance.
 
 Project architecture, repository authority, and current build/deployment facts are maintained in MASTER_CONTEXT.md. These working rules define agent behaviour and editing discipline; they are not a second project-status document.
@@ -37,7 +34,7 @@ The former TermiSoc reference project is not part of the current workspace. Do n
 5. Engineering decisions MUST distinguish proposed, designed, implemented, simulated, bench-tested, validated, and production-proven states.
 6. Do not present an assumption or unverified research note as implemented or validated behaviour.
 7. Preserve existing documentation unless the task explicitly requests correction, removal, or restructuring.
-8. site/ is generated output and MUST NOT be hand-edited.
+8. Keep source/ as the canonical content until the DokuWiki import and rendered pages have been checked.
 9. Do not add credentials, private keys, tokens, passwords, or private operational data.
 
 ## DokuWiki destination
@@ -45,7 +42,7 @@ The former TermiSoc reference project is not part of the current workspace. Do n
 The intended DokuWiki destination for Chartroom is the `sites:chartroom` namespace at
 <https://labbook.skippy.org.uk/doku.php/sites/chartroom/>. The migration has not yet been
 completed. Until it is complete and confirmed, `source/` remains the canonical Chartroom
-content source and the existing Quartz publishing workflow remains in effect.
+content source. Quartz, its Node.js/npm build, deployment scripts, and generated static output have been removed from this repository.
 
 When preparing or carrying out the migration:
 
@@ -103,23 +100,18 @@ The repository is shared project memory and is model-agnostic. Agents MUST read 
 
 Do not overwrite another contributor's work. If a shared file has changed during the task, re-read it and reconcile the update before writing.
 
-## Scripts, build, and deployment
+## Publishing
 
-Inspect scripts/deploy.sh before changing build or deployment behaviour.
-
-Building and publishing are separate operations. Do not deploy merely to test a content or styling change. Treat any rsync --delete or production-host command as a destructive production operation. Do not run production deployment unless explicitly requested.
-
-Keep build scripts deterministic and narrowly scoped. Chartroom-specific Quartz customisation belongs in quartz/quartz.config.ts and quartz/quartz.layout.ts.
-
-## Generated output
-
-site/ may be committed because this repository keeps source and generated output together, but it remains build output. Never hand-edit generated HTML, CSS, JavaScript, search indexes, or images. Regenerate site/ from source/ using the established build process. If the build cannot run, report the blocker rather than patching generated files manually.
+This repository no longer contains a static-site build or publishing workflow. The DokuWiki
+import is still incomplete; retain `source/` until the destination pages and links have been
+checked. Do not claim that the previous static site URL redirects to DokuWiki unless that change
+has been verified outside this repository.
 
 ## Editing workflow
 
-Before editing: inspect relevant source files and conventions; decide whether the change belongs in source/, quartz/, scripts/, README.md, or generated output; check links, front matter, diagrams, and repository paths; and consult the authoritative implementation repository for repository-specific claims.
+Before editing: inspect relevant source files and conventions; decide whether the change belongs in source/ or repository guidance; check links, front matter, diagrams, and repository paths; and consult the authoritative implementation repository for repository-specific claims.
 
-After editing: validate Markdown/front matter; check affected links and media; run an appropriate local build or validation when safe; inspect rendered output for substantial layout changes; do not deploy unless explicitly requested; and summarise changes, validation, and uncertainty.
+After editing: validate Markdown/front matter; check affected links and media. When DokuWiki access is available, check the rendered destination pages. Summarise changes, validation, and uncertainty.
 
 ## Git workflow
 

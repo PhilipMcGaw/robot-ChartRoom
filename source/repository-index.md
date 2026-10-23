@@ -33,10 +33,10 @@ sufficient.
 ### Chartroom
 
 - Repository: https://github.com/PhilipMcGaw/robot-ChartRoom
-- Published documentation: https://chartroom.philipmcgaw.com/
+- Intended DokuWiki namespace: https://labbook.skippy.org.uk/doku.php/sites/chartroom/
 - Documentation source: `source/`
-- Site generator: vendored Quartz under `quartz/`
-- Build and deployment entry point: `scripts/deploy.sh`
+- Migration status: DokuWiki import and rendered pages are not yet verified
+- Previous static site URL: https://chartroom.philipmcgaw.com/ (redirect status not verified)
 
 Chartroom is the authority for information that spans repository boundaries or
 records why an engineering decision was made.
