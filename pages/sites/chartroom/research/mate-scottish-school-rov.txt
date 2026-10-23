@@ -1,0 +1,52 @@
+====== Scottish school MATE ROV project ======
+{{tag>research, rov, mate, education, control, tether, manipulation }}
+
+~~META:
+description     = A student-reported Scottish MATE Ranger ROV project, its control arrangement, and competition experience.
+type            = research
+status          = reference
+authority       = Chartroom
+~~
+
+===== Scope =====
+
+This note records a student team's Reddit post and follow-up comments about a school-built ROV for the Scottish MATE competition. The information is self-reported in a community discussion; it is not an independently verified technical report.
+
+===== Project overview =====
+
+The author said the team designed and built the vehicle from scratch in about 10 months. The team competed in the Ranger class at the Scottish national competition and reported that it placed second. The author described a school process in which the next year's team dismantled the previous vehicle and reused its components, allowing each group to develop a new design.
+
+The stated mission included identifying damaged pipes with onboard cameras, removing and retrieving a damaged pipe, and installing a replacement. The author said the vehicle was due to be dismantled for the next student team.
+
+===== Control, power, and tether =====
+
+The author described an onboard Arduino Mega for vehicle control and a separate Arduino for the claw. The author called the claw Arduino external but did not clarify its location. A surface controller operated the vehicle. The reported tether was about 55 ft (17 m) long and carried power from a surface car battery; the author said onboard batteries were not permitted under that competition's rules. The tether also carried connections for three onboard cameras and the controller. The surface power was split to supply poolside equipment as well as the vehicle.
+
+The team reported using sections of pool noodle to provide tether flotation. These details describe one student team's reported solution. They are not design guidance or evidence that the arrangement meets current competition rules or the Robots project's safety requirements.
+
+===== Relevance =====
+
+The discussion offers a practical case study in a low-cost, student-built control arrangement, tethered power distribution, payload control, and reuse of equipment between annual teams. It also shows why competition requirements must be checked against the rule set for the relevant season: the reported battery restriction is specific to the author's competition context and must not be treated as a current or general MATE rule.
+
+===== Limitations =====
+
+The post does not provide schematics, source code, component specifications, test records, or a detailed build report. The competition result, hardware arrangement, and interpretation of the rules are reported by the author and have not been independently checked. The Reddit discussion is not an authoritative source for current MATE rules.
+
+===== Related research =====
+
+For formal competition references and broader lessons, see the [[sites:chartroom:research:mate-rov-requirements-summary|MATE ROV engineering requirements summary]]. Other team examples include [[sites:chartroom:research:mate-project-trident|Project Trident]], [[sites:chartroom:research:mate-clovis-crush-depth-scylla|Crush Depth / Scylla]], and [[sites:chartroom:research:mate-texas-am-oceanus|Team Oceanus]].
+
+===== Visual reference =====
+
+The [Reddit post](https://www.reddit.com/r/arduino/comments/uz8f4a/underwater_rov_school_project/) includes a photograph captioned as the ROV moving pipes underwater with its front manipulator. Image reuse terms are not stated, so the image is linked at its source rather than copied into Chartroom.
+
+===== Source =====
+
+  * [Underwater ROV School Project, r/arduino](https://www.reddit.com/r/arduino/comments/uz8f4a/underwater_rov_school_project/), post and author comments, accessed 2026-10-23. Project details and competition claims are self-reported.
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
