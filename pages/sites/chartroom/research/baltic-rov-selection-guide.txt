@@ -1,0 +1,52 @@
+====== Baltic ROV selection guide ======
+{{tag>research, rov, vehicle-selection, mission-planning, tether, sensors }}
+
+~~META:
+description     = Baltic ROV's guide to selecting a professional ROV by application, depth, manoeuvrability, sensors, and lifecycle cost.
+type            = research
+status          = reference
+authority       = Chartroom
+~~
+
+===== Scope =====
+
+This note summarises Baltic ROV's guide to choosing a professional remotely operated vehicle (ROV). The page is dated 01.01.2023 and promotes the manufacturer's own cable-powered products. This is a vendor perspective, not an independent comparison or a project specification.
+
+===== Selection factors =====
+
+The guide recommends considering:
+
+  * the primary application and required tasks;
+  * maximum operating depth;
+  * manoeuvrability and thruster arrangement;
+  * camera, lighting, and sensor needs; and
+  * total cost, including training, maintenance, upgrades, and service life.
+
+It also discusses surface-powered tethered vehicles and battery-powered vehicles. The guide argues that tethered power is preferable for demanding professional work because it can support longer operation and payloads. This is the manufacturer's position; the suitable power and tether arrangement depends on mission duration, tether handling and drag, power distribution, communications, and recovery requirements.
+
+===== Limitations =====
+
+The guide makes broad claims about the advantages of cable-powered ROVs and cites a 500 m capability for Baltic ROV products. It does not provide detailed test conditions or supporting technical evidence on this page. Verify current vehicle ratings and performance limits in the applicable manufacturer documentation. Do not treat its power-source recommendation as a general design rule.
+
+===== Relevance =====
+
+The guide adds training, maintenance, and service-life costs to the mission-selection factors covered by other vendor guides. These lifecycle costs can be included when comparing vehicle packages, alongside task, depth, environment, payload, and deployment constraints.
+
+===== Visual reference =====
+
+The [Baltic ROV guide](https://balticrov.eu/how-to-choose-right-underwater-rov/) includes product images and graphics. Reuse terms are not stated, so the images are linked at their source rather than copied into Chartroom.
+
+===== Source =====
+
+  * [Choosing the Right Professional Underwater ROV: A Comprehensive Guide](https://balticrov.eu/how-to-choose-right-underwater-rov/), Baltic ROV, page dated 01.01.2023; accessed 2026-10-23. Product capabilities and suitability claims are vendor statements.
+
+===== Related research =====
+
+For other vendor selection approaches, compare the [[sites:chartroom:research:boxfish-rov-selection-guide|Boxfish]], [[sites:chartroom:research:deep-trekker-rov-buying-guide|Deep Trekker]], and [[sites:chartroom:research:oceanbotics-srv8-selection-guide|Oceanbotics]] guides. For the general ROV overview, see [[sites:chartroom:research:rov-overview-and-applications|ROV overview and applications]].
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
