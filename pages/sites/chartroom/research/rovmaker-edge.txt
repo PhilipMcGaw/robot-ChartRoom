@@ -12,6 +12,8 @@ RovMaker Edge is an open-source underwater robot project from ROVMAKER, created 
 
 This is comparative research and design inspiration, not a specification or project dependency.
 
+For ROVmaker's educational kits and teaching resources, see the [[sites:chartroom:research:rovmaker-stem-kits-and-learning-resources|ROVmaker STEM kits and learning resources]] note.
+
 ===== Mechanical architecture =====
 
   * six-thruster configuration: two vertical thrusters and four horizontal thrusters;

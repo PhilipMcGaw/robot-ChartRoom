@@ -1,0 +1,66 @@
+====== ROVmaker STEM kits and learning resources ======
+{{tag>research, rov, underwater, robotics, education, maker }}
+
+~~META:
+description     = Research note on ROVmaker educational ROV kits and learning resources.
+type            = research
+status          = reference
+authority       = Chartroom
+~~
+
+===== Scope =====
+
+This note reviews the ROVmaker product and learning pages as educational and maker references. It complements the [[sites:chartroom:research:rovmaker-edge|RovMaker Edge research note]], which covers that historical vehicle project in more detail. The product and teaching claims below are reported by ROVmaker; Chartroom has not independently tested these products or methods.
+
+===== Educational ROV kits =====
+
+ROVmaker presents two STEM ROV kits on its [[https://rovmaker.com/en/|English-language website]]. The product pages provide current descriptions, photographs, and videos. Prices and availability can change, so they are not recorded here.
+
+==== IPANEMA ====
+
+The [[https://rovmaker.com/en/ipanema-stem-rov-kit/|IPANEMA STEM ROV kit]] is described as an entry-level kit based on the SeaPerch approach. The listed kit uses a PVC frame, three brushed motors, a roughly 10 m CAT5E tether, and a control box with two joystick PWM boards and a knob. The product page says the battery is not included. These are supplier descriptions, not independently checked specifications.
+
+==== BORG CUBE ====
+
+The [[https://rovmaker.com/en/borg-cube-stem-rov-kit/|BORG CUBE STEM ROV kit]] is presented as a reusable educational kit with a PVC frame, three bilge-pump thrusters, a separate control box, and a roughly 10 m CAT5E cable. ROVmaker describes a wireless joystick that docks with the control box and mixed cruise control for combined drive and dive/surface commands. The page says batteries and the HORUS camera are not included. Refer to the product page for the current configuration and operating limits.
+
+===== Teaching and design resources =====
+
+The [[https://rovmaker.com/en/post/example-of-implementing-stem-rov-kit/|STEM ROV implementation example]] describes a teaching process organised around control, mechanism, thrusters, and performance. It uses repeated inception, design, implementation, and test/analysis cycles, with records or artefacts produced during the work. This is ROVmaker's educational framework, not a validated assessment standard.
+
+The [[https://rovmaker.com/en/post/rov-transformer-diy-by-pvc/|ROV Transformer PVC build article]] describes a modular PVC frame intended for reconfiguration and experiments. The [[https://rovmaker.com/en/post/diy-your-rov-brief-discussion-on-waterproof-tube/|waterproof-tube discussion]] covers O-ring arrangements, penetrators, sealing, and vacuum checks. It explicitly cautions that passing a vacuum check does not prove pressure capability at depth. Treat the article as a design discussion; a pressure-rated assembly needs a suitable engineering basis and controlled validation.
+
+ROVmaker's older [[https://rovmaker.com/en/post/mazu-sensor-solution-rovdiy/|MAZU sensor-board article]] and [[https://rovmaker.com/en/post/depth-control-algorithm-in-rov-voyager-ii/|Voyager II depth-control article]] document product-specific sensor and control examples. They are useful historical material, not evidence of the current kits' architecture or a project recommendation.
+
+===== Visual references =====
+
+The [[https://rovmaker.com/en/rov-maker-product-gallery/|ROVmaker product gallery]] includes the BORG CUBE, STEM ROV builds, and other ROVmaker products. The kit pages above also link to photographs and videos. The sources reviewed do not state reuse terms for these images, so this note links to the original visual material instead of copying it into Chartroom.
+
+===== Relevance and limits =====
+
+These kits and articles can help compare educational ROV construction, modular PVC frames, tethered control, and a project-based teaching process. Their descriptions do not establish design requirements, tested performance, pressure ratings, or suitability for the Robots project. Check the source pages for current product details and obtain independent evidence before relying on a technical claim.
+
+===== Sources and provenance =====
+
+ROVmaker's product and article pages, accessed 2026-10-23:
+
+  * [[https://rovmaker.com/en/|ROVmaker English-language website]]
+  * [[https://rovmaker.com/en/ipanema-stem-rov-kit/|IPANEMA STEM ROV kit]]
+  * [[https://rovmaker.com/en/borg-cube-stem-rov-kit/|BORG CUBE STEM ROV kit]]
+  * [[https://rovmaker.com/en/post/example-of-implementing-stem-rov-kit/|Example of implementing a STEM ROV kit]]
+  * [[https://rovmaker.com/en/post/rov-transformer-diy-by-pvc/|ROV Transformer DIY by PVC]]
+  * [[https://rovmaker.com/en/post/diy-your-rov-brief-discussion-on-waterproof-tube/|DIY your ROV: discussion on waterproof tubes]]
+  * [[https://rovmaker.com/en/post/mazu-sensor-solution-rovdiy/|MAZU sensor solution]]
+  * [[https://rovmaker.com/en/post/depth-control-algorithm-in-rov-voyager-ii/|Depth-control algorithm in Voyager II]]
+  * [[https://rovmaker.com/en/rov-maker-product-gallery/|ROVmaker product gallery]]
+
+===== Related research =====
+
+See the [[sites:chartroom:research:rovmaker-edge|RovMaker Edge]], [[sites:chartroom:research:mate-seamate-rov-kits|MATE SeaMATE educational ROV kits]], and [[sites:chartroom:research:rov-overview-and-applications|ROV overview and applications]] notes for related vehicle and education references.
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

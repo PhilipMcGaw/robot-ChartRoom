@@ -57,6 +57,7 @@ The links below cover all research notes. Use the related-research links within 
   * [[sites:chartroom:research:underwater-robotics-competitions-overview|Underwater robotics competitions overview]]
   * [[sites:chartroom:research:robocenter|RoboCenter ROV]]
   * [[sites:chartroom:research:rovmaker-edge|RovMaker Edge]]
+  * [[sites:chartroom:research:rovmaker-stem-kits-and-learning-resources|ROVmaker STEM kits and learning resources]]
   * [[sites:chartroom:research:seaperch-build-and-testing|SeaPerch build and testing]]
   * [[sites:chartroom:research:uwrov-design-archive|UWROV design archive]]
 
