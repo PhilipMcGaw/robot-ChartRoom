@@ -47,7 +47,7 @@ When a page concerns one repository, link to that repository rather than copying
 ## Documentation source and publishing
 
 The DokuWiki destination is the `sites:chartroom` namespace, but the import has not yet been
-verified. Keep `source/` as the canonical migration copy until destination pages and links have
+verified. Keep `source/` as the canonical migration copy of DokuWiki `.txt` pages and media until destination pages and links have
 been checked. This repository no longer contains Quartz, a Node.js/npm build, deployment scripts,
 or generated static output. Any redirect from the previous static site URL must be configured
 outside this repository and independently verified.

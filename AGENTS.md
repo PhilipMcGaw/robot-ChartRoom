@@ -8,7 +8,7 @@ Chartroom is not the implementation authority for CuttleOS, SquidLink, or NautiP
 
 ## Repository structure
 
-- source/ — canonical Chartroom documentation source.
+- source/ — DokuWiki page text (`.txt`) and retained media for the `sites:chartroom` namespace; nested directories map to namespaces.
 - source/architecture/ — cross-project architecture, communications, NATS, robot profiles, and system boundaries.
 - source/cuttleos/, source/cockpit/, source/datalogger/ — cross-project knowledge for the robot software areas.
 - source/hil-sil/ — hardware-in-the-loop and software-in-the-loop knowledge.
@@ -46,10 +46,8 @@ content source. Quartz, its Node.js/npm build, deployment scripts, and generated
 
 When preparing or carrying out the migration:
 
-- Preserve the current directory hierarchy as DokuWiki namespaces where practical, and map
-  `index.md` pages to the corresponding namespace start pages.
-- Convert Obsidian and Markdown-specific links, embeds, tables, and metadata to syntax supported
-  by the target DokuWiki instance. Check the rendered pages and links after import.
+- Preserve the directory hierarchy as DokuWiki namespaces. Use each `start.txt` as the corresponding namespace start page.
+- Keep page content in core DokuWiki syntax and use namespace IDs for internal links. Check rendered pages and links after import; do not assume optional plugins are installed.
 - Use the Labbook connector with an API token configured in its authentication settings. Do not
   store or repeat tokens, passwords, or other credentials in this repository or its documentation.
   Verify access by reading the target namespace before writing pages.

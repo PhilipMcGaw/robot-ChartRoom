@@ -1,0 +1,47 @@
+====== NATS ↔ ROS 2 bridge ======
+
+^ Metadata ^ Value ^
+| **description** | Documentation page covering NATS ↔ ROS 2 bridge. |
+| **type** | course |
+| **status** | maintained |
+| **authority** | Chartroom |
+| **tags** | ros2, learning, nats |
+
+===== Objective =====
+
+Add the application integration boundary only after the ROS 2/Gazebo system works independently.
+
+<code text>
+NATS application contract
+          ↕
+    NATS ↔ ROS 2 bridge
+          ↕
+       ROS 2 graph
+          ↕
+        Gazebo
+</code>
+
+The bridge is an adapter. It does not contain vehicle physics, Cockpit logic, or Control logic.
+
+===== Command path =====
+
+<code text>
+Cockpit / Control → NATS → bridge → ROS 2 → Gazebo
+</code>
+
+===== Telemetry path =====
+
+<code text>
+Gazebo → ROS 2 → bridge → NATS → Cockpit / Datalogger
+</code>
+
+Preserve established NATS subjects, payload formats, units, safety boundaries, and timing expectations. Do not make Cockpit or Control depend directly on ROS 2. Do not introduce JetStream.
+
+===== Exit criteria =====
+
+  * [ ] NATS commands reach the bridge.
+  * [ ] The bridge produces the correct ROS 2 commands.
+  * [ ] Gazebo responds.
+  * [ ] Simulated telemetry returns through the bridge.
+  * [ ] Cockpit-facing application data remains NATS-based.
+  * [ ] ROS 2 remains an internal HiL/SiL implementation detail.
