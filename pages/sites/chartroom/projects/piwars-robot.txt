@@ -6,7 +6,7 @@ description     = Family PiWars robot project and design-history note.
 type            = project-history
 status          = historical-project
 authority       = Chartroom
-date           = 2026-09-22
+date            = 2026-09-22
 ~~
 
 ===== Project overview =====
@@ -62,7 +62,8 @@ For future PiWars design work, [[https://cactuscraft.com/collections/all-product
   * Photo preserved at: ''media/sites/chartroom/assets/piwars/bran-designing-piwars-robot.png''.
   * Source content reviewed: 2026-09-22.
   * Status: historical project record; technical details are incomplete until the robot build record is added.
-
+
+
 
 ~~REFNOTES~~
 ---------

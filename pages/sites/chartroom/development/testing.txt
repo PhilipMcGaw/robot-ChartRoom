@@ -1,5 +1,5 @@
 ====== Testing ======
-{{tag>documentation }}
+{{tag>documentation, development, testing, verification }}
 
 ~~META:
 description     = Documentation page covering Testing.
@@ -13,7 +13,8 @@ Testing strategy, test environments, and verification practices for the Robots e
 ===== BlueOS and Blue Robotics Cockpit simulation =====
 
 The [[sites:chartroom:development:blueos-cockpit-sitl-test|BlueOS and Blue Robotics Cockpit SITL test]] defines a hardware-free trial of their ArduSub integration. It is a comparative research test; it does not change the NATS-based Robots architecture or establish CuttleOS compatibility.
-
+
+
 
 ~~REFNOTES~~
 ---------

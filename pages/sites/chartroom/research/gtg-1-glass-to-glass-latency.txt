@@ -89,7 +89,8 @@ The dedicated instrument is therefore interesting both as a possible test tool a
 The GTG-1 is not currently specified as a project requirement or selected test instrument. Its measurement method should be considered when defining video-system validation and teleoperation latency testing.
 
 **TODO:** Retrieve and review the official GTG-1 datasheet, then update this note with any additional electrical, accuracy, environmental, operating, and measurement-method specifications that are not present on the product page.
-
+
+
 
 ~~REFNOTES~~
 ---------

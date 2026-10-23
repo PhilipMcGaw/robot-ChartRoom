@@ -1,5 +1,5 @@
 ====== Development Environment ======
-{{tag>documentation }}
+{{tag>documentation, development, environment, setup }}
 
 ~~META:
 description     = Documentation page covering Development Environment.
@@ -9,7 +9,8 @@ authority       = Chartroom
 ~~
 
 Development environment requirements and setup instructions for working on the Robots ecosystem.
-
+
+
 
 ~~REFNOTES~~
 ---------

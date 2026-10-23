@@ -1,5 +1,5 @@
 ====== Deployment ======
-{{tag>documentation }}
+{{tag>documentation, development, deployment, procedures }}
 
 ~~META:
 description     = Documentation page covering Deployment.
@@ -11,7 +11,8 @@ authority       = Chartroom
 Deployment procedures for development, test, and production environments.
 
 The initial target is static publication of Chartroom through the existing web server.
-
+
+
 
 ~~REFNOTES~~
 ---------

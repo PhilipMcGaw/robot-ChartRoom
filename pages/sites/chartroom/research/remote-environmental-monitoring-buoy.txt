@@ -82,7 +82,8 @@ It was attributed there to Albert Einstein. The quotation is retained as supplie
   * Related project: [[https://philipmcgaw.com/projects/weather-station/|Weather Station]].
   * Source content reviewed: 2026-09-22.
   * Status: concept/reference; application claims are not treated as validated performance claims.
-
+
+
 
 ~~REFNOTES~~
 ---------

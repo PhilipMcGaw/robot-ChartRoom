@@ -90,7 +90,8 @@ Sony's later account describes the completed project as a lesson in persistence 
 This page records the Threads post as a **research lead**, not as a complete technical specification. Details from secondary sources should be kept distinguishable from details directly stated by Nate Luebbe.
 
 The Threads URL should be retained even if the platform later changes or removes the shared post.
-
+
+
 
 ~~REFNOTES~~
 ---------

@@ -27,9 +27,7 @@ vehicle motion
 Verify progressively:
 
 <code text>
-forward command → forward response
-turn command → yaw response
-dive command → depth response
+forward command → forward response turn command → yaw response dive command → depth response
 </code>
 
 Do not claim physical validity from a visually convincing simulation.
@@ -47,7 +45,8 @@ Simulated vehicles belong to SquidLink under its ROS 2 workspace; this lesson ex
   * [ ] Forward, turning, and vertical responses are measurable.
   * [ ] Vehicle parameters are identified as justified values or placeholders.
   * [ ] The model is ready for sensor integration.
-
+
+
 
 ~~REFNOTES~~
 ---------

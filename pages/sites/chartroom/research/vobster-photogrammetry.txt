@@ -1,5 +1,5 @@
 ====== Vobster Photogrammetry Project ======
-{{tag>research }}
+{{tag>research, photogrammetry, mapping, rov, underwater, surveying }}
 
 ~~META:
 description     = Documentation page covering Vobster Photogrammetry Project.
@@ -86,7 +86,8 @@ The Vobster project is a practical recreational/commercial photogrammetry projec
   * [[https://3dmb.uk/project/vobster-photogrammetry-project/|Vobster Photogrammetry Project]]
   * [[https://3dmb.uk/rov-underwater-photogrammetry-and-mapping/|3dMB ROV Underwater Photogrammetry & Mapping]]
   * [[https://3dmb.uk/|3dMB]]
-
+
+
 
 ~~REFNOTES~~
 ---------

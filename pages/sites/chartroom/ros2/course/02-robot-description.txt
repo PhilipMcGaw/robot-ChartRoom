@@ -43,8 +43,7 @@ Complete [[sites:chartroom:ros2:course:00-workstation|Workstation Setup]] first.
 Install the packages if required:
 
 <code zsh>
-sudo apt update
-sudo apt install \
+sudo apt update sudo apt install \
   ros-jazzy-xacro \
   ros-jazzy-robot-state-publisher \
   ros-jazzy-joint-state-publisher-gui \
@@ -60,9 +59,7 @@ sudo apt install \
 From the workspace ''src'' directory:
 
 <code zsh>
-mkdir -p "$HOME/robot-SquidLink/ros2_ws/src"
-cd "$HOME/robot-SquidLink/ros2_ws/src"
-source /opt/ros/jazzy/setup.zsh
+mkdir -p "$HOME/robot-SquidLink/ros2_ws/src" cd "$HOME/robot-SquidLink/ros2_ws/src" source /opt/ros/jazzy/setup.zsh
 
 ros2 pkg create \
   small_robot_description \
@@ -73,8 +70,7 @@ ros2 pkg create \
 Create the resource directories:
 
 <code zsh>
-cd "$HOME/robot-SquidLink/ros2_ws/src/small_robot_description"
-mkdir -p launch urdf
+cd "$HOME/robot-SquidLink/ros2_ws/src/small_robot_description" mkdir -p launch urdf
 </code>
 
 Always run ''colcon build'' from the workspace root, not from ''src''.
@@ -86,11 +82,7 @@ Create ''urdf/small_robot.urdf.xacro'' containing a ''base_link'' and two contin
 The model should contain:
 
 <code text>
-small_robot
-├── base_link
-├── left_wheel
-│   └── left_wheel_joint
-└── right_wheel
+small_robot ├── base_link ├── left_wheel │   └── left_wheel_joint └── right_wheel
     └── right_wheel_joint
 </code>
 
@@ -101,8 +93,7 @@ Keep mass and inertia values explicitly marked as visualisation placeholders. Do
 Generate a temporary URDF before building:
 
 <code zsh>
-cd "$HOME/robot-SquidLink/ros2_ws"
-source /opt/ros/jazzy/setup.zsh
+cd "$HOME/robot-SquidLink/ros2_ws" source /opt/ros/jazzy/setup.zsh
 
 ros2 run xacro xacro \
   src/small_robot_description/urdf/small_robot.urdf.xacro \
@@ -116,8 +107,7 @@ This is a validation artefact. The Xacro source remains authoritative.
 ''CMakeLists.txt'' must install the ''launch'' and ''urdf'' directories:
 
 <code cmake>
-cmake_minimum_required(VERSION 3.8)
-project(small_robot_description)
+cmake_minimum_required(VERSION 3.8) project(small_robot_description)
 
 find_package(ament_cmake REQUIRED)
 
@@ -147,13 +137,9 @@ Use ''get_package_share_directory("small_robot_description")'' to locate the ins
 ===== 6. Build and launch =====
 
 <code zsh>
-cd "$HOME/robot-SquidLink/ros2_ws"
-source /opt/ros/jazzy/setup.zsh
+cd "$HOME/robot-SquidLink/ros2_ws" source /opt/ros/jazzy/setup.zsh
 
-colcon list
-colcon build --packages-select small_robot_description
-source install/setup.zsh
-ros2 launch small_robot_description display.launch.py
+colcon list colcon build --packages-select small_robot_description source install/setup.zsh ros2 launch small_robot_description display.launch.py
 </code>
 
 A joint-state publisher window should open. Moving a wheel slider should change the corresponding joint state.
@@ -178,7 +164,8 @@ Open RViz2 and inspect the ''RobotModel'' and ''TF'' displays. Confirm that the 
   * camera behaviour;
   * NATS integration; or
   * physical ROV operation.
-
+
+
 
 ~~REFNOTES~~
 ---------

@@ -1,5 +1,5 @@
 ====== PCA9685 PWM/servo driver research notes ======
-{{tag>research }}
+{{tag>research, hardware, pca9685, pwm, servo, actuator, embedded }}
 
 ~~META:
 description     = Documentation page covering PCA9685 PWM/servo driver research notes.
@@ -49,7 +49,8 @@ The PCA9685 should be treated as an actuator-signal generator, not as a complete
 **Status:** Research / hardware-interface reference. No dependency planned.
 
 **Read later:** Compare PCA9685 with direct Raspberry Pi PWM, a microcontroller-based actuator interface, and the existing Control architecture before selecting it for any vehicle.
-
+
+
 
 ~~REFNOTES~~
 ---------

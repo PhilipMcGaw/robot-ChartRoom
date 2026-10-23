@@ -1,5 +1,5 @@
 ====== BlueOS and Adeept Robot HAT ======
-{{tag>architecture }}
+{{tag>architecture, blueos, adeept, hardware, integration }}
 
 ~~META:
 description     = Documentation page covering BlueOS and Adeept Robot HAT.
@@ -48,10 +48,7 @@ Raspberry Pi
      │
  PCA9685
      │
- ├── 9 g servo
- ├── 9 g servo
- ├── 9 g servo
- └── 9 g servo
+ ├── 9 g servo ├── 9 g servo ├── 9 g servo └── 9 g servo
 </code>
 
 The BlueOS work is consequently an **integration exercise**, not a basic PCA9685 bring-up exercise.
@@ -82,11 +79,7 @@ The extension should initially expose the PCA9685 as generic PWM outputs rather 
 For example:
 
 <code text>
-CH 0  → PWM output
-CH 1  → PWM output
-CH 2  → PWM output
-...
-CH 15 → PWM output
+CH 0  → PWM output CH 1  → PWM output CH 2  → PWM output ... CH 15 → PWM output
 </code>
 
 The ROV Control layer can subsequently assign semantic functions to those outputs, such as thruster channels.
@@ -127,15 +120,9 @@ A first test UI could expose the PWM channels directly:
 <code text>
 Adeept Robot HAT
 
-PCA9685
-Address: [detected]
-Frequency: 50 Hz
+PCA9685 Address: [detected] Frequency: 50 Hz
 
-CH 0    1500 µs
-CH 1    1500 µs
-CH 2    1500 µs
-CH 3    1500 µs
-...
+CH 0    1500 µs CH 1    1500 µs CH 2    1500 µs CH 3    1500 µs ...
 
 [Centre all outputs]
 </code>
@@ -326,7 +313,8 @@ This should allow the project to reuse mature BlueOS infrastructure while retain
   * [[https://blueos.cloud/docs/stable/development/extensions/|BlueOS Extensions]]
   * [[https://github.com/bluerobotics/BlueOS|BlueOS GitHub]]
   * [[https://github.com/bluerobotics/cockpit|Blue Robotics Cockpit]]
-
+
+
 
 ~~REFNOTES~~
 ---------

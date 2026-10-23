@@ -26,6 +26,8 @@ Prefer primary sources and stable official documentation. Preserve provenance ra
 
 ===== New reference notes =====
 
+  * [[sites:chartroom:research:k9-read-later|K-9 Read Later]] — K-9 project references awaiting review.
+
   * [[sites:chartroom:research:baited-remote-underwater-video-systems|Baited remote underwater video systems (BRUVS)]] — survey design, deployment, and video-analysis reference.
   * [[sites:chartroom:research:swarmbot-berrybot-reference|BerryBot reference for SwarmBot education]] — RP2040 educational robot hardware, programming, and behaviour reference.
   * [[sites:chartroom:research:constantrobotics-video-pipeline|ConstantRobotics video pipeline and low-latency research]] — capture, encoding, streaming, tracking, enhancement, recording, and Raspberry Pi video-pipeline references.
@@ -51,7 +53,8 @@ A research page does not establish implementation, physical manufacture, commiss
 Research notes are maintained as individual pages so that provenance and uncertainty remain attached to the relevant subject.
 
 Use the repository search or the navigation tree to locate a specific research topic. When a research result materially affects architecture or implementation, record the resulting decision in the appropriate authoritative document rather than leaving the decision implicit in a research note.
-
+
+
 
 ~~REFNOTES~~
 ---------

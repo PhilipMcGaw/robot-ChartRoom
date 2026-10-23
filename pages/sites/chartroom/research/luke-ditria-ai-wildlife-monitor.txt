@@ -162,7 +162,8 @@ The supplied social-media screenshots show the author's profile, the outdoor ins
 The primary GitHub repository and related model repository have now been identified and checked. WILDLABS provides additional project history and discussion, while Hackster provides secondary reporting on the later solar-powered revision.
 
 Specific hardware, model, power, enclosure, environmental-performance, and field-runtime claims should be verified against the relevant project revision before being used as engineering requirements or design inputs.
-
+
+
 
 ~~REFNOTES~~
 ---------

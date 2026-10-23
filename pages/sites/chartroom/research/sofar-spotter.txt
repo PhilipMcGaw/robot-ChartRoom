@@ -1,5 +1,5 @@
 ====== Sofar Ocean Spotter research notes ======
-{{tag>research }}
+{{tag>research, buoy, ocean, sensing, commercial, architecture, ctd, data-management }}
 
 ~~META:
 description     = Documentation page covering Sofar Ocean Spotter research notes.
@@ -156,7 +156,8 @@ For ROV use, the same principle may apply to payload and environmental sensors, 
   * [[https://www.sofarocean.com/support|Sofar Ocean support and documentation]]
   * [[https://bristlemouth.org/|Bristlemouth]]
   * [[https://github.com/sk-t3ch/smart-buoy|T3chFlicks Smart Buoy]]
-
+
+
 
 ~~REFNOTES~~
 ---------

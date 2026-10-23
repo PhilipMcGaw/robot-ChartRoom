@@ -1,5 +1,5 @@
 ====== SB Components MotorShield research notes ======
-{{tag>research }}
+{{tag>research, hardware, motor-shield, raspberry-pi, prototyping, swarmbot }}
 
 ~~META:
 description     = Documentation page covering SB Components MotorShield research notes.
@@ -44,7 +44,8 @@ The board is a convenience/prototyping product, not a safety-rated motor control
 **Status:** Research / prototype inspiration. No hardware dependency planned.
 
 **Read later:** Review the driver implementation and determine whether the logical motor abstraction is useful for SwarmBot's hardware interface.
-
+
+
 
 ~~REFNOTES~~
 ---------

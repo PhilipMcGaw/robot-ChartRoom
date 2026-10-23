@@ -17,8 +17,7 @@ Learn the ROS 2 communication and composition mechanisms required to build the H
 Create two small nodes and inspect them:
 
 <code zsh>
-ros2 node list
-ros2 node info <node>
+ros2 node list ros2 node info <node>
 </code>
 
 Understand a node as a process or component participating in the ROS graph.
@@ -34,10 +33,7 @@ publisher → topic → subscriber
 Use:
 
 <code zsh>
-ros2 topic list
-ros2 topic info <topic>
-ros2 topic echo <topic>
-ros2 topic hz <topic>
+ros2 topic list ros2 topic info <topic> ros2 topic echo <topic> ros2 topic hz <topic>
 </code>
 
 Topics are streams of typed messages.
@@ -51,9 +47,7 @@ Exercise a simple service and compare request/response with topic streaming. Und
 Use parameters for configuration rather than hard-coded values:
 
 <code zsh>
-ros2 param list
-ros2 param get <node> <parameter>
-ros2 param set <node> <parameter> <value>
+ros2 param list ros2 param get <node> <parameter> ros2 param set <node> <parameter> <value>
 </code>
 
 ===== Launch =====
@@ -76,7 +70,8 @@ Do not invent the ROV application protocol here. The NATS contract is the applic
   * [ ] A launch file starts a small application graph.
   * [ ] Basic QoS behaviour is understood.
   * [ ] The ROS graph can be inspected from the command line.
-
+
+
 
 ~~REFNOTES~~
 ---------

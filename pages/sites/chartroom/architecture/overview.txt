@@ -1,5 +1,5 @@
 ====== System Overview ======
-{{tag>architecture, repository-boundaries }}
+{{tag>architecture, repository-boundaries, system, documentation }}
 
 ~~META:
 description     = Overall Robots architecture and repository boundaries.
@@ -11,7 +11,8 @@ authority       = Chartroom
 This page describes the overall Robots architecture and the boundaries between the individual repositories.
 
 //Initial structure established; detailed architecture will be migrated from the existing project documentation.//
-
+
+
 
 ~~REFNOTES~~
 ---------

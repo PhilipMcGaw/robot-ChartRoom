@@ -1,5 +1,5 @@
 ====== BorgCube ROV research notes ======
-{{tag>research }}
+{{tag>research, rov, robotics, underwater, mechanical, control }}
 
 ~~META:
 description     = Documentation page covering BorgCube ROV research notes.
@@ -64,7 +64,8 @@ This is historical project research, not a validated ROV design specification. S
 **Status:** Research / design inspiration.
 
 **Read later:** Review the software repository, controller PCB history, PID/balance implementation, enclosure arrangement, and payload/arm integration.
-
+
+
 
 ~~REFNOTES~~
 ---------

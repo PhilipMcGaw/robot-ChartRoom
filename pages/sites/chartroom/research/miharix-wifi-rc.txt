@@ -1,5 +1,5 @@
 ====== Miharix WiFi RC ======
-{{tag>research }}
+{{tag>research, robotics, wifi, education, cockpit, swarmbot }}
 
 ~~META:
 description     = Documentation page covering Miharix WiFi RC.
@@ -70,7 +70,8 @@ For SwarmBot, WiFi should be treated as a transport option while safety, command
 ===== Status =====
 
 **Research / educational and operator-interface inspiration.** No dependency on the Miharix hardware or software is planned.
-
+
+
 
 ~~REFNOTES~~
 ---------

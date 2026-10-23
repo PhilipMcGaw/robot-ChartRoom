@@ -1,5 +1,5 @@
 ====== 8BitRobots Module research notes ======
-{{tag>research }}
+{{tag>research, robotics, education, 3d-printing, modular, raspberry-pi, javascript, swarmbot }}
 
 ~~META:
 description     = Documentation page covering 8BitRobots Module research notes.
@@ -46,7 +46,8 @@ The project is historical inspiration rather than a recommendation to reproduce 
 **Status:** Research / design inspiration.
 
 **Read later:** Examine the module hardware, software architecture, Blockly integration, and mechanical standardisation for ideas applicable to SwarmBot and Test in a Box.
-
+
+
 
 ~~REFNOTES~~
 ---------

@@ -158,7 +158,8 @@ The material is useful for designing experiments and identifying where video lat
   * [[https://rapidpixel.constantrobotics.com/docs/VideoFiltering/Dehazer.html|RapidPixel — Dehazer]]
   * [[https://rapidpixel.constantrobotics.com/docs/Service/VideoRecorderMp4.html|RapidPixel — VideoRecorderMp4]]
   * [[https://rapidpixel.constantrobotics.com/|RapidPixel — SDK documentation]]
-
+
+
 
 ~~REFNOTES~~
 ---------

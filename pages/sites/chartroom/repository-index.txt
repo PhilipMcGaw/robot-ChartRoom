@@ -8,9 +8,7 @@ status          = maintained
 authority       = Chartroom
 ~~
 
-This page is the cross-project navigation and authority map for the Robots
-repositories. Each implementation repository remains authoritative for its own
-code, hardware, simulation, and supporting evidence.
+This page is the cross-project navigation and authority map for the Robots repositories. Each implementation repository remains authoritative for its own code, hardware, simulation, and supporting evidence.
 
 ===== Authority map =====
 
@@ -20,9 +18,7 @@ code, hardware, simulation, and supporting evidence.
 | ''robot-SquidLink'' | ROS 2/Gazebo simulation, SiL/HiL integration, scenarios, and simulation-side evidence |
 | ''robot-NautiPi'' | Physical electronics, PCB/CAD work, embedded hardware, wiring, commissioning, and hardware evidence |
 
-The authority boundary is more important than repository location: do not copy
-implementation detail into Chartroom when a link to the authoritative source is
-sufficient.
+The authority boundary is more important than repository location: do not copy implementation detail into Chartroom when a link to the authoritative source is sufficient.
 
 ===== Repository entry points =====
 
@@ -34,8 +30,7 @@ sufficient.
   * Migration status: DokuWiki import and rendered pages are not yet verified
   * Previous static site URL: https://chartroom.philipmcgaw.com/ (redirect status not verified)
 
-Chartroom is the authority for information that spans repository boundaries or
-records why an engineering decision was made.
+Chartroom is the authority for information that spans repository boundaries or records why an engineering decision was made.
 
 ==== CuttleOS ====
 
@@ -43,8 +38,7 @@ records why an engineering decision was made.
   * Authoritative context: ''MASTER_CONTEXT.md''
   * Implementation documentation: repository ''docs/''
 
-CuttleOS owns the robot runtime and its implementation. Chartroom should link
-to CuttleOS rather than reproduce detailed implementation instructions.
+CuttleOS owns the robot runtime and its implementation. Chartroom should link to CuttleOS rather than reproduce detailed implementation instructions.
 
 ==== SquidLink ====
 
@@ -52,9 +46,7 @@ to CuttleOS rather than reproduce detailed implementation instructions.
   * Authoritative context: ''MASTER_CONTEXT.md''
   * ROS 2 workspace: ''ros2_ws/''
 
-SquidLink owns ROS 2, Gazebo, simulation scenarios, and simulation-side
-integration evidence. ROS 2 and Gazebo remain behind the simulation boundary
-and are not CuttleOS runtime dependencies.
+SquidLink owns ROS 2, Gazebo, simulation scenarios, and simulation-side integration evidence. ROS 2 and Gazebo remain behind the simulation boundary and are not CuttleOS runtime dependencies.
 
 ==== NautiPi ====
 
@@ -62,8 +54,7 @@ and are not CuttleOS runtime dependencies.
   * Hardware architecture: ''docs/hardware-architecture.md''
   * Repository overview: ''README.md''
 
-NautiPi owns physical hardware design and evidence, including schematics,
-PCBs, CAD, embedded projects, wiring, commissioning, and physical testing.
+NautiPi owns physical hardware design and evidence, including schematics, PCBs, CAD, embedded projects, wiring, commissioning, and physical testing.
 
 ===== Evidence and status =====
 
@@ -76,12 +67,9 @@ Engineering status must distinguish between:
   - physical integration testing; and
   - production validation.
 
-The existence of a design, source file, simulation result, photograph, or
-reference document does not by itself establish physical manufacture,
-commissioning, calibration, integration, or production validation.
+The existence of a design, source file, simulation result, photograph, or reference document does not by itself establish physical manufacture, commissioning, calibration, integration, or production validation.
 
-When evidence conflicts, prefer current directly observed evidence over older
-documentation, recollection, or plans.
+When evidence conflicts, prefer current directly observed evidence over older documentation, recollection, or plans.
 
 ===== Cross-project boundaries =====
 
@@ -93,9 +81,9 @@ documentation, recollection, or plans.
 
 ===== Related guidance =====
 
-The project-wide documentation conventions are defined by the
-[[sites:chartroom:development:documentation-standard|Robots Project Documentation Standard]].
-
+The project-wide documentation conventions are defined by the [[sites:chartroom:development:documentation-standard|Robots Project Documentation Standard]].
+
+
 
 ~~REFNOTES~~
 ---------

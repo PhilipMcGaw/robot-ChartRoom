@@ -59,7 +59,8 @@ This keeps the collection as engineering research rather than allowing visual in
 **Status:** Research / design inspiration.
 
 **Read later:** Review the individual photographs for recurring frame, propulsion, buoyancy, camera, lighting, payload, tether, and serviceability patterns and capture useful examples against the existing ROV architecture.
-
+
+
 
 ~~REFNOTES~~
 ---------

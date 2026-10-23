@@ -1,5 +1,5 @@
 ====== 3D-printed tank takes on the elements ======
-{{tag>research }}
+{{tag>research, 3d-printing, robotics, tracked, mechanical, prototyping, swarmbot, marsbot }}
 
 ~~META:
 description     = Documentation page covering 3D-printed tank takes on the elements.
@@ -49,7 +49,8 @@ It should therefore be treated as design inspiration and evidence that the conce
 ===== Status =====
 
 **Research / mechanical design inspiration.** No tank drivetrain or tracked chassis dependency is planned.
-
+
+
 
 ~~REFNOTES~~
 ---------

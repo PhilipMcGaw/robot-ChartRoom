@@ -1,5 +1,5 @@
 ====== README Framework ======
-{{tag>documentation }}
+{{tag>documentation, development, readme, framework }}
 
 ~~META:
 description     = Documentation page covering README Framework.
@@ -46,7 +46,8 @@ Use explicit evidence-based terms such as ''planned'', ''implemented'', ''tested
 ===== Style =====
 
 Follow the [[sites:chartroom:development:documentation-standard|Robots Project Documentation Standard]], including British English, Oxford commas, clear technical prose, and consistent SI-unit formatting.
-
+
+
 
 ~~REFNOTES~~
 ---------

@@ -1,5 +1,5 @@
 ====== ZeroBot Raspberry Pi Zero FPV robot research notes ======
-{{tag>research }}
+{{tag>research, robotics, raspberry-pi, fpv, browser, cockpit, swarmbot }}
 
 ~~META:
 description     = Documentation page covering ZeroBot Raspberry Pi Zero FPV robot research notes.
@@ -135,7 +135,8 @@ Therefore:
 **Status:** Research / design inspiration. No ZeroBot software or hardware dependency is planned.
 
 **Read later:** Review the ZeroBot source repository and mechanical files, particularly the browser control/video implementation, power telemetry, and compact chassis/serviceability decisions.
-
+
+
 
 ~~REFNOTES~~
 ---------

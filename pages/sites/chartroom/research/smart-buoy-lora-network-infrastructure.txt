@@ -1,5 +1,5 @@
 ====== Smart Buoy LoRa Network Infrastructure ======
-{{tag>research }}
+{{tag>research, smart-buoy, lora, network, infrastructure, telemetry }}
 
 ~~META:
 description     = Documentation page covering Smart Buoy LoRa Network Infrastructure.
@@ -21,10 +21,7 @@ Telemetry should be sent in the request body rather than as a GET query string. 
 A suitable request is:
 
 <code http>
-Content-Type: application/octet-stream
-X-Device-ID: buoy-001
-X-Sequence: 1842
-X-Signature: <HMAC-SHA256 signature>
+Content-Type: application/octet-stream X-Device-ID: buoy-001 X-Sequence: 1842 X-Signature: <HMAC-SHA256 signature>
 </code>
 
 The body can contain a compact binary packet or a Base64URL-encoded packet where necessary. A packet should contain a version, device ID, sequence number, timestamp, payload, CRC, and cryptographic signature.
@@ -54,9 +51,7 @@ Store both the original raw packet and the decoded values. This preserves eviden
 Recommended read-only endpoints are:
 
 <code text>
-GET /data/latest.php
-GET /data/history.php
-GET /data/export.php?from=...&to=...
+GET /data/latest.php GET /data/history.php GET /data/export.php?from=...&to=...
 </code>
 
 A telemetry table should include the device ID, sequence number, captured timestamp, server receipt timestamp, transport, radio metadata, raw payload, decoded measurements, and a unique constraint on ''(device_id, sequence_number)''.
@@ -70,7 +65,8 @@ Buoy radio package
   → MySQL/MariaDB
   → PHP API, dashboard, or CSV export
 </code>
-
+
+
 
 ~~REFNOTES~~
 ---------

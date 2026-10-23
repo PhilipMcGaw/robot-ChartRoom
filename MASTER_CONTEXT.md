@@ -4,9 +4,7 @@
 
 Chartroom is the central engineering knowledge base for the Robots project. It explains how the repositories fit together, why important engineering choices were made, and where shared guidance belongs.
 
-Intended DokuWiki namespace: https://labbook.skippy.org.uk/doku.php/sites/chartroom/
-Previous static site URL: https://chartroom.philipmcgaw.com/
-Repository: https://github.com/PhilipMcGaw/robot-ChartRoom
+Intended DokuWiki namespace: https://labbook.skippy.org.uk/doku.php/sites/chartroom/ Previous static site URL: https://chartroom.philipmcgaw.com/ Repository: https://github.com/PhilipMcGaw/robot-ChartRoom
 
 ## Unavailable reference projects
 
@@ -46,10 +44,7 @@ When a page concerns one repository, link to that repository rather than copying
 
 ## Documentation source and publishing
 
-The DokuWiki destination is the `sites:chartroom` namespace, but the import has not yet been
-verified. Keep pages/sites/chartroom/ as the canonical DokuWiki page copy and media/sites/chartroom/ as the canonical media copy until destination pages and links have been checked. This repository no longer contains Quartz, a Node.js/npm build, deployment scripts,
-or generated static output. Any redirect from the previous static site URL must be configured
-outside this repository and independently verified.
+The DokuWiki destination is the `sites:chartroom` namespace, but the import has not yet been verified. Keep pages/sites/chartroom/ as the canonical DokuWiki page copy and media/sites/chartroom/ as the canonical media copy until destination pages and links have been checked. This repository no longer contains Quartz, a Node.js/npm build, deployment scripts, or generated static output. Any redirect from the previous static site URL must be configured outside this repository and independently verified.
 
 ## Working with the wider Robots project
 

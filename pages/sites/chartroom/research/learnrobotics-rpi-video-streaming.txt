@@ -1,5 +1,5 @@
 ====== Learn Robotics — Raspberry Pi Robot Video Streaming ======
-{{tag>research }}
+{{tag>research, video, streaming, raspberry-pi, webrtc, cockpit }}
 
 ~~META:
 description     = Documentation page covering Learn Robotics — Raspberry Pi Robot Video Streaming.
@@ -60,7 +60,8 @@ The tutorial relies on the RemoteMe platform, so its end-to-end architecture sho
 ===== Read later =====
 
   * [[https://www.learnrobotics.org/blog/video-streaming-raspberry-pi-robot-camera/|Learn Robotics — Video Streaming Raspberry Pi Robot & Camera]]
-
+
+
 
 ~~REFNOTES~~
 ---------

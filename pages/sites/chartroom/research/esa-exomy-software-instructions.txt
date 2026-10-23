@@ -1,5 +1,5 @@
 ====== ESA ExoMy — Software Instructions ======
-{{tag>research }}
+{{tag>research, esa, exomy, ros, docker, marsbot, hil-sil }}
 
 ~~META:
 description     = Documentation page covering ESA ExoMy — Software Instructions.
@@ -127,7 +127,8 @@ Likewise, Docker should not automatically become a requirement for every robot. 
 
   * [[https://github.com/esa-prl/ExoMy/wiki/Software-Instructions|ExoMy Software Instructions]]
   * [[https://github.com/esa-prl/ExoMy|ExoMy repository]]
-
+
+
 
 ~~REFNOTES~~
 ---------

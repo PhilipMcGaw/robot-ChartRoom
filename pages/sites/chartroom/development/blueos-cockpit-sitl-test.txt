@@ -98,7 +98,8 @@ This test has not been run. It requires physical access to the Pi and a reserved
   * [[https://blueos.cloud/docs/stable/usage/advanced/|BlueOS advanced usage: Autopilot Firmware and SITL]]
   * [[sites:chartroom:architecture:blueos-adeept-robot-hat|BlueOS and Adeept Robot HAT architecture]]
   * [[https://github.com/PhilipMcGaw/robot-NautiPi/blob/main/ROV%20-%20Main%20Body/docs/reference/adeept-robot-hat-adm133-interfaces.md|Adeept ADM133 Robot HAT V3.1 interface reference]]
-
+
+
 
 ~~REFNOTES~~
 ---------

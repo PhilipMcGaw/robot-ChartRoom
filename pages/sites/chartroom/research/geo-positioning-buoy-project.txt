@@ -73,7 +73,8 @@ It should remain separate from the Smart Buoy environmental-sensing concept. The
   * Related organisations named in the PDF: Baker Creations, LLC, and Autotiv Manufacturing.
   * Source pages reviewed: PDF pages 1–23.
   * Status: reference only; source copyright and publication permissions have not been assessed.
-
+
+
 
 ~~REFNOTES~~
 ---------

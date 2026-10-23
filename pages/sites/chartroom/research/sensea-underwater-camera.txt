@@ -56,7 +56,8 @@ This is a compatibility inference from the published device addresses. It has no
   * NXP Semiconductors, //PCF8523 Real-Time Clock (RTC) and calendar//, Rev. 7, 2015-04-28: [[https://www.nxp.com/docs/en/data-sheet/PCF8523.pdf|datasheet]], I²C address stated as ''1101000'' (7-bit ''0x68'').
   * NautiPi, [[https://github.com/PhilipMcGaw/robot-NautiPi/blob/main/ROV%20-%20Main%20Body/docs/reference/adeept-robot-hat-adm133-interfaces.md|Adeept ADM133 Robot HAT V3.1 interfaces]], for the HAT's PCA9685, ADS7830, and optional MPU6050 address mappings.
   * Status: reference only; no Sensea-derived hardware has been built or tested in the Robots project.
-
+
+
 
 ~~REFNOTES~~
 ---------

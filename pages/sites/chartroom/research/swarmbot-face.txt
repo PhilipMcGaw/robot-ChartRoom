@@ -1,5 +1,5 @@
 ====== SwarmBot optional face/display module ======
-{{tag>research }}
+{{tag>research, swarmbot, display, face, module, hmi }}
 
 ~~META:
 description     = Documentation page covering SwarmBot optional face/display module.
@@ -48,7 +48,8 @@ The face should therefore be considered both a human-robot-interaction feature a
 ===== Status =====
 
 **Status:** Read later / design inspiration. No display, controller, mechanical interface, or animation architecture has been selected for SwarmBot.
-
+
+
 
 ~~REFNOTES~~
 ---------

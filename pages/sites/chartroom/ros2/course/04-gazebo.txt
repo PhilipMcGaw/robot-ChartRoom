@@ -42,7 +42,8 @@ Do not introduce realistic hydrodynamics, NATS, Cockpit, Control, or hardware ye
   * [ ] ROS 2 and Gazebo exchange the required data.
   * [ ] Simulation time is understood and works for relevant nodes.
   * [ ] The launch sequence is repeatable.
-
+
+
 
 ~~REFNOTES~~
 ---------

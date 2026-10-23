@@ -1,5 +1,5 @@
 ====== Hardware documentation ======
-{{tag>documentation }}
+{{tag>documentation, development, hardware, documentation }}
 
 ~~META:
 description     = Documentation page covering Hardware documentation.
@@ -52,7 +52,8 @@ When a component is fitted to a particular robot, Chartroom may record which mod
 ===== Documentation licensing =====
 
 Third-party documentation remains subject to its own copyright and licence terms. The Chartroom repository licence applies to original Chartroom content, not to manufacturer's manuals, datasheets, images, or other third-party material.
-
+
+
 
 ~~REFNOTES~~
 ---------

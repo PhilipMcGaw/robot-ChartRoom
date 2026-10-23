@@ -35,7 +35,8 @@ A lesson is complete when its practical checks pass. Reading the material is not
 The course may link to reusable ROS 2 concepts and the dedicated [[sites:chartroom:ros2:gazebo|Gazebo]] reference page where appropriate.
 
 Project-specific implementation belongs in [[https://github.com/PhilipMcGaw/robot-SquidLink|SquidLink]], not in this course.
-
+
+
 
 ~~REFNOTES~~
 ---------

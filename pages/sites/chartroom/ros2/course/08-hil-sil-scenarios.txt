@@ -17,9 +17,7 @@ Turn the simulation environment into an engineering test system rather than mere
 Cockpit, Control, and Datalogger may be virtualised, but they do not belong inside the HiL/SiL simulation machine. They can run in separate Ubuntu boxes or VMs using the same NATS network.
 
 <code text>
-Cockpit ─┐
-Control ─┼─ NATS network ── HiL/SiL bridge ── ROS 2 ── Gazebo
-Datalogger┘
+Cockpit ─┐ Control ─┼─ NATS network ── HiL/SiL bridge ── ROS 2 ── Gazebo Datalogger┘
 </code>
 
 ===== HiL later =====
@@ -49,7 +47,8 @@ A scenario must produce enough data to determine whether the expected behaviour 
   * [ ] Pass/fail criteria are explicit.
   * [ ] The scenario runs offline without physical hardware.
   * [ ] Later RPi/NATS HiL can use the same ROS/Gazebo model without architectural changes.
-
+
+
 
 ~~REFNOTES~~
 ---------

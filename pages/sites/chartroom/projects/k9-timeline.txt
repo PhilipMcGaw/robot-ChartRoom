@@ -6,7 +6,7 @@ description     = Timeline of K-9 versions, appearances, prop changes, and survi
 type            = reference
 status          = migrated reference
 authority       = Chartroom
-date           = 2026-09-22
+date            = 2026-09-22
 ~~
 
 Changes to the K-9 versions throughout the Doctor Who timeline. This page was migrated from the PhilipMcGaw.com K-9 timeline and is now maintained in ChartRoom as part of the prop and storyline research record.
@@ -118,7 +118,8 @@ Representative media:
   * Original page title: “K9 Timeline”
   * Local media retrieval: 2026-09-22
   * The page remains a research record; episode classifications, prop identities, and expanded continuity claims should be independently verified where marked.
-
+
+
 
 ~~REFNOTES~~
 ---------

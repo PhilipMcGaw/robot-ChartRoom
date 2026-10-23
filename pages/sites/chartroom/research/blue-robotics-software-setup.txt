@@ -1,5 +1,5 @@
 ====== Blue Robotics BlueROV2 software setup ======
-{{tag>research }}
+{{tag>research, rov, software, blue-robotics, architecture, control }}
 
 ~~META:
 description     = Documentation page covering Blue Robotics BlueROV2 software setup.
@@ -70,7 +70,8 @@ The existing NATS-based communications architecture remains preferable for this 
 ===== Status =====
 
 **Research / architecture and commissioning inspiration.** No BlueOS, ArduSub, or MAVLink dependency is planned.
-
+
+
 
 ~~REFNOTES~~
 ---------

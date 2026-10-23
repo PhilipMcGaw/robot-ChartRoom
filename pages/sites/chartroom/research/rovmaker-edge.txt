@@ -1,5 +1,5 @@
 ====== RovMaker Edge research notes ======
-{{tag>research }}
+{{tag>research, rov, underwater, robotics, mechanical, pressure-housing, propulsion, control }}
 
 ~~META:
 description     = Documentation page covering RovMaker Edge research notes.
@@ -148,7 +148,8 @@ The RovMaker Edge Hackaday project currently shows limited uploaded project mate
   * [[https://www.techmonkeybusiness.com/articles/OpenSource_ROV.html|TechMonkeyBusiness OpenSource ROV]]
   * [[https://discuss.bluerobotics.com/t/control-board-options-pros-and-cons/812|Blue Robotics control-board discussion]]
   * [[https://discuss.ardupilot.org/t/your-own-remotely-operated-vehicle-rov-project/7951|ArduPilot ROV project discussion]]
-
+
+
 
 ~~REFNOTES~~
 ---------

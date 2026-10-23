@@ -57,7 +57,8 @@ For Chartroom’s existing underwater survey research, see [[sites:chartroom:res
   * Lambert, Douglas N., Richard H. Bennett, and others. “Submersible-Mounted In-Situ Geotechnical Instrumentation.” //AAPG Bulletin// 65(9), 1981, abstract. [[https://doi.org/10.1306/03B596E3-16D1-11D7-8645000102C1865D|DOI record]].
 
 **Status:** reference only. The paper’s empirical claims, novelty, patent status, and proposed classifications have not been independently validated for the Robots project.
-
+
+
 
 ~~REFNOTES~~
 ---------

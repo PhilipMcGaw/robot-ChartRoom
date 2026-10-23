@@ -1,5 +1,5 @@
 ====== Raspberry Pi deployment ======
-{{tag>documentation }}
+{{tag>documentation, development, raspberry-pi, deployment }}
 
 ~~META:
 description     = Documentation page covering Raspberry Pi deployment.
@@ -208,8 +208,7 @@ The preferred workflow is:
 The current CuttleOS helper uses a command of this form:
 
 <code zsh>
-chmod +x scripts/prepare_first_boot.sh
-scripts/prepare_first_boot.sh /Volumes/bootfs \
+chmod +x scripts/prepare_first_boot.sh scripts/prepare_first_boot.sh /Volumes/bootfs \
   --user philip \
   --profile k9 \
   --config-dir ~/robot-deployment/k9
@@ -230,7 +229,8 @@ The private deployment directory contains robot-specific configuration such as N
 | ROS 2/Gazebo simulation | SquidLink |
 
 Chartroom describes the intended deployment process without becoming a second copy of the implementation. When commands, paths, service names, or provisioning behaviour change, the relevant software repository is the implementation authority and this page should be updated when the project-level procedure changes.
-
+
+
 
 ~~REFNOTES~~
 ---------

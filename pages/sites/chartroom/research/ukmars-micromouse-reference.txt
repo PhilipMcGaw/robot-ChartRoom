@@ -1,5 +1,5 @@
 ====== UKMARS and Micromouse reference ======
-{{tag>research }}
+{{tag>research, robotics, education, ukmars, micromouse, testing, calibration }}
 
 ~~META:
 description     = Documentation page covering UKMARS and Micromouse reference.
@@ -8,8 +8,7 @@ status          = reference
 authority       = Chartroom
 ~~
 
-**Status:** Research / read later
-**Added:** 2026-09-10
+**Status:** Research / read later **Added:** 2026-09-10
 
 ===== Sources =====
 
@@ -72,7 +71,8 @@ The key lesson is that **diagnostics and calibration are part of the platform**,
   * Compare UKMARSBOT's repository structure with the intended Test in a Box structure.
   * Review the sensor-board and mechanical modularity for ideas applicable to SwarmBot.
   * Extract calibration and observability patterns from Micromouse for ''ROV - HiL-and-SiL''.
-
+
+
 
 ~~REFNOTES~~
 ---------

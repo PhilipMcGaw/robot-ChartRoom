@@ -136,7 +136,8 @@ The material does not prove that the current ROV, SwarmBot, NATS, ROS 2, HiL/SiL
   * Source materials reviewed: ElementaryAUV course plan, 29 lesson documents, operating manual dated 2022, programming-block reference, and the ElementaryROV lesson and build material.
   * This page is an English technical synthesis, not a certified translation or a replacement operating manual.
   * Original source files were reviewed for relevance and are discarded from the workspace after this synthesis; source copyright and publication permissions were not assessed.
-
+
+
 
 ~~REFNOTES~~
 ---------

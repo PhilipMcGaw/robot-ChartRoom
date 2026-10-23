@@ -21,7 +21,8 @@ The [[sites:chartroom:ros2:course:start|ROS 2 / Gazebo Course]] covers workstati
 Chartroom contains reusable ROS 2 knowledge and course material.
 
 SquidLink contains the actual ROS 2 workspace, packages, Gazebo models, scenarios, and simulation implementation. It should not duplicate the course material.
-
+
+
 
 ~~REFNOTES~~
 ---------

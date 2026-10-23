@@ -1,5 +1,5 @@
 ====== Maker's Pet 120 mm robot research ======
-{{tag>research }}
+{{tag>research, robotics, swarmbot, marsbot, 3d-printing, ros2, lidar, education }}
 
 ~~META:
 description     = Documentation page covering Maker's Pet 120 mm robot research.
@@ -92,7 +92,8 @@ Do not force the Maker's Pet mounting concept onto K-9. If autonomous navigation
 **Status:** Research / design inspiration. Relevant primarily to SwarmBot and MarsBot; terrestrial only and not a requirement for either project.
 
 **Read later:** [[https://makerspet.com/product/arduino-ros2-self-driving-robot-120mm-build-pack/|Maker's Pet 120 mm Build Pack]] and [[https://makerspet.com/blog/BLD-120MM-PACK/|BLD-120MM-PACK build instructions]].
-
+
+
 
 ~~REFNOTES~~
 ---------

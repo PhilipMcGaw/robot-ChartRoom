@@ -49,8 +49,7 @@ Use Ubuntu 24.04 LTS Desktop AMD64. This provides the graphical environment requ
 Update the installation before adding project software:
 
 <code bash>
-sudo apt update
-sudo apt full-upgrade
+sudo apt update sudo apt full-upgrade
 </code>
 
 ===== VMware integration =====
@@ -58,8 +57,7 @@ sudo apt full-upgrade
 Install the Ubuntu-packaged VMware tools:
 
 <code bash>
-sudo apt install open-vm-tools open-vm-tools-desktop
-sudo reboot
+sudo apt install open-vm-tools open-vm-tools-desktop sudo reboot
 </code>
 
 If display rendering is poor, check VMware Fusion 3D acceleration and Ubuntu display scaling before changing the ROS installation.
@@ -82,8 +80,7 @@ sudo apt install \
 Enable Universe if required:
 
 <code bash>
-sudo add-apt-repository universe
-sudo apt update
+sudo add-apt-repository universe sudo apt update
 </code>
 
 ===== ROS 2 Jazzy =====
@@ -93,16 +90,13 @@ Install ROS 2 Jazzy using the current official ROS 2 Debian-package instructions
 After installation, source ROS 2 from ZSH:
 
 <code zsh>
-source /opt/ros/jazzy/setup.zsh
-echo 'source /opt/ros/jazzy/setup.zsh' >> ~/.zshrc
+source /opt/ros/jazzy/setup.zsh echo 'source /opt/ros/jazzy/setup.zsh' >> ~/.zshrc
 </code>
 
 Verify:
 
 <code zsh>
-printenv ROS_DISTRO
-ros2 --help
-ros2 doctor
+printenv ROS_DISTRO ros2 --help ros2 doctor
 </code>
 
 ''ROS_DISTRO'' should report ''jazzy''.
@@ -144,8 +138,7 @@ sudo apt install \
 Initialise ''rosdep'' once:
 
 <code bash>
-sudo rosdep init
-rosdep update
+sudo rosdep init rosdep update
 </code>
 
 If ''rosdep init'' reports that it is already initialised, run only ''rosdep update''.
@@ -161,8 +154,7 @@ gz sim
 The SquidLink ROS workspace lives inside the repository:
 
 <code text>
-robot-SquidLink/
-└── ros2_ws/
+robot-SquidLink/ └── ros2_ws/
     └── src/
 </code>
 
@@ -212,7 +204,8 @@ Then take a VMware snapshot. This provides a known-good workstation baseline.
   * [ ] ''colcon'' is available.
   * [ ] The SquidLink workspace can be created.
   * [ ] The VM is suitable for a baseline snapshot.
-
+
+
 
 ~~REFNOTES~~
 ---------

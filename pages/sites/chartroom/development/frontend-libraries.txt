@@ -1,5 +1,5 @@
 ====== Frontend Libraries ======
-{{tag>documentation }}
+{{tag>documentation, development, frontend, libraries }}
 
 ~~META:
 description     = Documentation page covering Frontend Libraries.
@@ -38,7 +38,8 @@ If adopted, prefer importing only the required Anime.js modules rather than addi
 ==== Authority ====
 
 This page records the project-level evaluation and rationale. Any implementation-specific dependency configuration belongs to the CuttleOS repository.
-
+
+
 
 ~~REFNOTES~~
 ---------

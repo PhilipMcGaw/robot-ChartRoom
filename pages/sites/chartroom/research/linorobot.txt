@@ -1,5 +1,5 @@
 ====== LinoRobot — ROS robot platform research notes ======
-{{tag>research }}
+{{tag>research, ros, robotics, mobile-robot, swarmbot, marsbot }}
 
 ~~META:
 description     = Documentation page covering LinoRobot — ROS robot platform research notes.
@@ -68,7 +68,8 @@ LinoRobot is primarily useful as a ROS/mobile-robot reference. Its hardware and 
 **Status:** Research / design inspiration.
 
 **Read later:** Examine the repository/project structure, ROS packages, robot description, sensor integration, and navigation examples for ideas that can be adapted to the ROS 2 Jazzy learning path.
-
+
+
 
 ~~REFNOTES~~
 ---------

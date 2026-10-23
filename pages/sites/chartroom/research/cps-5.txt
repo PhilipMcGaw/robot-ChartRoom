@@ -1,5 +1,5 @@
 ====== CPS 5 underwater drone research notes ======
-{{tag>research }}
+{{tag>research, "CPS 5" }}
 
 ~~META:
 description     = Documentation page covering CPS 5 underwater drone research notes.
@@ -53,7 +53,8 @@ CPS 5 is a maker/educational platform and should not be treated as a certified p
 **Status:** Research / design inspiration.
 
 **Read later:** Review the CPS 5 CAD/BOM structure, tether implementation, electronics-pipe arrangement, camera integration, and documentation workflow.
-
+
+
 
 ~~REFNOTES~~
 ---------

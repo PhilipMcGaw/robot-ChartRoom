@@ -1,5 +1,5 @@
 ====== ArduSub Flight Controller Options ======
-{{tag>architecture, blueos, ardupilot }}
+{{tag>architecture, blueos, ardupilot, rov, hardware, flight-controller }}
 
 ~~META:
 description     = UK sourcing options for Navigator and Pixhawk/Cube hardware.
@@ -74,7 +74,8 @@ Before ordering, confirm the complete system rather than the controller price al
   * [[https://bluerobotics.com/store/comm-control-power/control/navigator/|Blue Robotics Navigator]]
   * [[https://ardupilot.org/sub/docs/common-autopilots.html|ArduSub autopilot hardware list]]
   * [[sites:chartroom:architecture:blueos-adeept-robot-hat|Existing BlueOS and Adeept Robot HAT architecture page]]
-
+
+
 
 ~~REFNOTES~~
 ---------

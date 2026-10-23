@@ -94,7 +94,8 @@ It does not establish that a Kogeto Dot is suitable for underwater use. For subm
   * Source: user-supplied pasted text titled “2π - 360 pi cam”.
   * Source content reviewed: 2026-09-22.
   * Status: historical reference; technical details preserved where they are specific to the original experiment.
-
+
+
 
 ~~REFNOTES~~
 ---------

@@ -9,10 +9,7 @@ authority       = Chartroom
 ~~
 
 ===== Purpose =====
-Summary of useful engineering practices from the MATE ROV Competition for
-application to the ChartRoom ROV. Competition-specific limits are deliberately
-excluded; the aim is to adopt good engineering requirements rather than copy
-competition rules.
+Summary of useful engineering practices from the MATE ROV Competition for application to the ChartRoom ROV. Competition-specific limits are deliberately excluded; the aim is to adopt good engineering requirements rather than copy competition rules.
 
 ===== Recommended requirements =====
 
@@ -75,19 +72,12 @@ ENGINEERING DOCUMENTATION
   - Revision-controlled test evidence.
 
 ===== What NOT to copy =====
-MATE competition-specific constraints such as competition supply limits,
-mandatory connectors/fuses, vehicle mass limits, competition depth limits,
-specific tether dimensions, crew arrangements, or documentation page limits
-should not become ChartRoom requirements unless they serve an independent
-design purpose.
+MATE competition-specific constraints such as competition supply limits, mandatory connectors/fuses, vehicle mass limits, competition depth limits, specific tether dimensions, crew arrangements, or documentation page limits should not become ChartRoom requirements unless they serve an independent design purpose.
 
 ===== Overall conclusion =====
-The most useful lesson from MATE is that the ROV should be treated as a
-systems-engineering project. The existing ChartRoom architecture of Cockpit,
-Control, Datalogger, NATS communications, and HiL/SiL is already well aligned
-with this approach. The main gap is to make safety, verification, measured
-performance, and engineering documentation explicit requirements.
-
+The most useful lesson from MATE is that the ROV should be treated as a systems-engineering project. The existing ChartRoom architecture of Cockpit, Control, Datalogger, NATS communications, and HiL/SiL is already well aligned with this approach. The main gap is to make safety, verification, measured performance, and engineering documentation explicit requirements.
+
+
 
 ~~REFNOTES~~
 ---------

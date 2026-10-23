@@ -6,7 +6,7 @@ description     = Reference notes on BRUVS survey design, deployment, and video 
 type            = research
 status          = reference
 authority       = Chartroom
-date           = 2026-09-22
+date            = 2026-09-22
 ~~
 
 ===== Scope =====
@@ -84,7 +84,8 @@ For any future project use, the survey design, camera system, bait handling, ani
   * Source date shown in the PDF: 2019.
   * Source pages reviewed: PDF pages 1–4, printed pages 37–43.
   * Status: reference only; source copyright and publication permissions have not been assessed.
-
+
+
 
 ~~REFNOTES~~
 ---------

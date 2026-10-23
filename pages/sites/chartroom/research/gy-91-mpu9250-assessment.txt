@@ -96,7 +96,8 @@ If the module is purchased, perform these checks before integrating it into the 
   * Suitability for experimental IMU work: Medium to High.
   * Suitability for ROV depth measurement: High confidence that the onboard BMP280 is unsuitable.
   * Suitability for primary safety-critical vehicle control: Not recommended.
-
+
+
 
 ~~REFNOTES~~
 ---------

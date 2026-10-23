@@ -280,7 +280,7 @@ Keep a small K-9-specific research track for the rear/back-button assembly, part
 
 **Status:** Read later / design research.
 
-**Read later:** [[sites:chartroom:k9-read-later|K-9 Read Later]].
+**Read later:** [[sites:chartroom:research:k9-read-later|K-9 Read Later]].
 
 ==== Cross-project vehicle validation ====
 
@@ -309,7 +309,8 @@ The current research note records the manufacturer's published product-page info
 **Status:** Read later / test-and-measurement research. No GTG-1 purchase or project requirement has been established.
 
 **Read later:** [[sites:chartroom:research:gtg-1-glass-to-glass-latency|GTG-1 research]].
-
+
+
 
 ~~REFNOTES~~
 ---------

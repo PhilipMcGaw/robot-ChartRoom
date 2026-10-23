@@ -1,5 +1,5 @@
 ====== CTD design provenance ======
-{{tag>architecture }}
+{{tag>architecture, ctd, conductivity, pressure, design, provenance }}
 
 ~~META:
 description     = Documentation page covering CTD design provenance.
@@ -56,7 +56,8 @@ These projects and studies are useful for follow-up work on conductivity excitat
   * [[https://research.fs.usda.gov/treesearch/66053|Open-source four-pole EC/CTD validation study]] - Useful comparison of four-electrode conductivity measurement, calibration, temperature effects, and validation against a commercial instrument.
   * [[https://pmc.ncbi.nlm.nih.gov/articles/PMC11207868/|Cost-efficient oceanographic CTD study]] - Useful reference for pressure housings, sensor integration, and deeper-water design constraints.
 These references describe design provenance; the Cuttlefish/ROV implementation may include further electrical, mechanical, firmware, and packaging modifications. Licence obligations should be reviewed before redistributing any derived design files.
-
+
+
 
 ~~REFNOTES~~
 ---------

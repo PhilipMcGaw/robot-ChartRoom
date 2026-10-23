@@ -88,7 +88,8 @@ The supplied {{:sites:chartroom:research:evidence:picobricks-go-guide.pdf?linkon
   * Named organisations and products: Robotistan, PicoBricks, PicoBricks IDE, PicoBricks Go!, Thonny, and Arduino IDE.
   * Hardware reference reviewed: pages 1–9 and 53–54; programming and behaviour sections reviewed across pages 10–52.
   * Status: reference only; source copyright and publication permissions have not been assessed.
-
+
+
 
 ~~REFNOTES~~
 ---------

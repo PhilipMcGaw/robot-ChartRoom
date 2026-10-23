@@ -1,5 +1,5 @@
 ====== Robots Project Documentation Standard ======
-{{tag>documentation }}
+{{tag>documentation, development, standards, conventions }}
 
 ~~META:
 description     = Documentation page covering Robots Project Documentation Standard.
@@ -70,11 +70,7 @@ Use SI units and notation consistently, following the NIST SI style guidance.
 Examples:
 
 <code text>
-20 V
-75 °C
-4,000 A
-10 µm
-2.7 mΩ
+20 V 75 °C 4,000 A 10 µm 2.7 mΩ
 </code>
 
 ===== Symbols =====
@@ -146,7 +142,8 @@ When an authoritative implementation changes, review dependent documentation for
 Do not silently leave duplicated documentation stale. If duplication is unavoidable, identify the authoritative source and update the dependent copy when the material relationship changes.
 
 The objective is not to eliminate every repeated sentence. The objective is to eliminate competing versions of the truth.
-
+
+
 
 ~~REFNOTES~~
 ---------

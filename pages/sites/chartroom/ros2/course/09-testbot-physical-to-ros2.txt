@@ -27,10 +27,7 @@ Complete the earlier course lessons and have the SquidLink ROS 2 workspace avail
 ===== Inspect the Testbot package =====
 
 <code zsh>
-source /opt/ros/jazzy/setup.zsh
-cd "$HOME/robots/robot-SquidLink/ros2_ws"
-colcon list | grep testbot_description
-find src/testbot_description -maxdepth 3 -type f | sort
+source /opt/ros/jazzy/setup.zsh cd "$HOME/robots/robot-SquidLink/ros2_ws" colcon list | grep testbot_description find src/testbot_description -maxdepth 3 -type f | sort
 </code>
 
 The package should contain the authoritative Xacro model, a visualisation launch file, and documentation describing its provisional status.
@@ -38,8 +35,7 @@ The package should contain the authoritative Xacro model, a visualisation launch
 ===== Build and validate =====
 
 <code zsh>
-colcon build --symlink-install --packages-select testbot_description
-source install/setup.zsh
+colcon build --symlink-install --packages-select testbot_description source install/setup.zsh
 
 ros2 run xacro xacro \
   src/testbot_description/urdf/testbot.urdf.xacro \
@@ -76,7 +72,8 @@ Do not edit dimensions from memory. Take measurements from the physical Testbot 
   * that the model is a validated digital twin.
 
 The next stage should add Gazebo physics and differential-drive control. Add the CuttleOS NATS bridge only after the local ROS 2/Gazebo loop is repeatable.
-
+
+
 
 ~~REFNOTES~~
 ---------

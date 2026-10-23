@@ -1,5 +1,5 @@
 ====== RoboCenter ROV research notes ======
-{{tag>research }}
+{{tag>research, robotics, rov, mechanical, software, cockpit, hil-sil }}
 
 ~~META:
 description     = Documentation page covering RoboCenter ROV research notes.
@@ -104,7 +104,8 @@ This supports the existing **ROV - HiL-and-SiL** direction and the aim of making
   * Which UI functions belong in Cockpit core versus vehicle-specific plugins/modules?
   * Can the existing ROV HiL/SiL environment reproduce the useful MUR simulator workflow while retaining our NATS architecture?
   * Which propulsion telemetry is worth standardising before adding more actuator hardware?
-
+
+
 
 ~~REFNOTES~~
 ---------

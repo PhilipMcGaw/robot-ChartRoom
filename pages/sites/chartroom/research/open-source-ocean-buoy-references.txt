@@ -1,5 +1,5 @@
 ====== Open-source ocean buoy and environmental sensing references ======
-{{tag>research }}
+{{tag>research, smart-buoy, buoy, sensing, environmental, lora, oceanography }}
 
 ~~META:
 description     = Documentation page covering Open-source ocean buoy and environmental sensing references.
@@ -12,11 +12,7 @@ A focused set of academic, student, and open-source buoy projects relevant to th
 
 ===== T3chFlicks Smart Buoy =====
 
-https://github.com/sk-t3ch/smart-buoy
-https://magazine.raspberrypi.com/articles/smart-buoy
-https://gitlab.com/t3chflicks/smart-buoy
-https://hackaday.io/project/166572-smart-buoy/details
-https://www.hackster.io/t3chflicks/smart-buoy-summary-7d1a7b
+https://github.com/sk-t3ch/smart-buoy https://magazine.raspberrypi.com/articles/smart-buoy https://gitlab.com/t3chflicks/smart-buoy https://hackaday.io/project/166572-smart-buoy/details https://www.hackster.io/t3chflicks/smart-buoy-summary-7d1a7b
 
 T3chFlicks developed an Arduino buoy with a Raspberry Pi base station and Vue dashboard. The prototype measured wave height/period/power/direction, water temperature, air temperature/humidity/pressure, GPS, and electrical status. It used solar power, battery-aware scheduled operation, nRF24 radio, local processing/storage experiments, and a shore/base-station dashboard. The original GitLab repository was created in March 2019 and later moved to GitHub.
 
@@ -34,8 +30,7 @@ The Hackaday and Hackster material also shows a useful full-stack engineering ch
 
 ===== OLB — Open LoRa Buoy =====
 
-https://arxiv.org/abs/2601.05615
-https://github.com/larswd/OpenLoraBuoy
+https://arxiv.org/abs/2601.05615 https://github.com/larswd/OpenLoraBuoy
 
 Dreyer et al. developed an open-source coastal drifter using LoRa. The design targets reliability, low cost, modifiability, and power efficiency. Reported validation experiments achieved observed radio ranges up to approximately 2.3 km and an expected battery life of up to seven months. The authors plan to release firmware for the buoy, base station, and digital platform together with PCB designs and a maintained component list.
 
@@ -111,8 +106,7 @@ A low-cost solar-powered water-level buoy concept using DGPS, Raspberry Pi/4G co
 
 ===== Development of a Small-Scale Wave-Powered Data Buoy — Iain McLeod =====
 
-https://mural.maynoothuniversity.ie/id/eprint/21677/
-https://coer.maynoothuniversity.ie/research-projects/
+https://mural.maynoothuniversity.ie/id/eprint/21677/ https://coer.maynoothuniversity.ie/research-projects/
 
 A 2026 PhD thesis from Maynooth University's Centre for Ocean Energy Research. It investigates powering a small data buoy from incident waves, including a small-scale triboelectric nanogenerator and a more conventional oscillating-water-column power take-off. It also develops a free-surface-elevation estimator rather than assuming that a wave-measuring buoy must behave as a perfect wave follower.
 
@@ -210,7 +204,8 @@ The goal is not to reproduce any one reference design. The references should be 
 [1] M. S. Al-Husainy et al., “Design, Implementation, and Measurement Procedure of Underwater and Water Surface Antenna for LoRa Communication”, //Sensors//, 2021. https://www.mdpi.com/1424-8220/21/4/1337
 
 [2] Ofcom, “Short-range devices” and UK Interface Requirement IR2030. https://www.ofcom.org.uk/spectrum/radio-equipment/short-range-devices
-
+
+
 
 ~~REFNOTES~~
 ---------

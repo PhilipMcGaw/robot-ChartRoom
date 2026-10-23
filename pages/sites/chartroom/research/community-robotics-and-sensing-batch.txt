@@ -1,5 +1,5 @@
 ====== Community robotics and sensing references ======
-{{tag>research }}
+{{tag>research, robotics, rov, sensing, video, embedded, education, autonomous }}
 
 ~~META:
 description     = Documentation page covering Community robotics and sensing references.
@@ -34,8 +34,7 @@ A deliberately minimal ROV using PVC pipe, an Ethernet tether, simple brushed mo
 
 ==== Open Source Turtle Robot (OSTR) ====
 
-https://www.instructables.com/OSTR/
-https://github.com/aspro648/OSTR/
+https://www.instructables.com/OSTR/ https://github.com/aspro648/OSTR/
 
 OSTR was designed as a 10-hour STEM workshop project for teenagers. The design targets low cost, easy construction, easy programming, and an immediately visible result. The robot uses simple turtle-style commands such as ''forward(distance)'' and ''left(degrees)''. Version 2 moved towards easier USB debugging and Python-capable hardware, allowing the same turtle programs to be evaluated on a computer and then run on the physical robot. The design files use open-source KiCad, FreeCAD/OpenSCAD/TinkerCAD, and Arduino/CircuitPython.
 
@@ -59,10 +58,7 @@ A small educational robot designed around interaction with children, with an emp
 
 ==== UKMARSBOT ====
 
-https://github.com/ukmars/ukmarsbot
-https://github.com/ukmars/ukmarsbot-examples
-https://github.com/ukmars
-https://github.com/ukmars/ukmarsbot/issues
+https://github.com/ukmars/ukmarsbot https://github.com/ukmars/ukmarsbot-examples https://github.com/ukmars https://github.com/ukmars/ukmarsbot/issues
 
 UKMARSBOT is an inexpensive, multipurpose beginner robot platform supporting line following, wall following, drag racing, and mini-sumo. The hardware repository includes documentation, ECAD, mechanical design, sensor boards, alternatives, and a resources area for serial data/control/logging. The examples repository deliberately progresses through small exercises including battery handling, switches, PWM, sensors, encoders, faster analogue acquisition, distance moved, and other low-level topics.
 
@@ -164,9 +160,7 @@ Demonstrates a basic secure OTA update path for ESP32, including HTTPS and firmw
 
 ==== Freeburn Robotics ====
 
-https://frobotics.com/
-https://frobotics.com/robotics-design/
-https://frobotics.com/pcb-design/
+https://frobotics.com/ https://frobotics.com/robotics-design/ https://frobotics.com/pcb-design/
 
 Freeburn Robotics provides robotics/mechatronics design, CAD, CNC, prototyping, small-scale manufacturing, PCB design, assembly, and embedded/software development. Its robotics offering explicitly covers open-loop through closed-loop control, while its PCB service covers analogue/digital design, component sourcing, assembly, testing, and small production runs.
 
@@ -193,7 +187,8 @@ The strongest recurring themes from this batch are:
 **General inspiration:** Raspberry Pi car, tiny autonomous robot, EWON home robot, motor-car toy.
 
 These references should feed the existing **Test in a Box**, **SwarmBot**, **ROV**, **Smart Buoy/environmental sensing**, **Cockpit**, and **HiL/SiL** work rather than creating separate hardware projects for each reference.
-
+
+
 
 ~~REFNOTES~~
 ---------
