@@ -1,0 +1,44 @@
+====== Texas A&M Team Oceanus ======
+{{tag>research, rov, mate, software, simulation, cad }}
+
+~~META:
+description     = Public Team Oceanus MATE ROV monorepo with software, CAD, wiring, simulation, and technical documentation.
+type            = research
+status          = reference
+authority       = Chartroom
+date           = 2026-10-23
+~~
+
+===== Scope =====
+
+Team Oceanus is the Texas A&M underwater robotics team within ThinkTank. Its public repository describes a remotely operated vehicle (ROV) and companion vertical profiling float for the MATE ROV Competition. This page summarises the repository's own overview; it does not independently validate the team's design or implementation.
+
+===== What the repository contains =====
+
+The repository is organised as a team monorepo with subteam work, ROV computer-aided design (CAD), wiring schematics, technical data, documentation, float firmware, and a prior-season archive. The team describes an eight-thruster vectored vehicle with six degrees of freedom, a Navigator flight controller with Raspberry Pi 5, BlueOS and ArduSub, and piloting through QGroundControl over MAVLink.
+
+The software overview includes a software-in-the-loop (SITL) ArduSub simulation of the vehicle for control testing before hardware. Named subteam areas include guidance, navigation and control; electrical power; thermal mechanisms and structures; communications and computing; and fluids and propulsion. The repository says the guidance/control and communications/computing areas are planned to merge, so the listed organisation may change.
+
+===== Relevance =====
+
+This is a useful whole-project reference because one repository brings together software, vehicle CAD, wiring, float firmware, and team documentation. The README gives a quick architecture map; the simulation and subteam directories offer paths for deeper review of control, electronics, mechanical work, and cross-team boundaries.
+
+===== Limitations =====
+
+The repository represents a competition project and includes a previous-season archive alongside current work. Its top-level descriptions are team-authored and may change during the season. Check the date, branch, and subteam status of a specific file before treating it as the team's current design.
+
+===== Visual references =====
+
+The repository's CAD and documentation directories are the team's source for vehicle visuals. The repository does not show a clear licence for reuse of its media, so use its pages to view the current material rather than copying images into Chartroom.
+
+===== Sources =====
+
+  * [Team Oceanus — Texas A&M MATE ROV repository](https://github.com/ThinkTank-TAMU/TAMU-Oceanus), accessed 2026-10-23. README, repository layout, and linked subteam work.
+  * [Team Oceanus SITL simulation](https://github.com/ThinkTank-TAMU/TAMU-Oceanus/tree/main/01_Subteams/GNC/SITL-Simulation), ArduSub simulation reference linked from the README.
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

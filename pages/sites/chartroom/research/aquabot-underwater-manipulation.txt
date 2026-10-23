@@ -27,6 +27,12 @@ Aquabot is worth reading for its approach to learning from demonstrations and fo
 
 The project page says the authors open-sourced hardware and software implementation details, but the repository's reproduction list still depends on a commercial ROV and vendor SDK. This is therefore not a self-contained, low-cost vehicle build. The reported performance result is from the authors' experiments and is not an independent comparison. Distinguish documented setup from claims supported by the paper's methods and evaluation.
 
+===== Visual reference =====
+
+{{:sites:chartroom:research:aquabot-teaser.jpeg|Aquabot researchers operating a FIFISH vehicle underwater.}}
+
+The project teaser is included from the [Aquabot source repository](https://github.com/cvlab-columbia/aquabot), which declares the MIT licence. Attribution: Columbia University Computer Vision Laboratory, Aquabot project. Check the repository licence and any asset-specific notices before reuse outside Chartroom.
+
 ===== Sources =====
 
   * [Aquabot project page: Self-Improving Autonomous Underwater Manipulation](https://aquabot.cs.columbia.edu/), accessed 2026-10-23.

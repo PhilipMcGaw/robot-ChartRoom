@@ -26,6 +26,12 @@ Prefer primary sources and stable official documentation. Preserve provenance ra
 
 ===== New reference notes =====
 
+  * [[sites:chartroom:research:mate-clovis-crush-depth-scylla|Clovis Community College Crush Depth / Scylla]] — MATE 2025 software and vehicle design report.
+  * [[sites:chartroom:research:mate-texas-am-oceanus|Texas A&M Team Oceanus]] — MATE ROV and float monorepo with simulation, CAD, and wiring documentation.
+  * [[sites:chartroom:research:mate-uconn-underwater-robotics|UConn Underwater Robotics Club]] — MATE 2026 ROS 2, vehicle, arm, and video-control architecture.
+  * [[sites:chartroom:research:mate-cwrubotix|CWRUbotix MATE ROV software]] — ROS 2 software workspace, development setup, and tests.
+  * [[sites:chartroom:research:mate-project-trident|Project Trident]] — MATE 2026 ROV and crew-facing mission management overview.
+  * [[sites:chartroom:research:mate-aquaphoton-academy|Aquaphoton Academy]] — MATE 2024 technical report with integration diagrams and safety appendices.
   * [[sites:chartroom:research:uwrov-design-archive|UWROV ROV design archive]] — multi-year vehicle designs, CAD, and team technical documentation.
   * [[sites:chartroom:research:seaperch-build-and-testing|SeaPerch build and testing resources]] — educational ROV construction, buoyancy, performance testing, and troubleshooting.
   * [[sites:chartroom:research:aquabot-underwater-manipulation|Aquabot underwater manipulation research]] — research vehicle integration, visual input, and autonomous manipulation.

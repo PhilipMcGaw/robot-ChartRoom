@@ -1,0 +1,44 @@
+====== Project Trident ======
+{{tag>research, rov, mate, operations, manipulation, vision }}
+
+~~META:
+description     = Project Trident's public overview of its TRI26 MATE ROV, mission-management software, and OpenBot project.
+type            = research
+status          = reference
+authority       = Chartroom
+date           = 2026-10-23
+~~
+
+===== Scope =====
+
+Project Trident is a student-led team at The Athenian School in California. Its website describes its 2026 MATE ROV entry, TRI26, and a separate open-source ROV effort called OpenBot. This note records the team's public overview; it is not an independent evaluation of the design or performance claims.
+
+===== What the team describes =====
+
+The team describes TRI26 as an eight-thruster vectored ROV with six-degree-of-freedom manoeuvring, a three-camera system, an articulating claw, photogrammetry, computer vision, augmented-reality control, and a modular electronics enclosure. It also presents its Mission Management Terminal (MMT) as a crew-coordination interface that tracks mission tasks, time, and practice-run results for the pilot and other operators.
+
+The same site describes OpenBot as a separate open-source ROV for marine photogrammetry and future modification. The site also lists proposed TRI27 features as early development with details pending; those items should not be read as implemented features.
+
+===== Relevance =====
+
+The vehicle overview may be useful for considering mission support beyond piloting: shared crew state, task sequencing, run logging, and operator displays. The site's distinction between TRI26 and OpenBot is also useful when checking whether a claim applies to the competition vehicle or the separate open-source project.
+
+===== Limitations =====
+
+The source is the team's own promotional and project overview, not a detailed engineering report or published codebase. Its performance, depth, cost, and feature statements are team claims. Treat planned or early-development items as proposals unless supported by released design files, software, or test evidence.
+
+===== Visual references =====
+
+The [Project Trident website](https://www.tridentrov.org/) provides rendered views and team descriptions of TRI26, its claw, MMT interface, and OpenBot. Image reuse terms are not stated on the page, so this note links to those visuals instead of copying them into Chartroom.
+
+===== Sources =====
+
+  * [Project Trident](https://www.tridentrov.org/), accessed 2026-10-23. Team-published TRI26, MMT, OpenBot, and TRI27 status descriptions.
+  * [Athenian Robotics Collective on GitHub](https://github.com/athenian-robotics), related public team repositories; the organisation page does not itself establish that all Project Trident vehicle files are published there.
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

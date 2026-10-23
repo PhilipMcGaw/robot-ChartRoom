@@ -1,0 +1,42 @@
+====== CWRUbotix MATE ROV software ======
+{{tag>research, rov, mate, ros2, software, testing }}
+
+~~META:
+description     = CWRUbotix public ROS 2 software workspace and development documentation for its 2025–2026 MATE ROV season.
+type            = research
+status          = reference
+authority       = Chartroom
+date           = 2026-10-23
+~~
+
+===== Scope =====
+
+CWRUbotix is Case Western Reserve University's robotics team. This page reviews its public software repository for the 2025–2026 MATE ROV season. It focuses on software organisation and development guidance, not a full vehicle design.
+
+===== What the repository documents =====
+
+The repository describes a Robot Operating System 2 (ROS 2) workspace with code organised for the surface computer, Raspberry Pi compute module, and a float. It documents separate namespaces for surface and onboard nodes, and a tether namespace for topics that cross between them. The README includes environment setup, Docker and Windows options, build instructions, unit-test instructions, axis conventions, and a layered documentation approach.
+
+===== Relevance =====
+
+The repository is useful for reviewing software structure and team development practices: where packages run, how cross-machine topics are grouped, how the environment is installed, and how the team expects code to be tested and documented. Its separation of surface, vehicle, and float software is relevant when comparing multi-computer ROV architectures.
+
+===== Limitations =====
+
+This is a season-specific software workspace. The repository README is the source for the 2025–2026 setup; do not assume its ROS version, package layout, or device allocation remains current in later seasons. The README alone does not establish the safety or reliability of its vehicle.
+
+===== Visual references =====
+
+The software repository is focused on code and setup rather than vehicle photography. CWRUbotix's [MATE ROV team page](https://www.cwrubotix.org/mate_rov.html) includes a vehicle photograph, but it depicts an earlier team vehicle and is not a picture of the 2025–2026 software project. No explicit image reuse licence was found, so the photo is linked rather than copied.
+
+===== Sources =====
+
+  * [CWRUbotix, MATE ROV 2025–2026 software repository](https://github.com/CWRUbotix/rov-26), accessed 2026-10-23. README, workspace organisation, setup, tests, and documentation guidance. Repository declares Apache-2.0.
+  * [CWRUbotix MATE ROV team page](https://www.cwrubotix.org/mate_rov.html), earlier vehicle photo and team background.
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

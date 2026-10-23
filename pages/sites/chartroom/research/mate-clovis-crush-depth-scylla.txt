@@ -1,0 +1,46 @@
+====== Clovis Community College Crush Depth / Scylla ======
+{{tag>research, rov, mate, software, architecture, testing }}
+
+~~META:
+description     = MATE 2025 technical report for Crush Depth's Scylla ROV, with software, control-station, and vehicle-design rationale.
+type            = research
+status          = reference
+authority       = Chartroom
+date           = 2026-10-23
+~~
+
+===== Scope =====
+
+This page reviews Crush Depth's 2025 MATE ROV technical report for Scylla, a six-degree-of-freedom remotely operated vehicle (ROV) built by Clovis Community College's Engineering Renaissance Club. It is a team-reported case study, not a Chartroom design or verified system specification.
+
+===== Software and system architecture =====
+
+The report describes a Raspberry Pi-based onboard computer and a laptop control station connected through a surface router. It discusses Protocol Buffers for data serialisation and compression, GPIO access, and I2C sensor and board communication. The team reports that it moved its command messaging from Message Queuing Telemetry Transport (MQTT) to User Datagram Protocol (UDP) sockets after experiencing latency.
+
+For piloting, the team describes a kinematic model of the thruster layout and a Moore–Penrose pseudoinverse to map desired motion across six degrees of freedom to thruster outputs. The report also describes proportional-integral-derivative (PID) roll and pitch control, with tuning values exposed to the pilot.
+
+For video, the team says it replaced a Flask web-server stream with compressed images over UDP after the original feed caused noticeable pilot latency. The surface graphical user interface displayed three camera feeds.
+
+===== Relevance =====
+
+This report is a strong comparison for software and architecture review. It records concrete design choices and reported reasons for changing them: transport latency, thruster allocation, pilot controls, camera streaming, and operator adjustment of stabilisation. It also includes mechanical, electrical, safety, project-management, and budget sections, so the software can be read in the context of the complete vehicle.
+
+===== Limitations =====
+
+The report describes one team's 2025 competition vehicle and its own implementation. Its latency observations and performance claims are not independent measurements. The team says code was split across three repositories, but the report itself is the accessible architectural overview; check any linked source code and test evidence before treating details as current or transferable.
+
+===== Visual references =====
+
+The report contains vehicle photographs, system diagrams, and control-interface figures. Its online copy does not state a reuse licence, so this page links to the source rather than copying those images into Chartroom.
+
+===== Sources =====
+
+  * [Crush Depth, 2025 MATE ROV Technical Documentation: Scylla](https://engineeringrenaissance.org/2025_tech_doc.pdf), accessed 2026-10-23. Team report; see the software design, control station, controls, cameras, and auto-leveling sections.
+  * [Clovis Community College, Engineering Renaissance Club](https://www.cloviscollege.edu/news/2024/engineering-renaissance-club-earns-first-place.html), team background and earlier competition work.
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

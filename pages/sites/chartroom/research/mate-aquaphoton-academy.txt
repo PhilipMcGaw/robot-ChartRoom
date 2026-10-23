@@ -1,0 +1,42 @@
+====== Aquaphoton Academy ======
+{{tag>research, rov, mate, engineering, safety, documentation }}
+
+~~META:
+description     = Aquaphoton Academy's 2024 MATE Explorer Class technical report and supporting system integration and safety documents.
+type            = research
+status          = reference
+authority       = Chartroom
+date           = 2026-10-23
+~~
+
+===== Scope =====
+
+Aquaphoton Academy is a team from Alexandria University that entered the Explorer Class of the 2024 MATE ROV Competition. This page records the public technical report catalogued by ATE Central, an educational technology resource repository.
+
+===== What the report contains =====
+
+ATE Central describes the 25-page report as covering the team's ROV design and construction, mission-specific tools, safety features, testing, troubleshooting, and team logistics. Its appendices include electrical and pneumatic system integration diagrams, operational and construction safety checklists, company structure, and budget and costing material.
+
+===== Relevance =====
+
+This report is a useful example of how a competition team connects vehicle design, task tools, safety, testing, and organisation in one technical record. The appendices make it especially useful for reviewing how diagrams and checklists can support a report's design rationale.
+
+===== Limitations =====
+
+The report is a team-produced record for the 2024 Explorer Class vehicle. ATE Central's catalogue describes the report but does not independently validate the team's claims. Its diagrams and images are visible in the report; the record does not provide an image-reuse licence.
+
+===== Visual references =====
+
+The [technical report record](https://ate.is/index.php?ID=46414&P=FullRecord) links to the team's PDF, which includes vehicle and system illustrations. This page links to the source report rather than copying its images.
+
+===== Sources =====
+
+  * [ATE Central, Aquaphoton Academy: Technical Report](https://ate.is/index.php?ID=46414&P=FullRecord), accessed 2026-10-23. Catalogue description and direct link to the 2024 report.
+  * [Aquaphoton Academy 2024 technical report PDF](https://20693798.fs1.hubspotusercontent-na1.net/hubfs/20693798/EX20%20Alexandria_University_Aquaphoton_Academy_Technical_Documentation_2024%20(1).pdf), the team's submitted report.
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

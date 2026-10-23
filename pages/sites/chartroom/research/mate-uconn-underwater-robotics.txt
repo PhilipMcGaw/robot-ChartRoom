@@ -1,0 +1,43 @@
+====== UConn Underwater Robotics Club ======
+{{tag>research, rov, mate, ros2, software, architecture }}
+
+~~META:
+description     = UConn MATE 2026 software repository with an explicit split between the ROS 2 workspace, vehicle driving, video, and arm control.
+type            = research
+status          = reference
+authority       = Chartroom
+date           = 2026-10-23
+~~
+
+===== Scope =====
+
+This page reviews the public software repository for the University of Connecticut Underwater Robotics Club's 2026 MATE ROV entry. It documents software structure and interfaces; it is not a complete vehicle build record.
+
+===== Software architecture described by the team =====
+
+The repository describes two main ROS 2 packages for the control laptop and onboard computer, plus a shared messages package. ROS 2 carries arm encoder values and servo commands between the two computers, and transports camera images for a video bridge. The team states that QGroundControl and the autopilot handle vehicle piloting and thrusters outside the ROS 2 drive-control path.
+
+The README documents ROS 2 Humble on Ubuntu 22.04, a cross-machine ROS domain, topic names and message types, launch commands, camera transport through a QGroundControl video bridge, and configuration for the arm servos. These are the repository's stated 2026 setup details.
+
+===== Relevance =====
+
+The clear division between the pilot/autopilot path and ROS 2's arm and camera functions makes this repository useful for reviewing subsystem boundaries. Its topic contracts, two-machine setup, and camera bridge provide concrete examples for a small, competition-focused software workspace.
+
+===== Limitations =====
+
+The repository covers the software components documented by the team; it does not describe every electrical, mechanical, or safety interface of the vehicle. Its software division is one team's design choice, not evidence that all ROV control should sit outside ROS 2. Confirm the current season and dependencies before attempting to build or reuse the code.
+
+===== Visual references =====
+
+The README includes an architecture diagram and software interface details. The repository does not declare a media reuse licence, so this page links to the README instead of reproducing its diagram.
+
+===== Sources =====
+
+  * [UConn Underwater Robotics Club, MATE 2026 software repository](https://github.com/URUConn/MATE-2026), accessed 2026-10-23. README architecture, setup, topic contracts, and configuration notes.
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
