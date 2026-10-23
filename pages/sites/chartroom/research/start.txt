@@ -48,6 +48,7 @@ The links below cover all research notes. Use the related-research links within 
   * [[sites:chartroom:research:mate-clovis-crush-depth-scylla|Crush Depth / Scylla MATE technical report]]
   * [[sites:chartroom:research:mate-cwrubotix|CWRUbotix MATE ROV software]]
   * [[sites:chartroom:research:mate-project-trident|Project Trident]]
+  * [[sites:chartroom:research:mate-seamate-rov-kits|MATE SeaMATE educational ROV kits]]
   * [[sites:chartroom:research:mate-rov-requirements-summary|MATE ROV engineering requirements summary]]
   * [[sites:chartroom:research:mate-scottish-school-rov|Scottish school MATE ROV project]]
   * [[sites:chartroom:research:mate-texas-am-oceanus|Texas A&M Team Oceanus]]

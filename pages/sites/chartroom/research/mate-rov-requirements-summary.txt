@@ -73,6 +73,8 @@ ENGINEERING DOCUMENTATION
 
 The team reports and case studies behind this summary are catalogued separately: [[sites:chartroom:research:mate-clovis-crush-depth-scylla|Crush Depth / Scylla]], [[sites:chartroom:research:mate-texas-am-oceanus|Team Oceanus]], [[sites:chartroom:research:mate-uconn-underwater-robotics|UConn]], [[sites:chartroom:research:mate-cwrubotix|CWRUbotix]], [[sites:chartroom:research:mate-project-trident|Project Trident]], [[sites:chartroom:research:mate-aquaphoton-academy|Aquaphoton Academy]], and the [[sites:chartroom:research:mate-scottish-school-rov|Scottish school ROV discussion]]. The summary is a synthesis; consult those source notes for team-specific detail and limitations.
 
+For educational build platforms from the SeaMATE Store, see the [[sites:chartroom:research:mate-seamate-rov-kits|SeaMATE ROV kits overview]]. The kits are not substitutes for current competition-class rules.
+
 ===== What NOT to copy =====
 MATE competition-specific constraints such as competition supply limits, mandatory connectors/fuses, vehicle mass limits, competition depth limits, specific tether dimensions, crew arrangements, or documentation page limits should not become ChartRoom requirements unless they serve an independent design purpose.
 

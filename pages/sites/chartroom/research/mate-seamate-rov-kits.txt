@@ -1,0 +1,59 @@
+====== MATE SeaMATE educational ROV kits ======
+{{tag>research, rov, mate, education, hardware, kits }}
+
+~~META:
+description     = Overview of the current SeaMATE educational ROV kit range and its staged control and build features.
+type            = research
+status          = reference
+authority       = MATE / SeaMATE product materials
+~~
+
+===== Scope =====
+
+The user-supplied MATE ROV kits URL, https://materovcompetition.org/rov-kits, returned a 404 when checked on 2026-10-23. The current SeaMATE catalogue is at [seamate.org](https://seamate.org/collections/rov-kits). It lists four educational ROV kits: AngelFish, PufferFish, TriggerFish, and Barracuda.
+
+These kit names are separate from the MATE ROV Competition classes. A kit's intended learning level does not establish eligibility or compliance for any competition class. Teams must use the current competition manual and rulings for their class and event.
+
+===== Kit range =====
+
+The current catalogue describes a progression from introductory assembly and simple controls towards more advanced piloting and programmable systems:
+
+^ Kit ^ Listed revision ^ Published focus ^ List price at review ^
+| AngelFish | Rev 3 | Introductory ROV construction with a basic control system and three thrusters. The kit page describes a quick-build pool or test-tank activity; frame material is not included. | US$255 |
+| PufferFish | Rev 7 | Three-thruster platform with a control board that students solder, LED direction and power indicators, and an amp/volt meter. The board can be replaced, and add-on equipment such as a camera can be connected. | US$335 |
+| TriggerFish | Rev 4 | Four-motor platform with two analogue joysticks and variable-speed control, status indicators, video inputs, and modular connections. The frame is for students to design from local materials. | US$950 |
+| Barracuda | Rev 2 | Four-motor platform with joystick control and an Arduino Uno R3. The product page describes programmability and expansion for sensors, relays, and Bluetooth. Its control system is modular with TriggerFish. | US$1,350 |
+
+These summaries reflect the supplier's descriptions, not an independent comparison or a guarantee of classroom or competition performance. The listed prices are a snapshot of the SeaMATE product pages on 2026-10-23; the individual pages showed the kits as sold out when reviewed. Prices and stock status can change.
+
+===== Relation to MATE competition classes =====
+
+MATE competition classes have their own eligibility, mission, vehicle, safety, and scoring requirements. The SeaMATE kits are educational build platforms and are not equivalent to competition classes. Some kits require teams to supply or design a frame, power supply, or other items; check each kit's current contents and building guide before treating it as a complete vehicle. Also check whether any kit or component is suitable for the applicable competition rules.
+
+The 2025 MATE educational booklet describes a progression of five SeaMATE kits, while the current store's ROV Kits collection lists four products. This may reflect a catalogue or programme change; the pages do not explain the difference. Use the live catalogue for current products and the current MATE class pages for competition requirements.
+
+===== Visual references =====
+
+The SeaMATE product pages include photographs of the kits, control boxes, and component layouts. Reuse terms for these images are not stated in the reviewed pages, so they are linked at the store rather than copied into Chartroom.
+
+===== Sources =====
+
+  * [ROV Kits](https://seamate.org/collections/rov-kits), current product catalogue; accessed 2026-10-23.
+  * [AngelFish ROV Kit](https://seamate.org/collections/rov-kits/products/angelfish-rov-kit-with-thrusters-and-tether), Rev 3 product description and contents; accessed 2026-10-23.
+  * [PufferFish ROV Kit](https://seamate.org/collections/rov-kits/products/pufferfish-rov-with-thrusters-and-tether), Rev 7 product description and contents; accessed 2026-10-23.
+  * [TriggerFish ROV Kit](https://seamate.org/collections/rov-kits/products/triggerfish-rov-with-thrusters-and-tether), Rev 4 product description and contents; accessed 2026-10-23.
+  * [Barracuda ROV Kit](https://seamate.org/collections/rov-kits/products/barracuda-rov-kit-with-thrusters-and-tether), Rev 2 product description and contents; accessed 2026-10-23.
+  * [2025 MATE Educational Booklet](https://20693798.fs1.hubspotusercontent-na1.net/hubfs/20693798/2025%20MATE%20Educational%20Booklet.pdf), SeaMATE kit progression; accessed 2026-10-23.
+  * [MATE ROV Competition class pages](https://materovcompetition.org/), current competition information; accessed 2026-10-23.
+  * [MATE regional registration and class listing](https://materovcompetition.org/register-regionals), current class and regional event information; accessed 2026-10-23.
+
+===== Related research =====
+
+For competition requirements and transferable engineering practices, see the [[sites:chartroom:research:mate-rov-requirements-summary|MATE ROV engineering requirements summary]]. For team-built vehicles and reports, see the [[sites:chartroom:research:mate-scottish-school-rov|Scottish school MATE ROV project]] and the other MATE team notes in the [[sites:chartroom:research:start|research catalogue]].
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
