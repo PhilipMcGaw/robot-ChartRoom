@@ -1,0 +1,56 @@
+====== Boxfish remotely operated vehicle selection guide ======
+{{tag>research, rov, vehicle-selection, mission-planning, tether, serviceability }}
+
+~~META:
+description     = Boxfish Robotics' guide to selecting a commercial ROV by deployment, power, design, tether, camera, upgrades, and serviceability.
+type            = research
+status          = reference
+authority       = Chartroom
+~~
+
+===== Scope =====
+
+This note summarises Boxfish Robotics' article “How to Choose the Best ROV”. A remotely operated vehicle (ROV) is the subject of the guide. The article was published on 2022-11-10 and promotes Boxfish's own products; this is not an independent comparison or a project specification.
+
+===== Selection factors =====
+
+The guide identifies seven areas to consider:
+
+  * deployment method and mission tasks;
+  * power source;
+  * vehicle design and propulsion;
+  * tether;
+  * camera and imaging needs;
+  * upgrade options; and
+  * serviceability.
+
+The guide discusses how these factors interact. For example, it contrasts surface power and battery operation, and asks users to consider tether drag, portability, operating duration, sensor payloads, image quality, and field repairs. These are useful prompts for a requirements checklist; the best trade-off depends on the actual mission and system design.
+
+===== Limitations =====
+
+The article contains manufacturer-specific claims about Boxfish vehicle performance, setup, accessories, and service. It also makes broad statements about vehicle design and tether technologies. Treat these as claims in a vendor guide, not universal engineering rules; verify technical details against current datasheets and other relevant sources.
+
+The company name overlaps with the Boxfish and Boxfish 2.0 vehicles in the [[sites:chartroom:research:uwrov-design-archive|University of Washington ROV design archive]]. This guide concerns Boxfish Robotics' commercial products; the shared name does not establish a connection between the projects.
+
+===== Relevance =====
+
+Compared with the [[sites:chartroom:research:deep-trekker-rov-buying-guide|Deep Trekker]] and [[sites:chartroom:research:oceanbotics-srv8-selection-guide|Oceanbotics]] guides, this article gives more attention to power source, tether, cameras, upgradeability, and serviceability. Across the guides, mission and environment should be defined before comparing product packages.
+
+===== Visual reference =====
+
+The [Boxfish guide](https://www.boxfishrobotics.com/rov-guide/how-to-choose-the-best-rov/) includes product and deployment photographs. Reuse terms are not stated, so this note links to the images at their source rather than copying them into Chartroom.
+
+===== Source =====
+
+  * [How to Choose the Best ROV](https://www.boxfishrobotics.com/rov-guide/how-to-choose-the-best-rov/), Boxfish Robotics, 2022-11-10; accessed 2026-10-23. Product features, specifications, and suitability statements are vendor claims.
+
+===== Related research =====
+
+For general vehicle systems and operating considerations, see [[sites:chartroom:research:rov-overview-and-applications|ROV overview and applications]].
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

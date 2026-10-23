@@ -30,6 +30,7 @@ The links below cover all research notes. Use the related-research links within 
 
 ==== Underwater robotics and ROVs ====
 
+  * [[sites:chartroom:research:boxfish-rov-selection-guide|Boxfish ROV selection guide]]
   * [[sites:chartroom:research:deep-trekker-rov-buying-guide|Deep Trekker ROV buying guide]]
   * [[sites:chartroom:research:noc-rov-fleet|National Oceanography Centre ROV fleet]]
   * [[sites:chartroom:research:oceanbotics-srv8-selection-guide|Oceanbotics SRV-8 series selection guide]]
