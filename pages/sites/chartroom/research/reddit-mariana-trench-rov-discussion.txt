@@ -1,0 +1,40 @@
+====== Reddit discussion: DIY Mariana Trench ROV ======
+{{tag>research, rov, underwater, pressure, feasibility }}
+
+~~META:
+description     = Informal discussion of the cost, pressure, buoyancy, power, and mission challenges of a DIY hadal-depth vehicle.
+type            = research
+status          = reference
+authority       = Reddit discussion; comments are unverified
+~~
+
+===== Scope =====
+
+This note records themes from a Reddit discussion asking whether a small, inexpensive, do-it-yourself remotely operated vehicle (ROV) could reach the Mariana Trench. The original poster's account is deleted. The thread is useful as an overview of questions to investigate, not as engineering evidence or a build guide.
+
+===== Discussion themes =====
+
+Commenters point to several coupled challenges: pressure-resistant housings and penetrators, buoyancy at depth, flotation, a long tether, power, and the cost of testing. They also discuss hydraulic propulsion, vehicle batteries, and engine-based power. These are claims and suggestions made in a forum thread; the discussion does not provide supporting calculations, test records, or authoritative design references.
+
+One commenter suggests staged learning, beginning with a simpler device and adding sensing and mobility over time. The thread also mentions a free-fall instrument or camera as a simpler alternative to a mobile, tethered vehicle. This highlights a useful mission distinction: a vehicle that descends and returns without continuous surface control is a different system from a remotely operated, tethered ROV.
+
+===== How to use this source =====
+
+Use the thread to identify topics for further research, such as pressure-boundary design, flotation, tether handling, power architecture, and whether a mission needs mobility at all. Verify technical statements and any cost estimates against primary engineering sources before using them. Do not treat the thread's material suggestions or depth claims as design recommendations.
+
+The post does not document a built vehicle, test result, or image of an ROV. No project image is available from this discussion to add to Chartroom.
+
+===== Sources =====
+
+  * [[https://www.reddit.com/r/rov/comments/14g9wro/how_would_you_go_about_building_a_diy_mariana/|How would you go about building a DIY, Mariana Trench worthy ROV?]], r/rov discussion; accessed 2026-10-23. Original poster deleted; comments are informal and unverified.
+
+===== Related research =====
+
+For general ROV system boundaries, see the [[sites:chartroom:research:rov-overview-and-applications|ROV overview and applications]]. For an example of a documented maker-built vehicle, see the [[sites:chartroom:research:bit-driven-circuits-rov|Bit Driven Circuits ROV]]. The [[sites:chartroom:research:cps-5|CPS 5]] note records a separate underwater drone project; it does not establish hadal-depth capability.
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
