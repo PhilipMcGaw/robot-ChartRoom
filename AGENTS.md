@@ -56,8 +56,12 @@ When preparing or carrying out the migration:
 - Use the Labbook connector with an API token configured in its authentication settings. Do not
   store or repeat tokens, passwords, or other credentials in this repository or its documentation.
   Verify access by reading the target namespace before writing pages.
-- Do not treat a successful username/password login call as proof that later API calls are
-  authenticated; check the connection with a read operation.
+- The DokuWiki XML-RPC endpoint is <https://labbook.skippy.org.uk/lib/exe/xmlrpc.php>. Use it only
+  when the server has remote API access enabled and the account is permitted. Use a client that
+  retains authentication cookies, and verify the API version and a read of the target namespace
+  before writing pages.
+- A successful login through one interface does not prove that another interface is authenticated.
+  Verify access with a read operation through the same interface that will be used for migration.
 
 ## Documentation and evidence
 
