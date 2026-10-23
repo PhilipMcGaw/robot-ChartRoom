@@ -70,7 +70,7 @@ The existing NATS-based communications architecture remains preferable for this 
 
 ===== Related research =====
 
-For alternative team architectures, see [[sites:chartroom:research:mate-clovis-crush-depth-scylla|Crush Depth / Scylla]], [[sites:chartroom:research:mate-texas-am-oceanus|Team Oceanus]], [[sites:chartroom:research:mate-uconn-underwater-robotics|UConn]], and [[sites:chartroom:research:mate-cwrubotix|CWRUbotix]]. The [[sites:chartroom:research:rov-overview-and-applications|ROV overview]] provides broader subsystem context.
+For a maker build based on BlueROV2 with custom hardware and the same BlueOS/ArduSub software family, see the [[sites:chartroom:research:diyrov-google-sites-build|DIY ROV Google Sites build]]. For alternative team architectures, see [[sites:chartroom:research:mate-clovis-crush-depth-scylla|Crush Depth / Scylla]], [[sites:chartroom:research:mate-texas-am-oceanus|Team Oceanus]], [[sites:chartroom:research:mate-uconn-underwater-robotics|UConn]], and [[sites:chartroom:research:mate-cwrubotix|CWRUbotix]]. The [[sites:chartroom:research:rov-overview-and-applications|ROV overview]] provides broader subsystem context.
 
 ===== Status =====
 

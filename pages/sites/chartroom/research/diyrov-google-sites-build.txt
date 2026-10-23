@@ -1,0 +1,55 @@
+====== DIY ROV Google Sites build ======
+{{tag>research, rov, underwater, diy, ardupilot, blueos, tether }}
+
+~~META:
+description     = First-hand BlueROV2-derived DIY ROV build record covering hardware, software, enclosures, and tether choices.
+type            = research
+status          = reference
+authority       = DIY ROV project site
+~~
+
+===== Scope =====
+
+This note summarises a maker-built submersible remotely operated vehicle (ROV) documented on a Google Sites project page. The author says the design is based heavily on the BlueROV2 and credits Blue Robotics' published designs and community forum. The site describes a personal build intended to reduce cost while retaining useful performance. Its pages state that they were updated on 2022-04-03; treat component and software details as historical.
+
+===== Vehicle and hardware =====
+
+The author describes a chassis cut from marine high-density polyethylene (HDPE) sheet, with some plates made using a small computer numerical control (CNC) router and others cut by hand. The internal electronics tray is laser-cut acrylic, and the camera gimbal and thruster fairings have downloadable design files. These are builder-reported construction details; the page does not provide independent assessment of material suitability or structural performance.
+
+The build uses four custom thrusters based on BRF2838 brushless motors, which the author identifies as 350KV, electronic speed controllers (ESCs), and Blue Robotics propellers. The author reports concerns with the steel motor bell's corrosion protection and standard bearings, which they say began to sound worn after a few hours. This is a useful record of observed maintenance issues, not a generalised service-life result.
+
+The project pages describe a main electronics enclosure using subsea cable penetrators and a separate battery enclosure made from 3-inch (about 76 mm) polyvinyl chloride (PVC) pipe, a pressure-rated end cap, a flange, and a bulkhead plate. The author reports a leak on an early dive at 2 metres, where water tracked from a poorly sealed motor wire connection towards the electronics enclosure. The account illustrates a reported failure path; it is not a pressure test procedure or validation of the enclosure design.
+
+===== Control and software architecture =====
+
+The site describes a Raspberry Pi companion computer running BlueOS, a Matek H743-Wing V2 autopilot running ArduSub firmware, and QGroundControl (QGC) on the topside computer. BlueOS relays camera video and passes commands to the autopilot over Micro Air Vehicle Link (MAVLink). The author reports hardware compatibility issues with the autopilot board, including limitations affecting leak-sensor and external-light control. These software and compatibility statements refer to the site's 2022 build and may no longer apply to current releases.
+
+===== Tether and integration observations =====
+
+The author reports choosing a 50-metre Blue Robotics Fathom-X tether after considering ordinary Ethernet cable. The reasons given include tether buoyancy, mechanical strength, and water-blocking material. The author warns that tether weight and drag can affect vehicle control and that water can travel along damaged or poorly sealed cable paths. These are first-hand observations from this build; check current manufacturer specifications and the intended operating environment before applying them elsewhere.
+
+The site provides a wiring diagram, parts list, templates, and design files, as well as photographs and an embedded video. It does not state a reuse licence for its images, so use the project site for visual reference rather than copying those images into Chartroom.
+
+===== Limitations =====
+
+This is a builder's account, last marked updated 2022-04-03. It documents the author's component choices, reported problems, and software setup, but does not establish independent performance, depth rating, safety, or present-day compatibility. Prices and supplier availability on the site may be outdated. Verify current hardware and software documentation before using any technical detail for a design decision.
+
+===== Sources =====
+
+  * [DIY ROV project home](https://sites.google.com/view/diyrov), design background and project overview; accessed 2026-10-23.
+  * [Hardware](https://sites.google.com/view/diyrov/hardware), chassis, thrusters, and fabrication files; accessed 2026-10-23.
+  * [Electrical](https://sites.google.com/view/diyrov/electrical), autopilot, ESCs, tether, and wiring diagram; accessed 2026-10-23.
+  * [Enclosures](https://sites.google.com/view/diyrov/enclosures), main and battery enclosure descriptions; accessed 2026-10-23.
+  * [Software](https://sites.google.com/view/diyrov/software), BlueOS, ArduSub, and QGC setup; accessed 2026-10-23.
+  * [Parts](https://sites.google.com/view/diyrov/parts), project parts list; accessed 2026-10-23.
+
+===== Related research =====
+
+For the manufacturer architecture that inspired this build, see [[sites:chartroom:research:blue-robotics-software-setup|BlueROV2 software setup]]. Compare it with the [[sites:chartroom:research:bit-driven-circuits-rov|Bit Driven Circuits ROV]], which documents a more custom control system, and the [[sites:chartroom:research:instructables-diy-submersible-rov|DIY Submersible ROV]]. The [[sites:chartroom:research:rov-overview-and-applications|ROV overview]] provides broader subsystem context.
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
