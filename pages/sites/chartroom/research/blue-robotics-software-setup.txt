@@ -8,8 +8,9 @@ status          = reference
 authority       = Chartroom
 ~~
 
-===== Source =====
+===== Sources =====
 
+  * [[https://bluerobotics.com/store/rov/bluerov2/|BlueROV2 product page]] — manufacturer overview, configuration options, and stated product capabilities; check the live page for current options and specifications.
   * [[https://bluerobotics.com/learn/bluerov2-software-setup/|BlueROV2 Software Setup]]
 
 ===== Summary =====
