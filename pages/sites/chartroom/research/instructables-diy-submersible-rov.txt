@@ -40,7 +40,7 @@ The [Instructable](https://www.instructables.com/DIY-Submersible-ROV/) is titled
 
 ===== Related research =====
 
-For a school-built MATE vehicle and its reported tether arrangement, see the [[sites:chartroom:research:mate-scottish-school-rov|Scottish school MATE ROV project]]. For general ROV systems, see [[sites:chartroom:research:rov-overview-and-applications|ROV overview and applications]].
+For a more detailed first-hand record of another maker-built vehicle, see the [[sites:chartroom:research:bit-driven-circuits-rov|Bit Driven Circuits ROV]]. For a school-built MATE vehicle and its reported tether arrangement, see the [[sites:chartroom:research:mate-scottish-school-rov|Scottish school MATE ROV project]]. For general ROV systems, see [[sites:chartroom:research:rov-overview-and-applications|ROV overview and applications]].
 
 
 ~~REFNOTES~~

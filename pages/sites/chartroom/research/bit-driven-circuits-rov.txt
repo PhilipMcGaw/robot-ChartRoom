@@ -1,0 +1,56 @@
+====== Bit Driven Circuits submersible ROV ======
+{{tag>research, rov, underwater, diy, control, propulsion }}
+
+~~META:
+description     = First-hand project record for a maker-built tethered ROV, its hardware, control system, and software.
+type            = research
+status          = reference
+authority       = Bit Driven Circuits project site
+~~
+
+===== Scope =====
+
+This note summarises the maker-built submersible ROV documented by Bit Driven Circuits. The project site includes vehicle construction, control electronics and software, power, sensors, lighting, a gripper, and dive footage. It is a historical project record, not a current design specification.
+
+===== Project and architecture =====
+
+The author describes the project as a learning exercise focused on designing and building much of the system from scratch. The vehicle uses six Blue Robotics T100 thrusters: four angled at the corners for horizontal movement and two vertical thrusters for depth control. The author chose fixed thrusters instead of servo-steered units to avoid moving underwater joints and their associated leak and failure points. This simplifies the mechanical arrangement but requires the control software to combine motor commands for manoeuvring.
+
+The frame account describes a PVC construction with two sealed compartments, six thrusters, and added ballast boxes. The author drilled the frame so water could fill its cavities and added ballast to address positive buoyancy. The site cautions that its early 3D models illustrate layout and are not dimensionally accurate representations of the finished vehicle. These are the author's reported construction details, not independently verified design guidance.
+
+===== Control and software record =====
+
+The system is built around Microchip PIC microcontrollers. The control box reads seven analogue joystick and knob inputs, processes movement commands, and sends nine data items to the vehicle over an RS-232 link. The documented packet functions include movement state and speeds, camera position, lighting, and gripper control. The site lists assembly-language source for both the control box and vehicle, along with schematics, serial command descriptions, and component datasheets.
+
+The thruster article describes using electronic speed controllers (ESCs) with pulse-width modulation (PWM) commands. Its examples use 1,500 microseconds for stop, 1,900 microseconds for maximum forward, and 1,100 microseconds for maximum reverse. These are values reported for the particular hardware and project revision; verify current controller documentation before reuse.
+
+Other sections cover battery monitoring, vehicle power, temperature and pressure sensing, lighting, and a motorised gripper. The control-box overview describes joystick dead-zone handling and interrupt-driven depth and yaw inputs. Together, these pages provide a useful example of a custom tethered system with explicit separation between the operator controls and vehicle electronics.
+
+===== Project status and limitations =====
+
+An update dated 10/09/2022 (the page does not state the date format) says the project reached end-of-life after more than four years because of time and resource constraints. The author states that the design files, source code, schematics, and repositories are frozen and will not be developed further. This records the publication and development status; it does not establish whether a particular vehicle remains operational.
+
+The pages are a first-hand project account, but they do not provide independent test validation or a complete current safety assessment. Parts and software are historical, and product availability or specifications may have changed. Treat component choices, signal values, and construction methods as project-specific evidence, not as recommendations for the Robots project.
+
+===== Visual reference =====
+
+The project pages include photographs and diagrams of the vehicle, PVC frame, thrusters, control box, circuit boards, gripper, and dive footage. The site credits its images and diagrams to the author but does not state a reuse licence. They are therefore linked at the source rather than copied into Chartroom.
+
+===== Sources =====
+
+  * [Submersible ROV Project](https://bitdrivencircuits.com/ROV/ROVhome.html), project overview and 10/09/2022 status update; accessed 2026-10-23.
+  * [ROV Frame Construction](https://bitdrivencircuits.com/ROV/frameConstruction.html), frame materials and construction; accessed 2026-10-23.
+  * [Thruster Overview](https://bitdrivencircuits.com/ROV/thrusterOverview.html), ESC and PWM discussion; accessed 2026-10-23.
+  * [Control Box overview](https://bitdrivencircuits.com/ROV/controlBox1.html), control inputs and serial packet functions; accessed 2026-10-23.
+  * [Data Sheets, Documentation and Source Code](https://bitdrivencircuits.com/ROV/datasheets.html), component references, schematics, source code, and repository links; accessed 2026-10-23.
+
+===== Related research =====
+
+Compare this first-hand project record with the [[sites:chartroom:research:instructables-diy-submersible-rov|DIY Submersible ROV]], whose original build page could not be reviewed directly. For common ROV subsystems and project boundaries, see the [[sites:chartroom:research:rov-overview-and-applications|ROV overview and applications]].
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
