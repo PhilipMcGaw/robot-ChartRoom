@@ -30,6 +30,7 @@ The links below cover all research notes. Use the related-research links within 
 
 ==== Underwater robotics and ROVs ====
 
+  * [[sites:chartroom:research:noc-rov-fleet|National Oceanography Centre ROV fleet]]
   * [[sites:chartroom:research:rov-overview-and-applications|ROV overview and applications]]
   * [[sites:chartroom:research:blue-robotics-software-setup|Blue Robotics BlueROV2 software setup]]
   * [[sites:chartroom:research:borgcube-rov|BorgCube ROV]]

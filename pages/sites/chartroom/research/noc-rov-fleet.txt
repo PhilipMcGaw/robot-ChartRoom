@@ -1,0 +1,46 @@
+====== National Oceanography Centre remotely operated vehicle fleet ======
+{{tag>research, rov, oceanography, marine-science, sampling, launch-recovery }}
+
+~~META:
+description     = National Oceanography Centre overview of the ROV Isis and HyBIS vehicles and their research capabilities.
+type            = research
+status          = reference
+authority       = Chartroom
+~~
+
+===== Scope =====
+
+This note summarises the National Oceanography Centre's public overview of its remotely operated vehicle (ROV) fleet. It describes ROV Isis and HyBIS as research platforms and records the capabilities stated on the Centre's webpage. It is not a design specification or technical manual.
+
+===== Vehicles and stated capabilities =====
+
+The Centre describes ROV Isis as a deep-diving science vehicle capable of operating to 6,500 m. Its listed tasks include sample collection, seabed drilling, and high-definition video recording. The Centre describes the complete Isis system as including a containerised control room, workshop, and launch and recovery system able to handle the 4,000 kg vehicle.
+
+HyBIS (Hydraulic Benthic Interactive Sampler) is described as operating to 6,000 m. The Centre says it is not neutrally buoyant and is controlled in depth through a fibre-optic cable from the ship. It reports a net-load deployment and recovery capacity of up to 700 kg. The page also describes HyBIS recovering seabed landers carrying scientific equipment.
+
+These are capabilities reported by the National Oceanography Centre. The public overview does not give the technical detail needed to assess the vehicle ratings, operating limits, or lifting arrangements independently.
+
+===== Relevance =====
+
+The fleet overview is useful for comparing two deep-ocean vehicle approaches and for considering the wider system needed to operate a large research ROV. In particular, it presents control facilities, workshop support, launch and recovery, scientific payloads, and the vehicle as parts of one operational system. HyBIS also shows that an underwater vehicle can use a different buoyancy and tether-control arrangement from a conventional free-swimming ROV.
+
+These examples are context only. They do not establish requirements or suitable ratings for the Robots project.
+
+===== Visual reference =====
+
+The [National Oceanography Centre ROV page](https://www.noc.ac.uk/our-work/marine-technology/ocean-vehicles/remotely-operated-vehicles) includes photographs and video of ROV Isis, its control room, and deployment operations. The site states that NOC owns its material's copyright unless otherwise noted, so this note links to the visuals rather than copying them into Chartroom.
+
+===== Source =====
+
+  * [Remotely Operated Vehicles](https://www.noc.ac.uk/our-work/marine-technology/ocean-vehicles/remotely-operated-vehicles), National Oceanography Centre, accessed 2026-10-23. Vehicle specifications, history, and capability figures above are statements from the Centre's public webpage.
+
+===== Related research =====
+
+For a general overview of ROV subsystems and launch and recovery considerations, see [[sites:chartroom:research:rov-overview-and-applications|ROV overview and applications]]. For a smaller commercial ROV and its software and commissioning guidance, see [[sites:chartroom:research:blue-robotics-software-setup|BlueROV2 software setup]].
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
