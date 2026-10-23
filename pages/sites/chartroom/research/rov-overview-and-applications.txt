@@ -44,6 +44,10 @@ ROVs are used for scientific observation, marine biology, oceanography, environm
 
 Common broad classes include micro, mini, observation or inspection, general or light-work, heavy-work, and trenching or burial ROVs. These labels are not universal engineering standards. For the Robots project, record actual mass, dimensions, buoyancy, depth rating, tether, power budget, thrust, payload capacity, and intended operating conditions instead of relying on a class label.
 
+===== Work-class ROV equipment examples =====
+
+Tritech's [[https://www.tritech.co.uk/products/workclass-rov|work-class ROV product page]] shows a supplier's equipment range for these platforms: multibeam and mechanical scanning sonars, profiling sonars, altimeters, survey sensors, software, and mechanical or hydraulic pumps. This illustrates how sensing, navigation, and intervention tools can form part of a work-class ROV system. The page is a product catalogue, not a vehicle design or a complete integration specification; check the product datasheets for current capabilities and limits. Product photographs are available on the source page, but reuse terms are not stated, so they are linked rather than copied into Chartroom.
+
 ===== Launch, recovery, materials, and maintenance =====
 
 Launch and recovery are part of the vehicle system. Plans may involve manual lowering, an A-frame, davit or winch, a tether management system, a garage, or a protected launch path. Account for splash-zone impact, tether handling, weather, lifting points, connector protection, recovery loads, draining, and inspection.
