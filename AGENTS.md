@@ -40,6 +40,25 @@ The former TermiSoc reference project is not part of the current workspace. Do n
 8. site/ is generated output and MUST NOT be hand-edited.
 9. Do not add credentials, private keys, tokens, passwords, or private operational data.
 
+## DokuWiki destination
+
+The intended DokuWiki destination for Chartroom is the `sites:chartroom` namespace at
+<https://labbook.skippy.org.uk/doku.php/sites/chartroom/>. The migration has not yet been
+completed. Until it is complete and confirmed, `source/` remains the canonical Chartroom
+content source and the existing Quartz publishing workflow remains in effect.
+
+When preparing or carrying out the migration:
+
+- Preserve the current directory hierarchy as DokuWiki namespaces where practical, and map
+  `index.md` pages to the corresponding namespace start pages.
+- Convert Obsidian and Markdown-specific links, embeds, tables, and metadata to syntax supported
+  by the target DokuWiki instance. Check the rendered pages and links after import.
+- Use the Labbook connector with an API token configured in its authentication settings. Do not
+  store or repeat tokens, passwords, or other credentials in this repository or its documentation.
+  Verify access by reading the target namespace before writing pages.
+- Do not treat a successful username/password login call as proof that later API calls are
+  authenticated; check the connection with a read operation.
+
 ## Documentation and evidence
 
 New technical claims SHOULD identify their source where practical: repository path, issue, decision record, standard, manufacturer document, test result, or stable external reference.
