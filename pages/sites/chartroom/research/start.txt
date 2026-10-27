@@ -95,6 +95,12 @@ The links below cover all research notes. Use the related-research links within 
   * [[sites:chartroom:research:dfrobot-ec|DFRobot EC library]]
   * [[sites:chartroom:research:gy-91-mpu9250-assessment|GY-91 MPU-9250/9255 IMU assessment]]
 
+==== LiDAR, mapping, and autonomy ====
+
+  * [[sites:chartroom:research:lidar-mapper-video|LiDAR Mapper video — research candidate]]
+  * [[sites:chartroom:research:makers-pet-120mm|Maker's Pet 120 mm robot]]
+  * [[sites:chartroom:research:autonomous-uav-ground-station|Autonomous UAV ground station]]
+
 ==== Robotics, education, and hardware ====
 
   * [[sites:chartroom:research:3d-printed-tank-elements|3D-printed tank takes on the elements]]
