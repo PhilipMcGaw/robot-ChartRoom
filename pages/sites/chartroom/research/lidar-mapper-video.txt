@@ -1,0 +1,56 @@
+====== LiDAR Mapper video — research candidate ======
+{{tag>research, lidar, mapping, robotics, read-later }}
+
+~~META:
+description     = User-supplied video showing a LiDAR Mapper concept worth reviewing for possible robotics and mapping applications.
+type            = research
+status          = research candidate
+authority       = Chartroom
+date            = 2026-10-27
+~~
+
+===== Source =====
+
+**Video:** [[https://youtu.be/-QEiXglRj8E?is=xBT6r3Yc66vDWGbB|YouTube — LiDAR Mapper]]
+
+**Added:** 2026-10-27
+
+The user flagged this video as an intriguing example of a LiDAR Mapper. The video has not yet been reviewed in detail, so this note deliberately does not assert its hardware, software, performance, or intended operating environment.
+
+===== Why review it? =====
+
+Assess whether the mapper offers useful ideas for the Robots project, particularly:
+
+  * how the LiDAR sensor is mounted, scanned, and integrated with the rest of the system;
+  * mapping method, localisation requirements, and whether simultaneous localisation and mapping (SLAM) is used;
+  * processing hardware, software dependencies, and data formats;
+  * map quality, range, update rate, and limitations in representative environments;
+  * power, size, mass, cost, and mechanical integration; and
+  * possible relevance to terrestrial robots such as MarsBot or SwarmBot, and whether any aspects transfer to other survey or ROV-related work.
+
+These are review questions, not claims about the video or the demonstrated system. Do not assume that a terrestrial LiDAR mapper is suitable for underwater operation.
+
+===== Status and next actions =====
+
+**Status:** Research candidate / read later. Not an adopted design, project requirement, or validated implementation.
+
+Next actions:
+
+  * Watch the video and identify the actual device or project, author, and any linked source repository or documentation.
+  * Record the sensor, compute platform, mapping/localisation approach, and dependencies only where the source supports them.
+  * Separate demonstrated behaviour from narration, promotional claims, and inferred capability.
+  * Compare any useful findings with the existing [[sites:chartroom:research:makers-pet-120mm|Maker's Pet 120 mm robot research]] and the relevant authoritative implementation documentation before considering project use.
+
+===== Related research =====
+
+  * [[sites:chartroom:research:makers-pet-120mm|Maker's Pet 120 mm robot]]
+  * [[sites:chartroom:research:autonomous-uav-ground-station|Autonomous UAV ground station]]
+  * [[sites:chartroom:research:rov-overview-and-applications|ROV overview and applications]]
+
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
