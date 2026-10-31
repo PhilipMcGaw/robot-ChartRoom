@@ -43,6 +43,23 @@ The interview also describes Lingat as a software developer by trade, using elec
 
 These are descriptions of the Geodeck, not requirements or validated design recommendations for Robot Code. In particular, the reported component choices and construction methods have not been assessed for ROV environmental, EMC, electrical-safety, maintainability, or operational suitability.
 
+
+===== Further identity and geographical research =====
+
+The following public records provide a stronger possible match for the creator's professional history. Treat this as a research correlation, not definitive identity verification.
+
+  * [[https://dev.to/molly/what-bootcamp-did-you-attend-and-would-you-recommend-it--4co5|DEV Community discussion — Katarina Lingat's comments (January 2019)]]. The profile displayed with the comments gives the name **Katarina Lingat**, location **Whistler, British Columbia, Canada**, and occupation **Full Stack Developer**. In her comments she says she attended DecodeMTL in Montreal in 2016 and describes moving into full-stack development.
+  * [[https://www.decodemtl.com/courses/web-development-immersive|DecodeMTL Web Development Immersive]]. The bootcamp's alumni section independently lists **Katarina Lingat** as a Web Developer. This supports the professional-history connection, although it does not by itself prove that the alumnus and GEOKASH creator are the same person.
+  * [[https://externalvacancy.com/half-keep-exhibition/|HALF KEEP exhibition — EVAC]]. The exhibition page lists **Kash Lingat** among the artists and gives the venue as **Spazio Maiocchi, Milan, Italy**, with dates **27–29 March 2024**. This establishes an exhibition connection with Milan, not residence there.
+
+===== Other clues and confidence =====
+
+  * **Birth year:** 1994 has been reported during this research, but the source has not been independently checked or recorded here. Treat as unverified.
+  * **Vehicle photograph:** the Outsiders Store interview contains a vehicle photograph which appears, from visual inspection reported during this research, not to show a UK registration plate. The registration country has not been identified. It is not evidence of the owner's nationality or current residence.
+  * **LinkedIn:** no LinkedIn profile has been reliably matched to Katarina “Kash” Lingat. A similarly named profile surfaced, but its identity is unverified and it should not be attributed to her.
+
+**Working assessment:** The exact-name DEV Community profile and DecodeMTL alumni listing are consistent with Kash's publicly described software-development background. The 2019 profile places a Katarina Lingat in Whistler, British Columbia, but this is a historical profile location and should not be presented as Kash's confirmed current location. The Milan exhibition is a professional/creative connection only. No current residence has been established.
+
 ===== Relevance =====
 
 The post was identified as a potentially good starting point for a **base station / control station** for the Robots project.
