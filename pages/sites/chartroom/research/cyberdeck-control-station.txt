@@ -13,6 +13,8 @@ author          = Chartroom
 
 **Reference:** [[https://www.reddit.com/r/cyberDeck/s/fg2q9WdEhV|Reddit: r/cyberDeck post]]
 
+**Additional reference:** [[https://geokash.com/geodesk/|GeoDesk]] — another reference to review alongside the cyberdeck post when considering the base-station / control-station concept.
+
 ===== Relevance =====
 
 The post was identified as a potentially good starting point for a **base station / control station** for the Robots project.
