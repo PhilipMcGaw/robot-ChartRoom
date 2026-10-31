@@ -13,13 +13,41 @@ author          = Chartroom
 
 **Reference:** [[https://www.reddit.com/r/cyberDeck/s/fg2q9WdEhV|Reddit: r/cyberDeck post]]
 
-**Additional reference:** [[https://geokash.com/geodesk/|GeoDesk]] — another reference to review alongside the cyberdeck post when considering the base-station / control-station concept.
+**Additional reference:** [[https://geokash.com/geodesk/|GEOKASH / Geodeck]] — the creator's project page. The project is referred to as the **Geodeck** in the interview material; the URL path uses `geodesk`.
+
+===== Creator and related information =====
+
+The Geodeck is associated with **Katarina “Kash” Lingat**, who presents the work through GEOKASH. Public material identifies her as the designer and developer of the project. A LinkedIn profile has not been reliably identified, so do not associate this work with an unverified LinkedIn account.
+
+Useful creator and project references:
+
+  * [[https://geokash.com/|GEOKASH — Katarina Lingat's website and project portfolio]]
+  * [[https://www.outsidersstore.com/blogs/blog/an-interview-with-kash-lingat-geo-kash|Outsiders Store interview with Kash Lingat]]
+  * [[https://romancandlemagazine.com/2025/12/15/an-interview-with-kash-lingat/|Roman Candle Magazine interview]]
+  * [[https://www.instagram.com/geo.kash/|Instagram: @geo.kash]]
+  * [[https://geokash.substack.com/|Kash Lingat on Substack]]
+  * [[https://ko-fi.com/geokash|Kash Lingat on Ko-fi]]
+  * [[https://ilovecreatives.com/internet-gem-websites/geokash|I Love Creatives — GEOKASH feature]]
+
+===== Geodeck observations from the published interview =====
+
+The interview describes the Geodeck as a Raspberry Pi-based cyberdeck in a custom-built enclosure. Reported design and development details include:
+
+  * A custom enclosure, with 3D printing used in its development.
+  * A display, Raspberry Pi, keyboard buttons repurposed from an alarm clock, and a compact mouse.
+  * Cardboard mock-ups used to explore the enclosure before developing the finished version.
+  * Outdoor use for programming and general-purpose computing.
+  * Work on a subsequent version intended to be a more capable portable workstation.
+
+The interview also describes Lingat as a software developer by trade, using electronics projects to develop practical making and hardware skills.
+
+These are descriptions of the Geodeck, not requirements or validated design recommendations for Robot Code. In particular, the reported component choices and construction methods have not been assessed for ROV environmental, EMC, electrical-safety, maintainability, or operational suitability.
 
 ===== Relevance =====
 
 The post was identified as a potentially good starting point for a **base station / control station** for the Robots project.
 
-Review it for useful ideas around the physical operator workstation, enclosure and layout, display arrangement, input devices, portability, power, and the integration of control and monitoring interfaces. These are review prompts, not claims about the implementation shown in the post.
+Review the Geodeck and Reddit post for useful ideas around the physical operator workstation, enclosure and layout, display arrangement, input devices, portability, power, and the integration of control and monitoring interfaces. The Geodeck's prototype-led enclosure development and compact input/display integration may be particularly useful points of comparison. These are review prompts, not proposed design decisions.
 
 ===== Status =====
 
