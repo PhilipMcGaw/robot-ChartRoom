@@ -1,0 +1,39 @@
+====== Cyberdeck-style base station / control station ======
+{{tag>research, design-inspiration, control-station, base-station }}
+
+~~META:
+description     = Reddit cyberdeck build noted as inspiration for a possible robot base station or control station.
+type            = research
+status          = draft
+authority       = Chartroom
+author          = Chartroom
+~~
+
+===== Source =====
+
+**Reference:** [[https://www.reddit.com/r/cyberDeck/s/fg2q9WdEhV|Reddit: r/cyberDeck post]]
+
+===== Relevance =====
+
+The post was identified as a potentially good starting point for a **base station / control station** for the Robots project.
+
+Review it for useful ideas around the physical operator workstation, enclosure and layout, display arrangement, input devices, portability, power, and the integration of control and monitoring interfaces. These are review prompts, not claims about the implementation shown in the post.
+
+===== Status =====
+
+**Read later — design inspiration; not reviewed or adopted.**
+
+This is an inspiration reference only. No hardware, enclosure, operator-interface architecture, or implementation decision is implied.
+
+===== Next actions =====
+
+  * Revisit the Reddit post and record the specific features worth borrowing.
+  * Assess whether the form factor is more suitable for a fixed base station, a portable field control station, or both.
+  * Compare any useful ideas with the existing Cockpit/operator-interface architecture and the intended ROV operating environment.
+  * Record any resulting design decision in the appropriate authoritative project documentation; do not promote the reference directly into a requirement.
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
