@@ -1,0 +1,140 @@
+====== K9 Motor Control — Initial Design Notes ======
+{{tag>project, k9, motor-control, traction, encoder, battery, design-notes}}
+
+~~META:
+description     = Initial design exploration for K9's dual-motor traction controller, feedback, battery supply, and motor-driver selection.
+type            = engineering-design-notes
+status          = investigation
+authority       = Chartroom
+date            = 2026-11-01
+~~
+
+===== Purpose =====
+
+Record the initial requirements and design discussion for a closed-loop motor controller for K9. These notes capture the current direction and outstanding questions; they are not a released electrical design or a validated component selection.
+
+===== Motor and traction arrangement =====
+
+  * Two identical 18 V cordless-drill motor/gearbox assemblies are intended for the K9 drive.
+  * The motors are to be supplied directly from the battery pack. A boost converter is not currently planned.
+  * The motors have been run from a 5 A programmable bench power supply down to approximately 4 V. This establishes that they will turn at that low supply voltage under the test conditions; it does not yet establish available torque or vehicle performance under load.
+  * The intended battery is a 3S2P pack using 21700 lithium-ion cells: six cells in total, three series groups with two cells in parallel.
+  * For conventional 4.2 V maximum-charge lithium-ion cells, the pack voltage is 12.6 V fully charged. Nominal voltage and the safe lower operating limit depend on the selected cell and BMS.
+  * The actual cell model, pack capacity, discharge rating, BMS rating, and low-voltage cutoff have not yet been recorded.
+
+===== Motor characterisation and datasheet =====
+
+The motors are described as identical, but their exact manufacturer and motor model have not yet been confirmed.
+
+A candidate RS-550S-18V specification sheet was found:
+  * [[https://m.media-amazon.com/images/I/81-5JDOeJ8L.pdf|RS-550S-18V specification sheet (PDF)]]
+
+The candidate document lists approximately:
+  * 18 V nominal voltage;
+  * 20,715 RPM no-load speed;
+  * 0.88 A no-load current;
+  * 19,301 RPM rated speed;
+  * 4.07 A rated current;
+  * 29.4 mN·m rated torque;
+  * 47.6 A stall current.
+
+**These are candidate reference figures only. The document has not been confirmed as the datasheet for the actual K9 motors. Do not use these figures for final driver, wiring, fuse, or battery sizing until motor identity is established.**
+
+An 85 A stall-current figure appeared in the earlier motor discussion/article but has been identified by the user as wrong. It must not be used as a motor specification.
+
+The motor and gearbox assemblies should be characterised at representative supply voltages, preferably 4 V, 6 V, 8 V, 10 V, and 12 V where practical. Record actual motor-terminal voltage, current, output-shaft RPM, load condition, and temperature. The 5 A bench-supply limit must be considered when interpreting results: check whether the supply entered constant-current limiting.
+
+===== Proposed feedback and control =====
+
+The intended arrangement is a closed-loop differential-drive controller.
+
+  * Use one encoder on each gearbox output shaft, so feedback represents the rotation downstream of the motor gearbox.
+  * A single-channel optical or Hall-effect encoder is currently considered sufficient. The controller knows the commanded direction from the H-bridge inputs and can apply that sign to the measured pulse rate.
+  * Quadrature is not considered necessary for the initial implementation because commanded direction is known.
+  * A second encoder channel could be added later if independent direction detection or improved positional resolution is required.
+  * A single-channel encoder cannot independently detect externally induced reverse movement, or distinguish actual direction during coasting/braking. This limitation should be considered when defining those operating states.
+  * Use independent speed-control loops for the left and right motors. A PI controller is a reasonable starting point.
+  * The higher-level vehicle controller should calculate left and right speed targets for forward/reverse motion and differential steering.
+  * Encoder counts provide wheel-rotation distance and odometry. Track/wheel slip means encoder odometry is not necessarily equal to actual chassis displacement.
+
+The basic wheel-distance calculation is:
+
+  d = (N / C) × πD
+
+where N is the accumulated encoder count, C is the effective counts per wheel revolution, and D is the effective wheel diameter.
+
+Encoder resolution must be selected after the gearbox output speed, wheel diameter, and required speed/position resolution are established.
+
+===== PWM headroom =====
+
+An initial idea was to define the required maximum operating speed at approximately 80% PWM, leaving additional duty-cycle headroom for differences between the two motors and changes in mechanical loading.
+
+This is a design hypothesis, not a universal motor-control rule or a confirmed calibration value.
+
+The eventual approach should be to:
+  * define the required vehicle speed;
+  * measure the PWM needed by each motor to achieve the corresponding wheel speed under representative loads;
+  * retain sufficient PWM authority for correction as battery voltage falls or load changes;
+  * verify that the required speed remains achievable at the minimum permitted battery voltage.
+
+The speed controller should regulate measured RPM rather than assume that a fixed PWM value represents a particular speed.
+
+===== Motor-driver proposal =====
+
+The initial proposal is to use **two L298N modules, one module dedicated to each motor**. This provides independent H-bridge control of the two drive motors.
+
+The L298N has current-sense connections (SENSE A and SENSE B) intended for external low-side shunt resistors. The module implementation must be inspected: inexpensive modules may omit the shunts or bypass the sense connections. The current-sense output also requires appropriate analogue measurement and interpretation during PWM switching.
+
+Important limitations:
+  * The L298N is a bipolar-transistor driver with significant output voltage drop and heat dissipation.
+  * Its nominal continuous current rating is 2 A per bridge; the non-repetitive peak rating is not a continuous operating allowance.
+  * Two separate modules do not increase the current capability of either individual motor channel.
+  * With a 3S battery, voltage lost in the L298N is a significant fraction of the available motor voltage.
+  * Current limiting, thermal behaviour, and protection on typical low-cost modules must not be assumed.
+
+**Status: provisional architecture only. L298N module suitability has not been demonstrated.** Consider a suitable MOSFET H-bridge module if measured motor current, voltage drop, or thermal performance makes the L298N unsuitable.
+
+===== Battery and power distribution =====
+
+The intended 3S2P 21700 battery will drive the motors directly, without a boost converter.
+
+For a conventional 4.2 V/cell lithium-ion chemistry:
+  * fully charged pack voltage: 12.6 V;
+  * nominal pack voltage: typically around 10.8–11.1 V, depending on the cell specification;
+  * minimum permitted pack voltage: to be determined from the selected cells and BMS.
+
+The two motors' combined current must be considered when sizing the cells, BMS, main fuse, wiring, connectors, and power distribution. Parallel cells share the pack current, subject to cell matching and pack construction. The selected cell's continuous and pulse discharge ratings must be checked.
+
+Battery voltage should be measured and included in controller telemetry. The speed controller may increase PWM as battery voltage falls, but must reduce the requested speed or stop safely when there is insufficient voltage/headroom or the battery reaches its defined cutoff.
+
+===== External references =====
+
+  * [[https://philipmcgaw.com/piwars-traction-system/|K9 / PiWars traction system — PhilipMcGaw.com]]
+  * [[https://philipmcgaw.com/|PhilipMcGaw.com]] — motor/gearbox background article referenced during the discussion.
+  * [[https://dutch-rescue-team.blogspot.com/2023/10/story-tooling-dynamometer.html|Dutch Rescue Team — Story: Tooling Dynamometer]] — reference for possible motor test-rig/dynamometer tooling.
+  * [[https://m.media-amazon.com/images/I/81-5JDOeJ8L.pdf|Candidate RS-550S-18V specification sheet]] — identity not yet verified.
+
+===== Outstanding work =====
+
+  - [ ] Confirm the exact motor manufacturer/model from markings or supplier records.
+  - [ ] Confirm that the candidate RS-550S-18V datasheet matches the installed motors; otherwise find the correct datasheet.
+  - [ ] Identify the 21700 cell model and verify pack/BMS current ratings.
+  - [ ] Measure motor current, output RPM, and temperature across the intended voltage range and representative loads.
+  - [ ] Establish gearbox reduction ratio, output-shaft speed, wheel diameter, and required vehicle speed.
+  - [ ] Select encoder type, pulse count, mounting arrangement, and input conditioning.
+  - [ ] Inspect the actual L298N modules for shunts and sense-pin wiring; assess voltage drop and thermal performance.
+  - [ ] Compare the L298N modules with appropriately rated MOSFET H-bridge alternatives.
+  - [ ] Define battery low-voltage behaviour, current limits, stall detection, emergency stop, and communication-loss response.
+  - [ ] Calibrate the two speed loops and establish a measured PWM operating margin.
+
+===== Status and authority =====
+
+Status: **Investigation — not an approved design.**
+
+This Chartroom page records cross-project design rationale and the current investigation. The detailed circuit, PCB, wiring, component implementation, and test records belong in the K9 hardware documentation in NautiPi once the design progresses.
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
