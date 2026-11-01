@@ -24,9 +24,9 @@ Record the initial requirements and design discussion for a closed-loop motor co
 
 ===== Motor characterisation and datasheet =====
 
-The motors are described as identical, but their exact manufacturer and motor model have not yet been confirmed.
+The supplier is Team Short Circuit (Team SC): [[https://teamsc.co.uk/|teamsc.co.uk]]. The motors are described by the user as an identical pair. The supplier's product listing identifies its 18 V assembly as a customised RS550 motor with an all-metal 36:1 planetary gearbox. The exact internal RS550 motor manufacturer/variant and a manufacturer datasheet have not yet been established.
 
-A candidate RS-550S-18V specification sheet was found:
+A generic candidate RS-550S-18V specification sheet was found before the supplier was identified:
   * [[https://m.media-amazon.com/images/I/81-5JDOeJ8L.pdf|RS-550S-18V specification sheet (PDF)]]
 
 The candidate document lists approximately:
@@ -38,11 +38,11 @@ The candidate document lists approximately:
   * 29.4 mN·m rated torque;
   * 47.6 A stall current.
 
-**These are candidate reference figures only. The document has not been confirmed as the datasheet for the actual K9 motors. Do not use these figures for final driver, wiring, fuse, or battery sizing until motor identity is established.**
+**These generic RS-550S figures are not confirmed as the specification of the Team SC motor. Do not use them for final driver, wiring, fuse, or battery sizing. The Team SC product listing is the more relevant source for the supplied assembly, but it is not a full motor datasheet.**
 
 An 85 A stall-current figure appeared in the earlier motor discussion/article but has been identified by the user as wrong. It must not be used as a motor specification.
 
-The motor and gearbox assemblies should be characterised at representative supply voltages, preferably 4 V, 6 V, 8 V, 10 V, and 12 V where practical. Record actual motor-terminal voltage, current, output-shaft RPM, load condition, and temperature. The 5 A bench-supply limit must be considered when interpreting results: check whether the supply entered constant-current limiting.
+Team SC's product listing for its [[https://teamsc.co.uk/product/18v_gearbox/|18 V all-metal gearbox motor assembly]] states: 18 V RS550 motor; 36:1 all-metal planetary gearbox; approximately 550 RPM gearbox output; approximately 22 N·m output torque; and a 3/8 UNF output thread. The listing describes the assemblies as custom-built to the supplier's specification and quality-checked. It does not publish a full motor performance curve or stall-current figure. Do not infer that the generic RS-550S datasheet is the exact motor fitted.\n\nThe supplier also lists a [[https://teamsc.co.uk/product/tsc-gearbox-battenbox/|TSC Battenbox gearbox]] with 12 V and 18 V RS550 options and a stated 2.1 A run current. This is a separate gearbox product listing; confirm whether that current figure applies to the specific 18 V assembly being used before relying on it.\n\nThe motor and gearbox assemblies should be characterised at representative supply voltages, preferably 4 V, 6 V, 8 V, 10 V, and 12 V where practical. Record actual motor-terminal voltage, current, output-shaft RPM, load condition, and temperature. The 5 A bench-supply limit must be considered when interpreting results: check whether the supply entered constant-current limiting.
 
 ===== Proposed feedback and control =====
 
@@ -110,7 +110,7 @@ Battery voltage should be measured and included in controller telemetry. The spe
 ===== External references =====
 
   * [[https://philipmcgaw.com/piwars-traction-system/|K9 / PiWars traction system — PhilipMcGaw.com]]
-  * [[https://philipmcgaw.com/|PhilipMcGaw.com]] — motor/gearbox background article referenced during the discussion.
+  * [[https://philipmcgaw.com/|PhilipMcGaw.com]] — motor/gearbox background article referenced during the discussion.\n  * [[https://teamsc.co.uk/|Team Short Circuit (Team SC)]] — supplier.\n  * [[https://teamsc.co.uk/product/18v_gearbox/|Team SC 18 V all-metal gearbox motor assembly]] — supplier listing for the customised 18 V RS550 / 36:1 / approximately 550 RPM assembly.\n  * [[https://teamsc.co.uk/product/tsc-gearbox-battenbox/|Team SC TSC Battenbox gearbox]] — separate product listing; includes a 2.1 A run-current statement for RS550 options, applicability to the K9 assembly to be confirmed.
   * [[https://dutch-rescue-team.blogspot.com/2023/10/story-tooling-dynamometer.html|Dutch Rescue Team — Story: Tooling Dynamometer]] — reference for possible motor test-rig/dynamometer tooling.
   * [[https://m.media-amazon.com/images/I/81-5JDOeJ8L.pdf|Candidate RS-550S-18V specification sheet]] — identity not yet verified.
 
