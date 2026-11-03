@@ -118,6 +118,7 @@ The links below cover all research notes. Use the related-research links within 
   * [[sites:chartroom:research:miharix-wifi-rc|Miharix WiFi RC]]
   * [[sites:chartroom:research:osoyoo|OSOYOO robotics references]]
   * [[sites:chartroom:research:pca9685|PCA9685 PWM/servo driver]]
+  * [[sites:chartroom:research:piwars-cyberexcavator-tracked-base|PiWars 3D-printed tracked Cyberexcavator]]
   * [[sites:chartroom:research:piwars-vt-72b|PiWars VT-72B idea]]
   * [[sites:chartroom:research:sbcshop-motorshield|SB Components MotorShield]]
   * [[sites:chartroom:research:swarmbot-berrybot-reference|BerryBot reference for SwarmBot education]]
