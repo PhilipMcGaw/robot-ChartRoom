@@ -1,0 +1,72 @@
+====== PiWars research — 3D-printed tracked Cyberexcavator ======
+{{tag>PiWars, research, tracked-robot, 3d-printing, drivetrain, design-inspiration }}
+
+~~META:
+description     = 3D-printed tracked RC excavator as a possible mechanical reference for a PiWars robot base.
+type            = research
+status          = research candidate
+authority       = Chartroom
+~~
+
+===== Source =====
+
+  * [[https://linktr.ee/3dprintall|3DPrintAll Linktree]] — source of the social-media post and creator links.
+  * MakerWorld project ID: **3021552**.
+  * Designer credited in the post: **Made.In.Meidling**.
+  * The supplied social-media post is captioned “3D printed RC excavator – PART 2” and credits the project download to MakerWorld.
+
+The screenshot supplied for this research shows the underside of a compact, 3D-printed tracked RC excavator. The post identifies MakerWorld project 3021552. The precise project page URL and downloadable file contents have not yet been independently checked; do not assume that STEP files or editable CAD are included.
+
+===== Why it is interesting for PiWars =====
+
+The excavator may provide a useful reference for a small tracked robot base, independently of its excavator superstructure. The potentially reusable ideas are:
+
+  * **Differential tracked drive** — independently driven left and right tracks for skid steering.
+  * **Track and sprocket geometry** — a compact printed track system that could inform a purpose-designed chassis.
+  * **Track material** — compare flexible TPU links with rigid PLA alternatives. Material choice may affect grip, durability, turning resistance, and track retention; these effects need testing on the intended surface.
+  * **Mechanical packaging** — compact integration of the drive system and electronics, with access for assembly and maintenance.
+  * **Modularity** — consider separating the tracked lower chassis from the upper body so that competition-specific mechanisms can be changed without redesigning the drivetrain.
+
+A tracked base could offer useful traction and obstacle capability. However, skid steering can have significant turning losses and motor-current demand, particularly on high-friction surfaces. Track tension, alignment, retention, wear, and ground clearance would also need practical assessment.
+
+===== Possible PiWars application =====
+
+Treat the excavator as a source of mechanical design inspiration, not as a complete robot to reproduce. A PiWars adaptation could retain only the lower tracked chassis and replace the excavator body and arm with a compact electronics enclosure and task-specific mechanisms.
+
+Potentially relevant features:
+
+  * two independently controlled geared drive motors;
+  * accessible motor and track tensioning arrangements;
+  * a removable or serviceable electronics enclosure;
+  * a protected battery and motor-driver location; and
+  * mounting points for interchangeable competition attachments.
+
+The rotating turret and excavator arm are not necessary for the base concept and should not be carried over unless a competition task gives them a clear purpose.
+
+===== Review questions =====
+
+  * Locate the exact MakerWorld project page for design **3021552** and inspect the complete file list.
+  * Check whether STEP or other editable CAD geometry is supplied, rather than STL meshes alone.
+  * Establish the original chassis dimensions, motor type, gear ratio, track width, sprocket geometry, and track tensioning method.
+  * Check whether the tracks are printed in TPU, PLA, or offered as alternatives; verify the designer's material and print recommendations from the project files.
+  * Assess whether the chassis can be scaled or adapted without compromising track geometry and clearances.
+  * Estimate motor torque and current requirements for turning on the surfaces expected in PiWars.
+  * Compare the design with the existing PiWars tracked-vehicle research, including the [[sites:chartroom:research:piwars-vt-72b|VT-72B recovery-vehicle concept]].
+  * Check the applicable PiWars rules before defining attachments or mechanisms.
+
+===== Status =====
+
+**Research candidate — awaiting review.**
+
+This is design inspiration only. It is not a selected chassis, validated drivetrain, purchase recommendation, or approved PiWars architecture. Do not promote it to the roadmap until the source files and mechanical suitability have been reviewed.
+
+===== Related research =====
+
+  * [[sites:chartroom:research:piwars-vt-72b|PiWars VT-72B tracked recovery-vehicle idea]]
+  * [[sites:chartroom:research:3d-printed-tank-elements|3D-printed tracked vehicle reference]]
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
