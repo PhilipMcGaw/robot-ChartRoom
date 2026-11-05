@@ -55,6 +55,8 @@ Future project-history entries could capture:
 
 For future PiWars design work, [[https://cactuscraft.com/collections/all-products/products/project-1-terra-548|Cactus Craft Project 1 Terra]] is recorded as an external design reference. Its suitability for a PiWars robot has not been assessed.
 
+  * To look at: [[https://tnkr.ai/moss/moss-v06-the-litter-picking-robot|MOSS v0.6 litter-picking robot]]. Its suitability for a PiWars robot has not been assessed.
+
 ===== Provenance =====
 
   * Source: user-supplied project description titled “PiWars Robot”.
