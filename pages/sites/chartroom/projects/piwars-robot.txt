@@ -55,7 +55,7 @@ Future project-history entries could capture:
 
 For future PiWars design work, [[https://cactuscraft.com/collections/all-products/products/project-1-terra-548|Cactus Craft Project 1 Terra]] is recorded as an external design reference. Its suitability for a PiWars robot has not been assessed.
 
-  * To look at: [[https://tnkr.ai/moss/moss-v06-the-litter-picking-robot|MOSS v0.6 litter-picking robot]]. Its suitability for a PiWars robot has not been assessed.
+  * [[https://tnkr.ai/moss/moss-v06-the-litter-picking-robot|MOSS v0.6 litter-picking robot]] — the [[https://github.com/metrox-eth/moss/|MOSS source repository]] is also available on GitHub. The differential track system looks like it could work for a PiWars robot, but this is an initial observation only; the design has not been reviewed and its suitability has not been assessed.
 
 ===== Provenance =====
 
