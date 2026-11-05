@@ -16,6 +16,5 @@ Detailed implementation documentation belongs with the Cockpit source repository
 
 ~~REFNOTES~~
 ---------
-Backlinks:
 
 {{backlinks>.}}
