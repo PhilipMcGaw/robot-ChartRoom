@@ -1,0 +1,128 @@
+====== SunFounder PiCrawler software ecosystem ======
+{{tag>research robotics raspberry_pi software computer_vision ai piwars}}
+ 
+~~META:
+description     = Software architecture, development tools, computer vision, and AI integration in the SunFounder PiCrawler ecosystem.
+type            = research
+status          = research candidate
+authority       = External reference
+~~
+
+===== Purpose =====
+
+The SunFounder PiCrawler is being considered primarily as a **software reference**, not as a proposed hardware purchase. The useful question for the Robots / Pi Wars work is whether its development environment, Python libraries, robot abstractions, computer-vision examples, and AI integrations offer patterns that could be reused or adapted.
+
+No SunFounder hardware or software has been selected for the project. This page records investigation targets, not adopted architecture.
+
+===== Primary sources =====
+
+  * [[https://www.sunfounder.com/products/picrawler-robot-kit|SunFounder PiCrawler product page]]
+  * [[https://docs.sunfounder.com/projects/pi-crawler/en/latest/|PiCrawler documentation]]
+  * [[https://github.com/sunfounder/picrawler|SunFounder PiCrawler source repository]]
+  * [[https://github.com/sunfounder/vilib|SunFounder Vilib computer-vision library]]
+  * [[https://github.com/sunfounder/robot-hat|SunFounder Robot HAT library]]
+  * [[https://github.com/sunfounder/ezblock|SunFounder Ezblock repository]] (confirm current project and maintenance status before relying on it)
+
+===== Software areas to investigate =====
+
+==== Robot abstraction and control API ====
+
+Examine how the PiCrawler software exposes physical capabilities through higher-level Python interfaces:
+
+  * motor and servo abstractions;
+  * movement and posture commands;
+  * sensor access and event handling;
+  * separation between application logic and hardware-specific drivers;
+  * whether timing-sensitive work is delegated to a controller or handled by the Raspberry Pi.
+
+The objective is to identify reusable API and module-boundary patterns, not to reproduce the quadruped mechanics.
+
+==== Computer vision ====
+
+Investigate Vilib and the PiCrawler camera examples for:
+
+  * camera initialisation and frame handling;
+  * colour, face, object, and marker detection;
+  * tracking and target-following examples;
+  * processing load and frame-rate constraints on Raspberry Pi hardware;
+  * how vision results are exposed to the robot application.
+
+Assess whether these examples are useful for Pi Wars challenge tasks and for the wider robot software stack.
+
+==== Autonomous behaviour ====
+
+Review examples such as obstacle avoidance and line or target following. Identify whether the code uses a clear separation between:
+
+  * sensor acquisition;
+  * perception;
+  * behaviour or decision logic;
+  * motion commands;
+  * safety limits and stop conditions.
+
+Prefer reusable behaviour patterns over copying demonstration code wholesale.
+
+==== AI and voice integration ====
+
+The PiCrawler material advertises voice and AI-related examples. Investigate the actual implementation and distinguish:
+
+  * speech recognition and text-to-speech;
+  * cloud-hosted language-model APIs;
+  * locally hosted models, including any Ollama integration;
+  * the interface between natural-language interpretation and permitted robot actions;
+  * authentication, network dependency, latency, and failure handling.
+
+An LLM should not directly control actuators without a constrained command interface, validation, and independent safety interlocks. Treat AI-generated actions as requests to a deterministic robot-control layer.
+
+==== Development environment and AI-assisted coding ====
+
+Investigate Ezblock Studio and any AI-assisted development features separately. Establish what is actually provided:
+
+  * block-based programming versus Python editing;
+  * whether blocks generate or map to inspectable Python;
+  * editor/IDE integration and supported Raspberry Pi environments;
+  * debugging, deployment, and project export;
+  * AI code generation or assistant capabilities, if present;
+  * whether the tools are maintained and usable independently of SunFounder hardware.
+
+Do not conflate an AI voice assistant that operates a robot with an AI coding assistant embedded in an IDE. They solve different problems.
+
+==== Remote operation and observability ====
+
+Review the examples and documentation for remote control, video streaming, telemetry, and mobile/web interfaces. Consider how these could inform the existing control-station concept and the separation of operator interface from robot runtime.
+
+===== Relevance to the Robots / Pi Wars project =====
+
+Potentially useful patterns:
+
+  * a documented, discoverable Python API for robot capabilities;
+  * hardware abstraction that keeps application logic independent of specific drivers;
+  * reusable vision and tracking components;
+  * autonomous behaviours built from perception and bounded actions;
+  * remote video and telemetry integrated with control;
+  * an AI-agent interface that can invoke only explicitly exposed, validated robot commands.
+
+The strongest potential value is as a reference for the **software development experience**: how a developer explores the robot API, tests functions, combines sensors and vision, and moves from a simple example to an autonomous behaviour.
+
+===== Investigation status =====
+
+  * **Status:** Research candidate; not yet evaluated in detail.
+  * **Scope:** Software ecosystem and developer experience, not hardware selection.
+  * **Adopted components:** None.
+  * **Next investigation:** Read the PiCrawler examples and Vilib source; inspect Ezblock's current capabilities; trace one complete example from sensor/camera input through decision logic to robot action.
+  * **Comparison target:** ACEBOTT's AI-enabled IDE, discussed separately, with particular attention to whether it assists with writing and understanding code or merely provides natural-language robot operation.
+
+===== Related project areas =====
+
+  * [[sites:chartroom:research:cyberdeck-control-station|Cyberdeck-style base station / control station]]
+  * [[sites:chartroom:research:lidar-mapper-video|LiDAR Mapper video — research candidate]]
+  * [[sites:chartroom:architecture:start|Architecture]] (check the current namespace page before adding a specific design relationship)
+
+===== Notes and limitations =====
+
+This is an initial research record based on the manufacturer's product and documentation links and the software repositories listed above. Repository contents, current maintenance status, supported Raspberry Pi versions, and the exact AI/IDE feature set still require direct inspection. No feature should be treated as verified solely because it appears in product marketing.
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
