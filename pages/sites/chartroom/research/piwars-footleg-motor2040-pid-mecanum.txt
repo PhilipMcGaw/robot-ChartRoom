@@ -1,0 +1,97 @@
+====== PiWars 2024 — Motor2040 PID control, mecanum drive, and field-oriented driving ======
+{{tag>research piwars motor-control encoder pid mecanum imu motor2040 micropython}}
+
+~~META:
+description     = Footleg's PiWars 2024 implementation notes on encoder-feedback motor velocity control, mecanum kinematics, and IMU-based field-oriented driving.
+type            = research
+status          = reference
+authority       = Chartroom
+date            = 2026-11-07
+~~
+
+**Status:** External research reference  
+**Source publication date:** 2024-02-19  
+**Applications:** PiWars and K9 motor-control architecture
+
+===== Primary source =====
+
+  * [[https://adventures-with-pi.blogspot.com/2024/02/finally-some-significant-progress-with.html|Adventures with a Raspberry Pi — Finally some significant progress with my code (19 February 2024)]]
+
+The author, Footleg, describes developing the control software for a PiWars 2024 robot using a Pimoroni Motor2040 board and MicroPython.
+
+===== Encoder-feedback velocity control =====
+
+The author's first objective was to understand the Motor2040 rotary-encoder examples. One example demonstrated motor velocity control using a proportional-integral-derivative (PID) controller: encoder feedback provides measured motor velocity, which is compared with the requested velocity, and the controller adjusts motor drive to reduce the error.
+
+The supplied examples also showed how to control four motors, but used separate arrays of motor objects, encoder objects, and PID controllers. The author refactored this into a reusable class encapsulating a motor, its encoder, and its PID velocity controller. The constructor retained the hardware-specific parameters needed to allocate the available programmable-I/O (PIO) resources and state machines.
+
+The author reports that the resulting code was easier to follow and that the robot remained responsive while avoiding excessive strain on the motors. The article does not publish PID gains, control-loop frequency, encoder resolution, measured speed error, or quantitative tuning results. Those values must not be inferred from the example.
+
+**Engineering significance:** The useful pattern is to encapsulate each motor's encoder-feedback velocity loop behind a consistent interface. Higher-level drive logic can then request wheel velocities without managing the low-level encoder and PID implementation.
+
+===== Mecanum drive kinematics =====
+
+The robot used four mecanum wheels. The author found that the Motor2040 examples covered basic motor-speed patterns but did not provide the required omnidirectional drive behaviour. He located an external C-language example of mecanum-drive equations and reimplemented the equations in MicroPython.
+
+The author reports finding errors in the external example and a separate copy-and-paste error during his own implementation before obtaining the intended movement. Once working, the robot could translate in different directions while independently commanding rotation.
+
+This demonstrates the relationship between the kinematic layer and the motor-control layer:
+
+  * chassis-level translation and rotation requests are converted into individual wheel-speed targets by the mecanum kinematics;
+  * each wheel-speed target is then handled by its own encoder-feedback velocity controller.
+
+The article is a practical implementation account, not a complete derivation or independent validation of the equations. Any implementation adopted by this project should be checked against the selected wheel arrangement, motor order, wheel orientation, signs, and physical movement tests.
+
+===== IMU-based field-oriented driving =====
+
+The final objective was to measure robot heading and use it to implement field-oriented driving. The operator's translation command is interpreted relative to the arena or driver, rather than the robot's current forward direction. The measured heading is used to rotate the requested translation into the robot's coordinate frame before calculating wheel-speed targets. Rotation can therefore be commanded independently of the direction of travel.
+
+The author says he used an IMU with onboard sensor fusion, combining magnetometer, accelerometer, and gyroscope measurements to estimate three-dimensional orientation. The article refers to the device as a **BNO01**. This designation should be checked against the actual hardware; do not silently assume a particular BNO-series part number from the article text.
+
+Field-oriented driving depends on a reliable heading estimate and appropriate calibration. Magnetic interference, mounting alignment, sensor fusion configuration, and heading reference all need to be considered for a real implementation.
+
+===== Relevance to PiWars =====
+
+This is a strong practical reference for the PiWars software architecture, particularly if the selected robot uses a four-wheel mecanum arrangement.
+
+  * **Closed-loop motor control:** use encoder feedback and an independent velocity controller for each driven wheel.
+  * **Reusable motor abstraction:** encapsulate motor output, encoder measurement, and velocity control behind a consistent class or interface.
+  * **Kinematic separation:** convert chassis motion requests into wheel-speed targets in a separate drive-kinematics layer.
+  * **Field-oriented control:** use measured heading to make translation commands independent of robot orientation, where the drive geometry supports it.
+  * **Hardware-specific resource management:** keep Motor2040/PIO allocation details inside the hardware implementation rather than exposing them to navigation or challenge logic.
+
+The author's implementation is specific to the Motor2040 and MicroPython. It is an architectural and practical reference, not a requirement to select that board or language.
+
+===== Relevance to K9 =====
+
+K9's current traction concept is a two-motor differential drive, not a four-wheel mecanum drive. The mecanum equations and omnidirectional movement described in this article therefore do **not** transfer directly to K9.
+
+The lower-level control principle does transfer:
+
+  * retain an independent encoder-feedback velocity loop for each motor;
+  * have the differential-drive layer calculate left and right wheel-speed targets from the requested vehicle speed and turn rate;
+  * keep encoder acquisition and PID execution behind a motor-control interface;
+  * expose target and measured wheel speeds, controller output, and fault state for telemetry and diagnosis.
+
+This is consistent with the initial K9 motor-control investigation, which proposes one output-shaft encoder and one independent PI speed loop per motor. The article provides a PiWars implementation example supporting the general approach; it does not validate K9's proposed encoder, driver, controller, or tuning choices.
+
+===== Limitations and points to verify =====
+
+  * No PID coefficients, loop rate, encoder counts per revolution, motor data, or quantitative performance results are published in this article.
+  * The author describes the controller as PID, but the article does not provide enough detail to reproduce or assess the tuning method.
+  * Mecanum equations are sensitive to wheel placement, roller orientation, motor ordering, and sign conventions. Verify with controlled single-axis tests before combined movement.
+  * Field-oriented driving depends on heading quality and calibration; an IMU heading estimate is not automatically an accurate arena reference.
+  * The author's stated BNO01 designation is ambiguous and requires verification.
+  * The source describes one hobby robot implementation. It is not evidence that the same hardware or software has been validated for K9.
+
+===== Related Chartroom material =====
+
+  * [[sites:chartroom:projects:k9-motor-control|K9 Motor Control — Initial Design Notes]] — current two-motor differential-drive investigation.
+  * [[sites:chartroom:research:small-robot-code-test-platform|Small robot as a code test platform]] — Footleg's earlier work on encoder feedback, IMU integration, hardware abstraction, and mock hardware.
+  * [[sites:chartroom:research:makers-pet-120mm|Maker's Pet 120 mm robot]] — another small-robot development and control reference.
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
