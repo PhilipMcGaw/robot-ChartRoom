@@ -1,0 +1,54 @@
+====== East Devon PiRates — December show-and-tell meeting ======
+{{tag>research piwars east-devon-pirates team-development}}
+
+~~META:
+description     = Source record for East Devon PiRates' December 2023 PiWars show-and-tell meeting article.
+type            = research
+status          = research-candidate
+authority       = Chartroom
+~~
+
+**Status:** Research candidate — source identified, article content not yet verified  
+**Added:** 2026-11-07  
+**Subject:** PiWars team progress and show-and-tell, December 2023
+
+===== Primary source =====
+
+  * [[https://eastdevonpirates.blogspot.com/2023/12/show-and-tell-december-meeting-piwars.html|East Devon PiRates — Show and Tell: December meeting (PiWars)]]
+
+===== Source access and evidence status =====
+
+The supplied URL identifies a December 2023 East Devon PiRates blog post about a show-and-tell meeting in the context of PiWars. The page could not be retrieved during this research pass (the direct page fetch returned a cache miss, and a targeted search did not return the article). Its text and images have therefore not been independently inspected.
+
+This note records the source as a research lead only. It does not claim that any particular robot, subsystem, design decision, test result, or team milestone was demonstrated at the meeting.
+
+===== Review points =====
+
+When the article is accessible, inspect it for:
+
+  * the robot or subsystem versions shown at the meeting;
+  * progress since the team's earlier chassis-development work;
+  * evidence of a working drivetrain, steering, mechanisms, or control software;
+  * photographs that reveal packaging, mounting, wiring, and mechanical integration;
+  * problems encountered and changes made;
+  * any PiWars challenges or task-specific mechanisms being demonstrated;
+  * distinctions between a concept, a partially assembled prototype, and a tested working system.
+
+Record observations as the team's reported work, and distinguish them from our own interpretation. Do not infer successful testing solely from a photograph or a show-and-tell description.
+
+===== Related research =====
+
+  * [[sites:chartroom:research:east-devon-pirates-piwars-2024-chassis|East Devon PiRates — Chassis development for PiWars 2024]]
+  * [[sites:chartroom:research:small-robot-code-test-platform|Small robot as a code test platform — ROV and PiWars]]
+  * [[sites:chartroom:research:piwars-cyberexcavator-tracked-base|PiWars 3D-printed tracked Cyberexcavator]]
+  * [[sites:chartroom:research:piwars-vt-72b|PiWars VT-72B idea]]
+
+===== Follow-up =====
+
+Revisit the original post when its contents can be retrieved or supplied. Add a source-attributed summary and any useful comparison with the team's chassis-development article. Keep the two source records separate so that each observation retains its own provenance.
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
