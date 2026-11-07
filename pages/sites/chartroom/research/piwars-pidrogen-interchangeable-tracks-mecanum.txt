@@ -1,0 +1,108 @@
+====== PiWars 2024 — Interchangeable tracks and mecanum wheels ======
+{{tag>research piwars drivetrain mecanum tracks modular-chassis motor-control}}
+
+~~META:
+description     = Team PiDrogen Firefly's interchangeable tracked and mecanum configurations, including a failure mode caused by incompatible motor commands while tracks were fitted.
+type            = research
+status          = reference
+authority       = Chartroom
+date            = 2026-11-07
+~~
+
+**Status:** External research reference and concept assessment  
+**Source publication date:** 1 April 2024  
+**Application:** PiWars drivetrain and chassis architecture
+
+===== Primary source =====
+
+  * [[https://pidrogen.com/2024/04/01/low-friction-track-sprocket/|Team PiDrogen — Low Friction Track Sprocket (1 April 2024)]]
+
+===== What Team PiDrogen reports =====
+
+Firefly was designed to accept either tracks or mecanum wheels. The mecanum arrangement required four independently controlled motors.
+
+The team identified a failure mode when the robot was operated by radio control with tracks fitted: an unintended sideways mecanum-style command caused the motors associated with each track to turn in opposing directions. The team reports that this tended to unclip and break the tracks.
+
+The first proposed mitigation was a removable link inserted into the side of the robot to enable sideways movement. However, the link conflicted with the tracks and could be forgotten or fall out during a competition. The team instead fitted custom-designed low-friction track sprockets. The article says these were intended to address the problem and also describes reduced rolling resistance.
+
+The post is concise and does not explain the sprocket geometry, materials, friction mechanism, detailed transmission arrangement, or test results. Those details should not be inferred.
+
+===== Engineering assessment: is a dual-configuration PiWars robot viable? =====
+
+**Yes, as a modular, mutually exclusive drivetrain configuration.** A chassis that can be mechanically configured for tracks or mecanum wheels is feasible in principle. The PiDrogen example demonstrates that a competition robot can be designed around both options, but it also highlights the need to manage the interaction between drive commands and the fitted running gear.
+
+This should be treated as two defined vehicle configurations sharing as much of the platform as practical:
+
+  * **Tracked mode:** differential/skid-steer behaviour. Lateral translation is not available; the controller must not issue mecanum wheel-speed patterns.
+  * **Mecanum mode:** four independently controlled wheel speeds, with kinematics translating chassis forward/lateral/rotational requests into individual wheel targets.
+
+The same four motor velocity-control interfaces may be reusable if the mechanical arrangement genuinely retains four independently driven motors in both configurations. The kinematic mapping, calibration, limits, and configuration must remain specific to the fitted drive system.
+
+===== Recommended architecture =====
+
+Keep the following layers separate:
+
+  - **Operator/autonomy command:** requested forward, lateral, and rotational chassis motion.
+  - **Drive-mode manager:** identifies the physically fitted configuration and permits only supported commands.
+  - **Kinematics:** converts permitted chassis commands into motor velocity targets for the selected configuration.
+  - **Motor control:** closes the independent encoder-feedback velocity loops.
+  - **Hardware protection:** handles current limits, thermal limits, driver faults, communication loss, and emergency stop independently of the navigation mode.
+
+For tracked mode, the command interface should reject or safely suppress lateral velocity requests. It should not simply pass a mecanum motor pattern through to the track drive.
+
+The selected configuration should be explicit and preferably confirmed by a keyed connector, mechanical interlock, configuration switch, or deliberate operator selection with a clear indication. Software selection alone cannot guarantee that the correct running gear is physically installed. A mismatch should inhibit drive or fall back to a defined safe state.
+
+===== Mechanical design considerations =====
+
+A practical implementation would need to address:
+
+  * **Interchangeable modules:** provide repeatable mounting datums, positive retention, and accessible fasteners for the track and wheel assemblies.
+  * **Motor and transmission layout:** confirm that motor locations and output shafts can serve both configurations without excessive adapters, backlash, or unsupported loads.
+  * **Track tension and retention:** provide adjustment and adequate sprocket engagement. Assess the effect of counter-rotation and skid-steer loads on track retention.
+  * **Mecanum geometry:** ensure the four wheels have the correct roller orientation, spacing, ground contact, and load distribution.
+  * **Ground clearance and ride height:** the two configurations may have different effective wheel radii and contact geometry. Avoid a configuration that leaves some wheels unloaded or the chassis dragging.
+  * **Mass and centre of gravity:** account for the unused or removed running gear, mounting hardware, and any changes in battery or payload position.
+  * **Wiring and connectors:** make motor connections unambiguous and robust against incorrect installation. Consider whether the fitted module can be positively identified electrically.
+  * **Protection:** ensure track and wheel assemblies cannot foul each other or exposed rotating parts.
+
+A design that requires substantial dismantling or repeated alignment may be less useful in a competition environment than choosing one drivetrain and optimising it.
+
+===== Software and verification implications =====
+
+The two modes need separate, tested kinematic mappings. Both should use the same higher-level motion-command interface and the same closed-loop motor-speed control foundation where hardware permits.
+
+Suggested tests before competition use:
+
+  * verify motor identity, direction, encoder polarity, and wheel/track association for each configuration;
+  * test forward, reverse, and rotation at low speed with the robot safely supported;
+  * verify mecanum lateral and diagonal movement with wheels fitted;
+  * verify that lateral commands are rejected in tracked mode;
+  * test that mode mismatch, invalid configuration, or loss of configuration indication inhibits drive;
+  * test track retention during turning, counter-rotation, acceleration, and obstacle interaction;
+  * measure current, motor/driver temperature, speed tracking, and battery endurance in both configurations;
+  * repeat the tests at representative payload and battery conditions.
+
+The PiDrogen article does not establish that its sprocket solution is suitable for another chassis. A low-friction mechanical feature should not be treated as a substitute for a software interlock and correct mode-specific kinematics.
+
+===== Recommendation for PiWars =====
+
+Retain interchangeable tracks and mecanum wheels as a **viable concept for further mechanical layout**, not yet as a selected design.
+
+The strongest approach would be to design the chassis around a common four-motor platform only if the motor/transmission arrangement works efficiently in both modes. Make the running gear physically interchangeable and the software mode explicit. Do not rely on the PiDrogen low-friction sprocket approach without understanding and reproducing its mechanical behaviour.
+
+The main decision is whether the extra versatility is worth the mass, complexity, development time, and testing burden. If the competition challenges strongly reward lateral translation, mecanum may justify the complexity. If traction, obstacle crossing, and reliability dominate, tracks may be preferable. The actual PiWars challenge set and arena surfaces should drive that trade-off.
+
+This assessment is a design recommendation for investigation; no dual-mode chassis has been designed, built, or validated in this project.
+
+===== Related ChartRoom research =====
+
+  * [[sites:chartroom:research:piwars-footleg-motor2040-pid-mecanum|PiWars 2024 — Motor2040 PID control, mecanum drive, and field-oriented driving]] — four-wheel mecanum kinematics and encoder-feedback speed control.
+  * [[sites:chartroom:research:small-robot-code-test-platform|Small robot as a code test platform]] — hardware abstraction and software testing strategy.
+  * [[sites:chartroom:research:piwars-dan-ed-opencv-blob-tracking|PiWars 2024 — Dan-ED OpenCV colour blob tracking]] — autonomous visual perception.
+  * [[sites:chartroom:research:piwars-destructorpi-wall-detecting-simulation|Destructor Pi — wall-detecting simulation]] — simulation research lead.
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
