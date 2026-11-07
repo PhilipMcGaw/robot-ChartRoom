@@ -1,0 +1,94 @@
+====== PiWars 2024 — OpenCV colour blob tracking ======
+{{tag>research piwars computer-vision opencv image-processing hsv blob-tracking autonomy}}
+
+~~META:
+description     = Dan-ED PiWars 2024 use of OpenCV HSV colour segmentation and blob tracking to locate illuminated Minesweeper targets.
+type            = research
+status          = reference
+authority       = Chartroom
+~~
+
+**Status:** External research reference  
+**Source date:** 26 March 2024  
+**Application:** PiWars computer vision and autonomous target approach
+
+===== Primary source =====
+
+  * [[https://dan-ed-piwars2020.blogspot.com/2024/03/blob-tracking.html|Dan-ED PiWars — Blob Tracking (26 March 2024)]]
+
+===== What the team reports =====
+
+The Dan-ED team wanted the robot to operate autonomously in as many PiWars challenges as possible. They already had line-following and ultrasonic sensors, but wanted a camera and machine vision to detect objects.
+
+Their implementation used **OpenCV** and simple colour-based detection. They selected the HSV colour space rather than RGB, explaining that it was more robust to background lighting variations and allowed the hue component to be tuned for a target colour.
+
+The first application was the Minesweeper challenge: detect a coloured floor square and autonomously drive towards it.
+
+The team used OpenCV trackbars to adjust the colour-selection parameters interactively. A piece of red card placed on the arena floor was detected successfully with a hue range of 0–27.
+
+A different result occurred with a bright red LED torch, intended to represent the illuminated challenge panel. The light saturated the camera and appeared as a white blob in the image. The team added a red filter in front of the camera and adjusted the hue range to 0–76 to detect the resulting image.
+
+The article reports that the software could then pick out and track the blob as the torch moved, and that Dan-ED could follow the red target around the arena.
+
+===== Engineering interpretation =====
+
+This is a useful example of a simple, task-focused vision pipeline:
+
+  - acquire camera frames;
+  - convert the image into HSV colour space;
+  - apply a tunable colour threshold;
+  - identify the resulting coloured region/blob;
+  - track the target as it moves;
+  - use target position to generate a robot motion objective.
+
+The article demonstrates colour segmentation and target tracking in the team's particular environment. It does not provide enough detail to establish the exact contour filtering, blob association, camera calibration, frame rate, target-distance estimation, or motion-control algorithm.
+
+===== Relevance to PiWars =====
+
+Potential applications include:
+
+  * detecting coloured challenge objects or markers;
+  * following a moving or repositioned visual target;
+  * approaching a target using its horizontal image position;
+  * providing a visual input to a higher-level behaviour or state machine.
+
+The Minesweeper example is especially relevant because it connects perception to an explicit task objective: identify the active panel, then approach it autonomously.
+
+A sensible software boundary is for the vision component to publish a target observation (for example, detected/not detected, image coordinates, apparent size, confidence, and timestamp). The navigation or behaviour layer can then decide what motion is required. The vision component should not directly bypass the robot's normal motion-command interface or motor velocity controllers.
+
+===== Practical considerations and limitations =====
+
+  * **HSV is not illumination-invariant.** It can be more convenient than RGB for colour thresholding, but hue and saturation can still change with lighting, exposure, white balance, reflections, and camera processing.
+  * **Bright emitters need separate treatment.** Saturation can remove the expected colour information. The red optical filter was a practical workaround in this setup, not a universal solution.
+  * **Thresholds are environment-specific.** The reported hue ranges are observations from Dan-ED's camera, filter, and arena. They should not be copied as project defaults.
+  * **Blob detection is not object recognition.** A colour mask can identify regions matching a colour threshold, but cannot reliably establish object identity or distinguish all similarly coloured distractors.
+  * **Image position is not range.** A target's location in the image can provide a steering error, but distance estimation needs additional information such as calibrated apparent size, known geometry, stereo/depth sensing, or another range sensor.
+  * **Loss of target needs defined behaviour.** The robot should handle target disappearance, multiple candidates, false positives, and stale observations explicitly.
+  * **Optical filtering changes the image.** Any filter must be assessed with the actual camera, lighting, and target materials.
+
+===== Suggested investigation for our software =====
+
+  * Prototype a replaceable OpenCV vision module with configurable HSV thresholds.
+  * Add trackbars or a configuration interface for interactive threshold tuning during development.
+  * Record representative frames and test repeatably under different illumination and exposure conditions.
+  * Publish observations through a hardware-independent interface so recorded images, simulated inputs, and a live camera can exercise the same higher-level behaviour.
+  * Test target loss, multiple blobs, false detections, and camera-frame latency.
+  * Keep target approach under the navigation/behaviour layer, using the shared motion-command interface and closed-loop motor-speed control.
+
+These are proposed investigations, not implemented or validated project features.
+
+===== Related ChartRoom research =====
+
+  * [[sites:chartroom:research:small-robot-code-test-platform|Small robot as a code test platform]] — hardware abstraction, mock backends, and simulation as a way to develop software before final hardware is available.
+  * [[sites:chartroom:research:piwars-footleg-motor2040-pid-mecanum|PiWars 2024 — Motor2040 PID control, mecanum drive, and field-oriented driving]] — encoder-feedback motor control and reusable software structure.
+  * [[sites:chartroom:research:piwars-destructorpi-wall-detecting-simulation|Destructor Pi — Wall-detecting simulation]] — related PiWars simulation reference; source article still requires retrieval and technical review.
+
+===== Source limitations =====
+
+The source is a team development blog post rather than a formal technical report. The implementation details above are limited to what the article states. No source code, complete camera configuration, or quantitative detection-performance data is cited in the post.
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
