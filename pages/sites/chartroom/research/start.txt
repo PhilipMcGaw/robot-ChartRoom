@@ -104,6 +104,7 @@ The links below cover all research notes. Use the related-research links within 
 
   * [[sites:chartroom:research:small-robot-code-test-platform|Small robot as a code test platform — ROV and PiWars]]
   * [[sites:chartroom:research:piwars-footleg-motor2040-pid-mecanum|PiWars 2024 — Motor2040 PID control, mecanum drive, and field-oriented driving]]
+  * [[sites:chartroom:research:piwars-pidrogen-interchangeable-tracks-mecanum|PiWars 2024 — Interchangeable tracks and mecanum wheels]]
   * [[sites:chartroom:research:piwars-dan-ed-opencv-blob-tracking|PiWars 2024 — Dan-ED OpenCV colour blob tracking]]
   * [[sites:chartroom:research:piwars-destructorpi-wall-detecting-simulation|Destructor Pi — wall-detecting simulation (awaiting source review)]]
   * [[sites:chartroom:research:sunfounder-picrawler-software|SunFounder PiCrawler software ecosystem]]
