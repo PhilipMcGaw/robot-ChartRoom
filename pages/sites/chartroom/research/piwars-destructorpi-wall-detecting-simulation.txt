@@ -1,0 +1,53 @@
+====== Destructor Pi — Wall-detecting simulation ======
+{{tag>research piwars simulation wall-detection navigation}}
+
+~~META:
+description     = PiWars reference to a wall-detection simulation; source content not yet retrieved or technically reviewed.
+type            = research
+status          = research-candidate
+authority       = Chartroom
+~~
+
+**Status:** Research candidate — awaiting source review  
+**Source date:** 20 February 2024  
+**Application:** PiWars simulation, sensing, and navigation
+
+===== Primary source =====
+
+  * [[https://destructorpi.wordpress.com/2024/02/20/wall-detecting-simulation/|Destructor Pi — Wall-detecting simulation (20 February 2024)]]
+
+===== Review status =====
+
+The article URL has been identified as a potentially relevant PiWars reference. Automated retrieval of the WordPress page was unsuccessful during the initial review, so its implementation and conclusions have not yet been verified.
+
+No technical claims about the simulation, sensor model, detection algorithm, or navigation behaviour are recorded here. The title alone is not sufficient evidence to establish those details.
+
+===== Questions for source review =====
+
+When the article text or screenshots are available, review:
+
+  * how the simulated robot, walls, and environment are represented;
+  * whether wall sensing is modelled using range measurements, geometric collision queries, or another method;
+  * how sensor noise, range limits, and occlusion are represented, if at all;
+  * whether the simulation exercises the same interface used by the physical sensor;
+  * how wall observations feed into navigation and collision-avoidance behaviours;
+  * whether the simulation is a visualisation, a software mock, software-in-the-loop model, or a more complete dynamics simulation.
+
+===== Potential relevance =====
+
+A simulation that can exercise the same application-facing sensor interface as the physical robot could support repeatable development of wall-following, obstacle detection, and navigation behaviours. This is an investigation question, not a conclusion about the linked article.
+
+===== Related ChartRoom research =====
+
+  * [[sites:chartroom:research:small-robot-code-test-platform|Small robot as a code test platform]] — hardware abstraction and mock/simulation backends.
+  * [[sites:chartroom:research:piwars-dan-ed-opencv-blob-tracking|PiWars 2024 — OpenCV colour blob tracking]] — camera-based target detection and autonomous approach.
+
+===== Outstanding action =====
+
+Obtain the article content and replace this provisional record with a source-grounded technical summary. Until then, retain this page as a research lead only.
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
