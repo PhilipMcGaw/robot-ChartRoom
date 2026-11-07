@@ -1,0 +1,53 @@
+====== East Devon PiRates — Chassis development for PiWars 2024 ======
+{{tag>research piwars chassis mechanical-design east-devon-pirates}}
+
+~~META:
+description     = Source record for East Devon PiRates' PiWars 2024 chassis-development article; technical details await source verification.
+type            = research
+status          = research-candidate
+authority       = Chartroom
+~~
+
+**Status:** Research candidate — source identified, article content not yet verified  
+**Added:** 2026-11-07  
+**Subject:** PiWars 2024 robot chassis development
+
+===== Primary source =====
+
+  * [[https://eastdevonpirates.blogspot.com/2023/11/chassis-development-piwars-2024.html|East Devon PiRates — Chassis development: PiWars 2024 (November 2023)]]
+
+===== Source access and evidence status =====
+
+The supplied URL identifies a November 2023 East Devon PiRates blog article about chassis development for PiWars 2024. The page could not be retrieved during this research pass, and its article text and images have therefore not been independently inspected.
+
+No specific chassis dimensions, materials, drivetrain arrangement, fabrication methods, mounting details, or performance claims are recorded here. These must not be inferred from the title or from other PiWars teams' designs.
+
+===== Why it is worth reviewing =====
+
+A team-authored chassis-development record may provide useful first-hand evidence of the design and fabrication decisions made for a PiWars robot. Once the article is accessible, review it for:
+
+  * chassis layout, dimensions, and packaging;
+  * structural materials and fabrication methods;
+  * drivetrain mounting, wheel/track arrangement, and ground clearance;
+  * modularity, access for maintenance, and attachment mounting;
+  * component mounting and cable routing;
+  * design iterations, observed problems, and changes made during testing;
+  * photographs or CAD views that clarify construction.
+
+Assess any ideas against the current PiWars robot requirements and the intended platform. Treat the article as a design reference, not as a validated design for our robot.
+
+===== Related research =====
+
+  * [[sites:chartroom:research:small-robot-code-test-platform|Small robot as a code test platform — ROV and PiWars]]
+  * [[sites:chartroom:research:piwars-cyberexcavator-tracked-base|PiWars 3D-printed tracked Cyberexcavator]]
+  * [[sites:chartroom:research:piwars-vt-72b|PiWars VT-72B idea]]
+
+===== Follow-up =====
+
+Revisit the original article when its contents can be retrieved or supplied. Update this page with a source-attributed summary, separating the team's stated design details from our engineering assessment.
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
