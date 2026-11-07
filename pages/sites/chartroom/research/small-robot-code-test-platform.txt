@@ -1,0 +1,100 @@
+====== Small robot as a code test platform — hardware abstraction and simulation ======
+{{tag>research robotics software testing hardware-abstraction simulation digital-twin rov piwars}}
+
+~~META:
+description     = Footleg's small robot development platform, covering encoder feedback, IMU integration, hardware abstraction, mock hardware, and software portability.
+type            = research
+status          = reference
+authority       = Chartroom
+~~
+
+**Status:** External research reference  
+**Added:** 2026-11-07  
+**Applications:** PiWars and ROV software development
+
+===== Primary source =====
+
+  * [[https://adventures-with-pi.blogspot.com/2023/11/developing-small-robot-as-code-test.html|Adventures with a Raspberry Pi — Developing a small robot as a code test platform (11 November 2023)]]
+
+The author, Footleg, describes using a small triangular tracked robot originally developed for STEM outreach as a platform for developing and testing robotics software ahead of building the Pi Wars competition robot. The article is explicitly about developing software early, rather than waiting for the final competition hardware.
+
+The robot used a Pimoroni Inventor HAT Mini and encoder motors. The author added an IMU to measure robot orientation. The stated purpose of the encoders was to obtain motor speed and rotation-count feedback, supporting speed control and distance estimation; the IMU enabled orientation measurement and more accurate turns.
+
+A key software decision was to introduce a **hardware-abstraction interface**. The application code called the interface rather than depending directly on the specific hardware. The author reports adapting an existing manual-control program to use that interface, with the intention that code developed on the small tracked platform could be carried over to the larger Pi Wars robot.
+
+===== Related source: modular software and mock hardware =====
+
+  * [[https://adventures-with-pi.blogspot.com/2019/03/robot-software-design.html|Adventures with a Raspberry Pi — Robot Software Design (12 March 2019)]]
+  * [[https://github.com/Footleg/PiWars2019/tree/mock|Footleg/PiWars2019 — mock branch]]
+
+The 2019 article explains the author's modular software approach in more detail. Separate modules encapsulate hardware-specific functions behind small APIs. Examples include sensor reading, motor speed, steering, controller input, and LED-matrix display.
+
+The author describes creating mock versions of hardware-facing modules with the same names and function interfaces as the real modules. The mock implementations rendered a virtual robot and sensor indications using Pygame, and could generate simulated sensor readings. This allowed much of the application, menus, modes, input handling, and debugging to be developed on a laptop without the physical robot.
+
+The author calls this a digital twin. For engineering classification, this is best described as a **software mock / software-in-the-loop representation**: it is useful for exercising application logic and visualising state, but it is not evidence of a dynamically validated physical digital twin.
+
+The linked GitHub mock branch is the source code reference for the 2019 virtual robot. It is a separate historical implementation; do not assume it is the same codebase as the 2023 Universal Robot project.
+
+===== Additional related source: Raspberry Pi to microcontroller serial link =====
+
+  * [[https://adventures-with-pi.blogspot.com/2023/11/|Adventures with a Raspberry Pi — November 2023 archive]]
+
+The same month's archive includes a 30 November 2023 article about communicating from Raspberry Pi Python to a MicroPython controller over USB serial, using a Pimoroni Yukon and a Raspberry Pi Pico example. The author describes discovering that some byte values and line-ending conversions interfered with the MicroPython REPL/program execution, and using ASCII hex encoding as a workaround in the example.
+
+This is a useful practical reminder that a Pi-to-MCU serial protocol needs deliberate framing, encoding, error handling, and a way to distinguish application traffic from development-console behaviour. The hex-encoding approach is an example from that particular setup, not a general recommendation for a new protocol.
+
+===== Relevance to PiWars =====
+
+This is directly relevant to PiWars as a development strategy:
+
+  * **Develop capabilities before the final chassis exists.** A small test platform can be used to explore unfamiliar sensors, feedback control, and software techniques.
+  * **Encoder feedback.** Motor speed and rotation counts enable closed-loop speed control and distance estimation, subject to encoder resolution, calibration, drivetrain slip, and measurement limitations.
+  * **IMU integration.** Orientation feedback enables more repeatable turns and supports heading-aware behaviours. Sensor fusion and calibration still need to be assessed for the selected IMU.
+  * **Portable application logic.** A stable hardware interface can allow higher-level behaviours to move between different robot hardware without rewriting the application.
+  * **Mock and simulation backends.** The same application-facing API can be implemented by real hardware and a mock backend, enabling earlier software development and repeatable tests.
+  * **Debug observability.** A graphical representation and visible numerical state can help diagnose software behaviour without relying solely on the physical robot.
+
+The reference is not a PiWars chassis or drivetrain recommendation. The value is the development method and software structure.
+
+===== Relevance to the ROV =====
+
+The software patterns are also relevant to the ROV, although the sensor and actuator models are different:
+
+  * **Hardware abstraction:** keep Cockpit and mission/supervisory logic independent of the specific sensor, thruster controller, and embedded implementation.
+  * **Replaceable backends:** allow CuttleOS components to run against simulated or mocked devices as well as physical NautiPi hardware.
+  * **Simulation and integration:** use SquidLink / Gazebo to exercise the same application-facing interfaces where practical, while being explicit about which parts are simulated and which are running on real hardware.
+  * **Sensor simulation:** provide synthetic depth, attitude, leak, temperature, and vehicle-state data to test display, alarms, and supervisory behaviours. These are ROV adaptation ideas, not features demonstrated by the source robot.
+  * **Control separation:** retain time-critical actuator control and local safety behaviour in the appropriate embedded controller; the article's hardware abstraction does not itself establish a safe distributed-control architecture.
+
+The article's wheel encoders, tracked drive, and terrestrial IMU use are not directly transferable as ROV hardware choices. The transferable element is the abstraction and test strategy.
+
+===== Engineering interpretation and limitations =====
+
+  * The 2023 article documents the author's approach and intended code portability; it does not establish that the code was validated on every target robot.
+  * Encoder-derived distance is an estimate and can be affected by wheel/track slip, surface conditions, gearing, and calibration.
+  * IMU heading/orientation accuracy depends on sensor selection, calibration, mounting, magnetic environment, and sensor-fusion configuration.
+  * A mock backend can validate application logic and interface behaviour, but cannot by itself validate electrical performance, timing under real loads, actuator dynamics, environmental robustness, or physical safety.
+  * The 2019 Pygame mock is a historical example. Its architecture is worth studying; its code should not be treated as a dependency or assumed compatible with the current ROV stack.
+  * The USB serial example is specific to the author's MicroPython setup. A new project protocol should define framing, message types, validation, timeouts, and fault behaviour explicitly.
+
+===== Potential follow-up investigations =====
+
+  * Inspect the Universal Robot project referenced by the 2023 article, once its exact repository link has been confirmed from the original page or author's GitHub.
+  * Compare the author's hardware interface with CuttleOS's existing Cockpit / Control / DataLogger boundaries.
+  * Define a minimal device interface that can be implemented by both a mock backend and the physical hardware backend.
+  * Identify which behaviours can be tested in ordinary software tests, which need SiL, and which require HiL or physical testing.
+  * For PiWars, consider a small repeatable test chassis for encoder, IMU, and closed-loop motion experiments before committing to competition hardware.
+  * For the ROV, consider a simulated vehicle backend for operator-interface, telemetry, alarms, and supervisory-control development.
+
+===== Related ChartRoom research =====
+
+  * [[sites:chartroom:research:ultrasonic-rov-micromouse-and-control-batch|Ultrasonic, ROV, I/O expansion, and micromouse references]] — includes OpenROV mock-interface development and Micromouse calibration/debugging.
+  * [[sites:chartroom:research:sunfounder-picrawler-software|SunFounder PiCrawler software ecosystem]] — software API, abstraction, and developer-experience investigation.
+  * [[sites:chartroom:research:piwars-cyberexcavator-tracked-base|PiWars 3D-printed tracked Cyberexcavator]] — mechanical design inspiration only.
+  * [[sites:chartroom:research:piwars-vt-72b|PiWars VT-72B idea]] — PiWars design inspiration.
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
