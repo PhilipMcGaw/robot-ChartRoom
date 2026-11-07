@@ -121,6 +121,10 @@ Before editing: inspect relevant source files and conventions; decide whether th
 
 After editing: validate Markdown/front matter; check affected links and media. When DokuWiki access is available, check the rendered destination pages. Summarise changes, validation, and uncertainty.
 
+## Automatic project record-keeping
+
+When the user provides project-relevant information, research links, decisions, corrections, or asks for changes to project knowledge, agents MUST update the appropriate canonical files in this repository as part of the task, rather than treating the chat as the only record. This is a standing user preference: do not ask for confirmation for routine, relevant documentation updates. Preserve source provenance and uncertainty; if a source cannot be accessed, record only the link and the access limitation when retaining it is useful, and do not invent its contents. After validating each change, commit and push it to the configured remote/current branch using the Git workflow below. Do not commit unrelated work, and report any concrete blocker that prevents the update or push.
+
 ## Git workflow
 
 Before editing, inspect the complete working-tree status and relevant diffs. Preserve unrelated changes, and stage only files required for the task.
