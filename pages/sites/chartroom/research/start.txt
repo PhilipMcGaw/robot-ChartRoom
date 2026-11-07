@@ -103,6 +103,7 @@ The links below cover all research notes. Use the related-research links within 
 
 ==== Robotics software and development environments ====
 
+  * [[sites:chartroom:research:small-robot-code-test-platform|Small robot as a code test platform — ROV and PiWars]]
   * [[sites:chartroom:research:sunfounder-picrawler-software|SunFounder PiCrawler software ecosystem]]
 
 ==== Robotics, education, and hardware ====
