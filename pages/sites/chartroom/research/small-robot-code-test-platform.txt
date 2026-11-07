@@ -88,6 +88,7 @@ The article's wheel encoders, tracked drive, and terrestrial IMU use are not dir
 
 ===== Related ChartRoom research =====
 
+  * [[sites:chartroom:research:piwars-footleg-motor2040-pid-mecanum|PiWars 2024 — Motor2040 PID control, mecanum drive, and field-oriented driving]] — follow-on example of per-motor encoder/PID control, four-wheel kinematics, and IMU heading compensation.
   * [[sites:chartroom:research:ultrasonic-rov-micromouse-and-control-batch|Ultrasonic, ROV, I/O expansion, and micromouse references]] — includes OpenROV mock-interface development and Micromouse calibration/debugging.
   * [[sites:chartroom:research:sunfounder-picrawler-software|SunFounder PiCrawler software ecosystem]] — software API, abstraction, and developer-experience investigation.
   * [[sites:chartroom:research:piwars-cyberexcavator-tracked-base|PiWars 3D-printed tracked Cyberexcavator]] — mechanical design inspiration only.
