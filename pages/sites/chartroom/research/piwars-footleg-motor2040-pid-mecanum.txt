@@ -88,6 +88,7 @@ This is consistent with the initial K9 motor-control investigation, which propos
 
   * [[sites:chartroom:projects:k9-motor-control|K9 Motor Control — Initial Design Notes]] — current two-motor differential-drive investigation.
   * [[sites:chartroom:research:small-robot-code-test-platform|Small robot as a code test platform]] — Footleg's earlier work on encoder feedback, IMU integration, hardware abstraction, and mock hardware.
+  * [[sites:chartroom:research:piwars-pidrogen-interchangeable-tracks-mecanum|PiWars 2024 — Interchangeable tracks and mecanum wheels]] — mechanical configuration management and mode-specific drive control.
   * [[sites:chartroom:research:makers-pet-120mm|Maker's Pet 120 mm robot]] — another small-robot development and control reference.
 
 ~~REFNOTES~~
