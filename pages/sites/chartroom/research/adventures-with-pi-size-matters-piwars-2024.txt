@@ -1,0 +1,59 @@
+====== Adventures with a Raspberry Pi: “Size Matters” — PiWars 2024 ======
+{{tag>research piwars piwars2024 chassis tracked-robot rocker-bogie drivetrain}}
+
+~~META:
+description     = PiWars 2024 chassis concept rejected after dimensional-envelope and track-clearance checks.
+type            = research
+status          = reference
+authority       = Chartroom
+source          = https://adventures-with-pi.blogspot.com/2024/01/size-matters.html
+~~
+===== Source =====
+
+  * **Author/site:** Footleg, *Adventures with a Raspberry Pi*
+  * **Article:** [Size Matters](https://adventures-with-pi.blogspot.com/2024/01/size-matters.html)
+  * **Published:** 20 January 2024
+  * **Context:** PiWars 2024 robot design, labelled PiWars and PiWars2024 by the author.
+
+This note records the author's account. The engineering observations below are interpretations of that account, not claims that the proposed chassis was built or validated.
+
+===== What the source documents =====
+
+The author was developing a tracked rocker-bogie robot concept and found that the selected motors and track assemblies could not be arranged within the PiWars maximum robot dimensions.
+
+The options considered included:
+
+  * Mounting motors back-to-back and using a two-stage belt drive, keeping the belts in line with the motor bodies.
+  * Using 45-degree bevel gears to turn the drive through 90 degrees, allowing the motor bodies to lie along the robot's length rather than across its width.
+  * Offsetting the front and rear track assemblies to make them overlap in plan view.
+
+The more fundamental issue was the overall length. Placing two track assemblies one ahead of the other left insufficient clearance for the tracks to pivot independently in the rocker-bogie arrangement without the front tracks fouling the rear tracks. Offsetting the assemblies reduced the available width too much.
+
+The author concluded that the concept would not fit the competition's dimensional envelope and decided to abandon it in favour of a new design.
+
+===== Engineering observations =====
+
+  * **Check the complete envelope early.** Width and length must be assessed together; solving a motor-width problem does not necessarily solve the overall packaging problem.
+  * **Include articulation and swept volume.** A rocker-bogie layout must be checked throughout its permitted movement, not only in a static CAD pose. Track-to-track and track-to-chassis interference are important constraints.
+  * **Treat transmission architecture as a packaging variable.** Belt stages and bevel gears can change motor orientation and location, but add components, alignment requirements, losses, and potential maintenance points.
+  * **Use a stop/go design gate.** If the fundamental geometry cannot satisfy the competition envelope and required articulation, redesigning the concept may be more effective than adding mechanical complexity to preserve it.
+
+These are useful review prompts for PiWars chassis development. They are not a recommendation to use a belt or bevel-gear drive on another robot without a separate load, efficiency, tolerance, and serviceability assessment.
+
+===== Relevance to the project =====
+
+Reference for PiWars chassis packaging, tracked drivetrain layout, and rocker-bogie articulation. It may also inform general ROV mechanical packaging practice where moving assemblies, thrusters, guards, and service access compete for a constrained envelope, but the source itself concerns a land robot and does not demonstrate an underwater application.
+
+No design has been adopted or validated on the project's robots as a result of this reference.
+
+===== Related research =====
+
+  * [[sites:chartroom:research:east-devon-pirates-piwars-2024-chassis|East Devon PiRates — PiWars 2024 chassis development]]
+  * [[sites:chartroom:research:east-devon-pirates-december-show-and-tell|East Devon PiRates — December 2023 show-and-tell]]
+  * [[sites:chartroom:research:small-robot-code-test-platform|Small robot as a code test platform — ROV and PiWars]]
+
+===== Source limitations =====
+
+This is a single first-person design-progress post. It documents concepts considered and the author's reason for rejecting the tracked rocker-bogie arrangement; it does not provide a completed CAD model, measured dimensions, detailed calculations, or physical test results for this abandoned concept.
+
+~~REFNOTES~~
