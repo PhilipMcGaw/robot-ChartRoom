@@ -13,6 +13,16 @@ This page collects references worth revisiting for the K-9 project. Items are re
 
 For the structured comparison of K-9 prop/model evidence against storyline history, see the [[sites:chartroom:research:k9-prop-and-storyline-tracker|K-9 prop and storyline tracker]].
 
+===== K-9 From Doctor Who — Instructables, access pending =====
+
+**Reference:** [[https://www.instructables.com/K-9-from-Doctor-Who/|K-9 From Doctor Who]], by Trip Janzen.
+
+The Instructables page returned its title but no readable article text during review on 2026-11-08. The author's [[https://www.instructables.com/member/trip%2Bjanzen/|Instructables profile]] lists “K-9 From Doctor Who” among their projects. The build method, materials, dimensions, electronics, mobility, and operating state therefore remain unreviewed; do not infer these details from the title or from other K-9 builds.
+
+**Potential relevance:** a lead for another fan-built K-9 replica. If the article becomes accessible, compare its documented construction with the [[sites:chartroom:research:k9-prop-and-storyline-tracker|K-9 prop and storyline tracker]] and distinguish replica details from the Robots project's own [[sites:chartroom:projects:k9-motor-control|K-9 design work]]. Other distinct K-9 build references include the [[sites:chartroom:research:basicmicro-doctor-who-k9-build|BasicMicro customer-build profile]] and [[sites:chartroom:research:abertay-k9-restoration|Abertay restoration project]].
+
+**Status:** Read later / access pending. The project has not been assessed or validated for the Robots project.
+
 ===== Back buttons and displays =====
 
 ==== Rear/back-button screens and display design ====
