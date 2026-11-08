@@ -50,6 +50,10 @@ When reviewing individual photographs, record observations as:
 
 This keeps the collection as engineering research rather than allowing visual inspiration to become an undocumented design decision.
 
+===== Further image discovery =====
+
+The user supplied a [[https://www.flickr.com/search/?text=rov|Flickr search for “rov”]] as a broader image-discovery route. The search page could not be reviewed here, and its results are dynamic. Treat it only as a way to find candidate images: check each image's author, context, and licence on its own page before using or redistributing it. No individual image from this search has been reviewed or retained in Chartroom.
+
 ===== Sources =====
 
   * [[https://www.mtsociety.org/remotely-operated-vehicles|Marine Technology Society — Remotely Operated Vehicles Committee]]
