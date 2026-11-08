@@ -1,0 +1,20 @@
+====== Instructables cardboard spectrometer — access pending ======
+{{tag>research education optics spectrometer instructables source-review}}
+
+~~META:
+description     = User-supplied Instructables reference for a cardboard spectrometer; article contents have not been verified.
+type            = research
+status          = unreviewed
+authority       = Chartroom
+~~
+
+===== Source and access status =====
+
+The supplied [[https://www.instructables.com/Cardboard-Spectrometer-Rainbows-in-Your-Pocket/|Instructables: Cardboard Spectrometer, Rainbows in Your Pocket]] page could not be retrieved by the web reader on 2026-11-08. Search did not confirm the page title or contents. The title in the URL slug suggests a cardboard spectrometer project, but no construction details, measurements, or project claims are recorded until the page can be reviewed. The supplied `linkId` query parameter has been omitted from the saved link.
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

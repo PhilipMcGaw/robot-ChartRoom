@@ -30,6 +30,7 @@ The links below cover all research notes. Use the related-research links within 
 
 ==== Sources awaiting review ====
 
+  * [[sites:chartroom:research:instructables-cardboard-spectrometer-access-pending|Instructables cardboard spectrometer — access pending]]
   * [[sites:chartroom:research:printables-starrydream-collection|Printables collection by StarryDream_715457 — access pending]]
   * [[sites:chartroom:research:instructables-3d-printed-cubic-rov|3D-Printed Cubic ROV — access pending]]
   * [[sites:chartroom:research:mooncrest-models-robot-dog-sensor-eye|Mooncrest Models robot-dog products — partial review; three links pending]]
