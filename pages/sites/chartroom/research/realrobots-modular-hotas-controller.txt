@@ -1,0 +1,40 @@
+====== Real Robots modular joystick and HOTAS controller kits ======
+{{tag>research joystick simulator-controller hotas human-interface-device arduino 3d-printing}}
+
+~~META:
+description     = Reference for Real Robots' modular joystick, throttle, and button-box controller project.
+type            = research
+status          = reference
+authority       = Real Robots Hackster.io project page
+~~
+
+===== Project summary =====
+
+The [[https://www.hackster.io/realrobotshk/diy-joystick-hotas-kits-9ab9ca|Real Robots DIY Joystick/HOTAS kits]] project describes modular controls for flight and other computer games. HOTAS means “hands on throttle and stick”. The planned kit family includes joystick gimbals and sticks, throttles, and button boxes, with options for controls and layouts. The Hackster page labels the project as work in progress.
+
+The author describes each module as using an Arduino Pro Micro. One module connects to the computer over universal serial bus (USB) and can act as a human interface device (HID); other modules connect to it through inter-integrated circuit (I²C) wiring and aircraft-style plugs. A graphical configurator is intended to map buttons, keys, and dials to game controls. The page describes the connection as “super fast”, but gives no measured speed, reliability, or bus-length results.
+
+The project page lists 3D-printed parts and says the design files are available through [[https://www.thingiverse.com/thing:4732811|Thingiverse]]. That link returned HTTP 403 during review, so the files and their individual licence terms were not checked. Hackster labels the project Creative Commons Attribution-NonCommercial (CC BY-NC); confirm the terms for each downloadable file before reuse.
+
+===== Relevance and limits =====
+
+This project is a reference for configurable, modular physical controls that present as a USB game controller. Its replaceable sticks, throttle, and button boxes may be useful when comparing simulator or operator-interface layouts. The page does not establish suitability for vehicle command-and-control, underwater use, or any Robots project integration.
+
+The project was published on 2021-02-01 and remained marked as work in progress on the Hackster page at review. The page reports no validation or current compatibility results. The linked Kickstarter campaign ran from 2021-01-21 to 2021-02-20 and was funded; this records the campaign outcome only and does not confirm fulfilment or present-day kit availability.
+
+===== Sources =====
+
+  * [[https://www.hackster.io/realrobotshk/diy-joystick-hotas-kits-9ab9ca|DIY Joystick/HOTAS kits]], Real Robots, Hackster.io, published 2021-02-01; project description, work-in-progress status, and CC BY-NC label; reviewed 2026-11-08.
+  * [[https://www.thingiverse.com/thing:4732811|Thingiverse design files]], linked by the Hackster project; returned HTTP 403 through the web reader on 2026-11-08, so files and licence details were not reviewed.
+  * [[https://www.kickstarter.com/projects/realrobots/real-robots-game-controller-construction-kits|Real Robots Game Controller Construction Kits]], Kickstarter campaign linked from Hackster; funding period ended 2021-02-20; accessed 2026-11-08.
+
+===== Related research =====
+
+See [[sites:chartroom:research:instructables-3d-printed-four-axis-usb-joystick|Instructables 3D-printed four-axis USB joystick]], [[sites:chartroom:research:kerbalcontroller-hugopeeters|KerbalController by hugopeeters]], and [[sites:chartroom:research:pico-flight-sim-switch-box|Raspberry Pi Pico flight-simulator switch box]].
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
