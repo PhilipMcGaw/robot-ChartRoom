@@ -228,6 +228,7 @@ The links below cover all research notes. Use the related-research links within 
   * [[sites:chartroom:research:4tronix-pi2go-mk2|4tronix Pi2Go Mk2 Raspberry Pi robot]]
   * [[sites:chartroom:research:dyethin-smart-car-raspberry-pi-pico|Dyethin smart-car article using Raspberry Pi Pico]]
   * [[sites:chartroom:research:pololu-robotics-electronics-catalogue|Pololu robotics and electronics catalogue]]
+  * [[sites:chartroom:research:humans-for-robots-3dot-board|Humans for Robots 3DoT board]]
   * [[sites:chartroom:research:piborg-raspberry-pi-robotics|PiBorg Raspberry Pi robotics]]
   * [[sites:chartroom:research:bricolabs-curiosity-btl-rover|Bricolabs Curiosity BTL rover]]
   * [[sites:chartroom:research:jpl-open-source-rover|JPL Open Source Rover]]

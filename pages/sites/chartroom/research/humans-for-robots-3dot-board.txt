@@ -1,0 +1,33 @@
+====== Humans for Robots 3DoT board ======
+{{tag>research robotics microcontroller arduino ground-robot hardware}}
+
+~~META:
+description     = Manufacturer reference for the 3DoT compact Arduino-compatible robot controller board.
+type            = research
+status          = reference
+authority       = Humans for Robots product information and board documentation
+~~
+
+===== Board overview =====
+
+Humans for Robots describes the 3DoT as a compact, Arduino-compatible controller for small robots. The manufacturer's site presents it as an integrated platform with onboard processing, motor-control and servo connections, battery charging, Bluetooth Low Energy (BLE), and expansion through add-on shields. The published board documentation identifies an ATmega32U4 microcontroller and describes the battery, connectors, switch, and motor/servo limits.
+
+The documentation states that the motor outputs supply 0–5 V and are intended for 3–6 V motors with no-load current below approximately 200 mA. It warns that the onboard battery has a 2 A limit for the motor and servo supply. An external supply connection is documented for 4–18 V, with a solder bridge change required to power the motor supply externally. Check the applicable board revision's schematic and instructions before connecting hardware; the available online manual is labelled 3.1 and may not describe every later board revision.
+
+===== Relevance and limits =====
+
+The 3DoT is a useful reference for compact ground robots and teaching projects that benefit from integrated low-power motor control, servo outputs, wireless control, and expansion shields. It is not a substitute for a Raspberry Pi-class companion computer where Linux, ROS 2, or substantial image processing is required.
+
+The sources describe a small robot controller and do not document a pressure-rated enclosure or underwater use. Treat it as a ground-robot electronics reference; do not assume the bare board is suitable for an ROV. The manufacturer's product description and documentation were not independently tested as part of this research.
+
+===== Sources =====
+
+  * [[https://www.humansforrobots.com/3dot-board/|Humans for Robots — 3DoT board]], product page supplied by the user; direct page access failed during review on 2026-11-08.
+  * [[https://docs.humansforrobots.com/en/latest/hardware.html|Humans for Robots — 3DoT board hardware documentation]], online manual labelled release 3.1; accessed 2026-11-08.
+  * [[https://www.humansforrobots.com/|Humans for Robots]], manufacturer overview of the board and its intended educational and small-robot applications; accessed 2026-11-08.
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
