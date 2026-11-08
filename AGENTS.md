@@ -30,6 +30,12 @@ Project architecture, repository authority, and current build/deployment facts a
 - A user-provided attachment may be read at the exact path the user supplied when the task explicitly requires it and sandbox permissions allow it. Do not inspect adjacent paths. Keep project changes inside this repository.
 - These instructions do not grant access beyond the active sandbox or tool permissions.
 
+## TODO workflow
+
+At the start of project work, review `TODO.md` and `memories.md`. Address relevant TODOs where practical. Keep task descriptions concise, update them when scope or dependencies change, and mark work complete only after verification. `TODO.md` is the project’s action index.
+
+`memories.md` is the default place to preserve durable project context so it carries across conversations. As part of substantive work, add or update a concise, dated entry when the user supplies a lasting preference, project decision, source assessment, or outcome that will help future work. Do this by default without asking. Keep the notebook useful rather than transcribing conversations: distinguish user-reported preferences from checked repository facts, source claims, inference, and unresolved points. Do not record secrets or personal details that are not needed for the project. Keep actionable work in `TODO.md`; link to it from a memory entry when useful, and do not duplicate the task list. Correct or remove stale memories when later information supersedes them. If work creates no durable context worth retaining, no memory entry is needed.
+
 ## Unavailable reference projects
 
 The former TermiSoc reference project is not part of the current workspace. Do not recreate or add TermiSoc pages or reference content to Chartroom unless explicitly requested and supported by an available source.
