@@ -206,6 +206,7 @@ The links below cover all research notes. Use the related-research links within 
   * [[sites:chartroom:research:phpoc-arduino-dynamic-web-control|PHPoC Arduino dynamic web control]]
   * [[sites:chartroom:research:servo-diy-rc-controller|SERVO DIY radio-control controller]]
   * [[sites:chartroom:research:pi-zero-drone-ardupilot|Pi Zero drone with ArduPilot]]
+  * [[sites:chartroom:research:raspberry-pi-zero-rzero-ardupilot-rover|Raspberry Pi Zero R-Zero ArduPilot rover]]
   * [[sites:chartroom:research:car-inclinometer-esp32|Car inclinometer using ESP32 (awaiting review)]]
   * [[sites:chartroom:research:kerbal-controller-design-guide|Kerbal Controller design guide]]
   * [[sites:chartroom:research:kerbalcontroller-hugopeeters|KerbalController by hugopeeters]]

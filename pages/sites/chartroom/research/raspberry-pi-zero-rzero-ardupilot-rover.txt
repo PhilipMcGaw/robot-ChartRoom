@@ -1,0 +1,33 @@
+====== Raspberry Pi Zero R-Zero ArduPilot rover ======
+{{tag>research ardupilot ardurover raspberry-pi-zero autopilot rover}}
+
+~~META:
+description     = Historical experimental ArduRover build running directly on a Raspberry Pi Zero with custom sensor and output interfaces.
+type            = research
+status          = reference
+authority       = Mohammad Hefny's project account and linked project code
+~~
+
+===== Project summary =====
+
+In a 2020 project post, Mohammad Hefny describes an experimental “R-ZERO” build running ArduPilot's rover software directly on a Raspberry Pi Zero. This differs from the [[sites:chartroom:research:pi-zero-drone-ardupilot|Pi Zero drone reference]], where a Pi Zero W acts as a companion computer beside a separate Matek flight controller.
+
+Hefny's account describes a custom interface board, RC input through ArduPilot's `RCInput_RPI` driver, GPS over serial, and a GY-80 sensor board connected over I²C. The listed GY-80 sensors are an L3G4200D gyroscope, ADXL345 accelerometer, HMC5883L compass, and BMP085 barometer. For outputs, the post describes an Arduino running an I²C servo/motor driver derived from MultiWii code, or a PCA9685 board. The linked driver repository describes itself as in development and needing code clean-up.
+
+===== Relevance and limits =====
+
+The author reports compiling and running `ardurover` with the `rzero-rover` target. The post says the I²C rover output path was tested on a rover and cautions readers to check the code carefully before connecting motors or propellers. This is a source-reported, historical experiment; Chartroom has not independently reproduced or validated it.
+
+The post concerns ArduRover and a rover. It does not establish ArduSub support, suitability for an underwater vehicle, or present-day compatibility with current ArduPilot releases. Its reported Pi Zero setup also differs from Emlid's Navio2 documentation, which discusses its own Raspberry Pi setup and says Pi Zero lacks the performance to run ArduCopter. These are scoped to different vehicle firmware and hardware arrangements, so they should not be treated as a direct contradiction or a general compatibility ruling.
+
+===== Sources =====
+
+  * Mohammad Hefny, [[https://medium.com/@mohammad.hefny/raspberry-pi-zero-ardupilot-dcdc9aac99cd|Raspberry Pi-Zero ArduPilot]], published 2020-09-16; accessed 2026-11-08.
+  * [[https://github.com/HefnySco/i2c_servo_driver|HefnySco/i2c_servo_driver]], linked I²C output-driver project; its README describes the project as still in development; accessed 2026-11-08.
+  * [[sites:chartroom:research:emlid-navio2-raspberry-pi-autopilot|Emlid Navio2 Raspberry Pi autopilot]], for the separately scoped Navio2 documentation.
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
