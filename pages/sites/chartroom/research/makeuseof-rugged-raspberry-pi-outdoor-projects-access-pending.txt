@@ -1,0 +1,21 @@
+====== MakeUseOf rugged Raspberry Pi outdoor projects — access pending ======
+{{tag>research raspberry-pi outdoor source-review}}
+
+~~META:
+description     = User-supplied MakeUseOf reference about rugged Raspberry Pi projects for outdoor use; contents not verified.
+type            = research
+status          = unreviewed
+authority       = Chartroom
+~~
+
+===== Source and access status =====
+
+The supplied [[https://www.makeuseof.com/tag/rugged-raspberry-pi-projects-outdoors/|MakeUseOf article about rugged Raspberry Pi projects for outdoor use]] returned an HTTP 502 error during review on 2026-11-08. Search did not confirm its contents. This note records the link only; it does not infer project examples, construction details, or recommendations from the URL.
+
+Review the article if access becomes available. Related Chartroom material includes the [[sites:chartroom:research:core-electronics-pico-lorawan-weather-station|Core Electronics Raspberry Pi Pico LoRaWAN weather station]] and [[sites:chartroom:research:pimoroni-outdoor-sensor-stevenson-screen|Pimoroni outdoor sensor cover (Stevenson screen)]].
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
