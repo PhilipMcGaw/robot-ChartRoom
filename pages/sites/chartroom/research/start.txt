@@ -201,6 +201,7 @@ The links below cover all research notes. Use the related-research links within 
   * [[sites:chartroom:research:geigercounter-v08-2969773606|GeigerCounter V0.8 DIY kit]]
   * [[sites:chartroom:research:sensorsiot-cajoe-geiger-counter|SensorsIot CAJOE Geiger counter]]
   * [[sites:chartroom:research:electrodevelo-geiger-counter|Electrodevelo Arduino Geiger counter]]
+  * [[sites:chartroom:research:instructables-esp8266-touchscreen-geiger-counter|Instructables ESP8266 touchscreen Geiger counter]]
   * [[sites:chartroom:research:cyberdeck-control-station|Cyberdeck-style base station / control station]]
 
   * [[sites:chartroom:research:3d-printed-tank-elements|3D-printed tank takes on the elements]]

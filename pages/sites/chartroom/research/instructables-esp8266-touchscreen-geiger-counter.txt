@@ -1,0 +1,35 @@
+====== Instructables ESP8266 touchscreen Geiger counter ======
+{{tag>research education esp8266 arduino geiger-counter radiation-sensing touchscreen }}
+
+~~META:
+description     = Reference for an ESP8266-based DIY Geiger counter with a touchscreen display.
+type            = research
+status          = reference
+authority       = Instructables project by prabhat_
+~~
+
+===== Project summary =====
+
+The Instructable [[https://www.instructables.com/DIY-Geiger-Counter-With-an-ESP8266-and-a-Touchscre/|DIY Geiger Counter With an ESP8266 and a Touchscreen]] describes a handheld counter built around a NodeMCU ESP8266 board, a 2.8-inch serial peripheral interface (SPI) touchscreen, and an SBM-20 Geiger–Müller tube. The described interface displays counts per minute, dose rate, and accumulated dose. The project also includes a buzzer and light-emitting diode (LED), selectable integration periods, and settings for dose units, alert threshold, and a counts-per-minute calibration factor.
+
+The author describes a rechargeable cell and separate boost converters for the electronics and the tube supply. The construction uses a high-voltage circuit. Treat the circuit and battery design as source-specific project details; this note is not a build or safety procedure.
+
+===== Reported testing and limitations =====
+
+The interface offers 60-second and 3-second integration modes. The author reports 15–30 counts per minute for background radiation, about 400 counts per minute near a uranium-ore sample, and more than 5,000 counts per minute near a thoriated mantle. The author also reports a current draw of about 180 mA at 3.7 V and estimates about 11 hours of operation from a 2,000 mAh battery. These are project-reported observations and an estimate, not independent measurements. The author says calibration against a standard caesium-137 source was planned, so the displayed dose readings should not be treated as calibrated or suitable for radiation-protection decisions.
+
+The author also notes that changes to the printed circuit board design and case had not been tested. The Instructable points readers to a later improved version with additional features; its performance and design are outside the scope of this note.
+
+===== Relevance =====
+
+This is a reference for a microcontroller-based instrument with a local graphical interface and event-counting input. It is one of several Geiger-counter references in the research catalogue; see the [[sites:chartroom:research:sensorsiot-cajoe-geiger-counter|SensorsIot CAJOE Geiger counter]] and [[sites:chartroom:research:geigercounter-v08-2969773606|GeigerCounter V0.8 DIY kit]]. It has not been evaluated or tested for Robots project use.
+
+===== Source =====
+
+  * [[https://www.instructables.com/DIY-Geiger-Counter-With-an-ESP8266-and-a-Touchscre/|DIY Geiger Counter With an ESP8266 and a Touchscreen]], by prabhat_, published 2019-08-09; indexed page content reviewed 2026-11-08. Direct page access was unavailable, so details were checked against the search-indexed article text.
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
