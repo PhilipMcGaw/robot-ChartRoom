@@ -1,0 +1,32 @@
+====== Adafruit Simple Raspberry Pi Robot ======
+{{tag>research raspberry-pi robotics differential-drive motor-control python}}
+
+~~META:
+description     = Adafruit beginner guide for a two-wheel Raspberry Pi robot using a motor HAT and a timed Python movement sequence.
+type            = research
+status          = reference
+authority       = Adafruit Learning System guide and linked example code
+~~
+
+===== Guide summary =====
+
+Tony DiCola's Adafruit guide builds a small differential-drive rover using two direct-current motors, a caster, a Raspberry Pi, and an Adafruit motor HAT. Its example Python program issues a fixed sequence of forward, reverse, and turning movements through helper functions. The guide explicitly says the robot has no sensors to detect obstacles or edges, so the sequence is open-loop and requires a clear, supervised test area.
+
+The guide links to the `motorkit_robot.py` and `motorkit_robot_test.py` examples in Adafruit's CircuitPython MotorKit repository. It is useful as a basic reference for separating movement commands from a short scripted demonstration, and for a Pi-based motor-control bench example. It does not demonstrate closed-loop control, sensing, remote operation, or an autonomous robot.
+
+===== Age and limits =====
+
+The guide was published on 2016-01-08 and lists a major update on 2024-04-09. Its hardware section still refers to Raspbian Jessie, so its operating-system setup instructions are historical and should not be followed without checking current Raspberry Pi OS and library documentation. The guide says a Pi Zero or Zero 2 W could potentially be used with a motor bonnet, but the example is not presented as a tested build on those boards. Adafruit's page currently marks several of the original kit components as out of stock or no longer stocked; check current product documentation and availability before using its parts list.
+
+This is a small indoor rover reference. It does not establish suitability for the Robots project's vehicles or for outdoor, marine, or safety-critical operation.
+
+===== Sources =====
+
+  * Tony DiCola, [[https://learn.adafruit.com/simple-raspberry-pi-robot|Simple Raspberry Pi Robot]], Adafruit Learning System; published 2016-01-08, last major update 2024-04-09; accessed 2026-11-08.
+  * [[https://github.com/adafruit/Adafruit_CircuitPython_MotorKit/blob/main/examples/motorkit_robot.py|motorkit_robot.py]] and [[https://github.com/adafruit/Adafruit_CircuitPython_MotorKit/blob/main/examples/motorkit_robot_test.py|motorkit_robot_test.py]], linked example code; accessed 2026-11-08.
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
