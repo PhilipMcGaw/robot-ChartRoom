@@ -1,0 +1,33 @@
+====== Deep Ocean Engineering ROV and USV portfolio ======
+{{tag>research rov usv commercial-rov subsea robotics manufacturer}}
+
+~~META:
+description     = Company and product-portfolio reference for Deep Ocean Engineering, Inc.
+type            = research
+status          = reference
+authority       = Deep Ocean Engineering company website
+~~
+
+===== Company overview =====
+
+Deep Ocean Engineering, Inc. describes itself as a manufacturer of remotely operated vehicles (ROVs) and unmanned surface vehicles (USVs), designing, building, and testing its ROVs in Silicon Valley, California. The company says it has supplied more than 600 ROV systems in over 30 countries for more than 30 years. These are statements from the company website and have not been independently verified.
+
+===== Product portfolio and applications =====
+
+At the time of review, the homepage listed Phantom X, T, and L ROV series; the T5 Defender, S5, FireFly, and P-150 ROVs; and Phantom H-1750 and I-1650 USVs. The site presents the vehicles for applications including scientific research, nuclear inspection, law enforcement, security, municipal water infrastructure, surveying, offshore oil and gas, fisheries, and cinematography.
+
+The site positions its offering as integrated robotic systems for demanding underwater work. The homepage does not provide enough technical detail to compare vehicle ratings, payload interfaces, deployment systems, support terms, or operating limits. Refer to each current product page and its technical documents before making a product-level assessment.
+
+===== Relevance and limits =====
+
+This is a commercial-market reference for the range of underwater and surface-vehicle applications and product classes offered by one manufacturer. Its product names and application descriptions are vendor material, not an independent capability assessment or evidence of suitability for the Robots project.
+
+===== Source =====
+
+  * [[https://www.deepocean.com/|Deep Ocean Engineering, Inc.]], company overview, product listings, and application descriptions; accessed 2026-11-08.
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
