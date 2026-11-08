@@ -1,0 +1,32 @@
+====== Banana/Raspberry Pi and Arduino rover with webcam ======
+{{tag>research rover raspberry-pi banana-pi arduino webcam remote-operation}}
+
+~~META:
+description     = Four-wheel rover reference with web control, a Banana Pi or Raspberry Pi host, Arduino motor control, and a webcam feed.
+type            = research
+status          = reference
+authority       = Instructables project by wintermuteai and its linked GitHub repository; setup details cross-checked against a secondary repost
+~~
+
+===== Project summary =====
+
+The project describes a four-wheel-drive rover controlled through a web interface. Its parts list includes a Banana Pi single-board computer (with Raspberry Pi and Orange Pi alternatives suggested by the author), an Arduino Uno, an L293D motor shield, a USB webcam on a pan-and-tilt mount, and 3D-printed parts. The secondary repost describes a Python web server on the host, serial communication with the Arduino, and webcam streaming embedded in the web page. The creator's [GitHub repository](https://github.com/AIWintermuteAI/pi_rover) contains a Python host file, an Arduino sketch, and web templates; the code itself was not reviewed for this note.
+
+===== Relevance and limits =====
+
+This is a reference for separating a higher-level web and camera interface on a single-board computer from motor control on an Arduino. The Raspberry Pi and Orange Pi alternatives are the creator's claims, not independently verified compatibility results. The tutorial dates from 2018 and describes an older Python and Linux package stack; it is not current installation guidance. No measured radio range, video latency, runtime, environmental protection, or project integration result is established by the available sources.
+
+For another Pi-to-Arduino communication example, see [[sites:chartroom:research:raspberry-pi-arduino-usb-serial|Raspberry Pi to Arduino USB serial link]].
+
+===== Sources =====
+
+  * [Banana/Raspberry Pi + Arduino Rover With Webcam — Instructables](https://www.instructables.com/BananaRaspberry-Pi-Arduino-Rover-With-Webcam/), by wintermuteai; title and nine-step count visible, article body not readable during review on 2026-11-08.
+  * [pi_rover — GitHub](https://github.com/AIWintermuteAI/pi_rover), creator repository and file listing; README describes a four-wheel-drive web-controlled robot; accessed 2026-11-08.
+  * [Banana/Raspberry Pi + Arduino Rover With Webcam — Shrewdies](https://shrewdies.com/blog/wintermuteai/banana-raspberry-pi-arduino-rover-with-webcam), secondary repost containing the setup description and parts list; published 2018-07-09.
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

@@ -118,6 +118,7 @@ The links below cover all research notes. Use the related-research links within 
   * [[sites:chartroom:research:constantrobotics-video-pipeline|ConstantRobotics video pipeline]]
   * [[sites:chartroom:research:gtg-1-glass-to-glass-latency|GTG-1 glass-to-glass latency measurement]]
   * [[sites:chartroom:research:learnrobotics-rpi-video-streaming|Learn Robotics Raspberry Pi video streaming]]
+  * [[sites:chartroom:research:instructables-banana-raspberry-arduino-webcam-rover|Banana/Raspberry Pi and Arduino rover with webcam]]
   * [[sites:chartroom:research:instructables-raspberry-pi-birdbox-camera|Instructables Raspberry Pi birdbox camera]]
   * [[sites:chartroom:research:elinux-rpi-cam-web-interface|eLinux RPi Cam Web Interface]]
   * [[sites:chartroom:research:raspberry-pi-360-imaging|Raspberry Pi 360-degree imaging]]
