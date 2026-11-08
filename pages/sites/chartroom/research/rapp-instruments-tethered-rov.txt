@@ -1,0 +1,42 @@
+====== Rapp Instruments tethered ROV ======
+{{tag>research rov tether arduino rs-485 leak-detection propulsion}}
+
+~~META:
+description     = Rapp Instruments' German-language account of a home-built tethered ROV and its reported field experience.
+type            = research
+status          = reference
+authority       = Rapp Instruments ROV project page
+~~
+
+===== Build summary =====
+
+Rapp Instruments describes a tethered remotely operated vehicle (ROV) with an open frame and two stacked tubes. The lower tube contains a camcorder, battery pack, and motor power electronics. The upper acrylic tube houses an Arduino Mega, interfaces, modified fish-finder electronics, and a metal detector. The vehicle has four thrusters: two vertical units for ascent and descent, and two lateral units for forward and reverse travel. The front carries an external camera, sonar transducer, LED lights, and a metal-detector coil.
+
+The page says the four thrusters were made by modifying bilge pumps, removing the pump housing and fitting propellers to the motor shafts. It reports approximately 1.5 N of thrust at 12 V. This is the builder's figure; the page gives no test method or operating conditions. It also describes an early battery pack of ten nickel-metal hydride (NiMH) cells rated at 2.4 Ah and 12 V, later replaced by a 14 Ah lead-gel battery because of limited operating time.
+
+===== Tether and topside control =====
+
+The builder describes a 100 m Category 5 (Cat5) cable between the ROV and a portable topside station. The four pairs are assigned to video through baluns, RS-485 data to the ROV, RS-485 data from the ROV, and 12 V power switched by a main relay. At the topside station, an Arduino Nano converts joystick and switch inputs into RS-485 commands. A laptop records and displays video and vehicle data.
+
+This is a historical tether example with separate pairs for the two reported RS-485 directions. The page does not specify message framing, addressing, transceiver arrangement, or bus termination. The Robots project architecture instead describes a shared, half-duplex RS-485 multidrop field bus; see [[sites:chartroom:architecture:communications|Communications]].
+
+===== Sensors and reported trials =====
+
+The page lists an MPX5200 pressure sensor for depth, a Pt1000 water-temperature sensor, an HMC5883LH three-axis magnetic-field sensor, an ADXL330 three-axis accelerometer, a modified fish-finder for height above the seabed, an external navigation camera, a very-low-frequency metal detector, and conductivity-based leak detectors in both tubes. A custom topside display shows depth, temperature, battery voltage, leak indications, sonar and metal-detector output, camera functions, and recorded data.
+
+The builder reports five dives deeper than 4 m, with several water ingress events during early use, followed by locating and fixing the leaks. The page also reports difficult laptop-screen visibility in sunlight. These are the builder's observations, not independently verified trial results. The page provides no pressure-test procedure, leak-test record, or measured mission duration. For a commercial leak-sensor comparison, see [[sites:chartroom:research:blue-robotics-sos-leak-sensor|Blue Robotics SOS Leak Sensor]].
+
+===== Relevance and limits =====
+
+This build is a reference for a home-built ROV with separated electronics and battery volumes, a wired topside control station, onboard sensors with topside display and logging, and replaceable propulsion units. It may help compare tether wiring, controller boundaries, payload placement, and leak monitoring. Its component list and reported performance are historical project details, not a current design recommendation or evidence of suitability for another vehicle. The page's publication date is not shown in the reviewed text.
+
+===== Source =====
+
+  * [Unterwasser-Roboter — Rapp Instruments](https://www.rapp-instruments.de/RemoteSensing/Roves/Rove/ROV.htm), German-language project description; technical details above are translated summaries of the page; no publication or revision date visible; accessed 2026-11-08.
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
