@@ -22,14 +22,21 @@ In a 2017 [[https://www.homebuiltrovs.com/rovforum/viewtopic.php?t=1887|Control 
 
 These are the poster's design goals and questions, not measured performance or a validated design. The attached schematics have not been electrically reviewed here. A reply says that 48 V is considered the maximum safe voltage underwater, but gives no supporting source; do not use that forum statement as a safety limit. Any tether-power design needs an independently sourced electrical-safety assessment and calculations for the specific cable, voltage, current, losses, isolation, charging system, and fault conditions.
 
+===== Thread: Easiest way to control ROV over Cat5 =====
+
+In an [[https://www.homebuiltrovs.com/rovforum/viewtopic.php?t=1888|August 2017 thread]], a builder asked about hosting an operator web page on a Raspberry Pi or Arduino, sending browser button commands to an Arduino motor controller, and carrying analogue video over a Category 5 (Cat5) tether. A reply linked to Blue Robotics and ArduSub as a more turnkey route. Another reply suggested using a camera with its own web server or opening separate pages for video and controls, so that video delay would not directly affect the control page. These are suggestions in the discussion; no implementation or latency measurements are reported.
+
+One reply links to [[https://github.com/Moki38/Moki-ROV2|Moki-ROV2]], which is documented separately in [[sites:chartroom:research:moki-rov2-software|Moki-ROV2 software reference]]. The link establishes that the project was shared as an example in this discussion, not that its approach was assessed or recommended by the other participants.
+
 ===== Limitations =====
 
-The forum index summary is based on search-indexed content; the specific thread above was directly reviewed. Other individual discussions have not been reviewed in this note. A previously supplied link to `viewforum.php?f=7` returned a cache miss; its board title and contents could not be confirmed, so no topic is inferred from the numeric identifier.
+The forum index summary is based on search-indexed content; the two specific threads above were directly reviewed. Other individual discussions have not been reviewed in this note. A previously supplied link to `viewforum.php?f=7` returned a cache miss; its board title and contents could not be confirmed, so no topic is inferred from the numeric identifier.
 
 ===== Source =====
 
   * [Homebuilt ROVs Forum index](https://homebuiltrovs.com/rovforum/), forum directory; search-indexed content reviewed 2026-11-07. The user-provided URL included a session identifier, which is omitted from this saved link.
   * [ROV schematic and questions](https://www.homebuiltrovs.com/rovforum/viewtopic.php?t=1887), Homebuilt ROVs Forum, posted 2017-08-22; thread and schematic captions reviewed 2026-11-08. The stated values and design intent are from the original poster, not independently verified.
+  * [Easiest way to control ROV over Cat5 (Arduino or RasPi?)](https://www.homebuiltrovs.com/rovforum/viewtopic.php?t=1888), Homebuilt ROVs Forum, first post 2017-08-26; thread reviewed 2026-11-08. The architecture and performance points are questions and suggestions from forum participants, not test evidence.
   * [Forum board 7](https://www.homebuiltrovs.com/rovforum/viewforum.php?f=7), supplied link; direct page access returned a cache miss on 2026-11-07, and the board title remains unconfirmed.
 
 ===== Related research =====
