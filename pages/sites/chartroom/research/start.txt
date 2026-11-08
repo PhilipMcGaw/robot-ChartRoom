@@ -82,6 +82,7 @@ The links below cover all research notes. Use the related-research links within 
   * [[sites:chartroom:research:rovmaker-edge|RovMaker Edge]]
   * [[sites:chartroom:research:moki-rov2-software|Moki-ROV2 software reference]]
   * [[sites:chartroom:research:rovmaker-stem-kits-and-learning-resources|ROVmaker STEM kits and learning resources]]
+  * [[sites:chartroom:research:inventivity-rov-in-a-box|Inventivity ROV-in-a-Box kit]]
   * [[sites:chartroom:research:seaperch-build-and-testing|SeaPerch build and testing]]
   * [[sites:chartroom:research:uwrov-design-archive|UWROV design archive]]
 

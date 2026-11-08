@@ -1,0 +1,52 @@
+====== Inventivity ROV-in-a-Box kit ======
+{{tag>research, rov, underwater, robotics, kit, education }}
+
+~~META:
+description     = Supplier-published description and specifications for Inventivity's ROV-in-a-Box kit.
+type            = research
+status          = reference
+authority       = Inventivity LLC product information
+~~
+
+===== Scope =====
+
+Inventivity LLC presents the ROV-in-a-Box as a kit for building a tethered remotely operated vehicle (ROV). This note records the supplier's published description and specifications, reviewed on 2026-11-08. Chartroom has not inspected or tested the kit, and the listed specifications are not independently verified.
+
+===== Kit and control arrangement =====
+
+The site describes a kit with a frame, sealed underwater colour camera and light, three motors, tether, operator control box, sealed lead-acid battery, switches, connectors, inline fuse, ballast, and other parts. The control box uses three independent momentary switches for left, right, and lift thrusters. The two horizontal thrusters can be controlled independently; the third provides vertical movement.
+
+The camera sends composite video through an RCA (Radio Corporation of America) connector. A television or composite-video-to-USB adapter can be used to view it; the USB adapter is not included. The site says the vehicle can be used in fresh or salt water. It lists PVC cement, tools, battery charger, and monitor as items not included.
+
+===== Published configurations and specifications =====
+
+The site labels its specifications Version 3.0 and describes two tether configurations:
+
+^ Configuration ^ Supplier-published details ^
+| Standard | 50 ft (approximately 15 m) tether; 12 V; 17 lb (approximately 7.7 kg) unassembled kit; maximum depth listed as 50 ft (approximately 15 m), limited by tether. |
+| Tether upgrade | 100 ft (approximately 30 m) tether; 12 V / 24 V using two 12 V batteries; 24 lb (approximately 11 kg) unassembled kit; maximum depth listed as 100 ft (approximately 30 m), limited by tether. |
+
+Both configurations have stated assembled frame dimensions of 14 × 14 × 9 in (approximately 356 × 356 × 229 mm). The page also says the ROV has been tested to 300 ft (approximately 91 m). It does not provide a test report, test conditions, configuration, or reconciliation of this statement with the shallower tether-limited maximum depths in the specification list. Treat the 300 ft statement as an unverified supplier claim, not an established operating rating.
+
+Other listed details include a 1/4 in charge-coupled device (CCD) camera with National Television System Committee (NTSC) video, 2.8 mm lens, and 700 TV-line resolution; a 100 lumen, 12 V light; and bilge-pump replacement-cartridge motors rated by the supplier at 0.5 lb (2 N) thrust each and an ROV speed of 1.5–2 ft/s (approximately 0.46–0.61 m/s). These are transcribed supplier specifications, not measured performance.
+
+The site describes the kit as customisable and gives examples of modifications for mapping, water sampling, light-intensity studies, retrieval, inspections, and other activities. These examples do not establish that a stock kit supports those tasks or meets any particular performance requirement.
+
+===== Relevance and limits =====
+
+The kit is a reference for a simple tethered ROV using direct switch control, three thrusters, analogue video, and a separate surface control box. Its published details may help compare educational or hobby ROV architectures. They do not establish suitability for the Robots project, compatibility with its electronics or software, pressure capability, or validated performance. The product page showed all options out of stock when reviewed; availability and product details can change.
+
+===== Source =====
+
+  * [[https://www.nventivity.com/|Inventivity LLC, ROV-in-a-Box Project Kit]], including the product description and Version 3.0 specifications; accessed 2026-11-08.
+
+===== Related research =====
+
+See the [[sites:chartroom:research:rovmaker-stem-kits-and-learning-resources|ROVmaker STEM kits and learning resources]], [[sites:chartroom:research:mate-seamate-rov-kits|MATE SeaMATE educational ROV kits]], and [[sites:chartroom:research:seaperch-build-and-testing|SeaPerch build and testing]] notes for other educational and maker ROV references.
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
