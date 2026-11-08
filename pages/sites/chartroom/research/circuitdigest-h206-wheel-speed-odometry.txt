@@ -1,0 +1,38 @@
+====== Circuit Digest H206 wheel-speed and odometry example ======
+{{tag>research robotics encoders odometry arduino h206}}
+
+~~META:
+description     = Critical review of a Circuit Digest Arduino example using H206 optical wheel sensors.
+type            = research
+status          = reference
+authority       = Circuit Digest article and Arduino and ROS 2 documentation
+~~
+
+===== Article summary =====
+
+Circuit Digest's 2019 article uses an H206 slotted infrared (IR) sensor module with an LM393 comparator to count a rotating grid plate on each wheel. The Arduino Nano example counts both signal edges, estimates wheel speed and distance, and displays a heading estimate for a small two-wheel robot. It is an educational example of using wheel pulses and interrupts; the article does not report an accuracy test against measured travel or heading.
+
+===== Code and measurement limitations =====
+
+The published code should not be reused as written:
+
+  * Both interrupt service routines call `delay(10)`. Arduino's documentation says `delay()` does not function inside an interrupt service routine, and recommends keeping these routines short. The example's blocking calls can prevent reliable pulse processing.
+  * The distance calculation uses `left_intr / 40` with integer counters, so partial wheel rotations are discarded before the result is multiplied by wheel circumference. The result is then stored in an integer, further discarding fractional distance.
+  * The heading calculation uses `90 / 80` with integer constants, which evaluates to `1` before multiplication in C++. It therefore does not apply the apparent 1.125-degree-per-count factor. The fixed relationship between wheel counts and robot heading also omits a measured wheel separation. Differential-drive odometry depends on wheel radius and separation; ROS 2's `diff_drive_controller` exposes both as required parameters.
+  * Each H206 is a single-channel sensor in the described setup. Its count alone does not encode direction, while the example only increments the wheel counters. Reverse travel is therefore not represented as signed wheel displacement.
+  * The wheel-pulse estimate assumes the wheel rolls without slip and that the effective wheel radius is known. It does not correct for changing contact, uneven surfaces, wheel mismatch, or sensor alignment.
+
+The article remains useful for discussing slotted optical sensing and pulse counting on a small land robot. It is not a validated odometry implementation and does not apply directly to an underwater vehicle's thruster-based motion. For an encoder-feedback control example with more complete motor-loop separation, see [[sites:chartroom:research:piwars-footleg-motor2040-pid-mecanum|PiWars 2024 Motor2040 PID control and encoder feedback]].
+
+===== Sources =====
+
+  * [Speed, Distance and Angle Measurement for Mobile Robots using Arduino and LM393 Speed Sensor Module (H206) — Circuit Digest](https://circuitdigest.com/microcontroller-projects/speed-distance-and-angle-measurement-for-mobile-robots-using-arduino-and-lm393-h206), article and published source code; published 2019-01-16; accessed 2026-11-08.
+  * [attachInterrupt() — Arduino documentation](https://docs.arduino.cc/language-reference/en/functions/external-interrupts/attachInterrupt), interrupt service routine constraints and `delay()` behaviour; revised 2025-04-24; accessed 2026-11-08.
+  * [diff_drive_controller — ROS 2 Control documentation](https://control.ros.org/kilted/doc/ros2_controllers/diff_drive_controller/doc/userdoc.html), differential-drive odometry and wheel radius/separation parameters; accessed 2026-11-08.
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
