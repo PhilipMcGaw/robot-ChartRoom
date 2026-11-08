@@ -1,0 +1,34 @@
+====== DFRobot miniQ 2WD Robot Chassis ======
+{{tag>research robotics education dfrobot robot-car chassis motor-control}}
+
+~~META:
+description     = Supplier reference for DFRobot's miniQ two-wheel-drive robot chassis, ROB0049.
+type            = research
+status          = reference
+authority       = DFRobot product page
+~~
+
+===== Supplier description =====
+
+DFRobot lists the miniQ 2WD Robot Chassis as product ROB0049, a compact indoor and educational robotics platform. The page describes a circular chassis with mounting holes for controllers, sensors, and enclosures, and says it is compatible with Romeo controllers or a development board paired with a motor driver.
+
+The listed chassis dimensions are 122 mm in diameter, 15 mm ground clearance, and 42 mm wheel diameter. The product specification section gives motor values of 13,000 rpm no-load, 50:1 gear ratio, 260 rpm at 6 V, 40 mA at 6 V, and 360 mA stall current at 6 V. The shipping list separately names two Micro Metal Gear Motors with connectors and a 75:1 ratio. These published details conflict on the motor gear ratio; confirm the supplied motor version and its datasheet before using the speed or current figures for design.
+
+===== Relevance and limitations =====
+
+This is a reference for a small, indoor two-wheel-drive robot platform with room for added sensors and controller hardware. It may be useful for educational demonstrations, rapid prototyping, or mobile sensor experiments. The dimensions, motor data, and compatibility statements are supplier information and have not been independently verified. The product page does not establish sealing, pressure resistance, or suitability for underwater use.
+
+===== Source =====
+
+  * [DFRobot miniQ 2WD Robot Chassis, ROB0049](https://www.dfrobot.com/product-367.html), supplier product description, specifications, and shipping list; reviewed 2026-11-08.
+
+===== Related research =====
+
+For other small educational robot platforms, see [[sites:chartroom:research:keyestudio-smart-little-turtle-v30|Keyestudio Smart Little Turtle Robot Car V3.0]], [[sites:chartroom:research:arduino-robot-tank-velli20|Velli20 Arduino Robot Tank]], and [[sites:chartroom:research:pimoroni-trilobot|Pimoroni Trilobot]].
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

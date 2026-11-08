@@ -157,6 +157,7 @@ The links below cover all research notes. Use the related-research links within 
   * [[sites:chartroom:research:rc-mars-rover-mk-ii-pepa-vladik|RC MARS Rover Mk II by pepa_vladik]]
   * [[sites:chartroom:research:basicmicro-doctor-who-k9-build|BasicMicro Doctor Who K9 build]]
   * [[sites:chartroom:research:pimoroni-trilobot|Pimoroni Trilobot]]
+  * [[sites:chartroom:research:dfrobot-miniq-2wd-chassis|DFRobot miniQ 2WD Robot Chassis]]
   * [[sites:chartroom:research:ukmars-robotics-resources|UKMARS robotics resources]]
   * [[sites:chartroom:research:wifi-controlled-rc-car-robo-hub|ROBO HUB smartphone-controlled Wi-Fi car]]
   * [[sites:chartroom:research:pcbway-arduino-linefolower-robot|Arduino LineFolower Robot (PCBWay)]]
