@@ -8,6 +8,10 @@ status          = reference
 authority       = Chartroom
 ~~
 
+===== Project overview =====
+
+The Cave Pearl Project describes a modular, Arduino-based data-logging platform that grew from a water-flow sensor into a system for environmental monitoring in wetlands, coastal waters, and flooded caves. The project says components, including the Arduino board, can be changed to suit available parts without a significant code rewrite. It states a target benchmark of at least one year of operation on common batteries; this is a project-wide performance goal, not a guarantee for every logger configuration. The project also presents the designs as an educational and citizen-science resource.
+
 ===== Project and battery evidence =====
 
 Hackaday's 2022 article, [[https://hackaday.com/2022/03/14/careful-cuts-lets-logger-last-a-year-on-a-coin-cell/|“Careful Cuts Lets Logger Last A Year On A Coin Cell”]], summarises a low-power logger build. The Cave Pearl Project's [[https://thecavepearlproject.org/2022/03/09/powering-a-promini-logger-for-one-year-on-a-coin-cell/|primary 2022 write-up]] describes the two-part Pro Mini logger and reports specific battery run tests: one configuration with a BH1750 light sensor and 32 kB EEPROM ran for more than 12 months at 30-minute sampling intervals, while a BMP280 configuration completed 11 months. The project author reports that these tests used the same CR2032 cell throughout and no rail-buffer capacitor. These are source-reported results for those configurations, not a general battery-life guarantee.
@@ -22,6 +26,7 @@ This is a reference for low-power data acquisition and for reviewing the full bo
 
 ===== Source =====
 
+  * Cave Pearl Project, [[https://thecavepearlproject.org/|Underwater Arduino Data Loggers — About this Project]], project overview and stated performance benchmark (accessed 2026-11-08).
   * Bryan Cockfield, [[https://hackaday.com/2022/03/14/careful-cuts-lets-logger-last-a-year-on-a-coin-cell/|Hackaday article]], 2022-03-14 (accessed 2026-11-07).
   * Cave Pearl Project, [[https://thecavepearlproject.org/2022/03/09/powering-a-promini-logger-for-one-year-on-a-coin-cell/|2-Part ProMini Logger that runs >1 year on a Coin Cell]], 2022-03-09 (accessed 2026-11-07).
   * Cave Pearl Project, [[https://thecavepearlproject.org/2023/12/01/the-e360-a-classroom-data-logger-for-science/|The e360: A DIY Classroom Data Logger for Science]], 2023-12-01 (accessed 2026-11-07).
