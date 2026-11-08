@@ -1,0 +1,36 @@
+====== PiicoDev BME280 atmospheric sensor ======
+{{tag>research piicodev bme280 environmental-sensing weather}}
+
+~~META:
+description     = Core Electronics PiicoDev breakout reference for the Bosch BME280 temperature, humidity, and atmospheric pressure sensor.
+type            = research
+status          = reference
+authority       = Core Electronics product listing and Bosch Sensortec BME280 data sheet
+~~
+
+===== Product reference =====
+
+Core Electronics sells this PiicoDev breakout as CE07503. It uses Bosch Sensortec's BME280 sensor to measure temperature, relative humidity, and barometric pressure. The board is 25.4 × 25.4 mm, has two M2.5 mounting holes, and is supplied without a PiicoDev cable.
+
+The product listing describes a PiicoDev connector compatible with Qwiic and STEMMA QT at 3.3 V, plus a 2.54 mm breakout for prototyping. It lists an Inter-Integrated Circuit (I²C) interface with 5 V-tolerant breakout pins and pull-up resistors to 3.3 V, and a Serial Peripheral Interface (SPI) at 3.3 V. Check the board revision and host voltage before wiring; the listing's interface details apply to this breakout, while Bosch's data sheet specifies the bare sensor's electrical limits.
+
+===== Measurement limits and relevance =====
+
+Core Electronics lists a measurement range of −40 to +85 °C, 0 to 100 % relative humidity, and 300 to 1,100 hPa. It lists temperature accuracy of ±0.5 °C from 0 to 60 °C. Bosch's BME280 data sheet gives humidity accuracy of ±3 % relative humidity under its stated conditions and notes that humidity performance is specified for a non-condensing environment.
+
+The BME280 is an atmospheric barometric sensor, not a submerged depth sensor. Its specified atmospheric pressure range and the breakout's lack of a pressure-rated enclosure do not support its use as a water-pressure transducer. For depth measurement, use a suitable pressure sensor and pressure-rated assembly.
+
+Bosch notes that the temperature reading depends on the sensor's printed circuit board temperature and self-heating, and is typically above ambient temperature. For ambient measurements, place the sensor away from heat-generating components and allow air to circulate.
+
+This breakout is a component reference for the [[sites:chartroom:research:core-electronics-pico-lorawan-weather-station|Core Electronics Pico LoRaWAN weather station]], whose expanded example uses a BME280. It may also be paired with a ventilated outdoor cover such as the [[sites:chartroom:research:pimoroni-outdoor-sensor-stevenson-screen|Pimoroni outdoor sensor cover]], subject to fit and environmental verification.
+
+===== Sources =====
+
+  * [PiicoDev Atmospheric Sensor BME280, Core Electronics, product CE07503](https://core-electronics.com.au/piicodev-atmospheric-sensor-bme280.html); accessed 2026-11-08. Includes board features, dimensions, listed ranges, and links to hardware resources.
+  * [BME280 data sheet, Bosch Sensortec, document BST-BME280-DS001-23, revision 1.23, January 2022](https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bme280-ds002.pdf).
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

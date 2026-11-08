@@ -20,7 +20,7 @@ The described data path depends on a LoRaWAN gateway with coverage and the TTN s
 
 ===== Relevance and cautions =====
 
-This is a practical reference for a small environmental sensor node and for learning the end-to-end LoRaWAN and cloud ingestion workflow. Compare it with the [[sites:chartroom:research:solar-powered-wifi-weather-station-v40|Solar Powered WiFi Weather Station V4.0]], which describes a separate ESP32-based sender and receiver arrangement. For an example ventilated outdoor sensor cover, see [[sites:chartroom:research:pimoroni-outdoor-sensor-stevenson-screen|Pimoroni outdoor sensor cover (Stevenson screen)]].
+This is a practical reference for a small environmental sensor node and for learning the end-to-end LoRaWAN and cloud ingestion workflow. The tutorial's BME280 board is described in [[sites:chartroom:research:piicodev-bme280-atmospheric-sensor|PiicoDev BME280 atmospheric sensor]]. Compare the station with the [[sites:chartroom:research:solar-powered-wifi-weather-station-v40|Solar Powered WiFi Weather Station V4.0]], which describes a separate ESP32-based sender and receiver arrangement. For an example ventilated outdoor sensor cover, see [[sites:chartroom:research:pimoroni-outdoor-sensor-stevenson-screen|Pimoroni outdoor sensor cover (Stevenson screen)]].
 
 Check the exact hardware revision and wiring before reuse. The tutorial notes that one image shows the wrong LoRa-E5 serial pins and says to use TX and RX, and it gives different supply wiring for USB/5 V and 3.3 V battery operation. Its example also uses device credentials; keep real credentials private and do not copy example keys into public code or documentation.
 
