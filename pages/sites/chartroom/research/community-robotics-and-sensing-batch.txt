@@ -102,6 +102,14 @@ The issue tracker is also useful evidence of the practical engineering issues th
 
 **Relevance:** particularly strong reference for a structured SwarmBot/robotics training path. The examples progression maps well to a Test in a Box curriculum: electrical fundamentals → actuator control → sensing → encoders → motion measurement → higher-level behaviour.
 
+==== Micro:bit mini-sumo robot ====
+
+In a [[https://hackaday.com/2021/08/21/pint-sized-sumo-robot-is-adorable-accessible-and-totally-awesome/|2021 Hackaday article]], Chris Wilkinson introduces Hans Jørgen Grimstad's [[https://www.timeexpander.com/posts/tiny-robots/|Micro:bit mini-sumo build]] and its [[https://github.com/hansj66/micro-bot|public hardware and firmware repository]]. The builder describes it as a low-cost, makerspace-buildable competition robot based on a BBC micro:bit edge connector. The repository lists three time-of-flight distance sensors, four reflective line sensors, twin N20 motors, and an input/output expander. The example firmware exposes motor and sensor abstractions for defining behaviour with state machines.
+
+**Relevance:** a compact example of combining a beginner microcontroller platform with a focused competition task, multiple sensor types, and simple behaviour logic. It may inform staged SwarmBot exercises around sensing, motor control, and state machines.
+
+The builder notes that the design uses a linear 3.3 V regulator to keep the circuit simple and that it can run hot. Treat this as a reported design trade-off, not as an independently tested thermal assessment. The builder's blog says the firmware and hardware are published under Apache 2.0 and CERN Open Hardware Licence 1.2 respectively; check the repository's licence files before reusing either.
+
 ===== Small autonomous and networked robots =====
 
 ==== Raspberry Pi remote-controlled car ====
