@@ -1,0 +1,41 @@
+====== Weather Station One central station ======
+{{tag>research weather-station esp32 environmental-sensing solar-powered wireless}}
+
+~~META:
+description     = Central sensor node and enclosure from Harry's modular Weather Station One project.
+type            = research
+status          = reference
+authority       = WeatherStationOne GitHub repository; Printables model listing for enclosure details
+~~
+
+===== Project overview =====
+
+Weather Station One is a modular weather-station project documented in the author's [[https://github.com/HarrysLapTimer/WeatherStationOne|GitHub repository]]. Its README describes two ESP32-based units: a remote `weatherstation` node that gathers sensor data and a `weatherbase` node that receives it. The remote node combines an ESP32, solar charger, and HC-12 radio module; the base node combines another ESP32 and HC-12 with a power supply. The base node serves a local web interface and is intended to connect the data to home automation.
+
+The project is intended to collect temperature, humidity, barometric pressure, rainfall, wind speed and direction, illumination, and soil moisture. The README's TODO list still identifies illumination and ground-humidity support as work to add. Treat the broader list as project scope, not proof that each channel is implemented or validated.
+
+===== Part 1: central station enclosure =====
+
+The supplied Printables model is Part 1, the Central Station. Search-indexed text reproduced by a third-party listing describes the enclosure as housing the ESP32, HC-12, solar charger, battery, and connectors for the sensors. It describes a three-part housing intended for assembly access and says that the enclosure is not waterproof; it is intended to sit inside a Stevenson screen. These enclosure details are from a mirror of the Printables listing because the original page returned a fetch error during review on 2026-11-08. The model files were not inspected.
+
+The mirrored listing's parts information names a Waveshare Solar Power Manager, a rechargeable battery compatible with that module, and a solar panel rated 6–24 V and at least 3 W. It also lists an ESP32 development board, HC-12 module, and several connector and circuit-board components. Confirm the exact component models, connector pinout, battery chemistry, charging limits, and solar-panel compatibility from the original project files before building; the summary here is not a wiring or power design.
+
+===== Relevance and limits =====
+
+This project is a useful reference for separating remote sensing from a locally networked base station, and for combining solar power, sub-GHz radio, and a weatherproof sensor shelter. The central station itself is described as non-waterproof, so the model should not be treated as an outdoor sealed enclosure. The repository documents Arduino IDE sketches and project libraries; their current compatibility with newer Arduino IDE and ESP32 board-package versions has not been assessed here.
+
+The repository README and 3D model listing describe a maker project. They do not establish accuracy, service life, radio range in a particular environment, solar-energy balance, or suitability for the Robots project. The Printables listing's licence was shown by a third-party mirror as Creative Commons Attribution; verify the licence on the original model page before reusing or redistributing files.
+
+===== Sources =====
+
+  * [[https://github.com/HarrysLapTimer/WeatherStationOne|HarrysLapTimer, WeatherStationOne repository]], primary source for the two-node architecture, software setup, ESP32/HC-12 electronics, intended sensor coverage, and TODO items; accessed 2026-11-08.
+  * [[https://www.printables.com/model/61709-weather-station-one-part-1-the-central-station|Printables: “Weather Station One Part 1 - the Central Station”]], supplied link; direct retrieval returned a fetch error on 2026-11-08. Enclosure and parts details were read from a third-party mirrored listing, not from the original model page or downloadable files.
+  * [[https://polyzon.org/model/printables/pr-61709|Polyzon mirrored listing for Weather Station One Part 1]], secondary transcription of the Printables description, parts, and licence metadata; accessed 2026-11-08.
+
+For related weather-station designs, see [[sites:chartroom:research:core-electronics-pico-lorawan-weather-station|Core Electronics Raspberry Pi Pico LoRaWAN weather station]] and [[sites:chartroom:research:solar-powered-wifi-weather-station-v40|Solar Powered WiFi Weather Station V4.0]].
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

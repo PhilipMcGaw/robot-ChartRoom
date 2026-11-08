@@ -138,6 +138,7 @@ The links below cover all research notes. Use the related-research links within 
   * [[sites:chartroom:research:arduino-community-weather-station-instructables|Arduino community weather station (Instructables)]]
 
   * [[sites:chartroom:research:arduino-3d-printed-personal-weather-station|Arduino 3D-printed personal weather station]]
+  * [[sites:chartroom:research:printables-weather-station-one-central-station|Weather Station One central station]]
   * [[sites:chartroom:research:fieldkit-environmental-sensing-platform|FieldKit environmental sensing platform]]
   * [[sites:chartroom:research:photonpower-zero-solar-pi-zero|PhotonPower Zero solar Raspberry Pi Zero power board]]
   * [[sites:chartroom:research:solar-powered-wifi-weather-station-v40|Solar Powered WiFi Weather Station V4.0]]
