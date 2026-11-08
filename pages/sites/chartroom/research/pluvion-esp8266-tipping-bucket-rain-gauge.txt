@@ -1,0 +1,32 @@
+====== Pluvi.On ESP8266 tipping-bucket rain gauge ======
+{{tag>research rain-gauge rainfall environmental-sensing esp8266 iot}}
+
+~~META:
+description     = Secondary report on Pluvi.On, a low-cost ESP8266 rain gauge using a seesaw-style tipping bucket and an acrylic enclosure.
+type            = research
+status          = reference
+authority       = Hackster Staff project report; underlying Instructables build guide was not retrievable
+~~
+
+===== Reported design =====
+
+Hackster Staff's 2017 report describes Pluvi.On as a rainfall-monitoring project developed during a Red Bull Basement residency in São Paulo, Brazil. It reports a split, seesaw-style bucket that tips to empty one side when it fills, then repeats with the other side. A NodeMCU based on the ESP8266 detects the bucket movement and reports rain intensity. The article describes a laser-cut acrylic enclosure and says data can be viewed through the project's application programming interface (API) or ThingSpeak.
+
+The report presents localised flood detection as an intended application. It does not establish that the system was deployed as a flood-warning service or validated for that purpose.
+
+===== Evidence and limits =====
+
+The report links to an Instructables build guide in Portuguese, but that page was not retrievable during review. The available report does not identify the exact bucket sensor, volume per tip, calibration method, measurement accuracy, weatherproofing performance, or long-term test results. Do not treat the reported “rain intensity” output as calibrated rainfall rate without reviewing the build details and its calibration evidence.
+
+This is a useful reference for a low-cost tipping-bucket sensor node with network access to rainfall data. It is a secondary project summary, not a complete build or a validated measurement system. The build has not been tested for the Robots project's use.
+
+===== Sources =====
+
+  * Hackster Staff, [[https://medium.com/@Hackster.io/pluvi-on-tracks-rain-intensity-with-the-esp8266-53859a21bfe9|Pluvi.On Tracks Rain Intensity with the ESP8266]], Hackster article mirrored on Medium, published 2017-08-03; accessed 2026-11-08.
+  * [[https://www.instructables.com/id/PluviOn-Pluvi%C3%B4metro-De-Baixo-Custo/|Pluvi.On – Pluviômetro de Baixo Custo]], linked Instructables build guide in Portuguese; not retrievable during review, 2026-11-08.
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
