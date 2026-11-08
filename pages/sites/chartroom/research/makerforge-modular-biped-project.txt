@@ -1,0 +1,33 @@
+====== MakerForge modular biped robot project ======
+{{tag>research robotics biped raspberry-pi arduino open-source}}
+
+~~META:
+description     = MakerForge's modular open-source biped robot project, with Buddy, Archie, and Cody build lines.
+type            = research
+status          = reference
+authority       = MakerForge project pages and modular-biped GitHub repository and wiki
+~~
+
+===== Project overview =====
+
+MakerForge's site describes a modular biped robot project with Raspberry Pi and Arduino-based builds, custom printed circuit boards, 3D-printed parts, servos, sensors, and camera/audio features. The public project repository provides code and a project wiki with build information and a bill of materials.
+
+The site presents three generations: Archie as the original legacy build, Buddy as the current stable build, and Cody as a preview using a custom Raspberry Pi Compute Module 5 carrier board. These are the project's own release descriptions, not Chartroom assessments of reliability.
+
+===== Status and evidence =====
+
+The project's GitHub wiki, edited 2026-02-26, describes Buddy as the current release but states that it can perform movements and poses and is not yet capable of walking. This gives a more specific capability boundary than the site's general description of Buddy as stable. Walking should therefore be treated as unimplemented in the cited wiki snapshot; check the current repository before relying on later progress.
+
+The project may be useful as an educational reference for modular companion-robot construction, Raspberry Pi/Arduino division of work, servo control, and custom printed circuit boards. It is a separate biped platform and does not establish compatibility with, or adoption in, the Robots project's vehicle architecture.
+
+===== Sources =====
+
+  * [MakerForge](https://www.makerforge.tech/), project index; accessed 2026-11-08.
+  * [Buddy: Modular Biped Robot Project](https://www.makerforge.tech/modular-biped/); accessed 2026-11-08.
+  * [Modular Biped Robot repository](https://github.com/makerforgetech/modular-biped), including its [project wiki](https://github.com/makerforgetech/modular-biped/wiki); wiki edited 2026-02-26; accessed 2026-11-08.
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

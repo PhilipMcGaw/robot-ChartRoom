@@ -198,6 +198,7 @@ The links below cover all research notes. Use the related-research links within 
 
 ==== Robotics, education, and hardware ====
 
+  * [[sites:chartroom:research:makerforge-modular-biped-project|MakerForge modular biped robot project]]
   * [[sites:chartroom:research:open-robotic-platform|Open Robotic Platform (ORP)]]
   * [[sites:chartroom:research:uea-envsoft-otto-mecanum|UEA-envsoft Otto-Mecanum robot]]
   * [[sites:chartroom:research:sunfounder-picar-x-notenoughtech|SunFounder PiCar-X review by NotEnoughTech]]
