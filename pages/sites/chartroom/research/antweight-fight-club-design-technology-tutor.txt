@@ -1,0 +1,38 @@
+====== Antweight Fight Club workshop ======
+{{tag>research robotics education antweight combat-robot design technology}}
+
+~~META:
+description     = Design Technology Tutor classroom reference for concept design, cardboard testing, and a 3D-printed antweight robot.
+type            = research
+status          = reference
+authority       = Design Technology Tutor project page and Antweight World Series rules
+~~
+
+===== Workshop and design process =====
+
+The Design Technology Tutor page describes an ongoing school antweight-combat-robot project. It shows concept design, cardboard concept testing, chassis making, and a 3D-printed chassis, alongside an early arena and plans to redesign it with higher polycarbonate sides, an automatic pit release, and lighting. The page links to a Make: cardboard concepting activity.
+
+The page gives an example component list: 5 mm dense foamboard, 0.3 mm aluminium, and 2 mm polycarbonate are listed under armour; two 25 mm 3D-printed wheels; two 50:1 micro metal gearmotors rated at 420 rpm; a NanoTwo V3 dual electronic speed controller (ESC); a 180 mAh two-cell lithium-polymer battery; a FingerTech mini power switch; and an MG90S metal-gear micro servo listed as the weapon motor. The weapon itself is marked “Unknown”, so its mechanism is not documented by this list. The source's component names and specifications have not been independently checked.
+
+===== Rules and safety context =====
+
+The article says an antweight must weigh less than 150 g and fit inside a 100 mm cube. The currently linked [Antweight World Series Rules, version 4.3](https://www.robotwars101.org/ants/rules.htm) list a 150 g limit for roller antweights and a 101.6 mm cube size. The article's size is an approximation, and its “less than 150 g” wording differs from the rules' 150 g limit. Check the rules and event organiser's requirements for the specific competition.
+
+The current rules also require an externally accessible shutdown method, a transmitter failsafe that stops motion, a remote means to deactivate weapons, and a fully enclosed safety cover around the arena. These are competition rules, not evidence that the classroom project or the sample design has been checked against them.
+
+===== Relevance and limitations =====
+
+This is a useful educational reference for short design-build-test cycles, low-cost concept testing before fabrication, and integrating mechanical design with drive and weapon-control components. It does not provide a complete build specification, verified bill of materials, weapon design, measured performance, or evidence that the illustrated robot was built and competed in the listed configuration. Treat the component list as a starting example, not a validated design or current purchasing guide.
+
+===== Sources =====
+
+  * [Antweight Fight Club! — Design Technology Tutor](https://design-technology-tutor.com/antweight-combat-robots/), workshop description, concept design, cardboard testing, and example component list; reviewed 2026-11-08. Publication date not shown on the page reviewed.
+  * [Make: Combat Robot Concepting in Cardboard](https://makezine.com/projects/combat-concepting-cardboard/), concept-testing activity linked from the workshop page; not independently reviewed for this note.
+  * [Antweight World Series Rules, version 4.3](https://www.robotwars101.org/ants/rules.htm), current limits and safety rules; reviewed 2026-11-08. Event organisers retain final authority under these rules.
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
