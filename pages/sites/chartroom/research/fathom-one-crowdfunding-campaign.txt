@@ -1,0 +1,46 @@
+====== Fathom One crowdfunding campaign ======
+{{tag>research rov underwater crowdfunded product-history modularity}}
+
+~~META:
+description     = Historical reference for the Fathom One consumer ROV campaign, proposed architecture, and reported manufacturing outcome.
+type            = research
+status          = reference
+authority       = Chartroom
+~~
+
+===== Overview =====
+
+The Fathom One was presented in 2016 as an affordable, modular high-definition remotely operated vehicle (ROV) for underwater exploration. Its Kickstarter campaign ran from 2016-08-30 to 2016-09-29 and recorded US$197,943 pledged by 656 backers against a US$150,000 goal. These figures describe campaign pledges, not units delivered or a measure of product performance.
+
+===== Proposed system =====
+
+The campaign's frequently asked questions (FAQ) described a consumer vehicle with a high-definition camera, depth and heading sensors, a custom control board, an onboard lithium-polymer battery, LED lights, and motors. The creator described a reinforced clamshell hull and modular thrusters. The campaign FAQ also said the vehicle used a wired tether because wireless control and video transmission through water were not available at the intended depths. These are product and design claims from the campaign, not independently verified specifications.
+
+The concept is useful as a historical example of packaging a compact vehicle, onboard energy, sensing, lighting, and camera within a consumer-facing system. It also highlights the boundary between the underwater tethered vehicle and a topside connection, although the campaign material reviewed here does not fully document that communications architecture.
+
+===== Manufacturing and project outcome =====
+
+In its final update on 2019-04-16, the Fathom team said it had run out of money and was closing the company. The update reported that hundreds of units had shipped in the United States during 2018, but units sold during the 2018 holiday season were returned with faulty components, contributing to the company's financial failure. The statement also said there would be no refunds because funds were exhausted. This is the creator's account of the outcome; no independent audit or return data was reviewed.
+
+This history is a reminder to distinguish a successfully funded campaign from a sustainable product and support operation. It does not establish that a crowdfunded development route is unsuitable, nor does it provide enough detail to identify or generalise the causes of every manufacturing fault.
+
+===== Limitations =====
+
+The Kickstarter page and FAQ record campaign-era statements. Performance claims, robustness language, and proposed features are not independent test results. The final update documents the company's closure and its account of manufacturing and returns, but does not provide a complete product reliability dataset. Do not treat Fathom One as a currently supported product or use its campaign claims as engineering requirements.
+
+===== Sources =====
+
+  * [[https://www.kickstarter.com/projects/1359605477/fathom-one-the-affordable-modular-hd-underwater-dr|Kickstarter — Fathom One campaign]], campaign dates and pledge totals; campaign page reviewed 2026-11-08.
+  * [[https://www.kickstarter.com/projects/1359605477/fathom-one-the-affordable-modular-hd-underwater-dr/faqs|Kickstarter — Fathom One FAQ]], campaign creator's design and tether descriptions; FAQ entries last updated 2016-08-30, reviewed 2026-11-08.
+  * [[https://fathom-one-the-affordable-modular-hd-underwater-dr.backerkit.com/hosted_preorders/project_updates|Fathom One project updates on BackerKit]], creator's final update dated 2019-04-16 and manufacturing updates; reviewed 2026-11-08.
+
+===== Related research =====
+
+For current BlueROV2 software and vehicle boundaries, see [[sites:chartroom:research:blue-robotics-software-setup|Blue Robotics BlueROV2 software setup]]. For other maker-built vehicles, see [[sites:chartroom:research:blue-dot-model-c-rov|Blue Dot Model C ROV]], [[sites:chartroom:research:cps-5|CPS 5]], and [[sites:chartroom:research:homebuilt-rovs-forum|Homebuilt ROVs Forum]].
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
