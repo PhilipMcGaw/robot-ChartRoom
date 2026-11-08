@@ -62,7 +62,7 @@ For other build and architecture examples, see [[sites:chartroom:research:borgcu
 
 ===== Sources =====
 
-  * [[https://www.instructables.com/Overview-of-the-CPS-5-Underwater-Drone/|Instructables — Overview of the CPS 5 Underwater Drone]]
+  * [[https://www.instructables.com/Overview-of-the-CPS-5-Underwater-Drone/|Instructables — Overview of the CPS 5 Underwater Drone]], CPSdrone's project overview; the title was visible, but the article body was not readable during review on 2026-11-08. No technical claims in this note are based on the inaccessible article body.
   * [[https://hackaday.com/2022/11/02/3d-printed-rov-is-the-result-of-many-lessons-learned/|Hackaday — 3D Printed ROV Is The Result Of Many Lessons Learned]], 2022-11-02; secondary report and creator comment accessed 2026-11-07.
   * [[https://www.cpsdrone.com/cps-5-course/|CPSdrone — CPS 5 Course]], current supplier specifications and course description; accessed 2026-11-07.
   * [[https://www.cpsdrone.com/articles-cpsdrone/underwater-drone-building-course-cps-5-course/|CPSdrone — Underwater drone building course]]
