@@ -32,13 +32,14 @@ One reply links to [[https://github.com/Moki38/Moki-ROV2|Moki-ROV2]], which is d
 
 ===== Limitations =====
 
-The forum index and board descriptions are based partly on search-indexed content; the two specific threads above were directly reviewed. Other individual discussions have not been reviewed in this note. The supplied `f=15&start=25` page returned a cache miss, so its individual topics could not be confirmed. A previous `f=7` link also returned a cache miss, but search-indexed forum content identifies `f=7` as **Board Messages**. The board result lists 13 topics while the forum index lists 14; this count discrepancy is unresolved.
+The forum index and board descriptions are based partly on search-indexed content; the two specific threads above were directly reviewed. Other individual discussions have not been reviewed in this note. The supplied `f=15&start=25` page and thread 1825 returned cache misses, so their page-specific topic details could not be confirmed. Search did not identify thread 1825's title or subject. A previous `f=7` link also returned a cache miss, but search-indexed forum content identifies `f=7` as **Board Messages**. The board result lists 13 topics while the forum index lists 14; this count discrepancy is unresolved.
 
 ===== Source =====
 
   * [Homebuilt ROVs Forum index](https://homebuiltrovs.com/rovforum/), forum directory; search-indexed content reviewed 2026-11-07. The user-provided URL included a session identifier, which is omitted from this saved link.
   * [ROV schematic and questions](https://www.homebuiltrovs.com/rovforum/viewtopic.php?t=1887), Homebuilt ROVs Forum, posted 2017-08-22; thread and schematic captions reviewed 2026-11-08. The stated values and design intent are from the original poster, not independently verified.
   * [Easiest way to control ROV over Cat5 (Arduino or RasPi?)](https://www.homebuiltrovs.com/rovforum/viewtopic.php?t=1888), Homebuilt ROVs Forum, first post 2017-08-26; thread reviewed 2026-11-08. The architecture and performance points are questions and suggestions from forum participants, not test evidence.
+  * [Forum thread 1825](https://www.homebuiltrovs.com/rovforum/viewtopic.php?t=1825), user-provided link; direct fetch returned a cache miss on 2026-11-08, and search did not identify the title or subject. Thread content has not been reviewed.
   * [Control Systems and Tethers board](https://www.homebuiltrovs.com/rovforum/viewforum.php?f=15), forum category; search-indexed board description and topic count reviewed 2026-11-08. The supplied [paginated board URL](https://www.homebuiltrovs.com/rovforum/viewforum.php?f=15&start=25) returned a cache miss, so its page-specific topic list was not reviewed.
   * [Board Messages](https://www.homebuiltrovs.com/rovforum/viewforum.php?f=7), forum category; identified from search-indexed forum content reviewed 2026-11-08. The indexed board result lists 13 topics, while the forum index lists 14.
 
