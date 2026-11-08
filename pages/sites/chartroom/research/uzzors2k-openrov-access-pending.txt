@@ -1,0 +1,22 @@
+====== Uzzors2k OpenROV page — access pending ======
+{{tag>research rov openrov source-review}}
+
+~~META:
+description     = User-supplied Uzzors2k OpenROV reference; page contents have not been verified.
+type            = research
+status          = unreviewed
+authority       = Chartroom
+~~
+
+===== Source and access status =====
+
+The supplied [[http://uzzors2k.com/index.php?page=openrov|Uzzors2k OpenROV page]] could not be retrieved by the web reader on 2026-11-08; the request timed out. Search did not confirm the page contents. No build details, measurements, or claims about this page are recorded until it can be reviewed.
+
+Chartroom already records separate historical OpenROV software and hardware references in [[sites:chartroom:research:rovmaker-edge|RovMaker Edge research notes]]. Those sources do not establish what is on this Uzzors2k page.
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
