@@ -1,0 +1,36 @@
+====== Lrusso Arduino Simulator ======
+{{tag>research arduino simulator education software-in-loop}}
+
+~~META:
+description     = Reference for a browser-based JavaScript Arduino simulator with pin and serial-monitor demos.
+type            = research
+status          = reference
+authority       = Project website and GitHub repository README
+~~
+
+===== Project description =====
+
+The project describes itself as an Arduino simulator written in JavaScript. Its README links to a browser application, a demo using digital and analogue pins, a demo using the serial monitor, and an EEPROM demo marked as work in progress. The README also describes how to set a default sketch in an HTML file.
+
+The hosted application requires JavaScript in the browser. The GitHub repository identifies its licence as GNU General Public License version 3 (GPL-3.0).
+
+===== Relevance and limits =====
+
+This may be useful for introductory sketch experiments involving the interfaces shown by the project, such as pin states and serial input/output. The README does not establish a complete model of Arduino hardware, external circuit simulation, timing accuracy, or equivalence with a physical board. Treat it as a learning aid, not as hardware-in-the-loop evidence or a validated software-in-the-loop model. Check the current source and licence before adapting the code.
+
+===== Sources =====
+
+  * [Arduino Simulator hosted application](https://lrusso.github.io/ArduinoSimulator/), browser application; accessed 2026-11-08. The page requires JavaScript and did not expose its interface to the text-based page reader.
+  * [lrusso/ArduinoSimulator README](https://github.com/lrusso/ArduinoSimulator/blob/master/README.md), project description and feature demos; accessed 2026-11-08.
+  * [lrusso/ArduinoSimulator repository](https://github.com/lrusso/ArduinoSimulator), repository description and GPL-3.0 licence indicator; accessed 2026-11-08.
+
+===== Related research =====
+
+For software-testing approaches that separate robot logic from hardware access, see [[sites:chartroom:research:small-robot-code-test-platform|Small robot as a code test platform — ROV and PiWars]]. For a microcontroller switch-box example, see [[sites:chartroom:research:pico-flight-sim-switch-box|Raspberry Pi Pico flight-simulator switch box]].
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
