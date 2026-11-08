@@ -1,0 +1,75 @@
+====== TechMonkeyBusiness open-source ROV and robotics references ======
+{{tag>research rov arduino serial communications thrusters pressure-housing educational-robotics}}
+
+~~META:
+description     = Historical open-source ROV design and Arduino control references, plus related component and educational robotics tutorials.
+type            = research
+status          = reference
+authority       = Hamish Trolove's TechMonkeyBusiness articles and linked project material
+~~
+
+===== ROV project overview =====
+
+Hamish Trolove's [[https://www.techmonkeybusiness.com/articles/OpenSource_ROV.html|OpenSource ROV]] archive describes a home-built remotely operated vehicle (ROV) with a topside Arduino controller and an onboard Arduino connected over a tether. The control pages describe a 100 m Category 5 (CAT5) cable, serial communications, and later use of the EasyTransfer library. A PlayStation 2 controller provides operator inputs. The system controls thrusters, lights, and camera functions, and returns vehicle readings for display. The fourth control-sketch edition adds depth and heading sensors; the author identifies it as the latest edition and links the first three as superseded versions.
+
+The archive also includes an idle sketch intended to hold the vehicle outputs in a neutral state during development, experiments with joystick and Arduino-to-Arduino communications, electronic speed controller (ESC) calibration sketches, and a pressure and temperature logger used during pressure testing. These pages describe a particular legacy build and its development. Their component choices, pin assignments, libraries, and procedures are not current project requirements.
+
+===== Design and use limits =====
+
+The project's thruster, tethered-video, seal, and shell-analysis pages are useful as examples of design questions and build documentation. The shell page presents analytical calculations and software estimates for its own pipe and end caps; those estimates are not independent validation, and must not be used as a depth rating or design basis for another pressure housing. Seal geometry, materials, manufacturing tolerances, penetrators, and pressure tests must be assessed for the actual design.
+
+The ESC calibration pages identify different sequences for different controller types, and one ROV calibration page is explicitly superseded. Do not apply a sequence, signal range, or wiring diagram without checking the exact ESC manufacturer's instructions and the actual system. The Arduino serial examples demonstrate project-specific messages and links; they do not define a robust protocol or establish that ordinary logic-level serial is suitable for a long tether. The inter-integrated circuit (I²C) page itself warns that it is for short wiring. The propeller article describes OpenSCAD models developed for a radio-controlled aircraft, not a validated underwater propeller design.
+
+The articles are independent references, not evidence that any of their designs or software has been tested or adopted in the Robots project. Several pages link downloadable sketches, models, spreadsheets, or drawings; those files were not reviewed or copied into Chartroom.
+
+===== ROV and control references =====
+
+  * [[https://www.techmonkeybusiness.com/articles/OpenSource_ROV.html|OpenSource ROV]] — project overview, control architecture, propulsion, tether, housing, and linked development pages.
+  * [[https://www.techmonkeybusiness.com/articles/ROV_Control_Sketches_v1.html|ROV Control Sketches – First Edition]] — initial topside and vehicle Arduino control sketches; marked superseded by later editions.
+  * [[https://www.techmonkeybusiness.com/articles/ROV_Control_Sketches_v2.html|ROV Control Sketches – Second Edition]] — revised display and vehicle feedback; marked superseded.
+  * [[https://www.techmonkeybusiness.com/articles/ROV_Control_Sketches_v3.html|ROV Control Sketches – Third Edition]] — ESC direction and camera-control updates; marked superseded.
+  * [[https://www.techmonkeybusiness.com/articles/ROV_Control_Sketches_v4.html|ROV Control Sketches – Fourth Edition]] — later control arrangement with depth and heading sensors and a PS2 controller.
+  * [[https://www.techmonkeybusiness.com/articles/ROV_Do_Nothing_Sketch.html|ROV Idle Sketch]] — development sketch that sets outputs to the author's neutral or idle values.
+  * [[https://www.techmonkeybusiness.com/articles/ROV_Two_Way_Serial_Communication.html|Two Way Serial Communication]] — Arduino command and response experiment, with a separate regulated supply for the servo load.
+  * [[https://www.techmonkeybusiness.com/articles/Comms_between_Arduinos-Serial.html|Communication between Arduinos – Serial]] — serial joystick-to-servo experiment for a longer wired connection.
+  * [[https://www.techmonkeybusiness.com/articles/Comms_between_Arduinos-I2C.html|Communication between Arduinos – I²C]] — short-wire master/slave demonstration.
+  * [[https://www.techmonkeybusiness.com/articles/Multi-Joysticks_transmitted_to_Multiple_Servos.html|Multi-Joysticks transmitted to Multiple Servos]] — comma-separated joystick data sent to a remote Arduino in a development sketch.
+  * [[https://www.techmonkeybusiness.com/articles/Playstation2_Controller_with_your_Arduino_Project.html|Using a PlayStation 2 Controller with your Arduino Project]] and [[https://www.techmonkeybusiness.com/articles/PS2_Controllers.html|PS2 Controllers on Arduinos]] — controller wiring, library use, and possible mechatronics interfaces.
+  * [[https://www.techmonkeybusiness.com/articles/ESC_Calibration_with_Arduino.html|ESC Calibration Using an Arduino]] and [[https://www.techmonkeybusiness.com/articles/ROV_ESC_Calibration.html|Calibrating the ROV’s ESCs]] — historical calibration examples; the latter says it has been superseded.
+  * [[https://www.techmonkeybusiness.com/articles/Simple_Pressure_and_Temperature_Logger.html|A Simple Pressure and Temperature Logger]] — Arduino Nano, two pressure/temperature sensors, display, and elapsed-time data logging for a housing pressure-test setup.
+
+===== Vehicle and component design references =====
+
+  * [[https://www.techmonkeybusiness.com/articles/ROV_Thrusters.html|ROV Thrusters]] — historical comparison of exposed brushless motors, bilge pumps, and enclosed thruster concepts, with the author's component changes and observations.
+  * [[https://www.techmonkeybusiness.com/articles/ROV_Circuits.html|Electronic Circuits in the ROV]] — legacy circuit overview, marked superseded by the fourth control edition.
+  * [[https://www.techmonkeybusiness.com/articles/Video_over_CAT5.html|Sending Video through the Tether]] — author-reported test of analogue video over a 100 m CAT5e tether using passive baluns and a specific camera.
+  * [[https://www.techmonkeybusiness.com/articles/ROV_Seals.html|ROV Seals]] — static face-seal and O-ring gland discussion with values drawn from cited seal references.
+  * [[https://www.techmonkeybusiness.com/articles/ROV_Shell_Analysis.html|ROV Shell Analysis]] — historical shell and end-cap calculations, not a verified pressure-vessel design.
+  * [[https://www.techmonkeybusiness.com/articles/Parametric_Propellers.html|Parametric Propellers]] — OpenSCAD fixed and folding propeller models for radio-controlled aircraft; not an underwater propeller validation.
+  * [[https://www.techmonkeybusiness.com/articles/Component_Model_Library.html|Component Model Library]] — Blender and OBJ component models intended to support packaging and mechanical layout; source measurements and current availability need checking.
+
+===== Educational robotics and small circuits =====
+
+The linked teaching materials use older mBot, Scratch/mBlock, and Lego Mindstorms EV3 contexts. They may help with introductory activities on sensing, control logic, and chassis design, but their software interfaces, hardware availability, and examples should be checked before reuse.
+
+  * [[https://www.techmonkeybusiness.com/articles/Robotics1a-Introduction_to_the_mBot.html|Robotics 1a – Introduction to the mBot]] — mBot hardware, sensors, and programming modes.
+  * [[https://www.techmonkeybusiness.com/articles/Robotics1b-Building_an_mBot_Programme.html|Robotics 1b – Building an mBot Program]] — connecting, programming, and uploading a basic mBot programme.
+  * [[https://www.techmonkeybusiness.com/articles/Robotics1c-Programming_a_Guided_mBot.html|Robotics 1c – Programming a Guided mBot]] — timed movement instructions for a guided maze route.
+  * [[https://www.techmonkeybusiness.com/articles/Robotics1e-More_mBot_Sensors.html|Robotics 1e – More mBot Sensors]] — line-following sensor exercises.
+  * [[https://www.techmonkeybusiness.com/articles/Robotics1f-mBot_Sensor_lucky-Dip.html|Robotics 1f – mBot Sensor Lucky-Dip]] — open-ended input/output activities; the page states a Creative Commons Attribution-ShareAlike 4.0 licence.
+  * [[https://www.techmonkeybusiness.com/articles/Robotics2a-Introduction_to_the_Mindstorm_EV3s.html|Robotics 2a – Introduction to the Lego Mindstorm EV3s]] — EV3 parts and chassis design process.
+  * [[https://www.techmonkeybusiness.com/articles/Robotics2b-Mindstorm_EV3_Body_Building.html|Robotics 2b – Lego Mindstorms EV3 Body Building]] — chassis design and build checks.
+  * [[https://www.techmonkeybusiness.com/articles/Robotics2c-Mindstorm_EV3_Programming_Interface.html|Robotics 2c – Lego Mindstorms EV3 Programming Interface]] — graphical motor, loop, and logic blocks.
+  * [[https://www.techmonkeybusiness.com/articles/Robotics2d-Mindstorm_EV3_Chassis_Action.html|Robotics 2d – Lego Mindstorms EV3 Chassis in Action]] — sensor-based chassis challenge.
+  * [[https://www.techmonkeybusiness.com/articles/Flex_Sensor_and_Servo.html|Flex Sensor and Servo]] — analogue input and servo example with a start/stop control.
+  * [[https://www.techmonkeybusiness.com/articles/MCP121_BEAMbot.html|MCP121 Based Solar Engine BEAMbot]] — discrete voltage-supervisor circuit for a solar-powered motor; the author labels the explanation as tentative.
+
+===== Sources and review limits =====
+
+The pages above were reviewed on 2026-11-08. The original list repeated several URLs; duplicate entries have been consolidated. The [[https://www.techmonkeybusiness.com/articles/OpenSource_ROV.html|OpenSource ROV overview]] was reviewed through search-indexed content when direct page retrieval timed out. This note summarises article descriptions and builder reports only; linked code, files, and calculations were not independently reproduced or validated.
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

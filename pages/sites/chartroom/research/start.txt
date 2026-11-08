@@ -49,6 +49,7 @@ The links below cover all research notes. Use the related-research links within 
 
 ==== Underwater robotics and ROVs ====
 
+  * [[sites:chartroom:research:techmonkeybusiness-open-source-rov-and-robotics|TechMonkeyBusiness open-source ROV and robotics references]]
   * [[sites:chartroom:research:mercator-origins-diver-navigation-telemetry|Mercator Origins diver navigation and telemetry project]]
   * [[sites:chartroom:research:alioli-arduino-rov-software-framework|Alioli Arduino ROV software framework]]
   * [[sites:chartroom:research:angler-fish-rov-thruster|Angler Fish ROV and indexed thruster listing — partial review]]
