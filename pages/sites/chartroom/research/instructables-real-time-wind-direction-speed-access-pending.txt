@@ -1,0 +1,19 @@
+====== Instructables real-time wind direction and speed — access pending ======
+{{tag>research weather wind wind-direction wind-speed instructables source-review}}
+
+~~META:
+description     = User-supplied Instructables reference titled Real Time Wind Direction and Speed; article contents have not been verified.
+type            = research
+status          = unreviewed
+authority       = Chartroom
+~~
+
+===== Source and access status =====
+
+The supplied [[https://www.instructables.com/Real-Time-Wind-Direction-and-Speed/|Instructables: Real Time Wind Direction and Speed]] page exposed its title and a three-step format when reviewed on 2026-11-08, but no article text was readable. Search did not reveal the build details. The title suggests a wind measurement project, but no sensor design, electronics, calibration method, measurements, or performance claims are recorded until the project can be reviewed.
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
