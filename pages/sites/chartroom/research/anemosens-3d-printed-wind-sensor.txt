@@ -1,0 +1,37 @@
+====== AnemoSens 3D-printed wind sensor ======
+{{tag>research weather-station anemometer wind-speed wind-direction 3d-printing esp32}}
+
+~~META:
+description     = Reference for a compact stereolithography-printed wind sensor with Hall-effect speed sensing, magnetic direction sensing, and an optional ESP32 interface board.
+type            = research
+status          = reference
+authority       = Fabian's Nerdiy build guide and Nerdiyde/Anemosens source repository; Hackaday.io project logs provide status context
+~~
+
+===== Design summary =====
+
+Fabian's [[https://nerdiy.de/en/howto-anemosens-ein-3d-gedruckten-windsensor-anemometer-aufbauen/|AnemoSens build guide]] describes a compact wind vane and rotor assembly designed mainly for stereolithography (SLA) printing. The published dimensions are a 27 mm base diameter, a 150 mm rotor diameter, and approximately 160 mm overall height. The author reports that an earlier fused-deposition-modelling (FDM) design had fit problems around overhanging parts, leading to the later SLA design.
+
+A sensor printed circuit board (PCB) combines an AH49E linear Hall-effect sensor and an AS5048B magnetic rotary encoder. Three magnets in the rotor pass the Hall sensor to measure rotation; the author says the pulse count is divided by three to obtain a rotor revolution. The AS5048B measures the orientation of a magnet linked to the wind vane over the inter-integrated circuit (I²C) bus. The vane must be aligned or calibrated to map its sensor reading to compass direction.
+
+The optional AnemoSens microcontroller unit (MCU) PCB connects an ESP32 to the sensor board. The project describes data access over RS-485 using Modbus, a USB serial stream with JavaScript Object Notation (JSON), and a Bluetooth Low Energy (BLE) server. It also provides a microSD card slot and a real-time clock; a BME280 temperature, humidity, and pressure sensor can be fitted. The sensor board can also be read by user-designed hardware without the optional MCU board.
+
+===== Calibration, power, and status =====
+
+The author states that rotor speed must be calibrated against a known wind speed to obtain accurate wind-speed readings. A 2022 project log says a small printable wind tunnel was still being developed for this purpose. That source does not report a completed calibration curve or measurement accuracy. The same log says the then-current MCU board was not optimised for battery operation, and that a revised board was being developed. Do not assume the published design provides calibrated wind speed or low-power remote deployment without further evidence.
+
+The project is useful for comparing compact wind-vane sensing, separate speed and direction measurements, and an environmental sensor node with local logging and wired or wireless data interfaces. It has not been validated for the Robots project's use, nor does the available material establish long-term outdoor durability of the printed assembly, bearings, or electronics.
+
+===== Source and licence notes =====
+
+  * Fabian, [[https://nerdiy.de/en/howto-anemosens-ein-3d-gedruckten-windsensor-anemometer-aufbauen/|HowTo: Anemosens – Build a 3D-printed wind sensor / anemometer]], Nerdiy.de, published 2022-02-09; accessed 2026-11-08.
+  * [[https://hackaday.io/project/185642-anemosens-sla-printed-anemometer|AnemoSens – SLA printed anemometer]], Hackaday.io project page and development logs; accessed 2026-11-08.
+  * [[https://github.com/Nerdiyde/Anemosens|Nerdiyde/Anemosens]], linked PCB, software, and design repository; accessed 2026-11-08.
+
+The Nerdiyde project page states that non-code works are licensed under CC BY-NC-SA 4.0 and software/code works under GNU Affero General Public License version 3.0 (AGPL-3.0), unless otherwise stated. Check the current licence files and notices before adapting or redistributing any design or software.
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
