@@ -1,0 +1,34 @@
+====== HowToMechatronics DIY Arduino RC receiver ======
+{{tag>research arduino radio-control nrf24l01 joystick receiver motors servos}}
+
+~~META:
+description     = DIY Arduino Pro Mini and nRF24L01 radio receiver for RC models and small robot projects.
+type            = research
+status          = reference
+authority       = HowToMechatronics tutorial by Dejan
+~~
+
+===== Project summary =====
+
+The HowToMechatronics tutorial describes an Arduino Pro Mini receiver using an nRF24L01 transceiver and a matching custom transmitter. It presents a custom printed circuit board (PCB) with up to nine output channels and example programs for a two-motor car, servos and brushless motors driven through electronic speed controllers (ESCs), and a modified commercial radio-control car.
+
+The receiver uses the Serial Peripheral Interface (SPI) to communicate with the radio module. The tutorial's examples send joystick and switch values as a data structure. It states that after one second without a received packet, the example code resets the channel data to default values. This is example behaviour in the published sketch, not a demonstrated safety function for other vehicles or firmware.
+
+===== Relevance and limits =====
+
+This is a useful learning reference for building a custom robot or model-control link and for mapping joystick inputs to motor-driver, ESC, and servo outputs. The radio link is paired to the custom transmitter design and its data format; it is not documented as compatible with standard radio-control transmitters, ArduSub, or the project's control software.
+
+The article reports an open-space range of up to 700 m for an nRF24L01 variant with power amplifier and low-noise amplifier. This is the tutorial author's stated figure, not an independently measured range or a guarantee for another installation. The tutorial also warns that high servo current can cause voltage spikes that may damage the Arduino Pro Mini. Power integrity, receiver-loss behaviour, radio performance, and electromagnetic compatibility would need separate review and testing before adapting this design.
+
+The tutorial demonstrates a radio link for land and surface model examples. It does not provide an underwater communications method, pressure protection, or a tether interface, so it is not a standalone ROV control solution.
+
+===== Sources =====
+
+  * [[https://howtomechatronics.com/projects/diy-arduino-rc-receiver/|HowToMechatronics — DIY Arduino RC Receiver for RC Models and Arduino Projects]], by Dejan; accessed 2026-11-08. The tutorial includes circuit and PCB information, example sketches, and the author's implementation notes.
+  * [[https://howtomechatronics.com/projects/diy-arduino-rc-transmitter/|HowToMechatronics — DIY Arduino RC Transmitter]], linked by the receiver tutorial as the paired transmitter project.
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

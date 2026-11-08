@@ -181,6 +181,7 @@ The links below cover all research notes. Use the related-research links within 
   * [[sites:chartroom:research:ev3dev-mqtt-motor-control-tutorial|EV3dev MQTT messaging and motor-control tutorial]]
   * [[sites:chartroom:research:emqx-mqtt-js-tutorial|EMQX MQTT.js JavaScript tutorial]]
   * [[sites:chartroom:research:alpakka-open-game-controller|Alpakka open game controller]]
+  * [[sites:chartroom:research:howtomechatronics-diy-arduino-rc-receiver|HowToMechatronics DIY Arduino RC receiver]]
   * [[sites:chartroom:research:robotcontrol-javascript-tobiasweis|Raspberry Pi Robotcontrol JavaScript interface]]
   * [[sites:chartroom:research:esp8266-tagged-release-ota-pipeline|ESP8266 tagged-release OTA delivery pipeline]]
   * [[sites:chartroom:research:esphome-configuration-based-firmware|ESPHome configuration-based firmware]]
