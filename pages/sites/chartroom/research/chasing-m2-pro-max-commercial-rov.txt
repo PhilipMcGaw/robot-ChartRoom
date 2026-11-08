@@ -1,0 +1,46 @@
+====== CHASING M2 PRO MAX commercial ROV ======
+{{tag>research rov commercial-rov chasing propulsion payload inspection}}
+
+~~META:
+description     = Manufacturer and reseller reference for the CHASING M2 PRO MAX commercial inspection ROV and its accessory ecosystem.
+type            = research
+status          = reference
+authority       = CHASING manufacturer documentation; Aditech reseller listings for package details
+~~
+
+===== Scope =====
+
+This note records the CHASING M2 PRO MAX as a commercial remotely operated vehicle (ROV) reference. Manufacturer specifications and use cases are vendor claims, not independent performance validation or Chartroom requirements.
+
+===== Vehicle and payload architecture =====
+
+CHASING describes the M2 PRO MAX as an industrial inspection ROV with eight vectored thrusters, omnidirectional movement, a maximum depth rating of 200 m, and a stated maximum horizontal movement radius of 400 m. Its published configuration includes five accessory ports and quick-mount support for CHASING and third-party payloads. The manufacturer describes use with up to five accessories at once, including sonar, a laser scaler, water-quality sensing, auxiliary cameras, navigation equipment, and grabber or sampling tools.
+
+This provides a commercial comparison point for modular payload integration: the vehicle, control system, tether and power options, and mission payloads are offered as a configurable system. The manufacturer also publishes dedicated manuals for the vehicle and supported accessories. Compatibility and operating limits still need to be checked for each specific payload and deployment configuration.
+
+===== Aditech reseller listing =====
+
+The user-supplied [[https://www.aditech-uw.com/en/shop/572-chasing-robot-sous-marin-m2-pro-max.html|Aditech CHASING M2 PRO MAX listing]] could not be fetched directly by the web reader on 2026-11-08. Search-indexed Aditech listings expose separate Advanced and Professional sets and optional payload selections. The indexed Advanced Set listing describes a package with a 200 m tether, motorised reel, two 300 Wh batteries, remote controller, and accessories; package contents vary by set. These are reseller listing details, not a universal M2 PRO MAX bill of materials. Prices, stock, shipping, warranty terms, and included accessories are time-sensitive and should be checked on the live seller and manufacturer pages.
+
+===== Relevance and limitations =====
+
+The M2 PRO MAX is useful as a commercial benchmark for vectored propulsion, integrated imaging and lighting, accessory interfaces, and configurable inspection payloads. Manufacturer maximum depth, movement radius, runtime, payload compatibility, and accessory performance should not be treated as independently tested results. The listing and manufacturer materials do not establish that this platform meets any particular project mission or procurement requirement.
+
+===== Sources =====
+
+  * [[https://www.aditech-uw.com/en/shop/572-chasing-robot-sous-marin-m2-pro-max.html|CHASING M2 PRO MAX, Aditech English listing]], user-supplied; direct page fetch unavailable; indexed product information reviewed 2026-11-08.
+  * [[https://www.aditech-uw.com/fr/boutique/6572-chasing-underwater-robot-m2-pro-max.html|CHASING M2 PRO MAX (Advanced Set), Aditech French listing]], reseller package details; accessed through indexed page content 2026-11-08.
+  * [[https://www.chasing.com/en/chasing-m2pro-max-overview.html|CHASING M2 PRO MAX overview]], manufacturer product overview; accessed 2026-11-08.
+  * [[https://www.chasing.com/en/chasing-m2pro-max-specs.html|CHASING M2 PRO MAX specifications]], manufacturer product specifications; accessed 2026-11-08.
+  * [[https://www.chasing.com/en/service-support/chasing-m2-pro-max.html|CHASING M2 PRO MAX support]], manufacturer manuals and accessory documentation; accessed 2026-11-08.
+
+===== Related research =====
+
+For other commercial ROV selection references, see [[sites:chartroom:research:oceanbotics-srv8-selection-guide|Oceanbotics SRV-8 selection guide]] and [[sites:chartroom:research:rov-overview-and-applications|ROV overview and applications]].
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
