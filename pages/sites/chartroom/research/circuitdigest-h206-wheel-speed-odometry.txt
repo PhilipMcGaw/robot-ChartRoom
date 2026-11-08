@@ -32,12 +32,19 @@ For odometry, retain cumulative counts from each wheel and convert them to signe
 
 The H206 article remains useful for discussing slotted optical sensing and pulse counting on a small land robot. It is not a validated odometry implementation and does not apply directly to an underwater vehicle's thruster-based motion.
 
+===== Raspberry Pi GPIO event-handling reference =====
+
+The Robotics Back-End's [Raspberry Pi GPIO Interrupts Tutorial](https://roboticsbackend.com/raspberry-pi-gpio-interrupts-tutorial/) compares polling with edge-event handling for general-purpose input/output (GPIO) and demonstrates `wait_for_edge()` and `add_event_detect()` with the `RPi.GPIO` Python library. Its examples use a push button and show callback-based event handling and debounce settings. The article says it applies to Raspberry Pi 4 and earlier models with Raspbian or Ubuntu Mate; this is the tutorial's stated support, not a check against current Raspberry Pi operating systems or library versions.
+
+This is a useful introduction to event-driven input on a Raspberry Pi, but it does not demonstrate wheel-encoder pulse rates, timing accuracy, or robust odometry. The button examples do not establish whether this approach is suitable for encoder acquisition at the rates required by a particular robot.
+
 ===== Sources =====
 
   * [Speed, Distance and Angle Measurement for Mobile Robots using Arduino and LM393 Speed Sensor Module (H206) — Circuit Digest](https://circuitdigest.com/microcontroller-projects/speed-distance-and-angle-measurement-for-mobile-robots-using-arduino-and-lm393-h206), article and published source code; published 2019-01-16; accessed 2026-11-08.
   * [Arduino Frequency Counter Tutorial for Electronics Enthusiasts — Duino4Projects](https://duino4projects.com/arduino-frequency-counter-tutorial-for-electronics-enthusiasts/), user-provided frequency-counter example; published 2024-01-16; accessed 2026-11-08.
   * [FreqCount library — Paul Stoffregen](https://github.com/PaulStoffregen/FreqCount), primary library source for fixed-gate pulse counting; accessed 2026-11-08.
   * [FreqCount library documentation — PJRC](https://www.pjrc.com/teensy/td_libs_FreqCount.html), frequency range guidance, gate interval, and board-specific input/timer resource table; accessed 2026-11-08.
+  * [Raspberry Pi GPIO Interrupts Tutorial — The Robotics Back-End](https://roboticsbackend.com/raspberry-pi-gpio-interrupts-tutorial/), polling, GPIO edge events, callbacks, and button-debounce examples with `RPi.GPIO`; accessed 2026-11-08.
   * [attachInterrupt() — Arduino documentation](https://docs.arduino.cc/language-reference/en/functions/external-interrupts/attachInterrupt), interrupt service routine constraints and `delay()` behaviour; revised 2025-04-24; accessed 2026-11-08.
   * [diff_drive_controller — ROS 2 Control documentation](https://control.ros.org/kilted/doc/ros2_controllers/diff_drive_controller/doc/userdoc.html), differential-drive odometry and wheel radius/separation parameters; accessed 2026-11-08.
 
