@@ -24,6 +24,12 @@ The objective is to reuse BlueOS capabilities rather than recreate services that
 
 The proposed approach is to implement the Adeept HAT as a **BlueOS Extension** rather than modifying BlueOS core.
 
+===== BlueOS's documented vehicle boundary =====
+
+Blue Robotics' [[https://blueos.cloud/docs/stable/usage/overview/#what-s-in-a-blueos-vehicle|What's in a BlueOS vehicle?]] overview describes the typical arrangement as BlueOS and its extensions on an onboard computer, an autopilot on a flight-controller board, and an operator using a control-station computer. In this arrangement, BlueOS helps the autopilot communicate with the operator and interfaces with sensors that do not directly measure vehicle control state.
+
+This is the upstream project's general integration model, not evidence that every BlueOS installation requires a separate flight controller or that the Adeept HAT is supported by BlueOS. The current investigation remains a proposed alternative: BlueOS on the Raspberry Pi, the Adeept HAT as physical I/O, and ROV Control responsible for vehicle behaviour. BlueOS access to the HAT and the proposed control path have not yet been implemented or validated.
+
 ===== Existing Adeept hardware capability =====
 
 The Adeept Robot HAT provides, among other interfaces:
@@ -312,6 +318,7 @@ This should allow the project to reuse mature BlueOS infrastructure while retain
   * [[https://blueos.cloud/docs/stable/usage/installation/|BlueOS installation guide (stable documentation)]]
   * [[https://blueos.cloud/docs/1.2/usage/installation/|BlueOS 1.2 installation guide]] — the versioned page could not be retrieved for review on 2026-11-07; see the stable guide for accessible installation documentation.
   * [[https://blueos.cloud/docs/stable/|BlueOS documentation]]
+  * [[https://blueos.cloud/docs/stable/usage/overview/#what-s-in-a-blueos-vehicle|BlueOS overview: What's in a BlueOS vehicle?]] — upstream description of the onboard computer, flight controller, sensors, and control-station boundary; reviewed 2026-11-08.
   * [[https://blueos.cloud/docs/1.0/usage/advanced/|BlueOS 1.0 Advanced Usage]] — version-specific reference for the web interface, network configuration, MAVLink endpoints, and serial-to-UDP bridges; reviewed 2026-11-08. Verify details against the BlueOS version selected for the integration.
   * [[https://blueos.cloud/docs/stable/development/extensions/|BlueOS Extensions]]
   * [[https://github.com/bluerobotics/BlueOS|BlueOS GitHub]]
