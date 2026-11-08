@@ -32,6 +32,7 @@ This build is a reference for a home-built ROV with separated electronics and ba
 
 ===== Source =====
 
+  * [Rapp Instruments homepage](https://www.rapp-instruments.de/index_neu.htm), user-provided publisher link; the page returned an empty body in the browser reader, so no additional site content was reviewed; accessed 2026-11-08.
   * [Unterwasser-Roboter — Rapp Instruments](https://www.rapp-instruments.de/RemoteSensing/Roves/Rove/ROV.htm), German-language project description; technical details above are translated summaries of the page; no publication or revision date visible; accessed 2026-11-08.
 
 
