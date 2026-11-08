@@ -31,6 +31,14 @@ The page opened during review on 2026-11-08, but no readable article text was av
 
 **Status:** Read later / access pending. No hardware details from this page have been assessed or validated for the Robots project.
 
+===== About me page — access pending =====
+
+**Reference:** [[https://k9-build.blogspot.com/p/about-me.html|About me]], on Richard Hopkins's //Old dog, new tricks// blog.
+
+The page opened during review on 2026-11-08, but no readable article text was available. No biographical or qualification claims are recorded from this page.
+
+**Status:** Read later / access pending.
+
 ===== Back buttons and displays =====
 
 ==== Rear/back-button screens and display design ====
