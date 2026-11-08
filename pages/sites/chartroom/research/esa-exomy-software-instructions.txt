@@ -11,9 +11,17 @@ authority       = Chartroom
 ===== Source =====
 
   * [[https://github.com/esa-prl/ExoMy/wiki/Software-Instructions|ExoMy Software Instructions]]
-  * [[https://github.com/esa-prl/ExoMy|ExoMy repository]]
+  * [[https://github.com/esa-prl/ExoMy_Software|ESA-PRL ExoMy software repository]]
+  * [[https://github.com/0xD0M1M0/ExoMy_Software|Maintainer's ExoMy software fork]]
+  * [[https://github.com/0xD0M1M0/ExoMy/wiki|Maintainer's ExoMy wiki]]
 
-**Status:** Research / read later. The original ExoMy repository is archived and read-only; this note preserves the useful engineering and training ideas rather than treating the historical software stack as a project dependency.
+**Status:** Research / read later. The ESA-PRL ExoMy software repository is archived and read-only. A later fork by 0xD0M1M0 is available and is marked as unarchived by GitHub. Its README says that the maintainer merged their open pull requests into the fork and intends to continue support; GitHub reported its most recent push as 2025-11-19 when checked on 2026-11-08. Current maintenance, compatibility, and the claimed changes have not been independently verified. This note preserves useful engineering and training ideas rather than treating either historical software stack as a project dependency.
+
+===== Later maintainer fork =====
+
+The fork's README describes it as a continuation of the ESA-PRL software repository. It says the maintainer merged their open pull requests into the fork and invites further issues and pull requests. These are statements from the fork's maintainer, not independent confirmation that the changes were merged upstream or that the software remains supported.
+
+GitHub identifies the repository as a fork of [[https://github.com/esa-prl/ExoMy_Software|esa-prl/ExoMy_Software]], with the default branch named ''official_main'' and a GPL-3.0 licence. The repository was not marked archived when reviewed on 2026-11-08. Its latest reported push date is evidence of repository activity at that time, but does not establish current maintenance or compatibility with the project's ROS 2 Jazzy environment. The code has not been built or tested as part of this research note.
 
 ===== Why this matters =====
 
@@ -126,7 +134,7 @@ Likewise, Docker should not automatically become a requirement for every robot. 
 ===== Read later =====
 
   * [[https://github.com/esa-prl/ExoMy/wiki/Software-Instructions|ExoMy Software Instructions]]
-  * [[https://github.com/esa-prl/ExoMy|ExoMy repository]]
+  * [[https://github.com/0xD0M1M0/ExoMy_Software|Maintainer's ExoMy software fork]]
 
 
 
