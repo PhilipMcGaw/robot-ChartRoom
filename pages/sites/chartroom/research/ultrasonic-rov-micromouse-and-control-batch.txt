@@ -28,12 +28,15 @@ authority       = Chartroom
 
 The 3 V ultrasonic-sensor modification is useful as a practical interface-design reference. The important lesson is not the specific HC-SR04 modification, but the need to treat logic-level compatibility as an electrical design problem when inexpensive 5 V modules are connected to 3.3 V processors.
 
+The Raspberry Pi Foundation's [[https://projects.raspberrypi.org/en/projects/physical-computing/12|physical-computing lesson, step 12]] is an additional ultrasonic-sensor reference. The page required JavaScript during review on 2026-11-08, so its lesson text, wiring, and code could not be checked. Retain it as a link for later review; do not use it as a build instruction until the exact sensor and interface requirements have been verified.
+
 ==== Relevance ====
 
   * Useful alongside the SonicDisc research already in ChartRoom.
   * Relevant to small robots using Raspberry Pi, ESP32, or other 3.3 V logic.
   * Provides a practical example of adapting inexpensive sensors rather than immediately replacing them.
   * Any modification should still be electrically characterised and validated rather than assumed safe from a tutorial alone.
+  * The Raspberry Pi Foundation lesson may provide another introductory sensor example, but its contents remain unreviewed.
 
 ===== DIY underwater ROV =====
 
