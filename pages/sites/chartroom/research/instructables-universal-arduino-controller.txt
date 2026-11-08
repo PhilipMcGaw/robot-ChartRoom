@@ -1,0 +1,37 @@
+====== Instructables Universal Arduino Controller enclosure ======
+{{tag>research arduino controller joystick wireless nrf24l01 3d-printing human-interface-device}}
+
+~~META:
+description     = 2017 3D-printed enclosure for an Arduino Uno and joystick shield, intended as a handheld wireless robot controller.
+type            = research
+status          = reference
+authority       = Instructables project by CHaleBrown
+~~
+
+===== Source and access =====
+
+  * [[https://www.instructables.com/Universal-Arduino-Controller/|Universal Arduino Controller]], by CHaleBrown, published 2017-06-29. The page itself returned only site navigation in the browser reader; the indexed article text exposed its description and five steps.
+
+===== Project summary =====
+
+The project describes a handheld enclosure for an Arduino Uno and Arduino Joystick Shield v2.4. The author reports using a toggle switch and 9 V battery, and provides two-part 3D-printable case files in STEP and Fusion 360 formats. The article describes the intended radio link as an nRF24L01+ module and says the case includes space for a Bluetooth module as another option.
+
+The article links to a separate nRF24L01+ programming tutorial. It does not provide the controller firmware, receiver implementation, radio protocol, or evidence that the Bluetooth option was built or tested. The word “universal” in the title should not be read as evidence of compatibility with different robots or communication systems.
+
+===== Relevance and limitations =====
+
+This is a reference for packaging an Arduino and joystick shield into a portable physical controller. The enclosure files and modular radio-space idea may be useful when comparing custom operator controls. It is an input enclosure and hardware arrangement, not a complete general-purpose controller system or a tested Robots/Cockpit interface.
+
+The article provides no measured battery life, range, link reliability, safety behaviour, or vehicle integration results. Its radio and battery details are source-reported build choices, not recommendations for current project use. Review the linked firmware and radio documentation separately before considering any implementation.
+
+===== Related research =====
+
+  * [[sites:chartroom:research:instructables-3d-printed-four-axis-usb-joystick|Instructables 3D-printed four-axis USB joystick]] — a separate Arduino-based USB game-controller build.
+  * [[sites:chartroom:research:realrobots-modular-hotas-controller|Real Robots modular joystick and HOTAS controller kits]] — a modular physical game-controller reference.
+  * [[sites:chartroom:research:pico-flight-sim-switch-box|Raspberry Pi Pico flight-simulator switch box]] — another microcontroller-based physical operator panel.
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

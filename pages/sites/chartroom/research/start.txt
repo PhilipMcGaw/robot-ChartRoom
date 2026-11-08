@@ -168,6 +168,7 @@ The links below cover all research notes. Use the related-research links within 
   * [[sites:chartroom:research:piwars-2024-disaster-zone-challenges|Pi Wars 2024 “Disaster Zone” challenges]]
   * [[sites:chartroom:research:raspberry-pi-zram-swap|Raspberry Pi zRAM swap reference]]
   * [[sites:chartroom:research:diy-hall-effect-hid-rov-controller|DIY Hall-effect HID controls as an ROV controller reference]]
+  * [[sites:chartroom:research:instructables-universal-arduino-controller|Instructables Universal Arduino Controller enclosure]]
   * [[sites:chartroom:research:instructables-3d-printed-four-axis-usb-joystick|Instructables 3D-printed four-axis USB joystick]]
   * [[sites:chartroom:research:realrobots-modular-hotas-controller|Real Robots modular joystick and HOTAS controller kits]]
   * [[sites:chartroom:research:arduinoecia-rs485-arduino-tutorial|Arduino e Cia Arduino RS-485 tutorial]]
