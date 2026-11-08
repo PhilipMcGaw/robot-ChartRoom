@@ -79,6 +79,8 @@ The page carries an archive notice and says that the documentation is no longer 
 
 The archived [[https://www.ardusub.com/introduction/hardware-options/required-hardware.html|Required Hardware]] page gives a system-level checklist that includes an autopilot, companion and topside computers, joystick, camera, electronic speed controls, thrusters, power sensing and distribution, and a tether. Treat this as historical system context, not a current bill of materials or confirmation that each item is required for this vehicle.
 
+The user-provided [[https://www.ardusub.com/introduction/required-software/ardusub-autopilot-firmware.html|ArduSub Autopilot Firmware]] page is also archived. It explains the distinction between ArduSub firmware and other ArduPilot vehicle firmware, but its version examples (Stable 4.0.x and Development 4.1.x) and its board-support statement are historical. Use the current [[https://ardupilot.org/sub/docs/common-loading-firmware.html|ArduPilot Sub firmware-loading guide]] and [[https://ardupilot.org/sub/docs/common-autopilots.html|autopilot hardware list]] for present-day firmware selection and board support. Compatibility must be checked for the exact autopilot; this reference does not establish that a particular board is supported or tested for this vehicle.
+
 ===== References =====
 
   * [[https://blueos.cloud/docs/stable/integrations/hardware/required/flight-controller/|BlueOS flight controller guidance]]
@@ -89,6 +91,8 @@ The archived [[https://www.ardusub.com/introduction/hardware-options/required-ha
   * [[https://ardupilot.org/sub/docs/common-autopilots.html|ArduSub autopilot hardware list]]
   * [[https://www.ardusub.com/introduction/hardware-options/connection-diagrams.html|ArduSub connection diagrams (archived)]]
   * [[https://www.ardusub.com/introduction/hardware-options/required-hardware.html|ArduSub required hardware (archived)]]
+  * [[https://www.ardusub.com/introduction/required-software/ardusub-autopilot-firmware.html|ArduSub autopilot firmware (archived)]]
+  * [[https://ardupilot.org/sub/docs/common-loading-firmware.html|ArduPilot Sub firmware-loading guide]]
   * [[https://ardupilot.org/sub/|ArduPilot Sub documentation]]
   * [[sites:chartroom:architecture:blueos-adeept-robot-hat|Existing BlueOS and Adeept Robot HAT architecture page]]
 
