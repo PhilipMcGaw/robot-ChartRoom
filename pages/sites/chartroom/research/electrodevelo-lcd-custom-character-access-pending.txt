@@ -8,11 +8,12 @@ status          = access pending
 authority       = User-supplied external reference
 ~~
 
-The user supplied the [[https://sites.google.com/view/electrodevelo/home-page/lcd-custom-character|Electrodevelo LCD custom-character page]]. The page could not be accessed during review on 2026-11-08, and searches for its title did not identify an indexed copy. Its instructions, supported display hardware, code, and licence have not been reviewed. No technical claims are recorded from the page title alone.
+The user supplied the [[https://sites.google.com/view/electrodevelo/home-page/lcd-custom-character|Electrodevelo LCD custom-character page]]. The page could not be accessed during review on 2026-11-08, and searches for its title did not identify an indexed copy. The navigation on the related [[https://sites.google.com/view/electrodevelo/home-page/education-projects/geiger-counter|Electrodevelo Geiger Counter page]] does list “LCD Custom Character”, confirming the page title but not its contents. Its instructions, supported display hardware, code, and licence have not been reviewed. No technical claims are recorded from the page title alone.
 
 ===== Source =====
 
   * [[https://sites.google.com/view/electrodevelo/home-page/lcd-custom-character|Electrodevelo — LCD custom character]], supplied by the user; access unavailable during review on 2026-11-08.
+  * [[https://sites.google.com/view/electrodevelo/home-page/education-projects/geiger-counter|Electrodevelo — Geiger Counter]], site navigation lists “LCD Custom Character”; page content reviewed 2026-11-08. See [[sites:chartroom:research:electrodevelo-geiger-counter|Electrodevelo Arduino Geiger counter]].
 
 ~~REFNOTES~~
 ---------

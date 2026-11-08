@@ -18,7 +18,7 @@ This is a reference for pulse counting, rolling-window display, and an introduct
 
 ===== Source =====
 
-  * [[https://sites.google.com/view/electrodevelo/home-page/education-projects/geiger-counter|Electrodevelo: Geiger Counter]] (accessed 2026-11-07).
+  * [[https://sites.google.com/view/electrodevelo/home-page/education-projects/geiger-counter|Electrodevelo: Geiger Counter]] (accessed 2026-11-08).
 
 ~~REFNOTES~~
 ---------
