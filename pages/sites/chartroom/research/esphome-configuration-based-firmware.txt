@@ -1,0 +1,31 @@
+====== ESPHome configuration-based firmware ======
+{{tag>research esphome embedded-firmware sensors home-assistant}}
+
+~~META:
+description     = ESPHome official documentation reference for configuration-based microcontroller firmware.
+type            = research
+status          = reference
+authority       = ESPHome official documentation
+~~
+
+===== Overview =====
+
+ESPHome is an open-source system for building firmware for connected devices from component configurations. Its official site describes a visual Device Builder and YAML configuration workflows, with support for sensors, switches, displays, and other components. It documents installation and wireless over-the-air updates, and promotes integration with Home Assistant over the local network.
+
+The component documentation covers a range of microcontroller families and interfaces. The available boards, components, and installation methods depend on the selected device; check the official documentation for the intended hardware before designing around a feature.
+
+===== Relevance =====
+
+ESPHome is a possible reference for small sensor or control nodes, including home and environmental sensing prototypes. The [[sites:chartroom:research:solar-powered-wifi-weather-station-v40|Solar Powered WiFi Weather Station V4.0]] article names Home Assistant with ESPHome as one of its ways to view or forward readings.
+
+This is a research reference only. Chartroom does not record ESPHome as adopted or tested for CuttleOS, SquidLink, or NautiPi. Its documentation does not establish suitability for real-time vehicle control, the project's communications architecture, low-power remote deployments, or marine environments.
+
+===== Sources =====
+
+  * [ESPHome documentation](https://esphome.io/), including its [getting started guide](https://esphome.io/install/getting-started/), [component index](https://esphome.io/components/), and [source repository](https://github.com/esphome/esphome); accessed 2026-11-08. The homepage displayed version 2026.10.2 when checked.
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

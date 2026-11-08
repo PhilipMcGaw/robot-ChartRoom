@@ -164,6 +164,7 @@ The links below cover all research notes. Use the related-research links within 
   * [[sites:chartroom:research:alpakka-open-game-controller|Alpakka open game controller]]
   * [[sites:chartroom:research:robotcontrol-javascript-tobiasweis|Raspberry Pi Robotcontrol JavaScript interface]]
   * [[sites:chartroom:research:esp8266-tagged-release-ota-pipeline|ESP8266 tagged-release OTA delivery pipeline]]
+  * [[sites:chartroom:research:esphome-configuration-based-firmware|ESPHome configuration-based firmware]]
   * [[sites:chartroom:research:arduino-simulator-lrusso|Lrusso Arduino Simulator]]
   * [[sites:chartroom:research:raspberry-pi-youtube-live-docker|Raspberry Pi YouTube live streaming with Docker]]
   * [[sites:chartroom:research:piwars-2024-disaster-zone-challenges|Pi Wars 2024 “Disaster Zone” challenges]]

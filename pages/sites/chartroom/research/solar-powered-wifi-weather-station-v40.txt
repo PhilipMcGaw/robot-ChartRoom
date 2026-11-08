@@ -34,7 +34,7 @@ The source is an Instructables build article. Its claims and circuit description
 
 ===== Related research =====
 
-For other weather station references, see [[sites:chartroom:research:arduino-weather-station-miksrv|Miksrv Arduino Weather Station]] and [[sites:chartroom:research:stall-weatherman-home-automation|STALL WEATHERMAN home-automation weather station]]. For low-power logging constraints, see [[sites:chartroom:research:coin-cell-data-logger-low-power|Coin-cell data logger and low-power design]].
+For the ESPHome platform named in this project, see [[sites:chartroom:research:esphome-configuration-based-firmware|ESPHome configuration-based firmware]]. For other weather station references, see [[sites:chartroom:research:arduino-weather-station-miksrv|Miksrv Arduino Weather Station]] and [[sites:chartroom:research:stall-weatherman-home-automation|STALL WEATHERMAN home-automation weather station]]. For low-power logging constraints, see [[sites:chartroom:research:coin-cell-data-logger-low-power|Coin-cell data logger and low-power design]].
 
 
 ~~REFNOTES~~
