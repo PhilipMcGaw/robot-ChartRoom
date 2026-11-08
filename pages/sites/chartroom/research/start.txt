@@ -210,6 +210,7 @@ The links below cover all research notes. Use the related-research links within 
   * [[sites:chartroom:research:ukmars-micromouse-reference|UKMARS and Micromouse reference]]
   * [[sites:chartroom:research:ultrasonic-robotics-and-open-hardware-batch|Ultrasonic robotics and open hardware]]
   * [[sites:chartroom:research:ultrasonic-rov-micromouse-and-control-batch|Ultrasonic, ROV, and micromouse references]]
+  * [[sites:chartroom:research:octosonarX2-eagle-hardware|OctoSonarX2 EAGLE hardware reference]]
 
 ===== Research status =====
 

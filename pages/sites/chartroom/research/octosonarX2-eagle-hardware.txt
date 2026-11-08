@@ -1,0 +1,31 @@
+====== OctoSonarX2 EAGLE hardware reference ======
+{{tag>research sonar ultrasonic hardware pcb eagle}}
+
+~~META:
+description     = Reference note for the OctoSonarX2 EAGLE schematic and board files.
+type            = research
+status          = reference
+authority       = OctoSonar GitHub repository
+~~
+
+The OctoSonar project includes EAGLE schematic and board files for its OctoSonarX2 hardware. The directory also contains top- and bottom-side images and a short readme. The OctoSonarX2 is described by the project instructions as a 16-port controller for HC-SR04 ultrasonic range sensors. It is a historical design reference, not a project design requirement or validated hardware for the Robots project.
+
+The directory readme identifies the files as the “1.0.0 batch”. It says this batch changed the bypass capacitors and rerouted power using a wider track. It also notes that the power track passes closer than ideal to the bottom-left mounting hole and that a plastic screw was supplied, with a fix expected in a later batch. The available note does not establish whether that later revision was made.
+
+The schematic and board files have not been electrically or mechanically reviewed here. No fabrication, licence, or project-specific suitability assessment is recorded.
+
+===== Source =====
+
+  * [OctoSonarX2 EAGLE design directory](https://github.com/arielnh56/OctoSonar/tree/master/extras/eagle/octosonarX2), including `octosonarX2.sch`, `octosonarX2.brd`, `Readme.md`, and board images; accessed 2026-11-08.
+  * [OctoSonar project instructions](https://hackaday.io/project/19950/instructions), for the stated 16-port HC-SR04 use; accessed 2026-11-08.
+
+===== Related research =====
+
+For other underwater vehicle and sensor references, see [[sites:chartroom:research:rov-overview-and-applications|ROV overview and applications]].
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
