@@ -2,7 +2,7 @@
 {{tag>research rov arduino serial communications thrusters pressure-housing educational-robotics}}
 
 ~~META:
-description     = Historical open-source ROV design and Arduino control references, plus related component and educational robotics tutorials.
+description     = Historical open-source ROV design, Arduino control, testing, component, and educational robotics references.
 type            = research
 status          = reference
 authority       = Hamish Trolove's TechMonkeyBusiness articles and linked project material
@@ -13,6 +13,8 @@ authority       = Hamish Trolove's TechMonkeyBusiness articles and linked projec
 Hamish Trolove's [[https://www.techmonkeybusiness.com/articles/OpenSource_ROV.html|OpenSource ROV]] archive describes a home-built remotely operated vehicle (ROV) with a topside Arduino controller and an onboard Arduino connected over a tether. The control pages describe a 100 m Category 5 (CAT5) cable, serial communications, and later use of the EasyTransfer library. A PlayStation 2 controller provides operator inputs. The system controls thrusters, lights, and camera functions, and returns vehicle readings for display. The fourth control-sketch edition adds depth and heading sensors; the author identifies it as the latest edition and links the first three as superseded versions.
 
 The archive also includes an idle sketch intended to hold the vehicle outputs in a neutral state during development, experiments with joystick and Arduino-to-Arduino communications, electronic speed controller (ESC) calibration sketches, and a pressure and temperature logger used during pressure testing. These pages describe a particular legacy build and its development. Their component choices, pin assignments, libraries, and procedures are not current project requirements.
+
+The project-update and trial pages provide a useful chronology, but the results are the builder's own reports. The bath article first describes a buoyancy check without electronics installed, then a powered trial. A later pool trial reports tether drag and an ESC that cut out; the builder attributed the cut-out to ESC overheating, and later project material describes a change to a different controller model. In a June 2016 update, the builder reports that a pressure-chamber test of the complete electronics pod found leaks. Separately, the wire-seal articles report that test samples held a 5 bar pressure difference for at least 30 minutes. These are different test articles and outcomes: the sample result does not show that the assembled pod passed its pressure test.
 
 ===== Design and use limits =====
 
@@ -35,12 +37,27 @@ The articles are independent references, not evidence that any of their designs 
   * [[https://www.techmonkeybusiness.com/articles/Comms_between_Arduinos-I2C.html|Communication between Arduinos – I²C]] — short-wire master/slave demonstration.
   * [[https://www.techmonkeybusiness.com/articles/Multi-Joysticks_transmitted_to_Multiple_Servos.html|Multi-Joysticks transmitted to Multiple Servos]] — comma-separated joystick data sent to a remote Arduino in a development sketch.
   * [[https://www.techmonkeybusiness.com/articles/Playstation2_Controller_with_your_Arduino_Project.html|Using a PlayStation 2 Controller with your Arduino Project]] and [[https://www.techmonkeybusiness.com/articles/PS2_Controllers.html|PS2 Controllers on Arduinos]] — controller wiring, library use, and possible mechatronics interfaces.
+  * [[https://www.techmonkeybusiness.com/articles/PS2_Controllers_for_Servos_and_Stuff.html|PS2 Controller Sketch for ESCs and Stuff]] — development sketch using servos and LEDs as stand-ins to test controller inputs and a topside/vehicle split.
+  * [[https://www.techmonkeybusiness.com/articles/Arduino_Control_of_HoryzonHD_Camera.html|Control of the Horyzon HD Camera with an Arduino]] — camera-trigger example tied to one HoryzonHD camera version; the article itself notes discrepancies in the camera markings and instructions.
+  * [[https://www.techmonkeybusiness.com/articles/Arduino_Temperature_Measurement.html|Three Arduino Circuits for Temperature Measurement]] — rough comparison of a thermistor, DS18B20, and TMP36 for an Arduino display project, not a calibrated sensor assessment.
+  * [[https://www.techmonkeybusiness.com/articles/HMC5883L_Digital_Compass.html|HMC5883L Digital Compass]] — Arduino and I²C compass demonstration with heading shown on an LCD.
   * [[https://www.techmonkeybusiness.com/articles/ESC_Calibration_with_Arduino.html|ESC Calibration Using an Arduino]] and [[https://www.techmonkeybusiness.com/articles/ROV_ESC_Calibration.html|Calibrating the ROV’s ESCs]] — historical calibration examples; the latter says it has been superseded.
+  * [[https://www.techmonkeybusiness.com/articles/EZRUN_ESC_Calibration.html|Programming and Calibrating the EZRUN 18A ESCs]] — procedure for the specific HobbyWing EZRUN 18A model in this build; the article notes different programming and calibration behaviour from the earlier ESCs.
   * [[https://www.techmonkeybusiness.com/articles/Simple_Pressure_and_Temperature_Logger.html|A Simple Pressure and Temperature Logger]] — Arduino Nano, two pressure/temperature sensors, display, and elapsed-time data logging for a housing pressure-test setup.
+  * [[https://www.techmonkeybusiness.com/articles/Simple_Arduino_Logger.html|A Simple Arduino Based Logger]] — earlier temperature logger using elapsed time and microSD storage, described as a step towards pressure testing.
+  * [[https://www.techmonkeybusiness.com/articles/Arduino_Library_Collection.html|Arduino Library Collection]] — author's archived library bundles and links to upstream authors; check current upstream versions and licences rather than assuming the archived copies are current.
 
 ===== Vehicle and component design references =====
 
   * [[https://www.techmonkeybusiness.com/articles/ROV_Thrusters.html|ROV Thrusters]] — historical comparison of exposed brushless motors, bilge pumps, and enclosed thruster concepts, with the author's component changes and observations.
+  * [[https://www.techmonkeybusiness.com/articles/ROV_Thruster_Testing.html|ROV Brushless Thruster Testing]] — builder-made test rig comparing several propellers on one motor; the author describes the readings as estimates because the thrust varied during each measurement.
+  * [[https://www.techmonkeybusiness.com/articles/ROV_Motor_Upgrade.html|ROV Motor Upgrade]] — the builder's corrosion mitigation work on model-aircraft brushless motors, including bearing replacement and coating; not a manufacturer-approved or independently validated marine motor conversion.
+  * [[https://www.techmonkeybusiness.com/articles/ROV_TMS.html|ROV Tether Management System]] — hose reel and slip-ring tether-management example; the listed component ratings and availability are historical and need checking.
+  * [[https://www.techmonkeybusiness.com/articles/Canada_ROVs.html|Canadian ROV Manufacturers]] — personal visit notes about Canadian makers and their test facilities, not a current supplier assessment.
+  * [[https://www.techmonkeybusiness.com/articles/ROV_Bathtime_Trial.html|Bath-time for the ROV]] and [[https://www.techmonkeybusiness.com/articles/ROV_Pool_Trial.html|Trial No 2 – The Swimming Pool]] — builder-reported buoyancy and pool trials; the pool report notes tether drag and an ESC cut-out.
+  * [[https://www.techmonkeybusiness.com/articles/ROV_Project_Updates.html|ROV Project Updates]] — dated development log, including the June 2016 report of leaks found during a pressure-chamber test of the complete electronics pod.
+  * [[https://www.techmonkeybusiness.com/articles/ROV_Pressure_Testing_Rig.html|Pressure Testing Rig for ROV Seals]] — builder's account of developing a test rig; an early plastic version leaked before a later version was used. This is historical build documentation, not a pressure-vessel design or safe construction procedure.
+  * [[https://www.techmonkeybusiness.com/articles/ROV_Wire_Sealing_Methods.html|Investigations into Wire Sealing Methods]] and [[https://www.techmonkeybusiness.com/articles/ROV_Better_Wire_Sealing_Method.html|A More Refined Wire Sealing Technique]] — builder-reported pressure tests on wire-seal samples; the author marks the earlier method as superseded by the refined method. The sample tests do not demonstrate that the complete pod passed pressure testing.
   * [[https://www.techmonkeybusiness.com/articles/ROV_Circuits.html|Electronic Circuits in the ROV]] — legacy circuit overview, marked superseded by the fourth control edition.
   * [[https://www.techmonkeybusiness.com/articles/Video_over_CAT5.html|Sending Video through the Tether]] — author-reported test of analogue video over a 100 m CAT5e tether using passive baluns and a specific camera.
   * [[https://www.techmonkeybusiness.com/articles/ROV_Seals.html|ROV Seals]] — static face-seal and O-ring gland discussion with values drawn from cited seal references.
@@ -66,7 +83,7 @@ The linked teaching materials use older mBot, Scratch/mBlock, and Lego Mindstorm
 
 ===== Sources and review limits =====
 
-The pages above were reviewed on 2026-11-08. The original list repeated several URLs; duplicate entries have been consolidated. The [[https://www.techmonkeybusiness.com/articles/OpenSource_ROV.html|OpenSource ROV overview]] was reviewed through search-indexed content when direct page retrieval timed out. This note summarises article descriptions and builder reports only; linked code, files, and calculations were not independently reproduced or validated.
+The pages above were reviewed on 2026-11-08. Across the two link batches, repeated URLs have been consolidated. The [[https://www.techmonkeybusiness.com/articles/OpenSource_ROV.html|OpenSource ROV overview]] was reviewed through search-indexed content when direct page retrieval timed out. This note summarises article descriptions and builder reports only; linked code, files, and calculations were not independently reproduced or validated.
 
 ~~REFNOTES~~
 ---------
