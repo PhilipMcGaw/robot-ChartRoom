@@ -26,14 +26,23 @@ The page lists an MPX5200 pressure sensor for depth, a Pt1000 water-temperature 
 
 The builder reports five dives deeper than 4 m, with several water ingress events during early use, followed by locating and fixing the leaks. The page also reports difficult laptop-screen visibility in sunlight. These are the builder's observations, not independently verified trial results. The page provides no pressure-test procedure, leak-test record, or measured mission duration. For a commercial leak-sensor comparison, see [[sites:chartroom:research:blue-robotics-sos-leak-sensor|Blue Robotics SOS Leak Sensor]].
 
+===== Mini-ROV =====
+
+The separate [[https://www.rapp-instruments.de/RemoteSensing/Roves/MRov/MROV.htm|Mini-ROV page]] describes a smaller vehicle built because the earlier ROV was considered too heavy and awkward for access to remote lakes. It uses a central acrylic tube for electronics and a camcorder, two horizontal thrusters with integrated LED lights, and one vertical thruster. Two floats sit above the tube, the battery pack below it, and a servo-mounted manoeuvring camera in a separate pressure tube can tilt vertically through 90°.
+
+The Mini-ROV uses an Arduino Nano and lists a pressure depth sensor, an internal pressure sensor, a water-temperature sensor, a three-axis compass sensor, and conductivity-based water detection. The builder says the smaller controller led to a reduced sensor count. The three thrusters use modified bilge pumps, 70 mm four-blade propellers on the horizontal units, a 75 mm racing propeller on the vertical unit, and three L298 H-bridge drivers. These are build details reported on the page, not validated component recommendations.
+
+The topside station uses an Arduino Mega rather than a personal computer. The page describes RS-485 carrying data and control signals over a Category 5 (Cat5) tether, with video on another pair. A rotating cable drum uses nine sliding electrical contacts. During reported trials, the builder says the Mini-ROV reached 34 m after resolving water ingress problems. A later dive reached 65 m without reported ingress, but navigation was difficult: tether drag and weight prevented the vehicle from ascending under its own power, so it had to be recovered by pulling the cable. These are builder-reported outcomes; the page does not give an independent test record or pressure-test method.
+
 ===== Relevance and limits =====
 
-This build is a reference for a home-built ROV with separated electronics and battery volumes, a wired topside control station, onboard sensors with topside display and logging, and replaceable propulsion units. It may help compare tether wiring, controller boundaries, payload placement, and leak monitoring. Its component list and reported performance are historical project details, not a current design recommendation or evidence of suitability for another vehicle. The page's publication date is not shown in the reviewed text.
+These builds are references for home-built ROV layouts, tether wiring, topside control, sensor and payload placement, and leak monitoring. The Mini-ROV account also records a practical limitation of a non-buoyant tether at depth: cable weight and drag affected both navigation and recovery. The component lists and reported performance are historical project details, not current design recommendations or evidence of suitability for another vehicle. Neither page shows a publication date.
 
 ===== Source =====
 
   * [Rapp Instruments homepage](https://www.rapp-instruments.de/index_neu.htm), user-provided publisher link; the page returned an empty body in the browser reader, so no additional site content was reviewed; accessed 2026-11-08.
   * [Unterwasser-Roboter — Rapp Instruments](https://www.rapp-instruments.de/RemoteSensing/Roves/Rove/ROV.htm), German-language project description; technical details above are translated summaries of the page; no publication or revision date visible; accessed 2026-11-08.
+  * [Mini-ROV — Rapp Instruments](https://www.rapp-instruments.de/RemoteSensing/Roves/MRov/MROV.htm), German-language project description; technical details above are translated summaries of the page; no publication or revision date visible; accessed 2026-11-08.
 
 
 ~~REFNOTES~~
