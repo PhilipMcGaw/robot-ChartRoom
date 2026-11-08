@@ -57,6 +57,12 @@ The most important design questions are:
 
 The LoRa transport should remain separate from the application-level telemetry format so that another suitable radio link can be evaluated later without redesigning the sensing and data model.
 
+===== Optional ESP32 gateway Wi-Fi provisioning =====
+
+If the receiving gateway uses an ESP32 and Wi-Fi for its network backhaul, the [DroneBot Workshop WiFiManager tutorial](https://dronebotworkshop.com/wifimanager/) is a relevant reference for provisioning Wi-Fi credentials through a local configuration portal. It also demonstrates custom configuration fields. The underlying [tzapu/WiFiManager library](https://github.com/tzapu/WiFiManager) supports ESP8266 and ESP32 Arduino platforms and offers on-demand and timeout options for its portal.
+
+This applies to the gateway's Wi-Fi connection only. It does not configure the LoRa radio, define the node-to-gateway packet format, or provide the server-ingestion path. Wi-Fi portal setup is an optional design candidate, not an implemented or selected gateway feature. If adopted, use an access-point password and a bounded or deliberate on-demand setup period; confirm the library and example compatibility with the selected ESP32 board and software versions.
+
 ===== ChartRoom relationships =====
 
 This concept complements:
@@ -81,6 +87,8 @@ It was attributed there to Albert Einstein. The quotation is retained as supplie
 ===== Provenance =====
 
   * Source: user-supplied project description titled “Remote Environmental Monitoring Buoy”.
+  * [DroneBot Workshop — WiFiManager](https://dronebotworkshop.com/wifimanager/), ESP32 Wi-Fi provisioning tutorial and custom parameters; accessed 2026-11-08.
+  * [tzapu/WiFiManager](https://github.com/tzapu/WiFiManager), upstream library documentation for ESP32/ESP8266 support, custom parameters, portal security, and timeout/on-demand modes; accessed 2026-11-08.
   * Related project: [[https://philipmcgaw.com/projects/weather-station/|Weather Station]].
   * Source content reviewed: 2026-09-22.
   * Status: concept/reference; application claims are not treated as validated performance claims.
