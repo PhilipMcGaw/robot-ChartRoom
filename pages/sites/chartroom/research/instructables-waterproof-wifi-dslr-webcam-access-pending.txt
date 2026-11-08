@@ -1,0 +1,20 @@
+====== Instructables waterproof Wi-Fi DSLR webcam — access pending ======
+{{tag>research camera raspberry-pi wifi time-lapse source-review}}
+
+~~META:
+description     = User-supplied Instructables reference titled “Waterproof Raspberry Pi Powered WiFi DSLR Webcam for Time Lapses”; article contents have not been reviewed.
+type            = research
+status          = unreviewed
+authority       = Instructables project
+~~
+
+===== Source and access status =====
+
+The supplied [Instructables: Waterproof Raspberry Pi Powered WiFi DSLR Webcam for Time Lapses](https://www.instructables.com/Waterproof-Wifi-DSLR-Webcam-for-Time-Lapses/) page exposed its title and three-step count, but no readable article text, during review on 2026-11-08. The title alone does not establish the design, waterproof rating, or suitability for underwater use. No technical summary or project relevance is recorded until the instructions can be reviewed.
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

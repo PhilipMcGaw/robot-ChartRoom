@@ -31,6 +31,7 @@ The links below cover all research notes. Use the related-research links within 
 ==== Sources awaiting review ====
 
   * [[sites:chartroom:research:instructables-cardboard-spectrometer-access-pending|Instructables cardboard spectrometer — access pending]]
+  * [[sites:chartroom:research:instructables-waterproof-wifi-dslr-webcam-access-pending|Instructables waterproof Wi-Fi DSLR webcam — access pending]]
   * [[sites:chartroom:research:instructables-intro-to-robotics-access-pending|Instructables “Intro to Robotics” — access pending]]
   * [[sites:chartroom:research:instructables-real-time-wind-direction-speed-access-pending|Instructables real-time wind direction and speed — access pending]]
   * [[sites:chartroom:research:printables-starrydream-collection|Printables collection by StarryDream_715457 — access pending]]
