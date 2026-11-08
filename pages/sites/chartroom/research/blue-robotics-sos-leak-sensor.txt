@@ -1,0 +1,38 @@
+====== Blue Robotics SOS Leak Sensor ======
+{{tag>research blue-robotics leak-sensor rov enclosure ardusub}}
+
+~~META:
+description     = Manufacturer reference for the Blue Robotics SOS Leak Sensor and its ArduSub setup.
+type            = research
+status          = reference
+authority       = Blue Robotics product page and installation guide
+~~
+
+===== Product summary =====
+
+Blue Robotics lists the SOS Leak Sensor as product SKU BR-101072, hardware revision R1. It uses four sponge-tipped probes that can be placed at likely water entry points and at the bottom of a watertight enclosure. The manufacturer lists an operating voltage of 3.3–5 V, maximum current draw of 20 mA, a three-pin 0.1 in (2.54 mm) output header, and four two-pin JST-GH probe connectors. When a leak is detected, the signal is pulled high to VCC and a red indicator LED turns on.
+
+The product page says the output can be integrated with Arduino, Raspberry Pi, Pixhawk, and other 3.3 V or 5 V devices. This is a manufacturer compatibility statement; check the selected controller's input limits, pin assignment, cable orientation, and software configuration before connecting it.
+
+===== ArduSub behaviour =====
+
+Blue Robotics' installation guide describes connecting the sensor output to Pixhawk AUX OUT 6 and selecting “Pixhawk Aux6” as the leak detector pin in QGroundControl. The dry-state logic is configured as low. The guide lists three ArduSub responses: disabled, warn only, or enter surface mode. The surface action requires a depth sensor, applies when the ROV is armed, and can be aborted by changing mode. This is a configurable software response, not a guarantee that the vehicle will recover from a leak or reach the surface.
+
+After a leak event, the manufacturer instructs users to dry the probes fully before reuse and notes that the sponge tips wear and need replacement. Probe placement should account for the enclosure layout, penetrators, seals, and low points where water may collect.
+
+===== Relevance and limits =====
+
+The SOS Leak Sensor is a useful commercial reference for enclosure leak detection, replaceable probes, and linking a physical leak input to an operator warning or vehicle response. The product and guide do not establish compatibility with every project controller, input pin, BlueOS version, or enclosure. It has not been selected or validated for a Robots project vehicle.
+
+===== Sources =====
+
+  * [SOS Leak Sensor — Blue Robotics](https://bluerobotics.com/store/sensors-cameras/leak-sensor/sos-leak-sensor/), product SKU, specifications, contents, schematic, and revision history; accessed 2026-11-08.
+  * [SOS Leak Sensor Installation — Blue Robotics](https://bluerobotics.com/learn/sos-leak-sensor-installation/), probe installation and ArduSub/QGroundControl configuration; posted 2016-11-18, last updated 2023-07-24; accessed 2026-11-08.
+  * [SOS Leak Sensor schematic (PDF)](https://bluerobotics.com/wp-content/uploads/2018/10/SOS-LEAK-SENSOR-SCHEMATIC.pdf), manufacturer schematic; accessed 2026-11-08.
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

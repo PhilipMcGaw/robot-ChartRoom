@@ -39,6 +39,7 @@ The links below cover all research notes. Use the related-research links within 
 
 ==== Underwater robotics and ROVs ====
 
+  * [[sites:chartroom:research:blue-robotics-sos-leak-sensor|Blue Robotics SOS Leak Sensor]]
   * [[sites:chartroom:research:blue-robotics-navigator-flight-controller|Blue Robotics Navigator flight controller]]
   * [[sites:chartroom:research:emlid-navio2-raspberry-pi-autopilot|Emlid Navio2 Raspberry Pi autopilot]]
   * [[sites:chartroom:research:blue-robotics-official-resources|Blue Robotics official resources]]
