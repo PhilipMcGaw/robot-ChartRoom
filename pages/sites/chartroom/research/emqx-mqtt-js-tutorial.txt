@@ -1,0 +1,37 @@
+====== EMQX MQTT.js JavaScript tutorial ======
+{{tag>research mqtt javascript nodejs browser messaging emqx}}
+
+~~META:
+description     = EMQX tutorial introducing the MQTT.js JavaScript client in Node.js and browser applications.
+type            = research
+status          = reference
+authority       = EMQX tutorial; MQTT.js upstream repository for library details
+~~
+
+===== Scope =====
+
+EMQX's “MQTT.js Tutorial: JavaScript MQTT Client Beginner Guide” introduces Message Queuing Telemetry Transport (MQTT) through the MQTT.js client library. The article, dated 2026-05-29, demonstrates connecting to a broker, subscribing to topics, publishing messages, handling client events, and receiving message payloads in Node.js and browser environments.
+
+===== Client and transport examples =====
+
+The tutorial describes MQTT.js as a JavaScript client for both Node.js and browsers. It shows installation through npm, publishing and subscribing through the client interface, and using MQTT over WebSocket in browser applications. Its Node.js example uses a direct MQTT connection; the guide also describes Transport Layer Security (TLS) and WebSocket connection options. The MQTT.js upstream repository independently identifies the library as a client for Node.js and browsers and maintains its interface and upgrade notes.
+
+The guide's sample uses EMQX's public broker and labels it for learning and testing, not production. Treat the connection endpoints, example credentials, and compatibility notes as tutorial-specific. Check the current MQTT.js and broker documentation before adapting code or selecting supported runtime versions.
+
+===== Relevance and limitations =====
+
+This is a useful JavaScript-specific introduction for understanding browser-to-broker messaging, MQTT over WebSocket, and the MQTT.js event model. EMQX is also the broker vendor behind the tutorial, so its service and product descriptions are vendor-authored. The tutorial is not evidence that MQTT.js, MQTT, or EMQX is part of a Chartroom implementation or a validated vehicle-control path.
+
+Chartroom's current architecture selects [[sites:chartroom:architecture:nats|NATS]] for communication between Robots components. This MQTT.js reference provides protocol and client-library context only; it does not change that decision.
+
+===== Sources =====
+
+  * [[https://www.emqx.com/en/blog/mqtt-js-tutorial|MQTT.js Tutorial: JavaScript MQTT Client Beginner Guide]], Shifan Yu, EMQX, published 2026-05-29; reviewed 2026-11-08.
+  * [[https://github.com/mqttjs/MQTT.js|MQTT.js upstream repository]], library README, API, and upgrade notes; reviewed 2026-11-08.
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
