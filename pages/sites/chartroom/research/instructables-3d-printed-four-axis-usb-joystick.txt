@@ -1,0 +1,31 @@
+====== Instructables 3D-printed four-axis USB joystick ======
+{{tag>research joystick usb human-interface-device arduino 3d-printing flight-simulator}}
+
+~~META:
+description     = Reference for a 3D-printed four-axis USB joystick built around an Arduino Micro.
+type            = research
+status          = reference
+authority       = Instructables project by michaelgoetze
+~~
+
+===== Project summary =====
+
+The Instructable [[https://www.instructables.com/3D-Printed-USB-Flight-Controller-Joystick-With-Fou/|3D Printed USB Flight Controller / Joystick With Four Axes]] describes a 3D-printed flight-simulator controller by michaelgoetze, published 2020-04-02. The design uses an Arduino Micro or compatible board as a USB game controller, four 10 kΩ potentiometers for the X, Y, Z/rudder, and throttle axes, plus buttons and a hat switch. The author says the firmware uses version 1.0 of the Arduino Joystick Library and that the finished device is recognised as a gamepad by Windows.
+
+The article points to printable files, design files, and software on [[https://www.thingiverse.com/thing:4256092|Thingiverse thing 4256092]]. Those files and their licence have not been reviewed.
+
+===== Relevance and limits =====
+
+This is a reference for a low-cost physical human-interface device (HID) with multiple axes and buttons. It may inform topside controller concepts, but it is a flight-simulator game controller, not an ROV controller. Compatibility with Cockpit, BlueOS, or ArduSub has not been established, and the device has not been adapted or tested for vehicle operation.
+
+For a related flight-control design using Hall-effect sensors instead of potentiometers, see the [[sites:chartroom:research:diy-hall-effect-hid-rov-controller|DIY Hall-effect HID controls reference]].
+
+===== Source =====
+
+  * [[https://www.instructables.com/3D-Printed-USB-Flight-Controller-Joystick-With-Fou/|3D Printed USB Flight Controller / Joystick With Four Axes]], by michaelgoetze, published 2020-04-02; indexed article text reviewed 2026-11-08. Direct page access returned no readable article text.
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

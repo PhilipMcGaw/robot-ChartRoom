@@ -155,6 +155,7 @@ The links below cover all research notes. Use the related-research links within 
   * [[sites:chartroom:research:piwars-2024-disaster-zone-challenges|Pi Wars 2024 “Disaster Zone” challenges]]
   * [[sites:chartroom:research:raspberry-pi-zram-swap|Raspberry Pi zRAM swap reference]]
   * [[sites:chartroom:research:diy-hall-effect-hid-rov-controller|DIY Hall-effect HID controls as an ROV controller reference]]
+  * [[sites:chartroom:research:instructables-3d-printed-four-axis-usb-joystick|Instructables 3D-printed four-axis USB joystick]]
   * [[sites:chartroom:research:arduinoecia-rs485-arduino-tutorial|Arduino e Cia Arduino RS-485 tutorial]]
   * [[sites:chartroom:research:gammon-rs485-arduino-library|Nick Gammon RS-485 Arduino protocol library]]
   * [[sites:chartroom:research:duino4projects-arduino-board-serial-link|Duino4Projects Arduino board serial link]]
