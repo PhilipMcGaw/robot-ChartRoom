@@ -38,6 +38,10 @@ In a [[https://makezine.com/article/maker-news/a-raspberry-pi-powered-underwater
 
 The article reports the vehicle was brought to the Maker Faire and quotes the project description. It describes MAVLink and QGroundControl integration as planned; it does not establish that those functions were completed or tested. The linked project page returned a cache miss during review, so no further build or performance details were confirmed.
 
+==== 3D-printed underwater ROV camera housing ====
+
+The supplied [[https://www.instructables.com/3d-Printed-Underwater-ROV-Camera-Housing/|Instructables page]] is titled as a four-step camera-housing project, but the page returned no readable project text during review. The housing geometry, print material, sealing method, test procedure, and any depth claims could not be confirmed. Retain this as a follow-up reference only; the title does not establish that the housing is watertight or pressure-tested.
+
 ===== Educational robots and vehicle platforms =====
 
 ==== Open Source Turtle Robot (OSTR) ====
