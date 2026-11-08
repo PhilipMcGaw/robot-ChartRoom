@@ -1,0 +1,20 @@
+====== Instructables “Intro to Robotics” — access pending ======
+{{tag>research robotics education instructables source-review}}
+
+~~META:
+description     = User-supplied Instructables robotics project; title and creator are identified, but article contents have not been reviewed.
+type            = research
+status          = unreviewed
+authority       = Instructables project by Aleator777
+~~
+
+===== Source and access status =====
+
+The supplied [Instructables: Intro to Robotics](https://www.instructables.com/Intro-to-Robotics/) page was not readable in the review interface on 2026-11-08. Search results identify it as a ten-step “Robots” project by Aleator777, but did not expose enough of the article to establish its purpose, hardware, instructions, or results. No project summary or relevance claim is recorded until the article can be reviewed.
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
