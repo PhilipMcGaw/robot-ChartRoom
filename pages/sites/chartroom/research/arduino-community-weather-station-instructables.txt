@@ -1,0 +1,34 @@
+====== Arduino community weather station (Instructables) ======
+{{tag>research weather-station environmental-sensing arduino community-weather}}
+
+~~META:
+description     = Reference for a low-cost Arduino community weather station with locally fabricated wind instruments.
+type            = research
+status          = reference
+authority       = Instructables project; accessible copy on WIZnet Maker
+~~
+
+===== Reported design =====
+
+The project describes a community weather station built by a local do-it-yourself group. Its stated aim is to make locally collected weather data more accessible through low-cost, open hardware. The author says the write-up is not a complete step-by-step build guide and that the project photographs were not taken from the beginning.
+
+The reported electronics are an Arduino Mega 2560 or Uno, an Ethernet Shield W5100, a DHT11 temperature and humidity sensor, a BMP180 pressure sensor, an infrared (IR) module for detecting anemometer rotation, and an HMC588L magnetometer for wind direction. The text describes a plywood Stevenson screen, a cup anemometer with an IR rotation detector, and a wind vane coupled to a magnetometer. PVC pipe routes the sensor wiring to the Arduino. The electronics are placed in a salvaged switched-mode power supply (SMPS) enclosure with a fan; the station is mounted on a salvaged telescope tripod. The article text mentions both a 9 V direct-current adaptor in its parts list and a 5 V USB adaptor in its closing notes, so the power-supply description is inconsistent.
+
+===== Chartroom relevance and limits =====
+
+This is a reference for low-cost, locally fabricated environmental sensing and community data collection. Its use of an Ethernet shield indicates a wired network connection in the described build. The source does not establish a remote data service, measurement accuracy, calibration, environmental protection, or long-term operating performance. It also says the code is messy and may be updated; firmware and wiring details should be checked in the original project before reuse.
+
+The original Instructables page did not return readable content during review. The accessible WIZnet Maker copy reproduces the project description and some build details, but it is a secondary hosted copy. The project has not been validated for Robots project use.
+
+For other weather-station references, see [[sites:chartroom:research:arduino-3d-printed-personal-weather-station|Arduino 3D-printed personal weather station]], [[sites:chartroom:research:arduino-weather-station-miksrv|Miksrv Arduino Weather Station]], and [[sites:chartroom:research:solar-powered-wifi-weather-station-v40|Solar Powered WiFi Weather Station V4.0]].
+
+===== Sources =====
+
+  * [DIY Standalone Weather Station Powered by Arduino](https://www.instructables.com/DIY-Standalone-Weather-Station-Powered-by-Arduino/), Instructables; page title was visible, but article content was not readable during review, 2026-11-08.
+  * [DIY Standalone Weather Station Powered by Arduino](https://maker.wiznet.io/Alan/projects/diy-standalone-weather-station-powered-by-arduino/), WIZnet Maker, accessible copy of the project description, reviewed 2026-11-08.
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
