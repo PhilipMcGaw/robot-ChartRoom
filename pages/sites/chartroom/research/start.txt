@@ -159,6 +159,7 @@ The links below cover all research notes. Use the related-research links within 
 
 ==== Robotics, education, and hardware ====
 
+  * [[sites:chartroom:research:bricolabs-curiosity-btl-rover|Bricolabs Curiosity BTL rover]]
   * [[sites:chartroom:research:circuitdigest-h206-wheel-speed-odometry|Circuit Digest H206 wheel-speed and odometry example — critical review]]
   * [[sites:chartroom:research:circuitdigest-mosfet-h-bridge-tutorial|Circuit Digest MOSFET H-bridge tutorial — critical review]]
   * [[sites:chartroom:research:fpv-rover-nerf-dart-launcher|Nerf dart launcher for an FPV rover]]

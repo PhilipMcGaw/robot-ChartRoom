@@ -1,0 +1,36 @@
+====== Bricolabs Curiosity BTL rover ======
+{{tag>research robotics mars-rover rocker-bogie 3d-printing arduino}}
+
+~~META:
+description     = Bricolabs reference for printable Curiosity-inspired rocker-bogie rover models and their control systems.
+type            = research
+status          = reference
+authority       = Bricolabs Curiosity BTL project wiki
+~~
+
+===== Project summary =====
+
+Bricolabs Technology Laboratory (BTL) documents printable, scaled models inspired by NASA's Curiosity Mars rover. The project describes a rocker-bogie chassis with six driven wheels and four steered wheels, at nominal 1:10 and 1:5 scales. The wiki links to separate design and program repositories, but those linked files were not reviewed as part of this note.
+
+The wiki describes the 1:10 model with six N20 geared motors and four small steering servos; its electronics section names L9110 motor drivers. For the 1:5 model, it lists six 2418 / 25D motors, four 3003 servos, and Dagu wheels, with L298 drivers used in the XL version. The control discussion considers an Arduino Mega 2560 or a 16-channel Adafruit I²C PWM board, and describes separate options for radio, Bluetooth, or infrared control. These are source-reported configurations, not independently verified bills of materials or performance results.
+
+===== Version status and limits =====
+
+The page versions do not agree on the 1:10 model's status. The indexed English page describes the 1:10 design as complete and links it to GitHub and Thingiverse. An older Spanish copy says that the 1:10 project evolved into Perseverance and that its original files are retained as legacy material. The user-provided Spanish page did not expose readable text during review, so the reason for this difference is unclear. Check the linked repositories and current project pages before treating either model as the active design.
+
+This is a land-rover design reference. It may inform discussion of articulated suspension, steering geometry, wheel packaging, and distributing drive and steering outputs. It does not validate the dimensions, obstacle capability, electronics, or controls for a project vehicle, and its planetary-rover appearance does not make it a Mars-capable design. The page's obstacle-height statement is attributed to NASA but is not independently verified here.
+
+For related rover references, see [[sites:chartroom:research:beatty-robotics-sojourner-rover|Beatty Robotics Sojourner rover]] and [[sites:chartroom:research:rc-mars-rover-mk-ii-pepa-vladik|RC MARS Rover Mk II]].
+
+===== Sources =====
+
+  * [Curiosity BTL — Bricolabs Wiki (Spanish)](https://wiki.bricolabs.cc/es/proyectos/curiosity_btl), user-provided project page; it returned no readable text, so details were checked against the English counterpart; accessed 2026-11-08.
+  * [Curiosity BTL — Bricolabs Wiki (English)](https://wiki.bricolabs.cc/en/proyectos/curiosity_btl), indexed English text used to review the model and version-status description; page itself returned no readable lines; accessed 2026-11-08.
+  * [Curiosity BTL — Bricolabs Wiki (older Spanish page)](https://www.bricolabs.cc/wiki/proyectos/curiosity_btl), older project page; its indexed text describes the original 1:10 files as legacy after the project evolved into Perseverance; page last-modified date shown as 2022-06-25; accessed 2026-11-08.
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
