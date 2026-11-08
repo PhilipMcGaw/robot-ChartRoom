@@ -1,0 +1,48 @@
+====== Mariscope ROV and marine technology profile ======
+{{tag>research rov commercial-rov marine-technology manipulators}}
+
+~~META:
+description     = Manufacturer overview and published product comparison for Mariscope remotely operated vehicles and marine technology.
+type            = research
+status          = reference
+authority       = Mariscope manufacturer website
+~~
+
+===== Company and product scope =====
+
+Mariscope presents itself as a marine technology supplier and manufacturer of remotely operated vehicles (ROVs), towed systems, cameras, lights, and specialised underwater equipment. Its marine technology pages describe a modular product approach, customisation, and products from compact systems to work-class vehicles. The company also lists oceanography, diving equipment, services, and custom ROV development. These are manufacturer descriptions, not independent performance assessments.
+
+===== Published ROV comparison =====
+
+The ROV comparison page publishes the following figures. They are reproduced as the manufacturer's current web listing, accessed 2026-11-08; the page gives no document revision or publication date. Confirm the exact configuration, included equipment, operating limits, and supply requirements with the manufacturer before using these figures for selection or procurement.
+
+^ Model ^ Operational depth ^ Listed speed ^ Minimum 230 V AC power ^ Listed weight ^
+| Peewee 100 | 100 m | 2.5 kn | 1.0 kW | 17 kg |
+| MS 2 | 300 m | 3.0 kn | 2.0 kW | 23 kg |
+| FO III | 500 m | 3.0 kn | 3.0 kW | 35–70 kg |
+| Diavolo III | 500 m | 3.0 kn | 3.0 kW | 45–90 kg |
+| Flunder | 500 m | 4 kn | 4.0 kW | 60–120 kg |
+| Commander MK III | 500 / 1,000 m | 3.0–5.0 kn | 6.0 kW | 80–150 kg |
+| Chameleon | 600 m | > 5.0 kn | > 15.0 kW | 100–350 kg |
+
+The comparison page also shows accessory options such as cable reels, sonar, ultra-short baseline (USBL) tracking, altimeters, manipulators, recovery tools, sampling tools, cameras, lighting, and data logging. Availability varies by model; consult the manufacturer's compatibility table and confirm configuration directly.
+
+===== Relevance and limits =====
+
+The range is a reference for commercial ROV classes, payload accessories, and manufacturer-supplied operating specifications. It may help frame questions about depth, speed, topside power, vehicle mass, and tooling. It does not establish compatibility with the Robots project's control, communications, tether, power, or topside systems. The listed 230 V AC minimum power is a supplier specification and should not be treated as the complete vehicle electrical design or as evidence of how power is transmitted through a tether.
+
+Mariscope also lists robotic arms, including products it says it represents from Reach Robotics in Chile and Argentina. That representation and geographic availability are supplier statements; they do not establish integration compatibility with any particular ROV.
+
+===== Sources =====
+
+  * [[https://www.mariscope.com/|Mariscope official website]], overview of its marine technology, oceanography, and diving areas; accessed 2026-11-08.
+  * [[https://www.mariscope.com/marine-technology/|Mariscope Marine Technology]], product categories, customisation, and services; accessed 2026-11-08.
+  * [[https://www.mariscope.com/product-category/marine-technology/rovs/|Mariscope ROV comparison and accessories]], manufacturer-published model specifications and accessory availability; accessed 2026-11-08.
+  * [[https://www.mariscope.com/product-category/marine-technology/robotic-arms/|Mariscope Robotic Arms]], manufacturer page describing its Reach Robotics representation in Chile and Argentina; accessed 2026-11-08.
+  * [[https://www.mariscope.com/about/|Mariscope About]], company history and manufacturer statements; accessed 2026-11-08.
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
