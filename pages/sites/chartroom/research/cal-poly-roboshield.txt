@@ -1,0 +1,47 @@
+====== Cal Poly RoboShield ======
+{{tag>research, robotics, arduino, motor-driver, servo, education }}
+
+~~META:
+description     = Arduino Mega robotics shield reference with motor outputs, servo connections, input/output pins, an LCD, and sensor support.
+type            = research
+status          = reference
+authority       = Cal Poly RoboShield documentation and source repository
+~~
+
+===== Scope =====
+
+Cal Poly RoboShield is a robotics-oriented shield for the Arduino Mega. This note summarises the board's published feature list and user guide. The documentation and board have not been independently tested as part of this review.
+
+===== Reported features =====
+
+The main page lists four direct-current motor outputs, each rated at 2 A and driven by DRV8848 H-bridges. Two outputs support Pololu six-pin motors, with software support for reading encoders. The user guide clarifies that the library counts only the rising edge of one encoder channel (EA); channel EB is accessible through a solder hole.
+
+Other listed features include eight radio-control servo outputs, a regulated 5 V servo supply, 14 analogue inputs, up to seven digital input/output pins, a 16 × 2 character LCD, battery-voltage monitoring, an on-board LED, a power switch, and support for a GY-521 accelerometer/gyroscope breakout board. Digital pins 3 and 4 share the I²C clock and data functions when the relevant solder bridges are enabled.
+
+The user guide specifies a 7–15 V main input. It warns against powering the Arduino Mega through its barrel jack while the shield is connected, because the guide says this shorts the power terminals and barrel jack. It states the motor drivers receive the input voltage directly and the on-board servo regulator supplies 5 V, with an 8 A maximum current. The guide also notes that the Arduino Mega's 5 V regulator becomes hot above a 10 V input. Follow the board documentation for its power arrangement; these are source-reported specifications, not independently checked limits.
+
+The assembly guide describes the board as a kit with surface-mount components already fitted and remaining through-hole parts for the builder to solder. The GitHub repository contains a RoboShield Arduino library and a bring-up example directory.
+
+===== Relevance and limitations =====
+
+This is a compact educational control-board reference for small land robots that need several brushed-motor outputs, servos, basic analogue inputs, and a local display. Its encoder interface reads only one channel in the documented library, so it should not be assumed to provide full quadrature direction sensing or high-resolution odometry.
+
+The source material does not establish present availability, compatibility with current Arduino software versions, or suitability for NautiPi or underwater use. Check the exact board revision, schematics, library, and component ratings before considering reuse. No environmental sealing or corrosion protection is described in the cited material.
+
+===== Sources =====
+
+  * [Cal Poly RoboShield main page](https://roboshield.github.io/roboshield/), feature list and authors; accessed 2026-11-08.
+  * [RoboShield user guide](https://roboshield.github.io/roboshield/userguide), power, motor-header, encoder, and I²C notes; accessed 2026-11-08.
+  * [RoboShield assembly guide](https://roboshield.github.io/roboshield/assembly), kit assembly description; accessed 2026-11-08.
+  * [roboshield/roboshield source repository](https://github.com/roboshield/roboshield), Arduino library and bring-up example; accessed 2026-11-08.
+
+===== Related research =====
+
+  * [[sites:chartroom:research:arduino-robot-tank-velli20|Velli20 Arduino Robot Tank]]
+  * [[sites:chartroom:research:small-robot-code-test-platform|Small robot as a code test platform — ROV and PiWars]]
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

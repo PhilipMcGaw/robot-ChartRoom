@@ -231,6 +231,7 @@ The links below cover all research notes. Use the related-research links within 
 ==== Robotics, education, and hardware ====
 
   * [[sites:chartroom:research:instructables-robot-cheaper|Instructables “Robot Cheaper”]]
+  * [[sites:chartroom:research:cal-poly-roboshield|Cal Poly RoboShield]]
   * [[sites:chartroom:research:arduino-uno-based-robotrack|Arduino Uno-based RoboTrack]]
   * [[sites:chartroom:research:instructables-james-first-arduino-robot|Instructables James: first Arduino robot — partial review]]
   * [[sites:chartroom:research:instructables-arduino-powered-autonomous-vehicle|Instructables Arduino-powered autonomous vehicle]]
