@@ -10,7 +10,7 @@ authority       = Chartroom
 
 ===== Scope =====
 
-This note records an Instructables project titled “DIY Submersible ROV”. The original page was not retrievable through available web access during this review, so the hardware summary below relies on the Arduino blog's project overview and an archived repost of the author's description. It is not a complete review of the eight-step Instructable.
+This note records an Instructables project titled “DIY Submersible ROV”. On 2026-11-08, the page exposed its title and eight-step format, but no readable project text. The hardware summary below therefore relies on the Arduino blog's project overview and an archived repost of the author's description. It is not a complete review of the eight-step Instructable.
 
 ===== Project summary =====
 
@@ -34,7 +34,7 @@ The [Instructable](https://www.instructables.com/DIY-Submersible-ROV/) is titled
 
 ===== Sources =====
 
-  * [DIY Submersible ROV](https://www.instructables.com/DIY-Submersible-ROV/), Instructables, by the project author; original page not accessible for direct review, accessed 2026-10-23.
+  * [DIY Submersible ROV](https://www.instructables.com/DIY-Submersible-ROV/), Instructables, by the project author; page title and eight-step format visible, but no project text readable during review on 2026-11-08.
   * [DIY submersible ROV flies through the water](https://blog.arduino.cc/2018/05/31/diy-submersible-rov-flies-through-the-water/), Arduino Blog, 2018-05-31. Secondary project summary.
   * [DIY Submersible ROV](https://jpralves.net/post/2018/05/24/diy-submersible-rov.html), João Alves, 2018-05-24. Reposted project summary and author description.
 
