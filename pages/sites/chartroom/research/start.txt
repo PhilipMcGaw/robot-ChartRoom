@@ -101,6 +101,7 @@ The links below cover all research notes. Use the related-research links within 
 
 ==== Battery and solar power ====
 
+  * [[sites:chartroom:research:aos-power-mosfets-battery-charge-discharge|Alpha and Omega Semiconductor power MOSFET battery-protection application note]]
   * [[sites:chartroom:research:mopi-raspberry-pi-power|MoPi 2 Raspberry Pi mobile power]]
   * [[sites:chartroom:research:openbms-kayoumdjedidi|OpenBMS by kayoumdjedidi]]
   * [[sites:chartroom:research:arduino-ltc6804-bms-dcaditz|Arduino LTC6804 BMS by dcaditz]]

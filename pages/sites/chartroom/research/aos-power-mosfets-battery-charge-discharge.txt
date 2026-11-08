@@ -1,0 +1,33 @@
+====== Power MOSFETs in battery charge and discharge protection ======
+{{tag>research battery-management bms mosfet power-electronics}}
+
+~~META:
+description     = Manufacturer application note on power MOSFET arrangements in lithium-ion battery protection circuits.
+type            = research
+status          = reference
+authority       = Alpha and Omega Semiconductor application note MOS-013
+~~
+
+===== Source summary =====
+
+Alpha and Omega Semiconductor's application note MOS-013, *Application of Power MOSFETs in Battery Management Charge-Discharge Systems*, describes power MOSFET arrangements used with a dedicated battery-protection integrated circuit in lithium-ion battery protection modules. The note is by Quan Li and Elin Gao, revision 1.0, dated August 2021.
+
+The note compares low-side and high-side placement, drain-to-drain and source-to-source back-to-back pairs, and N-channel and P-channel choices. It also discusses parallel MOSFETs for higher current, redundant protection arrangements, thermal design, short-circuit capability, avalanche capability, and immunity to high voltage slew rates (dV/dt). Its examples provide a useful overview of switching and protection concepts.
+
+===== Relevance and limits =====
+
+This is a component application note for protection circuits, with examples framed around consumer-electronics battery packs. It is not a complete battery-management-system design or a validated design for a robot, K9, or remotely operated vehicle (ROV). The examples do not establish suitable ratings, protection thresholds, wiring, fuse coordination, or fault behaviour for any project pack. Those choices require a design based on the actual cells, pack voltage, load current, charging system, and applicable safety requirements.
+
+The user supplied a Dangerous Prototypes post whose URL title refers to this application note. That post could not be retrieved during review, so its content and relationship to the manufacturer document have not been independently confirmed. The manufacturer PDF is linked below as the primary source for the technical summary.
+
+===== Sources =====
+
+  * [Alpha and Omega Semiconductor application note MOS-013 (PDF)](https://www.aosmd.com/sites/default/files/res/application_notes/mosfets/MOS-013.pdf), revision 1.0, August 2021; accessed 2026-11-08.
+  * [Dangerous Prototypes: “App note: Power MOSFETs in battery management charge/discharge systems”](https://dangerousprototypes.com/blog/2022/12/25/app-note-power-mosfets-in-battery-management-charge-discharge-systems/), user-provided secondary reference; page fetch timed out during review, so contents were not inspected; accessed 2026-11-08.
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
