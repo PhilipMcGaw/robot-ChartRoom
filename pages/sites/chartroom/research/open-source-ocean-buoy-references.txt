@@ -12,13 +12,15 @@ A focused set of academic, student, and open-source buoy projects relevant to th
 
 ===== T3chFlicks Smart Buoy =====
 
-https://github.com/sk-t3ch/smart-buoy https://magazine.raspberrypi.com/articles/smart-buoy https://gitlab.com/t3chflicks/smart-buoy https://hackaday.io/project/166572-smart-buoy/details https://www.hackster.io/t3chflicks/smart-buoy-summary-7d1a7b
+https://github.com/sk-t3ch/smart-buoy https://magazine.raspberrypi.com/articles/smart-buoy https://gitlab.com/t3chflicks/smart-buoy https://hackaday.io/project/166572-smart-buoy/details https://www.hackster.io/t3chflicks/smart-buoy-summary-7d1a7b https://www.instructables.com/Smart-Buoy/
 
-T3chFlicks developed an Arduino buoy with a Raspberry Pi base station and Vue dashboard. The prototype measured wave height/period/power/direction, water temperature, air temperature/humidity/pressure, GPS, and electrical status. It used solar power, battery-aware scheduled operation, nRF24 radio, local processing/storage experiments, and a shore/base-station dashboard. The original GitLab repository was created in March 2019 and later moved to GitHub.
+T3chFlicks developed an Arduino buoy with a Raspberry Pi base station and Vue dashboard. The prototype measured wave height, period and power; water temperature; air temperature, humidity and pressure; GPS; and electrical status. The project's Instructables summary says wave direction was a goal but was not achieved. The buoy used solar power, battery-aware scheduled operation, nRF24 radio, local processing/storage experiments, and a shore/base-station dashboard. The original GitLab repository was created in March 2019 and later moved to GitHub. [3]
 
 The project was created by **T3chFlicks, a small UK technology education and services company**. Public company records identify **Stephanie Katherine Andrews** and **Sebastian Edward Kelly** as the two directors/people with significant control of T3CH FLICKS LTD. Contemporary project material generally refers to Stephanie as **Steph** and Sebastian as **Seb**.
 
 The Smart Buoy originated from Steph's undergraduate dissertation work on the impact of sea-level rise in Grenada. The Raspberry Pi/MagPi and HackSpace coverage says she found it difficult to obtain reliable, continuous coastal data and that this motivated the team to build an inexpensive system capable of producing meaningful measurements. The buoy was subsequently built and deployed in Grenada, with the team also discussing the project with the Grenadian government.
+
+The Instructables summary describes the buoy's architecture and reports that the team launched it in Grenada. It also records a key limitation: after sealing the enclosure, the team could not readily update the buoy's code. The authors characterise the prototype's wave-property algorithms as crude and report sensor problems. These are the builders' retrospective statements, not independent measurement validation. [3]
 
 Contemporary documentation is particularly valuable as a **case study/post-mortem**. The team openly documented problems with sensor accuracy, memory constraints, waterproofing, storage, wave-property algorithms, and deployment. They identified an inability to reprogram the sealed buoy as a major design mistake and proposed an open/resealable enclosure, a more capable ESP32-class controller, LoRa, and additional onboard processing for a possible version 2.
 
@@ -206,6 +208,8 @@ The goal is not to reproduce any one reference design. The references should be 
 [1] M. S. Al-Husainy et al., “Design, Implementation, and Measurement Procedure of Underwater and Water Surface Antenna for LoRa Communication”, //Sensors//, 2021. https://www.mdpi.com/1424-8220/21/4/1337
 
 [2] Ofcom, “Short-range devices” and UK Interface Requirement IR2030. https://www.ofcom.org.uk/spectrum/radio-equipment/short-range-devices
+
+[3] [[https://www.instructables.com/Smart-Buoy/|T3chFlicks — Smart Buoy [Summary]]], published 2019-07-13; accessed 2026-11-08. The project summary and limitations are reported by its authors.
 
 
 
