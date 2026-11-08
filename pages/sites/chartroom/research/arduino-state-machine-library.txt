@@ -1,0 +1,32 @@
+====== Arduino StateMachine library ======
+{{tag>research arduino microcontrollers embedded-systems state-machine}}
+
+~~META:
+description     = Review of the Arduino StateMachine library as a possible implementation aid for microcontroller firmware.
+type            = research
+status          = reference
+authority       = StateMachine-library repository; project applicability is an engineering assessment
+~~
+
+===== What the library provides =====
+
+The [[https://github.com/twrackers/StateMachine-library|StateMachine-library]] repository describes a C++ base class for finite-state machines on Arduino-type processors. A derived class implements an update method, and the base class can schedule updates using `millis()` or microsecond timing. The project presents this as a way to structure cooperative, non-blocking work in Arduino sketches and provides LED examples. It states that the library has no dependencies beyond the standard Arduino IDE libraries.
+
+===== Assessment for embedded nodes =====
+
+Explicit state machines are worth considering for microcontroller tasks with clear phases or recovery paths, such as startup checks, sensor acquisition, actuator sequencing, communications timeouts, and fault handling. This is an engineering assessment, not a decision to adopt this library. A state machine can make transitions and failure behaviour easier to review, while cooperative updates can help keep a firmware loop responsive. The benefit depends on the task; a short, simple operation may not need a state-machine abstraction.
+
+The linked library appears to provide a small scheduling framework rather than a complete application-state model: derived classes define their own state, transitions, inputs, and outputs. Its timing abstraction does not itself guarantee execution deadlines, safe actuator behaviour, or fault recovery. The repository describes Arduino-type use, so compatibility with the Robots project's ATtiny1614 toolchain and build process has not been established.
+
+For the Robots project's embedded-node framework, first define the states, transition conditions, timeout behaviour, and safe outputs independently of a library choice. Then compare the library with a small project-owned implementation against the actual compiler, memory use, timing needs, rollover behaviour, testability, and maintenance requirements. Keep safety-related output defaults and fault latching explicit. No adoption or implementation is recorded here.
+
+===== Source =====
+
+  * [[https://github.com/twrackers/StateMachine-library|StateMachine-library]], README and repository overview; accessed 2026-11-08.
+  * [[sites:chartroom:architecture:embedded-nodes|Embedded node profiles]], for the current cross-project microcontroller framework and interface context.
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
