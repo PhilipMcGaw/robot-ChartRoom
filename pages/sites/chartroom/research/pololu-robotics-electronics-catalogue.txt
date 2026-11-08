@@ -1,0 +1,30 @@
+====== Pololu robotics and electronics catalogue ======
+{{tag>research robotics electronics motors motor-control sensors encoders}}
+
+~~META:
+description     = Vendor catalogue reference for mobile-robot parts, motor control, sensors, and prototyping hardware.
+type            = research
+status          = reference
+authority       = Pololu product catalogue
+~~
+
+===== Scope =====
+
+The user supplied the [Pololu website](https://www.pololu.com/), a robotics and electronics catalogue. At review on 2026-11-08, its categories included robot kits; brushed DC gearmotors, stepper motors, and servos; motor controllers and drivers; wheels, tracks, and chassis; sensors including encoders, inertial measurement units (IMUs), and distance sensors; and voltage regulators, connectors, and prototyping parts.
+
+Pololu describes its brushed DC controllers as including options for serial, radio-control, analogue, or USB interfaces, and notes that some provide speed or position feedback. These are catalogue descriptions across a product category, not a guarantee that every model supports each interface or feedback mode. Check the individual product documentation for electrical limits, supported interfaces, compatibility, and current availability.
+
+===== Relevance =====
+
+The catalogue is a useful starting point for comparing small-robot parts, including geared motors, encoders, and motor-control boards relevant to rover odometry and drive design. Product listings are vendor information and do not establish suitability for any Robots project subsystem. Confirm the selected part against the authoritative datasheet and implementation requirements before design or procurement.
+
+===== Sources =====
+
+  * [Pololu Robotics and Electronics](https://www.pololu.com/), product categories and catalogue descriptions; accessed 2026-11-08.
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
