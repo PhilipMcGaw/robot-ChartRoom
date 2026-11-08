@@ -1,0 +1,28 @@
+====== Aluminium extrusion with 3D-printed brackets ======
+{{tag>research robotics structures 3d-printing}}
+
+~~META:
+description     = Hackaday article on combining aluminium extrusion with custom 3D-printed connectors for larger structures and a robot suspension assembly.
+type            = research
+status          = reference
+authority       = Hackaday article by Roger Cheng
+~~
+
+===== Reference summary =====
+
+Roger Cheng's article describes using aluminium extrusion for the main structural members and custom 3D-printed brackets where project-specific geometry is needed. Its example is a robot rocker-arm subassembly with angled connectors. The article also discusses printed-part orientation, fastener placement, and trade-offs between generic nuts and extrusion-specific fasteners.
+
+===== Relevance and limits =====
+
+This is a useful concept reference for robot frames and suspension prototypes that combine standard metal sections with custom connectors. The article is not a design specification or a test report for any Robots project. Printed-part strength depends on material, print process, geometry, loading, and environment; the article does not validate a particular bracket for a project vehicle.
+
+===== Source =====
+
+  * [How To Build Anything Out Of Aluminum Extrusion And 3D Printed Brackets — Hackaday](https://hackaday.com/2018/05/08/how-to-build-anything-out-of-aluminum-extrusion-and-3d-printed-brackets/), by Roger Cheng, published 2018-05-08; reviewed 2026-11-08.
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
