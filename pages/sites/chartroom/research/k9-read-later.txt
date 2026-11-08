@@ -23,6 +23,14 @@ The Instructables page returned its title but no readable article text during re
 
 **Status:** Read later / access pending. The project has not been assessed or validated for the Robots project.
 
+===== K9 Hardware page — access pending =====
+
+**Reference:** [[https://k9-build.blogspot.com/p/this-post-provides-quick-tour-of-the.html|K9 Hardware]], on Richard Hopkins's //Old dog, new tricks// blog.
+
+The page opened during review on 2026-11-08, but no readable article text was available. Its hardware details and any associated build status therefore remain unreviewed; do not infer them from the page title or URL. If the content becomes accessible, compare its claims with the existing [[sites:chartroom:research:basicmicro-doctor-who-k9-build|BasicMicro K9 build profile]] and [[sites:chartroom:research:k9-builder-software-reference|K9 software reference]], while keeping the distinct source and evidence scope clear.
+
+**Status:** Read later / access pending. No hardware details from this page have been assessed or validated for the Robots project.
+
 ===== Back buttons and displays =====
 
 ==== Rear/back-button screens and display design ====
