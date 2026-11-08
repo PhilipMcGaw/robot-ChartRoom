@@ -81,6 +81,8 @@ The archived [[https://www.ardusub.com/introduction/hardware-options/required-ha
 
 The user-provided [[https://www.ardusub.com/introduction/required-software/ardusub-autopilot-firmware.html|ArduSub Autopilot Firmware]] page is also archived. It explains the distinction between ArduSub firmware and other ArduPilot vehicle firmware, but its version examples (Stable 4.0.x and Development 4.1.x) and its board-support statement are historical. Use the current [[https://ardupilot.org/sub/docs/common-loading-firmware.html|ArduPilot Sub firmware-loading guide]] and [[https://ardupilot.org/sub/docs/common-autopilots.html|autopilot hardware list]] for present-day firmware selection and board support. Compatibility must be checked for the exact autopilot; this reference does not establish that a particular board is supported or tested for this vehicle.
 
+The archived [[https://www.ardusub.com/reference/ardusub/joystick-setup-page.html#button-assignment|Joystick Setup Page — Button Assignment]] describes assigning regular and shifted actions to joystick buttons in the historical QGroundControl interface. Its examples include mode selection, arming and disarming, input gain, camera, lighting, and auxiliary output controls. The current [[https://ardupilot.org/sub/docs/buttons.html|ArduPilot Sub Button Inputs]] page documents the underlying Sub button functions through the `BTNx_FUNCTION` and `BTNx_SFUNCTION` parameters, including a shift function. Use the current page for supported functions; the archived page is useful for understanding the older setup workflow, not as a current QGroundControl interface guide.
+
 ===== References =====
 
   * [[https://blueos.cloud/docs/stable/integrations/hardware/required/flight-controller/|BlueOS flight controller guidance]]
@@ -92,7 +94,9 @@ The user-provided [[https://www.ardusub.com/introduction/required-software/ardus
   * [[https://www.ardusub.com/introduction/hardware-options/connection-diagrams.html|ArduSub connection diagrams (archived)]]
   * [[https://www.ardusub.com/introduction/hardware-options/required-hardware.html|ArduSub required hardware (archived)]]
   * [[https://www.ardusub.com/introduction/required-software/ardusub-autopilot-firmware.html|ArduSub autopilot firmware (archived)]]
+  * [[https://www.ardusub.com/reference/ardusub/joystick-setup-page.html#button-assignment|Joystick button assignment (archived)]]
   * [[https://ardupilot.org/sub/docs/common-loading-firmware.html|ArduPilot Sub firmware-loading guide]]
+  * [[https://ardupilot.org/sub/docs/buttons.html|ArduPilot Sub button inputs]]
   * [[https://ardupilot.org/sub/|ArduPilot Sub documentation]]
   * [[sites:chartroom:architecture:blueos-adeept-robot-hat|Existing BlueOS and Adeept Robot HAT architecture page]]
 
