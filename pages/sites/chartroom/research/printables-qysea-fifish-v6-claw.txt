@@ -1,0 +1,33 @@
+====== Printables QYSEA FIFISH V6 claw model ======
+{{tag>research rov manipulator claw 3d-printing qysea}}
+
+~~META:
+description     = Printables model listing for a claw component described for a QYSEA FIFISH robotic arm.
+type            = research
+status          = reference
+authority       = Printables model listing; indexed description only
+~~
+
+===== Model listing =====
+
+The supplied Printables listing is titled “QYSEA FIFISH V6 Claw for Robotic Arm”. Its search-indexed description calls the model more or less a 1:1 model of the claws for a FIFISH robotic arm and says an OBJ file is provided for modification. The indexed text recommends drilling the 4 mm holes after printing to obtain a close fit.
+
+The Printables page could not be retrieved directly during review on 2026-11-08. These details come from search-indexed listing text, also surfaced by a model-search aggregator, and have not been checked against the downloadable files or a physical part. The listing does not establish the model's exact supported arm revision, interface tolerances, material, load capacity, or underwater test history.
+
+===== Relevance and limits =====
+
+This is a reference for a printable claw component described as matching the claws used with an underwater robotic arm. The model is not a complete manipulator, actuator, or control system. A “1:1” description is not a guarantee of fit across FIFISH models or arm revisions. Check dimensions against the actual gripper and mounting interface before fabrication.
+
+No licence terms were available in the retrieved listing text. Check the Printables model page and its licence before downloading, modifying, or redistributing the files. Do not treat the model as suitable for underwater use or load-bearing recovery until the material, fit, actuation, and intended loads have been assessed and tested.
+
+For manufacturer-published context on commercial ROV tooling, see [[sites:chartroom:research:mariscope-rov-and-marine-technology-profile|Mariscope ROV accessories and robotic arms]]. That reference does not verify compatibility with this model or with a FIFISH vehicle.
+
+===== Source =====
+
+  * [[https://www.printables.com/model/133541-qysea-fifish-v6-claw-for-robotic-arm|Printables: “QYSEA FIFISH V6 Claw for Robotic Arm”]], supplied link; direct retrieval returned a fetch error on 2026-11-08. The description summary above is limited to search-indexed listing text; the model files and licence were not reviewed.
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
