@@ -18,11 +18,18 @@ This is an introductory example of using a Raspberry Pi as a host computer and a
 
 The tutorial dates from the Raspberry Pi 2 and Arduino Uno Rev3 context. The serial-device path it gives is an example and should be discovered on the actual Linux system rather than assumed. The linked code archives were not reviewed, so the message format, baud rate, error handling, and reconnect behaviour are not established here. The tutorial does not provide evidence of suitability or testing with the Robots project's hardware or software.
 
+===== Python serial-port example =====
+
+Maker Pro's [[https://maker.pro/pic/tutorial/introduction-to-python-serial-ports|Introduction to Python Serial Ports]] is a separate Python 3 and PySerial example. It configures a serial port with a baud rate, byte size, timeout, and stop-bit setting, checks `in_waiting`, reads a newline-terminated message with `readline()`, decodes it, and writes a reply. Its demonstration connects a PIC16F1825 UART to a computer through a USB-to-serial adapter; it is not a Raspberry Pi-specific setup.
+
+This is a small request-and-reply demonstration, not a message-framing or error-recovery specification. A real link needs an agreed message format and must handle partial input, timeouts, disconnects, and invalid data. The article's sample configuration and port name are examples, not settings to assume for another device.
+
 For a direct logic-level serial link between Arduino boards, see [[sites:chartroom:research:duino4projects-arduino-board-serial-link|Duino4Projects Arduino board serial link]]. For another Raspberry Pi to microcontroller USB serial example and its framing issues, see the [[sites:chartroom:research:small-robot-code-test-platform|small robot code test platform reference]].
 
 ===== Source =====
 
   * [[https://www.instructables.com/Raspberry-Pi-Arduino-Serial-Communication/|Raspberry Pi - Arduino Serial Communication]], AdrieSentosa, Instructables; indexed article text reviewed 2026-11-08. The full step content and linked code archives were not readable during this review.
+  * [[https://maker.pro/pic/tutorial/introduction-to-python-serial-ports|Introduction to Python Serial Ports]], Robin Mitchell, Maker Pro, published 2018-06-11; PySerial and PIC UART example; accessed 2026-11-08.
 
 ~~REFNOTES~~
 ---------

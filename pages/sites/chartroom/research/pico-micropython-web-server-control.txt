@@ -1,0 +1,30 @@
+====== MicroPython web-server control for Pico and ESP boards ======
+{{tag>research micropython raspberry-pi-pico esp8266 esp32 web-server user-interface}}
+
+~~META:
+description     = Open-source MicroPython example serving browser interfaces and invoking functions on small Wi-Fi microcontroller boards.
+type            = research
+status          = reference
+authority       = gurgleapps/pico-web-server-control source repository
+~~
+
+===== Reported capabilities =====
+
+The [[https://github.com/gurgleapps/pico-web-server-control|pico-web-server-control]] repository describes a MicroPython web server for Raspberry Pi Pico, ESP8266, and ESP32 boards. It can serve static and dynamic pages, run Python functions from browser requests, and display live data. The README describes operation as an access point or connection to a Wi-Fi network. The repository is licensed under the MIT License.
+
+Hackaday's [[https://hackaday.com/2023/04/07/pi-microcontroller-still-runs-a-webserver/|2023 article]] presents the project as a way to add a browser interface to small microcontroller projects. The repository README is the primary source for supported boards and setup; the article is secondary reporting. These sources describe capabilities, not a test with the Robots project's hardware.
+
+===== Relevance and limits =====
+
+This is a reference for a lightweight local browser interface when a project needs simple status display or manual controls. It could inform a bench tool or non-critical user interface. The repository page does not establish suitability for real-time vehicle control, security in a deployed network, or behaviour under loss of Wi-Fi. Those properties require separate design and testing before use in a robot system.
+
+===== Sources =====
+
+  * [[https://github.com/gurgleapps/pico-web-server-control|gurgleapps/pico-web-server-control]], source repository and README, MIT License; accessed 2026-11-08.
+  * Bryan Cockfield, [[https://hackaday.com/2023/04/07/pi-microcontroller-still-runs-a-webserver/|Pi Microcontroller Still Runs A Webserver]], Hackaday, published 2023-04-07; accessed 2026-11-08.
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

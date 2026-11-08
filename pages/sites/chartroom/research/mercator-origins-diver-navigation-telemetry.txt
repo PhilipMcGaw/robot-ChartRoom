@@ -1,0 +1,32 @@
+====== Mercator Origins diver navigation and telemetry project ======
+{{tag>research underwater-navigation diver-technology telemetry assistive-technology esp32 gps rs-485}}
+
+~~META:
+description     = Builder-reported design and development record for a tethered diver navigation console with surface GPS and telemetry.
+type            = research
+status          = reference
+authority       = Mark B Jones's Hackaday.io project page and linked project repositories
+~~
+
+===== Project concept and reported build =====
+
+Mark B Jones's [[https://hackaday.io/project/190591-mercator-origins-sat-nav-telemetry-for-divers|Mercator Origins]] project describes a diver navigation console intended to guide a diver between underwater waypoints. The stated accessibility goal is to provide visual directions and audio or vibration guidance for vision-impaired divers. The project page also describes depth and location telemetry sent to an internet dashboard.
+
+The described system uses a surface float with a GPS receiver, Wi-Fi or mobile hotspot connectivity, and an ESP32-based computer. A cable connects the float to the underwater console, which contains navigation electronics and sensors. The component list names an RS-485 module in the float and a multi-core subsea cable. GPS reception is therefore described at the surface float; the source does not establish direct satellite positioning underwater.
+
+The project log includes photographs of a final assembly and a May 2023 post reporting successful sea trials in Gozo and publication of the code repositories. These are the builder's reports, not independently checked test results. The linked project page describes multiple microcontrollers and separate code repositories for float communications, navigation, and console timing/leak detection. The project is a diver-worn navigation system, not an ROV.
+
+===== Relevance and limits =====
+
+The project is a reference for a surface gateway relaying positioning and telemetry to an underwater device over a tether, and for presenting navigation information through more than one sensory channel. Its diver-worn enclosure, operating assumptions, and navigation problem differ from those of a remotely operated vehicle. The reported trials do not establish suitability for the Robots project's hardware or validate the system as a substitute for trained dive support and established dive procedures.
+
+===== Sources =====
+
+  * Mark B Jones, [[https://hackaday.io/project/190591-mercator-origins-sat-nav-telemetry-for-divers|“Mercator Origins”: Sat Nav & Telemetry for Divers]], Hackaday.io project page, created 2023-04-14; project description, components, build record, and logs; accessed 2026-11-08.
+  * The project page links the author's [[https://github.com/scuba-hacker|GitHub repositories]]. Repository contents were not reviewed for this note.
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
