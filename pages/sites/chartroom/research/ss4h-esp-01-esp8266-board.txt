@@ -1,0 +1,34 @@
+====== Smart Solutions for Home SS4H-ESP-01 board ======
+{{tag>research esp8266 electronics pcb sensors actuators environmental-monitoring}}
+
+~~META:
+description     = Reference for a configurable interface and power-conditioning board for the ESP-01S ESP8266 module.
+type            = research
+status          = reference
+authority       = Smart Solutions for Home board article and source-file catalogue
+~~
+
+===== Board overview =====
+
+The SS4H-ESP-01 is a small board designed for the ESP-01S module, a form of the ESP8266 microcontroller module. The author presents it as an interface between the ESP-01S and a sensor, switch, relay, or other single-purpose device. Configurable components support direct input/output, an NPN transistor stage, a voltage-divider input, and pull-up or pull-down arrangements.
+
+The board can be assembled with up to two low-dropout regulators to provide a primary input rail, a separate actuator rail, and the 3.3 V supply required by the ESP module. The article gives an input range of 3.3–12 V subject to the regulator configuration and the relationship V0 ≥ V1 ≥ V2. It also describes two module orientations: approximately 15 × 28 × 9 mm when mounted over the board, or 15 × 44 × 5 mm when mounted alongside it. These are the author's stated configurations and dimensions.
+
+The article says there are no conventional programming headers; small pads are used with test pins or a USB-to-UART adapter. The author describes providing the design files through an email sign-up. A separate source-file catalogue lists the SS4H-ESP-01 PCB and schematic as revision 1.1, dated 2020-12-20.
+
+===== Relevance and limits =====
+
+This is a useful reference for compact ESP8266 sensor or actuator nodes, including the separation of MCU, sensor-signal, and actuator voltages on a small board. It may inform packaging and signal-conditioning choices for distributed environmental sensors, but it is a single-channel interface board rather than a general-purpose robot controller.
+
+The board does not establish sensor accuracy, electrical protection limits beyond the described configurations, environmental sealing, or suitability for deployment outdoors or underwater. Review the exact schematic, component values, module variant, and power budget before adapting it. The board has not been built or tested as part of this research.
+
+===== Sources =====
+
+  * [[https://smartsolutions4home.com/ss4h-esp-board-for-esp8266/|Smart Solutions for Home — SS4H-ESP-01 board for ESP8266]], board description, configuration guidance, and stated dimensions; accessed 2026-11-08.
+  * [[https://download.smartsolutions4home.com/|Smart Solutions for Home — Download source files]], lists an SS4H-ESP-01 PCB and schematic at revision 1.1, dated 2020-12-20; accessed 2026-11-08. Access to the design files may require the author's email sign-up as described in the project article.
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
