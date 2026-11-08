@@ -1,0 +1,36 @@
+====== Frank the Tank Raspberry Pi RC tank ======
+{{tag>research raspberry-pi robot tank remote-control video-streaming camera}}
+
+~~META:
+description     = 2014 Raspberry Pi remote-control tank software reference with gamepad and keyboard input, camera streaming, and still-image capture.
+type            = research
+status          = reference
+authority       = FreddyKilo Frank_the_Tank GitHub repository
+~~
+
+===== Sources =====
+
+  * [[https://github.com/FreddyKilo/Frank_the_Tank/tree/master|Frank_the_Tank repository]], especially [[https://github.com/FreddyKilo/Frank_the_Tank/blob/master/Frank_the_tank.py|Frank_the_tank.py]], [[https://github.com/FreddyKilo/Frank_the_Tank/blob/master/email_photo.py|email_photo.py]], and the [[https://github.com/FreddyKilo/Frank_the_Tank/blob/master/README.md|README]]. Files were last modified in September 2014 according to GitHub; reviewed 2026-11-08.
+
+===== What the repository contains =====
+
+The README describes the project as a Raspberry Pi-controlled radio-controlled (RC) tank. The main Python script uses Raspberry Pi general-purpose input/output (GPIO) to control two motor channels through a TB6612FNG motor controller. It supports keyboard commands and a PlayStation 3 Sixaxis controller, with adjustable speed, turning and pivoting, and a headlight output.
+
+The script starts a Raspberry Pi camera video pipeline using `raspivid` and GStreamer to send H.264 video as Real-time Transport Protocol (RTP) over User Datagram Protocol (UDP) to a configured host and port. It also uses `raspistill` for still images and includes a separate script for emailing an image. These are capabilities described in the repository code; the repository does not provide a test record or independent evidence that each function worked in a complete build.
+
+===== Relevance and limits =====
+
+This is a compact historical example of combining manual drive input, direct motor control, lighting, camera streaming, and photo capture on a Raspberry Pi. It may be useful when comparing early single-program robot-control layouts and operator video workflows.
+
+The code uses Python 2-era syntax and Raspberry Pi camera commands such as `raspivid` and `raspistill`; it should not be treated as current Raspberry Pi setup guidance. The repository README is brief and does not give a bill of materials, assembly instructions, measured performance, or validation results. The project concerns a land-based tank and does not establish suitability for an underwater vehicle or the current Robots software architecture.
+
+===== Related research =====
+
+  * [[sites:chartroom:research:sunfounder-picar-x-notenoughtech|SunFounder PiCar-X review by NotEnoughTech]] — another Raspberry Pi-controlled land robot, with a two-axis camera mount and current manufacturer documentation.
+  * [[sites:chartroom:research:learnrobotics-rpi-video-streaming|Learn Robotics Raspberry Pi video streaming]] — a separate WebRTC-based browser-video example.
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
