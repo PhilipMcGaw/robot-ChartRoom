@@ -1,0 +1,37 @@
+====== Tote Robot inverse kinematics ======
+{{tag>research quadruped inverse-kinematics servos robotics-education}}
+
+~~META:
+description     = Tote Robot documentation for leg inverse kinematics and servo calibration, with noted source inconsistencies.
+type            = research
+status          = reference
+authority       = Tote Robot documentation
+~~
+
+===== Overview =====
+
+The Tote Robot documentation presents inverse kinematics for a walking robot. Its inverse-kinematics page describes a four-legged robot with three degrees of freedom per leg and calculates hip, knee, and ankle joint angles from a target foot position and coxa, femur, and tibia lengths. It also notes body inverse kinematics for changing body tilt, yaw, rotation, or position.
+
+The method reduces the leg geometry to a plane after calculating the hip angle with `atan2`. It then uses trigonometry, including the cosine rule, to solve for the remaining joints. The page also describes applying offsets and reversing directions to align calculated angles with physical servo zero positions and rotation directions.
+
+===== Documentation inconsistencies =====
+
+The inverse-kinematics page states that the target coordinates are `(x, y, z)`, reduces them to `(f, z)`, and defines `f = sqrt(x² + y²) - Lc`. It then gives the diagonal as `d = sqrt(f² + x²)`. From the preceding `(f, z)` plane and the use of `atan2(z, f)`, the diagonal appears geometrically to require `d = sqrt(f² + z²)`. This is an editorial inference from the page's own coordinate definitions, not a verified correction to the project implementation. Re-derive and test the geometry against the intended coordinate conventions before reusing the equations.
+
+There is also a terminology or scope difference in the documentation: the inverse-kinematics page describes three degrees of freedom per leg, while the step-by-step tutorial has a section titled “Quadruped with Two Degrees of Freedom per Leg”. The pages do not explain whether the tutorial section is a simpler variant or whether the difference reflects an inconsistency.
+
+===== Relevance and limits =====
+
+This is a useful educational reference for geometric leg inverse kinematics and servo calibration. The associated software page describes an Arduino Pro Mini example with a TV infrared remote and walking gaits. The documentation does not establish a design suitable for any Robots project platform, and its assumptions, coordinate frame, joint limits, reachable workspace, and equations require verification before reuse.
+
+===== Sources =====
+
+  * [[https://tote.readthedocs.io/en/latest/ik.html|Tote Robot: Inverse Kinematics]], equations and servo trim/reversal notes; page footer identifies Tote Robot documentation 1.0.0 and revision `dbbf724c92f2`; accessed 2026-11-08.
+  * [[https://tote.readthedocs.io/en/latest/tutorial.html|Tote Robot: Step-by-step Tutorial]], including the “Quadruped with Two Degrees of Freedom per Leg” section; accessed 2026-11-08.
+  * [[https://tote.readthedocs.io/en/latest/software.html|Tote Robot: Software]], example robot behaviour and Arduino Pro Mini / infrared remote description; accessed 2026-11-08.
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

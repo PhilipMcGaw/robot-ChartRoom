@@ -202,6 +202,7 @@ The links below cover all research notes. Use the related-research links within 
 ==== Robotics, education, and hardware ====
 
   * [[sites:chartroom:research:fictionlab-leo-raph-mobile-robots|Fictionlab Leo Rover and Raph Rover]]
+  * [[sites:chartroom:research:tote-robot-inverse-kinematics|Tote Robot inverse kinematics]]
   * [[sites:chartroom:research:makerforge-modular-biped-project|MakerForge modular biped robot project]]
   * [[sites:chartroom:research:open-robotic-platform|Open Robotic Platform (ORP)]]
   * [[sites:chartroom:research:uea-envsoft-otto-mecanum|UEA-envsoft Otto-Mecanum robot]]
