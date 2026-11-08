@@ -33,6 +33,7 @@ This page records a group of user-supplied project and tutorial links. These are
 
 ===== Other supplied links =====
 
+  * The supplied [[https://www.instagram.com/p/CnSOA3ZrI1V/|Instagram post]] could not be retrieved or identified during review on 2026-11-08. Its subject and claims are therefore not recorded.
   * Shawn Leclair's [[https://www.hackster.io/shooshoomo/reef-controller-a30d52|Reef Controller]], published 2016-04-01, describes an Arduino MKR1000 aquarium controller with timed LED dimming, temperature monitoring and fan control, pump control for feeding, and a Windows application communicating through HTTP requests and JSON status. The project page describes an early, incomplete project; it is an aquarium automation example, not a vehicle controller.
   * The supplied [[https://x.com/MadiHilly/status/1620399236339867648|Madi Hilly post on X]] could not be retrieved or independently identified during review. Its subject and claims are therefore not recorded.
 
@@ -42,7 +43,7 @@ See also [[sites:chartroom:research:circuitdigest-mosfet-h-bridge-tutorial|Circu
 
 ===== Source review =====
 
-Sources were accessed or attempted on 2026-11-08. The Medium and Instructables pages provided limited or no readable article text; the X post could not be retrieved. For the ESC Instructable, the summary uses the linked video descriptions and a secondary Hackster article because the build steps were inaccessible. The other summaries are based on the linked pages, with source limitations stated above. No circuit was independently analysed or tested for this note.
+Sources were accessed or attempted on 2026-11-08. The Medium and Instructables pages provided limited or no readable article text; the X post and Instagram post could not be retrieved or identified. For the ESC Instructable, the summary uses the linked video descriptions and a secondary Hackster article because the build steps were inaccessible. The other summaries are based on the linked pages, with source limitations stated above. No circuit was independently analysed or tested for this note.
 
 
 ~~REFNOTES~~
