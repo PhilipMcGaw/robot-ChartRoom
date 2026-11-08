@@ -232,6 +232,12 @@ In a [[https://hackaday.com/2015/11/28/basic-on-the-esp8266/|2015 Hackaday artic
 
 The LED is only a representative output in the demonstration. The article does not show a heater, a load driver, or a complete thermostat control and safety design. Treat it as an educational sensor/web interface example, not as a usable heating controller.
 
+==== Ray's ESP8266 circuit-design tips ====
+
+Ray's [[https://rayshobby.net/wordpress/tips-and-tricks-for-using-esp8266/|2021 ESP8266 design article]], published 2021-10-29 and accessed 2026-11-08, records the author's experience integrating an ESP-12F module into custom circuits. It discusses supply design, a CH340-based automatic reset/programming circuit, general-purpose input/output (GPIO) pin selection and boot behaviour, hardware-revision detection, and programming through an external universal serial bus (USB)-to-serial adapter or over-the-air updates. These topics make a useful design-review checklist for compact ESP8266 boards, but the pin details are tied to the module and flash configuration used by the author.
+
+The article proposes a two-diode voltage drop from a 5 V supply as a low-cost power circuit and reports that it worked reliably in the author's setup. Treat this as a report of that design, not a general power-supply recommendation. Espressif's [[https://www.espressif.com/sites/default/files/documentation/esp8266_hardware_design_guidelines_en.pdf|ESP8266 Hardware Design Guidelines, Version 2.8 (2024-10)]] specify a 3.3 V system, recommend a 500 mA output-current capability for a single supply, and give power-supply and decoupling guidance. Check the current datasheet and hardware guidance for the exact module before designing a board. Neither the article's circuits nor its GPIO claims have been independently tested as part of this research note.
+
 ==== PiBorg BattBorg battery power board ====
 
 The supplied [[http://forum.piborg.org/battborg|PiBorg BattBorg page]] timed out during review. The [[https://media.digikey.com/pdf/Data%20Sheets/Pi%20Supply%20PDFs/PIS-0925_Web.pdf|Pi Supply BattBorg datasheet]] identifies PIS-0925 as a battery-to-5 V power converter for Raspberry Pi projects. Its 2018 unsoldered-kit sheet specifies a 7–36 V battery input range, a maximum output of 5 V at 1.5 A, and connection to GPIO pins 2, 4, and 6. It describes an approximately 90% efficient OKI78SR DC-to-DC converter and lists compatibility with Raspberry Pi models up to the Pi 3 and Zero W.
