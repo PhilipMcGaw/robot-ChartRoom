@@ -28,7 +28,7 @@ The repository README does not document sealing, pressure resistance, corrosion 
 
 ===== Source =====
 
-  * [Velli20/ArduinoRobotTank](https://github.com/Velli20/ArduinoRobotTank), repository README and top-level file structure; reviewed 2026-11-07.
+  * [Velli20/ArduinoRobotTank](https://github.com/Velli20/ArduinoRobotTank), repository README and top-level file structure; reviewed 2026-11-08.
 
 ===== Related research =====
 
