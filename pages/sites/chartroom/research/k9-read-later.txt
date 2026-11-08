@@ -49,6 +49,14 @@ The label page was not readable during review on 2026-11-08. Search-indexed exce
 
 **Status:** Read later / partial search-index review; label page and full posts not reviewed.
 
+===== Downloads page — access pending =====
+
+**Reference:** [[https://k9-build.blogspot.com/p/downloads.html|Downloads]], on Richard Hopkins's //Old dog, new tricks// blog.
+
+The page title was available during review on 2026-11-08, but no readable page text or download list was returned, and searches did not identify indexed download details. The available files, their contents, licences, and relation to specific K-9 versions remain unreviewed.
+
+**Status:** Read later / access pending. No files were downloaded or assessed.
+
 ===== Back buttons and displays =====
 
 ==== Rear/back-button screens and display design ====
