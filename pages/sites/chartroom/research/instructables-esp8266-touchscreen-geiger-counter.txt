@@ -24,6 +24,10 @@ The author also notes that changes to the printed circuit board design and case 
 
 This is a reference for a microcontroller-based instrument with a local graphical interface and event-counting input. It is one of several Geiger-counter references in the research catalogue; see the [[sites:chartroom:research:sensorsiot-cajoe-geiger-counter|SensorsIot CAJOE Geiger counter]] and [[sites:chartroom:research:geigercounter-v08-2969773606|GeigerCounter V0.8 DIY kit]]. It has not been evaluated or tested for Robots project use.
 
+===== Possible weather-station-style instrument =====
+
+A possible direction is to adapt the Geiger counter as a weather-station-style measuring device. This is a concept only; no hardware integration, enclosure, display arrangement, or data path has been designed or tested. Radiation measurement is distinct from weather measurement, and the source project does not establish calibrated dose readings. For related weather-station references, see the [[sites:chartroom:research:arduino-community-weather-station-instructables|Arduino community weather station]] and [[sites:chartroom:research:arduino-weather-station-miksrv|Miksrv Arduino Weather Station]].
+
 ===== Source =====
 
   * [[https://www.instructables.com/DIY-Geiger-Counter-With-an-ESP8266-and-a-Touchscre/|DIY Geiger Counter With an ESP8266 and a Touchscreen]], by prabhat_, published 2019-08-09; indexed page content reviewed 2026-11-08. Direct page access was unavailable, so details were checked against the search-indexed article text.
