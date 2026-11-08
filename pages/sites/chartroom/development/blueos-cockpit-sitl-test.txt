@@ -19,7 +19,7 @@ This is an upstream-stack evaluation. It does not connect CuttleOS Cockpit to Bl
   * Raspberry Pi 4 Model B with the fitted Adeept ADM133 Robot HAT revision recorded before installation.
   * The available 64 GB SD card, reserved for this BlueOS trial after confirming that it contains no data to preserve.
   * The latest stable BlueOS image listed for Raspberry Pi 4B (currently the ARMv7, 32-bit Bullseye image); verify the download options immediately before flashing.
-  * Blue Robotics Cockpit running on a separate topside computer or in a browser.
+  * Blue Robotics Cockpit available as a BlueOS Extension or running as a self-contained application on the topside computer; record the selected route and Cockpit release.
   * Network access for first-boot setup and BlueOS updates.
   * No ESCs, thrusters, vehicle, or other powered actuators connected during the initial BlueOS/Cockpit test.
 
@@ -56,7 +56,9 @@ Use BlueOS's Autopilot Firmware service to select and start an ArduSub SITL inst
 
 ==== 2. Connect Cockpit ====
 
-Open Blue Robotics Cockpit and use vehicle discovery to connect to the BlueOS instance. If discovery is unavailable in the VM network, configure the BlueOS vehicle address and the documented MAVLink2REST backend address manually; record which method was used.
+For an IP-connected BlueOS vehicle, Cockpit can run as a BlueOS Extension. Alternatively, install and run the self-contained Cockpit application on the topside computer. The [[https://blueos.cloud/cockpit/docs/stable/usage/installation/|Cockpit installation guide]] describes both routes and their platform availability; use the matching official download or BlueOS Extensions Manager. Record the installation route and exact Cockpit release.
+
+Open Cockpit and use vehicle discovery to connect to the BlueOS instance. If discovery is unavailable in the VM network, configure the BlueOS vehicle address and the documented MAVLink2REST backend address manually; record which method was used.
 
 **Expected:** Cockpit identifies the ArduSub vehicle, loads an appropriate submarine interface, and displays live connection state and telemetry. Record fields, units, update behaviour, and any mismatch between Cockpit and BlueOS inspection.
 
@@ -95,6 +97,7 @@ This test has not been run. It requires physical access to the Pi and a reserved
 ===== References =====
 
   * [[https://blueos.cloud/cockpit/docs/stable/usage/overview/|Blue Robotics Cockpit overview and simulation instructions]]
+  * [[https://blueos.cloud/cockpit/docs/stable/usage/installation/|Blue Robotics Cockpit installation guide]]
   * [[https://blueos.cloud/docs/stable/usage/advanced/|BlueOS advanced usage: Autopilot Firmware and SITL]]
   * [[sites:chartroom:architecture:blueos-adeept-robot-hat|BlueOS and Adeept Robot HAT architecture]]
   * [[https://github.com/PhilipMcGaw/robot-NautiPi/blob/main/ROV%20-%20Main%20Body/docs/reference/adeept-robot-hat-adm133-interfaces.md|Adeept ADM133 Robot HAT V3.1 interface reference]]
