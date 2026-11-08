@@ -24,6 +24,7 @@ This is a maker project reference, not a project design or validated payload. Th
   * [FPV-Rover V1.0 — Thingiverse](http://www.thingiverse.com/thing:1240754), linked by the creator; not independently reviewed.
   * [FPV-Rover V2.0 — Thingiverse](https://www.thingiverse.com/thing:2952852), linked by the creator; not independently reviewed.
   * [Nerf Darf Launcher for the FPV-Rover — Instructables](https://www.instructables.com/id/Nerf-Darf-Launcher-for-the-FPV-Rover), linked by the creator for instructions and bill of materials; not independently reviewed.
+  * [User-supplied Instructables image](https://content.instructables.com/FAI/CQNA/J2MATO53/FAICQNAJ2MATO53.png), direct image fetch failed and its contents could not be inspected; reviewed 2026-11-08.
 
 
 ~~REFNOTES~~
