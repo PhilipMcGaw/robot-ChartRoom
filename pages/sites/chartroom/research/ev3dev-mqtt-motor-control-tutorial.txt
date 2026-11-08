@@ -1,0 +1,41 @@
+====== EV3dev MQTT messaging and motor-control tutorial ======
+{{tag>research ev3dev mqtt messaging robotics motor-control}}
+
+~~META:
+description     = Historical EV3dev tutorial showing MQTT publisher and subscriber messages, including a basic motor-speed command example.
+type            = research
+status          = reference
+authority       = EV3dev tutorial; Eclipse Paho documentation for payload handling
+~~
+
+===== Scope =====
+
+The EV3dev tutorial “Sending and Receiving Messages with MQTT” describes Message Queuing Telemetry Transport (MQTT), a broker-based publish-subscribe messaging protocol, with Python examples for LEGO MINDSTORMS EV3 robots. It is a historical educational example, not a Chartroom communications decision or a current implementation guide.
+
+===== Example described =====
+
+The tutorial uses the Mosquitto broker and the Paho Python client. Separate publisher and subscriber programs exchange a topic and payload through the broker. Its practical example subscribes to a topic for an EV3 motor and uses incoming payloads to set the motor duty cycle or request a stop. The tutorial says its scripts were tested on an EV3 using the latest EV3dev version available on 2016-12-21, a Raspberry Pi 3 with BrickPi using the same EV3dev version, and a laptop running Ubuntu 16.04.
+
+===== Code and age limitations =====
+
+The setup commands and tested software versions date from 2016. Check current EV3dev, Python, Mosquitto, and Paho documentation before adapting them.
+
+The practical motor callback appears to handle its payload inconsistently: it compares `msg.payload` with the text value `'Q'`, and assigns `msg.payload` directly to the motor's `duty_cycle_sp` property. The current Eclipse Paho Python client documentation describes a received message payload as bytes. By contrast, the tutorial's earlier subscriber example decodes text or converts a numeric payload before use. This suggests the motor example may need explicit decoding and numeric conversion to behave as intended; this is a source-code review observation, not a runtime test.
+
+The motor example is a minimal demonstration. It does not establish a safe actuator-control protocol, loss-of-connection behaviour, or suitability for a project vehicle.
+
+===== Chartroom context =====
+
+This tutorial is useful as an introductory example of brokered messaging between a small robot and other network clients. It does not change the Chartroom architecture: [[sites:chartroom:architecture:nats|NATS remains the selected middleware]] for communication between Robots components.
+
+===== Sources =====
+
+  * [[https://www.ev3dev.org/docs/tutorials/sending-and-receiving-messages-with-mqtt/|Sending and Receiving Messages with MQTT]], EV3dev; tutorial and historical test environment reviewed 2026-11-08.
+  * [[https://github.com/eclipse-paho/paho.mqtt.python|Eclipse Paho MQTT Python Client]], current upstream project documentation; payload and callback references reviewed 2026-11-08.
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
