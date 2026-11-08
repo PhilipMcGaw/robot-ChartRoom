@@ -85,6 +85,8 @@ The archived [[https://www.ardusub.com/reference/ardusub/joystick-setup-page.htm
 
 The archived [[https://www.ardusub.com/introduction/hardware-options/additional-peripheral-devices/relays.html|Relays]] page describes controlling up to three relay outputs from joystick buttons and notes that some autopilots need a 5 V supply on the output rail. Treat this as historical setup guidance. The current [[https://ardupilot.org/sub/docs/common-relay.html|ArduPilot Sub Relay Switch]] documentation describes relay outputs as GPIO signals with limited current capability; output voltage depends on the autopilot, and the available pins and setup depend on its hardware. A relay output is a control signal, not a load supply: select suitable driver hardware and a separate load power path for the actual device. Current Sub [[https://ardupilot.org/sub/docs/buttons.html|button functions]] include relay controls, but the exact usable outputs must be checked against the selected autopilot and firmware.
 
+The archived [[https://www.ardusub.com/introduction/hardware-options/additional-peripheral-devices/grippers-and-manipulators.html|Grippers and Manipulators]] page describes PWM-controlled grippers and suggests RS-485 for grippers with their own control interface, to avoid custom companion-computer software. It names Blue Robotics Newton and Blueprint Lab Series Grippers as historical examples; this does not establish current product availability or compatibility with a selected autopilot. Current ArduPilot Sub documentation lists the Gripper output function (28) and describes gripper configuration using `GRIP_*` parameters, `MAV_CMD_DO_GRIPPER`, or an RC auxiliary switch. Sub also has generic PWM actuator outputs and joystick button functions. These controls provide useful integration paths, but do not by themselves define a general manipulator interface or establish end-to-end safety for a payload.
+
 ===== References =====
 
   * [[https://blueos.cloud/docs/stable/integrations/hardware/required/flight-controller/|BlueOS flight controller guidance]]
@@ -98,9 +100,13 @@ The archived [[https://www.ardusub.com/introduction/hardware-options/additional-
   * [[https://www.ardusub.com/introduction/required-software/ardusub-autopilot-firmware.html|ArduSub autopilot firmware (archived)]]
   * [[https://www.ardusub.com/reference/ardusub/joystick-setup-page.html#button-assignment|Joystick button assignment (archived)]]
   * [[https://www.ardusub.com/introduction/hardware-options/additional-peripheral-devices/relays.html|ArduSub relays (archived)]]
+  * [[https://www.ardusub.com/introduction/hardware-options/additional-peripheral-devices/grippers-and-manipulators.html|ArduSub grippers and manipulators (archived)]]
   * [[https://ardupilot.org/sub/docs/common-loading-firmware.html|ArduPilot Sub firmware-loading guide]]
   * [[https://ardupilot.org/sub/docs/buttons.html|ArduPilot Sub button inputs]]
   * [[https://ardupilot.org/sub/docs/common-relay.html|ArduPilot Sub relay switch]]
+  * [[https://ardupilot.org/sub/docs/common-rcoutput-mapping.html|ArduPilot Sub output functions]]
+  * [[https://ardupilot.org/sub/docs/common-gripper-landingpage.html|ArduPilot Sub gripper configuration]]
+  * [[https://ardupilot.org/sub/docs/actuators.html|ArduPilot Sub PWM actuators]]
   * [[https://ardupilot.org/sub/|ArduPilot Sub documentation]]
   * [[sites:chartroom:architecture:blueos-adeept-robot-hat|Existing BlueOS and Adeept Robot HAT architecture page]]
 
