@@ -22,11 +22,22 @@ The published code should not be reused as written:
   * Each H206 is a single-channel sensor in the described setup. Its count alone does not encode direction, while the example only increments the wheel counters. Reverse travel is therefore not represented as signed wheel displacement.
   * The wheel-pulse estimate assumes the wheel rolls without slip and that the effective wheel radius is known. It does not correct for changing contact, uneven surfaces, wheel mismatch, or sensor alignment.
 
-The article remains useful for discussing slotted optical sensing and pulse counting on a small land robot. It is not a validated odometry implementation and does not apply directly to an underwater vehicle's thruster-based motion. For an encoder-feedback control example with more complete motor-loop separation, see [[sites:chartroom:research:piwars-footleg-motor2040-pid-mecanum|PiWars 2024 Motor2040 PID control and encoder feedback]].
+===== Frequency counting and wheel odometry =====
+
+The user-supplied Duino4Projects article demonstrates the FreqCount library as a frequency counter: it counts a 5 V pulse signal over a 1,000 ms gate and displays the result. This can estimate wheel rotational speed if the sensor produces a known number of pulses per wheel revolution, but the article does not use a wheel encoder or calculate distance or heading.
+
+The FreqCount documentation explains that a fixed gate gives limited resolution when only a few pulses arrive during the measurement window. With the article's 1 s gate, a new result is produced each second and the count changes in 1 Hz steps. PJRC lists FreqCount as best suited to 1 kHz–8 MHz signals and FreqMeasure to 0.1 Hz–1 kHz signals. At slow wheel speeds, measure pulse periods or use a shorter gate if the controller can tolerate the resulting trade-off between update rate and resolution. PJRC's Arduino Uno table also lists pins 3, 9, 10, and 11 as unavailable to `analogWrite()` while FreqCount is running, so check timer and pin conflicts before combining it with motor PWM.
+
+For odometry, retain cumulative counts from each wheel and convert them to signed wheel travel using calibrated pulses per revolution and effective wheel radius. Heading also needs the wheel separation and the difference between left and right travel. A one-channel pulse sensor does not report direction by itself. See [[sites:chartroom:research:piwars-footleg-motor2040-pid-mecanum|PiWars 2024 Motor2040 PID control and encoder feedback]] for a separate encoder-feedback example.
+
+The H206 article remains useful for discussing slotted optical sensing and pulse counting on a small land robot. It is not a validated odometry implementation and does not apply directly to an underwater vehicle's thruster-based motion.
 
 ===== Sources =====
 
   * [Speed, Distance and Angle Measurement for Mobile Robots using Arduino and LM393 Speed Sensor Module (H206) — Circuit Digest](https://circuitdigest.com/microcontroller-projects/speed-distance-and-angle-measurement-for-mobile-robots-using-arduino-and-lm393-h206), article and published source code; published 2019-01-16; accessed 2026-11-08.
+  * [Arduino Frequency Counter Tutorial for Electronics Enthusiasts — Duino4Projects](https://duino4projects.com/arduino-frequency-counter-tutorial-for-electronics-enthusiasts/), user-provided frequency-counter example; published 2024-01-16; accessed 2026-11-08.
+  * [FreqCount library — Paul Stoffregen](https://github.com/PaulStoffregen/FreqCount), primary library source for fixed-gate pulse counting; accessed 2026-11-08.
+  * [FreqCount library documentation — PJRC](https://www.pjrc.com/teensy/td_libs_FreqCount.html), frequency range guidance, gate interval, and board-specific input/timer resource table; accessed 2026-11-08.
   * [attachInterrupt() — Arduino documentation](https://docs.arduino.cc/language-reference/en/functions/external-interrupts/attachInterrupt), interrupt service routine constraints and `delay()` behaviour; revised 2025-04-24; accessed 2026-11-08.
   * [diff_drive_controller — ROS 2 Control documentation](https://control.ros.org/kilted/doc/ros2_controllers/diff_drive_controller/doc/userdoc.html), differential-drive odometry and wheel radius/separation parameters; accessed 2026-11-08.
 
