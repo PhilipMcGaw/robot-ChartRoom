@@ -1,0 +1,39 @@
+====== Arduino and Processing artificial horizon using MPU-6050 ======
+{{tag>research arduino processing imu attitude-indicator mpu6050 compass-display}}
+
+~~META:
+description     = 2014 Arduino and Processing example that displays pitch, roll, and yaw from an MPU-6050 as an artificial horizon and compass-like dial.
+type            = research
+status          = reference
+authority       = M. Furkan Bahat project article; TDK InvenSense datasheet; I2Cdevlib source
+~~
+
+===== Sources =====
+
+  * [[https://mfurkanbahat.blogspot.com/2014/11/artificial-horizon-and-compass-using.html|Artificial Horizon and Compass Using Arduino-Processing-MPU6050]], M. Furkan Bahat, 2014-11-28. The page could not be opened directly during this review; the indexed copy exposed the article text and code.
+  * [[https://invensense.tdk.com/wp-content/uploads/2015/02/MPU-6000-Datasheet.pdf|TDK InvenSense MPU-6000/MPU-6050 Product Specification]].
+  * [[https://github.com/jrowberg/i2cdevlib/blob/master/Arduino/MPU6050/MPU6050_6Axis_MotionApps20.cpp|I2Cdevlib MPU6050 MotionApps 6-axis source]].
+
+===== Project summary =====
+
+The article connects an Arduino Uno to an MPU-6050 over I²C and sends three orientation values over serial to a Processing program. The Processing sketch draws an artificial horizon, pitch and bank scales, and a compass-like circular display. The author identifies the MPU6050 MotionApps 6-axis library and uses its digital motion processor output for yaw, pitch, and roll. The code selects a serial port and uses a baud rate of 115,200.
+
+===== Compass terminology and limitations =====
+
+Despite the article's title and display label, the MPU-6050 contains a three-axis accelerometer and a three-axis gyroscope; it has no magnetometer. The displayed azimuth comes from the yaw value calculated from the motion processor's orientation quaternion. It is therefore not a magnetic-compass measurement or an absolute heading reference. With no external heading reference, yaw derived from inertial sensing can drift over time.
+
+The page is a useful demonstration of transporting orientation values from a microcontroller to a desktop visualisation. It does not document quantitative accuracy, calibration results, drift, update latency, or testing during sustained motion. Its displayed scaling and graphics should not be treated as a validated instrument or an autopilot attitude estimate.
+
+===== Relevance and limits =====
+
+This is a historical example for a lightweight sensor-to-visualisation path and an operator-facing attitude display. It may inform experiments with serial telemetry and visual presentation, but it does not validate an inertial measurement unit (IMU) choice or sensor-fusion method for a vehicle. For an experimental multi-sensor board reference, see [[sites:chartroom:research:gy-91-mpu9250-assessment|GY-91 MPU-9250/9255 IMU assessment]]. That assessment also explains why a magnetometer's heading must be checked in the assembled vehicle environment.
+
+===== Review record =====
+
+Reviewed 2026-11-08. The blog page itself was inaccessible to the browser reader; the indexed article text and code were used for the project summary. The MPU-6050 sensor description was checked against the manufacturer datasheet, and the library's yaw/pitch/roll calculation was checked against I2Cdevlib source.
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
