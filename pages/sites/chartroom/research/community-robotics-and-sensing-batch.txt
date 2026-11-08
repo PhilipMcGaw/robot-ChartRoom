@@ -146,6 +146,16 @@ The [[https://www.hackster.io/moisi/the-zeus-electronic-weather-station-zews-a00
 
 The page labels the project a work in progress. Its component list names two Arduino Uno boards, while the project history describes the prototype using one Uno as the inter-integrated circuit (I²C) master; the difference may reflect different project stages, but the page does not explain it. Treat the implementation history and component list as the author's account, not independent verification. The referenced source code is said to be in a GitHub repository, but the page's link target was not visible during review, so the repository and code have not been inspected.
 
+==== Improved WeatherStation 20×4 ====
+
+The [[https://www.hackster.io/ragingradish/improved-weatherstation-20x4-18dd89|Improved WeatherStation 20×4]] is an Arduino Uno project using a DHT22 temperature and humidity sensor, a BMP280 pressure sensor, a logic-level converter, and a 20 × 4 character liquid-crystal display (LCD). The author focuses on making readings more useful by comparing current temperature and pressure with earlier samples, showing trend arrows, and drawing 60-minute temperature and pressure graphs. The code stores 60 samples for each graph; the author leaves humidity out of the history because of the Uno's memory limits. A startup screen checks sensor status and indicates how much of the comparison history has been populated.
+
+**Relevance:** a compact example of local display, short rolling histories, and derived trend information. It is useful for considering how an environmental node can expose both current measurements and recent change, and for making resource limits visible in the design.
+
+The project is a code example rather than a step-by-step hardware guide, and its behaviour has not been independently tested. The author describes the graphs as covering the preceding 60 minutes; treat the timing and measurement quality as project claims.
+
+The author links a [[https://www.hackster.io/ragingradish/lan-weatherstation-with-web-interface-and-php-mysql-backend-3ac7c8|related LAN WeatherStation]] that adds an Ethernet shield and sends temperature, pressure, and humidity readings to a PHP (PHP: Hypertext Preprocessor) and MySQL database server every ten minutes, with an optional local display. Its sample server handler does not sanitise incoming values, as the author notes in the code. Treat it as a demonstration of local-network data flow, not as a deployable server implementation.
+
 ==== Reed-switch anemometer ====
 
 https://www.instructables.com/How-to-Build-Your-Own-Anemometer-Using-Reed-Switch/
