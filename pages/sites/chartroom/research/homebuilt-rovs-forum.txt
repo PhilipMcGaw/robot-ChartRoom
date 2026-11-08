@@ -16,13 +16,20 @@ This note records the Homebuilt ROVs Forum as a community research source. The f
 
 The forum may help locate first-hand build discussions and practical questions across mechanical design, propulsion, control, tethering, and underwater imaging. Forum posts are individual contributions; they do not by themselves establish safe designs, verified performance, or generally applicable specifications. Assess specific claims against primary documentation and test evidence before relying on them.
 
+===== Thread: ROV schematic and questions =====
+
+In a 2017 [[https://www.homebuiltrovs.com/rovforum/viewtopic.php?t=1887|Control Systems and Tethers thread]], a first-time builder described a proposed tethered ROV loosely based on OpenROV. The builder wanted to send power over the tether to charge the vehicle battery during operation and shared topside and full schematics. The post proposed a 400 m tether made from a 24 AWG pair, carrying an expected 3 A, with rectified current used to trickle-charge a 5 Ah, 3-cell lithium-polymer battery. Questions included generating a safer alternating-current voltage, transferring power over the tether, power-line communications at that distance, and whether the proposed charger-regulator could manage battery power flow.
+
+These are the poster's design goals and questions, not measured performance or a validated design. The attached schematics have not been electrically reviewed here. A reply says that 48 V is considered the maximum safe voltage underwater, but gives no supporting source; do not use that forum statement as a safety limit. Any tether-power design needs an independently sourced electrical-safety assessment and calculations for the specific cable, voltage, current, losses, isolation, charging system, and fault conditions.
+
 ===== Limitations =====
 
-The forum index could not be opened directly through the available browser tool. The summary above is limited to the search-indexed forum title, description, and category excerpts. Individual discussions have not been reviewed in this note. A user-supplied link to `viewforum.php?f=7` returned a cache miss; its board title and contents could not be confirmed, so no topic is inferred from the numeric identifier.
+The forum index summary is based on search-indexed content; the specific thread above was directly reviewed. Other individual discussions have not been reviewed in this note. A previously supplied link to `viewforum.php?f=7` returned a cache miss; its board title and contents could not be confirmed, so no topic is inferred from the numeric identifier.
 
 ===== Source =====
 
   * [Homebuilt ROVs Forum index](https://homebuiltrovs.com/rovforum/), forum directory; search-indexed content reviewed 2026-11-07. The user-provided URL included a session identifier, which is omitted from this saved link.
+  * [ROV schematic and questions](https://www.homebuiltrovs.com/rovforum/viewtopic.php?t=1887), Homebuilt ROVs Forum, posted 2017-08-22; thread and schematic captions reviewed 2026-11-08. The stated values and design intent are from the original poster, not independently verified.
   * [Forum board 7](https://www.homebuiltrovs.com/rovforum/viewforum.php?f=7), supplied link; direct page access returned a cache miss on 2026-11-07, and the board title remains unconfirmed.
 
 ===== Related research =====
