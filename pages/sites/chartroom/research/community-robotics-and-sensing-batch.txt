@@ -44,6 +44,14 @@ The supplied [[https://www.instructables.com/3d-Printed-Underwater-ROV-Camera-Ho
 
 ===== Educational robots and vehicle platforms =====
 
+==== Brown Dog Gadgets Bit Board Rover ====
+
+[[https://www.browndoggadgets.com/products/bit-board-rover|Brown Dog Gadgets describes the Bit Board Rover]] as a brick-compatible classroom rover and tank platform built around its Bit Board and a BBC micro:bit. The supplier lists continuous-rotation and positional servos, line-following and distance sensors, and parts for attachments such as a gripper, lifter, or sweeper. Its [[https://learn.browndoggadgets.com/c/Bit_Board_Rover|Bit Board Rover guide collection]] lists getting-started material, vehicle builds, remote-control examples, and printable resources.
+
+**Relevance:** a modular educational-robot example for staged work with drive, sensing, and simple manipulators. It may inform SwarmBot teaching exercises and student-built attachments; it is a land-robot platform, not a reference for underwater sealing or pressure protection.
+
+The product features above are the supplier's descriptions, not independently verified specifications or test results. During review, the guide collection and its getting-started and rover-guide categories stated that they were hidden from normal users because no release had been published. A search-indexed light-activated rover guide was also found, but the page could not be opened directly. Check resource availability before relying on the lesson material.
+
 ==== Open Source Turtle Robot (OSTR) ====
 
 https://www.instructables.com/OSTR/ https://github.com/aspro648/OSTR/
