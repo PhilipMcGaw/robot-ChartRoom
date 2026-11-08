@@ -1,0 +1,36 @@
+====== Pimoroni Enviro Weather station kit ======
+{{tag>research weather-station environmental-sensing raspberry-pi-pico pico-w pimoroni}}
+
+~~META:
+description     = Pimoroni Enviro Weather kit reference for outdoor weather sensing with a Raspberry Pi Pico W.
+type            = research
+status          = reference
+authority       = Pimoroni product page and getting-started guide
+~~
+
+===== Product overview =====
+
+The supplied product link identifies the Pimoroni Enviro Weather station kit, which uses an Enviro board with a Raspberry Pi Pico W integrated. The board contains a BME280 sensor for temperature, pressure, and humidity, and an LTR-559 sensor for light and proximity. RJ11 connectors attach the separate wind and rain sensors. Pimoroni describes the kit as including the sensors, a weatherproof cover in the form of a Stevenson screen, a battery pack, and other setup items.
+
+The manufacturer describes wireless setup and logging, with data able to be sent to databases, home-automation dashboards, or citizen-science projects. The board includes a real-time clock (RTC) for timed wake and deep-sleep operation. Pimoroni reports 20 µA sleep current when the board is asleep; this is a manufacturer specification, not an independently measured result. The product page describes its software as pre-installed firmware and links to a getting-started guide.
+
+===== Relevance and limits =====
+
+Enviro Weather is a useful integrated reference for a compact, battery-powered outdoor weather station. It can help compare the Smart Buoy and weather-station work on sensor integration, low-power scheduling, wireless provisioning, and data forwarding. Its built-in sensors cover basic atmospheric measurements; wind and rainfall require the separate external sensors included in the selected kit.
+
+The product page says the Stevenson screen needs modification to pass the sensors' RJ11 connectors through its base. The electronics are intended for installation inside a suitable weatherproof enclosure; the board itself is not described as waterproof. This is a surface-weather station reference, not an underwater sensor package.
+
+Pimoroni marked the kit as no longer stocked on the product page when reviewed on 2026-11-08. The linked page and guide describe the Pico W Aboard product range, but do not establish current firmware maintenance, ongoing availability, or support status. Verify current documentation and stock before treating the kit as obtainable.
+
+For a separate outdoor sensor-cover reference, see [[sites:chartroom:research:pimoroni-outdoor-sensor-stevenson-screen|Pimoroni outdoor sensor cover (Stevenson screen)]]. For a related Pico-based wireless weather-station build, see [[sites:chartroom:research:core-electronics-pico-lorawan-weather-station|Core Electronics Raspberry Pi Pico LoRaWAN weather station]].
+
+===== Sources =====
+
+  * [[https://shop.pimoroni.com/products/enviro-weather?variant=40056776917075|Pimoroni — Enviro Weather (Pico W Aboard) weather station kit]], product description, sensors, kit contents, power notes, and availability; accessed 2026-11-08.
+  * [[https://learn.pimoroni.com/article/getting-started-with-enviro|Pimoroni — Getting Started with Enviro (Pico W Aboard)]], setup and firmware guide; accessed 2026-11-08.
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
