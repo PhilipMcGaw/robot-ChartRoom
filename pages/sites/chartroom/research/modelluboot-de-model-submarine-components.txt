@@ -26,6 +26,14 @@ The supplied [[http://modelluboot.de/Elektronik/BTS.html|Ballast Tank Switch (BT
 
 These functions and electrical details are the manufacturer's claims in a historical manual; they have not been independently tested, and the 2000 issue does not establish current product availability or suitability for a present-day vehicle. Treat this as a historical control-system reference, not as validated failsafe or ballast design guidance.
 
+===== DELTA research-submarine model =====
+
+The supplied [[http://modelluboot.de/KITS/DELTA_Ordner/DELTA_E.html|DELTA model page]] was not accessible during review. The manufacturer's [[https://www.modelluboot.de/Anleitungen/Uboot_Katalog_6.pdf|submarine catalogue]] and [[https://modelluboot.de/Anleitungen/Anleitung_DELTA.pdf|DELTA assembly manual]], issue 2.2005, describe a 1:8 scale model of the DELTA research submarine, about 580 mm long and 133 mm wide. The catalogue lists an operating mass of 4.2 kg, including 1.2 kg of keel ballast. It also claims that the pressure-hull tube is dimensioned for a 9.5 m “destructive diving depth”; this is a catalogue claim, not a stated safe operating depth or independent test result.
+
+The assembly manual says to make the bow and stern cones free-flooding because they are not sufficiently pressure-resistant. It describes an elastic-bag ballast system with a reversible pump, pressure switch, water detector, and Ballast Tank Switch (BTS) control, alongside the propulsion, control, and pressure-hull assembly. This makes the kit a useful historical example of whole-vehicle integration and of separating flooded fairings from the pressure hull. It is a model submarine, not a remotely operated vehicle (ROV).
+
+The design details, depth figure, and protection functions are supplier documentation from 2005–2006 and have not been independently verified. They do not establish the condition or availability of a current kit, nor the pressure capability of any other hull or component.
+
 For model-submarine pressure hulls, the catalogue lists computer numerical control (CNC)-machined bayonet closure rings with O-rings and gives several diameter options. The closure is described as providing access to internal equipment while retaining a circular pressure-tube cross-section. This is a model-submarine product reference; the catalogue does not establish suitability for a particular ROV depth or pressure housing.
 
 ===== Relevance and limitations =====
@@ -38,6 +46,9 @@ The catalogue is a useful historical reference for compact ducted propulsion, mo
   * [[https://modelluboot.de/Anleitungen/Katalog_ModellUbootSpezialitaeten_2012.pdf|Modell-Uboot-Spezialitäten — 2012 catalogue]], German-language supplier catalogue; propulsion, ballast, and closure entries reviewed 2026-11-08.
   * [[http://modelluboot.de/Elektronik/BTS.html|Ballast Tank Switch product page]], user-provided link; not retrievable during review because robots.txt was unreachable.
   * [[https://www.modelluboot.de/Anleitungen/AnleitungBTS_E.PDF|Ballast Tank Switch user manual]], English-language manufacturer manual, issue 7.2000; reviewed 2026-11-08.
+  * [[http://modelluboot.de/KITS/DELTA_Ordner/DELTA_E.html|DELTA research-submarine model page]], user-provided link; not accessible in the web review tool.
+  * [[https://www.modelluboot.de/Anleitungen/Uboot_Katalog_6.pdf|Modell-Uboot-Spezialitäten — 2006 submarine catalogue]], German-language manufacturer catalogue; DELTA entry reviewed 2026-11-08.
+  * [[https://modelluboot.de/Anleitungen/Anleitung_DELTA.pdf|DELTA assembly manual]], German-language manufacturer manual, issue 2.2005; reviewed 2026-11-08.
 
 ===== Related research =====
 
