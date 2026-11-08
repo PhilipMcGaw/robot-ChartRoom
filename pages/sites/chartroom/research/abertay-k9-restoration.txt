@@ -1,0 +1,39 @@
+====== Abertay University Doctor Who K-9 restoration ======
+{{tag>research k9 robotics raspberry-pi arduino sensors mapping teleoperation}}
+
+~~META:
+description     = Reported design and test outcome of Abertay University's restored Doctor Who K-9 prop.
+type            = research
+status          = reference
+authority       = EE Journal and Raspberry Pi reports of Gary Taylor's dissertation project
+~~
+
+===== Project and intended design =====
+
+The [[https://www.eejournal.com/article/rescuing-doctor-whos-k-9/|EE Journal article]] reports on Gary Taylor's 2018 Abertay University dissertation project to restore a water-damaged K-9 television prop and add room mapping. According to the article, the intended design used a Raspberry Pi 3 Model B for higher-level mapping and an Arduino Mega2560 for motor and sensor control. Three HC-SR04 ultrasonic sensors faced forwards, left, and right; the Arduino controlled these sensors and the traction motors through a Monster Moto shield. The Pi and Arduino communicated over USB. A Bluetooth link to a phone app provided remote control, while the Pi was intended to build and store an environment map in an SQLite database.
+
+===== Reported outcome =====
+
+The article says Taylor demonstrated the restored robot, and that phone-based remote control worked. Autonomous mapping did not work reliably. The reported test maps included false detections and incorrect dimensions. The article attributes the failure to FIFO overload errors when reading an MPU-6050 inertial measurement unit (IMU), leaving the robot without usable motion data to determine its position and route. The autonomy and mapping functions were not completed by the project deadline.
+
+The two 2018 reports differ in how they describe mapping. Raspberry Pi's June summary says the Pi plots obstacles and walls to create a map, while EE Journal's more detailed May account describes inconsistent map tests and says the robot could not navigate autonomously. The detailed test account supports treating mapping as attempted but not reliably achieved.
+
+**Relevance:** a useful case study in separating motor and sensor handling on a microcontroller from higher-level processing on a single-board computer. Its reported outcome also shows that obstacle sensing alone did not provide the localisation needed for reliable mapping. For the Robots project's K9 work, it is a different build and does not validate the current drivetrain, sensing, or navigation design.
+
+These details come from a 2018 engineering-journal article and a Raspberry Pi report, both describing Taylor's dissertation project. The dissertation itself was not available during this review, and the article's account has not been independently verified. Treat the system architecture and test results as reported project evidence, not as current implementation or validated autonomous behaviour.
+
+===== Sources =====
+
+  * [[https://www.eejournal.com/article/rescuing-doctor-whos-k-9/|Rescuing Doctor Who's K-9]], Steven Leibson, EE Journal, 2018-05-31; reviewed 2026-11-08.
+  * [[https://www.raspberrypi.com/news/k-9-working-doctor-who-prop/|A working original Doctor Who K-9 prop]], Alex Bate, Raspberry Pi, 2018-06-18; summary of the dissertation project; reviewed 2026-11-08.
+
+===== Related research =====
+
+This is a separate K-9 build from [[sites:chartroom:research:basicmicro-doctor-who-k9-build|Richard Hopkins's K9 build profile]] and the Robots project's [[sites:chartroom:projects:k9-motor-control|K9 Motor Control — Initial Design Notes]].
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
