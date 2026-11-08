@@ -1,0 +1,40 @@
+====== Fictionlab Leo Rover and Raph Rover ======
+{{tag>research mobile-robotics ugv ros2 field-robotics}}
+
+~~META:
+description     = Vendor documentation reference for Fictionlab's Leo Rover and Raph Rover outdoor mobile-robot platforms.
+type            = research
+status          = reference
+authority       = Fictionlab product pages and technical documentation
+~~
+
+===== Platform overview =====
+
+Fictionlab is a Polish robotics company whose product range includes the Leo Rover and Raph Rover unmanned ground vehicles (UGVs), plus custom robotics services. Its documentation provides specifications, setup instructions, application programming interfaces, add-on integration guides, and research examples.
+
+The vendor describes Leo Rover 1.9 as a four-wheel-drive, Raspberry Pi-based platform using Robot Operating System 2 (ROS 2) for research, education, and outdoor testing. Its documentation lists an estimated 5 kg nominal payload, 0.4 m/s maximum linear speed, approximately four hours of runtime, an IP55 rating, and a connection range up to 100 m. The vendor FAQ states that it is not submersible.
+
+Raph Rover is the larger platform. Fictionlab describes it as a ROS 2 research and field-development robot with rear-wheel steering. Its documentation lists a 10 kg maximum payload, 1.8 m/s maximum linear speed, four hours of runtime, an IP54 rating, and a connection range up to 100 m.
+
+The vendor specifications show different control hardware: Leo combines a Raspberry Pi 5 with a custom STM32F401-based LeoCore controller and four geared direct-current (DC) motors with encoders. Raph combines an UP Board 7000 computer with a custom RaphCore controller and six brushless direct-current (BLDC) motors with integrated controllers connected over an RS-485 serial bus. Raph's documentation identifies Ubuntu 24.04 LTS and ROS 2 Jazzy as its software platform.
+
+These figures and platform descriptions are vendor claims, not measurements made by Chartroom. Check the specification for the exact hardware revision and configuration before relying on them.
+
+===== Relevance and limits =====
+
+The platforms are useful references for modular outdoor mobile-robot design, payload integration, ROS 2 documentation, and the separation between a vendor-supported base vehicle and user-developed autonomy or sensing. Fictionlab's site states that software is shared under the MIT licence and that computer-aided design (CAD) and mechanical files use Creative Commons Attribution-NonCommercial-ShareAlike; check the individual repositories and files before reuse.
+
+Leo Rover's IP55 and Raph Rover's IP54 ratings describe dust and water ingress protection for their stated configurations; neither platform is described as submersible. They are ground-robot references, not evidence for the Robots project's underwater hardware, pressure protection, or software architecture.
+
+===== Sources =====
+
+  * [[https://fictionlab.pl/|Fictionlab]], product and company overview; accessed 2026-11-08.
+  * [[https://docs.fictionlab.pl/leo-rover|Leo Rover 1.9 documentation]], including its [[https://docs.fictionlab.pl/leo-rover/documentation/specification|technical specification]]; specification last updated 2026-11-05; accessed 2026-11-08.
+  * [[https://fictionlab.pl/leo-rover/|Leo Rover product page and FAQ]]; accessed 2026-11-08.
+  * [[https://docs.fictionlab.pl/raph-rover|Raph Rover documentation]], including its [[https://docs.fictionlab.pl/raph-rover/documentation/specification|technical specification]]; specification last updated 2026-11-05; accessed 2026-11-08.
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
