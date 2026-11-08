@@ -1,0 +1,22 @@
+====== Instructables PiCar autonomous-car platform — access pending ======
+{{tag>research raspberry-pi rover autonomy instructables source-review}}
+
+~~META:
+description     = User-supplied Instructables reference titled PiCar: Building an Autonomous Car Platform; build contents have not been verified.
+type            = research
+status          = unreviewed
+authority       = Chartroom
+~~
+
+===== Source and access status =====
+
+The supplied [[https://www.instructables.com/PiCar-an-Autonomous-Car-Platform/|Instructables: PiCar: Building an Autonomous Car Platform]] page exposed the title and a 21-step format when checked on 2026-11-08, but its build-step text was not readable. Search did not confirm the project's hardware, software, author, or test results. No construction details or autonomous-driving claims are recorded until the project itself can be reviewed.
+
+The title alone does not establish a relationship to other projects named PiCar or DeepPicar. Treat this link as a candidate source, not as validated design guidance.
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
