@@ -14,6 +14,7 @@ This page records user-supplied Mooncrest Models product links titled “Robot D
 
 ===== Source and access =====
 
+  * [Mooncrest Models shop](http://www.mooncrest-models.co.uk/store.htm), user-supplied shop landing page; access attempted 2026-11-08, but the page was not accessible through the available web tool.
   * [Robot Dog Sensor Eye](http://www.mooncrest-models.co.uk/store.htm#!/Robot-Dog-Sensor-Eye/p/408241175/category=4490042), Mooncrest Models product link; access attempted 2026-11-07, but page content was unavailable.
   * [Robot Dog Antennas (ears)](http://www.mooncrest-models.co.uk/store.htm#!/Robot-Dog-Antennas-ears/p/579687294/category=4490042), Mooncrest Models product link; access attempted 2026-11-07, but page content was unavailable.
   * [Robot Dog Tail Gator](http://www.mooncrest-models.co.uk/store.htm#!/Robot-Dog-Tail-Gator/p/577443505/category=4490042), Mooncrest Models product link; access attempted 2026-11-07, but page content was unavailable.
