@@ -1,0 +1,47 @@
+====== ROAZ and ROAZ II autonomous surface vehicles ======
+{{tag>research asv auv marine-robotics environmental-monitoring}}
+
+~~META:
+description     = Historical and later references for ISEP/LSA's ROAZ and ROAZ II autonomous surface vehicles.
+type            = research
+status          = reference
+authority       = ISEP/LSA research paper and project pages; INESC TEC and STRONGMAR material
+~~
+
+===== Project overview =====
+
+ROAZ is an autonomous surface vehicle (ASV) research programme associated with the Autonomous Systems Laboratory (LSA) at the Instituto Superior de Engenharia do Porto (ISEP). The original ROAZ was designed for river and estuary environmental monitoring, bathymetry, and support to autonomous underwater vehicle (AUV) missions. ROAZ II was a larger catamaran developed for ocean operations, including oceanographic work, bathymetry, security, and search-and-rescue support.
+
+===== ROAZ design paper =====
+
+The ISEP repository holds the paper “ROAZ Autonomous Surface Vehicle Design and Implementation”. It describes the original ROAZ as a twin-hull fibreglass craft for relatively calm river and estuary conditions, with space between the hulls intended for AUV docking. The paper lists dimensions of 1.5 × 1 × 0.52 m and a payload of up to 50 kg. The craft was intended to carry survey sensors, support AUV launch and recovery, and provide a surface communications relay.
+
+The paper describes a custom thruster with a local digital signal processor (DSP), current monitoring, velocity or force control, diagnostics, and fault detection. The thruster controller used a Controller Area Network (CAN) interface. The paper's implementation-status report is limited: only the thruster controllers had been tested in operation; other sensors still used serial connections, CAN interface nodes for other subsystems were under development, and docking mechanisms were being evaluated. It reports preliminary thruster tests, not a completed or validated vehicle system.
+
+The repository record dates the paper to 2007, while the PDF copy labels it a conference paper from January 2006. The available sources do not explain this date difference.
+
+===== ROAZ II and later reports =====
+
+The older LSA ROAZ II page describes a 4.5 × 2.2 × 0.5 m twin-hull vehicle with a mass of about 200 kg. It reports high-density polyethylene hulls, aluminium cross-members, a central platform, watertight electronics enclosures, two trolling motors, and a retractable underwater sensor mount. A later STRONGMAR profile reports a 400 kg vehicle mass and a 300 kg payload capacity. These figures conflict with the older LSA page and are not reconciled in the sources; confirm the specific ROAZ II configuration before using either value.
+
+An INESC TEC report documents ROAZ II sensor trials during the 2013 Robotics EXcercise, including thermal and visible cameras, sonar, radar, and laser mapping equipment for search-and-rescue work. This supports a record of field trials in that exercise; it does not establish current service status or performance outside the described trials.
+
+===== Relevance and limits =====
+
+ROAZ is a useful reference for a surface support vehicle that can carry environmental sensors, support underwater assets, provide radio or acoustic communications relay, and host a docking or launch-and-recovery arrangement. It is distinct from an ROV or AUV: ROAZ and ROAZ II are surface vessels, while the sensor package or underwater vehicle operates in the water.
+
+The project material is primarily historical research documentation. The original design paper explicitly records subsystems that were still under development at publication. Later ROAZ II profiles describe later configurations, but the differing weight and payload values remain unresolved. This research does not establish a project decision, a compatible hardware design, or a current operational capability for the Robots project.
+
+===== Sources =====
+
+  * [[http://www.lsa.isep.ipp.pt/roaz_home.html|LSA ROAZ project home page]], supplied link; direct retrieval timed out on 2026-11-08. Search-indexed text describes the ROAZ programme and distinguishes ROAZ from ROAZ II.
+  * Ferreira, H. et al., [[https://recipp.ipp.pt/entities/publication/e6870b63-c41a-401b-a7a5-ca1b0bea28da|“ROAZ Autonomous Surface Vehicle Design and Implementation”]], ISEP institutional repository record and linked paper; record dated 2007, PDF copy labelled January 2006; accessed 2026-11-08.
+  * [[http://www.lsa.isep.ipp.pt/pages/roaz_roaz2.html|LSA ROAZ II page]], search-indexed project description; accessed 2026-11-08. The page was not directly retrievable during this review.
+  * [[https://strongmar.eu/site/roaz-ii-115|STRONGMAR ROAZ II profile]], later platform description and specifications; accessed 2026-11-08.
+  * [[https://www.inesctec.pt/index.php/en/news/inesc-tec-tests-innovative-technology-off-the-coast-of-sesimbra-17859|INESC TEC report on the 2013 Robotics EXcercise]], published 2013-08-03; accessed 2026-11-08.
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
