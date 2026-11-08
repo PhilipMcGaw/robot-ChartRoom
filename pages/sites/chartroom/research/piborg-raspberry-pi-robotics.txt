@@ -1,0 +1,32 @@
+====== PiBorg Raspberry Pi robotics ======
+{{tag>research raspberry-pi robotics motor-control robot-kits}}
+
+~~META:
+description     = Historical reference for PiBorg Raspberry Pi robot kits and motor-control add-on boards.
+type            = research
+status          = reference
+authority       = PiBorg website; Raspberry Pi publications
+~~
+
+===== Scope =====
+
+The user supplied the [PiBorg website](https://www.piborg.org/). Direct access returned HTTP 403 through the available web tool on 2026-11-08, so the current product catalogue and availability could not be reviewed.
+
+Raspberry Pi publications describe PiBorg as a maker of Raspberry Pi educational robots and add-on boards. A Raspberry Pi article from 2016 presents ZeroBorg as a motor-controller and sensor board for the Raspberry Pi Zero, with four independently controlled motors, I²C expansion, and analogue inputs. A later Raspberry Pi Official Magazine interview discusses PiBorg robot kits, motor controllers, add-on boards, motors, and wheels, and names MonsterBorg, DiddyBorg, and ThunderBorg. These sources establish historical product context only; they do not confirm current availability or support.
+
+===== Relevance =====
+
+PiBorg is a reference for Raspberry Pi-based educational rovers and motor-control add-ons. Its historical material may help when comparing rover packaging, motor-control interfaces, and beginner build ecosystems. Check the current PiBorg site, product documentation, and software repositories before selecting or reusing a specific board or kit.
+
+===== Sources =====
+
+  * [PiBorg](https://www.piborg.org/), user-supplied website; direct access returned HTTP 403 through the available web tool; accessed 2026-11-08.
+  * [ZeroBorg: teeny tiny robotics from PiBorg](https://www.raspberrypi.com/news/zeroborg-teeny-tiny-robotics-piborg/), Raspberry Pi, 2016-03-09; historical ZeroBorg features and PiBorg description; accessed 2026-11-08.
+  * [Meet The Maker: Kim Freeburn](https://magazine.raspberrypi.com/articles/meet-the-maker-kim-freeburn), Raspberry Pi Official Magazine; PiBorg product categories and historical product names; publication date not shown in the page reviewed; accessed 2026-11-08.
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
