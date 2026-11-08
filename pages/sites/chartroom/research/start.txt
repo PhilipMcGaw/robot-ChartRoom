@@ -137,6 +137,7 @@ The links below cover all research notes. Use the related-research links within 
   * [[sites:chartroom:research:photonpower-zero-solar-pi-zero|PhotonPower Zero solar Raspberry Pi Zero power board]]
   * [[sites:chartroom:research:solar-powered-wifi-weather-station-v40|Solar Powered WiFi Weather Station V4.0]]
   * [[sites:chartroom:research:core-electronics-pico-lorawan-weather-station|Core Electronics Raspberry Pi Pico LoRaWAN weather station]]
+  * [[sites:chartroom:research:pimoroni-outdoor-sensor-stevenson-screen|Pimoroni outdoor sensor cover (Stevenson screen)]]
   * [[sites:chartroom:research:stall-weatherman-home-automation|STALL WEATHERMAN home-automation weather station]]
   * [[sites:chartroom:research:coin-cell-data-logger-low-power|Coin-cell data logger and low-power design]]
   * [[sites:chartroom:research:arduino-weather-station-miksrv|Miksrv Arduino Weather Station]]

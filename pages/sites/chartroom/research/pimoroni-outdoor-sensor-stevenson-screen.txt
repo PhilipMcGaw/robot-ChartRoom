@@ -1,0 +1,33 @@
+====== Pimoroni outdoor sensor cover (Stevenson screen) ======
+{{tag>research environmental-sensing enclosure weather}}
+
+~~META:
+description     = Product reference for a ventilated outdoor sensor cover sold by Pimoroni and Core Electronics.
+type            = research
+status          = reference
+authority       = TFA Dostmann manufacturer page; Pimoroni and Core Electronics listings
+~~
+
+===== Product reference =====
+
+This is a louvred cover for outdoor sensors or small electronics. Pimoroni describes it as protecting temperature and humidity sensors from direct sunlight and rain while allowing airflow. A cable opening is provided at the bottom; the listing warns that the opening may need enlargement for large connectors.
+
+The manufacturer identifies it as TFA Dostmann model 98.1114.02. Pimoroni lists product 981114, and Core Electronics lists product CE08801. The manufacturer specifies a plastic body, wall or free-standing mounting, a mass of 161 g, internal dimensions of Ø 60 × 160 mm, and external dimensions of 95 × 102 (108) × 175 mm. These are manufacturer specifications, not a verified fit for any Chartroom hardware.
+
+===== Relevance and limitations =====
+
+This may be a useful enclosure reference for a temperature or humidity sensor in an outdoor weather-station prototype. Its ventilated construction is intended to shield sensors from sun and rain while permitting air movement.
+
+The manufacturer listing provides no ingress-protection rating, quantified environmental limits, or evidence of long-term exposure testing. Do not treat its rain-protection description as proof of dust-tightness, water resistance under pressure, marine suitability, or protection of every board placed inside it. Check sensor placement, connector clearance, mounting, and the intended environmental exposure before use. The Core Electronics listing showed the product as out of stock when checked; availability can change.
+
+===== Sources =====
+
+  * [TFA Dostmann manufacturer page for model 98.1114.02](https://www.tfa-dostmann.de/en/product/protective-cover-for-outdoor-transmitter-98-1114/); accessed 2026-11-08.
+  * [Pimoroni product listing, product 981114](https://shop.pimoroni.com/products/weatherproof-cover-for-outdoor-sensors); accessed 2026-11-08.
+  * [Core Electronics product listing, CE08801](https://core-electronics.com.au/weatherproof-coverenclosure-for-outdoor-sensors-stevenson-screen.html); accessed 2026-11-08.
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
