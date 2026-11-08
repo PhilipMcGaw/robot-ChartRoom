@@ -1,0 +1,22 @@
+====== Instructables Adil Controller — access pending ======
+{{tag>research arduino wireless controller source-review}}
+
+~~META:
+description     = User-supplied Instructables reference titled “Adil Controller, Arduino Based Wireless Controller”; article contents have not been reviewed.
+type            = research
+status          = unreviewed
+authority       = Instructables project
+~~
+
+===== Source and access status =====
+
+The supplied [Instructables: Adil Controller, Arduino Based Wireless Controller](https://www.instructables.com/Adil-Controller-Arduino-based-wireless-controller/) page exposed its title and six-step count, but no readable article text, during review on 2026-11-08. Search did not find a reliable copy of the project. The title alone does not establish its inputs, radio hardware, protocol, firmware, or compatibility with any vehicle. No project summary or relevance claim is recorded until the article can be reviewed.
+
+This is a separate, unreviewed source from the [[sites:chartroom:research:instructables-universal-arduino-controller|Instructables Universal Arduino Controller enclosure]]; no relationship between the projects has been established.
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
