@@ -162,6 +162,7 @@ The links below cover all research notes. Use the related-research links within 
 
 ==== LiDAR, mapping, and autonomy ====
 
+  * [[sites:chartroom:research:lidar-augmented-potential-field-dead-end-avoidance|LiDAR and virtual obstacles for local-minimum avoidance]]
   * [[sites:chartroom:research:lilybot-four-sonar-obstacle-avoidance|Lily∞Bot four-sonar obstacle avoidance]]
   * [[sites:chartroom:research:lidar-mapper-video|LiDAR Mapper video — research candidate]]
   * [[sites:chartroom:research:makers-pet-120mm|Maker's Pet 120 mm robot]]

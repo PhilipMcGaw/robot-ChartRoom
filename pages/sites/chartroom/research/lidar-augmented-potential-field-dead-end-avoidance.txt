@@ -1,0 +1,31 @@
+====== LiDAR and virtual obstacles for local-minimum avoidance ======
+{{tag>research lidar autonomy path-planning mobile-robotics}}
+
+~~META:
+description     = Research reference for a LiDAR-based local path-planning method that adds virtual obstacles to help a ground robot bypass local minima.
+type            = research
+status          = reference
+authority       = Peer-reviewed Energies paper by Szczepanski, Bereit, and Tarczewski
+~~
+
+===== Method summary =====
+
+The paper “Efficient Local Path Planning Algorithm Using Artificial Potential Field Supported by Augmented Reality” addresses local minima in artificial potential field path planning. The method analyses LiDAR measurements around the robot to detect a narrow passage that may trap the planner, then adds a virtual wall between obstacle edges to steer the robot around that local minimum. The authors report experimental verification with a Husarion ROSbot 2.0 PRO and Robot Operating System (ROS) in a laboratory environment.
+
+In this paper, “augmented reality” refers to adding virtual obstacles to the robot's internal perception for path planning. It is not an augmented-reality display for a human operator. The paper reports improved path length and travel duration relative to the compared methods; those findings are specific to its laboratory setup and evaluation.
+
+===== Relevance and limits =====
+
+This is a useful reference for LiDAR-based ground-robot navigation when a local planner can become stuck near a concave obstacle or dead end. The method is not evidence that every dead end can be identified or safely bypassed. It is a research result on a ground robot, not an underwater navigation method or a validated algorithm for a Robots project vehicle. Assess the paper's assumptions and test any adaptation in the intended environment.
+
+===== Sources =====
+
+  * [Robots avoid dead ends using LiDAR and AR — IET Engineering and Technology](https://eandt.theiet.org/2021/11/02/robots-avoid-dead-ends-using-lidar-and-ar), published 2021-11-02; direct page access was blocked during review on 2026-11-08.
+  * [Efficient Local Path Planning Algorithm Using Artificial Potential Field Supported by Augmented Reality](https://www.mdpi.com/1996-1073/14/20/6642), Rafal Szczepanski, Artur Bereit, and Tomasz Tarczewski, *Energies*, 2021-10-14; primary paper and method description.
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
