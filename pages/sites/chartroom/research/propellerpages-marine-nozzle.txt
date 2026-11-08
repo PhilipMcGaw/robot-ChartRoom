@@ -1,0 +1,36 @@
+====== Propeller Pages: how a marine nozzle works ======
+{{tag>research propulsion propeller nozzle ducted-propeller hydrodynamics}}
+
+~~META:
+description     = Commercial reference page describing marine propeller nozzles, their claimed thrust effects, and speed-related trade-offs.
+type            = research
+status          = reference
+authority       = Propeller Pages
+~~
+
+===== Source =====
+
+  * [[https://www.propellerpages.com/?c=nozzles&f=How_Nozzles_Work|Propeller Pages: How a Marine Nozzle Works]]; reviewed 2026-11-08.
+
+===== Summary of the source =====
+
+Propeller Pages explains that a close-fitting duct can reduce flow around propeller blade tips, and describes nozzle designs intended to produce useful thrust at low vessel speed. It contrasts the Kort 19A and Rice-Speed profiles and states that nozzle drag can reduce the benefit as forward speed increases. The page gives comparative drag coefficients and claims that the nozzle itself can contribute a substantial part of total thrust in the Rice-Speed example.
+
+These are claims and explanations from the source page. It does not provide a test method, operating conditions, uncertainty, or a traceable technical report for the numerical comparisons on the page. The figures and simplified flow explanation should therefore be treated as unverified source claims, not as general design values.
+
+===== Relevance and limitations =====
+
+This page is a starting point for comparing open propellers and ducted propellers, particularly where low-speed thrust and physical propeller guarding matter. It also highlights a design trade-off: a nozzle's contribution depends on its profile and operating condition, and drag at higher advance speed can reduce or remove a thrust advantage.
+
+The page concerns marine propulsion generally; it does not test a small remotely operated vehicle (ROV) thruster, specify a suitable nozzle for a project motor, or establish thrust, efficiency, handling, or safety for any particular build. Do not use its numerical claims as a design basis without an appropriate primary technical source and measurements for the intended propeller, duct, motor, and operating conditions.
+
+===== Related research =====
+
+  * [[sites:chartroom:research:modelluboot-de-model-submarine-components|Modell-Uboot-Spezialitäten model-submarine and ROV components]] — includes a commercial ducted motor-pod description, with its performance claims explicitly unverified.
+  * [[sites:chartroom:research:rovmaker-edge|RovMaker Edge]] — includes thruster meshes and guards as a separate mechanical reference.
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
