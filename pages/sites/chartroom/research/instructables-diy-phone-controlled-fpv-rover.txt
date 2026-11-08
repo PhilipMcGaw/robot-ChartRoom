@@ -22,10 +22,17 @@ The page includes embedded build, indoor, garage, and outdoor video links, but t
 
 A separate 2014 Instructables project by BIGDOG1971 says its Arduino Bluetooth ROVERBot was based on ASCAS's FPV Rover. That later build substitutes a different electronics and power arrangement, including an Adafruit motor shield, an HC-05 Bluetooth module, and an 11.7 V battery. Treat it as a distinct adaptation, not as a parts list for the user-supplied project.
 
+===== Related Arduino Project Hub rover (relationship unconfirmed) =====
+
+Arduino Project Hub lists [[https://projecthub.arduino.cc/AlxArd/arduino-robot-w-gopro-and-fpv-iphone-control-via-bluetooth-379e5a|Arduino Robot w/ GoPro and FPV iPhone Control via Bluetooth]], published 2018-10-15. Its title and summary describe an Arduino robot with a GoPro camera, iPhone Bluetooth control, and an ultrasonic-sensor obstacle-avoidance option. The listed components include an Arduino Uno Rev3, RobotGeek Sensor Shield, Tamiya plate, gearbox and tracks, an MPU-9250/650 gyro, SG90 servo, HC-SR04 sensor, HM-10 Bluetooth Low Energy module, 18650 lithium-ion battery, and L298 dual H-bridge driver.
+
+The Project Hub page exposed its title, summary, and component list, but not the detailed project description during review on 2026-11-08. Its listed components differ from the RoverBot inventory reported by PCBWay. The shared FPV and phone-control theme does not establish that this is the same vehicle or a revision of the Instructables project. No build, code, video, or performance result from this Project Hub entry was independently verified.
+
 ===== Sources =====
 
   * [[https://www.instructables.com/RoverBot-1/|DIY Phone Controlled FPV Rover (Fast & Agile) — Instructables]], user-supplied project; title visible, article body not readable during review; accessed 2026-11-08.
   * [[https://www.pcbway.com/project/sponsor/DIY_Phone_Controlled_FPV_Rover.html|DIY Phone Controlled FPV Rover — PCBWay]], accessible secondary copy of the project description, parts list, and embedded video links; posted 2019-12-31; accessed 2026-11-08.
+  * [[https://projecthub.arduino.cc/AlxArd/arduino-robot-w-gopro-and-fpv-iphone-control-via-bluetooth-379e5a|Arduino Robot w/ GoPro and FPV iPhone Control via Bluetooth — Arduino Project Hub]], title, summary, and listed components; published 2018-10-15; accessed 2026-11-08.
   * [[https://www.instructables.com/Arduino-ROVERBot/|ROVER Bot — the Arduino Bluetooth Controlled Tank]], BIGDOG1971's separate adaptation; identifies its relationship to the ASCAS FPV Rover and documents its differing build; accessed 2026-11-08.
 
 ===== Related research =====
