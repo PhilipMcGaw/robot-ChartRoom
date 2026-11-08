@@ -1,0 +1,41 @@
+====== Dyethin smart-car article using Raspberry Pi Pico ======
+{{tag>research raspberry-pi-pico rp2040 robotics mobile-robot obstacle-avoidance line-following}}
+
+~~META:
+description     = Critical reference notes on Dyethin's 2023 Raspberry Pi Pico smart-car article and its MicroPython examples.
+type            = research
+status          = reference
+authority       = Dyethin article; Raspberry Pi Pico documentation
+~~
+
+===== Sources =====
+
+  * [[https://www.dyethin.com/blog/projects/smart-car-design-using-raspberry-pi|Smart car design using Raspberry Pi]], Dyethin, dated 2023-09-06; reviewed 2026-11-08.
+  * [[https://www.raspberrypi.com/documentation/microcontrollers/pico-series.html|Raspberry Pi Pico-series documentation]].
+
+===== What the article describes =====
+
+Although the title refers to Raspberry Pi, the article's hardware and code sections describe a Raspberry Pi Pico based on the RP2040 microcontroller. It lists an ultrasonic range sensor, a photoresistor, four infrared line sensors, a sound sensor, an infrared receiver, motor drivers, an OLED display, a buzzer, and programmable RGB lights. The examples use MicroPython and a `pico_car` library.
+
+The visible obstacle-avoidance example reads ultrasonic distance and uses thresholds at 10 cm and 30 cm to choose between reversing and turning, slower forward movement, and forward movement. A separate section shows infrared-remote input and motor commands. These examples are the most concrete evidence in the article for vehicle behaviour.
+
+===== Evidence limits =====
+
+The article's summary and background mention image recognition, path planning, logistic regression, remote control, and experimental performance results. However, the visible examples do not show image processing, a logistic-regression model, a path-planning method, a remote-control link, or measured test data. The article gives broad claims about stability and obstacle avoidance but no test conditions, datasets, measured results, or reproducible evaluation procedure. Treat those claims as unverified statements from the article, not demonstrated project results.
+
+The article also uses “Raspberry Pi” in ways that could be confused with a Linux-capable Raspberry Pi computer. Raspberry Pi's official documentation identifies Pico as a microcontroller board programmed with MicroPython, C, or C++; unlike Raspberry Pi computers, Pico does not run Linux. The article's snippets are consistent with this microcontroller model.
+
+===== Relevance and limitations =====
+
+This is a reference for a small educational robot using a microcontroller, simple sensors, motor control, and threshold-based reactive behaviour. It may be useful when comparing Pico-based learning projects or basic obstacle-avoidance examples. It does not establish a validated autonomous-driving system, and it is not a Raspberry Pi Linux companion-computer design or an implementation source for the Robots project. The article gives no complete bill of materials, tested code repository, or independently verifiable results.
+
+===== Related research =====
+
+  * [[sites:chartroom:research:4tronix-pi2go-mk2|4tronix Pi2Go Mk2 Raspberry Pi robot]] — a Raspberry Pi computer-based educational platform with integrated line and obstacle sensors.
+  * [[sites:chartroom:research:sunfounder-picar-x-notenoughtech|SunFounder PiCar-X review by NotEnoughTech]] — another Raspberry Pi land robot; its software and setup context differs from a Pico microcontroller.
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

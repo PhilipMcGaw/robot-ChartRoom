@@ -198,6 +198,7 @@ The links below cover all research notes. Use the related-research links within 
   * [[sites:chartroom:research:sunfounder-picar-x-notenoughtech|SunFounder PiCar-X review by NotEnoughTech]]
   * [[sites:chartroom:research:freddykilo-frank-the-tank|Frank the Tank Raspberry Pi RC tank]]
   * [[sites:chartroom:research:4tronix-pi2go-mk2|4tronix Pi2Go Mk2 Raspberry Pi robot]]
+  * [[sites:chartroom:research:dyethin-smart-car-raspberry-pi-pico|Dyethin smart-car article using Raspberry Pi Pico]]
   * [[sites:chartroom:research:pololu-robotics-electronics-catalogue|Pololu robotics and electronics catalogue]]
   * [[sites:chartroom:research:piborg-raspberry-pi-robotics|PiBorg Raspberry Pi robotics]]
   * [[sites:chartroom:research:bricolabs-curiosity-btl-rover|Bricolabs Curiosity BTL rover]]
