@@ -40,6 +40,7 @@ The links below cover all research notes. Use the related-research links within 
 ==== Underwater robotics and ROVs ====
 
   * [[sites:chartroom:research:blue-robotics-navigator-flight-controller|Blue Robotics Navigator flight controller]]
+  * [[sites:chartroom:research:emlid-navio2-raspberry-pi-autopilot|Emlid Navio2 Raspberry Pi autopilot]]
   * [[sites:chartroom:research:blue-robotics-official-resources|Blue Robotics official resources]]
   * [[sites:chartroom:research:raspberry-pi-submersible-drone-2016|Raspberry Pi submersible drone (2016)]]
   * [[sites:chartroom:research:turbo-super-submarine-hackadayio|Turbo Super Submarine]]

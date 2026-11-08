@@ -1,0 +1,35 @@
+====== Emlid Navio2 Raspberry Pi autopilot ======
+{{tag>research emlid navio2 raspberry-pi ardupilot flight-controller}}
+
+~~META:
+description     = Historical and manufacturer references for the Emlid Navio2 Raspberry Pi autopilot.
+type            = research
+status          = reference
+authority       = Emlid Navio2 documentation; RobotShop Community article is secondary context
+~~
+
+===== Reference summary =====
+
+RobotShop Community's 2016 article presents the Emlid Navio2 as a hardware add-on (HAT) that lets ArduPilot run on a Raspberry Pi. It describes onboard inertial sensors, a barometer, satellite navigation receiver, radio-control input co-processor, pulse-width modulation (PWM) outputs, and serial, I²C, and analogue-to-digital converter (ADC) expansion interfaces. These are historical descriptions from the article; use Emlid's documentation for the hardware setup and software details.
+
+Emlid's Navio2 documentation describes ArduPilot running directly on Raspberry Pi 2, 3, or 4. Its installation page lists ArduCopter, ArduPlane, ArduRover, and ArduSub among the vehicle versions in the Emlid Raspberry Pi OS image. The same documentation says that other boards, including Raspberry Pi Zero, lack the performance to run ArduCopter. These statements describe the documented Navio2 setup; they do not establish current support, suitability for a project vehicle, or support for every ArduPilot vehicle on every listed board.
+
+===== Relevance and limits =====
+
+Navio2 is a useful historical comparison for Linux-based autopilot designs that combine a Raspberry Pi with a hardware interface board. It shares that broad architectural pattern with Blue Robotics Navigator, but is a separate product with its own hardware, software image, support status, and setup requirements. See [[sites:chartroom:research:blue-robotics-navigator-flight-controller|Blue Robotics Navigator flight controller]] for the Navigator-specific reference.
+
+The RobotShop post is an overview, not a current compatibility or commissioning guide. The references do not validate Navio2 for an ROV, establish environmental protection, or show that it is selected for the Robots project. Check the exact board revision, operating-system image, vehicle firmware, I/O behaviour, and product availability before considering a build.
+
+===== Sources =====
+
+  * [Navio2 or The Raspberry Pi Flight Controller — RobotShop Community](https://community.robotshop.com/blog/show/navio2-or-the-raspberry-pi-flight-controller), secondary overview posted 2016-04-26; accessed 2026-11-08.
+  * [Navio2 hardware setup — Emlid](https://docs.emlid.com/navio2/hardware-setup/), supported Raspberry Pi boards and power requirements; accessed 2026-11-08.
+  * [Installation and running — Emlid Navio2](https://docs.emlid.com/navio2/ardupilot/installation-and-running/), ArduPilot installation and vehicle versions listed for Emlid's operating-system image; accessed 2026-11-08.
+  * [Navio2 overview — ArduPilot documentation](https://www.ardupilot.ardupilot.org/copter/docs/common-navio2-overview.html), hardware overview; accessed 2026-11-08.
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
