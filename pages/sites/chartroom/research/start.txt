@@ -192,6 +192,7 @@ The links below cover all research notes. Use the related-research links within 
   * [[sites:chartroom:research:ss4h-esp-01-esp8266-board|Smart Solutions for Home SS4H-ESP-01 board]]
   * [[sites:chartroom:research:esphome-configuration-based-firmware|ESPHome configuration-based firmware]]
   * [[sites:chartroom:research:arduino-state-machine-library|Arduino StateMachine library — embedded firmware consideration]]
+  * [[sites:chartroom:research:hackaday-ghosting-multiplexed-leds|Ghosting in multiplexed LEDs]]
   * [[sites:chartroom:research:arduino-simulator-lrusso|Lrusso Arduino Simulator]]
   * [[sites:chartroom:research:raspberry-pi-youtube-live-docker|Raspberry Pi YouTube live streaming with Docker]]
   * [[sites:chartroom:research:piwars-2024-disaster-zone-challenges|Pi Wars 2024 “Disaster Zone” challenges]]

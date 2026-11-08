@@ -1,0 +1,38 @@
+====== Ghosting in multiplexed LEDs ======
+{{tag>research electronics leds multiplexing arduino debugging}}
+
+~~META:
+description     = Reference for ghost flashes in a two-bank LED multiplexing circuit and the limits of the proposed explanation and fix.
+type            = research
+status          = reference
+authority       = Mihai Cuciuc's Hackaday.io experiment; Hackaday article and Arduino documentation provide context
+~~
+
+===== Observed behaviour =====
+
+Mihai Cuciuc's [[https://hackaday.io/project/182520-deghosting-multiplexed-leds/details|Deghosting multiplexed LEDs]] project describes a circuit with two banks of six light-emitting diodes (LEDs), shared Arduino output pins, and a transistor selecting the active bank. While one LED was meant to be on, the corresponding LED in the inactive bank flashed briefly as the circuit changed banks.
+
+The author slowed the switching to observe the brief flash and tried replacing the other LEDs with 22 pF capacitors, which produced similar behaviour. The author proposed LED junction capacitance as the cause and added a precharge path for the shared bank connections. The [[https://hackaday.com/2021/12/08/getting-rid-of-the-ghost-in-the-led/|(Getting Rid Of) The Ghost In The LED]] article and its discussion also raise other possible contributors, including transistor switching time and leakage current. Treat capacitance as the author's explanation for this circuit, not a universal diagnosis for LED ghosting.
+
+===== Circuit and code limits =====
+
+The precharge sketch uses `delay(0.050)` and `delay(0.01)` around transistor switching and the precharge pulse. Arduino documents `delay()` as accepting an `unsigned long` number of milliseconds; these fractional numeric literals convert to zero milliseconds. The sketch therefore does not specify the intended sub-millisecond delays. The project author also warns that incorrect sequencing can create an unresisted current path through the precharge diode and transistor, and suggests a current-limiting resistor on the precharge output. Do not copy the circuit or sketch without checking the full current paths, component ratings, and switching timing.
+
+In the Hackaday discussion, the project author reports that setting the inactive LED pins to high impedance also worked in this particular circuit. That is an experimental observation, not a guarantee that the same technique is suitable for another LED matrix or microcontroller.
+
+===== Relevance =====
+
+This is a useful debugging reference for multiplexed status indicators and displays: inspect bank-switch timing, account for transient current paths, and verify the inactive state electrically rather than assuming that a logically disabled bank carries no current. It has not been tested against the Robots project's hardware. The existing [[sites:chartroom:architecture:embedded-nodes|Light Module's TH1/D11 status and temperature feedback arrangement]] is a shared pin function, not this two-bank LED matrix; the source does not establish that it has the same ghosting mechanism.
+
+===== Sources =====
+
+  * Mihai Cuciuc, [[https://hackaday.io/project/182520-deghosting-multiplexed-leds/details|Deghosting multiplexed LEDs]], Hackaday.io project details, published 2021; accessed 2026-11-08.
+  * Ryan Flowers, [[https://hackaday.com/2021/12/08/getting-rid-of-the-ghost-in-the-led/|(Getting Rid Of) The Ghost In The LED]], Hackaday, 2021-12-08; accessed 2026-11-08.
+  * [[https://docs.arduino.cc/language-reference/en/functions/time/delay/|`delay()` — Arduino Language Reference]], parameter units and type; accessed 2026-11-08.
+  * [[sites:chartroom:architecture:embedded-nodes|Embedded node profiles]], project-specific shared-pin reference.
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
