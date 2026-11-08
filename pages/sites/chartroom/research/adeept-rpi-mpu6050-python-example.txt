@@ -1,0 +1,41 @@
+====== Adeept Raspberry Pi MPU-6050 Python example ======
+{{tag>research raspberry-pi python mpu6050 IMU sensors}}
+
+~~META:
+description     = Adeept starter-kit Python example that reads MPU-6050 acceleration, gyro, and temperature and prints accelerometer-derived inclination angles.
+type            = research
+status          = reference
+authority       = Adeept_Ultimate_Starter_Kit_for_RPi source repository
+~~
+
+===== Source and scope =====
+
+This note reviews the Python file in Adeept's Ultimate Starter Kit for Raspberry Pi repository. The repository describes the kit as compatible with Raspberry Pi 3, 4, and 5. The code has not been run or tested as part of this review.
+
+===== What the example does =====
+
+The script imports the `mpu6050` Python module, creates a sensor object at I²C address `0x68`, and repeatedly reads temperature, three-axis acceleration, and three-axis angular velocity. It prints those values, calculates two inclination angles from the accelerometer's X, Y, and Z readings, then waits one second before the next iteration. Pressing Ctrl+C exits the loop.
+
+Although it reads and prints gyroscope values, the example does not use those values in its inclination calculation. The angles are calculated from the accelerometer only. This is a simple stationary or low-dynamic tilt demonstration, not a sensor-fusion algorithm or a validated attitude estimate for a moving robot.
+
+===== Sensor limits and setup =====
+
+The MPU-6050 is a six-degree-of-freedom (6-DoF) device with a three-axis accelerometer and a three-axis gyroscope. It has no magnetometer, so this example does not provide magnetic heading. Its accelerometer-derived angles do not provide yaw or absolute position. Acceleration from movement can also affect inclination estimates that assume gravity is the dominant measured acceleration.
+
+The reviewed Python directory contains the script but no dependency installation instructions or wiring diagram. The code assumes that the `mpu6050` Python module is installed and that the sensor is reachable at address `0x68`. Confirm the actual breakout board, I²C wiring, address, and electrical levels before use.
+
+===== Relevance =====
+
+This is a compact Raspberry Pi Python example for reading the MPU-6050 and displaying simple tilt values. It complements the [[sites:chartroom:research:randomnerdtutorials-arduino-mpu6050|Random Nerd Tutorials Arduino MPU-6050 guide]] and the [[sites:chartroom:research:arduino-processing-mpu6050-artificial-horizon|Arduino and Processing artificial horizon example]].
+
+===== Sources =====
+
+  * [Adeept Ultimate Starter Kit for RPi: Lesson 05 MPU6050 Python directory](https://github.com/adeept/Adeept_Ultimate_Starter_Kit_for_RPi/tree/main/Lesson05_MPU6050/code/python), accessed 2026-11-08.
+  * [Lesson05_MPU6050.py](https://github.com/adeept/Adeept_Ultimate_Starter_Kit_for_RPi/blob/main/Lesson05_MPU6050/code/python/Lesson05_MPU6050.py), source code reviewed 2026-11-08.
+  * [Adeept Ultimate Starter Kit for RPi repository README](https://github.com/adeept/Adeept_Ultimate_Starter_Kit_for_RPi), kit description and stated Raspberry Pi compatibility; accessed 2026-11-08.
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
