@@ -20,11 +20,20 @@ The project's GitHub wiki, edited 2026-02-26, describes Buddy as the current rel
 
 The project may be useful as an educational reference for modular companion-robot construction, Raspberry Pi/Arduino division of work, servo control, and custom printed circuit boards. It is a separate biped platform and does not establish compatibility with, or adoption in, the Robots project's vehicle architecture.
 
+===== Dependency-management article =====
+
+MakerForge's article on [dynamic dependency management](https://www.makerforge.tech/posts/dynamic-dependency-management/) describes listing Python and system-package dependencies in each module's YAML configuration, then having an installation script install dependencies for enabled modules. This pattern can help when optional modules have different requirements and deployments enable different feature sets.
+
+The article's example is not, by itself, a reproducible dependency solution: its Python and system package installation examples do not consistently pin versions or use a lock file, and the virtual environment is created with system packages visible. It also uses broad `chmod 777` permissions for startup scripts. These are limitations of the published example, not a review of the current MakerForge repository.
+
+Chartroom's [[sites:chartroom:development:raspberry-pi-deployment|Raspberry Pi deployment guidance]] assigns implementation-specific dependency installation to CuttleOS. This article is a useful design reference if CuttleOS needs per-module or per-profile dependency selection; the available Chartroom material does not establish that this added mechanism is currently needed or adopted. Any evaluation belongs in CuttleOS and should preserve repeatable versions, isolated environments, and least-privilege file permissions.
+
 ===== Sources =====
 
   * [MakerForge](https://www.makerforge.tech/), project index; accessed 2026-11-08.
   * [Buddy: Modular Biped Robot Project](https://www.makerforge.tech/modular-biped/); accessed 2026-11-08.
   * [Modular Biped Robot repository](https://github.com/makerforgetech/modular-biped), including its [project wiki](https://github.com/makerforgetech/modular-biped/wiki); wiki edited 2026-02-26; accessed 2026-11-08.
+  * [Dynamic Dependency Management for Modular Architecture](https://www.makerforge.tech/posts/dynamic-dependency-management/), MakerForge, published 2024-10-26 and updated 2024-12-13; accessed 2026-11-08.
 
 ~~REFNOTES~~
 ---------
