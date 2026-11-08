@@ -130,6 +130,14 @@ The supplied reference images show a tipping-bucket rain-gauge mechanism associa
 
 //Detailed tipping-bucket rain-gauge construction drawing, supplied as ''IMG_2185.JPG''. The drawing bears an external ''vwl...'' mark; source attribution and publication permission remain to be confirmed.//
 
+==== Zeus Electronic Weather Station (ZeWS) ====
+
+The [[https://www.hackster.io/moisi/the-zeus-electronic-weather-station-zews-a009ae|Zeus Electronic Weather Station (ZeWS)]] is an open-source initiative of the Harry Fultz Institute Open Source Club, described by its author as an expansion of an earlier Open Source Weather Station. Its April 2018 project history describes an Arduino Uno collecting temperature, humidity, atmospheric pressure, and light readings, with wind-speed and direction sensing added in a later prototype. A pyranometer was still in progress. The author also reports programming a Raspberry Pi as a database and web server. The page lists an LM35 temperature sensor, DHT11 temperature/humidity sensor, BMP180 barometer (with BMP280 recommended), Hall-effect and reed-switch components, and a light-dependent resistor.
+
+**Relevance:** a reference for combining weather-sensor acquisition with a separate data and web-serving computer. Its wind-vane encoder and sensor-box schematics may inform comparisons with surface environmental monitoring and Smart Buoy work.
+
+The page labels the project a work in progress. Its component list names two Arduino Uno boards, while the project history describes the prototype using one Uno as the inter-integrated circuit (I²C) master; the difference may reflect different project stages, but the page does not explain it. Treat the implementation history and component list as the author's account, not independent verification. The referenced source code is said to be in a GitHub repository, but the page's link target was not visible during review, so the repository and code have not been inspected.
+
 ==== Reed-switch anemometer ====
 
 https://www.instructables.com/How-to-Build-Your-Own-Anemometer-Using-Reed-Switch/
