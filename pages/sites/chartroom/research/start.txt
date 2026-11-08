@@ -105,6 +105,7 @@ The links below cover all research notes. Use the related-research links within 
   * [[sites:chartroom:research:green-bms-smartbms|Green BMS SmartBMS — candidate BMS research]]
   * [[sites:chartroom:research:diybms-v4-stuart-pittaway|Stuart Pittaway diyBMS v4]]
   * [[sites:chartroom:research:fugu-1kw-mppt-solar-charge-controller|FUGU DIY 1 kW MPPT solar charge controller]]
+  * [[sites:chartroom:research:kj-magnetics-3d-printed-wind-turbine|K&J Magnetics 3D-printed magnetic wind turbine]]
 
 ==== Buoys and environmental sensing ====
 

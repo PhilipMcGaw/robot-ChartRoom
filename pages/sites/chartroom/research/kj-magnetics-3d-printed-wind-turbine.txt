@@ -1,0 +1,34 @@
+====== K&J Magnetics 3D-printed magnetic wind turbine ======
+{{tag>research energy generation wind turbine generator magnets 3d-printing}}
+
+~~META:
+description     = Reference for a small permanent-magnet generator experiment presented as a 3D-printed wind turbine.
+type            = research
+status          = reference
+authority       = K&J Magnetics article and linked build video
+~~
+
+===== What the source reports =====
+
+K&J Magnetics describes three generator iterations using permanent magnets, wound coils, and 3D-printed parts. The first design used a diametrically magnetised ring magnet and a three-coil radial-flux stator, with about 250 turns per coil. The company says this produced less than 1 V when spun with a battery-powered drill. A six-coil version increased the voltage, but still did not light the example LED and required the drill at maximum speed.
+
+The final experiment used eight stepped block magnets and 12 coils, each with about 230 turns. The coils were connected in three Wye-connected groups, with four coils in series in each group, and the output was rectified with diodes. The article reports 4–5 V when the generator was turned by hand and 20 V when driven by a fast drill. It describes the output as under 1 W.
+
+===== Relevance and limits =====
+
+This is a useful educational reference for how magnet count, coil turns, coil arrangement, and rectification affect a small permanent-magnet generator. It may inform early energy-harvesting experiments for sensor nodes, but the article does not report a wind-speed test, rotational-speed measurements, a load curve, or sustained energy output. The reported drill-driven voltage is not evidence of practical wind-turbine performance or suitability as a field power source.
+
+===== Source =====
+
+  * [K&J Magnetics — 3D Printed Magnetic Wind Turbine](https://www.kjmagnetics.com/blog/magnetic-wind-turbine), article updated 2025-07-21; build results and linked model files; reviewed 2026-11-08.
+
+===== Related research =====
+
+For low-power and solar-powered environmental sensing references, see [[sites:chartroom:research:coin-cell-data-logger-low-power|Coin-cell data logger and low-power design]], [[sites:chartroom:research:solar-powered-wifi-weather-station-v40|Solar Powered WiFi Weather Station V4.0]], and [[sites:chartroom:research:fieldkit-environmental-sensing-platform|FieldKit environmental sensing platform]].
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
