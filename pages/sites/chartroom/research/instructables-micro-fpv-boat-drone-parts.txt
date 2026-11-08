@@ -1,0 +1,29 @@
+====== Micro FPV boat from drone parts ======
+{{tag>research robotics surface-vehicle fpv drone-parts 3d-printing}}
+
+~~META:
+description     = Instructables airboat concept that reuses micro-drone components, including a flight controller, brushless motors, and a first-person-view camera.
+type            = research
+status          = reference
+authority       = Instructables project by ossum; introduction and parts overview cross-checked against a secondary repost
+~~
+
+===== Project summary =====
+
+The Instructables project by ossum describes a micro airboat made from spare micro-drone parts. The introduction and parts list reproduced by JPRalves identify a whoop-sized flight controller, two brushless motors, two 2.5-inch propellers, a canopy, and a first-person-view (FPV) camera. The project uses three-dimensional printed parts for its final design and documents earlier iterations as learning examples.
+
+===== Relevance and limits =====
+
+This is a small surface-vehicle concept for reusing drone components and integrating an onboard camera. It may be useful for comparing compact layouts and propulsion/control reuse in a surface craft. The accessible repost contains only the introduction and component overview; the nine-step Instructables build was not readable during review. No performance, reliability, water-ingress protection, or suitability for project hardware has been independently established.
+
+===== Sources =====
+
+  * [Micro FPV Boat From Drone Parts — Instructables](https://www.instructables.com/Micro-FPV-Boat-From-Drone-Parts/), by ossum; title and step count visible, article body not readable during review on 2026-11-08.
+  * [Micro FPV Boat From Drone Parts — JPRalves](https://jpralves.net/post/2021/09/02/micro-fpv-boat-from-drone-parts.html), secondary repost of the introduction and component overview; published 2021-09-02, accessed 2026-11-08.
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

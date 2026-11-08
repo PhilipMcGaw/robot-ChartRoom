@@ -72,6 +72,7 @@ The links below cover all research notes. Use the related-research links within 
   * [[sites:chartroom:research:deep-ocean-engineering-company-profile|Deep Ocean Engineering ROV and USV portfolio]]
   * [[sites:chartroom:research:mariscope-rov-and-marine-technology-profile|Mariscope ROV and marine technology profile]]
   * [[sites:chartroom:research:roaz-autonomous-surface-vehicles|ROAZ and ROAZ II autonomous surface vehicles]]
+  * [[sites:chartroom:research:instructables-micro-fpv-boat-drone-parts|Micro FPV boat from drone parts]]
   * [[sites:chartroom:research:oceanbotics-srv8-selection-guide|Oceanbotics SRV-8 series selection guide]]
   * [[sites:chartroom:research:chasing-m2-pro-max-commercial-rov|CHASING M2 PRO MAX commercial ROV]]
   * [[sites:chartroom:research:rov-overview-and-applications|ROV overview and applications]]
