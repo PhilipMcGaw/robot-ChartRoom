@@ -185,6 +185,7 @@ The links below cover all research notes. Use the related-research links within 
   * [[sites:chartroom:research:instructables-diy-phone-controlled-fpv-rover|DIY Phone Controlled FPV Rover (RoverBot)]]
   * [[sites:chartroom:research:antweight-fight-club-design-technology-tutor|Antweight Fight Club workshop]]
   * [[sites:chartroom:research:beatty-robotics-sojourner-rover|Beatty Robotics Sojourner rover]]
+  * [[sites:chartroom:research:university-of-michigan-mrover-rover-archive|University of Michigan MRover rover archive]]
   * [[sites:chartroom:research:rc-mars-rover-mk-ii-pepa-vladik|RC MARS Rover Mk II by pepa_vladik]]
   * [[sites:chartroom:research:basicmicro-doctor-who-k9-build|BasicMicro Doctor Who K9 build]]
   * [[sites:chartroom:research:abertay-k9-restoration|Abertay University Doctor Who K-9 restoration]]

@@ -1,0 +1,40 @@
+====== University of Michigan MRover rover archive ======
+{{tag>research mars-rover competition university design-history robotics}}
+
+~~META:
+description     = Official archive of University of Michigan Mars Rover Team competition rovers, with brief recent-design summaries.
+type            = research
+status          = reference
+authority       = University of Michigan Mars Rover Team
+~~
+
+===== Archive summary =====
+
+The University of Michigan Mars Rover Team (MRover) publishes an [[https://mrover.org/rovers/|archive of its rovers]] spanning 2000 to 2026. The archive lists successive vehicles including Olympus, Everest, Walle, Leonardo, Cydonia, Tharsis, Grover, Golu Golu, Hughey, Phoebe, Bowser, Lucy, SPIDER, Blue, Rosie, Dahlia, Perry, Kiwi, and Phil. It provides short descriptions for the latest entries and links to individual rover pages; some older entries have little or no summary on the archive page.
+
+The 2024 Perry summary mentions a lightweight aluminium chassis and rocker-bogie suspension. The 2025 Kiwi summary says it was extensively redesigned to address prior challenges. The 2026 Phil summary also describes significant design changes. These are team-published overview statements, not independent assessments of the vehicles or a complete specification history.
+
+MRover describes itself as a student-run, multidisciplinary team competing in the University Rover Challenge (URC). Its homepage reports that the team placed fifth with Phil. This is the team's own report; the archive page does not provide the competition score or assessment details.
+
+===== Relevance and limits =====
+
+The archive is useful for tracing how a student competition team presents successive rover generations and design changes. For detailed technical material, MRover directs readers to its separate [[https://docs.mrover.org/|documentation site]], which is organised into software, mechanical, electrical, and science areas. Those documents are the team's primary technical references; this Chartroom note does not reproduce their implementation details.
+
+The MRover vehicles are surface exploration rovers developed for a competition context. Their designs do not establish suitability for the Robots project's terrestrial or underwater vehicles, and the archive does not by itself provide validated test data or complete specifications for every year.
+
+===== Sources =====
+
+  * [[https://mrover.org/rovers/|Our Rovers — University of Michigan Mars Rover Team]], archive and brief descriptions; accessed 2026-11-08.
+  * [[https://mrover.org/|MRover — University of Michigan Mars Rover Team]], team purpose and reported University Rover Challenge result; accessed 2026-11-08.
+  * [[https://docs.mrover.org/|MRover Documentation]], team's software, mechanical, electrical, and science documentation; accessed 2026-11-08.
+
+===== Related research =====
+
+For other Mars-rover-inspired and competition rover examples, see [[sites:chartroom:research:bricolabs-curiosity-btl-rover|Bricolabs Curiosity BTL rover]], [[sites:chartroom:research:beatty-robotics-sojourner-rover|Beatty Robotics Sojourner rover]], and [[sites:chartroom:research:rc-mars-rover-mk-ii-pepa-vladik|RC MARS Rover Mk II]].
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
