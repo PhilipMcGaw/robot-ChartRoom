@@ -179,6 +179,7 @@ The links below cover all research notes. Use the related-research links within 
 
 ==== Robotics, education, and hardware ====
 
+  * [[sites:chartroom:research:uea-envsoft-otto-mecanum|UEA-envsoft Otto-Mecanum robot]]
   * [[sites:chartroom:research:pololu-robotics-electronics-catalogue|Pololu robotics and electronics catalogue]]
   * [[sites:chartroom:research:piborg-raspberry-pi-robotics|PiBorg Raspberry Pi robotics]]
   * [[sites:chartroom:research:bricolabs-curiosity-btl-rover|Bricolabs Curiosity BTL rover]]

@@ -1,0 +1,47 @@
+====== UEA-envsoft Otto-Mecanum robot ======
+{{tag>research robotics mecanum raspberry-pi-pico micropython wifi mobile-control}}
+
+~~META:
+description     = Research reference for the UEA-envsoft 3D-printed Otto-Mecanum robot and its MicroPython control software.
+type            = research
+status          = reference
+authority       = UEA-envsoft/Otto-Mecanum repository
+~~
+
+===== Project summary =====
+
+The [[https://github.com/UEA-envsoft/Otto-Mecanum|UEA-envsoft/Otto-Mecanum repository]] describes Otto-Mecanum as a 3D-printed robot with mecanum wheels. It contains MicroPython software and interface files for the RoboRemo Android application. The repository README links the mechanical files and assembly instructions from a [[https://www.printables.com/model/414218-otto-mecanum|Printables model page]].
+
+The software is written for a Raspberry Pi Pico setup and uses Wi-Fi and a socket server for remote commands. The README says the operator must configure the connection buttons with the robot's IP address. The supplied RoboRemo interface is for the full application; the repository also includes a multi-page demo interface for the free application.
+
+===== Software features described by the repository =====
+
+The repository's `micropython/main.py` includes four servo channels for mecanum movement, three analogue line sensors, an ultrasonic range sensor, and two infrared proximity sensors. It implements line-following and obstacle-avoidance modes, reports sensor and connection status, and can be stopped from a top-panel button. The software also uses an LED matrix for a face and IP-address display, plus a buzzer for connection and startup signals. These are features present in the reviewed source, not independently bench-tested behaviour.
+
+The repository includes a servo-speed calibration note. It describes measuring wheel rotation over a fixed interval and applying per-servo speed corrections. The note presents this as needed to make the mecanum wheels function evenly, while acknowledging that calibration may not be necessary for some commercially sourced wheels. Its example calibration values are explicitly illustrative; they are not recorded measurements for a specific Otto-Mecanum build.
+
+===== Relevance and limits =====
+
+This project is a small-robot reference for mecanum drive, a Wi-Fi socket control path, phone-based manual control, and combining manual driving with simple line-following and obstacle-avoidance modes. It may help with interface comparisons or educational rover experiments. It is not evidence of a design choice or implementation in the Robots project.
+
+The GitHub repository identifies a GNU General Public License v3.0 (GPL-3.0) licence. Check the licence and attribution requirements for each file before reuse. The repository also identifies third-party MicroPython drivers for an HT16K33 display and an HC-SR04 range sensor; their upstream repositories are linked below. The repository does not establish vehicle-grade safety, network security, sensing performance, or suitability for outdoor use.
+
+===== Sources =====
+
+  * [[https://github.com/UEA-envsoft/Otto-Mecanum|UEA-envsoft/Otto-Mecanum]], repository README and file listing; reviewed 2026-11-08. The repository was last pushed on 2023-09-18 at the time of review.
+  * [[https://github.com/UEA-envsoft/Otto-Mecanum/blob/main/micropython/main.py|MicroPython main program]], reviewed 2026-11-08; source for the listed interfaces and behaviours.
+  * [[https://github.com/UEA-envsoft/Otto-Mecanum/blob/main/SOFTWARENOTES.md|Software notes]], reviewed 2026-11-08; author-provided setup and status indications.
+  * [[https://github.com/UEA-envsoft/Otto-Mecanum/blob/main/SERVOSPEED.md|Servo-speed calibration notes]], reviewed 2026-11-08; calibration procedure and illustrative values.
+  * [[https://www.printables.com/model/414218-otto-mecanum|Printables: Otto Mecanum]], linked by the repository README for the 3D files and assembly instructions; not independently reviewed for this note.
+  * [[https://github.com/smittytone/HT16K33-Python/tree/main/mpy|HT16K33 MicroPython driver]] and [[https://github.com/rsc1975/micropython-hcsr04|MicroPython HC-SR04 driver]], identified by the repository as third-party software dependencies.
+
+===== Related research =====
+
+See [[sites:chartroom:research:piwars-pidrogen-interchangeable-tracks-mecanum|PiWars 2024 — interchangeable tracks and mecanum wheels]], [[sites:chartroom:research:piwars-footleg-motor2040-pid-mecanum|PiWars 2024 — Motor2040 PID control and mecanum driving]], and [[sites:chartroom:research:community-robotics-and-sensing-batch|Community robotics and sensing references]].
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
