@@ -218,6 +218,12 @@ In a [[https://hackaday.com/2015/11/28/basic-on-the-esp8266/|2015 Hackaday artic
 
 The LED is only a representative output in the demonstration. The article does not show a heater, a load driver, or a complete thermostat control and safety design. Treat it as an educational sensor/web interface example, not as a usable heating controller.
 
+==== PiBorg BattBorg battery power board ====
+
+The supplied [[http://forum.piborg.org/battborg|PiBorg BattBorg page]] timed out during review. The [[https://media.digikey.com/pdf/Data%20Sheets/Pi%20Supply%20PDFs/PIS-0925_Web.pdf|Pi Supply BattBorg datasheet]] identifies PIS-0925 as a battery-to-5 V power converter for Raspberry Pi projects. Its 2018 unsoldered-kit sheet specifies a 7–36 V battery input range, a maximum output of 5 V at 1.5 A, and connection to GPIO pins 2, 4, and 6. It describes an approximately 90% efficient OKI78SR DC-to-DC converter and lists compatibility with Raspberry Pi models up to the Pi 3 and Zero W.
+
+**Relevance:** a historical example of providing a regulated computer power rail from a battery source in a small robot or remote sensor. The 1.5 A output limit is a key system constraint; this board is a computer power supply, not a motor controller. Its 2018 model list does not establish compatibility with later Raspberry Pi models, and the datasheet's efficiency and run-time figures are supplier claims rather than independent test results.
+
 ==== Secure ESP32 OTA firmware updates ====
 
 https://hackaday.com/2021/11/29/how-to-easily-set-up-secure-ota-firmware-updates-on-esp32/
