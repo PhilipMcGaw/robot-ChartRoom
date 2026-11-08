@@ -22,6 +22,8 @@ Before using this approach, assess the device's network availability, energy bud
 
 For example weather-station builds, see [[sites:chartroom:research:arduino-community-weather-station-instructables|Arduino community weather station (Instructables)]] and [[sites:chartroom:research:solar-powered-wifi-weather-station-v40|Solar Powered WiFi Weather Station V4.0]].
 
+For a historical ESP8266 continuous-delivery example using tagged releases and an update proxy, see [[sites:chartroom:research:esp8266-tagged-release-ota-pipeline|ESP8266 tagged-release OTA delivery pipeline]].
+
 ===== Sources =====
 
   * [esp_ghota repository](https://github.com/Fishwaldo/esp_ghota), README and example workflow; reviewed 2026-11-08.

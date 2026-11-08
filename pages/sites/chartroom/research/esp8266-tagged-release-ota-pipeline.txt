@@ -1,0 +1,34 @@
+====== ESP8266 tagged-release OTA delivery pipeline ======
+{{tag>research esp8266 firmware ota continuous-delivery platformio}}
+
+~~META:
+description     = Historical reference for building and delivering ESP8266 firmware from tagged GitHub releases.
+type            = research
+status          = reference
+authority       = Squix TechBlog project article; Hackaday summary
+~~
+
+===== Reported workflow =====
+
+The 2016 project describes a continuous-delivery workflow for ESP8266 devices using GitHub, Travis CI, PlatformIO, a PHP update service, and the ESP8266 over-the-air (OTA) update library. Each repository commit triggers a build and any configured tests. When a developer tags a release, the build is labelled with that version and the firmware binary is uploaded to the GitHub release.
+
+Devices periodically ask the PHP service whether a newer release exists. The service compares the version reported by the device with the latest GitHub release, retrieves the firmware asset, and serves it to the device. The intermediate service was used because the ESP8266 HTTP update client described in the article could not follow the release-asset redirects, and the device's HTTPS certificate handling was limited. The example also keeps Wi-Fi credentials in device flash rather than compiling them into the firmware, using WiFiManager for network configuration.
+
+The author distinguishes continuous delivery from automatic deployment: a release is explicitly tagged after review, and that release is then distributed to devices. The example checks for updates every 60 seconds, which the author identifies as an impatient demonstration value and says should be less frequent in a real project; an MQTT notification is mentioned as an alternative.
+
+===== Relevance and limits =====
+
+This is a historical example of separating ordinary commits, release builds, and device deployment. The same pattern may inform remote maintenance of networked sensor nodes, but the toolchain and certificate constraints are from 2016 and must not be assumed to describe current ESP8266 libraries or services. It is separate from the ESP32 [[sites:chartroom:research:esp32-github-ota-updates|esp_ghota reference]].
+
+The article explicitly describes the example as lacking security, and the author warns that enabling direct OTA access can make devices more vulnerable. The device's limited HTTPS certificate handling and the server-side proxy are described as constraints, not as a current security design. The author also reports that NodeMCU devices sometimes hung after updates during testing, believed to be associated with serial uploads rather than OTA, and recommends testing before production use. No Chartroom implementation or verification has been performed.
+
+===== Sources =====
+
+  * [ESP8266: Continuous Delivery Pipeline – Push To Production](https://blog.squix.org/2016/06/esp8266-continuous-delivery-pipeline-push-to-production.html), Squix TechBlog, 2016-06; workflow and author limitations reviewed 2026-11-08. The example repository is linked from the article at [squix78/esp8266-ci-ota](https://github.com/squix78/esp8266-ci-ota), but its current contents were not reviewed.
+  * [Continuous Delivery For Your ESP8266](https://hackaday.com/2016/06/08/continuous-delivery-for-your-esp8266/), Hackaday, 2016-06-08; reviewed 2026-11-08.
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
