@@ -1,0 +1,30 @@
+====== Angler Fish ROV and indexed thruster listing ======
+{{tag>research rov underwater thruster 3d-printing access-pending}}
+
+~~META:
+description     = User-supplied Angler Fish ROV Instagram profile and an indirectly associated indexed thruster listing.
+type            = research
+status          = partial review
+authority       = Instagram profile supplied by user; third-party model index
+~~
+
+===== Available information =====
+
+The user supplied the [[https://www.instagram.com/angler_fish_rov/|Angler Fish ROV Instagram profile]]. Instagram could not be accessed during this review, so its posts, operator, and vehicle details have not been inspected.
+
+A third-party 3D-model search index lists a Thingiverse model titled “Very effective Rov thruster” by canbayramgulcan. The indexed description includes the Angler Fish ROV Instagram URL and specifies an A2212 1000KV motor, fasteners, PET-G or ABS filament, and a 0.1 mm propeller layer height. This is an indirect association from an index, not a review of the original model page or evidence that the Instagram account belongs to the model author.
+
+===== Relevance and limits =====
+
+The listing may be a lead for an inexpensive, 3D-printed ROV thruster concept. The model files, original Thingiverse page, design dimensions, test method, measured thrust, sealing, and underwater service life were not reviewed. The model title's claim of effectiveness is the author's wording and is not independently substantiated. Do not treat the indexed specifications as a validated design or as a recommendation for the project vehicle.
+
+===== Sources =====
+
+  * [[https://www.instagram.com/angler_fish_rov/|Angler Fish ROV Instagram profile]], supplied by the user; direct access unavailable during review on 2026-11-08.
+  * [[https://www.stlfinder.com/3dmodels/rov-thruster-design/|STLFinder ROV thruster design index]], third-party index entry for “Very effective Rov thruster”; reviewed 2026-11-08. The original Thingiverse model page was not reviewed.
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
