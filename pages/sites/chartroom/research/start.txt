@@ -35,6 +35,7 @@ The links below cover all research notes. Use the related-research links within 
   * [[sites:chartroom:research:mooncrest-models-robot-dog-sensor-eye|Mooncrest Models robot dog product links — access pending]]
   * [[sites:chartroom:research:sparkfun-news-7930|SparkFun news article 7930 — access pending]]
   * [[sites:chartroom:research:google-sheets-document-103wvzvyar-access-pending|Google Sheets document 103WVZVyar — access pending]]
+  * [[sites:chartroom:research:diydrones-apm-submarine-ros-access-pending|DIYDrones APM submarine ROS post — access pending]]
 
 ==== Underwater robotics and ROVs ====
 

@@ -1,0 +1,20 @@
+====== DIYDrones APM submarine ROS post — access pending ======
+{{tag>research diy-drones apm ros submarine rov source-review}}
+
+~~META:
+description     = DIYDrones post supplied for review; article contents and technical details have not been verified.
+type            = research
+status          = unreviewed
+authority       = Chartroom
+~~
+
+===== Source and access status =====
+
+The supplied [DIYDrones post](https://diydrones.com/profiles/blogs/apm-powered-submarine-runs-ros) could not be retrieved by the web reader on 2026-11-08. Search did not return the post's title or contents. The URL slug suggests a submarine, APM, and ROS, but no technical details or project relevance are recorded until the post can be reviewed.
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
