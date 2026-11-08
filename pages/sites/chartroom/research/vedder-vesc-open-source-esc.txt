@@ -1,0 +1,42 @@
+====== VESC open-source electronic speed controller ======
+{{tag>research propulsion motor-control esc open-hardware}}
+
+~~META:
+description     = Historical reference to Benjamin Vedder's VESC brushless motor controller article and its linked hardware and firmware repositories.
+type            = research
+status          = reference
+authority       = Benjamin Vedder's article and linked VESC repositories
+~~
+
+===== Scope =====
+
+Benjamin Vedder's article, “VESC – Open Source ESC”, describes an open-source electronic speed controller (ESC) for brushless direct-current (BLDC) motors. The article was posted on 2015-01-07 and updated on 2016-01-22. Its worked examples are centred on an electric longboard, with references to other small vehicle applications. It is a historical design and software reference, not a current build procedure or a validated ROV propulsion recommendation.
+
+===== Design features described =====
+
+The article describes the controller as using a microcontroller, motor-driver hardware, configurable motor-control firmware, and a graphical configuration tool. At the time of the update, the listed features included sensored and sensorless field-oriented control (FOC), current, speed, and duty-cycle control modes, multiple command interfaces, configurable motor and input limits, and fault or command-timeout behaviour. These are descriptions of the design revision covered by that article; they should not be assumed to describe every VESC board or current firmware version.
+
+The article links separate hardware, firmware, and configuration-tool repositories. The linked hardware repository identifies itself as the hardware for the open-source custom ESC and states that its bill of materials is included with the design files. The linked firmware repository is the VESC motor-control firmware project. Select a hardware target and matching firmware using the current documentation for the exact board; the article's Ubuntu 14.04 setup commands and configuration guidance are historical.
+
+===== Relevance and limitations =====
+
+The reference may help when comparing open motor-controller designs, command interfaces, configurable limits, and the separation between controller hardware and firmware. It does not establish that a VESC board is suitable for a particular underwater thruster, battery, enclosure, cooling arrangement, or ROV operating environment. Any such use requires checking the exact board, motor, firmware, power path, thermal conditions, and fail-safe behaviour against current primary documentation and project-specific tests.
+
+The article's specifications and instructions are dated and should not be carried forward as current ratings or procedures. The linked hardware repository states that its hardware files use the Creative Commons Attribution-ShareAlike 4.0 International licence; review the repository and licence terms for the exact material before redistributing a derivative. This note does not determine the licence for the separate firmware or configuration-tool repositories.
+
+===== Sources =====
+
+  * [[https://vedder.se/2015/01/vesc-open-source-esc/|VESC – Open Source ESC]], Benjamin's robotics, posted 2015-01-07 and updated 2016-01-22; reviewed 2026-11-08.
+  * [[https://github.com/vedderb/bldc-hardware|vedderb/bldc-hardware]], linked hardware design repository; repository README identifies the hardware files and licence.
+  * [[https://github.com/vedderb/bldc|vedderb/bldc]], linked motor-control firmware repository.
+
+===== Related research =====
+
+For an ROV example with an integrated thruster and ESC, see the propulsion section of [[sites:chartroom:research:rovmaker-edge|RovMaker Edge research notes]].
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
