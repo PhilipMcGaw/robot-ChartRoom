@@ -70,6 +70,7 @@ The links below cover all research notes. Use the related-research links within 
   * [[sites:chartroom:research:mate-project-trident|Project Trident]]
   * [[sites:chartroom:research:mate-seamate-rov-kits|MATE SeaMATE educational ROV kits]]
   * [[sites:chartroom:research:mate-rov-requirements-summary|MATE ROV engineering requirements summary]]
+  * [[sites:chartroom:research:mate-rov-competition-official-site|MATE ROV Competition official resources]]
   * [[sites:chartroom:research:mate-scottish-school-rov|Scottish school MATE ROV project]]
   * [[sites:chartroom:research:mate-texas-am-oceanus|Texas A&M Team Oceanus]]
   * [[sites:chartroom:research:mate-uconn-underwater-robotics|UConn Underwater Robotics Club]]

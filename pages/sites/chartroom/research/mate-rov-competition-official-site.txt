@@ -1,0 +1,42 @@
+====== MATE ROV Competition official resources ======
+{{tag>research mate rov competition education design-archive}}
+
+~~META:
+description     = Official MATE ROV Competition event, class, and team-documentation resources.
+type            = research
+status          = reference
+authority       = MATE ROV Competition official website; Marine Technology Society
+~~
+
+===== Scope =====
+
+This note records the user-supplied [MATE ROV Competition website](https://materovcompetition.org/) as a current source for competition information and team engineering documents. Direct retrieval of the root URL returned an error through the available web tool on 2026-11-08, but official subpages on the same domain were accessible in search results and review.
+
+The Marine Technology Society describes the competition as a global student underwater robotics programme with five vehicle classes: SCOUT, NAVIGATOR, RANGER, PIONEER, and EXPLORER. Teams design, build, and test ROVs for simulated workplace missions, with regional events feeding into the World Championship.
+
+===== Current pages reviewed =====
+
+The official regional-events page states that its 2027 event listings are subject to change and will receive additional details when registration opens. At the time reviewed, it described regional contests for SCOUT, NAVIGATOR, and RANGER, while PIONEER and EXPLORER teams were directed to the World Championship except where an event says otherwise. Treat this as a dated snapshot, not a standing rule.
+
+The official World Championship page lists the 2027 championship for 2027-06-24 to 2027-06-26 at Weyerhaeuser King County Aquatic Center in Federal Way, Washington, USA. Recheck the organiser's page before making travel or schedule decisions.
+
+The 2026 archive includes mission and class resources, competition records, and links to participating teams' technical documents and specification sheets. These are useful primary-source examples for design comparisons and student engineering documentation. They describe individual teams and past competition seasons; they are not project requirements or verified design guidance for the Robots project.
+
+===== Relevance and limits =====
+
+Use the official pages for current competition structure, mission tasks, event logistics, and historical team submissions. Competition manuals and event-specific rules are authoritative for teams entering that season. They do not automatically apply to the Chartroom ROV. For transferable engineering practices, see the [[sites:chartroom:research:mate-rov-requirements-summary|MATE ROV engineering requirements summary]], which deliberately separates general practices from competition-specific constraints.
+
+===== Sources =====
+
+  * [MATE ROV Competition](https://materovcompetition.org/), user-supplied official site; root URL returned an error through the web tool; accessed 2026-11-08.
+  * [MATE ROV Competition](https://www.mtsociety.org/mate-rov-competition), Marine Technology Society overview; competition purpose and classes; accessed 2026-11-08.
+  * [Register (Regionals)](https://materovcompetition.org/register-regionals), MATE ROV Competition; 2027 regional event status and class participation notes; accessed 2026-11-08.
+  * [World Championship](https://materovcompetition.org/world-championship), MATE ROV Competition; 2027 host and dates; accessed 2026-11-08.
+  * [2026 Competition Archive](https://materovcompetition.org/2026-archive), MATE ROV Competition; mission, class, and team-document links; accessed 2026-11-08.
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
