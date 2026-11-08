@@ -52,7 +52,9 @@ This keeps the collection as engineering research rather than allowing visual in
 
 ===== Further image discovery =====
 
-The user supplied a [[https://www.flickr.com/search/?text=rov|Flickr search for “rov”]] as a broader image-discovery route. The search page could not be reviewed here, and its results are dynamic. Treat it only as a way to find candidate images: check each image's author, context, and licence on its own page before using or redistributing it. No individual image from this search has been reviewed or retained in Chartroom.
+The user supplied a [[https://www.flickr.com/search/?text=rov|Flickr search for “rov”]] as a broader image-discovery route. The search page could not be reviewed here, and its results are dynamic. Treat it only as a way to find candidate images: check each image's author, context, and licence on its own page before using or redistributing it.
+
+The user also supplied a [[https://www.flickr.com/photos/134735962@N08/with/28304147314|specific Flickr item (photo ID 28304147314)]]. Flickr and searches for the photo ID did not return accessible details during review on 2026-11-08. Its image content, photographer, context, and licence are therefore unverified; do not use or redistribute it based on this link alone. No image has been retained in Chartroom.
 
 ===== Sources =====
 
