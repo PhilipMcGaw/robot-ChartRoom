@@ -1,0 +1,37 @@
+====== Core Electronics Raspberry Pi Pico LoRaWAN weather station ======
+{{tag>research raspberry-pi-pico lorawan lora environmental-sensing weather}}
+
+~~META:
+description     = Core Electronics tutorial for a Raspberry Pi Pico, LoRa-E5 module, and Long Range Wide Area Network weather station.
+type            = research
+status          = reference
+authority       = Core Electronics tutorial
+~~
+
+===== Scope =====
+
+This note summarises a Core Electronics tutorial for a Raspberry Pi Pico and Long Range Wide Area Network (LoRaWAN) telemetry. The tutorial is titled “Raspberry Pi Pico with LoRaWAN and The Things Network - Makerverse LoRa-E5 Module - Transmit Weather Data into IoT”. It is a third-party build guide, not a Chartroom implementation or an independently validated design.
+
+===== Project summary =====
+
+The tutorial demonstrates a Raspberry Pi Pico or Pico W connected over serial to a Makerverse LoRa-E5 module, programmed with MicroPython. It walks through registering the device with The Things Network (TTN), sending a test message through a LoRaWAN gateway, and extending the build into a weather and air-quality station. The expanded example uses BME280 and ENS160 sensors and a JavaScript payload decoder in TTN.
+
+The described data path depends on a LoRaWAN gateway with coverage and the TTN service; it is not a direct local link between the sensor and an operator station. The guide discusses battery or USB power and includes a PiicoDev LiPo expansion board, but does not establish a measured energy budget or field lifetime.
+
+===== Relevance and cautions =====
+
+This is a practical reference for a small environmental sensor node and for learning the end-to-end LoRaWAN and cloud ingestion workflow. Compare it with the [[sites:chartroom:research:solar-powered-wifi-weather-station-v40|Solar Powered WiFi Weather Station V4.0]], which describes a separate ESP32-based sender and receiver arrangement.
+
+Check the exact hardware revision and wiring before reuse. The tutorial notes that one image shows the wrong LoRa-E5 serial pins and says to use TX and RX, and it gives different supply wiring for USB/5 V and 3.3 V battery operation. Its example also uses device credentials; keep real credentials private and do not copy example keys into public code or documentation.
+
+The guide's range and performance statements are source claims, not results validated by Chartroom. Radio coverage, permitted operation, sensor accuracy, enclosure suitability, and power life depend on the deployment and require separate verification. This reference does not establish suitability for marine use or adoption in project vehicle architecture.
+
+===== Source =====
+
+  * [Raspberry Pi Pico with LoRaWAN and The Things Network](https://core-electronics.com.au/guides/wireless/lora-pico-the-things-network/), Core Electronics, updated 2023-07-03; accessed 2026-11-08.
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
