@@ -1,0 +1,34 @@
+====== Printables differential swerve drive ======
+{{tag>research piwars drivetrain swerve 3d-printing}}
+
+~~META:
+description     = Printables differential swerve drive model as a candidate compact mobile-robot drive reference.
+type            = research
+status          = reference
+authority       = Printables model listing; indexed description only
+~~
+
+===== Model summary =====
+
+The supplied Printables model is titled “Differential Swerve Drive”. Its indexed description, also reproduced by a third-party model-search site, lists two N20 gear motors for the mechanism and identifies the example motors as 6 V, 100 rpm units. The listing also points to an editable STEP model. The Printables page itself returned a fetch error during review on 2026-11-08, so the model files, full bill of materials, assembly instructions, and licence were not inspected.
+
+A differential swerve module uses the combined motion of two motors to control wheel rotation and steering. A mobile robot can use multiple steerable modules to produce holonomic movement, but the required number and layout depend on the chassis and intended motion. The accessible listing text does not establish a complete PiWars robot configuration or specify how many modules the author intended for a vehicle.
+
+===== PiWars relevance and limits =====
+
+This is a candidate for a small experimental PiWars drive module because the indexed parts list suggests a compact mechanism using small geared motors, and the STEP file may support adaptation. It is not yet evidence of a suitable PiWars drivetrain. The model's dimensions, gear ratios, wheel size, steering range, load capacity, backlash, traction, motor-current demand, and observed performance could not be confirmed from the retrieved material. The excerpt does not clarify whether the two-motor count refers to one module or a complete vehicle.
+
+Before adopting it, inspect the source files and licence, prototype one module, measure its speed and steering response under the expected robot load, and check whether the completed chassis meets the relevant event rules. Do not treat the abbreviated two-motor parts list as a complete robot drivetrain specification.
+
+For other PiWars drive references, see [[sites:chartroom:research:piwars-footleg-motor2040-pid-mecanum|PiWars Motor2040 PID control and mecanum drive]] and [[sites:chartroom:research:piwars-pidrogen-interchangeable-tracks-mecanum|PiWars interchangeable tracks and mecanum wheels]].
+
+===== Sources =====
+
+  * [[https://www.printables.com/model/300105-differential-swerve-drive|Printables: “Differential Swerve Drive”]], supplied link; direct retrieval returned a fetch error on 2026-11-08. Model files and licence were not reviewed.
+  * [[https://www.stlfinder.com/3dmodels/swerve-drive/|STLFinder swerve-drive search results]], third-party indexed excerpt of the model description and parts list; accessed 2026-11-08. Used only to identify the cited motor count, example motor speed/voltage, and STEP-file availability.
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
