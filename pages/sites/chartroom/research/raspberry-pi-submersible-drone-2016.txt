@@ -2,10 +2,10 @@
 {{tag>research rov raspberry-pi underwater camera tether sensors}}
 
 ~~META:
-description     = Historical Raspberry Pi News profile of Niels Affourtit's home-built tethered ROV.
+description     = Historical Raspberry Pi profiles of Niels Affourtit's home-built tethered ROV.
 type            = research
 status          = reference
-authority       = Raspberry Pi News project profile
+authority       = Chartroom
 ~~
 
 ===== Reported build =====
@@ -14,15 +14,24 @@ Raspberry Pi News profiled Niels Affourtit's home-built remotely operated vehicl
 
 The article reports that a webpage displayed tilt, roll, heading, temperature, and internal pressure data, and that the vehicle had been tested to 12 m with a deeper design target. It also links to video footage. These are statements in a short Raspberry Pi News profile; the linked video was not reviewed here, and the project was not independently inspected or tested.
 
+===== Additional architecture details =====
+
+A later [[https://magazine.raspberrypi.com/articles/submersible-drone-powered-by-pi|Raspberry Pi Official Magazine profile]] gives more detail about the same build. It describes a PVCu hull with a pressure-pipe closure and a router-cut transparent screen. The Raspberry Pi reads laptop commands over Ethernet and drives brushless motors through electronic speed controllers (ESCs); a servo tilts the camera. The creator described using a modified Ethernet-over-power adaptor and a 100 m cable, with the adaptor's maximum reach estimated at about 300 m. The article says sensors used the inter-integrated circuit (I²C) bus, while the depth sensor and MaxBotix echosounder were attached through an Arduino connected to the Pi over USB.
+
+The magazine profile says the ROV had been tested in a swimming pool and used for lake dives up to 14 m. It also reports the creator's concern that the end-caps could deflect beyond 30 m, while noting that the creator was uncertain how the design would behave in practice. These remain reported build details and estimates, not an independent pressure-hull assessment.
+
 ===== Relevance and limits =====
 
-This is a historical example of combining a Raspberry Pi, tethered Ethernet control, live camera video, and onboard sensor telemetry in a home-built ROV. The article does not provide a build manual, wiring details, pressure-housing design, depth-test method, or enough evidence to validate the reported depth. Treat it as a project lead and architecture illustration, not a reproducible or validated ROV design.
+This is a historical example of combining a Raspberry Pi, tethered Ethernet control, live camera video, and onboard sensor telemetry in a home-built ROV. The magazine profile describes the Pi handling laptop commands and motor control, with an Arduino connected over USB for the depth sensor and echosounder. The articles do not provide a complete build manual, full wiring diagrams, material dimensions, or a pressure-test method.
+
+The Raspberry Pi News profile reports a tested depth of 12 m, while the magazine profile reports later lake dives up to 14 m. The magazine profile also estimates end-cap deflection beyond 30 m but says the creator was unsure of the real-world behaviour. The sources do not explain the difference between the 12 m and 14 m reports, and neither figure is an independently verified depth rating. The profiles also report different build-time estimates: around 250 hours in the 2016 news article and around 200 hours in the magazine profile. These differences remain unresolved. Treat this material as a project lead and architecture illustration, not a reproducible or validated ROV design.
 
 For other maker-built ROV references, see [[sites:chartroom:research:bit-driven-circuits-rov|Bit Driven Circuits submersible ROV]], [[sites:chartroom:research:diyrov-google-sites-build|DIY ROV Google Sites build]], and [[sites:chartroom:research:ferret-3d-printed-rov-balance|The Ferret 3D-printed ROV and balance estimation]].
 
 ===== Source =====
 
   * [Submersible Raspberry Pi drone](https://www.raspberrypi.com/news/submersible-raspberry-pi-drone/), Raspberry Pi News, Liz Upton; dated 2016-02-04; reviewed 2026-11-07.
+  * [[https://magazine.raspberrypi.com/articles/submersible-drone-powered-by-pi|Submersible drone, powered by Pi]], Raspberry Pi Official Magazine, Russell Barnes; profile of the same ROV, published circa 2016; reviewed 2026-11-08.
 
 
 ~~REFNOTES~~
