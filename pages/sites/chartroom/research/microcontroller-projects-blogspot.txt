@@ -1,0 +1,40 @@
+====== Microcontroller Projects Blogspot ======
+{{tag>research microcontrollers embedded-systems arduino raspberry-pi nvidia-jetson lidar}}
+
+~~META:
+description     = Partial review of the Microcontroller Projects Blogspot as a discovery source for embedded boards and maker projects.
+type            = research
+status          = reference
+authority       = Microcontroller Projects Blogspot; cited project and manufacturer sources require independent review
+~~
+
+===== Scope =====
+
+The Microcontroller Projects Blogspot describes itself as a source for microcontroller programming, Arduino, embedded systems, ESP8266 and ESP32 projects, Raspberry Pi, and NVIDIA Jetson. This is a partial review of a broad personal project blog, not a comprehensive catalogue or an endorsement of its instructions.
+
+===== Indexed examples =====
+
+Search-indexed content includes a 2024 post about connecting an NVIDIA Jetson Nano development kit to an RPLIDAR A1M8R6, and 2023–2024 posts about running YOLOv8 object detection or tracking on Jetson hardware. These examples may help locate ideas for embedded vision and ranging projects. The blog's descriptions and procedures have not been reproduced or independently tested here.
+
+The indexed Jetson material refers to older software stacks and third-party tutorials. Check current compatibility, supported operating-system versions, driver requirements, and hardware specifications against the relevant manufacturers' and software projects' current documentation before using any procedure. Reported performance figures, where present, are specific to the blog author's setup and are not project test results.
+
+===== Access and limitations =====
+
+On 2026-11-08, a direct request to the blog homepage was rate-limited (HTTP 429). The examples above were visible in search-indexed excerpts, which are secondary access to the blog and may be incomplete or stale. The page was therefore only partially reviewed. No implementation, compatibility, or performance claim from the blog is treated as validated Chartroom guidance.
+
+===== Source =====
+
+  * [[https://microcontrollerkits.blogspot.com/|Microcontroller Projects Blogspot]] — homepage and indexed project catalogue.
+  * [[https://microcontrollerkits.blogspot.com/2023/09/nvidia-jetson-yolov8-object-detection.html|NVIDIA Jetson YOLOv8 Object Detection]], dated 2023-09-14.
+  * [[https://microcontrollerkits.blogspot.com/2024/05/nvidia-jetson-with-lidar.html|NVIDIA Jetson with LIDAR]], dated 2024-05-02.
+
+===== Related research =====
+
+For a separate embedded-computing reference, see [[sites:chartroom:research:raspberry-pi-submersible-drone-2016|Raspberry Pi submersible drone (2016)]].
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

@@ -37,6 +37,7 @@ The links below cover all research notes. Use the related-research links within 
   * [[sites:chartroom:research:sparkfun-news-7930|SparkFun news article 7930 — access pending]]
   * [[sites:chartroom:research:google-sheets-document-103wvzvyar-access-pending|Google Sheets document 103WVZVyar — access pending]]
   * [[sites:chartroom:research:diydrones-apm-submarine-ros-access-pending|DIYDrones APM submarine ROS post — access pending]]
+  * [[sites:chartroom:research:microcontroller-projects-blogspot|Microcontroller Projects Blogspot — partial review]]
 
 ==== Underwater robotics and ROVs ====
 
