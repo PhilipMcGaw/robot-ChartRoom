@@ -16,6 +16,10 @@ Chartroom is the authoritative home for the project's **ROS 2 learning material*
 
 The [[sites:chartroom:ros2:course:start|ROS 2 / Gazebo Course]] covers workstation setup, NATS networking, robot descriptions, ROS 2 fundamentals, Gazebo, vehicle modelling, sensors, the NATS ↔ ROS 2 bridge, HiL/SiL scenarios, and the Testbot example.
 
+===== Supplementary learning resources =====
+
+The [[https://articulatedrobotics.xyz/tutorials/|Articulated Robotics tutorials]] provide supplementary material on preparing to build a ROS robot, mobile robot construction, Docker for robotics, coordinate transforms, and geometry. The tutorial index labels the site as a beta test. Treat it as an external learning reference; it does not replace the project-specific course or current ROS 2 documentation.
+
 ===== Documentation boundary =====
 
 Chartroom contains reusable ROS 2 knowledge and course material.
