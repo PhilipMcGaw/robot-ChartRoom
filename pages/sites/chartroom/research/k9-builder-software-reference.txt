@@ -1,0 +1,39 @@
+====== Richard Hopkins K9 software reference ======
+{{tag>research k9 software raspberry-pi redis mqtt ros2 reference}}
+
+~~META:
+description     = Research reference for Richard Hopkins's K9 software page and public code repository.
+type            = research
+status          = reference
+authority       = Richard Hopkins's blog and public GitHub repository
+~~
+
+===== Source scope =====
+
+The supplied [[https://k9-build.blogspot.com/p/k9-software.html|K9 Software page]] returned no readable text in the web review tool on 2026-11-08, so its contents could not be confirmed. The builder's separately accessible [[https://github.com/hopkira/k9|public K9 software repository]] describes the 2022 version of the robot's software. This note records the repository README's description, not a code review or independent assessment of the running system.
+
+===== Repository-described architecture =====
+
+The README describes a Raspberry Pi 4-based system split into smaller Python programs. It says Redis is used as shared state and message queuing telemetry transport (MQTT) provides publish/subscribe communication between modules, in preparation for a move to the Robot Operating System 2 (ROS 2). The README describes finite-state-machine logic for speech interaction and motor behaviour, alongside separate sensor and accessory programs.
+
+The listed hardware interfaces include a RoboClaw motor controller with encoders, an OAK-D camera, a 360° light detection and ranging (LiDAR) sensor, an Espruino Pico for the LiDAR ears, an Adafruit PCA9685 board for lights and tail servos, and a USB microphone. The README identifies camera-based person detection, following, and collision-avoidance data as functions of its OAK-D pipeline.
+
+**Relevance:** a reference for separating robot functions into processes and sharing state or events through defined interfaces. It may inform cross-project discussion of module boundaries and integration patterns. The README labels this repository as the 2022 software version and describes ROS 2 migration as preparation; it does not establish that this codebase is the builder's current ROS 2 implementation.
+
+These are statements from the repository README. The source code was not executed or reviewed in detail, and the hardware and behaviours have not been independently verified. None of these details establish compatibility with the Robots project's K9 hardware.
+
+===== Sources =====
+
+  * [[https://k9-build.blogspot.com/p/k9-software.html|Old dog, new tricks — K9 Software]], user-provided builder page; returned no readable text in the web review tool on 2026-11-08.
+  * [[https://github.com/hopkira/k9|hopkira/k9]], public GitHub repository; README describes the 2022 K9 software version; reviewed 2026-11-08.
+
+===== Related research =====
+
+See [[sites:chartroom:research:basicmicro-doctor-who-k9-build|BasicMicro Doctor Who K9 build]] for the customer-build hardware profile, and [[sites:chartroom:projects:k9-motor-control|K9 Motor Control — Initial Design Notes]] for the Robots project's current drivetrain investigation.
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
