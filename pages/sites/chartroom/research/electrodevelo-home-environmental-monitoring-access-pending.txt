@@ -1,0 +1,25 @@
+====== Electrodevelo home environmental monitoring system — access pending ======
+{{tag>research environmental-monitoring home-monitoring education-project access-pending}}
+
+~~META:
+description     = User-supplied ElectroDevelo home environmental monitoring project; technical content not reviewed.
+type            = research
+status          = access pending
+authority       = User-supplied external page; Elektor project listing
+~~
+
+The user supplied the [[https://sites.google.com/view/electrodevelo/home-page/education-projects/home-environmental-monitoring-system|Electrodevelo home environmental monitoring system page]]. The Google Sites page could not be accessed during review on 2026-11-08, and its technical content has not been verified.
+
+An Elektor Labs listing links to the same Google Sites page and shows the title “Home environmental monitoring system”, the account name “kyros”, a submission date of 2020-01-19, and a last-update date of 2020-06-29. The listing's indexed content does not provide enough technical detail to describe the system. The Electrodevelo Geiger Counter page navigation also lists “Home environmental monitoring system”; this confirms the entry is part of that site's education-project navigation, not the design details.
+
+===== Sources =====
+
+  * [[https://sites.google.com/view/electrodevelo/home-page/education-projects/home-environmental-monitoring-system|Electrodevelo — Home environmental monitoring system]], supplied by the user; access unavailable during review on 2026-11-08.
+  * [[https://www.elektormagazine.com/labs/home-environmental-monitoring-system|Elektor Labs — Home environmental monitoring system]], listing that links to the ElectroDevelo page; indexed listing details reviewed on 2026-11-08, full page access unavailable.
+  * [[https://sites.google.com/view/electrodevelo/home-page/education-projects/geiger-counter|Electrodevelo — Geiger Counter]], navigation lists the home environmental monitoring page; accessed 2026-11-08. See [[sites:chartroom:research:electrodevelo-geiger-counter|Electrodevelo Arduino Geiger counter]].
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
