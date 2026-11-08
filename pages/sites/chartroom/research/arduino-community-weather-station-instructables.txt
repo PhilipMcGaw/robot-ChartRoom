@@ -22,6 +22,8 @@ The original Instructables page did not return readable content during review. T
 
 For other weather-station references, see [[sites:chartroom:research:arduino-3d-printed-personal-weather-station|Arduino 3D-printed personal weather station]], [[sites:chartroom:research:arduino-weather-station-miksrv|Miksrv Arduino Weather Station]], and [[sites:chartroom:research:solar-powered-wifi-weather-station-v40|Solar Powered WiFi Weather Station V4.0]].
 
+For an ESP32 firmware-update reference that may apply to connected environmental stations, see [[sites:chartroom:research:esp32-github-ota-updates|ESP32 over-the-air updates from GitHub]].
+
 ===== Sources =====
 
   * [DIY Standalone Weather Station Powered by Arduino](https://www.instructables.com/DIY-Standalone-Weather-Station-Powered-by-Arduino/), Instructables; page title was visible, but article content was not readable during review, 2026-11-08.

@@ -119,6 +119,7 @@ The links below cover all research notes. Use the related-research links within 
 
 ==== Buoys and environmental sensing ====
 
+  * [[sites:chartroom:research:esp32-github-ota-updates|ESP32 over-the-air updates from GitHub]]
   * [[sites:chartroom:research:arduino-community-weather-station-instructables|Arduino community weather station (Instructables)]]
 
   * [[sites:chartroom:research:arduino-3d-printed-personal-weather-station|Arduino 3D-printed personal weather station]]
