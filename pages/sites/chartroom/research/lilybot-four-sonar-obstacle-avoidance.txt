@@ -1,0 +1,31 @@
+====== Lily∞Bot four-sonar obstacle avoidance ======
+{{tag>research educational-robotics obstacle-avoidance sonar arduino open-hardware}}
+
+~~META:
+description     = Reference for adding four HC-SR04 ultrasonic sensors and obstacle-avoidance examples to Lily∞Bot.
+type            = research
+status          = reference
+authority       = Instructables project; Lily-Bot GitHub repository
+~~
+
+===== Reported design =====
+
+The project extends the Lily∞Bot educational mobile robot with four HC-SR04 ultrasonic distance sensors. It places one sensor at the front, rear, left, and right of the robot, using 3D-printed sensor mounts. The described controller is an Arduino Uno, and the motor-control code uses a TB6612 dual motor driver. The wiring instructions connect the sensors to the Arduino's 5 V and ground rails and assign separate trigger and echo pins to each sensor.
+
+The article presents code to check the sensors and demonstrates several obstacle-response approaches: bang-bang control, proportional control that varies motor speed, and proportional control that varies movement distance. The author frames the build as an open-source robotics education resource. The related [[https://github.com/berry123/Lily-Bot|Lily-Bot repository]] contains project files and fabrication resources.
+
+===== Relevance and limits =====
+
+This is a compact teaching example for multi-directional proximity sensing and the relationship between sensor readings and differential-drive commands. It may be useful when comparing low-cost obstacle-detection layouts or introductory control strategies. It is a small educational robot example, not evidence of navigation performance or a validated safety function. The sources reviewed do not report measured detection reliability, stopping distance, coverage, or tests across different obstacle materials and environments.
+
+===== Sources =====
+
+  * [Lily∞Bot With Arduino Uno: Obstacle Avoidance With 4 Sonar (HC-SR04)](https://www.instructables.com/LilyBot-Obstacle-Avoidance-Using-4-HC-SR04-Sonar-S/), Instructables, published 2023-01-27; article content reviewed 2026-11-08.
+  * [Lily∞Bot Arduino: Obstacle Avoidance With 4 Sonar Sensors](https://www.hackster.io/berry123/lily-bot-arduino-obstacle-avoidance-with-4-sonar-sensors-a1c618), Hackster.io, published 2023-01-28; accessible project copy with wiring and code, reviewed 2026-11-08.
+  * [Lily-Bot repository](https://github.com/berry123/Lily-Bot), project README and repository structure, reviewed 2026-11-08.
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
