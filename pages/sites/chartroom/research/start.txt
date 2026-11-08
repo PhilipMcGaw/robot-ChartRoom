@@ -162,6 +162,7 @@ The links below cover all research notes. Use the related-research links within 
   * [[sites:chartroom:research:servo-diy-rc-controller|SERVO DIY radio-control controller]]
   * [[sites:chartroom:research:pi-zero-drone-ardupilot|Pi Zero drone with ArduPilot]]
   * [[sites:chartroom:research:car-inclinometer-esp32|Car inclinometer using ESP32 (awaiting review)]]
+  * [[sites:chartroom:research:kerbal-controller-design-guide|Kerbal Controller design guide]]
   * [[sites:chartroom:research:small-robot-code-test-platform|Small robot as a code test platform — ROV and PiWars]]
   * [[sites:chartroom:research:piwars-footleg-motor2040-pid-mecanum|PiWars 2024 — Motor2040 PID control, mecanum drive, and field-oriented driving]]
   * [[sites:chartroom:research:piwars-pidrogen-interchangeable-tracks-mecanum|PiWars 2024 — Interchangeable tracks and mecanum wheels]]

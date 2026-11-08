@@ -1,0 +1,32 @@
+====== Kerbal Controller design guide ======
+{{tag>research human-machine-interface simulator-controller arduino electronics design-guide}}
+
+~~META:
+description     = Design guide for planning a custom Kerbal Space Program controller and its computer interface.
+type            = research
+status          = reference
+authority       = Instructables guide by rogor and Codapop; accessible summary on jpralves.net
+~~
+
+===== Guide scope =====
+
+The guide is about designing a custom physical controller for Kerbal Space Program (KSP), rather than reproducing one fixed design. It describes a basic arrangement with a computer running KSP, a controller that exchanges inputs and display data with the computer, and physical controls such as switches, potentiometers, and LEDs. It names an Arduino as a common controller platform and gives examples of game inputs and telemetry that a panel might handle, such as launch commands, landing gear, speed, and altitude.
+
+The guide is organised around early design choices, controller inputs and displays, and the electronics and enclosure. It includes an optional proof-of-concept stage and directs readers to other resources for some topics. The accessible summary identifies the guide as joint work by rogor and Codapop and presents it as an evolving resource for custom KSP controllers.
+
+===== Chartroom relevance and limits =====
+
+This is a reference for planning a physical human-machine interface for a simulator, including how controls and displayed data fit around a host computer and software interface. It may inform simulator-console or operator-control discussions, but it is not a design or implementation reference for a Robots vehicle controller, and it does not establish integration with SquidLink, Gazebo, or any project hardware.
+
+The original Instructables page did not return readable article text during review. The summary on jpralves.net provides the guide's scope and high-level architecture, but detailed component choices, wiring, communication methods, and build steps were not reviewed here.
+
+===== Sources =====
+
+  * [Kerbal Controller - the Basics](https://www.instructables.com/Kerbal-Controller-the-Basics/), Instructables; page title was visible, but article text was not readable during review, 2026-11-08.
+  * [Kerbal Controller - the Basics](https://jpralves.net/post/2021/09/16/kerbal-controller-the-basics.html), jpralves.net, 2021-09-16; accessible summary of the guide, reviewed 2026-11-08.
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
