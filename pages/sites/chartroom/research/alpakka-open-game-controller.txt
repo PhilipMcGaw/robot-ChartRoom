@@ -1,0 +1,37 @@
+====== Alpakka open game controller ======
+{{tag>research game-controller human-machine-interface open-hardware accessibility 3d-printing}}
+
+~~META:
+description     = Reference for Input Labs' modular Alpakka game controller, its input approach, and published design resources.
+type            = research
+status          = reference
+authority       = Input Labs Alpakka documentation and repositories; Hackaday article
+~~
+
+===== Design overview =====
+
+The Alpakka is Input Labs' re-interpretation of a conventional gamepad, designed around gyro aiming and modification. The 2022 Hackaday article describes a 3D-printed enclosure, a touch-sensitive surface, dual gyro sensors, and firmware that presents keyboard, mouse, and XInput gamepad inputs to a computer. Input Labs' current product page describes Alpakka 1.0 as adding USB-C, wireless operation, and a second thumbstick, and says the firmware includes per-genre profiles that can be edited with the optional Ctrl app.
+
+Input Labs publishes separate firmware, printed circuit board (PCB), and computer-aided design (CAD) repositories. The firmware repository describes its reference firmware as being for Raspberry Pi Pico-based hardware. The design is modular: users can select components and materials, build the reference design, or use community modifications. The official components page links to PCB schematics and order files, 3D models, printed files, build instructions, and firmware releases.
+
+===== Licensing and limits =====
+
+Do not treat every Alpakka file as having one licence. Input Labs' website repository says its own published content is generally licensed under Creative Commons Attribution-NonCommercial-ShareAlike 4.0 (CC BY-NC-SA 4.0), unless otherwise stated. The firmware repository identifies its licence as GNU General Public License version 2.0 (GPL-2.0). Check the licence file in the specific hardware, CAD, firmware, or documentation repository before reusing or redistributing its contents.
+
+This is a reference for modular physical controls, embedded input translation, and customisable enclosures. It may inform human-machine interface concepts, but it is a game controller and does not establish suitability for a Robots operator station or vehicle control. The Hackaday article dates from 2022; current product details can differ as the design evolves. No Alpakka hardware or firmware has been assessed or tested by Chartroom.
+
+For a broader design guide to a custom simulator controller, see [[sites:chartroom:research:kerbal-controller-design-guide|Kerbal Controller design guide]].
+
+===== Sources =====
+
+  * [Alpakka controller](https://inputlabs.io/alpakka), Input Labs, current product overview; reviewed 2026-11-08.
+  * [Alpakka components](https://inputlabs.io/alpakka/components), Input Labs, linked build resources; reviewed 2026-11-08.
+  * [Alpakka firmware repository](https://github.com/inputlabs/alpakka_firmware), README and repository licence identifier; reviewed 2026-11-08.
+  * [Input Labs website licence](https://github.com/inputlabs/website/blob/main/license.md), published-content licence statement; reviewed 2026-11-08.
+  * [Alpakka: A Creative Commons Game Controller](https://hackaday.com/2022/12/22/alpakka-a-creative-commons-game-controller/), Hackaday, 2022-12-22; reviewed 2026-11-08.
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
