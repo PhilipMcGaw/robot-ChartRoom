@@ -156,6 +156,14 @@ A Docker image packaging uStreamer for Raspberry Pi, exposing a browser-accessib
 
 Do not assume uStreamer is the final ROV video transport: compare latency, codec support, browser compatibility, recording, WebRTC requirements, and tether bandwidth against the existing video architecture.
 
+==== 3D-printed Raspberry Pi SkyCam ====
+
+Brook Drumm's [[https://makezine.com/projects/3d-printed-raspberry-pi-skycam/|SkyCam project]] is a camera carriage that travels along a tensioned string or cable, including around corners made with printed guides. Two continuous-rotation micro-servos drive the wheels; separate servos pan and tilt a Raspberry Pi camera. The Make: instructions describe browser control and live video streaming. The [[https://github.com/Make3DPrintingProjects/Skycam|project repository]] provides the printed part files and source code.
+
+**Relevance:** a mechanical and interface reference for moving a camera along a line while keeping remote control and video in a browser. Its cable-riding carriage and camera mount may inform camera-positioning experiments, but it is not an underwater system and makes no pressure or water-resistance claims.
+
+The instructions date from 2016 and use Google Coder, Pi-Blaster, and MJPG-Streamer with a Raspberry Pi Camera. Treat that software stack as historical; its presence in the project guide does not establish current compatibility or suitability for deployment.
+
 ===== Environmental sensing =====
 
 ==== Arduino Weather Station (AWS) ====
