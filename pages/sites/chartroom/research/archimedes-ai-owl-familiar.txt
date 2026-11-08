@@ -1,0 +1,36 @@
+====== Archimedes wearable owl familiar ======
+{{tag>research wearable robotics animatronics raspberry-pi computer-vision interactive-art}}
+
+~~META:
+description     = Research reference for Alex Glow's wearable, interactive owl companion, Archimedes, and its later redesign.
+type            = research
+status          = reference
+authority       = Alex Glow's Hackster project pages; Raspberry Pi report
+~~
+
+===== Project description =====
+
+Archimedes is described by its creator as a wearable robotic owl familiar that perches on a shoulder. Although the articles call it an artificial intelligence (AI) robot, it is an expressive companion prop rather than a mobile robot: its movements use servos, and the original version reacts to a face-expression demonstration and opens a small treat box.
+
+The 2018 version combined a Raspberry Pi Zero W and Google AIY Vision Kit for vision-based interaction with an Arduino MKR1000 and servos for movement. These are the creator's reported design details, not an independently inspected or tested build.
+
+===== Archie 2 redesign =====
+
+The Raspberry Pi article and the creator's 2021 Hackster page describe a redesign called Archie 2. Raspberry Pi reports a Raspberry Pi 3 Model B, an ESP32-powered MATRIX Voice board, and a micro-servo, with a more durable 3D-printed case and expanded voice-interaction options. The Hackster page's component list also includes a larger servo, while its story mentions an Arduino Uno for servo motion and an Arduino Nano 33 BLE Sense for machine-learning experiments. The sources do not give a single, consistent bill of materials or establish the final software configuration. The Hackster page labels the redesign a showcase without instructions and describes some software work as in progress.
+
+===== Relevance and limits =====
+
+Archimedes may be useful inspiration for a creative maker project involving expressive motion, wearable mechanical mounting, 3D-printed enclosures, vision or voice interaction, and a split between a single-board computer and microcontrollers. Its design goals differ from the Robots project's mobile rovers and underwater vehicles. The articles are project reports, not independent verification of performance, reliability, or suitability for reuse.
+
+===== Sources =====
+
+  * [Archimedes: The AI Robot Owl](https://www.hackster.io/glowascii/archimedes-the-ai-robot-owl-325ff5), Alex Glow, published 2018-05-19; original design description and project materials; accessed 2026-11-08.
+  * [Archimedes 2: Robot Owl Familiar](https://www.hackster.io/glowascii/archimedes-2-robot-owl-familiar-2348ef), Alex Glow, published 2021-07-19; redesign description, component list, and stated instruction status; accessed 2026-11-08.
+  * [Archimedes the AI robot | HackSpace #45](https://www.raspberrypi.com/news/archimedes-the-ai-robot-hackspace-45/), Raspberry Pi, published 2021-07-26; overview of the original project and Archie 2; accessed 2026-11-08.
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
