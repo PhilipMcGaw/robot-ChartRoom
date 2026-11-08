@@ -5,7 +5,7 @@
 description     = Manufacturer reference for the Blue Robotics SOS Leak Sensor and its ArduSub setup.
 type            = research
 status          = reference
-authority       = Blue Robotics product page and installation guide
+authority       = Blue Robotics product information and ArduPilot Sub documentation
 ~~
 
 ===== Product summary =====
@@ -14,9 +14,15 @@ Blue Robotics lists the SOS Leak Sensor as product SKU BR-101072, hardware revis
 
 The product page says the output can be integrated with Arduino, Raspberry Pi, Pixhawk, and other 3.3 V or 5 V devices. This is a manufacturer compatibility statement; check the selected controller's input limits, pin assignment, cable orientation, and software configuration before connecting it.
 
-===== ArduSub behaviour =====
+===== ArduSub leak failsafe =====
 
-Blue Robotics' installation guide describes connecting the sensor output to Pixhawk AUX OUT 6 and selecting “Pixhawk Aux6” as the leak detector pin in QGroundControl. The dry-state logic is configured as low. The guide lists three ArduSub responses: disabled, warn only, or enter surface mode. The surface action requires a depth sensor, applies when the ROV is armed, and can be aborted by changing mode. This is a configurable software response, not a guarantee that the vehicle will recover from a leak or reach the surface.
+The ArduSub website now displays an archive notice. It says the documentation is no longer maintained and directs readers to the ArduPilot wiki. Its [[https://www.ardusub.com/introduction/hardware-options/additional-peripheral-devices/leak-sensor.html|legacy leak-sensor page]] says sensors can connect through auxiliary servo pins configured as general-purpose input/output (GPIO), with a failsafe configured to warn or surface the vehicle. Treat that page as historical guidance and check current documentation and the selected firmware version before applying its setup.
+
+The current [[https://ardupilot.org/sub/docs/internal-leak-failsafe.html|ArduPilot Sub internal leak failsafe page]] describes up to three analogue or digital detectors. It identifies the input with a LEAKx_PIN parameter and configures the dry-state logic with LEAKx_LOGIC; firmware versions at or below ArduSub 4.5 also require LEAKx_TYPE to declare the input type. Digital sensors should use digital inputs, including servo-channel pins only when the flight controller supports configuring them as GPIO. The page also documents leak reports received through MAVLink SYS_STATUS messages, including for sensors in a separate enclosure.
+
+ArduPilot lists FS_LEAK_ENABLE actions as disabled, warn only, or enter SURFACE mode. The page describes SURFACE mode as the response to a leak, but this remains a configured software action and does not guarantee that a particular vehicle will recover or reach the surface. Pin assignments, logic levels, firmware support, and vehicle behaviour need to be checked and tested for the selected hardware and software versions.
+
+Blue Robotics' [[https://bluerobotics.com/learn/sos-leak-sensor-installation/|installation guide]] describes one specific setup using Pixhawk AUX OUT 6 and selecting “Pixhawk Aux6” in QGroundControl, with dry-state logic configured as low. This is product-specific guidance; confirm that it matches current ArduPilot parameters, flight-controller pin configuration, and firmware before use.
 
 After a leak event, the manufacturer instructs users to dry the probes fully before reuse and notes that the sponge tips wear and need replacement. Probe placement should account for the enclosure layout, penetrators, seals, and low points where water may collect.
 
@@ -26,9 +32,11 @@ The SOS Leak Sensor is a useful commercial reference for enclosure leak detectio
 
 ===== Sources =====
 
-  * [SOS Leak Sensor — Blue Robotics](https://bluerobotics.com/store/sensors-cameras/leak-sensor/sos-leak-sensor/), product SKU, specifications, contents, schematic, and revision history; accessed 2026-11-08.
-  * [SOS Leak Sensor Installation — Blue Robotics](https://bluerobotics.com/learn/sos-leak-sensor-installation/), probe installation and ArduSub/QGroundControl configuration; posted 2016-11-18, last updated 2023-07-24; accessed 2026-11-08.
-  * [SOS Leak Sensor schematic (PDF)](https://bluerobotics.com/wp-content/uploads/2018/10/SOS-LEAK-SENSOR-SCHEMATIC.pdf), manufacturer schematic; accessed 2026-11-08.
+  * [[https://bluerobotics.com/store/sensors-cameras/leak-sensor/sos-leak-sensor/|SOS Leak Sensor — Blue Robotics]], product SKU, specifications, contents, schematic, and revision history; accessed 2026-11-08.
+  * [[https://bluerobotics.com/learn/sos-leak-sensor-installation/|SOS Leak Sensor Installation — Blue Robotics]], probe installation and product-specific QGroundControl configuration; posted 2016-11-18, last updated 2023-07-24; accessed 2026-11-08.
+  * [[https://www.ardusub.com/introduction/hardware-options/additional-peripheral-devices/leak-sensor.html|Leak Sensor — archived ArduSub documentation]], legacy summary of supported sensors and failsafe options; accessed 2026-11-08.
+  * [[https://ardupilot.org/sub/docs/internal-leak-failsafe.html|Internal Leak Failsafe — ArduPilot Sub documentation]], current detector inputs, parameters, and failsafe actions; accessed 2026-11-08.
+  * [[https://bluerobotics.com/wp-content/uploads/2018/10/SOS-LEAK-SENSOR-SCHEMATIC.pdf|SOS Leak Sensor schematic (PDF)]], manufacturer schematic; accessed 2026-11-08.
 
 
 ~~REFNOTES~~
