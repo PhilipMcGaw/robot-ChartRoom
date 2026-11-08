@@ -24,9 +24,19 @@ The OSR is a useful comparator for MarsBot's terrestrial rover research, especia
 
 The repository README links to a separate [[https://github.com/nasa-jpl/osr-rover-code|rover software repository]] and the [[https://open-source-rover.readthedocs.io/|OSR documentation site]]. Those sources, the detailed build instructions, and the software have not been reviewed for this note.
 
+===== Supplementary rocker-bogie overview =====
+
+Hackaday's [[https://hackaday.com/2023/09/14/rocker-bogie-suspension-the-beloved-solution-to-extra-planetary-rovers/|2023 rocker-bogie article]] gives a secondary overview of the mechanism. It describes a rocker on each side, a pivoting two-wheel bogie, and a differential link between the sides. It explains the arrangement as a way to keep wheels in contact with uneven ground and distribute load without separate springs or shock absorbers. This is general explanation, not a description or test report for the OSR.
+
+The article states that the design can climb obstacles up to twice a wheel's diameter, but does not set out the geometry, terrain, loading, or test basis for that figure. Treat it as an unverified article claim, not a general design limit or expected performance. In the article's comments, the author also acknowledges that the accompanying animation is incorrect if read as showing a level chassis: the body follows the average angle of the rocker arms rather than staying level.
+
+The article links to Lindemann and Voorhees's 2005 JPL paper, [[https://hdl.handle.net/2014/37604|Mars Exploration Rover mobility assembly design, test and performance]], as a primary technical source. JPL repository metadata identifies the paper, but its full text has not been reviewed for this note.
+
 ===== Sources =====
 
   * [[https://github.com/nasa-jpl/open-source-rover/tree/master|nasa-jpl/open-source-rover]], master branch README and repository overview; reviewed 2026-11-08.
+  * [[https://hackaday.com/2023/09/14/rocker-bogie-suspension-the-beloved-solution-to-extra-planetary-rovers/|Rocker Bogie Suspension: The Beloved Solution To Extra-Planetary Rovers]], Zoe Skyforest, Hackaday, 2023-09-14; article and comments reviewed 2026-11-08.
+  * [[https://hdl.handle.net/2014/37604|Mars Exploration Rover mobility assembly design, test and performance]], Randel A. Lindemann and Chris J. Voorhees, 2005; identified through JPL Open Repository metadata, full paper not reviewed.
 
 ~~REFNOTES~~
 ---------
