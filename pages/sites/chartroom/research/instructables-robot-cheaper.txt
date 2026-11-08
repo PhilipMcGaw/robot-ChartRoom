@@ -1,0 +1,29 @@
+====== Instructables “Robot Cheaper” ======
+{{tag>research robotics arduino sensors education}}
+
+~~META:
+description     = Beginner Arduino robot reference focused on a low-cost parts list and reading an infrared distance sensor.
+type            = research
+status          = reference
+authority       = Instructables project; content details cross-checked against a secondary repost
+~~
+
+===== Project summary =====
+
+The Instructables page is titled “Robot Cheaper” and describes an eight-step project. The available secondary repost, titled “Build A Cheapest Possible Arduino-Robot”, lists an Arduino Uno R3, two continuous-rotation servos, one infrared distance sensor, a four-cell AA battery holder, a breadboard, and connecting wires. Its reproduced tutorial covers Arduino setup and a basic sketch, then uses a Sharp GP2Y0A21YK0F infrared distance sensor as an introduction to reading and calibrating an analogue sensor.
+
+===== Relevance and limits =====
+
+This is a basic Arduino learning reference for analogue distance sensing, with a low-cost robot parts list. The accessible repost does not document how the servos are mounted or controlled to drive the robot, nor does it establish autonomous navigation or obstacle avoidance. The original Instructables article exposed its title and step count but not readable body text during review. The original licence and the current availability of its files have not been checked.
+
+===== Sources =====
+
+  * [Robot “Cheaper” — Instructables](https://www.instructables.com/Robot-Cheaper/), title and step count; body text unavailable during review on 2026-11-08.
+  * [Build A Cheapest Possible Arduino-Robot — Duino4Projects](https://duino4projects.com/build-a-cheapest-possible-arduino-robot/), secondary repost of the project parts list and introductory tutorial; accessed 2026-11-08.
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
