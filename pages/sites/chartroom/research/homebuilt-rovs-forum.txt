@@ -30,9 +30,15 @@ In an [[https://www.homebuiltrovs.com/rovforum/viewtopic.php?t=1888|August 2017 
 
 One reply links to [[https://github.com/Moki38/Moki-ROV2|Moki-ROV2]], which is documented separately in [[sites:chartroom:research:moki-rov2-software|Moki-ROV2 software reference]]. The link establishes that the project was shared as an example in this discussion, not that its approach was assessed or recommended by the other participants.
 
+===== Thread: ROV-Control V3 =====
+
+The first page of an [[https://www.homebuiltrovs.com/rovforum/viewtopic.php?t=1258|87-post thread from November 2013]] discusses ROV-Control V3 software and its X³-Control board. The developer described the board as having eight pulse-width modulation (PWM) motor-controller outputs, four two-way relays, four dimmable high-power light channels, two I²C sensor buses, a temperature sensor, and a full-duplex RS-485 data interface stated to reach 1.5 km. In replies, the developer identified an ATmega2560 and ATmega8, gave board dimensions of 82 mm × 55 mm × 13 mm, and stated a 6.5–18 V DC input range and maximum board consumption of 130 mA. The developer also said the board required the ROV-Control V3 software, with firmware updates over the data connection.
+
+These are historical statements by the product developer in a forum thread, not independently verified specifications or evidence of current availability. The first page contains questions about programming, LED supply, motor power switching, and sensor expansion; its replies mention planned or tested modules, not proof that those features shipped. The thread has nine pages, and the other pages have not been reviewed.
+
 ===== Limitations =====
 
-The forum index and board descriptions are based partly on search-indexed content; the two specific threads above were directly reviewed. Other individual discussions have not been reviewed in this note. The supplied `f=15&start=25` page and thread 1825 returned cache misses, so their page-specific topic details could not be confirmed. Search did not identify thread 1825's title or subject. A previous `f=7` link also returned a cache miss, but search-indexed forum content identifies `f=7` as **Board Messages**. The board result lists 13 topics while the forum index lists 14; this count discrepancy is unresolved.
+The forum index and board descriptions are based partly on search-indexed content; three specific threads above were directly reviewed, with only the first page reviewed for the nine-page ROV-Control V3 thread. Other individual discussions have not been reviewed in this note. The supplied `f=15&start=25` page and thread 1825 returned cache misses, so their page-specific topic details could not be confirmed. Search did not identify thread 1825's title or subject. A previous `f=7` link also returned a cache miss, but search-indexed forum content identifies `f=7` as **Board Messages**. The board result lists 13 topics while the forum index lists 14; this count discrepancy is unresolved.
 
 ===== Source =====
 
@@ -40,6 +46,7 @@ The forum index and board descriptions are based partly on search-indexed conten
   * [ROV schematic and questions](https://www.homebuiltrovs.com/rovforum/viewtopic.php?t=1887), Homebuilt ROVs Forum, posted 2017-08-22; thread and schematic captions reviewed 2026-11-08. The stated values and design intent are from the original poster, not independently verified.
   * [Easiest way to control ROV over Cat5 (Arduino or RasPi?)](https://www.homebuiltrovs.com/rovforum/viewtopic.php?t=1888), Homebuilt ROVs Forum, first post 2017-08-26; thread reviewed 2026-11-08. The architecture and performance points are questions and suggestions from forum participants, not test evidence.
   * [Forum thread 1825](https://www.homebuiltrovs.com/rovforum/viewtopic.php?t=1825), user-provided link; direct fetch returned a cache miss on 2026-11-08, and search did not identify the title or subject. Thread content has not been reviewed.
+  * [ROV-Control V3](https://www.homebuiltrovs.com/rovforum/viewtopic.php?t=1258), Homebuilt ROVs Forum, first post 2013-11-07; first page of nine reviewed 2026-11-08. Board specifications and feature claims are attributed to the developer's posts and have not been independently verified.
   * [Control Systems and Tethers board](https://www.homebuiltrovs.com/rovforum/viewforum.php?f=15), forum category; search-indexed board description and topic count reviewed 2026-11-08. The supplied [paginated board URL](https://www.homebuiltrovs.com/rovforum/viewforum.php?f=15&start=25) returned a cache miss, so its page-specific topic list was not reviewed.
   * [Board Messages](https://www.homebuiltrovs.com/rovforum/viewforum.php?f=7), forum category; identified from search-indexed forum content reviewed 2026-11-08. The indexed board result lists 13 topics, while the forum index lists 14.
 
