@@ -83,6 +83,8 @@ The user-provided [[https://www.ardusub.com/introduction/required-software/ardus
 
 The archived [[https://www.ardusub.com/reference/ardusub/joystick-setup-page.html#button-assignment|Joystick Setup Page — Button Assignment]] describes assigning regular and shifted actions to joystick buttons in the historical QGroundControl interface. Its examples include mode selection, arming and disarming, input gain, camera, lighting, and auxiliary output controls. The current [[https://ardupilot.org/sub/docs/buttons.html|ArduPilot Sub Button Inputs]] page documents the underlying Sub button functions through the `BTNx_FUNCTION` and `BTNx_SFUNCTION` parameters, including a shift function. Use the current page for supported functions; the archived page is useful for understanding the older setup workflow, not as a current QGroundControl interface guide.
 
+The archived [[https://www.ardusub.com/introduction/hardware-options/additional-peripheral-devices/relays.html|Relays]] page describes controlling up to three relay outputs from joystick buttons and notes that some autopilots need a 5 V supply on the output rail. Treat this as historical setup guidance. The current [[https://ardupilot.org/sub/docs/common-relay.html|ArduPilot Sub Relay Switch]] documentation describes relay outputs as GPIO signals with limited current capability; output voltage depends on the autopilot, and the available pins and setup depend on its hardware. A relay output is a control signal, not a load supply: select suitable driver hardware and a separate load power path for the actual device. Current Sub [[https://ardupilot.org/sub/docs/buttons.html|button functions]] include relay controls, but the exact usable outputs must be checked against the selected autopilot and firmware.
+
 ===== References =====
 
   * [[https://blueos.cloud/docs/stable/integrations/hardware/required/flight-controller/|BlueOS flight controller guidance]]
@@ -95,8 +97,10 @@ The archived [[https://www.ardusub.com/reference/ardusub/joystick-setup-page.htm
   * [[https://www.ardusub.com/introduction/hardware-options/required-hardware.html|ArduSub required hardware (archived)]]
   * [[https://www.ardusub.com/introduction/required-software/ardusub-autopilot-firmware.html|ArduSub autopilot firmware (archived)]]
   * [[https://www.ardusub.com/reference/ardusub/joystick-setup-page.html#button-assignment|Joystick button assignment (archived)]]
+  * [[https://www.ardusub.com/introduction/hardware-options/additional-peripheral-devices/relays.html|ArduSub relays (archived)]]
   * [[https://ardupilot.org/sub/docs/common-loading-firmware.html|ArduPilot Sub firmware-loading guide]]
   * [[https://ardupilot.org/sub/docs/buttons.html|ArduPilot Sub button inputs]]
+  * [[https://ardupilot.org/sub/docs/common-relay.html|ArduPilot Sub relay switch]]
   * [[https://ardupilot.org/sub/|ArduPilot Sub documentation]]
   * [[sites:chartroom:architecture:blueos-adeept-robot-hat|Existing BlueOS and Adeept Robot HAT architecture page]]
 
