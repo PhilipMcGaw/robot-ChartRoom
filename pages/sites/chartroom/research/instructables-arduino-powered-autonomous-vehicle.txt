@@ -1,0 +1,31 @@
+====== Instructables Arduino-powered autonomous vehicle ======
+{{tag>research robotics arduino autonomous-navigation gps obstacle-avoidance}}
+
+~~META:
+description     = Reference for an Arduino Uno and radio-controlled car project combining GPS waypoint navigation, compass heading, and ultrasonic obstacle sensing.
+type            = research
+status          = reference
+authority       = Instructables project by CPARKTX; details cross-checked against a secondary repost
+~~
+
+===== Project summary =====
+
+The Instructables project by CPARKTX describes retrofitting a radio-controlled car for waypoint navigation with an Arduino Uno, GPS receiver, magnetometer for heading, motor shield, and a forward-facing ultrasonic sensor for obstacle detection. The accompanying text reproduced by Duino4Projects says the author observed the vehicle navigate five GPS waypoints on a roughly 300 m neighbourhood course. This is the author's report in a secondary repost; it has not been independently verified.
+
+The repost describes a basic chassis with separate drive and steering motors and non-proportional steering. Its obstacle response slows the vehicle, turns based on the waypoint direction and current turn, and stops, reverses, and retries when an object is too close. These are descriptions of that project, not validated autonomous-navigation behaviour.
+
+===== Relevance and limits =====
+
+This is a compact example of combining waypoint navigation, heading estimation, obstacle sensing, motor control, and operator-visible status on a small vehicle. The source describes a fixed, narrow-field ultrasonic sensor and a low-cost car chassis, so it should not be treated as a robust outdoor navigation design. It is a ground-vehicle project and does not establish suitability for any Robots project vehicle or operating environment.
+
+===== Sources =====
+
+  * [Arduino Powered Autonomous Vehicle — Instructables](https://www.instructables.com/Arduino-Powered-Autonomous-Vehicle/), by CPARKTX; the page exposed its title and step count but not readable article text during review on 2026-11-08.
+  * [Arduino Powered Autonomous Vehicle — Duino4Projects](https://duino4projects.com/arduino-powered-autonomous-vehicle/), secondary repost containing a summary and reproduced project text; accessed 2026-11-08. Project details and the reported 300 m run are attributed to the original author and have not been independently checked.
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

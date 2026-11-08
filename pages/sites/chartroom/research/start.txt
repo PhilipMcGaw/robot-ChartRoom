@@ -207,6 +207,7 @@ The links below cover all research notes. Use the related-research links within 
 
 ==== Robotics, education, and hardware ====
 
+  * [[sites:chartroom:research:instructables-arduino-powered-autonomous-vehicle|Instructables Arduino-powered autonomous vehicle]]
   * [[sites:chartroom:research:fictionlab-leo-raph-mobile-robots|Fictionlab Leo Rover and Raph Rover]]
   * [[sites:chartroom:research:printables-differential-swerve-drive|Printables differential swerve drive — PiWars candidate]]
   * [[sites:chartroom:research:instructables-tiny-desktop-esp32-freertos-robot|Instructables tiny ESP32 FreeRTOS desktop robot]]
