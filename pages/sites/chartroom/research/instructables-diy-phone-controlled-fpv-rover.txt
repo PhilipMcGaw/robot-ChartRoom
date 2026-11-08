@@ -1,0 +1,40 @@
+====== DIY Phone Controlled FPV Rover (RoverBot) ======
+{{tag>research rover tracked arduino bluetooth fpv camera}}
+
+~~META:
+description     = Secondary-source summary of ASCAS's Arduino phone-controlled tracked FPV rover project.
+type            = research
+status          = reference
+authority       = Instructables project; accessible PCBWay copy
+~~
+
+===== Project summary =====
+
+The user-supplied [[https://www.instructables.com/RoverBot-1/|Instructables project]] is titled “DIY Phone Controlled FPV Rover (Fast & Agile)”. Its article body was not readable during review on 2026-11-08. An accessible copy on PCBWay reproduces a project description and parts list and identifies the vehicle as RoverBot. Treat those details as secondary-source reporting, rather than a direct review of the Instructables page.
+
+The PCBWay copy describes an Arduino Uno tracked rover with two Tamiya PlasmaDash carbon-brush motors and a 58:1 Tamiya twin gearbox, Tamiya tracks and wheels, a Pololu 2×30 A motor driver, a 7.4 V, 950 mAh lithium-polymer battery, a JY-MCU Bluetooth module, and a 5 MP wireless Internet Protocol (IP) camera. The described arrangement uses a smartphone for Bluetooth driving and another smartphone to view the first-person-view (FPV) camera feed. The copy says the Bluetooth setup was in use; an XBee radio for longer-range control was a future plan, not a documented implementation.
+
+===== Review and limits =====
+
+The copy calls the vehicle a “soft prototype” and says a later version was intended to improve water, shock, and dirt resistance. It also states that the motors were designed for 3 V operation while powered from the 7.4 V battery, so the motor driver was set to half speed (200/400) to reduce brush wear. This is the source author's description, not an independent electrical or motor-life assessment; it should not be treated as evidence that this arrangement is safe or durable.
+
+The page includes embedded build, indoor, garage, and outdoor video links, but these were not independently assessed for performance. The sources provide no measured speed, runtime, radio range, camera latency, or environmental test results. The project is a hobby rover reference, not evidence of a validated design or suitability for Robots project use.
+
+A separate 2014 Instructables project by BIGDOG1971 says its Arduino Bluetooth ROVERBot was based on ASCAS's FPV Rover. That later build substitutes a different electronics and power arrangement, including an Adafruit motor shield, an HC-05 Bluetooth module, and an 11.7 V battery. Treat it as a distinct adaptation, not as a parts list for the user-supplied project.
+
+===== Sources =====
+
+  * [[https://www.instructables.com/RoverBot-1/|DIY Phone Controlled FPV Rover (Fast & Agile) — Instructables]], user-supplied project; title visible, article body not readable during review; accessed 2026-11-08.
+  * [[https://www.pcbway.com/project/sponsor/DIY_Phone_Controlled_FPV_Rover.html|DIY Phone Controlled FPV Rover — PCBWay]], accessible secondary copy of the project description, parts list, and embedded video links; posted 2019-12-31; accessed 2026-11-08.
+  * [[https://www.instructables.com/Arduino-ROVERBot/|ROVER Bot — the Arduino Bluetooth Controlled Tank]], BIGDOG1971's separate adaptation; identifies its relationship to the ASCAS FPV Rover and documents its differing build; accessed 2026-11-08.
+
+===== Related research =====
+
+See [[sites:chartroom:research:fpv-rover-nerf-dart-launcher|Nerf dart launcher for an FPV rover]] for a separate payload reference. The source does not establish whether that FPV-Rover is the same vehicle as RoverBot.
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
