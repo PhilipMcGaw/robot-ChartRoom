@@ -1,0 +1,37 @@
+====== eLinux RPi Cam Web Interface ======
+{{tag>research raspberry-pi camera web-interface motion-detection time-lapse}}
+
+~~META:
+description     = Historical browser interface for controlling the Raspberry Pi Camera, with motion detection, time-lapse, and image and video recording.
+type            = research
+status          = reference
+authority       = Upstream project repository; eLinux wiki reference
+~~
+
+===== Sources =====
+
+  * [[https://elinux.org/RPi-Cam-Web-Interface|eLinux: RPi Cam Web Interface]] — the page linked for installation instructions and technical details by the upstream project.
+  * [[https://github.com/silvanmelchior/RPi_Cam_Web_Interface|RPi_Cam_Web_Interface upstream repository]] — README and source tree.
+  * [[https://www.raspberrypi.com/documentation/accessories/camera-software.html|Raspberry Pi camera software documentation]] — current official camera software reference.
+
+===== What the sources say =====
+
+The upstream repository describes RPi Cam Web Interface as a browser-based interface for controlling the Raspberry Pi Camera. Its README lists motion detection, time-lapse, and image and video recording. The README identifies version 6.6.26 and says that version includes updates for PHP 7.3 and Raspberry Pi OS Buster; it also notes that further changes might be needed for nginx.
+
+The eLinux page could not be read during this review because its access-denied response was served by Anubis. The feature summary above therefore comes from the upstream repository README, not from direct inspection of the wiki's installation instructions or technical details.
+
+===== Relevance =====
+
+This is a historical example of combining camera controls, recording, and motion-triggered capture in a Raspberry Pi-hosted web interface. It may inform research into camera operator interfaces and captured-media workflows, but it does not establish compatibility with current Raspberry Pi camera hardware or operating systems, and it is not a Chartroom deployment recommendation.
+
+The README's stated compatibility context is PHP 7.3 and Raspberry Pi OS Buster. Raspberry Pi's current camera documentation describes the `rpicam-*` applications and `libcamera` stack, including current camera and streaming guidance. Any reuse would need a separate compatibility review against the target camera, operating system, and software versions.
+
+===== Review record =====
+
+Reviewed 2026-11-08. The upstream README and official Raspberry Pi camera documentation were accessible. The eLinux wiki page was blocked by its Anubis access-control response. No installation steps or compatibility beyond the cited upstream README have been verified.
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
