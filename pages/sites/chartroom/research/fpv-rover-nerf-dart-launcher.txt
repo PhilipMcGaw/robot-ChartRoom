@@ -1,0 +1,33 @@
+====== Nerf dart launcher for an FPV rover ======
+{{tag>research robotics rover payload 3d-printing}}
+
+~~META:
+description     = Cults3D reference for a 3D-printed Nerf dart launcher mounted on an FPV rover.
+type            = research
+status          = reference
+authority       = Cults3D design page by Markus_p
+~~
+
+===== Reference summary =====
+
+The Cults3D page by Markus_p presents a 3D-printed Nerf dart launcher as an upgrade for the creator's FPV-Rover. It lists 13 STL files for the launcher assembly and associated covers, plates, dart storage, servo arm extension, and an optional 18650 battery pack. The creator says the build instructions and bill of materials are on a linked Instructables page. The listing was published on 2019-08-29 and last updated on 2020-09-29.
+
+The page links to separate Thingiverse listings for FPV-Rover versions 1.0 and 2.0. The launcher is an example of a rover carrying an actuated, removable payload. It may inform general questions about mounting, control interfaces, and payload separation, but the page does not establish compatibility with any Robots project vehicle or control system.
+
+===== Limits =====
+
+This is a maker project reference, not a project design or validated payload. The Cults3D listing does not provide measured range, force, reliability, electrical load, or independent safety assessment. Its listed files and 18650 pack option do not by themselves establish suitable materials, battery protection, or electrical integration. The page's licence details were not clear in the reviewed content; check the creator's current terms before reusing or modifying the files.
+
+===== Sources =====
+
+  * [Nerf Dart Launcher for the FPV-Rover — Cults3D](https://cults3d.com/en/3d-model/gadget/nerf-darf-launcher-for-the-fpv-rover), design description, listed STL files, dates, and linked project references; reviewed 2026-11-08.
+  * [FPV-Rover V1.0 — Thingiverse](http://www.thingiverse.com/thing:1240754), linked by the creator; not independently reviewed.
+  * [FPV-Rover V2.0 — Thingiverse](https://www.thingiverse.com/thing:2952852), linked by the creator; not independently reviewed.
+  * [Nerf Darf Launcher for the FPV-Rover — Instructables](https://www.instructables.com/id/Nerf-Darf-Launcher-for-the-FPV-Rover), linked by the creator for instructions and bill of materials; not independently reviewed.
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
