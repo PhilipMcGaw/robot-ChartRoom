@@ -1,0 +1,33 @@
+====== Circuit Digest MOSFET H-bridge tutorial ======
+{{tag>research motor-control h-bridge mosfet power-electronics}}
+
+~~META:
+description     = Critical review of a Circuit Digest discrete MOSFET H-bridge tutorial.
+type            = research
+status          = reference
+authority       = Circuit Digest tutorial and Infineon MOSFET gate-drive application note
+~~
+
+===== Article summary =====
+
+Circuit Digest's 2019 tutorial presents a discrete H-bridge for bidirectional control of a brushed direct-current (DC) motor. It describes pulse-width modulation (PWM) for speed control, a 555 timer and gate-driver circuit, and a four-MOSFET bridge using P-channel high-side and N-channel low-side devices. It also claims that the circuit can handle 20 A at 40 V with suitable construction and heatsinking.
+
+===== Critical review =====
+
+Treat the article as an introductory topology reference, not a build-ready design or a validated motor controller. The 20 A / 40 V claim is not accompanied by test results, waveforms, thermal measurements, or a defined duty cycle and operating condition. A reader comment on the article raises possible shoot-through during switching transitions and gate-to-source overvoltage. These concerns are consistent with Infineon's application note, which explains that overlapping conduction in a bridge leg can cause high current and that dead time is needed between switching the high-side and low-side devices.
+
+The article's claims about scaling a 3 V motor from a 12 V supply using a low PWM duty cycle should not be taken as motor protection or design guidance. Motor current, switching transients, and device and driver limits still require analysis. The article does not establish a complete switching sequence, gate-voltage margins, or a safe dead-time implementation. Do not use its component list, schematic, or stated current and voltage limits as a validated design.
+
+The H-bridge principle applies to brushed DC motors. It does not make this circuit suitable for brushless thrusters, which require a compatible electronic speed controller (ESC). It is not evidence for a project motor-control implementation.
+
+===== Sources =====
+
+  * [Simple H Bridge Motor Driver Circuit using MOSFET — Circuit Digest](https://circuitdigest.com/electronic-circuits/simple-h-bridge-motor-driver-circuit-using-mosfet), tutorial and 20 A / 40 V claim; published 2019-05-06; accessed 2026-11-08.
+  * [Designing with power MOSFETs: How to avoid common issues and failure modes — Infineon](https://www.infineon.com/assets/row/public/documents/24/42/infineon-designing-with-power-mosfets-applicationnotes-en.pdf), application note on induced turn-on, shoot-through, and gate drive; accessed 2026-11-08.
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

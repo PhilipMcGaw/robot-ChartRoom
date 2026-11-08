@@ -159,6 +159,7 @@ The links below cover all research notes. Use the related-research links within 
 
 ==== Robotics, education, and hardware ====
 
+  * [[sites:chartroom:research:circuitdigest-mosfet-h-bridge-tutorial|Circuit Digest MOSFET H-bridge tutorial — critical review]]
   * [[sites:chartroom:research:fpv-rover-nerf-dart-launcher|Nerf dart launcher for an FPV rover]]
   * [[sites:chartroom:research:antweight-fight-club-design-technology-tutor|Antweight Fight Club workshop]]
   * [[sites:chartroom:research:beatty-robotics-sojourner-rover|Beatty Robotics Sojourner rover]]
