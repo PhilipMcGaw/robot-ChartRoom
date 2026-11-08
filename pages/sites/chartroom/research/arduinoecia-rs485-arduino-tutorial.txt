@@ -5,7 +5,7 @@
 description     = Beginner Arduino Uno example for direction control and two-wire RS-485 serial communication.
 type            = research
 status          = reference
-authority       = Arduino e Cia tutorial; Texas Instruments design guide for physical-layer context
+authority       = Arduino e Cia and Hackaday tutorials; Texas Instruments design guide for physical-layer context
 ~~
 
 ===== Scope =====
@@ -24,6 +24,14 @@ The tutorial lists 1,200 m distance, 32 nodes, and 35 Mbit/s as RS-485 character
 
 The receiver example as rendered compares an input character with `'n'`, while the transmitter sends the text with `println`. If the code literally checks for the letter `n` rather than a newline character, it does not match the stated end-of-string behaviour. Verify the original source and correct the terminator check before reusing the example.
 
+===== Additional overview and review =====
+
+Arya Voronova's 2022 [[https://hackaday.com/2022/04/05/hacker-dictionary-rs-485-will-go-the-distance/|Hackaday overview]] introduces the differential physical layer, multidrop buses, driver direction control, termination, biasing, and the need for an application protocol such as Modbus RTU. It is a secondary tutorial and is useful as an orientation, not a design specification.
+
+Some statements need checking against primary documentation. The article presents RS-485 as half-duplex and says that using separate pairs for simultaneous transmit and receive amounts to RS-422. Texas Instruments' [[https://www.ti.com/lit/an/slla272d/slla272d.pdf|RS-485 Design Guide, Rev. D]] describes both half- and full-duplex RS-485 bus implementations; the full-duplex form uses two signal pairs. The physical standard and the selected transceiver arrangement determine the interface, not the article's shorthand.
+
+The article also discusses A/B terminal naming and example bias-resistor values. Do not rely on A/B letters alone to determine signal polarity: use the specific transceiver data sheet and module schematic. Bias and termination values depend on the bus supply, cable, topology, receiver loading, and noise conditions; calculate them for the actual bus rather than copying a generic module value.
+
 ===== Relevance to the Robots RS-485 bus =====
 
 This is a useful demonstration of transceiver enable control and a basic serial-to-differential physical interface. The Robots architecture already specifies Modbus RTU (remote terminal unit) over a shared, half-duplex RS-485 bus. The tutorial's plain text string does not implement Modbus RTU and does not change that project decision. For project wiring and bus requirements, see [[sites:chartroom:architecture:communications|Communications architecture]]; for a custom packet-framing comparison, see [[sites:chartroom:research:gammon-rs485-arduino-library|Nick Gammon RS-485 Arduino protocol library]].
@@ -33,6 +41,7 @@ The tutorial does not provide enough detail to design the project harness: selec
 ===== Sources =====
 
   * [Como usar a comunicação RS485 com Arduino](https://arduinoecia.com.br/como-usar-comunicacao-rs485-com-arduino/), Arduino e Cia, 2019-07-28; accessed 2026-11-07.
+  * [[https://hackaday.com/2022/04/05/hacker-dictionary-rs-485-will-go-the-distance/|Hacker Dictionary: RS-485 Will Go The Distance]], Arya Voronova, Hackaday, 2022-04-05; secondary overview; accessed 2026-11-08.
   * [The RS-485 Design Guide, Rev. D](https://www.ti.com/lit/an/slla272d/slla272d.pdf), Texas Instruments, revised 2021-05; bus loading, data-rate versus cable-length, termination, and fail-safe biasing; accessed 2026-11-07.
   * [[sites:chartroom:architecture:communications|Chartroom communications architecture]], current project RS-485 and Modbus RTU design; accessed 2026-11-07.
 
