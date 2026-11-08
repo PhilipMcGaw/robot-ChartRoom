@@ -5,7 +5,7 @@
 description     = Historical reference for PiBorg Raspberry Pi robot kits and motor-control add-on boards.
 type            = research
 status          = reference
-authority       = PiBorg website; Raspberry Pi publications
+authority       = PiBorg website and Instructables; Raspberry Pi publications
 ~~
 
 ===== Scope =====
@@ -18,11 +18,17 @@ Raspberry Pi publications describe PiBorg as a maker of Raspberry Pi educational
 
 PiBorg is a reference for Raspberry Pi-based educational rovers and motor-control add-ons. Its historical material may help when comparing rover packaging, motor-control interfaces, and beginner build ecosystems. Check the current PiBorg site, product documentation, and software repositories before selecting or reusing a specific board or kit.
 
+===== DiddyBorg Instructable =====
+
+The user-supplied [[https://www.instructables.com/DiddyBorg-The-Mini-6-wheeled-Raspberry-Pi-Robot/|DiddyBorg: the Mini 6 Wheeled Raspberry Pi Robot!]] page exposed its title and a 31-step format when checked on 2026-11-08, but the build-step text was not readable. A search-indexed excerpt reproduced by a third-party Raspberry Pi project catalogue describes the kit as controllable through autonomous software, a Bluetooth controller such as a PlayStation 3 controller, or a keyboard over Wi-Fi. This is a secondary summary, not a review of the original steps. It does not establish the exact hardware, software, autonomy method, current availability, or test results. Treat it as historical discovery material until the primary build page or PiBorg documentation can be reviewed.
+
 ===== Sources =====
 
   * [PiBorg](https://www.piborg.org/), user-supplied website; direct access returned HTTP 403 through the available web tool; accessed 2026-11-08.
   * [ZeroBorg: teeny tiny robotics from PiBorg](https://www.raspberrypi.com/news/zeroborg-teeny-tiny-robotics-piborg/), Raspberry Pi, 2016-03-09; historical ZeroBorg features and PiBorg description; accessed 2026-11-08.
   * [Meet The Maker: Kim Freeburn](https://magazine.raspberrypi.com/articles/meet-the-maker-kim-freeburn), Raspberry Pi Official Magazine; PiBorg product categories and historical product names; publication date not shown in the page reviewed; accessed 2026-11-08.
+  * [DiddyBorg: the Mini 6 Wheeled Raspberry Pi Robot!](https://www.instructables.com/DiddyBorg-The-Mini-6-wheeled-Raspberry-Pi-Robot/), PiBorg Instructable; title and 31-step format visible, step text unreadable; accessed 2026-11-08.
+  * [Raspberry Pi Projects catalogue, DiddyBorg entry](https://projects-raspberry.com/list/raspberry-complete-projects-list/?page18353=5), third-party indexed excerpt describing DiddyBorg control options; secondary summary, accessed 2026-11-08.
 
 
 ~~REFNOTES~~
