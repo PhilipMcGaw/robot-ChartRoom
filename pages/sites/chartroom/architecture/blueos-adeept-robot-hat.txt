@@ -312,6 +312,7 @@ This should allow the project to reuse mature BlueOS infrastructure while retain
   * [[https://blueos.cloud/docs/stable/usage/installation/|BlueOS installation guide (stable documentation)]]
   * [[https://blueos.cloud/docs/1.2/usage/installation/|BlueOS 1.2 installation guide]] — the versioned page could not be retrieved for review on 2026-11-07; see the stable guide for accessible installation documentation.
   * [[https://blueos.cloud/docs/stable/|BlueOS documentation]]
+  * [[https://blueos.cloud/docs/1.0/usage/advanced/|BlueOS 1.0 Advanced Usage]] — version-specific reference for the web interface, network configuration, MAVLink endpoints, and serial-to-UDP bridges; reviewed 2026-11-08. Verify details against the BlueOS version selected for the integration.
   * [[https://blueos.cloud/docs/stable/development/extensions/|BlueOS Extensions]]
   * [[https://github.com/bluerobotics/BlueOS|BlueOS GitHub]]
   * [[https://github.com/bluerobotics/cockpit|Blue Robotics Cockpit]]
