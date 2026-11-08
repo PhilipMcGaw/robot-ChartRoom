@@ -14,6 +14,12 @@ Over-the-air (OTA) updates let a device receive firmware over a network connecti
 
 The repository includes an example GitHub Actions workflow that builds firmware variants and publishes release assets when a version tag is pushed. This is more specific than the Hackaday article's simplified description of a commit to the main branch triggering a build: the current repository README describes release publishing on a pushed tag. The component supports version comparison, manual or timed update checks, progress events, and ESP-IDF bootloader application rollback and anti-rollback features. The repository cautions that a GitHub personal access token embedded in firmware can be extracted and recommends storing such a token in non-volatile storage if one is required.
 
+===== Browser-based Arduino OTA tutorial =====
+
+The [[https://randomnerdtutorials.com/esp32-over-the-air-ota-programming/|Random Nerd Tutorials ESP32 OTA Web Updater guide]] demonstrates uploading a compiled firmware image from a browser to an ESP32 on the local network. The first updater sketch is installed over a serial connection. Later sketches must retain the updater code if browser-based updates are to remain available. This operator-initiated upload flow differs from ''esp_ghota'', where the device checks for firmware published as a GitHub release.
+
+The guide describes its example as a local-network demonstration and explicitly notes that its login does not protect direct access to the firmware-upload interface. The example uses plain HTTP and does not establish firmware authenticity. Treat it as a teaching example for an isolated, trusted lab network, not as a secure remote-update design. For production OTA security requirements, consult Espressif's [[https://docs.espressif.com/projects/esp-idf/en/stable/esp32/security/security.html|ESP-IDF ESP32 Security Overview]], including its guidance on secure transport, signed firmware, and rollback; those ESP-IDF features are not automatically provided by the Arduino example.
+
 ===== Relevance to weather stations =====
 
 This provides a possible pattern for maintaining ESP32-based weather stations deployed where physical access is inconvenient. A release workflow could build and publish firmware, while each station checks for a compatible release over its network connection. This is a potential application inferred from the updater's documented features; no weather station integration or field update has been tested by Chartroom.
@@ -28,6 +34,8 @@ For a historical ESP8266 continuous-delivery example using tagged releases and a
 
   * [esp_ghota repository](https://github.com/Fishwaldo/esp_ghota), README and example workflow; reviewed 2026-11-08.
   * [Push ESP32 Over-The-Air Updates From GitHub](https://hackaday.com/2022/12/13/push-esp32-over-the-air-updates-from-github/), Hackaday, 2022-12-13; reviewed 2026-11-08.
+  * [ESP32 Over-the-air (OTA) Programming — Web Updater Arduino IDE](https://randomnerdtutorials.com/esp32-over-the-air-ota-programming/), browser-upload tutorial and sample limitations; accessed 2026-11-08.
+  * [Security Overview — ESP32](https://docs.espressif.com/projects/esp-idf/en/stable/esp32/security/security.html), Espressif ESP-IDF guidance on secure OTA; accessed 2026-11-08.
 
 ~~REFNOTES~~
 ---------
