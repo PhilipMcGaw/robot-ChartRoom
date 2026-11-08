@@ -1,0 +1,50 @@
+====== Robotics, ROV, and electronics reference batch (November 2026) ======
+{{tag>research robotics rov electronics arduino raspberry-pi fish motor-control overvoltage}}
+
+~~META:
+description     = Curated notes on user-supplied robotics, underwater-robotics, and electronics references reviewed in November 2026.
+type            = research
+status          = reference
+authority       = Linked sources; Chartroom summaries
+~~
+
+This page records a group of user-supplied project and tutorial links. These are research references, not project decisions or validated designs. Summaries below describe what the linked source reports; they do not establish independent testing.
+
+===== Underwater robots and robotic fish =====
+
+  * [[sites:chartroom:research:elementary-auv-rov-education|Elementary AUV/ROV education]] is the related education note. New Atlas's 2010 article, [[https://newatlas.com/book-teaches-kids-to-build-rovs/17371/|Build Your Own Underwater Robot]], reports on Harry Bohm and Vickie Jensen's book, which covers SeaPerch and SeaFox educational remotely operated vehicles (ROVs). The article's photographs show home-built SeaFox examples with a manipulator arm and a custom camera housing. This is a secondary report about a book, not a substitute for the book's instructions.
+  * The Arduino Blog's [[https://blog.arduino.cc/2016/09/29/robotic-fish-swims-under-Arduino-control/|robotic fish project]] describes a fish-shaped vehicle made from bent polyvinyl chloride (PVC) pipe, with a tail for propulsion, pectoral fins for steering, and a ballast tank. Its summary identifies an Arduino Pro Mini, a motor-driver board, and a two-cell lithium-polymer battery. The article notes that the television-remote control needs relatively clear water. These are source descriptions; the article does not provide independent performance validation.
+  * Open Electronics' [[https://www.open-electronics.org/robofish-create-your-robot-fish-with-arduino/|Robofish]] describes a polystyrene body with three servo-driven body joints, two infrared obstacle sensors, Arduino-compatible control, and a reed-switch activation method. The article includes firmware and a build description. Its sensor-in-a-plastic-bag method is a reported prototype detail, not a pressure-rated or independently verified waterproofing method.
+  * Hackaday's [[https://hackaday.com/2021/01/18/robotic-fish-swarm-together-using-cameras-and-leds/|report on Harvard's BlueSwarm robotic fish]] describes decentralised group behaviour using blue LEDs and cameras to estimate neighbouring fish positions. The report identifies four oscillating fins, Raspberry Pi Zero W computers, and Raspberry Pi camera modules. It also notes that visible-light communication depends on water clarity. See the [[https://www.science.org/doi/10.1126/scirobotics.abd8668|linked research paper]] for primary research; the Hackaday article is secondary reporting.
+
+===== Control and drawing robots =====
+
+  * Jason Bowling's [[https://medium.com/swlh/building-a-network-controlled-robot-with-arduino-and-raspberry-pi-77dd9134e48c|network-controlled Arduino and Raspberry Pi robot]], published 2020-06-03, is a member-only Medium article. Its accessible introduction states goals of low-latency video, network gamepad control, battery telemetry, and later autonomy and machine vision. The full implementation details were not available during review, so no architecture or performance result is inferred here.
+  * Hackster.io's [[https://www.hackster.io/RemoteXY/robotcar-controlled-using-g-sensor-smartphone-9f7eec|Robotcar Controlled Using G-Sensor Smartphone]], published 2016-05-03, describes an Arduino Uno, HC-05/HC-06 Bluetooth module, L298N motor driver, and RemoteXY mobile interface. The phone's motion sensor controls a two-wheel robot. The page supplies example code and a schematic, but this is an educational demonstration and is not evidence of a safety-rated control link.
+  * The supplied [[https://www.instructables.com/Arduino-Drawing-Robot/|Arduino Drawing Robot]] page was not readable in the review interface. A separate Arduino drawing-robot resource is already listed in [[sites:chartroom:research:ultrasonic-robotics-and-open-hardware-batch|Ultrasonic robotics and open hardware]]; it is a different URL, and the relationship between the two projects is unconfirmed.
+
+===== Electronics references =====
+
+  * Lewis Loflin's [[https://www.bristolwatch.com/TC4420/TC4420hb.htm|TC4420 H-bridge article]] presents a brushed-motor bridge using four MOSFETs and two TC4420 gate drivers. It names IRFZ44N and IRF4905 devices and states an 18 V maximum for the described design. This is a hobby circuit article, not a manufacturer design review or validated motor controller. Check the TC4420 and MOSFET data sheets, switching behaviour, thermal limits, and protection before using any circuit; the page's operational-mode wording should also be checked against its schematic.
+  * Dyethin's [[https://www.dyethin.com/blog/projects/how-to-design-an-overvoltage-protection-circuit|overvoltage-protection tutorial]], dated 2023-09-21, surveys Zener-based circuits, a silicon-controlled-rectifier (SCR) crowbar, and voltage clamping. It includes example circuits and simulation claims. It is a secondary tutorial with inconsistencies in its example descriptions; use manufacturer data sheets and a design review for any real protection circuit, rather than copying the examples as validated designs.
+  * The supplied [[https://learn.adafruit.com/16-channel-pwm-servo-driver?view=all|Adafruit 16-channel PWM/servo-driver guide]] is already recorded in [[sites:chartroom:research:pca9685|PCA9685 PWM/servo driver research notes]].
+
+===== Other supplied links =====
+
+  * Shawn Leclair's [[https://www.hackster.io/shooshoomo/reef-controller-a30d52|Reef Controller]], published 2016-04-01, describes an Arduino MKR1000 aquarium controller with timed LED dimming, temperature monitoring and fan control, pump control for feeding, and a Windows application communicating through HTTP requests and JSON status. The project page describes an early, incomplete project; it is an aquarium automation example, not a vehicle controller.
+  * The supplied [[https://x.com/MadiHilly/status/1620399236339867648|Madi Hilly post on X]] could not be retrieved or independently identified during review. Its subject and claims are therefore not recorded.
+
+===== Related research =====
+
+See also [[sites:chartroom:research:circuitdigest-mosfet-h-bridge-tutorial|Circuit Digest MOSFET H-bridge tutorial]], [[sites:chartroom:research:community-robotics-and-sensing-batch|Community robotics and sensing references]], [[sites:chartroom:research:elementary-auv-rov-education|Underwater robotics education]], and [[sites:chartroom:research:pca9685|PCA9685 PWM/servo driver research notes]].
+
+===== Source review =====
+
+Sources were accessed or attempted on 2026-11-08. The Medium and Instructables pages provided limited or no readable article text; the X post could not be retrieved. The other summaries are based on the linked pages, with source limitations stated above. No circuit was independently analysed or tested for this note.
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
