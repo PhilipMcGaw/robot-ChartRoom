@@ -1,0 +1,35 @@
+====== JPL Open Source Rover ======
+{{tag>research robotics mars-rover jpl open-hardware rocker-bogie rover}}
+
+~~META:
+description     = Reference for NASA JPL's build-it-yourself six-wheel Open Source Rover.
+type            = research
+status          = reference
+authority       = NASA JPL Open Source Rover repository README
+~~
+
+===== Project summary =====
+
+The [[https://github.com/nasa-jpl/open-source-rover/tree/master|NASA JPL Open Source Rover (OSR) repository]] describes a build-it-yourself, scaled-down six-wheel rover based on the type of rover used by JPL to explore Mars. The project presents itself as a teaching and learning platform made from consumer off-the-shelf components, and as a platform for rugged-terrain research.
+
+===== Repository-described design =====
+
+The README identifies three main mobility features: rocker-bogie suspension, a differential pivot, and six-wheel Ackermann steering (spelled “Ackerman” in the README). It lists aluminium structural parts, ten motors, and a Raspberry Pi as the rover's onboard computer. It says the design allows expansions such as a head display and robotic arm, and suggests optional sensors and solar panels as possible upgrades.
+
+The README reports a top speed of about 1.6 m/s, subject to motor choice. It also reports at least 3 h of driving on rough terrain with a 7.2 Ah battery and describes power logging on rocky terrain. These are repository-reported figures; they are not independent test results or guaranteed performance for every build.
+
+===== Relevance and limits =====
+
+The OSR is a useful comparator for MarsBot's terrestrial rover research, especially for rocker-bogie mobility, steering, off-the-shelf construction, and staged mechanical, electrical, and software documentation. It is a scaled educational and research rover; its Mars-inspired design does not establish flight qualification or suitability for planetary operation. It is not an underwater vehicle design, and no decision has been made to reproduce its mechanics or software architecture.
+
+The repository README links to a separate [[https://github.com/nasa-jpl/osr-rover-code|rover software repository]] and the [[https://open-source-rover.readthedocs.io/|OSR documentation site]]. Those sources, the detailed build instructions, and the software have not been reviewed for this note.
+
+===== Sources =====
+
+  * [[https://github.com/nasa-jpl/open-source-rover/tree/master|nasa-jpl/open-source-rover]], master branch README and repository overview; reviewed 2026-11-08.
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

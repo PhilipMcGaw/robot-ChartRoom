@@ -151,7 +151,7 @@ The JPL project is also a useful example of making a robotics platform approacha
 
 **Status:** Research / concept. No decision has been made to reproduce the JPL mechanical design or software architecture.
 
-**Read later:** [[https://github.com/nasa-jpl/open-source-rover|NASA JPL Open Source Rover]] and [[https://github.com/nasa-jpl/osr-rover-code|OSR rover code]].
+**Research summary:** [[sites:chartroom:research:jpl-open-source-rover|JPL Open Source Rover research note]]. The detailed build documentation and [[https://github.com/nasa-jpl/osr-rover-code|OSR rover-code repository]] still need review.
 
 ==== RoboCenter ROV inspiration ====
 
