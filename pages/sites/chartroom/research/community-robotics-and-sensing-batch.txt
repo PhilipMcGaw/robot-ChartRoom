@@ -52,6 +52,14 @@ The supplied [[https://www.instructables.com/3d-Printed-Underwater-ROV-Camera-Ho
 
 The product features above are the supplier's descriptions, not independently verified specifications or test results. During review, the guide collection and its getting-started and rover-guide categories stated that they were hidden from normal users because no release had been published. A search-indexed light-activated rover guide was also found, but the page could not be opened directly. Check resource availability before relying on the lesson material.
 
+==== CraftingTable 30 Days Lost in Space electronics course ====
+
+The [[https://craftingtable.com/courses/30-days-lost-in-space|30 Days Lost in Space course]] is a beginner electronics and C++ curriculum for the HERO Board, presented as a 31-lesson mission story. The course page describes breadboard activities with LEDs, switches, a photoresistor, buzzer, keypad, rotary encoder, and displays. The narrative includes a vehicle stranded underwater, but the activities described are tabletop circuits; the page does not describe a submersible or underwater-rated hardware.
+
+**Relevance:** a reference for sequencing introductory embedded-programming exercises around a continuing story, progressing from digital inputs and outputs to displays and a simple menu. It may inform educational content for SwarmBot or Test in a Box, but it is not a robotics platform or evidence of underwater engineering.
+
+These details are CraftingTable's course description, not an independent review of the lessons, kit, or learning outcomes. The course page says the videos can be watched free and identifies a separate kit; check the current page for availability and terms.
+
 ==== Open Source Turtle Robot (OSTR) ====
 
 https://www.instructables.com/OSTR/ https://github.com/aspro648/OSTR/
