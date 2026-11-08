@@ -1,0 +1,26 @@
+====== Arduino Uno-based RoboTrack ======
+{{tag>research, robotics, arduino, tracked-robot, education }}
+
+~~META:
+description     = Link-only reference to the Arduino Uno-based RoboTrack project; project details could not be retrieved for review.
+type            = research
+status          = access pending
+authority       = Arduino Project Hub
+~~
+
+===== Source and access status =====
+
+The Arduino Project Hub page is titled **Arduino Uno based RoboTrack** and credits `athirakv`. Arduino's maker directory lists the project with a publication date of 2026-10-20 and classifies it as a tutorial. The project page itself could not be retrieved during this review, so its design, components, program, and build or test status are unknown.
+
+  * [Arduino Project Hub: Arduino Uno based RoboTrack](https://projecthub.arduino.cc/athirakv/arduino-uno-based-robotrack-098b97)
+  * [Arduino maker directory](https://www.arduino.cc/maker/) — listing checked 2026-11-08.
+
+===== Review status =====
+
+This is a link-only research reference. Review the project page and its supporting files before drawing conclusions about its construction or suitability for another project.
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
