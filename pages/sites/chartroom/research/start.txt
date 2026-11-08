@@ -226,6 +226,7 @@ The links below cover all research notes. Use the related-research links within 
 ==== Robotics, education, and hardware ====
 
   * [[sites:chartroom:research:instructables-robot-cheaper|Instructables “Robot Cheaper”]]
+  * [[sites:chartroom:research:instructables-james-first-arduino-robot|Instructables James: first Arduino robot — partial review]]
   * [[sites:chartroom:research:instructables-arduino-powered-autonomous-vehicle|Instructables Arduino-powered autonomous vehicle]]
   * [[sites:chartroom:research:fictionlab-leo-raph-mobile-robots|Fictionlab Leo Rover and Raph Rover]]
   * [[sites:chartroom:research:printables-differential-swerve-drive|Printables differential swerve drive — PiWars candidate]]

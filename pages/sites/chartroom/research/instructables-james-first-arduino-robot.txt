@@ -1,0 +1,30 @@
+====== Instructables James: first Arduino robot ======
+{{tag>research arduino beginner-robot education ultrasonic-sensor chassis}}
+
+~~META:
+description     = Partial reference for the Instructables beginner Arduino robot James; the original build steps were not readable during review.
+type            = research
+status          = partial
+authority       = Original Instructables page for the project identity; Duino4Projects copy for the limited parts summary
+~~
+
+===== Available project details =====
+
+The original [[https://www.instructables.com/James-Your-first-Arduino-Robot/|Instructables: James – Your first Arduino Robot]] page exposes its title and a 12-step format, but its step text was not readable during review. A [[https://duino4projects.com/james-first-arduino-robot/|Duino4Projects copy]] describes it as a beginner robot made for a high-school robotics class. The copy's visible summary lists an Arduino Uno, a prototyping shield, M3 screws and spacers, a servo, an ultrasonic sensor, and a chassis that could be made from acrylic or alternative materials such as balsa wood, plywood, foam-core, or cardboard.
+
+The accessible copy includes the first four step headings, covering parts and tools, planning, Arduino mounting holes, and an ultrasonic-sensor mounting bracket, but does not expose enough detail to reconstruct the full assembly or control system. It provides no verified wiring diagram, complete firmware, sensor arrangement, drive mechanism, or test results. Those details are not inferred here.
+
+===== Relevance and limits =====
+
+This is a possible teaching reference for planning and fabricating a simple robot chassis from accessible materials, and for mounting an Arduino board and sensor. Its limited available description does not establish how the robot moves or uses its sensor. The project has not been validated for Robots project use.
+
+===== Sources =====
+
+  * [[https://www.instructables.com/James-Your-first-Arduino-Robot/|James – Your first Arduino Robot]], Instructables; title and 12-step format visible, step text not readable; accessed 2026-11-08.
+  * [[https://duino4projects.com/james-first-arduino-robot/|James – Your first Arduino Robot]], Duino4Projects, third-party copy; partial summary and first four step headings available; accessed 2026-11-08.
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
