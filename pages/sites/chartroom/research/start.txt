@@ -253,6 +253,7 @@ The links below cover all research notes. Use the related-research links within 
   * [[sites:chartroom:research:circuitdigest-h206-wheel-speed-odometry|Circuit Digest H206 wheel-speed and odometry example — critical review]]
   * [[sites:chartroom:research:circuitdigest-mosfet-h-bridge-tutorial|Circuit Digest MOSFET H-bridge tutorial — critical review]]
   * [[sites:chartroom:research:vedder-vesc-open-source-esc|VESC open-source electronic speed controller]]
+  * [[sites:chartroom:research:makeatronics-smart-bldc-commutator|Makeatronics Smart BLDC Commutator hardware]]
   * [[sites:chartroom:research:fpv-rover-nerf-dart-launcher|Nerf dart launcher for an FPV rover]]
   * [[sites:chartroom:research:printables-nerf-dart-turret-brushless-wifi|Printables brushless Wi-Fi Nerf dart turret — zombie activity reference]]
   * [[sites:chartroom:research:printables-ofd-flycore-angled|OFD Flycore Angled foam-dart blaster core]]

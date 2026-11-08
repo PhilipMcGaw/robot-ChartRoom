@@ -1,0 +1,44 @@
+====== Makeatronics Smart BLDC Commutator hardware ======
+{{tag>research, robotics, brushless-motor, BLDC, commutator, motor-control }}
+
+~~META:
+description     = Historical hardware reference for an ATmega328P-based, Hall-feedback brushless motor commutator with MOSFET drive and SPI position reporting.
+type            = research
+status          = reference
+authority       = Makeatronics article and linked design files
+~~
+
+===== Source and scope =====
+
+This note summarises the hardware description in Nich Fugal's Makeatronics article, published 2014-08-08. It is a historical design reference. It does not establish suitability for a current motor, thruster, or vehicle, and the design has not been built or tested as part of this review.
+
+===== Reported design =====
+
+The article describes a board built around an ATmega328P microcontroller with a 16 MHz external clock. The controller uses Hall-effect sensor feedback to commutate a three-phase brushless direct-current (BLDC) motor. The article presents direction and pulse-width modulation (PWM) as the minimum control inputs, with an optional on-board software PWM modification.
+
+The three motor phases use discrete high-side P-channel and low-side N-channel MOSFETs. The microcontroller controls the commutation signals, and the article describes using port manipulation to update them together. Pin-change interrupts handle Hall sensor changes and update the commutation phase and motor position.
+
+The board can report motor position over the Serial Peripheral Interface (SPI). A sample-and-hold input captures position before the SPI transfer, allowing a master controller to request readings captured at a common time across multiple boards. Position feedback can use Hall sensors or an optional quadrature encoder connection.
+
+The author says the design files were published under the CERN Open Hardware Licence (OHL) version 1.2 and the firmware under the BSD 3-Clause licence. Check the linked files and licence texts before reuse; the article alone does not establish the current availability or completeness of those files.
+
+===== Relevance and limitations =====
+
+This is useful as an example of a microcontroller-based commutation board that separates motor commutation from a host controller while exposing position feedback. It may inform comparisons of control partitioning for multi-motor systems.
+
+The article is dated 2014 and describes a particular discrete MOSFET design. It does not demonstrate compatibility with a specified present-day motor, thruster, battery, or operating environment. The source's implementation and performance claims have not been independently verified here; select and assess any motor controller using current documentation for the exact hardware and motor.
+
+===== Sources =====
+
+  * [Makeatronics: Smart BLDC Commutator – Hardware](https://makeatronics.blogspot.com/2014/08/smart-bldc-commutator-hardware.html), published 2014-08-08; accessed 2026-11-08.
+
+===== Related research =====
+
+  * [[sites:chartroom:research:vedder-vesc-open-source-esc|VESC open-source electronic speed controller]]
+  * [[sites:chartroom:research:bit-driven-circuits-rov|Bit Driven Circuits ROV electronics]]
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
