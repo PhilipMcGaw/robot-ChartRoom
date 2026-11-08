@@ -1,0 +1,31 @@
+====== Instructables Raspberry Pi birdbox camera ======
+{{tag>research raspberry-pi camera imaging streaming infrared wildlife}}
+
+~~META:
+description     = Historical Raspberry Pi birdbox camera project with infrared night illumination, motion capture, and network video streaming.
+type            = research
+status          = reference
+authority       = Instructables project by mattwood0; article text cross-checked against a secondary repost
+~~
+
+===== Project summary =====
+
+The project describes a school birdbox camera built around a Raspberry Pi Model B and Pi NoIR camera. It adjusts the camera focus for close-up viewing, adds infrared (IR) illumination for night use, and combines streaming with motion-triggered image capture. The guide describes sending video to the South East Grid for Learning (SEGfL) Birdbox Project portal using FFmpeg. It also describes a low-cost single-cable power and network arrangement using Ethernet injectors; this is a historical, project-specific arrangement, not a current Power-over-Ethernet (PoE) design recommendation.
+
+The reproduced guide identifies itself as a draft. It reports a school installation, but the results have not been independently checked. The portal's current availability is unknown.
+
+===== Relevance and limits =====
+
+This is a reference for fixed wildlife-camera packaging, night illumination, and combining live video with image capture on an older Raspberry Pi platform. Its Raspberry Pi Model B, legacy camera software, and 2015 service context make it historical rather than current setup guidance. The source does not describe an underwater camera or establish any waterproof rating; it should not be treated as evidence for an underwater enclosure.
+
+===== Sources =====
+
+  * [Raspberry Pi Birdbox Camera — Instructables](https://www.instructables.com/Raspberry-Pi-Birdbox-Camera/), by mattwood0; title and 12-step count visible, article body not readable during review on 2026-11-08.
+  * [Raspberry Pi Birdbox Camera — Projects-Raspberry](https://projects-raspberry.com/raspberry-pi-birdbox-camera/), secondary repost of the project description and instructions, dated 2015-02-04; accessed 2026-11-08. The repost reproduces the author's note that the instructions are a draft.
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
