@@ -244,6 +244,7 @@ The links below cover all research notes. Use the related-research links within 
   * [[sites:chartroom:research:printables-ofd-flycore-angled|OFD Flycore Angled foam-dart blaster core]]
   * [[sites:chartroom:research:hackaday-aluminium-extrusion-printed-brackets|Aluminium extrusion with 3D-printed brackets]]
   * [[sites:chartroom:research:instructables-diy-phone-controlled-fpv-rover|DIY Phone Controlled FPV Rover (RoverBot)]]
+  * [[sites:chartroom:research:instructables-diy-multi-featured-arduino-robot|Instructables DIY multi-featured Arduino robot (BLUE ROVIER 316)]]
   * [[sites:chartroom:research:antweight-fight-club-design-technology-tutor|Antweight Fight Club workshop]]
   * [[sites:chartroom:research:beatty-robotics-sojourner-rover|Beatty Robotics Sojourner rover]]
   * [[sites:chartroom:research:archimedes-ai-owl-familiar|Archimedes wearable owl familiar]]

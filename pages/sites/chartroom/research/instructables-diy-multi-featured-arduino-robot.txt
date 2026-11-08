@@ -1,0 +1,37 @@
+====== Instructables DIY multi-featured Arduino robot (BLUE ROVIER 316) ======
+{{tag>research arduino robot bluetooth voice-control obstacle-avoidance educational}}
+
+~~META:
+description     = Instructables educational robot combining Android voice, gesture, Bluetooth, recorded responses, and obstacle avoidance.
+type            = research
+status          = reference
+authority       = Instructables project by RS3655
+~~
+
+===== Project summary =====
+
+The supplied Instructables URL uses the slug “Artificial Intelligence With Arduino”, but the current article title is “DIY Multi Featured Robot With Arduino”. The author calls the robot BLUE ROVIER 316 and describes an educational, wheeled Arduino Uno robot with four BO motors, two L293D motor-driver boards, a servo-mounted HC-SR04 ultrasonic sensor, an HC-05 Bluetooth module, and a WTV020-SD-16P audio module.
+
+The article combines several modes: Android voice commands, phone-tilt gesture control, Bluetooth remote control, and obstacle avoidance. Voice recognition and speech-to-text are performed by Google services on the Android phone; the phone sends text commands over Bluetooth. The Arduino also selects prerecorded audio files from a microSD card to answer questions. The article does not describe a machine-learning model running on the Arduino. Its “artificial intelligence” framing is therefore broader than the implementation details presented.
+
+===== Relevance and limits =====
+
+This is a reference for combining a phone interface, Bluetooth command handling, simple obstacle avoidance, and sound output in an educational ground robot. It illustrates an architecture in which a phone handles voice recognition and tilt sensing while a small microcontroller reads commands and controls motors and peripherals.
+
+The author reports that Arduino Uno memory and pin limits forced several planned features to be removed. The article also says that obstacle-avoidance mode does not accept the Bluetooth stop command, and that trying to read both distance and Bluetooth input could delay stopping when an obstacle is detected. Treat these as the author's implementation limitations, not as validated safety behaviour. The project is a ground robot; “ROVIER” is part of its name and does not indicate an underwater remotely operated vehicle.
+
+The Instructables page itself returned no readable lines during review; the summary above is based on its indexed article text. The design, code, electrical connections, and performance have not been independently tested. Treat the listed components and behaviour as the author's description, not a build specification for the Robots project.
+
+===== Sources =====
+
+  * [[https://www.instructables.com/Artificial-Intelligence-With-Arduino/|Instructables — DIY Multi Featured Robot With Arduino]], by RS3655; published 2017-04-16. Direct page opened without readable lines; indexed article text reviewed 2026-11-08.
+
+===== Related research =====
+
+For another phone-controlled Arduino rover reference, see [[sites:chartroom:research:instructables-diy-phone-controlled-fpv-rover|DIY Phone Controlled FPV Rover (RoverBot)]].
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
