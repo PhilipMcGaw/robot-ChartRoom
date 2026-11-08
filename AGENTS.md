@@ -127,6 +127,8 @@ When the user provides project-relevant information, research links, decisions, 
 
 ## Git workflow
 
+Standing authorisation: For user-requested changes in this repository, agents are authorised to stage the required files, commit focused validated changes, and push them to the configured remote and current working branch without asking the user again. This authorisation does not override sandbox or authentication controls; if a Git operation is blocked, report the specific blocker.
+
 Before editing, inspect the complete working-tree status and relevant diffs. Preserve unrelated changes, and stage only files required for the task.
 
 Review the staged diff before committing. Use focused changes with clear, imperative commit subjects of 72 characters or fewer.
