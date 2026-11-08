@@ -1,0 +1,38 @@
+====== 4tronix Pi2Go Mk2 Raspberry Pi robot ======
+{{tag>research raspberry-pi robot 4tronix pi2go sensors education}}
+
+~~META:
+description     = Product-reference notes for the 4tronix Pi2Go Mk2 sensor-rich Raspberry Pi mobile robot.
+type            = research
+status          = reference
+authority       = Pimoroni product listing for the 4tronix Pi2Go Mk2
+~~
+
+===== Sources and access =====
+
+  * [[https://shop.pimoroni.com/en-eu/products/pi2go-mk2-robot-for-raspberry-pi|Pi2Go Mk2 Robot for Raspberry Pi — Pimoroni]], product description and specification; reviewed 2026-11-08.
+  * [[http://simplesi.net/pi2go-mk2/|Pi2Go Mk2 — SimpleSi]], user-supplied programming reference. The page returned HTTP 403 and could not be reviewed.
+  * [[https://4tronix.co.uk/pi2go2/|Pi2Go Mk2 build and programming instructions — 4tronix]], linked by the Pimoroni listing. The page returned HTTP 403 and could not be reviewed.
+
+===== Product summary =====
+
+Pimoroni's listing identifies the Pi2Go Mk2 as a 4tronix Raspberry Pi robot and describes it as an evolution of the original Pi2Go. Its listed control board uses a DRV8833 motor driver, an MCP3008 analogue-to-digital converter for the light and battery inputs, and a TPS5430 switching 5 V supply. The product specification lists two infrared obstacle sensors, two infrared line-following sensors, four analogue light sensors, two optical wheel sensors with 20-slot encoder wheels, four servo connections, a tactile switch, and ten individually addressable SK6812 RGB LEDs.
+
+The listing also describes two Breakout Garden-compatible expansion slots and names an ultrasonic distance-sensor breakout and an IP Display breakout as included. It lists support for Raspberry Pi models with a 40-pin header, six rechargeable AA cells, dimensions of 148 mm × 118 mm × 98 mm, and a mass of 282 g excluding the Raspberry Pi and batteries. These are reseller-published product details, not independently measured results.
+
+===== Relevance and limitations =====
+
+The Pi2Go Mk2 is a useful reference for integrating wheel feedback, line and obstacle sensors, analogue sensing, lighting, and expansion connectors into a compact educational robot. It offers a hardware comparison for Raspberry Pi projects and small-robot sensor layouts.
+
+Pimoroni states that it no longer stocks the product and points readers to 4tronix. The linked 4tronix page was inaccessible during this review, so present availability and current support could not be confirmed. The supplied SimpleSi programming page was also inaccessible; no software installation steps, code examples, or supported operating-system versions have been verified. The listing does not establish suitability for the Robots project's software or for underwater use.
+
+===== Related research =====
+
+  * [[sites:chartroom:research:sunfounder-picar-x-notenoughtech|SunFounder PiCar-X review by NotEnoughTech]] — another Raspberry Pi land robot with a camera mount and sensor suite.
+  * [[sites:chartroom:research:freddykilo-frank-the-tank|Frank the Tank Raspberry Pi RC tank]] — a software-focused Raspberry Pi mobile-robot reference.
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
