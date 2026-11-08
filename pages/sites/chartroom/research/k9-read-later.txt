@@ -69,6 +69,16 @@ Review this video specifically for ideas about the screens/displays associated w
 
 **Status:** Read later / design inspiration. The implementation details have not been extracted or validated.
 
+==== Arduino keypad as a possible back-panel input ====
+
+**Reference:** [[https://sites.google.com/view/electrodevelo/home-page/education-projects/arduino-keypad|Electrodevelo — Arduino-Keypad]], supplied by the user.
+
+The user asks whether this could inform K-9's back buttons. The Arduino-Keypad page could not be accessed during review on 2026-11-08. The navigation on the related [[https://sites.google.com/view/electrodevelo/home-page/education-projects/geiger-counter|Electrodevelo Geiger Counter page]] lists “Arduino-Keypad”, confirming the title but not the design. The keypad type, electronics, firmware, and any intended button functions remain unreviewed.
+
+Treat this as a research lead for the physical input controls in the rear panel. Compare it with the [[https://www.youtube.com/watch?v=F7lCsaLnNcA|K-9 rear/back-button visual reference]] if the keypad page becomes accessible. No fit, ergonomics, or electrical suitability has been established.
+
+**Status:** Read later / access pending; possible K-9 back-button inspiration only.
+
 ===== IEEE Xplore paper — read later =====
 
 **Reference:** [[https://ieeexplore.ieee.org/document/624126|IEEE Xplore document 624126]]
