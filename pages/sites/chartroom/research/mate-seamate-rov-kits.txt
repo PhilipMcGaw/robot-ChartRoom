@@ -10,7 +10,7 @@ authority       = MATE / SeaMATE product materials
 
 ===== Scope =====
 
-The user-supplied MATE ROV kits URL, https://materovcompetition.org/rov-kits, returned a 404 when checked on 2026-10-23 and again on 2026-11-07. The current SeaMATE catalogue is at [seamate.org](https://seamate.org/collections/rov-kits). It lists four educational ROV kits: AngelFish, PufferFish, TriggerFish, and Barracuda. The [SeaMATE homepage](https://seamate.org/) presents the store alongside the MATE ROV Competition and ROV Academy, and links to educator resources and classroom bundles.
+The user-supplied MATE ROV kits URL, https://materovcompetition.org/rov-kits, returned a 404 when checked on 2026-10-23 and again on 2026-11-07. The current SeaMATE catalogue is at [seamate.org](https://seamate.org/collections/rov-kits). It lists four educational ROV kits: AngelFish, PufferFish, TriggerFish, and Barracuda. The [SeaMATE homepage](https://seamate.org/) presents the store alongside the MATE ROV Competition and ROV Academy, and links to classroom bundles and educator professional-development resources. When reviewed on 2026-11-08, its featured kit listings still showed the same four names and revisions recorded below. The homepage describes professional-development resources including workshops, skill guidelines, and workforce reports.
 
 SeaMATE's [About page](https://seamate.org/pages/about-us) says MATE integrated with the Marine Technology Society (MTS) on 2023-07-01, and describes the SeaMATE Store, MATE ROV Competition, workshops, and learning resources as part of MTS's programme offerings. This is the organisation's own summary of its history and current structure.
 
@@ -42,7 +42,7 @@ The SeaMATE product pages include photographs of the kits, control boxes, and co
 
   * [MATE ROV kits](https://materovcompetition.org/rov-kits), returned HTTP 404 when checked 2026-10-23 and 2026-11-07.
   * [ROV Kits](https://seamate.org/collections/rov-kits), current product catalogue; accessed 2026-10-23.
-  * [SeaMATE](https://seamate.org/), homepage describing the store, competition, ROV Academy, classroom bundles, and educator resources; accessed 2026-11-07.
+  * [SeaMATE](https://seamate.org/), homepage describing the store, competition, ROV Academy, classroom bundles, and educator professional-development resources; accessed 2026-11-08.
   * [About Us](https://seamate.org/pages/about-us), SeaMATE's account of the programme history and integration with MTS; accessed 2026-11-07.
   * [AngelFish ROV Kit](https://seamate.org/collections/rov-kits/products/angelfish-rov-kit-with-thrusters-and-tether), Rev 3 product description and contents; accessed 2026-10-23.
   * [PufferFish ROV Kit](https://seamate.org/collections/rov-kits/products/pufferfish-rov-with-thrusters-and-tether), Rev 7 product description and contents; accessed 2026-10-23.
