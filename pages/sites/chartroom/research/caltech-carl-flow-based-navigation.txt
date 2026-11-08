@@ -1,0 +1,34 @@
+====== Caltech CARL underwater robot flow-based navigation ======
+{{tag>research underwater-robotics auv autonomy reinforcement-learning hydrodynamics}}
+
+~~META:
+description     = Caltech research on underwater robot navigation and energy-efficient propulsion using local flow cues and vortex rings.
+type            = research
+status          = research
+authority       = Peer-reviewed research papers and Caltech project reporting
+~~
+
+===== Research summary =====
+
+The 2021 paper “Learning efficient navigation in vortical flow fields” evaluates deep reinforcement learning (RL) for steering a simulated swimmer through unsteady two-dimensional flows. It reports that local velocity measurements helped the learned policy navigate the tested flow, while a policy trained on one flow did not transfer effectively to a different flow without further training. The paper's navigation results are simulation results; its discussion identifies testing transfer to real, complex, three-dimensional flows as future work.
+
+In a 2025 follow-up, the team demonstrated a separate, simpler flow-based propulsion strategy with the Caltech Autonomous Reinforcement Learning robot (CARL) in a 13,000-litre tank. A single onboard inertial measurement unit (IMU) sensed acceleration from a passing vortex ring; a short impulsive manoeuvre positioned the robot to be carried across the tank by the vortex. The paper reports nearly fivefold lower energy use for this tank traversal than self-propelled travel over the same distance. This is a controlled laboratory result, not an ocean trial or a general vehicle performance figure. The later strategy is described as simple control logic, rather than the earlier RL navigation policy.
+
+===== Relevance and limits =====
+
+The work is useful background for distinguishing flow-aware autonomy from conventional navigation that treats currents only as disturbances. It also illustrates the evidence progression from simulation to a specific physical tank experiment. Neither paper establishes that the methods transfer to a tethered remotely operated vehicle, a different vehicle geometry, or unconstrained sea conditions. Chartroom has not adopted or validated these techniques.
+
+===== Sources =====
+
+  * [Engineers teach seaborne robots to navigate ocean currents — IET Engineering and Technology](https://eandt.theiet.org/2021/12/09/engineers-teach-seaborne-robots-navigate-ocean-currents), published 2021-12-09; direct page access was blocked during review on 2026-11-08.
+  * [Learning efficient navigation in vortical flow fields](https://pmc.ncbi.nlm.nih.gov/articles/PMC8654940/), Peter Gunnarson et al., *Nature Communications*, 2021-12-08; simulation study and limitations.
+  * [Engineers Teach AI to Navigate Ocean with Minimal Energy — Caltech](https://www.caltech.edu/about/news/scientists-teach-ai-to-navigate-ocean-with-minimal-energy), 2021-12-08; project overview at the time of publication.
+  * [Surfing vortex rings for energy-efficient propulsion](https://academic.oup.com/pnasnexus/article/4/2/pgaf031/8016020), Peter Gunnarson and John O. Dabiri, *PNAS Nexus*, 2025-02-25; physical tank experiment.
+  * [CARL-Bot Catches an Underwater Wave — Caltech](https://www.caltech.edu/about/news/carl-bot-catches-an-underwater-wave), 2025-05-12; institutional summary of the tank experiment.
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

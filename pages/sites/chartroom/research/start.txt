@@ -77,6 +77,7 @@ The links below cover all research notes. Use the related-research links within 
   * [[sites:chartroom:research:blue-robotics-software-setup|Blue Robotics BlueROV2 software setup]]
   * [[sites:chartroom:research:borgcube-rov|BorgCube ROV]]
   * [[sites:chartroom:research:cps-5|CPS 5 underwater drone]]
+  * [[sites:chartroom:research:caltech-carl-flow-based-navigation|Caltech CARL underwater robot flow-based navigation]]
   * [[sites:chartroom:research:modelluboot-de-model-submarine-components|Modell-Uboot-Spezialitäten model-submarine and ROV components]]
   * [[sites:chartroom:research:propellerpages-marine-nozzle|Propeller Pages: how a marine nozzle works]]
   * [[sites:chartroom:research:mate-aquaphoton-academy|Aquaphoton Academy MATE technical report]]
