@@ -162,7 +162,15 @@ An environmental monitor using an MH-Z14A NDIR CO₂ sensor and GP2Y1010AU0F opt
 
 **Relevance:** useful comparison for environmental telemetry, local display versus remote reporting, and sensor modularity. The project reinforces the distinction between acquisition, local presentation, and communications. Its Telegram-based reporting should not become a project dependency.
 
-===== Embedded update and fleet-management inspiration =====
+===== Embedded development and fleet-management inspiration =====
+
+==== BASIC on the ESP8266 ====
+
+In a [[https://hackaday.com/2015/11/28/basic-on-the-esp8266/|2015 Hackaday article]], Elliot Williams describes a Wi-Fi thermostat demonstration using an ESP8266, a Dallas DS18B20 temperature sensor, and an LED as a stand-in for the heater output. The article says the demo rebuilt an example from the ESP8266 BASIC documentation. It reports that a contributor had wrapped the Arduino OneWire library with BASIC bindings, allowing the BASIC program to read the sensor and show its value on a web page.
+
+**Relevance:** a historical example of using a higher-level language to make a small networked sensor project approachable. It illustrates how library bindings can hide low-level implementation detail, but it is not evidence that the interpreter or its libraries remain maintained or suitable for a current deployment.
+
+The LED is only a representative output in the demonstration. The article does not show a heater, a load driver, or a complete thermostat control and safety design. Treat it as an educational sensor/web interface example, not as a usable heating controller.
 
 ==== Secure ESP32 OTA firmware updates ====
 
