@@ -1,0 +1,41 @@
+====== KerbalController custom control panel by hugopeeters ======
+{{tag>research simulator-controller human-machine-interface arduino kerbal-space-program control-panel}}
+
+~~META:
+description     = Reference for hugopeeters' Arduino Mega control panel and telemetry display for Kerbal Space Program.
+type            = research
+status          = reference
+authority       = Instructables article by hugopeeters; Trybotics mirror
+~~
+
+===== Build summary =====
+
+This is a specific physical controller build for Kerbal Space Program (KSP), distinct from the general [[sites:chartroom:research:kerbal-controller-design-guide|Kerbal Controller design guide]]. The article describes joysticks for rotation and translation, a throttle slider, illuminated buttons and switches, five light-emitting diode (LED) fuel gauges, and a liquid-crystal display (LCD) with selectable telemetry screens.
+
+The author provides a parts list, laser-cut faceplate and enclosure drawings, wiring instructions, Arduino code, and a KSP plugin. The software setup uses an Arduino Mega connected to a computer over a serial port, with the KSPSerialIO plugin. The LCD modes are described as displaying different game telemetry for take-off, orbit, manoeuvres, rendezvous, re-entry, flight, and landing.
+
+The fuel gauges use seven shift registers to control up to 50 LEDs from three Arduino signals. The author reports that the final wiring differed from the attached diagram and that code changes are needed when rebuilding from the published files. The enclosure description also reports fit and assembly issues. These are useful build cautions, not independent inspection or test results.
+
+===== Relevance and limits =====
+
+This is a reference for integrating a physical simulator control panel with game telemetry, including the division between an Arduino input/output device and a host-side game plugin. The controls, serial protocol, telemetry mapping, and enclosure are specific to KSP and do not establish compatibility with the Robots project's software or hardware.
+
+The direct Instructables page did not return readable article text during review. The Trybotics mirror reproduces the article steps and identifies the author as hugopeeters; details here are attributed to that mirror and have not been cross-checked against the primary page. Review the current source repositories and attached files before attempting a build.
+
+===== Sources =====
+
+  * [[https://www.instructables.com/KerbalController-a-Custom-Control-Panel-for-Rocket/|KerbalController: a Custom Control Panel for Rocket Game Kerbal Space Program]], Instructables, by hugopeeters; article text was not readable through the web reader on 2026-11-08.
+  * [[https://trybotics.com/project/KerbalController-a-Custom-Control-Panel-for-Rocket-39907|KerbalController: a Custom Control Panel for Rocket Game Kerbal Space Program]], Trybotics mirror of the 11-step article; reviewed 2026-11-08.
+  * [[https://github.com/hugopeeters/KerbalController|hugopeeters/KerbalController]], Arduino source linked from the article; not independently reviewed for this note.
+  * [[https://github.com/hugopeeters/KSPSerialIO|hugopeeters/KSPSerialIO]], KSP plugin source linked from the article; not independently reviewed for this note.
+
+===== Related research =====
+
+See [[sites:chartroom:research:kerbal-controller-design-guide|Kerbal Controller design guide]], [[sites:chartroom:research:alpakka-open-game-controller|Alpakka open game controller]], and [[sites:chartroom:research:pico-flight-sim-switch-box|Raspberry Pi Pico flight-simulator switch box]].
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

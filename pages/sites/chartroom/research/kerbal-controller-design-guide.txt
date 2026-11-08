@@ -20,7 +20,7 @@ This is a reference for planning a physical human-machine interface for a simula
 
 The original Instructables page did not return readable article text during review. The summary on jpralves.net provides the guide's scope and high-level architecture, but detailed component choices, wiring, communication methods, and build steps were not reviewed here.
 
-For a current custom gamepad reference with published firmware and enclosure files, see [[sites:chartroom:research:alpakka-open-game-controller|Alpakka open game controller]].
+For a current custom gamepad reference with published firmware and enclosure files, see [[sites:chartroom:research:alpakka-open-game-controller|Alpakka open game controller]]. For a specific panel build with joysticks, telemetry displays, and KSP software, see [[sites:chartroom:research:kerbalcontroller-hugopeeters|KerbalController by hugopeeters]].
 
 ===== Sources =====
 
