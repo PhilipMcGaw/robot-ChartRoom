@@ -1,0 +1,42 @@
+====== Open Robotic Platform (ORP) ======
+{{tag>research robotics mechanical-design modular-platform 3d-printing cnc laser-cutting}}
+
+~~META:
+description     = Reference for Open Robotic Platform's community library of modular robot plates, mounts, wheels, and assemblies.
+type            = research
+status          = reference
+authority       = Open Robotic Platform website
+~~
+
+===== Platform overview =====
+
+The [[https://openroboticplatform.com/|Open Robotic Platform (ORP)]] is a community library of robot parts and project examples. The site describes a shared plate pattern with mounting holes on a 20 mm grid. Its [[https://openroboticplatform.com/designrules|design rules]] specify 3.5 mm holes and discuss parts for 3D printing, computer numerical control (CNC) machining, and laser cutting. The library includes plates, holders, wheels, connection rods, and assembled robot chassis.
+
+The site states that ORP parts are shared under the MIT licence. Check the licence and attribution for an individual part, especially where the model is a remix or includes third-party work.
+
+===== Design status and examples =====
+
+The site labels its design rules as work in progress and says they may change following user feedback. Treat the hole pattern and contribution guidance as the platform's current published convention, not as a formal standard or a requirement for the Robots project.
+
+The [[https://openroboticplatform.com/showcase|showcase]] describes examples including a Pico-based Mars rover with omni wheels, an Arduino Uno R4 and light detection and ranging (LiDAR) navigation robot, and a LiDAR research robot. These are project descriptions published by the site; they do not independently validate the vehicles' performance.
+
+===== Relevance and limits =====
+
+ORP may be useful when comparing modular mounting patterns, reusable printed brackets, and ways to share mechanical designs across small robot builds. Its mounting pattern could simplify part reuse within a build that adopts the same dimensions, but compatibility with other chassis, material strength, and load capacity still depend on each part's geometry, fabrication method, and use. The site does not establish those properties for a specific application.
+
+===== Sources =====
+
+  * [[https://openroboticplatform.com/|Open Robotic Platform home page]], platform description and mounting-grid summary; accessed 2026-11-08.
+  * [[https://openroboticplatform.com/designrules|Open Robotic Platform design rules]], hole dimensions, fabrication methods, part categories, MIT licence statement, and work-in-progress status; accessed 2026-11-08.
+  * [[https://openroboticplatform.com/showcase|Open Robotic Platform showcase]], site descriptions of example projects; accessed 2026-11-08.
+
+===== Related research =====
+
+See [[sites:chartroom:research:uea-envsoft-otto-mecanum|UEA-envsoft Otto-Mecanum robot]], [[sites:chartroom:research:piwars-pidrogen-interchangeable-tracks-mecanum|PiWars 2024 — interchangeable tracks and mecanum wheels]], and [[sites:chartroom:research:community-robotics-and-sensing-batch|Community robotics and sensing references]].
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
