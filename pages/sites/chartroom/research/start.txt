@@ -42,6 +42,7 @@ The links below cover all research notes. Use the related-research links within 
   * [[sites:chartroom:research:uzzors2k-openrov-access-pending|Uzzors2k OpenROV page — access pending]]
   * [[sites:chartroom:research:instructables-picar-autonomous-car-access-pending|Instructables PiCar autonomous-car platform — access pending]]
   * [[sites:chartroom:research:makeuseof-rugged-raspberry-pi-outdoor-projects-access-pending|MakeUseOf rugged Raspberry Pi outdoor projects — access pending]]
+  * [[sites:chartroom:research:printables-arduino-rover-access-pending|Printables Arduino Rover — access pending]]
 
 ==== Underwater robotics and ROVs ====
 

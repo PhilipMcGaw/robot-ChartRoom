@@ -1,0 +1,21 @@
+====== Printables Arduino Rover — access pending ======
+{{tag>research arduino rover 3d-printing source-review}}
+
+~~META:
+description     = User-supplied Printables Arduino Rover model; model contents have not been verified.
+type            = research
+status          = unreviewed
+authority       = Chartroom
+~~
+
+===== Source and access status =====
+
+The supplied [[https://www.printables.com/model/34096-arduino-rover|Printables Arduino Rover model]] returned a fetch error during review on 2026-11-08. Search surfaced the title in a related-model listing but did not verify the page description, creator attribution, model files, licence, or any build details. This note records the link only; no technical claims about the rover are made.
+
+Review the model page and files if access becomes available. Confirm the model's intended electronics and drive layout from its own documentation before considering it for a project.
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
