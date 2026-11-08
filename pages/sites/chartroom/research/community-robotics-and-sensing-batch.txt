@@ -110,6 +110,12 @@ In a [[https://hackaday.com/2021/08/21/pint-sized-sumo-robot-is-adorable-accessi
 
 The builder notes that the design uses a linear 3.3 V regulator to keep the circuit simple and that it can run hot. Treat this as a reported design trade-off, not as an independently tested thermal assessment. The builder's blog says the firmware and hardware are published under Apache 2.0 and CERN Open Hardware Licence 1.2 respectively; check the repository's licence files before reusing either.
 
+==== RobotNest SumoBoy and prototyping kit ====
+
+RobotNest's [[https://www.robot-nest.com/|website]] presents its SumoBoy 2.0 mini-sumo robot and a companion prototyping kit for pupils and enthusiasts learning electronics and programming. The supplier describes SumoBoy as using an Arduino Micro-compatible controller, three forward-facing sensors with provision for up to five, line sensors, and more than 30 exercises. The separate prototyping kit combines a solder-free breadboard, an Arduino Micro-compatible controller, and reusable components; its datasheet lists more than 60 components and more than 35 exercises, from basic circuits to motor control.
+
+RobotNest also describes seminars, club sets, school-class equipment, and robot rental for clubs and schools. Its downloads area lists a quick-start guide, demonstration projects, datasheets, and learning material, including a visual-programming tool linked to the [[https://github.com/robotnest/ArduBlocks|RobotNest ArduBlocks repository]]. These are supplier descriptions, not an independent assessment of the teaching material or kit performance. The SumoBoy 2.0 and its combined prototyping kit were marked out of stock on their product pages when reviewed on 2026-11-08; check current stock and resource availability before relying on them.
+
 ===== Small autonomous and networked robots =====
 
 ==== Raspberry Pi remote-controlled car ====
