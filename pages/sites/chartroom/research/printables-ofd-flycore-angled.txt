@@ -1,0 +1,28 @@
+====== OFD Flycore Angled foam-dart blaster core ======
+{{tag>research robotics nerf 3d-printing}}
+
+~~META:
+description     = Printables reference for a reusable printed foam-dart blaster core intended for integration into a custom shell.
+type            = research
+status          = reference
+authority       = OFD - OldFusionDesigns Printables listing
+~~
+
+===== Reference summary =====
+
+The Printables listing by OFD - OldFusionDesigns describes Flycore Angled as a mostly complete foam-dart blaster core for integration into a custom design. The creator presents it as a way for designers to focus on the surrounding shell and configuration. The listing says its licence is Creative Commons Attribution-NonCommercial-ShareAlike (CC BY-NC-SA); check the current terms before reuse.
+
+===== Relevance =====
+
+This is a design reference for modular foam-dart projects, including the broader zombie-themed activity idea recorded in [[sites:chartroom:research:printables-nerf-dart-turret-brushless-wifi|the Printables Wi-Fi turret note]]. It describes a handheld blaster core, not a robot turret or a project-approved payload. No integration, safety, performance, or competition suitability has been established by Chartroom.
+
+===== Source =====
+
+  * [OFD Flycore Angled – Design Your Next Printed Blaster! — Printables](https://www.printables.com/model/245307-ofd-flycore-angled-design-your-next-printed-blaste), creator description, model purpose, and stated licence; reviewed 2026-11-08.
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
