@@ -1,0 +1,37 @@
+====== Instructables tiny ESP32 FreeRTOS desktop robot ======
+{{tag>research esp32 freertos desktop-robot wifi-control robotics-education}}
+
+~~META:
+description     = Instructables build for a small ESP32 desktop robot with Wi-Fi control, an OLED face, and FreeRTOS tasks.
+type            = research
+status          = reference
+authority       = Instructables project by shubham_bhatt
+~~
+
+===== Project summary =====
+
+Shubham Bhatt's “Tiny Desktop Robot With ESP32 and FreeRTOS” describes a small, two-motor desk robot called the Dumb Little Robot (DLR), part of the author's Deskbot project. The article was published on 2022-11-06. The build uses an ESP32-WROOM-32D, a 128 × 64 OLED display for animated eyes, a TB6612FNG motor driver, two N20 geared motors, a step-down converter, and a 7.4 V lithium-polymer battery. The MPU6050 inertial measurement unit is listed as optional and the author says it was removed from this version after display animation issues when used with the OLED.
+
+The chassis and gears are 3D-printed in polylactic acid (PLA). The author says the design prioritises small size over strength, reports weak parts and fit issues, and provides editable design files. The author also reports that the robot can tip on slopes greater than 30 degrees with the battery placed at the rear. These are build-specific observations, not independent test results.
+
+===== Control and software =====
+
+The article describes sending movement commands over Wi-Fi using User Datagram Protocol (UDP), with a phone application connecting to the robot's IP address and port 1234 by default. A FreeRTOS task handles the OLED facial animations while movement control runs separately. The author describes this as an early implementation and says the task arrangement could be improved.
+
+The published example includes Wi-Fi credentials directly in the sketch. They are not reproduced here. Treat credentials in public example code as placeholders; use private local configuration and change any credentials that may be real. The article also tells builders not to connect USB and the battery at the same time. Confirm power-path details against the exact development board and circuit before following that warning or changing the power arrangement.
+
+The author presents simultaneous driving and facial animation as implemented in this version. Simultaneous localisation and mapping (SLAM), swarm features, obstacle-aware desk navigation, and further sensors are described as future work or ongoing experiments, not delivered features of the documented build.
+
+===== Relevance and limits =====
+
+This project is a compact example of an ESP32 controlling two brushed motors while running a display task, with a simple phone-to-robot Wi-Fi command path. It may be useful for studying small mobile-robot packaging, low-cost motion control, FreeRTOS task separation, and expressive displays. It does not demonstrate autonomous navigation, a robust safety system, or a design validated for another robot. The author's Arduino IDE and library instructions date from 2022 and should be checked against the current board support package and library versions.
+
+===== Source =====
+
+  * [[https://www.instructables.com/Tiny-Desktop-Robot-With-ESP32-and-FreeRTOS/|Shubham Bhatt, “Tiny Desktop Robot With ESP32 and FreeRTOS”]], Instructables, published 2022-11-06; accessed 2026-11-08. Direct page retrieval returned no readable body, so the hardware list, build observations, software description, and future-work statements were reviewed in the search-indexed extraction of the project steps.
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
