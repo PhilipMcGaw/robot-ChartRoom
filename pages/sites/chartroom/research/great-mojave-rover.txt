@@ -1,0 +1,38 @@
+====== The Great Mojave Rover ======
+{{tag>research rover raspberry-pi solar-power outdoor-robotics 3d-printing}}
+
+~~META:
+description     = Historical work-in-progress desert rover project with solar power, split battery groups, Raspberry Pi computing, and reported outdoor material and power tests.
+type            = research
+status          = reference
+authority       = Bill Debevc's Hackster project account; test results are author-reported
+~~
+
+===== Project summary =====
+
+Bill Debevc's [[https://www.hackster.io/TheGreatMojaveRover/the-great-mojave-rover-847300|Great Mojave Rover]] is a work-in-progress project published in 2018. Its stated aim is an autonomous rover for extended operation in the Mojave Desert, with Global Positioning System (GPS) waypoints, obstacle avoidance, environmental sensing, remote communication, and imaging for terrain reconstruction. The page describes these as goals and planned functions; it does not show that autonomous navigation or unattended multi-week operation was achieved.
+
+The proposed system divides work between a Raspberry Pi Zero and microcontrollers on the rover, and a Raspberry Pi 3B+ base station called Mission Control. The author describes remote instructions retrieved from a server, with later over-the-air updates planned. For power, the initial design lists eight 2.5 W, 5 V solar panels and separate lithium-ion battery groups for computing and propulsion, with another battery group proposed for the mobile hotspot. The separation is intended to prevent propulsion loads from consuming the compute supply.
+
+The rover was primarily 3D-printed in polyethylene terephthalate glycol (PETG), with 8 mm carbon-fibre suspension tubes planned. The author described building a second “sandbox” rover for development and testing before transferring changes to a deployed vehicle. Treat that as a proposed workflow rather than a reported completed validation system.
+
+===== Reported tests and limits =====
+
+The project page reports a 31-day solar-power test for a Raspberry Pi Zero W, with a temperature “well over 120 F” (above approximately 49 °C); it does not provide enough test detail to reproduce or independently verify the result. A separate update says a Raspberry Pi 3B test used more battery power than the author was willing to allocate, prompting a return to the Pi Zero W. The page also reports that an early polylactic acid (PLA) printed version failed after 2.5 hours on artificial grass that the author measured at 170 °F (approximately 77 °C). These are author-reported project observations, not validated operating limits for the materials or electronics.
+
+The published code section contains an alpha microcontroller sketch intended to shut down and power up the Raspberry Pi based on a light-dependent resistor (LDR) reading through a LiPo Shim. It uses blocking delays and comments out a shutdown signal, so it should be treated as an early experiment rather than a ready-made power controller. The project page's 2018 updates describe motor alignment and manual driving as current work and navigation as planned. The later build log linked by Hackster.io was not accessible during this review.
+
+===== Relevance =====
+
+This project is useful as a reference for low-power outdoor robotics: separating compute and propulsion energy budgets, using scheduled activity around energy availability, testing enclosure and print materials in heat, and keeping experimental hardware separate from a deployed vehicle. Its desert conditions and rover form differ from the Robots project's underwater vehicles. The source does not establish marine suitability, robust autonomy, or a reproducible solar-power design.
+
+===== Sources =====
+
+  * Bill Debevc, [[https://www.hackster.io/TheGreatMojaveRover/the-great-mojave-rover-847300|The Great Mojave Rover]], Hackster.io, published 2018-09-03; accessed 2026-11-08.
+  * [[https://www.thingiverse.com/thing:2989944|The Great Mojave Rover Version 1]], Thingiverse link from the Hackster project page; referenced as a version published 2018-07-04.
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
