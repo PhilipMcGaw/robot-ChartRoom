@@ -1,0 +1,43 @@
+====== Modell-Uboot-Spezialitäten: model submarine and ROV components ======
+{{tag>research rov model-submarine propulsion ballast sealing historical-catalogue}}
+
+~~META:
+description     = Historical German-language catalogue reference for model-submarine and ROV propulsion, ballast, and pressure-hull fittings.
+type            = research
+status          = reference
+authority       = Chartroom
+~~
+
+===== Source and scope =====
+
+Modell-Uboot-Spezialitäten is a German-language specialist supplier for model submarines and related electronic and mechanical components. The supplied [[http://modelluboot.de/|website homepage]] timed out during review on 2026-11-08. A 2012 product catalogue hosted on the same domain was accessible and contains several entries explicitly intended for camera robots, research submarines, ROVs, and home-built vehicles. This note records that historical catalogue, not a current product listing.
+
+===== ROV-relevant catalogue entries =====
+
+The [[https://modelluboot.de/Anleitungen/Katalog_ModellUbootSpezialitaeten_2012.pdf|2012 Modell-Uboot-Spezialitäten catalogue]] lists a 45 mm ducted propeller for DeepRover, DF Aviator, ROVs, and home builds. The catalogue claims 4 N of static thrust at 17 W and gives typical operating data of 12 V, 1.5 A, and 7,000 rpm. It describes the nozzle and propeller as resin parts.
+
+The same catalogue describes a complete sealed motor pod for camera robots, research submarines, and surface vessels. It specifies a 500-size electric motor driving a ducted propeller and claims about 7 N static thrust at 12 V and 2 A. Listed dimensions are 55 mm diameter by 140 mm long, with a mass of 345 g in air and about 100 g in water. An illustrated five-pod arrangement is described as able to turn on the spot and move by tilting around the longitudinal and transverse axes.
+
+The catalogue also documents a reversible peristaltic pump and elastic-bladder ballast system. It lists a 100–300 ml ballast volume for 2–5 kg model submarines, or as a trim cell for larger models. The description claims the stopped pump prevents gradual water transfer and lists safeguards for radio-link loss, low voltage, water ingress, and a pressure switch intended to prevent overfilling. These are catalogue descriptions, not independent assessments of the control or safety functions.
+
+For model-submarine pressure hulls, the catalogue lists computer numerical control (CNC)-machined bayonet closure rings with O-rings and gives several diameter options. The closure is described as providing access to internal equipment while retaining a circular pressure-tube cross-section. This is a model-submarine product reference; the catalogue does not establish suitability for a particular ROV depth or pressure housing.
+
+===== Relevance and limitations =====
+
+The catalogue is a useful historical reference for compact ducted propulsion, motor-pod packaging, variable ballast, and serviceable pressure-tube closures. Its units and configuration details can inform comparisons and further research, but the listed thrust, mass, waterproofing, and safety claims have not been independently verified. Do not use the catalogue as a current specification or a validated design basis without current manufacturer documentation and tests for the intended configuration.
+
+===== Sources =====
+
+  * [[http://modelluboot.de/|Modell-Uboot-Spezialitäten website]], user-provided link; homepage timed out during review on 2026-11-08.
+  * [[https://modelluboot.de/Anleitungen/Katalog_ModellUbootSpezialitaeten_2012.pdf|Modell-Uboot-Spezialitäten — 2012 catalogue]], German-language supplier catalogue; propulsion, ballast, and closure entries reviewed 2026-11-08.
+
+===== Related research =====
+
+For vehicle-level pressure-housing and propulsion examples, see [[sites:chartroom:research:rovmaker-edge|RovMaker Edge]], [[sites:chartroom:research:raspberry-pi-submersible-drone-2016|Raspberry Pi submersible drone]], and [[sites:chartroom:research:rov-overview-and-applications|ROV overview and applications]].
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
