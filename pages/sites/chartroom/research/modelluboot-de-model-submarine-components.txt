@@ -20,6 +20,12 @@ The same catalogue describes a complete sealed motor pod for camera robots, rese
 
 The catalogue also documents a reversible peristaltic pump and elastic-bladder ballast system. It lists a 100–300 ml ballast volume for 2–5 kg model submarines, or as a trim cell for larger models. The description claims the stopped pump prevents gradual water transfer and lists safeguards for radio-link loss, low voltage, water ingress, and a pressure switch intended to prevent overfilling. These are catalogue descriptions, not independent assessments of the control or safety functions.
 
+===== Ballast Tank Switch =====
+
+The supplied [[http://modelluboot.de/Elektronik/BTS.html|Ballast Tank Switch (BTS) product page]] could not be fetched during review because the site's robots.txt was unreachable. The manufacturer's [[https://www.modelluboot.de/Anleitungen/AnleitungBTS_E.PDF|BTS user manual]], marked issue 7.2000, was available. It describes a receiver-channel decoder that switches a motor forward, off, or backwards, for uses including a ballast pump, a piston tank, or two solenoid valves. The manual says loss of the radio signal triggers the “blow” output after a selectable delay of 0, 5, 10, or 30 seconds. It also describes a low-voltage trigger and a water-contact input that inhibits diving. A separate DRServo version uses piston-position feedback for proportional ballast control.
+
+These functions and electrical details are the manufacturer's claims in a historical manual; they have not been independently tested, and the 2000 issue does not establish current product availability or suitability for a present-day vehicle. Treat this as a historical control-system reference, not as validated failsafe or ballast design guidance.
+
 For model-submarine pressure hulls, the catalogue lists computer numerical control (CNC)-machined bayonet closure rings with O-rings and gives several diameter options. The closure is described as providing access to internal equipment while retaining a circular pressure-tube cross-section. This is a model-submarine product reference; the catalogue does not establish suitability for a particular ROV depth or pressure housing.
 
 ===== Relevance and limitations =====
@@ -30,6 +36,8 @@ The catalogue is a useful historical reference for compact ducted propulsion, mo
 
   * [[http://modelluboot.de/|Modell-Uboot-Spezialitäten website]], user-provided link; homepage timed out during review on 2026-11-08.
   * [[https://modelluboot.de/Anleitungen/Katalog_ModellUbootSpezialitaeten_2012.pdf|Modell-Uboot-Spezialitäten — 2012 catalogue]], German-language supplier catalogue; propulsion, ballast, and closure entries reviewed 2026-11-08.
+  * [[http://modelluboot.de/Elektronik/BTS.html|Ballast Tank Switch product page]], user-provided link; not retrievable during review because robots.txt was unreachable.
+  * [[https://www.modelluboot.de/Anleitungen/AnleitungBTS_E.PDF|Ballast Tank Switch user manual]], English-language manufacturer manual, issue 7.2000; reviewed 2026-11-08.
 
 ===== Related research =====
 
