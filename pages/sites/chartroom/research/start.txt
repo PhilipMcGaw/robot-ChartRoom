@@ -286,6 +286,7 @@ The links below cover all research notes. Use the related-research links within 
   * [[sites:chartroom:research:sbcshop-motorshield|SB Components MotorShield]]
   * [[sites:chartroom:research:swarmbot-berrybot-reference|BerryBot reference for SwarmBot education]]
   * [[sites:chartroom:research:swarmbot-face|SwarmBot optional face/display module]]
+  * [[sites:chartroom:research:electrodevelo-lcd-custom-character-access-pending|Electrodevelo LCD custom-character page — access pending]]
   * [[sites:chartroom:research:ukmars-micromouse-reference|UKMARS and Micromouse reference]]
   * [[sites:chartroom:research:ultrasonic-robotics-and-open-hardware-batch|Ultrasonic robotics and open hardware]]
   * [[sites:chartroom:research:ultrasonic-rov-micromouse-and-control-batch|Ultrasonic, ROV, and micromouse references]]
