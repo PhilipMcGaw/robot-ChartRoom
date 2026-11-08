@@ -1,0 +1,43 @@
+====== Duino4Projects Arduino board serial link ======
+{{tag>research arduino serial uart communications}}
+
+~~META:
+description     = Reference for a basic TTL UART link between Arduino boards and review notes on the example's limits.
+type            = research
+status          = reference
+authority       = Duino4Projects tutorial; Arduino UNO R3 documentation
+~~
+
+===== Scope =====
+
+The Duino4Projects article, published 2025-12-02, demonstrates serial data exchange between Arduino boards. The basic example crosses the transmit and receive wires and joins the boards' grounds. It uses 9,600 baud and Arduino serial functions such as `Serial.write()`, `Serial.read()`, and `Serial.readBytes()`. A Mega example uses `Serial1` for the board-to-board link while retaining `Serial` for its USB-connected serial monitor.
+
+This is a short-range, logic-level UART example. It is not an RS-485 electrical interface, a radio link, or a complete application protocol.
+
+===== Useful wiring pattern =====
+
+For compatible logic levels, connect the transmitting board's TX to the receiving board's RX, the second TX to the first RX when both directions are needed, and join signal grounds. Confirm each board's voltage levels and pin mapping first. A 5 V Uno signal must not be assumed safe for a 3.3 V-only receiver; use suitable level conversion when required.
+
+On an Uno R3, the hardware UART is on D0/RX and D1/TX and is also connected through the USB-to-serial interface. Sharing those pins with another board can interfere with uploads and serial-monitor use. The Mega has additional hardware UARTs, so using `Serial1` for the inter-board link keeps `Serial` available for USB diagnostics, as in the article.
+
+===== Review notes and limitations =====
+
+The article is a beginner demonstration, not a robust protocol specification. Fixed-length reads need an agreed frame length, timeouts, and handling for partial or malformed messages. In the example, `Serial.readBytes()` fills a character array with five bytes, but does not append a null terminator. Passing that array to `Serial.println()` as a C string can read beyond the received data. A production implementation should use an explicit length or append a terminator only when the buffer has capacity, and should validate all received commands before acting on them.
+
+The article also suggests feeding 5 V into an Uno's `Vin` pin. Arduino's UNO R3 guidance specifies 7–12 V for `Vin`; 5 V belongs on the 5 V rail only when it is a regulated supply and no other supply is connected. Do not copy the article's power wiring without checking the exact board and supply arrangement. Signal wiring and board power are separate design choices.
+
+For the Robots project, this example may help illustrate serial links between local microcontrollers. It does not replace the [[sites:chartroom:architecture:communications|communications architecture]] or its Modbus RTU over RS-485 field-bus design. For the RS-485 physical layer and packet-protocol comparison, see [[sites:chartroom:research:arduinoecia-rs485-arduino-tutorial|Arduino e Cia RS-485 tutorial]] and [[sites:chartroom:research:gammon-rs485-arduino-library|Nick Gammon RS-485 protocol library]].
+
+===== Sources =====
+
+  * [Enhancing Projects with Serial Connectivity Between Arduino Boards](https://duino4projects.com/enhancing-projects-with-serial-connectivity-between-arduino-boards/), Duino4Projects, 2025-12-02; wiring and example code; accessed 2026-11-08.
+  * [UNO R3](https://docs.arduino.cc/retired/boards/arduino-uno-rev3-with-long-pins/), Arduino documentation; UART pins and USB serial connection; accessed 2026-11-08.
+  * [Powering Alternatives for Arduino Boards](https://docs.arduino.cc/learn/electronics/power-pins/), Arduino documentation; UNO R3 `Vin` range and regulator input; accessed 2026-11-08.
+  * [Arduino API reference](https://docs.arduino.cc/learn/programming/reference), Arduino documentation; `readBytes()` reads into a caller-provided buffer; accessed 2026-11-08.
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
