@@ -34,6 +34,14 @@ The assembly manual says to make the bow and stern cones free-flooding because t
 
 The design details, depth figure, and protection functions are supplier documentation from 2005–2006 and have not been independently verified. They do not establish the condition or availability of a current kit, nor the pressure capability of any other hull or component.
 
+===== Delphin model =====
+
+The supplied [[http://modelluboot.de/KITS/Delfin_Ordner/Delfin.html|Delfin model page]] was not accessible during review. The manufacturer's [[https://modelluboot.de/Anleitungen/Katalog_ModellUbootSpezialitaeten_2012.pdf|2012 catalogue]] calls the model “Delphin” and describes a 1:10 reissue following an earlier 1:12 version. It lists a displacement of 2.54 kg, a 500-size motor, four lithium iron phosphate (LiFePO₄) cells, independently controlled diving planes that can also provide roll control, and space for a small ballast tank.
+
+The manufacturer's [[https://www.modelluboot.de/Anleitungen/Anleitung_Delphin_4_10.pdf|assembly manual]], titled “Delfin”, describes a configuration with a propeller beneath the hull, passive flippers, a split tail fluke operated as depth and roll control, and a small rudder behind the propeller. It describes a two-part glass-fibre hull, flexible polyurethane fins, and an aluminium bayonet closure. Its suggested equipment differs from the 2012 catalogue: the manual specifies a six-cell nickel-cadmium battery, three standard servos, and two attitude-control modules, and gives 480 g as an initial ballast estimate with a target residual buoyancy of 50–100 g. These may describe different kit versions; the sources do not explain the differences.
+
+**Relevance:** a historical example of an underwater model using thrust for forward motion and tail control surfaces for depth and roll. The manual's ballast and control details are supplier guidance, not independently verified performance or a validated design for another vehicle. The accessible source material does not establish current kit availability.
+
 For model-submarine pressure hulls, the catalogue lists computer numerical control (CNC)-machined bayonet closure rings with O-rings and gives several diameter options. The closure is described as providing access to internal equipment while retaining a circular pressure-tube cross-section. This is a model-submarine product reference; the catalogue does not establish suitability for a particular ROV depth or pressure housing.
 
 ===== Relevance and limitations =====
@@ -43,12 +51,14 @@ The catalogue is a useful historical reference for compact ducted propulsion, mo
 ===== Sources =====
 
   * [[http://modelluboot.de/|Modell-Uboot-Spezialitäten website]], user-provided link; homepage timed out during review on 2026-11-08.
-  * [[https://modelluboot.de/Anleitungen/Katalog_ModellUbootSpezialitaeten_2012.pdf|Modell-Uboot-Spezialitäten — 2012 catalogue]], German-language supplier catalogue; propulsion, ballast, and closure entries reviewed 2026-11-08.
+  * [[https://modelluboot.de/Anleitungen/Katalog_ModellUbootSpezialitaeten_2012.pdf|Modell-Uboot-Spezialitäten — 2012 catalogue]], German-language supplier catalogue; propulsion, ballast, closure, and Delphin entries reviewed 2026-11-08.
   * [[http://modelluboot.de/Elektronik/BTS.html|Ballast Tank Switch product page]], user-provided link; not retrievable during review because robots.txt was unreachable.
   * [[https://www.modelluboot.de/Anleitungen/AnleitungBTS_E.PDF|Ballast Tank Switch user manual]], English-language manufacturer manual, issue 7.2000; reviewed 2026-11-08.
   * [[http://modelluboot.de/KITS/DELTA_Ordner/DELTA_E.html|DELTA research-submarine model page]], user-provided link; not accessible in the web review tool.
   * [[https://www.modelluboot.de/Anleitungen/Uboot_Katalog_6.pdf|Modell-Uboot-Spezialitäten — 2006 submarine catalogue]], German-language manufacturer catalogue; DELTA entry reviewed 2026-11-08.
   * [[https://modelluboot.de/Anleitungen/Anleitung_DELTA.pdf|DELTA assembly manual]], German-language manufacturer manual, issue 2.2005; reviewed 2026-11-08.
+  * [[http://modelluboot.de/KITS/Delfin_Ordner/Delfin.html|Delfin model page]], user-provided link; not accessible in the web review tool.
+  * [[https://www.modelluboot.de/Anleitungen/Anleitung_Delphin_4_10.pdf|Delfin/Delphin assembly manual]], German-language manufacturer manual; no issue date visible in the retrieved text, reviewed 2026-11-08.
 
 ===== Related research =====
 
