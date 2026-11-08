@@ -193,6 +193,7 @@ The links below cover all research notes. Use the related-research links within 
 
   * [[sites:chartroom:research:open-robotic-platform|Open Robotic Platform (ORP)]]
   * [[sites:chartroom:research:uea-envsoft-otto-mecanum|UEA-envsoft Otto-Mecanum robot]]
+  * [[sites:chartroom:research:sunfounder-picar-x-notenoughtech|SunFounder PiCar-X review by NotEnoughTech]]
   * [[sites:chartroom:research:pololu-robotics-electronics-catalogue|Pololu robotics and electronics catalogue]]
   * [[sites:chartroom:research:piborg-raspberry-pi-robotics|PiBorg Raspberry Pi robotics]]
   * [[sites:chartroom:research:bricolabs-curiosity-btl-rover|Bricolabs Curiosity BTL rover]]

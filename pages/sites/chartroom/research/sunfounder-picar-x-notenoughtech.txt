@@ -1,0 +1,42 @@
+====== SunFounder PiCar-X review by NotEnoughTech ======
+{{tag>research robotics raspberry-pi sunfounder picar-x mobile-robot}}
+
+~~META:
+description     = 2022 hands-on review of the SunFounder PiCar-X Raspberry Pi robot kit, with observations on hardware, software, and operation.
+type            = research
+status          = reference
+authority       = NotEnoughTech review; SunFounder documentation and source repository
+~~
+
+===== Sources =====
+
+  * [[https://notenoughtech.com/raspberry-pi/raspberry-pi-robots/sunfounders-picar-x-for-raspberry-pi-4/|SunFounder's PiCar-X for Raspberry Pi 4 — NotEnoughTech]], dated 2022-09-07.
+  * [[https://docs.sunfounder.com/projects/picar-x-v20/en/latest/|SunFounder PiCar-X Kit documentation]].
+  * [[https://github.com/sunfounder/picar-x|SunFounder picar-x source repository]].
+
+===== Review summary =====
+
+The 2022 review describes a four-wheel car with a steering axis, a two-axis camera mount, a proximity sensor, and line-following and cliff-detection sensors. The author also reports that the motor-controller board has unused inputs and outputs for possible expansion. The review describes programming through SunFounder's Ezblock visual environment or Python examples, plus a mobile application that combines controls with a live camera view.
+
+The reviewer reports that the camera required installing additional libraries, the speakers were unreliable, and some scripts became unresponsive. The author characterises the example obstacle-avoidance behaviour as a starting point that needed further development. These are observations from one review and should not be read as a systematic reliability assessment.
+
+===== Current-source context =====
+
+The review's setup advice refers to a legacy Raspberry Pi OS installation for camera support. SunFounder's current PiCar-X V2.0 documentation lists Raspberry Pi 5, 4, 3, and Zero 2 W as compatible models, and provides current Python and Blockly documentation. This differs from the older review's setup context; use the current manufacturer documentation for supported hardware and installation rather than carrying forward the 2022 operating-system instructions.
+
+SunFounder's repository describes `picar-x` as a Python library for Raspberry Pi. The review and manufacturer sources make this kit a reference for steering, camera pan/tilt, proximity and line sensing, and educational robot programming. They do not establish compatibility with the Robots project's software or hardware, and no PiCar-X components have been adopted.
+
+===== Limitations =====
+
+This is a land-robot kit and a third-party review. It is useful for comparative study of a small Raspberry Pi vehicle and its developer experience, but it provides no evidence for underwater use, environmental sealing, marine propulsion, or the safety and reliability requirements of a project robot. Product availability, kit revisions, and software support can change.
+
+===== Related research =====
+
+  * [[sites:chartroom:research:sunfounder-picrawler-software|SunFounder PiCrawler software ecosystem]] — a separate investigation of SunFounder's software and development tools; PiCar-X and PiCrawler are different platforms.
+  * [[sites:chartroom:research:instructables-picar-autonomous-car-access-pending|Instructables PiCar autonomous-car platform — access pending]] — a separate project with a similar name; its identity and contents have not been verified.
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
