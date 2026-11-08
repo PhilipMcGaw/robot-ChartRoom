@@ -39,6 +39,16 @@ The page opened during review on 2026-11-08, but no readable article text was av
 
 **Status:** Read later / access pending.
 
+===== Dalek label archive =====
+
+**Reference:** [[https://k9-build.blogspot.com/search/label/dalek|Dalek posts]] on Richard Hopkins's //Old dog, new tricks// blog.
+
+The label page was not readable during review on 2026-11-08. Search-indexed excerpts from the blog's May 2020 archive identify posts about synchronising Dalek dome lights with speech and controlling lights and servos from a personal computer. The excerpts mention a transistor-based audio trigger in the first post and an FT232H with a PCA9685 in the second. These are Dalek-specific references; they are not evidence of K-9 hardware or behaviour, and the full posts have not been reviewed.
+
+**Potential relevance:** separate inspiration for synchronised effects and host-to-accessory control. Review the full posts and their designs before drawing any technical conclusions or considering an adaptation.
+
+**Status:** Read later / partial search-index review; label page and full posts not reviewed.
+
 ===== Back buttons and displays =====
 
 ==== Rear/back-button screens and display design ====
