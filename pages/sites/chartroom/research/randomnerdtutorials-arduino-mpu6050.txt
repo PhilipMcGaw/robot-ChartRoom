@@ -1,0 +1,41 @@
+====== Random Nerd Tutorials Arduino MPU-6050 guide ======
+{{tag>research arduino mpu6050 IMU sensors tutorial}}
+
+~~META:
+description     = Arduino tutorial for reading MPU-6050 acceleration, angular velocity, and temperature, with Serial Monitor, Serial Plotter, and OLED examples.
+type            = research
+status          = reference
+authority       = Random Nerd Tutorials; Adafruit library documentation
+~~
+
+===== Scope =====
+
+This note summarises Random Nerd Tutorials' Arduino guide for the MPU-6050. The guide provides wiring and example programs using the Adafruit MPU6050 library. The examples have not been built or tested as part of this review.
+
+===== Tutorial content =====
+
+The guide shows an Arduino reading three-axis acceleration, three-axis angular velocity, and the sensor's temperature, then sending values to the Serial Monitor. It also shows plotting the readings in the Arduino Serial Plotter and displaying them on a 128 × 64 pixel I²C organic light-emitting diode (OLED) display.
+
+The examples use the Adafruit MPU6050, Adafruit Unified Sensor, and Adafruit Bus IO libraries; the OLED example also uses Adafruit SSD1306. The guide describes connecting the module's serial data (SDA) and serial clock (SCL) lines to the Arduino Uno's analogue pins A4 and A5, respectively. Check the pin mapping for the exact Arduino board and the voltage requirements of the exact breakout module before wiring; breakout-board power and logic arrangements can differ.
+
+The basic readings example uses a 500 ms delay between updates. The plotter example uses a 10 ms delay, while the OLED example uses 100 ms. These are tutorial display examples, not a timing or control-loop specification for a moving robot.
+
+===== Sensor interpretation and limitations =====
+
+The MPU-6050 combines a three-axis accelerometer and a three-axis gyroscope. The guide explains that acceleration can be used to estimate pitch and roll when gravity is the dominant acceleration, but acceleration alone cannot provide yaw. Gyroscope readings are angular rates; estimating orientation from them requires integration and will drift without correction. The MPU-6050 has no magnetometer, so it cannot provide magnetic heading on its own.
+
+The guide includes sample stationary readings and notes that sensor offsets should be accounted for. Those values are the tutorial author's example measurements, not calibration constants for another sensor or build. The article demonstrates reading and displaying raw measurements; it does not establish a validated orientation estimate, calibration procedure, or performance for vehicle control.
+
+===== Relevance =====
+
+This is a practical entry point for wiring an MPU-6050 breakout to an Arduino and viewing raw measurements. It complements the existing [[sites:chartroom:research:arduino-processing-mpu6050-artificial-horizon|Arduino and Processing artificial horizon example]], which uses an MPU-6050 motion-processing library to display orientation values and discusses yaw drift.
+
+===== Source =====
+
+  * [Random Nerd Tutorials: Arduino Guide for MPU-6050 Accelerometer and Gyroscope Sensor](https://randomnerdtutorials.com/arduino-mpu-6050-accelerometer-gyroscope/), accessed 2026-11-08.
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
