@@ -1,0 +1,42 @@
+====== Raspberry Pi Robotcontrol JavaScript interface ======
+{{tag>research robotics web-control raspberry-pi javascript websocket flask touchscreen gpio}}
+
+~~META:
+description     = Research reference for TobiasWeis's touchscreen robot-control interface and Raspberry Pi Flask/Socket.IO backend.
+type            = research
+status          = reference
+authority       = TobiasWeis/robotcontrol-javascript repository
+~~
+
+===== Project summary =====
+
+The [[https://github.com/TobiasWeis/robotcontrol-javascript|TobiasWeis/robotcontrol-javascript repository]] describes a browser-based control interface for touch devices, with a Python backend using Flask and Socket.IO. The interface provides two virtual two-axis joysticks and buttons. The README says the controls can be used together and describes a two-way connection for status messages, but does not give measured latency results.
+
+The server source maps joystick and button events to worker classes for linear stepper-motor motion, servo PWM, and binary GPIO outputs. The README reports a test on a Raspberry Pi 3 B+ running Raspbian, controlled from a Samsung Galaxy S7 using Android 8 and Chrome 67. This is the author's reported test setup, not a current compatibility test.
+
+===== Review notes =====
+
+The README's tested environment and the Python 2 syntax in the server and hardware classes indicate an older software stack. The README lists Python, NumPy, and Flask as requirements, while `requirements.txt` lists `gevent-websocket`, `Flask-Cors`, and `flask-socketio`; the checked-out dependency list does not include the README's complete list. The README also leaves unified control-to-action mapping as a future task. Reproduction would require reviewing the code, Python and library versions, and the target GPIO hardware.
+
+The reviewed server source binds to all network interfaces, enables Flask debug mode, sets the development secret key to `secret`, and enables cross-origin requests. No authentication mechanism was visible in the reviewed server file. Treat these as development settings: review and secure the server before connecting it to a robot or exposing it to a network. No licence file or licence declaration was found in the repository root listing, so check the author's terms before reuse.
+
+===== Relevance and limits =====
+
+This repository is an example of separating a touch interface, a WebSocket-based browser/server connection, and robot-side GPIO workers on a small Linux computer. It may help when comparing browser-based operator interfaces and control-message mapping. It is not evidence of a design decision or implementation in the Robots project, and it does not establish safe stopping, command timeouts, authentication, performance, or current operating-system compatibility.
+
+===== Sources =====
+
+  * [[https://github.com/TobiasWeis/robotcontrol-javascript|TobiasWeis/robotcontrol-javascript]], repository README, root listing, and `requirements.txt`; reviewed 2026-11-08.
+  * [[https://github.com/TobiasWeis/robotcontrol-javascript/blob/master/server-websocket/main.py|server-websocket/main.py]], control mapping, server configuration, and Socket.IO handler; reviewed 2026-11-08.
+  * [[https://github.com/TobiasWeis/robotcontrol-javascript/tree/master/server-websocket/robot|server-websocket/robot]], linear, servo, and binary GPIO worker classes; reviewed 2026-11-08.
+
+===== Related research =====
+
+See [[sites:chartroom:research:raspberry-pi-arduino-usb-serial|Raspberry Pi to Arduino USB serial link]], [[sites:chartroom:research:phpoc-arduino-dynamic-web-control|PHPoC Arduino dynamic web control]], and [[sites:chartroom:research:community-robotics-and-sensing-batch|Community robotics and sensing references]].
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
