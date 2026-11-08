@@ -1,0 +1,28 @@
+====== element14 LoRaWAN for Internet of Things applications ======
+{{tag>research lorawan lora iot communications}}
+
+~~META:
+description     = element14 learning module introducing LoRaWAN architecture, device classes, and low-power wide-area network use cases.
+type            = research
+status          = reference
+authority       = element14 Community learning module
+~~
+
+===== Summary =====
+
+The element14 learning module introduces Long Range Wide Area Network (LoRaWAN) as a Low-Power Wide-Area Network (LPWAN) protocol for low-volume sensor telemetry. It distinguishes LoRa radio technology from LoRaWAN's network protocol, and describes a star-of-stars architecture: end devices send to one or more nearby gateways, which use a separate backhaul to reach network services. It also introduces device classes A, B, and C, with different receive availability and power trade-offs.
+
+===== Relevance and limits =====
+
+This is an accessible conceptual introduction to the network path and receive behaviour behind the [[sites:chartroom:research:core-electronics-pico-lorawan-weather-station|Pico LoRaWAN weather-station example]]. It supports understanding LoRaWAN as a telemetry option, not as a direct replacement for a continuous, low-latency vehicle control link. The module was created in 2018 and updated in 2023; its regional frequency, range, data-rate, and product comparisons should not be treated as current specifications. Check current standards, local radio rules, device documentation, and network coverage for a real design. Chartroom has not adopted LoRaWAN for project communications.
+
+===== Source =====
+
+  * [LoRaWAN for IoT Applications — element14 Community](https://community.element14.com/learn/learning-center/essentials/w/documents/3579/lorawan-for-iot-applications), created 2018-04-24 and last updated 2023-10-13; reviewed 2026-11-08.
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
