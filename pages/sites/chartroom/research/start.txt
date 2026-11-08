@@ -49,6 +49,7 @@ The links below cover all research notes. Use the related-research links within 
 
 ==== Underwater robotics and ROVs ====
 
+  * [[sites:chartroom:research:alioli-arduino-rov-software-framework|Alioli Arduino ROV software framework]]
   * [[sites:chartroom:research:angler-fish-rov-thruster|Angler Fish ROV and indexed thruster listing — partial review]]
   * [[sites:chartroom:research:rapp-instruments-tethered-rov|Rapp Instruments tethered ROV]]
   * [[sites:chartroom:research:printables-qysea-fifish-v6-claw|Printables QYSEA FIFISH V6 claw model]]

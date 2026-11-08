@@ -1,0 +1,39 @@
+====== Alioli Arduino ROV software framework ======
+{{tag>research rov arduino platformio embedded-software telemetry mavlink rs-485}}
+
+~~META:
+description     = Author-described Arduino and PlatformIO software framework for the Alioli ROV, surface buoy, and QGroundControl link.
+type            = research
+status          = reference
+authority       = Juanmi Taboada's framework article and juanmitaboada/alioli repository
+~~
+
+===== Architecture =====
+
+Juanmi Taboada's [[https://www.juanmitaboada.com/alioli-rov-submarine-drone-software-framework-for-arduino/|Alioli ROV Submarine Drone Software Framework for Arduino]] describes a system split between an onboard remotely operated vehicle (ROV), a surface buoy, a central server, and the operator's QGroundControl station. The ROV and buoy communicate over an RS-485 bus using the project's binary protocol. The buoy also connects over General Packet Radio Service (GPRS) to a server, which forwards a connection to QGroundControl using MAVLink.
+
+The article describes the ROV software as a set of modules with `setup()` and `loop()` functions. Modules initialise their own hardware and submodules, then perform scheduled tasks when their timing conditions are met. The named ROV modules cover control, sensors, transmission, “brain” decisions, engines, and status monitoring. The sensor list includes gyroscope, power, depth/pressure, temperature, and water-analysis measurements: conductivity, pH, oxidation-reduction potential (ORP), turbidity, and salinity. The buoy software also includes a real-time clock (RTC), sensors, network transmission, and GPS data from its cellular module.
+
+The article says the author chose to write a custom framework after considering ArduSub, citing the project's desired water-analysis and buoyancy-control functions and a wish to learn by building the system. This records the author's stated rationale; it is not an independent comparison of ArduSub's capabilities.
+
+===== Repository and development status =====
+
+The linked [[https://github.com/juanmitaboada/alioli|juanmitaboada/alioli]] repository describes the project as a C/C++ framework developed with PlatformIO. Its README describes `buoy`, `common`, and `rov` as the main software areas and provides build commands for Arduino Mega 2560 and Raspberry Pi Pico. The article also discusses ESP32 development. The repository is licensed under Apache-2.0 and had no published releases listed when reviewed on 2026-11-08.
+
+The article's 2022 roadmap listed MAVLink command forwarding and responses, basic movement and telemetry commands, depth and heading stability, battery and surface-water temperature sensors, camera and on-screen display work, a radio link, enclosures, and pool testing as next steps. These are the author's reported plans at the time; this note does not establish whether they were later completed or validated. The author's earlier engine-controller article reports a bench test in which each motor ran forward and backwards, but this remains the author's test account.
+
+===== Relevance and limits =====
+
+Alioli is a useful reference for separating vehicle-side control and sensors from a surface communications gateway, and for structuring cooperative microcontroller firmware into recurring modules. Its approach may inform architecture comparisons, but it is a separate project with custom hardware, protocols, and software. The source material does not validate it for the Robots project's ROVs or establish production reliability.
+
+===== Sources =====
+
+  * Juanmi Taboada, [[https://www.juanmitaboada.com/alioli-rov-submarine-drone-software-framework-for-arduino/|Alioli ROV Submarine Drone Software Framework for Arduino]], published 2022-09-01; accessed 2026-11-08.
+  * [[https://github.com/juanmitaboada/alioli|juanmitaboada/alioli]], source repository and README, Apache-2.0; accessed 2026-11-08.
+  * Juanmi Taboada, [[https://www.juanmitaboada.com/learn-how-to-build-an-engine-controller-for-your-alioli-submarine-uav-drone/|Learn how to Build an Engine Controller for your Alioli Submarine UAV Drone]], published 2021-09-03; author's motor-test account; accessed 2026-11-08.
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
