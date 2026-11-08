@@ -1,0 +1,49 @@
+====== Moki-ROV2 software reference ======
+{{tag>research rov software raspberry-pi arduino control}}
+
+~~META:
+description     = Historical software repository for a Raspberry Pi and microcontroller ROV control system.
+type            = research
+status          = reference
+authority       = Moki-ROV2 GitHub repository
+~~
+
+===== Project summary =====
+
+[[https://github.com/Moki38/Moki-ROV2|Moki-ROV2]] is a historical software project for piloting a remotely operated vehicle (ROV) from a personal computer. The repository README describes a browser interface served by a Raspberry Pi and a microcontroller connected over serial. The operator uses an Xbox One controller paired with the topside computer. The README explicitly says the software is no longer maintained and requires advanced Linux, Arduino, and hardware skills.
+
+The README's listed setup combines a Raspberry Pi Model B+, Raspberry Pi Camera Module v2, Teensy 3.2 (or Arduino Mega 2560), Blue Robotics MS5837-30BA depth/pressure sensor, Pololu Attopilot 180 A current sensor, Adafruit BNO055 inertial measurement unit (IMU), and a BlueROV2 frame with six thrusters. These are the repository author's stated setup details, not independently verified compatibility or performance results.
+
+===== Software and interfaces =====
+
+The repository describes a Node.js program (`rov.js`) that serves the operator interface and communicates with Arduino-compatible firmware. Its example microcontroller mapping assigns pulse-width modulation (PWM) outputs to six electronic speed controllers (ESCs), two lights, and a camera servo; it also lists analogue voltage/current inputs and an inter-integrated circuit (I²C) connection for sensors. The source includes setup scripts, a systemd service file, configuration examples, Arduino source, and logging utilities.
+
+The README documents controller actions for arming and disarming, reducing or increasing power, lights, camera tilt, attitude input, translation, and depth input. It labels controls for “Hover” and “AutoPilot”; however, the changelog still lists hover and pilot proportional-integral-derivative (PID) control as tasks to fix. Treat the control labels as interface claims, not evidence that those modes were complete or validated.
+
+===== Research value and limits =====
+
+The project is a useful historical example of splitting an ROV operator interface and system services on a Raspberry Pi from low-level sensor and actuator connections on a microcontroller. It may help compare browser-based piloting, serial command paths, logging, and configuration practices. It is not a current software recommendation or an implementation source for the Robots project.
+
+The repository does not provide evidence in the reviewed material for a current supported installation, pressure or water testing, safe actuator behaviour, or compatibility with present-day Raspberry Pi, browser, sensor, or controller versions. Its README points to a project wiki that is no longer available. Do not use the repository's wiring or control descriptions as build instructions without reviewing the exact hardware, code, and safety requirements.
+
+The README gives the software an MIT licence, and `package.json` also declares MIT. The repository metadata does not report a detected licence. Review the source licence files and attribution requirements before reusing or redistributing material.
+
+The changelog's latest listed release is 2.0.3 dated 2017-10-24, while `package.json` declares version 1.0.1. The repository metadata reports its latest push on 2021-02-26. This discrepancy and age reinforce that version and maintenance status should be checked before any attempted use.
+
+===== Sources =====
+
+  * [Moki-ROV2 repository](https://github.com/Moki38/Moki-ROV2), public source repository; README, root file list, `package.json`, and `CHANGELOG` reviewed 2026-11-08.
+  * [Moki-ROV2 README](https://github.com/Moki38/Moki-ROV2/blob/master/README.md), setup, stated hardware, control mapping, and licence text.
+  * [Moki-ROV2 changelog](https://github.com/Moki38/Moki-ROV2/blob/master/CHANGELOG), release history and open tasks.
+  * [Moki-ROV2 package metadata](https://github.com/Moki38/Moki-ROV2/blob/master/package.json), package version, dependencies, and declared licence.
+
+===== Related research =====
+
+For other ROV software and operator-interface references, see [[sites:chartroom:research:ultrasonic-rov-micromouse-and-control-batch|Ultrasonic, ROV, and micromouse references]] and [[sites:chartroom:research:blue-robotics-software-setup|Blue Robotics BlueROV2 software setup]].
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
