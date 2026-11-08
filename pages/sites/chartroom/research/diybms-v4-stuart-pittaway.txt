@@ -36,6 +36,7 @@ This project is distinct from [[sites:chartroom:research:green-bms-smartbms|Gree
 
   * [diyBMS v3 repository](https://github.com/stuartpittaway/diyBMS), user-provided repository; README states v3 is replaced by v4; accessed 2026-11-07.
   * [diyBMS v4 hardware](https://github.com/stuartpittaway/diyBMSv4), controller generations, module versions, programming notes, warnings, and hardware licence; accessed 2026-11-07.
+  * [Module V4.50 exported schematic (PDF)](https://github.com/stuartpittaway/diyBMSv4/blob/master/ModuleV450/export/Schematic.pdf), user-provided source; GitHub viewer and raw PDF fetch were unavailable during this review, so the schematic contents were not independently inspected; accessed 2026-11-08.
   * [ModuleV490-AllInOne README](https://github.com/stuartpittaway/diyBMSv4/tree/master/ModuleV490-AllInOne), cell count, voltage-range, balancing, and experimental-status notes; accessed 2026-11-07.
   * [diyBMS v4 ESP32 firmware](https://github.com/stuartpittaway/diyBMSv4ESP32), controller and module code, target hardware, PlatformIO build method, warnings, and licence; accessed 2026-11-07.
   * [[sites:chartroom:projects:k9-motor-control|K9 Motor Control — Initial Design Notes]], intended battery configuration; accessed 2026-11-07.
