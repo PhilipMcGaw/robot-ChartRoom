@@ -20,7 +20,7 @@ The article connects an Arduino Uno to an MPU-6050 over I²C and sends three ori
 
 ===== Compass terminology and limitations =====
 
-Despite the article's title and display label, the MPU-6050 contains a three-axis accelerometer and a three-axis gyroscope; it has no magnetometer. The displayed azimuth comes from the yaw value calculated from the motion processor's orientation quaternion. It is therefore not a magnetic-compass measurement or an absolute heading reference. With no external heading reference, yaw derived from inertial sensing can drift over time.
+The MPU-6050 is a six-degree-of-freedom (6-DoF) inertial measurement unit, with a three-axis accelerometer and a three-axis gyroscope; it has no magnetometer. Despite the article's title and display label, the displayed azimuth comes from the yaw value calculated from the motion processor's orientation quaternion. It is therefore not a magnetic-compass measurement or an absolute heading reference. With no external heading reference, yaw derived from inertial sensing can drift over time.
 
 The page is a useful demonstration of transporting orientation values from a microcontroller to a desktop visualisation. It does not document quantitative accuracy, calibration results, drift, update latency, or testing during sustained motion. Its displayed scaling and graphics should not be treated as a validated instrument or an autopilot attitude estimate.
 

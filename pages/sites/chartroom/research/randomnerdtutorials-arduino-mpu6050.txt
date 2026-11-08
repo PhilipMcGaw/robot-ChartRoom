@@ -22,7 +22,7 @@ The basic readings example uses a 500 ms delay between updates. The plotter exam
 
 ===== Sensor interpretation and limitations =====
 
-The MPU-6050 combines a three-axis accelerometer and a three-axis gyroscope. The guide explains that acceleration can be used to estimate pitch and roll when gravity is the dominant acceleration, but acceleration alone cannot provide yaw. Gyroscope readings are angular rates; estimating orientation from them requires integration and will drift without correction. The MPU-6050 has no magnetometer, so it cannot provide magnetic heading on its own.
+The MPU-6050 is a six-degree-of-freedom (6-DoF) inertial measurement unit: it combines a three-axis accelerometer and a three-axis gyroscope. It has no magnetometer. The guide explains that acceleration can be used to estimate pitch and roll when gravity is the dominant acceleration, but acceleration alone cannot provide yaw. Gyroscope readings are angular rates; estimating orientation from them requires integration and will drift without correction. The module cannot provide magnetic heading on its own, and these six measurements do not directly provide absolute position.
 
 The guide includes sample stationary readings and notes that sensor offsets should be accounted for. Those values are the tutorial author's example measurements, not calibration constants for another sensor or build. The article demonstrates reading and displaying raw measurements; it does not establish a validated orientation estimate, calibration procedure, or performance for vehicle control.
 
