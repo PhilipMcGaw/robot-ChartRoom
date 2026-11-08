@@ -1,0 +1,41 @@
+====== Wireless Serial ESP8266 UART-to-Wi-Fi bridge ======
+{{tag>research wireless wifi uart esp8266 serial communications}}
+
+~~META:
+description     = Research reference for Martin Danek's ESP8266 UART-to-Wi-Fi bridge hardware and Arduino sketch.
+type            = research
+status          = reference
+authority       = MartinD-CZ Wireless-Serial repository and linked Instructables project
+~~
+
+===== Project summary =====
+
+Martin Danek's [[https://github.com/MartinD-CZ/Wireless-Serial|Wireless-Serial repository]] describes a simple project that uses an ESP8266 as a universal asynchronous receiver-transmitter (UART)-to-Wi-Fi bridge. The repository contains an Arduino sketch, EAGLE Version 8.4.1 board and schematic files for board V1.1, and a parts list. Its README points to an Instructables article, but the link is blank; the supplied [[https://www.instructables.com/Wireless-Serial-UART-for-ArduinoSTM32etc/|Instructables article]] did not return readable body content during review on 2026-11-08. The relationship is likely, but cannot be confirmed from the README link itself.
+
+===== Data path and implementation =====
+
+The sketch connects the ESP8266 to a configured Wi-Fi network and starts a TCP server on port 23. It waits for a network client, prompts that client for a serial baud rate, starts the UART at the entered rate, and forwards received bytes between the network socket and the UART. The sketch sends text prompts and status messages over the same connection. Port 23 is conventionally associated with Telnet, but the sketch does not implement Telnet negotiation; it forwards a simple TCP byte stream. This is a Wi-Fi network bridge, not a point-to-point radio pair or a dedicated serial-radio protocol.
+
+The sketch includes example static IP, gateway, and subnet values, with placeholder text for the Wi-Fi network name and password. These are configuration examples, not project credentials or validated network settings. The code stores one client object and has no evident authentication or encryption layer for the TCP connection. Do not expose this example on an untrusted network or treat it as a secure or safety-rated control link.
+
+The repository's parts list identifies an ESP8266 module, an LD117AS33TR voltage regulator, a 3.3 V zener diode, capacitors, LEDs, and passives. The board and schematic files provide more detail for the V1.1 design. This is a historical hardware/software reference, not a current ESP8266 design assessment.
+
+===== Review and limits =====
+
+The sketch and board files make this repository a more substantive source than the inaccessible Instructables article. They show an example of bridging a local UART peripheral to a network service. They do not provide measured range, throughput, latency, reconnection behaviour, or reliability results. The code appears to accept a client during setup and does not clearly implement client re-acceptance after a disconnect; this needs testing before reuse. The repository does not identify an open-source licence for the hardware files. The sketch header states CC BY-NC-SA 2.5 for the code, so check the stated terms before reusing it.
+
+For the Robots project, this example is relevant only as a small local Wi-Fi-to-UART bridge concept. It does not establish suitability for vehicle command and control, compatibility with current hardware, or a replacement for the project's documented communications architecture. See the [[sites:chartroom:research:duino4projects-arduino-board-serial-link|Duino4Projects wired Arduino serial link]] and [[sites:chartroom:research:raspberry-pi-arduino-usb-serial|Raspberry Pi to Arduino USB serial link]] for other serial-link examples.
+
+===== Sources =====
+
+  * [[https://github.com/MartinD-CZ/Wireless-Serial|MartinD-CZ Wireless-Serial repository]], repository description, Arduino sketch, board V1.1 EAGLE files, and parts list; accessed 2026-11-08.
+  * [[https://github.com/MartinD-CZ/Wireless-Serial/blob/master/sketch/WirelessSerial/WirelessSerial.ino|WirelessSerial.ino]], UART-to-Wi-Fi sketch; sketch header identifies author Martin Danek, 2018, and CC BY-NC-SA 2.5 code terms; accessed 2026-11-08.
+  * [[https://github.com/MartinD-CZ/Wireless-Serial/tree/master/board-V11|Board V1.1 files]], EAGLE board, schematic, and parts list; schematic exported from EAGLE 8.4.1 on 2018-01-15; accessed 2026-11-08.
+  * [[https://www.instructables.com/Wireless-Serial-UART-for-ArduinoSTM32etc/|Wireless Serial (UART) for Arduino/STM32/etc.]], linked project article; page title visible, body not readable during review; accessed 2026-11-08.
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
