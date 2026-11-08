@@ -1,0 +1,33 @@
+====== Raspberry Pi YouTube live streaming with Docker ======
+{{tag>research raspberry-pi docker video streaming ffmpeg}}
+
+~~META:
+description     = Historical reference for containerised Raspberry Pi camera streaming to YouTube Live.
+type            = research
+status          = reference
+authority       = Raspberry Pi article and Alex Ellis tutorial
+~~
+
+===== Published example =====
+
+Raspberry Pi's article, dated 2017-05-30, describes Alex Ellis's example of streaming Raspberry Pi camera video to YouTube Live using a pre-built Docker image containing FFmpeg. The underlying tutorial, dated 2017-05-19, uses a Raspberry Pi Zero and documents Raspbian Jessie; a 2018 update names a separate image for Raspbian Stretch. The tutorial reports that viewers may see a delay of several seconds.
+
+This is a historical example of packaging a camera-to-encoder-to-platform pipeline in a container. The commands, container images, camera tools, operating-system releases, and YouTube streaming requirements are from the 2017–2018 period and have not been checked for present-day operation. The tutorial's use of a YouTube stream key on the command line should not be copied into project scripts or logs without a secure secret-handling method.
+
+===== Relevance and limits =====
+
+The example may help when researching public or private broadcast of a Raspberry Pi camera feed, or when considering a container boundary around video encoding. It does not establish a suitable camera stack for current Raspberry Pi hardware or a low-latency control video path. The reported multi-second delay makes it a different use case from real-time ROV piloting.
+
+For project video-pipeline research, see [[sites:chartroom:research:constantrobotics-video-pipeline|ConstantRobotics video pipeline]] and [[sites:chartroom:research:learnrobotics-rpi-video-streaming|Learn Robotics Raspberry Pi robot video streaming]]. Neither link establishes that this historical YouTube workflow is suitable for the project.
+
+===== Sources =====
+
+  * [YouTube live-streaming made easy](https://www.raspberrypi.com/news/youtube-live-streaming-docker/), Raspberry Pi News; dated 2017-05-30; reviewed 2026-11-07.
+  * [Live stream to YouTube with your Raspberry Pi and Docker](https://blog.alexellis.io/live-stream-with-docker/), Alex Ellis; dated 2017-05-19, with a 2018 Raspbian Stretch update; reviewed 2026-11-07.
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

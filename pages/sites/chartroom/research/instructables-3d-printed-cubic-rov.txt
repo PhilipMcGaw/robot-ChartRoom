@@ -1,0 +1,24 @@
+====== 3D-Printed Cubic ROV ======
+{{tag>research rov 3d-printing product-reference}}
+
+~~META:
+description     = User-supplied Instructable for a 3D-printed cubic ROV; article content could not be reviewed.
+type            = research
+status          = reference
+authority       = Instructables project page
+~~
+
+===== Scope =====
+
+This page records the user-supplied Instructable titled “3D-Printed Cubic ROV”. The page returned no readable article text through the available browser tool, and searches did not locate a reliable copy of its contents. No design details or performance claims are inferred from the title.
+
+===== Source and access =====
+
+  * [3D-Printed Cubic ROV](https://www.instructables.com/3D-Printed-Cubic-ROV/), Instructables project page; access attempted 2026-11-07, but article content was unavailable.
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

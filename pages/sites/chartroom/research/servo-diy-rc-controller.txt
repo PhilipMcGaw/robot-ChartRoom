@@ -1,0 +1,29 @@
+====== SERVO DIY radio-control controller ======
+{{tag>research, radio-control, robotics, controller, education }}
+
+~~META:
+description     = Reference for a DIY radio-control transmitter and receiver project described in SERVO Magazine.
+type            = research
+status          = reference
+authority       = Chartroom
+~~
+
+===== Project summary =====
+
+Steve Koci's [[https://www.servomagazine.com/magazine/article/a-diy-rc-controller-and-so-much-more|SERVO Magazine article, “A DIY RC Controller and So Much More!”]] describes a kit-based radio-control (RC) transmitter and receiver developed with Addicore. The transmitter uses two joysticks, two sliders, and push-buttons. The article says the system uses NRF24L01 radio modules and can control up to six servos and six digital outputs. It also describes use with animatronic props and a small sumo robot.
+
+===== Chartroom relevance and limits =====
+
+The article is a reference for a hands-on controller build, configurable operator inputs, and a simple transmitter/receiver split. It may be useful for education or low-risk bench demonstrations.
+
+The article does not establish radio range, interference performance, link-loss failsafe behaviour, or suitability for an ArduPilot input or an underwater vehicle. Do not treat it as a validated ROV control link or substitute for the established vehicle control path. Check the linked project code, hardware availability, and radio configuration before attempting a reproduction.
+
+===== Source =====
+
+  * Steve Koci, [[https://www.servomagazine.com/magazine/article/a-diy-rc-controller-and-so-much-more|“A DIY RC Controller and So Much More!”]], SERVO Magazine (accessed 2026-11-07).
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

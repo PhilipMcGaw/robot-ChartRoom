@@ -109,6 +109,11 @@ Battery voltage should be measured and included in controller telemetry. The spe
 
 ===== External references =====
 
+  * [[sites:chartroom:research:basicmicro-doctor-who-k9-build|BasicMicro Doctor Who K9 build]] — customer-build reference for a dual encoder-feedback drive; its 24 V scooter motors and RoboClaw 2x15A are not established as compatible with this design.
+  * [[sites:chartroom:research:green-bms-smartbms|Green BMS SmartBMS — candidate BMS research]] — open-source reference only; current ratings and K9 compatibility are not established.
+  * [[sites:chartroom:research:diybms-v4-stuart-pittaway|Stuart Pittaway diyBMS v4]] — the reviewed V490 all-in-one module is recommended for 8–16S packs, and its documentation requires hardware changes for some packs below 13 V; no direct fit for K9's intended 3S pack is established.
+  * [[sites:chartroom:research:arduino-ltc6804-bms-dcaditz|Arduino LTC6804 BMS by dcaditz]] — reported 12S8P LiFePO₄ tutorial design; not a verified fit for K9's intended 3S2P lithium-ion pack.
+  * [[sites:chartroom:research:openbms-kayoumdjedidi|OpenBMS by kayoumdjedidi]] — modular Arduino Nano project; its voltage scope is ambiguous, and the retrieved sketch does not establish working cell-voltage reads or fit for K9's intended pack.
   * [[https://philipmcgaw.com/piwars-traction-system/|K9 / PiWars traction system — PhilipMcGaw.com]]
   * [[sites:chartroom:research:piwars-footleg-motor2040-pid-mecanum|PiWars 2024 — Motor2040 PID control, mecanum drive, and field-oriented driving]] — external example of independent encoder-feedback velocity loops. Its four-wheel mecanum kinematics are not applicable to K9's two-motor differential drive, but the motor-control abstraction is relevant.
   * [[https://philipmcgaw.com/|PhilipMcGaw.com]] — motor/gearbox background article referenced during the discussion.\n  * [[https://teamsc.co.uk/|Team Short Circuit (Team SC)]] — supplier.\n  * [[https://teamsc.co.uk/product/18v_gearbox/|Team SC 18 V all-metal gearbox motor assembly]] — supplier listing for the customised 18 V RS550 / 36:1 / approximately 550 RPM assembly.\n  * [[https://teamsc.co.uk/product/tsc-gearbox-battenbox/|Team SC TSC Battenbox gearbox]] — separate product listing; includes a 2.1 A run-current statement for RS550 options, applicability to the K9 assembly to be confirmed.

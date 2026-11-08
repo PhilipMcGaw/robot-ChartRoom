@@ -1,0 +1,32 @@
+====== Arduino LineFolower Robot ======
+{{tag>research robotics arduino line-following pcbway}}
+
+~~META:
+description     = Brief PCBWay project-share entry for an Arduino Uno line-following robot shield; detailed circuit information was not available in the page text.
+type            = research
+status          = reference
+authority       = PCBWay project-share page
+~~
+
+===== Scope =====
+
+This note records the PCBWay project-share page titled “Arduino LineFolower Robot” by Mariano Carrillo Romero. The page describes the project as a shield for the Arduino Uno with the components needed to make a line-following robot.
+
+===== Limitations =====
+
+The readable page text does not identify the circuit, components, sensor arrangement, motor driver, firmware, or build results. The project title and short description are not enough to reproduce or assess the design. No source files or detailed build instructions were reviewed here.
+
+===== Source =====
+
+  * [Arduino LineFolower Robot](https://www.pcbway.com/project/share/Arduino_LineFolower_Robot.html), PCBWay Community project by Mariano Carrillo Romero, dated 2016-08-04; accessed 2026-11-07.
+
+===== Related research =====
+
+For documented educational robot platforms with line-following features, see [[sites:chartroom:research:ukmars-micromouse-reference|UKMARS and Micromouse reference]] and [[sites:chartroom:research:swarmbot-berrybot-reference|BerryBot reference for SwarmBot education]].
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

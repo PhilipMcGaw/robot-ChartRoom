@@ -1,0 +1,27 @@
+====== Mooncrest Models: Robot Dog Sensor and Antenna Products ======
+{{tag>research, robotics, sensor, product-reference }}
+
+~~META:
+description     = User-supplied Mooncrest Models product links; page content could not be reviewed.
+type            = research
+status          = reference
+authority       = Mooncrest Models product page
+~~
+
+===== Scope =====
+
+This page records user-supplied Mooncrest Models product links titled “Robot Dog Sensor Eye”, “Robot Dog Antennas (ears)”, “Robot Dog Tail Gator”, and “Robot-dog Control panel”. The product pages could not be retrieved through the available web tools, and searches did not locate a reliable copy of their contents. No technical description or product capability is inferred from the titles.
+
+===== Source and access =====
+
+  * [Robot Dog Sensor Eye](http://www.mooncrest-models.co.uk/store.htm#!/Robot-Dog-Sensor-Eye/p/408241175/category=4490042), Mooncrest Models product link; access attempted 2026-11-07, but page content was unavailable.
+  * [Robot Dog Antennas (ears)](http://www.mooncrest-models.co.uk/store.htm#!/Robot-Dog-Antennas-ears/p/579687294/category=4490042), Mooncrest Models product link; access attempted 2026-11-07, but page content was unavailable.
+  * [Robot Dog Tail Gator](http://www.mooncrest-models.co.uk/store.htm#!/Robot-Dog-Tail-Gator/p/577443505/category=4490042), Mooncrest Models product link; access attempted 2026-11-07, but page content was unavailable.
+  * [Robot-dog Control panel](http://www.mooncrest-models.co.uk/store.htm#!/Robot-dog-Control-panel/p/81127480/category=4490042), Mooncrest Models product link; access attempted 2026-11-07, but page content was unavailable.
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

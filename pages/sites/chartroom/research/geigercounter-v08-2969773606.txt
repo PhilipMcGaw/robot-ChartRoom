@@ -1,0 +1,29 @@
+====== GeigerCounter V0.8 DIY kit ======
+{{tag>research education geiger-counter radiation-sensing arduino matlab }}
+
+~~META:
+description     = Repository reference for the GeigerCounter V0.8 DIY board and its Arduino and MATLAB code.
+type            = research
+status          = reference
+authority       = Chartroom
+~~
+
+===== Project summary =====
+
+The [[https://github.com/2969773606/GeigerCounter-V0.8|GeigerCounter-V0.8 repository]] describes an open-source do-it-yourself Geiger counter kit and lists Arduino and MATLAB code. Its README says the kit includes an assembled GeigerCounter V0.8 board, power cable, acrylic dust cover, and mounting pillars. The repository file list includes a schematic, Arduino and MATLAB code archives, a high-voltage calibration document, and parameter/specification documents for J305 and M4011 tubes.
+
+===== Relevance and limits =====
+
+This is a hardware and software reference for an integrated Geiger-counter board, separate from the [[sites:chartroom:research:electrodevelo-geiger-counter|Electrodevelo Arduino project]] and the [[sites:chartroom:research:sensorsiot-cajoe-geiger-counter|SensorsIot CAJOE board project]]. The repository describes the board as assembled and tested, but no independent performance evidence is recorded here.
+
+The presence of a file titled “High Voltage Calibration” does not by itself establish calibration of radiation measurements. The schematic, code archives, calibration document, and tube specification files have not been reviewed for this note. Do not treat the repository's application claims as validated instrument performance.
+
+===== Source =====
+
+  * [[https://github.com/2969773606/GeigerCounter-V0.8|2969773606/GeigerCounter-V0.8 repository]] (accessed 2026-11-07).
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

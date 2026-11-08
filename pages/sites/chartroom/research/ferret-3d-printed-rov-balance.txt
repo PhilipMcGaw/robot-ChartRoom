@@ -1,0 +1,44 @@
+====== The Ferret 3D-printed ROV and balance estimation ======
+{{tag>research rov 3d-printing buoyancy centre-of-mass blue-robotics-forum}}
+
+~~META:
+description     = Forum case study of a compact 3D-printed pipe-inspection ROV and the practical effort of estimating mass and buoyancy.
+type            = research
+status          = reference
+authority       = Blue Robotics Community Forum build log
+~~
+
+===== Scope =====
+
+This note summarises Luc Rossi's Blue Robotics Community Forum build log for “The Ferret” (French name “Furet”) and the follow-up discussion linked by the user. The builder describes a compact, streamlined remotely operated vehicle (ROV) developed for pipe inspection. The thread is a participant build account, not a design specification.
+
+===== Reported vehicle =====
+
+The builder says the vehicle was developed for inspection inside a DN600 pipe, described as having a 600 mm internal diameter, that could only be reached through a valve opening of less than 200 mm. The described build uses a 4-inch (approximately 100 mm) waterproof enclosure for electronics and a custom battery. Four modified Blue Robotics T200 thrusters, including removed nozzles and mounts and reduced propeller diameters, are integrated into a 3D-printed hull.
+
+The builder reports that early tests revealed balance and handling problems. After modifications, including lengthening the assembly, the builder said the tests were conclusive and that the vehicle was ready to go on a job. The thread does not report a specific inspection outcome or provide test data, depth limits, or independent verification.
+
+===== Balance-estimation discussion =====
+
+In the reply linked by the user, a forum participant asks about software to estimate centre of mass and centre of buoyancy across component configurations, potentially including suggestions for ballast or buoyancy foam. The builder replies that they used a spreadsheet containing component mass, volume, and position data, but initially entered only the most significant parts because data entry took time. The builder later found that connectors, wiring, bolts, and nuts also affected the balance.
+
+The proposed software tool was an idea raised in the discussion, not an implemented or validated project result. The exchange highlights the importance of keeping a component inventory complete enough for the accuracy required, and recording the position as well as mass and displaced volume of each part.
+
+===== Relevance and limitations =====
+
+This is a useful reference for compact vehicle packaging and for the practical challenge of estimating mass and buoyancy in a customised ROV. It does not provide a downloadable model, complete mass-properties dataset, reproducible calculations, pressure qualification, or detailed performance evidence. The modified T200 configuration and 3D-printed hull should not be copied without separate engineering review and testing.
+
+===== Source =====
+
+  * [The Ferret: a 3D-printed ROV, reply 2](https://discuss.bluerobotics.com/t/the-ferret-a-3d-printed-rov/9896/2), Blue Robotics Community Forum. The topic began 2021-06-11; the latest visible update is 2025-07-02. Accessed 2026-11-07.
+
+===== Related research =====
+
+For another Blue Robotics forum build log, see [[sites:chartroom:research:blue-robotics-forum-3d-printed-rov|Blue Robotics forum: 3D-printed DIY ROV]]. For broader ROV references, see the [[sites:chartroom:research:start|research catalogue]].
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

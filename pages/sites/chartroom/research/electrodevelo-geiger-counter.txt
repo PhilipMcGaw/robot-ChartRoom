@@ -1,0 +1,27 @@
+====== Electrodevelo Arduino Geiger counter ======
+{{tag>research education arduino geiger-counter radiation-sensing }}
+
+~~META:
+description     = Education-project reference for an Arduino Geiger counter with pulse counting and an OLED display.
+type            = research
+status          = reference
+authority       = Chartroom
+~~
+
+===== Project summary =====
+
+The [[https://sites.google.com/view/electrodevelo/home-page/education-projects/geiger-counter|Electrodevelo Geiger Counter page]] provides Arduino code for a Geiger–Müller counter project. The code counts detector pulses using an external interrupt, calculates a rolling count-per-minute value from one-second readings over a ten-second window, and displays the result on an OLED using Adafruit GFX and SSD1331 libraries. It also converts the count value to a displayed microsievert-per-hour value using a fixed divisor of 151.
+
+===== Relevance and limits =====
+
+This is a reference for pulse counting, rolling-window display, and an introductory radiation-sensing electronics project. The page does not identify the Geiger–Müller tube or provide a source or calibration method for the fixed count-to-dose conversion. Treat the displayed dose-rate value as an unverified code calculation, not a calibrated measurement. The code and setup have not been independently tested for Chartroom use.
+
+===== Source =====
+
+  * [[https://sites.google.com/view/electrodevelo/home-page/education-projects/geiger-counter|Electrodevelo: Geiger Counter]] (accessed 2026-11-07).
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

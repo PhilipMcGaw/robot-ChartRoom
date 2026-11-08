@@ -1,0 +1,31 @@
+====== SensorsIot CAJOE Geiger counter ======
+{{tag>research education arduino geiger-counter radiation-sensing iot }}
+
+~~META:
+description     = Reference for an Arduino project using the RadiationD v1.1 CAJOE Geiger counter board.
+type            = research
+status          = reference
+authority       = Chartroom
+~~
+
+===== Project summary =====
+
+The [[https://github.com/SensorsIot/Geiger-Counter-RadiationD-v1.1-CAJOE-|SensorsIot Geiger-Counter repository]] describes Arduino code for the RadiationD v1.1 (CAJOE) Geiger counter board. The README lists an OLED display, ThingSpeak data upload, and IFTTT alerts. It reports counts per minute on the display, counts per hour sent to ThingSpeak, and an alert condition at 200 counts per minute. Its wiring table assigns the detector output to GPIO 26 and the OLED I²C lines to GPIO 5 and GPIO 4.
+
+The repository also includes documents named for an M4011 Geiger tube specification and calibration. This note records their presence only; their contents and any calibration method have not been assessed here.
+
+===== Relevance and limits =====
+
+This is a reference for connecting a pulse-output Geiger counter board to an Arduino-based display and network reporting path. It is a separate project from the [[sites:chartroom:research:electrodevelo-geiger-counter|Electrodevelo Arduino Geiger counter]].
+
+The README reports count values and an alert threshold, but does not establish calibrated dose measurements or the suitability of the project for safety decisions. Review the hardware documentation, calibration method, and code before relying on its outputs.
+
+===== Source =====
+
+  * [[https://github.com/SensorsIot/Geiger-Counter-RadiationD-v1.1-CAJOE-|SensorsIot/Geiger-Counter-RadiationD-v1.1-CAJOE- repository]] (accessed 2026-11-07).
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

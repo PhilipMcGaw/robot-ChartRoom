@@ -1,0 +1,48 @@
+====== Stuart Pittaway diyBMS v4 ======
+{{tag>research battery-management bms lithium-ion k9 rov}}
+
+~~META:
+description     = Review of diyBMS v4 as an open hardware battery-monitoring and management reference.
+type            = research
+status          = reference
+authority       = Maintainer's diyBMS v4 hardware and firmware repositories
+~~
+
+===== Scope and version status =====
+
+The user-provided [[https://github.com/stuartpittaway/diyBMS|diyBMS repository]] is version 3. Its README says that version 3 has been replaced by [[https://github.com/stuartpittaway/diyBMSv4|diyBMS v4]]. This note therefore focuses on the maintainer's v4 hardware and the linked ESP32 firmware, while retaining the supplied v3 link as a historical reference.
+
+===== Published v4 design =====
+
+The maintainer describes v4 as a controller plus cell-monitoring modules, with one module per series cell for the individual-cell design. The latest controller hardware uses an ESP32 and includes CAN bus, RS-485, SD-card logging, relay and solid-state relay outputs, and multiple inputs. The repository notes that some hardware features are not yet usable from the software. It also retains a separate legacy ESP8266 controller design, so firmware and build instructions must match the selected controller generation.
+
+The separate [[https://github.com/stuartpittaway/diyBMSv4ESP32|ESP32 firmware repository]] says its code is for the new controller hardware (after February 2021) and an ESP32 DevKit-C. It uses PlatformIO for compiling and includes controller, board-test, and cell-module programs. This is a specific firmware/hardware pairing; it does not by itself establish that another ESP32 board or a different controller revision is compatible.
+
+The v4 hardware repository identifies two newer module approaches: the V450 single-cell module, based on an ATtiny1624 and requiring a UPDI programmer, and the V490 all-in-one monitoring board, described as recommended for 8–16-series-cell packs. The V490 board itself does not provide balancing; a separate passive-balancer board is available, with a stated 200 mA per-cell balance current. The V490 README calls the board experimental/prototype hardware. The repository also retains older single-cell module designs, including V440, which it marks as legacy; their hardware details should not be applied to V450 or V490.
+
+The V490 documentation also warns that its regulator arrangement needs changes for packs whose voltage can fall below 13 V. It gives instructions to omit specified components for lower-voltage configurations and says that modified arrangement must not be used above 24 V. The README says that arrangement was tested by the author, but this does not establish a validated configuration for every lower-voltage pack. In particular, the reviewed documents do not establish a ready-made configuration for K9's intended 3S2P lithium-ion pack.
+
+The maintainer explicitly warns against using the DIY system in safety-critical or life-risk situations and states that it is supplied without warranty. Both the hardware and ESP32 firmware repositories list a Creative Commons Attribution-NonCommercial-ShareAlike 2.0 UK: England & Wales licence. Review the licence terms before reusing or adapting either repository.
+
+===== Relevance to K9 and ROV work =====
+
+K9's current design notes describe an intended 3S2P 21700 lithium-ion pack. The V490 all-in-one board's recommendation of 8–16S and its under-13 V hardware changes mean that it is not a direct-fit candidate on the evidence reviewed. Other module configurations may exist, but no 3S implementation was verified for this note. The chemistry and series count alone would not establish suitability; cell limits, current sensing, contactor or relay ratings, fuse coordination, charging, fault response, and motor transients would still need review against measured K9 loads.
+
+For an ROV, v4 may be a useful reference for cell monitoring, controller communications, and optional balancing. Suitability remains undetermined until the vehicle's pack configuration, current demands, battery placement, isolation, enclosure conditions, and required fault response are known. The repository's warning and lack of warranty mean that it should not be treated as an approved protective device for a deployed vehicle without a full design review and validation.
+
+This project is distinct from [[sites:chartroom:research:green-bms-smartbms|Green BMS SmartBMS]]. Both are open DIY battery-management references, but their hardware, firmware, cell-module arrangements, and published ratings must be assessed separately; a feature or rating in one must not be attributed to the other.
+
+===== Sources =====
+
+  * [diyBMS v3 repository](https://github.com/stuartpittaway/diyBMS), user-provided repository; README states v3 is replaced by v4; accessed 2026-11-07.
+  * [diyBMS v4 hardware](https://github.com/stuartpittaway/diyBMSv4), controller generations, module versions, programming notes, warnings, and hardware licence; accessed 2026-11-07.
+  * [ModuleV490-AllInOne README](https://github.com/stuartpittaway/diyBMSv4/tree/master/ModuleV490-AllInOne), cell count, voltage-range, balancing, and experimental-status notes; accessed 2026-11-07.
+  * [diyBMS v4 ESP32 firmware](https://github.com/stuartpittaway/diyBMSv4ESP32), controller and module code, target hardware, PlatformIO build method, warnings, and licence; accessed 2026-11-07.
+  * [[sites:chartroom:projects:k9-motor-control|K9 Motor Control — Initial Design Notes]], intended battery configuration; accessed 2026-11-07.
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

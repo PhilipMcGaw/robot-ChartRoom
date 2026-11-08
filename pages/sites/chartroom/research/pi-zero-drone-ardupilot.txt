@@ -1,0 +1,33 @@
+====== Pi Zero drone with ArduPilot ======
+{{tag>research, ardupilot, arducopter, raspberry-pi, companion-computer, drone }}
+
+~~META:
+description     = Reference for a Pi Zero W companion computer paired with an ArduPilot flight controller.
+type            = research
+status          = reference
+authority       = Chartroom
+~~
+
+===== What the build uses =====
+
+The [[https://dojofordrones.com/pi-zero-drone/|Drone Dojo Pi Zero drone guide]] describes a 250 mm quadcopter build. The guide identifies ArduCopter as its flight software and a Matek F405-STD as the flight controller. A Raspberry Pi Zero W is connected to the flight controller over a serial port as a companion computer. The Pi does not run the flight-control firmware in this design.
+
+ArduPilot's [[https://ardupilot.org/plane/docs/common-matekf405.html|Matek F405-STD documentation]] currently lists a dedicated MatekF405-STD firmware target. It also warns that the F405 board's flash-memory limit means that not all ArduPilot features are included. The exact flight-controller variant matters; ArduPilot lists different firmware targets for the STD and CTR versions and does not support the older AIO and OSD variants by default.
+
+===== Relevance and limits =====
+
+This is a documented example of using a small Raspberry Pi as a companion computer beside an ArduPilot flight controller. ArduPilot describes companion computers as Linux-based onboard computers communicating with the autopilot over MAVLink.
+
+The guide is for ArduCopter on a small aerial vehicle. It does not establish that this flight controller, wiring, or configuration is suitable for ArduSub or an underwater vehicle. The guide also notes that its F405-STD board was being discontinued; check current availability and exact board revision before using the build as a parts list.
+
+===== Sources =====
+
+  * Jack Douglas, [[https://dojofordrones.com/pi-zero-drone/|Build A DIY Pi Zero Drone]], Drone Dojo, 2022-08-23 (updated 2023-03-27; accessed 2026-11-07).
+  * [[https://ardupilot.org/plane/docs/common-matekf405.html|Mateksys F405-STD and variants]], ArduPilot documentation (accessed 2026-11-07).
+  * [[https://ardupilot.org/copter/docs/common-companion-computers.html|Companion Computers]], ArduPilot Copter documentation (accessed 2026-11-07).
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

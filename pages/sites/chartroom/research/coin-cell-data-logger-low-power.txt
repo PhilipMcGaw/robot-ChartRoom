@@ -1,0 +1,33 @@
+====== Coin-cell data logger and low-power design ======
+{{tag>research, datalogger, low-power, battery, environmental-sensing }}
+
+~~META:
+description     = Primary and secondary references for the Cave Pearl low-power Pro Mini logger and e360 classroom variant.
+type            = research
+status          = reference
+authority       = Chartroom
+~~
+
+===== Project and battery evidence =====
+
+Hackaday's 2022 article, [[https://hackaday.com/2022/03/14/careful-cuts-lets-logger-last-a-year-on-a-coin-cell/|“Careful Cuts Lets Logger Last A Year On A Coin Cell”]], summarises a low-power logger build. The Cave Pearl Project's [[https://thecavepearlproject.org/2022/03/09/powering-a-promini-logger-for-one-year-on-a-coin-cell/|primary 2022 write-up]] describes the two-part Pro Mini logger and reports specific battery run tests: one configuration with a BH1750 light sensor and 32 kB EEPROM ran for more than 12 months at 30-minute sampling intervals, while a BMP280 configuration completed 11 months. The project author reports that these tests used the same CR2032 cell throughout and no rail-buffer capacitor. These are source-reported results for those configurations, not a general battery-life guarantee.
+
+The primary write-up describes low-power measures including removing the Pro Mini voltage regulator and power LED, disabling most DS3231 real-time-clock logic, sleeping between samples, and storing data in EEPROM rather than using a higher-drain SD card. Its engineering discussion identifies sensor load, sampling interval, memory capacity, temperature, battery voltage droop, and data-download intervals as factors in runtime.
+
+The supplied [[https://thecavepearlproject.org/2023/12/01/the-e360-a-classroom-data-logger-for-science/|2023 e360 classroom logger page]] describes a later variant based on the two-module logger. It uses a 3.3 V, 8 MHz Pro Mini, RTC, and EEPROM, with analogue and I²C sensors. The page says the one-second RTC alarm makes it unsuitable for high-frequency sampling, EEPROM capacity limits runtime, and coin-cell voltage droop limits the stated operating range to temperatures above −10 °C. It reports that the 50 mL centrifuge-tube housing is waterproof to about 8 m depth. Those statements are specific to the described e360 setup and are not independent project validation.
+
+===== Chartroom relevance =====
+
+This is a reference for low-power data acquisition and for reviewing the full board-level energy budget, including components that remain powered during sleep. It may inform future standalone environmental-sensor work. The Cave Pearl Project reports underwater housing use, but its depth statement applies to its stated tube housing and is not validation of a Chartroom enclosure, sensor payload, deployment, or coin-cell performance in a Chartroom robot or buoy. The board modifications and battery results are specific to these logger designs.
+
+===== Source =====
+
+  * Bryan Cockfield, [[https://hackaday.com/2022/03/14/careful-cuts-lets-logger-last-a-year-on-a-coin-cell/|Hackaday article]], 2022-03-14 (accessed 2026-11-07).
+  * Cave Pearl Project, [[https://thecavepearlproject.org/2022/03/09/powering-a-promini-logger-for-one-year-on-a-coin-cell/|2-Part ProMini Logger that runs >1 year on a Coin Cell]], 2022-03-09 (accessed 2026-11-07).
+  * Cave Pearl Project, [[https://thecavepearlproject.org/2023/12/01/the-e360-a-classroom-data-logger-for-science/|The e360: A DIY Classroom Data Logger for Science]], 2023-12-01 (accessed 2026-11-07).
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

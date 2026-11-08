@@ -28,8 +28,22 @@ Prefer primary sources and stable official documentation. Preserve provenance ra
 
 The links below cover all research notes. Use the related-research links within a note to move between sources on the same topic.
 
+==== Sources awaiting review ====
+
+  * [[sites:chartroom:research:printables-starrydream-collection|Printables collection by StarryDream_715457 — access pending]]
+  * [[sites:chartroom:research:instructables-3d-printed-cubic-rov|3D-Printed Cubic ROV — access pending]]
+  * [[sites:chartroom:research:mooncrest-models-robot-dog-sensor-eye|Mooncrest Models robot dog product links — access pending]]
+  * [[sites:chartroom:research:sparkfun-news-7930|SparkFun news article 7930 — access pending]]
+
 ==== Underwater robotics and ROVs ====
 
+  * [[sites:chartroom:research:blue-robotics-navigator-flight-controller|Blue Robotics Navigator flight controller]]
+  * [[sites:chartroom:research:blue-robotics-official-resources|Blue Robotics official resources]]
+  * [[sites:chartroom:research:raspberry-pi-submersible-drone-2016|Raspberry Pi submersible drone (2016)]]
+  * [[sites:chartroom:research:turbo-super-submarine-hackadayio|Turbo Super Submarine]]
+  * [[sites:chartroom:research:ferret-3d-printed-rov-balance|The Ferret 3D-printed ROV and balance estimation]]
+  * [[sites:chartroom:research:blue-robotics-forum-3d-printed-rov|Blue Robotics forum: 3D-printed DIY ROV]]
+  * [[sites:chartroom:research:homebuilt-rovs-forum|Homebuilt ROVs Forum]]
   * [[sites:chartroom:research:bit-driven-circuits-rov|Bit Driven Circuits submersible ROV]]
   * [[sites:chartroom:research:blue-dot-model-c-rov|Blue Dot Model C ROV]]
   * [[sites:chartroom:research:diyrov-google-sites-build|DIY ROV Google Sites build]]
@@ -83,8 +97,24 @@ The links below cover all research notes. Use the related-research links within 
   * [[sites:chartroom:research:luke-ditria-ai-wildlife-monitor|Luke Ditria AI wildlife monitor]]
   * [[sites:chartroom:research:maka-niu-deep-sea-platform|Maka Niu deep-sea imaging platform]]
 
+==== Battery and solar power ====
+
+  * [[sites:chartroom:research:mopi-raspberry-pi-power|MoPi 2 Raspberry Pi mobile power]]
+  * [[sites:chartroom:research:openbms-kayoumdjedidi|OpenBMS by kayoumdjedidi]]
+  * [[sites:chartroom:research:arduino-ltc6804-bms-dcaditz|Arduino LTC6804 BMS by dcaditz]]
+  * [[sites:chartroom:research:green-bms-smartbms|Green BMS SmartBMS — candidate BMS research]]
+  * [[sites:chartroom:research:diybms-v4-stuart-pittaway|Stuart Pittaway diyBMS v4]]
+  * [[sites:chartroom:research:fugu-1kw-mppt-solar-charge-controller|FUGU DIY 1 kW MPPT solar charge controller]]
+
 ==== Buoys and environmental sensing ====
 
+  * [[sites:chartroom:research:arduino-3d-printed-personal-weather-station|Arduino 3D-printed personal weather station]]
+  * [[sites:chartroom:research:fieldkit-environmental-sensing-platform|FieldKit environmental sensing platform]]
+  * [[sites:chartroom:research:photonpower-zero-solar-pi-zero|PhotonPower Zero solar Raspberry Pi Zero power board]]
+  * [[sites:chartroom:research:solar-powered-wifi-weather-station-v40|Solar Powered WiFi Weather Station V4.0]]
+  * [[sites:chartroom:research:stall-weatherman-home-automation|STALL WEATHERMAN home-automation weather station]]
+  * [[sites:chartroom:research:coin-cell-data-logger-low-power|Coin-cell data logger and low-power design]]
+  * [[sites:chartroom:research:arduino-weather-station-miksrv|Miksrv Arduino Weather Station]]
   * [[sites:chartroom:research:geo-positioning-buoy-project|Geo-Positioning Buoy Project]]
   * [[sites:chartroom:research:iot-field-lessons-solar-cellular-bus-signs|Solar cellular bus-sign field lessons]]
   * [[sites:chartroom:research:open-source-ocean-buoy-references|Open-source ocean buoy references]]
@@ -102,6 +132,17 @@ The links below cover all research notes. Use the related-research links within 
 
 ==== Robotics software and development environments ====
 
+  * [[sites:chartroom:research:raspberry-pi-youtube-live-docker|Raspberry Pi YouTube live streaming with Docker]]
+  * [[sites:chartroom:research:piwars-2024-disaster-zone-challenges|Pi Wars 2024 “Disaster Zone” challenges]]
+  * [[sites:chartroom:research:raspberry-pi-zram-swap|Raspberry Pi zRAM swap reference]]
+  * [[sites:chartroom:research:diy-hall-effect-hid-rov-controller|DIY Hall-effect HID controls as an ROV controller reference]]
+  * [[sites:chartroom:research:arduinoecia-rs485-arduino-tutorial|Arduino e Cia Arduino RS-485 tutorial]]
+  * [[sites:chartroom:research:gammon-rs485-arduino-library|Nick Gammon RS-485 Arduino protocol library]]
+  * [[sites:chartroom:research:desktop-self-driving-rc-car-treadmill|Desktop self-driving RC car and treadmill test setup]]
+  * [[sites:chartroom:research:pico-flight-sim-switch-box|Raspberry Pi Pico flight-simulator switch box]]
+  * [[sites:chartroom:research:phpoc-arduino-dynamic-web-control|PHPoC Arduino dynamic web control]]
+  * [[sites:chartroom:research:servo-diy-rc-controller|SERVO DIY radio-control controller]]
+  * [[sites:chartroom:research:pi-zero-drone-ardupilot|Pi Zero drone with ArduPilot]]
   * [[sites:chartroom:research:small-robot-code-test-platform|Small robot as a code test platform — ROV and PiWars]]
   * [[sites:chartroom:research:piwars-footleg-motor2040-pid-mecanum|PiWars 2024 — Motor2040 PID control, mecanum drive, and field-oriented driving]]
   * [[sites:chartroom:research:piwars-pidrogen-interchangeable-tracks-mecanum|PiWars 2024 — Interchangeable tracks and mecanum wheels]]
@@ -111,6 +152,19 @@ The links below cover all research notes. Use the related-research links within 
 
 ==== Robotics, education, and hardware ====
 
+  * [[sites:chartroom:research:beatty-robotics-sojourner-rover|Beatty Robotics Sojourner rover]]
+  * [[sites:chartroom:research:rc-mars-rover-mk-ii-pepa-vladik|RC MARS Rover Mk II by pepa_vladik]]
+  * [[sites:chartroom:research:basicmicro-doctor-who-k9-build|BasicMicro Doctor Who K9 build]]
+  * [[sites:chartroom:research:pimoroni-trilobot|Pimoroni Trilobot]]
+  * [[sites:chartroom:research:ukmars-robotics-resources|UKMARS robotics resources]]
+  * [[sites:chartroom:research:wifi-controlled-rc-car-robo-hub|ROBO HUB smartphone-controlled Wi-Fi car]]
+  * [[sites:chartroom:research:pcbway-arduino-linefolower-robot|Arduino LineFolower Robot (PCBWay)]]
+  * [[sites:chartroom:research:keyestudio-smart-little-turtle-v30|Keyestudio Smart Little Turtle Robot Car V3.0]]
+  * [[sites:chartroom:research:arduino-robot-tank-velli20|Velli20 Arduino Robot Tank]]
+  * [[sites:chartroom:research:geiger-counter-n1-lawrence-link|Lawrence-Link Geiger Counter N1]]
+  * [[sites:chartroom:research:geigercounter-v08-2969773606|GeigerCounter V0.8 DIY kit]]
+  * [[sites:chartroom:research:sensorsiot-cajoe-geiger-counter|SensorsIot CAJOE Geiger counter]]
+  * [[sites:chartroom:research:electrodevelo-geiger-counter|Electrodevelo Arduino Geiger counter]]
   * [[sites:chartroom:research:cyberdeck-control-station|Cyberdeck-style base station / control station]]
 
   * [[sites:chartroom:research:3d-printed-tank-elements|3D-printed tank takes on the elements]]

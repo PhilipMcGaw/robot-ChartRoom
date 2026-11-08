@@ -1,0 +1,36 @@
+====== Pi Wars 2024 — “Disaster Zone” challenges ======
+{{tag>research piwars 2024 robotics competition autonomy remote-control}}
+
+~~META:
+description     = Official challenge list and control categories for the Pi Wars 2024 Disaster Zone competition.
+type            = research
+status          = reference
+authority       = Pi Wars 2024 official challenge page
+~~
+
+===== Challenge categories =====
+
+The official Pi Wars 2024 page describes the event's theme as “Disaster Zone” and says its challenges were more-or-less the same as those announced for Pi Wars 2020. It groups the challenges by how the robot may be controlled:
+
+  * **Autonomous-only:** Lava Palava.
+  * **Autonomous or remote control:** Eco-Disaster, Escape Route, Minesweeper, and The Zombie Apocalypse. The page says autonomous attempts could earn more points.
+  * **Remote control:** Pi Noon – The Hindenburg Disaster and The Temple of Doom. The page says autonomous operation was allowed for fun, without extra points.
+
+The page also lists Blogging, Technical and Artistic Merit, and a Most Disastrous Robot special award as additional scoring opportunities. It notes that rules and points could be changed or clarified after competitor questions.
+
+===== Relevance =====
+
+This is a historical reference for designing varied small-robot tasks: autonomous navigation, blind-maze exploration, object detection and interaction, teleoperation, obstacle traversal, and competition documentation. These categories describe the 2024 event and should not be treated as current Pi Wars rules.
+
+For examples of PiWars robot work, see [[sites:chartroom:research:piwars-dan-ed-opencv-blob-tracking|Pi Wars 2024 — OpenCV colour blob tracking]], [[sites:chartroom:research:piwars-footleg-motor2040-pid-mecanum|Pi Wars 2024 — Motor2040 PID control and mecanum drive]], and [[sites:chartroom:research:piwars-destructorpi-wall-detecting-simulation|Destructor Pi wall-detecting simulation]]. The competition page identifies Minesweeper as a challenge, but this note does not establish that any linked robot implementation competed in or completed it.
+
+===== Source =====
+
+  * [Pi Wars 2024 – Challenges](https://piwars.org/2024-disaster-zone/challenges/), official challenge categories and rules disclaimer; reviewed 2026-11-07.
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

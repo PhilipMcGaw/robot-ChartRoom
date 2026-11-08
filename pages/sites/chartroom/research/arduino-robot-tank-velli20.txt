@@ -1,0 +1,42 @@
+====== Velli20 Arduino Robot Tank ======
+{{tag>research, robotics, arduino, 3d-printing, tracked-robot, bluetooth }}
+
+~~META:
+description     = Repository reference for a 3D-printable tracked Arduino robot with CAD, firmware, and an Android Bluetooth-control app.
+type            = research
+status          = reference
+authority       = Chartroom
+~~
+
+===== Scope =====
+
+This note summarises the README and file structure of the public [ArduinoRobotTank repository](https://github.com/Velli20/ArduinoRobotTank). The repository describes a land-based tracked robot; it is not an underwater vehicle design.
+
+===== Reported design =====
+
+The README describes a 3D-printable chassis designed for Arduino Uno, Mega, or Due boards, with space for up to two Arduino shields. The listed electronics are two geared DC motors, an L298P Motor Shield R3, and a 7.4 V lithium-polymer battery. Optional parts include an ESP8266 Wi-Fi development board, an OLED display, two HC-SR04 ultrasonic distance sensors, and an HC-05 Bluetooth module.
+
+The repository includes CAD and STL directories, an Arduino program directory, and an Android app directory. The README describes the Android app as providing a serial console, manual joystick control, and the ability to create programs that are sent over Bluetooth for execution. It also gives a short skid-steering code example. These are descriptions in the repository; the code and app have not been built or tested as part of this review.
+
+===== Relevance =====
+
+This is a reference for an educational, tracked Arduino platform that combines printed mechanical parts, differential drive, optional ranging sensors, and Bluetooth control. Its parts list, CAD files, and firmware may be useful when comparing small land-robot architectures.
+
+===== Limitations =====
+
+The repository README does not document sealing, pressure resistance, corrosion protection, tethering, or other requirements for underwater use. Do not treat the robot as an ROV design. No independent build, electrical review, or performance test is recorded here. The repository does not expose a licence file at its root, so the reuse terms for its CAD, software, and app should be checked before redistribution or adaptation.
+
+===== Source =====
+
+  * [Velli20/ArduinoRobotTank](https://github.com/Velli20/ArduinoRobotTank), repository README and top-level file structure; reviewed 2026-11-07.
+
+===== Related research =====
+
+For other small-robot references, see [[sites:chartroom:research:swarmbot-berrybot-reference|BerryBot reference for SwarmBot education]], [[sites:chartroom:research:linorobot|LinoRobot ROS platform]], and [[sites:chartroom:research:community-robotics-and-sensing-batch|Community robotics and sensing references]].
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

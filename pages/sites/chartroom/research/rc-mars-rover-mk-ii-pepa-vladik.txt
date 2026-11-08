@@ -1,0 +1,38 @@
+====== RC MARS Rover Mk II by pepa_vladik ======
+{{tag>research robotics rover 3d-printing arduino rc servo}}
+
+~~META:
+description     = Research note on pepa_vladik's 3D-printable RC MARS Rover Mk II model and mirrored project description.
+type            = research
+status          = reference
+authority       = Creator's model listings on Printables and Pinshape
+~~
+
+===== Model and reported changes =====
+
+The supplied [Printables model page](https://www.printables.com/model/21432-rc-mars-rover-mk-ii) could not be retrieved during this review. The same creator, pepa_vladik, has a [[https://pinshape.com/items/24998-rc-mars-rover-mk-ii|Pinshape listing for RC MARS Rover Mk II]]. Its description presents the model as an upgrade to the earlier RC MARS Rover, adding a differential, a robotic arm, a new Arduino Mega shield, improved cable management, six-channel controls, and PC setup. The Pinshape listing contains 25 downloadable files, including a board schematic PDF; the files and schematic were not inspected.
+
+The creator's separate [[https://pinshape.com/items/24999-rc-mars-rover|original RC MARS Rover listing]] describes a 3D-printed, Curiosity-inspired RC rover using an Arduino Mega. That earlier listing specifies six modified metal-gear micro servos for wheel drive, six standard micro servos for steering, a 4-channel RC control, and a 2S or 3S lithium-polymer battery with a 6 V switching battery eliminator circuit (SBEC). It is unclear from the Mk II listing whether this entire original parts list carries over unchanged.
+
+===== Relevance and limitations =====
+
+This is a reference for a 3D-printed land rover with articulated steering, RC control, and a small manipulator. It may be useful for mechanical layout and micro-servo integration research, but no build, load, runtime, or terrain performance has been independently verified. It is not an underwater vehicle design.
+
+The Pinshape Mk II listing states a Creative Commons Attribution-ShareAlike licence. The supplied Printables page was inaccessible, so confirm the licence shown on the current Printables model before reusing or redistributing its files. The linked model files and board schematic were not reviewed for completeness or electrical safety.
+
+===== Sources =====
+
+  * [RC MARS Rover Mk II](https://www.printables.com/model/21432-rc-mars-rover-mk-ii), user-provided Printables page; could not be retrieved; reviewed 2026-11-07.
+  * [RC MARS Rover Mk II](https://pinshape.com/items/24998-rc-mars-rover-mk-ii), creator pepa_vladik's matching Pinshape listing, description, file list, and stated licence; reviewed 2026-11-07.
+  * [RC MARS Rover](https://pinshape.com/items/24999-rc-mars-rover), same creator's separate original model listing and parts description; reviewed 2026-11-07.
+
+===== Related research =====
+
+For other small printed robot platforms, see [[sites:chartroom:research:arduino-robot-tank-velli20|Velli20 Arduino Robot Tank]], [[sites:chartroom:research:pimoroni-trilobot|Pimoroni Trilobot]], and [[sites:chartroom:research:ukmars-robotics-resources|UKMARS robotics resources]].
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

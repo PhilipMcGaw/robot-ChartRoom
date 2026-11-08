@@ -1,0 +1,46 @@
+====== Arduino LTC6804 battery management system by dcaditz ======
+{{tag>research battery-management bms ltc6804 arduino k9 rov}}
+
+~~META:
+description     = Research reference for an Arduino Uno battery-management build using an LTC6804-2 cell monitor.
+type            = research
+status          = reference
+authority       = Instructables author materials and Analog Devices product documentation
+~~
+
+===== Source access and provenance =====
+
+The linked Instructables article, “Arduino LTC6804 BMS - Part 1: Main Board”, returned no readable content during review. The project details below are taken from a third-party archived text extraction of that article and should be checked against the author's original files before reuse. The author's Part 2 page on a balance board also did not return readable content directly.
+
+===== Reported project design =====
+
+The archived article describes an Arduino Uno shield built around an LTC6804-2 multicell monitor, with a separate balance board and charge/discharge relay outputs. It says the example battery pack used A123 lithium iron phosphate (LiFePO₄) cells in a 12S8P arrangement. The board reads cell voltages, pack current, and temperature inputs; the firmware is described as opening relays for pack faults. An optional XBee link sends status to a remote monitoring station.
+
+The article's code is reported to poll the LTC6804 every 5 seconds. The article text identifies a LEM HTB 50-P current sensor and says the code is calibrated for its 50 A range, while the example pack description lists 60 A maximum continuous discharge. This apparent difference requires review of the original schematic, code, sensor limits, and protection thresholds. The article's test graphs and statements are the author's report, not independent validation.
+
+Part 2 describes a passive balancing board using resistor-and-switch circuits controlled from the LTC6804. The LTC6804-2 itself is a monitor IC with up to 12 cell inputs and balancing control outputs; it is not by itself the complete power-disconnect system. The project relies on additional controller, balancing, sensing, and relay hardware.
+
+===== Relevance and limitations =====
+
+The project is a useful historical reference for combining a multicell monitor IC, Arduino control, relay outputs, passive balancing, and optional telemetry. Its documented 12S8P LiFePO₄ example is substantially different from K9's intended 3S2P 21700 lithium-ion battery. Although the IC supports measurement of up to 12 series cells, the project firmware and surrounding board would need review and adaptation for a 3S pack, its selected cell limits, measured motor currents, and transient response. The reported 5-second polling interval and the apparent difference between sensor range and pack rating make it unsuitable to adopt without detailed review.
+
+For an ROV, the project provides a design reference only. Its sources do not establish an ROV integration, water or pressure-hull suitability, or a validated response to thruster loads. The battery location, pack configuration, sensor and relay ratings, isolation, enclosure, and fault behaviour would all need to be assessed for the specific vehicle.
+
+Analog Devices currently labels the LTC6804-2 “not recommended for new designs”. Its product page describes the IC as measuring up to 12 series cells and identifies the LTC6811 as a pin-compatible upgrade. Any use of the tutorial or its IC should therefore include a current component-lifecycle review; pin compatibility alone does not establish a drop-in replacement for the complete board or firmware.
+
+Compare with the separate [[sites:chartroom:research:green-bms-smartbms|Green BMS SmartBMS]] and [[sites:chartroom:research:diybms-v4-stuart-pittaway|Stuart Pittaway diyBMS v4]] references. These are different designs and their ratings or capabilities must not be combined.
+
+===== Sources =====
+
+  * [Arduino LTC6804 BMS - Part 1: Main Board](https://www.instructables.com/Arduino-LTC6804-Battery-Management-System/), by dcaditz; original page returned no readable content, accessed 2026-11-07.
+  * [Archived text extraction of Part 1](https://device.report/m/d4058ce92213e38f875d52404bf96da285f4eb4dadc5b835acc1e48db467134b), third-party copy of the article; used only as a secondary transcription, accessed 2026-11-07.
+  * [Arduino LTC6804 BMS - Part 2: Balance Board](https://www.instructables.com/Arduino-LTC6804-BMS-Balance-Board/), by dcaditz; original page returned no readable content, accessed 2026-11-07.
+  * [LTC6804-2 product page](https://www.analog.com/en/products/LTC6804-2.html), Analog Devices; product lifecycle and device capabilities; accessed 2026-11-07.
+  * [[sites:chartroom:projects:k9-motor-control|K9 Motor Control — Initial Design Notes]], intended battery configuration and outstanding current measurements; accessed 2026-11-07.
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

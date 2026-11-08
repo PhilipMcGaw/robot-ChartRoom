@@ -8,11 +8,11 @@ status          = reference
 authority       = Chartroom
 ~~
 
-The **CPS 5** (Custom Printed Submarine) is a useful ROV reference because it combines a compact 3D-printable vehicle, structured build documentation, a tether, enclosed electronics, camera integration, and an explicit progression through multiple prototypes. The current CPS material describes a vehicle approximately 230 × 384 × 102 mm, with five motors, self-stabilisation/depth-hold features, 1080p live video, and a tethered architecture. source reference unavailable (turn1search1)
+The **CPS 5** (Custom Printed Submarine) is a useful ROV reference because it combines a compact 3D-printable vehicle, structured build documentation, a tether, enclosed electronics, camera integration, and an explicit progression through multiple prototypes. The current [[https://www.cpsdrone.com/cps-5-course/|CPSdrone course page]] lists dimensions of 230 × 384 × 102 mm, five motors, self-stabilisation and depth-hold modes, 1080p live video, and a claimed maximum depth of 85 m. These are supplier-published specifications, not independent validation.
 
 ===== Why it is relevant =====
 
-CPS 5 is particularly relevant to the ROV project as a **buildability and documentation reference**. The project has been iterated through many prototypes and presents the vehicle as a modular platform that can be modified after the initial build. source reference unavailable (turn1search1, turn1search3)
+CPS 5 is particularly relevant to the ROV project as a **buildability and documentation reference**. A 2022 Hackaday article reports that its creators spent four years and 14 prototypes iterating the vehicle. The current course page presents it as a modular platform that can be modified after the initial build. These accounts provide project and supplier context, not independent evidence of reliability.
 
 The current course structure covers:
 
@@ -34,6 +34,18 @@ That is a useful documentation pattern because it follows the physical integrati
   * Use prototype iteration to discover mechanical and operational problems before attempting a final design.
   * Treat custom modules and upgrades as extensions of a stable core vehicle.
 
+===== Construction details reported by Hackaday =====
+
+The 2022 Hackaday article reports that the CPS 5's printed outer hull was not intended to be the waterproof barrier. The electronics and camera were placed in sealed acrylic tubes. The printed end caps were thin-walled parts filled with epoxy, and wire passages were sealed with epoxy. The creators reported adding an open solder joint within each epoxy-filled wire passage to interrupt water ingress along the insulated wire.
+
+The article also reports five brushless drone motors with 3D-printed propellers, a Pixhawk flight controller, and a Raspberry Pi 4 for communications and video to a laptop. An inertial measurement unit (IMU) and water-pressure sensor were described as supporting auto-level and depth-hold functions. An Ethernet cable with waterproof connectors formed the tether.
+
+These are construction details reported by Hackaday, not a pressure-vessel design review. The article says the vehicle could potentially reach 85 m; treat that as a reported project claim, not a validated depth rating.
+
+===== Project availability and open-source status =====
+
+In a January 2023 comment on the Hackaday article, creator Filip Buława said the team had decided in March 2022 to drop the open-source aspect and instead offer a paid course that included access to files. The current CPSdrone site lists a paid CPS 5 course. Therefore, do not describe the CPS 5 as a currently available, fully open-source design baseline without checking the current licence and file-access terms.
+
 ===== ROV architecture =====
 
 The compact tethered architecture is a useful comparison with the existing ROV design. It reinforces the value of a simple, reliable physical communications path for an underwater vehicle, while leaving higher-level operator software and vehicle control as separate concerns.
@@ -51,7 +63,8 @@ For other build and architecture examples, see [[sites:chartroom:research:borgcu
 ===== Sources =====
 
   * [[https://www.instructables.com/Overview-of-the-CPS-5-Underwater-Drone/|Instructables — Overview of the CPS 5 Underwater Drone]]
-  * [[https://www.cpsdrone.com/cps-5-course/|CPSdrone — CPS 5 Course]]
+  * [[https://hackaday.com/2022/11/02/3d-printed-rov-is-the-result-of-many-lessons-learned/|Hackaday — 3D Printed ROV Is The Result Of Many Lessons Learned]], 2022-11-02; secondary report and creator comment accessed 2026-11-07.
+  * [[https://www.cpsdrone.com/cps-5-course/|CPSdrone — CPS 5 Course]], current supplier specifications and course description; accessed 2026-11-07.
   * [[https://www.cpsdrone.com/articles-cpsdrone/underwater-drone-building-course-cps-5-course/|CPSdrone — Underwater drone building course]]
 
 **Status:** Research / design inspiration.

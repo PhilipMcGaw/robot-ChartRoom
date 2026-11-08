@@ -1,0 +1,38 @@
+====== Pimoroni Trilobot ======
+{{tag>research robotics education raspberry-pi robot-car sensors}}
+
+~~META:
+description     = Supplier reference for Pimoroni's Raspberry Pi Trilobot educational robot kit.
+type            = research
+status          = reference
+authority       = Pimoroni product page and linked software documentation
+~~
+
+===== Supplier description =====
+
+Pimoroni describes Trilobot as a mid-level Raspberry Pi learning platform. The base kit uses a layered printed-circuit-board chassis with integrated motor-driver hardware, two driven front wheels, and a rear castor. It includes an ultrasonic distance sensor, four tactile buttons, status LEDs, six-zone RGB underlighting, a camera mount, and expansion connections including Qwiic/STEMMA QT, I²C, servo, and Breakout Garden headers.
+
+The base kit includes two 110:1 motors, wheels, the ultrasonic sensor, boards, hardware, and a USB-C power cable. It does not include the Raspberry Pi, camera, microSD card, or battery bank. Pimoroni links a Python library and assembly tutorial. The product page says that boards shipped from February 2023 include revised camera compatibility for Raspberry Pi Camera Module v2 and v3.
+
+===== Compatibility note =====
+
+The product page currently warns that the Trilobot library is not compatible with Raspberry Pi 5 or the latest Raspberry Pi OS (Bookworm), and recommends the Legacy Raspberry Pi OS. This is a time-sensitive supplier statement; check the library repository and current setup guide before selecting a Pi or operating-system image.
+
+===== Relevance and limits =====
+
+Trilobot is a useful reference for an expandable, Raspberry Pi-based educational land robot that combines motor control, distance sensing, camera mounting, tactile inputs, and status lighting. The supplier page does not describe water sealing or pressure resistance, so this kit is not an ROV design. The linked library and hardware have not been built or tested as part of this review.
+
+===== Source =====
+
+  * [Pimoroni Trilobot Base Kit, PIM598](https://shop.pimoroni.com/products/trilobot?variant=39594077093971), product description, included parts, features, compatibility note, schematic, and linked software; reviewed 2026-11-07.
+
+===== Related research =====
+
+For other small educational robot platforms, see [[sites:chartroom:research:keyestudio-smart-little-turtle-v30|Keyestudio Smart Little Turtle Robot Car V3.0]], [[sites:chartroom:research:arduino-robot-tank-velli20|Velli20 Arduino Robot Tank]], and [[sites:chartroom:research:ukmars-robotics-resources|UKMARS robotics resources]].
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

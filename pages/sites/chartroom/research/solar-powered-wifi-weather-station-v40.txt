@@ -1,0 +1,44 @@
+====== Solar Powered WiFi Weather Station V4.0 ======
+{{tag>research, weather, environmental-sensing, solar, esp32, lora }}
+
+~~META:
+description     = Instructables reference for a solar-powered, two-node weather station using ESP32 and LoRa.
+type            = research
+status          = reference
+authority       = Chartroom
+~~
+
+===== Scope =====
+
+This note summarises the Instructables project “Solar Powered WiFi Weather Station V4.0” by Open Green Energy. It is a third-party build reference, not a project implementation or an independently validated design.
+
+===== Project summary =====
+
+The author describes a field sender node and an indoor receiver node. The sender measures weather data and sends it over a LoRa radio link; the receiver forwards data to internet services. The page identifies an ESP32-WROOM32 controller and an Ai-Thinker Ra-02 LoRa module in its parts list.
+
+The listed measurements include temperature, humidity, pressure, wind speed and direction, rainfall, ultraviolet index, light level, and particulate air quality. The page also describes an optional soil temperature and humidity port. The author lists several ways to view or forward readings, including an e-ink display, Home Assistant with ESPHome, MQTT, ThingSpeak, and Blynk.
+
+The described sender power circuit uses a solar panel and a single-cell lithium-ion battery, with charging, battery protection, and voltage sensing. The author also describes switching off the LoRa module and sensors during sleep to reduce power use. The page does not establish that the stated power design will meet a particular deployment's solar or battery budget.
+
+===== Relevance =====
+
+This is a reference for splitting remote sensing from internet connectivity: a low-power field node can report to a receiver located where network access is available. The project also provides an example of combining solar charging, multiple environmental sensors, and selectable data destinations.
+
+===== Limitations =====
+
+The source is an Instructables build article. Its claims and circuit descriptions have not been independently checked here. The article is not evidence of long-term operation, environmental qualification, radio range at a particular site, or suitability for a marine deployment. Its stated wireless approach and components should be assessed against the applicable local radio rules and the intended environment before reuse.
+
+===== Source =====
+
+  * [Solar Powered WiFi Weather Station V4.0](https://www.instructables.com/Solar-Powered-WiFi-Weather-Station-V40/), Open Green Energy, published 2022-10-08; accessed 2026-11-07.
+
+===== Related research =====
+
+For other weather station references, see [[sites:chartroom:research:arduino-weather-station-miksrv|Miksrv Arduino Weather Station]] and [[sites:chartroom:research:stall-weatherman-home-automation|STALL WEATHERMAN home-automation weather station]]. For low-power logging constraints, see [[sites:chartroom:research:coin-cell-data-logger-low-power|Coin-cell data logger and low-power design]].
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

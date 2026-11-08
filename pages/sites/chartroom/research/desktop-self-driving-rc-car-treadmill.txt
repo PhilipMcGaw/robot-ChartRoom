@@ -1,0 +1,43 @@
+====== Desktop self-driving RC car and treadmill test setup ======
+{{tag>research robotics machine-learning raspberry-pi simulation testing rc-car }}
+
+~~META:
+description     = Hackaday report on a small RC-car autonomy experiment using a desktop treadmill for early development.
+type            = research
+status          = reference
+authority       = Chartroom
+~~
+
+===== Scope =====
+
+This note summarises Hackaday's 2024 report on an experimental self-driving radio-controlled car build by jmoreno555. The report links to the builder's Instructables project. It describes an early-stage experiment, not a validated autonomous-driving platform.
+
+===== Reported system =====
+
+The Hackaday article identifies the car as an HSP 94123 with a brushed drive motor and servo steering. It reports a Raspberry Pi 4 with a Google Coral USB machine-learning accelerator, a Wemos D1 board for interfacing distance sensors, a 1.2-megapixel camera with a 160-degree lens, and a stereo camera with two 75-degree lenses.
+
+The article says the builder was exploring Python and OpenCV for lane detection and other self-driving routines, with Blender used as a simulator. It also describes placing the car on a desktop treadmill so it could be programmed and debugged without chasing it around a test track. The report presents this as a development convenience; it does not provide controlled test results for the treadmill setup or autonomous behaviours.
+
+===== Relevance =====
+
+The project is a reference for separating early perception and control development from full track testing. It combines a small physical vehicle, cameras, a machine-learning accelerator, a sensor-interface microcontroller, and simulation. The treadmill idea may support repeatable bench experiments, but it cannot demonstrate steering and vehicle dynamics in a real environment on its own.
+
+===== Limitations =====
+
+The original Instructables page was checked again on 2026-11-07. Its page metadata identifies it as a 70-step project, but the steps were not readable through the available browser tool, so the hardware and software summary relies on Hackaday's secondary report. The Hackaday article describes the software as being at an early stage and provides no measured accuracy, safety analysis, full source code, or validation results. Do not treat this build as evidence of road-ready autonomous driving.
+
+===== Sources =====
+
+  * [The Perfect Desktop Kit For Experimenting With Self Driving Cars](https://hackaday.com/2024/05/14/the-perfect-desktop-kit-for-experimenting-with-self-driving-cars/), Hackaday, 2024-05-14; secondary report accessed 2026-11-07.
+  * [AI Self Driving Car](https://www.instructables.com/AI-Self-Driving-Car/), jmoreno555; primary build page linked by Hackaday, page metadata says 70 steps; accessed 2026-11-07, but step content was not readable.
+
+===== Related research =====
+
+For another example of using a small robot as a software test platform, see [[sites:chartroom:research:small-robot-code-test-platform|Small robot as a code test platform]]. For camera-based tracking on a PiWars robot, see [[sites:chartroom:research:piwars-dan-ed-opencv-blob-tracking|PiWars 2024 — Dan-ED OpenCV colour blob tracking]].
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

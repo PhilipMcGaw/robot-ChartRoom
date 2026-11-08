@@ -1,0 +1,42 @@
+====== UKMARS robotics resources ======
+{{tag>research ukmars micromouse robotics education line-follower maze-robot}}
+
+~~META:
+description     = Research note on UKMARS open robot platforms and robotics learning resources.
+type            = research
+status          = reference
+authority       = UKMARS and its public GitHub repositories
+~~
+
+===== Scope =====
+
+The United Kingdom Micromouse and Robotics Society (UKMARS) promotes Micromouse and other robotics activities and publishes project and learning resources. Its GitHub organisation contains designs and software for small competition robots. This note summarises the public organisation and selected repositories; it does not record an independent build or test.
+
+===== Selected resources =====
+
+  * [[https://github.com/ukmars/ukmarsbot|UKMARSBOT]] is described as an inexpensive, multi-purpose beginner platform for line following, wall following, drag racing, and mini-sumo. Its hardware repository includes mechanical and electronic design material, while software examples and maze-solving software are maintained in separate repositories. The README describes a small, modular, two-motor robot with individual motor encoder feedback.
+  * [[https://github.com/ukmars/gemini|GEMINI]] is a later Micromouse platform designed around a replaceable microcontroller mezzanine board. Its README identifies Raspberry Pi Pico and Pico W support, with MicroPython as the intended teaching language and C as an alternative.
+  * [[https://github.com/ukmars/mazerunner-core|mazerunner-core]] contains core Micromouse software for UKMARSBOT.
+  * [[https://github.com/ukmars/motorlab|motorlab]] demonstrates robot motor controllers and is described in its repository as related to a presentation on proportional-derivative (PD) control for motor positioning.
+
+The UKMARS website also provides robot build guides, software and hardware resources, and competition material. The organisation page identifies the society's focus on Micromouse and robotics competitions.
+
+===== Relevance and limits =====
+
+UKMARS is a useful source for small-robot education, modular controller and sensor interfaces, differential-drive mechanics, and maze or line-following algorithms. These examples may help when discussing general robot-control concepts, but their small indoor competition context does not establish suitability for K9 or an ROV. The repositories and build documentation must be checked for the specific board revision, code, and reuse terms before adopting any design.
+
+===== Sources =====
+
+  * [UKMARS GitHub organisation](https://github.com/ukmars), public repository list; reviewed 2026-11-07.
+  * [UKMARSBOT](https://github.com/ukmars/ukmarsbot), README and repository overview; reviewed 2026-11-07.
+  * [GEMINI](https://github.com/ukmars/gemini), README and repository overview; reviewed 2026-11-07.
+  * [mazerunner-core](https://github.com/ukmars/mazerunner-core), repository overview; reviewed 2026-11-07.
+  * [motorlab](https://github.com/ukmars/motorlab), repository overview; reviewed 2026-11-07.
+  * [UKMARS](https://ukmars.org/about/), About page; reviewed 2026-11-07.
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

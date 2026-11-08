@@ -10,8 +10,19 @@ authority       = Chartroom
 
 ===== Sources =====
 
-  * [[https://bluerobotics.com/store/rov/bluerov2/|BlueROV2 product page]] — manufacturer overview, configuration options, and stated product capabilities; check the live page for current options and specifications.
+  * [[https://bluerobotics.com/store/rov/bluerov2/|BlueROV2 product page]] — manufacturer overview, configuration options, and stated product capabilities; see the dated specification snapshot below and check the live page for current options.
   * [[https://bluerobotics.com/learn/bluerov2-software-setup/|BlueROV2 Software Setup]]
+
+===== Product-page snapshot =====
+
+Blue Robotics' product-page search listing identifies the current vehicle as BlueROV2 R4 and shows a revision-history entry dated 2026-06-11. The listing describes these manufacturer-stated configuration ranges:
+
+  * The standard configuration has six T200 thrusters, four vectored and two vertical. A Heavy configuration is also available.
+  * The electronics enclosure tubes are rated to 100 m with acrylic or 300 m with aluminium. These are enclosure/configuration ratings, not an independent depth-test result for a specific assembled vehicle.
+  * Payload capacity is listed as 1.2–1.4 kg, depending on configuration. Maximum forward speed is listed as 1.5 m/s.
+  * With the Blue Robotics 15.6 Ah battery, estimated battery life is approximately 2 hours in normal use or 4 hours in light use.
+
+These values are a dated product overview and may change with configuration or revision. The web reader timed out when opening the live product page on 2026-11-08; the specifications above were available in the indexed manufacturer listing and were not independently verified. Check the live product page, current wiring diagram, and configuration-specific documents before using them in a design.
 
 ===== Summary =====
 

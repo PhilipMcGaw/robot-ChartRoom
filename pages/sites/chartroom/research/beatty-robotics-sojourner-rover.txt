@@ -1,0 +1,32 @@
+====== Beatty Robotics Sojourner rover ======
+{{tag>research robotics mars-rover rocker-bogie servo lidar autonomy exhibit}}
+
+~~META:
+description     = Builder's description of Beatty Robotics' half-scale Sojourner-inspired exhibit robot.
+type            = research
+status          = reference
+authority       = Beatty Robotics project page
+~~
+
+===== Reported design =====
+
+Beatty Robotics describes a half-scale replica inspired by NASA's 1997 Sojourner rover, built for interactive exhibits in space museums. The builder reports six wheels, servo steering, rocker-bogie suspension, solar panels, a lithium battery, and a warmed electronics enclosure. These describe the exhibit robot; the page does not identify the solar panels as a charging system or provide a power budget.
+
+The builder says the electronics stack, called “The Core”, includes an Arduino Zero, a servo shield, a custom shield, and a high-power motor controller, and drives eight servos. The rover uses servo-mounted light detection and ranging (LiDAR) sensors at the front and rear, sweeping each through 180 degrees and taking a reading at each degree for obstacle avoidance and autonomous navigation. An HD camera streams first-person-view video to goggles or a monitor, and an XBee radio links the rover to a computer control station. The page describes autonomous operation, user-programmed command sequences, and real-time manual radio control.
+
+===== Relevance and limits =====
+
+This is a useful builder's example of combining rocker-bogie mobility, distributed steering, scanning distance sensors, video, and selectable autonomy and teleoperation in a mobile exhibit robot. The page includes work-in-progress photographs and CAD views, but it does not provide a complete bill of materials, software repository, sensor specifications, power calculations, or measured mobility results. Do not treat the replica's design or claims as evidence about the original NASA rover's implementation, or as a validated Mars-capable design.
+
+For other small planetary-rover-inspired designs, see [[sites:chartroom:research:rc-mars-rover-mk-ii-pepa-vladik|RC MARS Rover Mk II by pepa_vladik]]. For rocker-bogie packaging lessons, see [[sites:chartroom:research:adventures-with-pi-size-matters-piwars-2024|Adventures with a Raspberry Pi: “Size Matters” — PiWars 2024]].
+
+===== Source =====
+
+  * [Sojourner Mars Rover](https://beatty-robotics.com/sojourner-mars-rover/), Beatty Robotics project description, photographs, and CAD views; reviewed 2026-11-08.
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

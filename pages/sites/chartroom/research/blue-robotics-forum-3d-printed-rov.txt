@@ -1,0 +1,42 @@
+====== Blue Robotics forum: 3D-printed DIY ROV ======
+{{tag>research, rov, diy, 3d-printing, propulsion, blue-robotics }}
+
+~~META:
+description     = Forum build log for a prototype 3D-printed ROV, including assembly, power, and thruster observations.
+type            = research
+status          = reference
+authority       = Chartroom
+~~
+
+===== Scope =====
+
+This note summarises the Blue Robotics Community Forums thread “Building my First DIY ROV - 3D printed”. It is a 2020 participant build log and discussion, not a validated design or a complete construction guide.
+
+===== Reported build =====
+
+The author describes a prototype based on the “Albie” 3D-printed ROV, with parts printed in PETG and a frame intended for later redesign. The reported electronics included a Raspberry Pi, Pixhawk, Raspberry Pi camera, Blue Robotics electronic speed controllers (ESCs), leak sensors, and a power distribution module. The author also describes printing a Pixhawk shelf, spacers, propellers, and a GoPro mount. Initial software was loaded with QGroundControl, and the author reported that the Raspberry Pi and Pixhawk communicated with the topside computer.
+
+The build used a battery inside a 4-inch enclosure, which meant opening the enclosure to connect or charge the battery. Short thruster cables also limited how far the electronics tray could be withdrawn, so the author extended those cables. These are observations from this particular prototype, not general enclosure requirements.
+
+===== Reported operating observations =====
+
+After a lake test, the author reported that the vehicle pitched down when moving forward. Forum replies attributed this to thruster thrust being offset from the centre of mass or drag, with tether position and drag also identified as possible contributors. The discussion also notes that closely spaced vertical thrusters and restricted water flow over the frame could reduce their effectiveness. These are participant explanations in the thread; they are not measurements or independent validation of this vehicle.
+
+===== Limitations =====
+
+The thread documents one evolving prototype and contains no complete bill of materials, reproducible drawings, pressure rating, or controlled test results. It should be used as a source of build considerations and failure observations, not as evidence that the design is safe, robust, or suitable for a particular depth.
+
+===== Source =====
+
+  * [Building my First DIY ROV - 3D printed](https://discuss.bluerobotics.com/t/building-my-first-diy-rov-3d-printed/7862), Blue Robotics Community Forums, started 2020-07-28; posts reviewed through 2020-08-23.
+
+===== Related research =====
+
+For other maker-scale ROV build references, see [[sites:chartroom:research:bit-driven-circuits-rov|Bit Driven Circuits ROV]], [[sites:chartroom:research:diyrov-google-sites-build|DIY ROV Google Sites build]], and [[sites:chartroom:research:instructables-diy-submersible-rov|DIY Submersible ROV]].
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

@@ -1,0 +1,29 @@
+====== Lawrence-Link Geiger Counter N1 ======
+{{tag>research education geiger-counter radiation-sensing atmega328 }}
+
+~~META:
+description     = Reference for an ATmega328-based Geiger counter using an M4011 tube.
+type            = research
+status          = reference
+authority       = Chartroom
+~~
+
+===== Project summary =====
+
+The [[https://github.com/Lawrence-Link/GeigerCounter-N1|GeigerCounter-N1 repository]] describes an open-source Geiger counter based on an ATmega328 and an M4011 Geiger–Müller tube. Its README says the firmware calculates counts per minute and converts them to microsieverts per hour using data from the tube datasheet. The repository is licensed under GNU General Public License version 3.0 and includes firmware, hardware, and manuscript directories.
+
+===== Relevance and limits =====
+
+This is a separate reference from the [[sites:chartroom:research:geigercounter-v08-2969773606|GeigerCounter V0.8 kit]] and other Geiger-counter projects in this catalogue. The N1 README warns that the board contains a high-voltage source and states that it may pose a risk near implanted medical devices. This warning is recorded as the repository author's statement; no independent electrical or electromagnetic assessment has been made.
+
+The repository's count-to-dose conversion is an author-reported method, not an independently validated calibration. Do not rely on the project for safety decisions without suitable calibration and verification.
+
+===== Source =====
+
+  * [[https://github.com/Lawrence-Link/GeigerCounter-N1|Lawrence-Link/GeigerCounter-N1 repository]] (accessed 2026-11-07).
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

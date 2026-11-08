@@ -1,0 +1,37 @@
+====== ROBO HUB smartphone-controlled Wi-Fi car ======
+{{tag>research robotics esp8266 wifi mobile-robot}}
+
+~~META:
+description     = Hackaday reference to a 3D-printed ESP8266 Wi-Fi-controlled hobby car.
+type            = research
+status          = reference
+authority       = Hackaday article; original Instructables guide not independently reviewed
+~~
+
+===== Scope =====
+
+This note records the build described by Hackaday as a simple smartphone-controlled car from ROBO HUB. Hackaday links to an Instructables guide titled “Make 3d printed Smartphone Controlled Wi-Fi Car”. The Instructables page did not expose readable content during review, so this summary relies on Hackaday's description and does not verify the original build steps or files.
+
+===== Reported design =====
+
+Hackaday describes a NodeMCU ESP8266 microcontroller, an L293D motor driver, and three 18650 lithium-ion cells. The ESP8266 drives brushed direct-current motors in a differential-drive arrangement, with the motors on each side paired for tank-style steering. A smartphone app provides the control interface. The chassis is described as a four-wheel, 3D-printed build.
+
+The article's description and reader comments leave some mechanical details unclear: Hackaday calls out geared motors on the front wheels and simple brushed motors on the rear, while a comment says the front motors are not connected and serve as wheel mounts. Treat the drivetrain details as unresolved until the original guide or build files can be inspected.
+
+===== Relevance =====
+
+This is a low-cost educational reference for Wi-Fi teleoperation, differential drive, and the division between a wireless microcontroller and a motor driver. It may be useful when comparing simple hobby-car control interfaces, but it provides no evidence of command latency, link-loss behaviour, electrical protection, or safe operation around people.
+
+===== Sources and limitations =====
+
+  * [It’s Never Been Easier To Build A WiFi-Controlled RC Car](https://hackaday.com/2024/03/24/its-never-been-easier-to-build-a-wifi-controlled-rc-car/), Hackaday, 2024-03-24; accessed 2026-11-07.
+  * [Make 3d printed Smartphone Controlled Wi-Fi Car](https://www.instructables.com/Make-3d-Printed-Smartphone-Controlled-Wi-Fi-Car/), Instructables guide linked by Hackaday; page returned no readable content during review, accessed 2026-11-07.
+
+The component list, control method, and drive description above are Hackaday's report, not an independent inspection or validation of the original project. No repository, circuit diagram, app source, battery protection details, or test results were reviewed.
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

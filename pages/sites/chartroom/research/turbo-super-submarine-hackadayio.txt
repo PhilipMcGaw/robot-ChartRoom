@@ -1,0 +1,42 @@
+====== Turbo Super Submarine ======
+{{tag>research rov raspberry-pi-pico electronics tether 3d-printing hackaday}}
+
+~~META:
+description     = Hackaday.io project record for a maker ROV with Raspberry Pi Pico control electronics, an analogue video station, and published design archives.
+type            = research
+status          = reference
+authority       = Hackaday.io project by Timo
+~~
+
+===== Scope =====
+
+This note summarises Timo's [Turbo Super Submarine Hackaday.io project](https://hackaday.io/project/185615-turbo-super-submarine). The page describes a simple tethered ROV with differential steering, vertical movement, a forward camera, and lighting, and labels the project as ongoing. The available logs do not establish a completed underwater vehicle; the author reports that printed parts repeatedly failed watertight testing.
+
+===== Reported design =====
+
+The project separates the ROV from a topside control station. A Raspberry Pi Pico in the control station reads a PlayStation 1 (PS1) controller and sends commands to the vehicle over a universal asynchronous receiver-transmitter (UART) link. The control-station design uses a MAX232 interface to convert the Pico's UART signals to RS-232 for the tether. A separate enable signal is intended to switch off the ROV battery when the vehicle is not in use. The vehicle reports battery voltage to the topside unit.
+
+The project describes an analogue camera feed returned over the tether. The control station buffers the video for an operator display and a first-person-view (FPV) transmitter/goggles. A project log describes fitting the control-station electronics into a suitcase, with a printed mounting plate; the author noted that the loaded lid made the case top-heavy.
+
+===== Build progress and files =====
+
+In a November 2022 log, the author said repeated attempts to make the 3D-printed vehicle watertight had failed, including print warping, and that work had paused on the printed vehicle while attention moved to electronics and software. Later logs describe the control station and its schematics. The project page lists downloadable archives for MicroPython code, LTspice simulations, OpenSCAD mechanical parts, KiCad schematics and boards, and reference documents. The archives are listed on the project page; they have not been downloaded or reviewed for this note.
+
+===== Relevance and limitations =====
+
+The project is a useful reference for separating the operator station from the vehicle, and for documenting control, power, and video paths. It also provides a clear example of a maker project identifying a manufacturing failure before claiming an operational ROV. The project page does not provide evidence that the vehicle completed a watertight test or an underwater mission. Its electronics and tether details should be treated as one historical design, not as a specification for the Robots project.
+
+===== Sources =====
+
+  * [Turbo Super Submarine](https://hackaday.io/project/185615-turbo-super-submarine), Hackaday.io project page by Timo; created 2022-05-30, with project logs through 2023-02-02; accessed 2026-11-07.
+
+===== Related research =====
+
+For another maker ROV where enclosure sealing and cable ingress are discussed, see [[sites:chartroom:research:cps-5|CPS 5 underwater drone]]. For a compact 3D-printed pipe-inspection ROV and mass/buoyancy discussion, see [[sites:chartroom:research:ferret-3d-printed-rov-balance|The Ferret 3D-printed ROV and balance estimation]].
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

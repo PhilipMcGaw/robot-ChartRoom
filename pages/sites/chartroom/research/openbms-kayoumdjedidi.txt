@@ -1,0 +1,41 @@
+====== OpenBMS by kayoumdjedidi ======
+{{tag>research battery-management bms arduino nano k9 rov}}
+
+~~META:
+description     = Research note on the OpenBMS modular Arduino Nano battery-management project.
+type            = research
+status          = reference
+authority       = OpenBMS project repository and README
+~~
+
+===== Published project description =====
+
+The OpenBMS repository describes a modular battery-management system built around an Arduino Nano. The README lists cell-voltage measurement, balancing and charging circuits, a limiter that reduces charging current to 1 A while a cell is balancing, an I²C LCD, warning and charge-status LEDs, and cutoff of battery input or output when unusual behaviour is detected. It describes the project as a work in progress and says modules can be added or removed.
+
+The repository contains Altium schematics and PCB design files, Arduino code, a bill of materials, and a project report PDF. The README states voltage support as “up to 12V and 20V total voltage” and repeats “up to 12V and 20V total voltage” in its limitations. The intended configurations and maximum operating voltage are therefore unclear from the README and need confirmation from the schematics and report before use. The report PDF was present in the repository but could not be reviewed in this pass.
+
+The retrieved Arduino sketch defines five cell-voltage slots plus a temperature input, with code constants of 3.7 V minimum and 4.2 V maximum per cell. These are project settings, not confirmed cell limits or a supported-pack specification. In the retrieved sketch, the `analogRead` statements for the five cell-voltage inputs appear commented out, while the temperature input read is active. The cell-sensing and related protection behaviour therefore require verification against the intended code, schematic, and built hardware. The source was inspected but not compiled or run.
+
+===== Relevance and open questions =====
+
+OpenBMS is a useful early-stage reference for integrating cell monitoring, charging, balancing, a display, and cutoff control on a compact microcontroller board. The README and sketch do not establish supported cell chemistries, a configurable series-cell range, maximum continuous or transient discharge current, the electrical ratings of the cutoff path, or measured fault response. Its 1 A balancing-related charging limit is not a discharge-current rating.
+
+K9's design notes specify an intended 3S2P 21700 lithium-ion pack with a fully charged voltage of 12.6 V for conventional 4.2 V cells. Because OpenBMS's stated 12 V/20 V scope is ambiguous, this repository does not establish a direct match for K9. Confirm the exact voltage range, cell thresholds, current path ratings, charge profile, and response to motor transients before considering it further.
+
+For an ROV, no pack configuration, thruster current rating, isolation, or marine/pressure-environment suitability was established by the README. Treat the project as a general design reference only until the full report and hardware are reviewed against a specific vehicle.
+
+The repository marks the project as work in progress and provides an MIT licence. The licence permits reuse subject to its terms; it does not establish technical validation or safe suitability for a battery pack.
+
+===== Sources =====
+
+  * [OpenBMS: Open Source advanced Battery Management System](https://github.com/kayoumdjedidi/OpenBMS-advanced-battery-management-system), README, design folders, and licence; accessed 2026-11-07.
+  * [OpenBMS.ino](https://github.com/kayoumdjedidi/OpenBMS-advanced-battery-management-system/blob/main/code/OpenBMS/OpenBMS.ino), Arduino sketch; reviewed 2026-11-07; source was not compiled or run.
+  * [OpenBMS project report PDF](https://github.com/kayoumdjedidi/OpenBMS-advanced-battery-management-system/blob/main/OpenBMS_project_report.pdf), included in the repository; PDF text was not accessible during this review, accessed 2026-11-07.
+  * [[sites:chartroom:projects:k9-motor-control|K9 Motor Control — Initial Design Notes]], intended battery configuration; accessed 2026-11-07.
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

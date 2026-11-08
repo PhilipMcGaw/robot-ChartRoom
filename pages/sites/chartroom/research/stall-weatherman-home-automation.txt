@@ -1,0 +1,31 @@
+====== STALL WEATHERMAN home-automation weather station ======
+{{tag>research weather-station environmental-sensing home-automation wifi }}
+
+~~META:
+description     = German-language reference for the STALL WEATHERMAN-1 home-automation weather station.
+type            = research
+status          = reference
+authority       = Chartroom
+~~
+
+===== Project summary =====
+
+The German-language [[https://www.stall.biz/project/weatherman-die-perfekte-wetterstation-fuer-die-hausautomation/|STALL WEATHERMAN-1 project page]] describes a self-built weather station designed to send measurements to a Homematic home-automation controller. The page lists wind, temperature, humidity, pressure, rain, sunlight, and optional ultraviolet and sky-temperature measurements. It describes a WeMos Mini Wi-Fi microcontroller, a local web page, data logging, and options to send data to Homematic or a configurable server using JavaScript Object Notation (JSON).
+
+The design combines a conventional tipping-bucket rain gauge with a separate heated rain-detection surface intended to respond to the start of rain. The page describes hourly records for the previous 24 hours and daily records for 28 days. It also states that WEATHERMAN-2 is a newer version, so the WEATHERMAN-1 instructions should be treated as a version-specific reference.
+
+===== Chartroom relevance and limits =====
+
+This is a comparative reference for combining environmental sensors, local logging, and a home-automation data interface. The fast rain detector and rainfall-quantity gauge illustrate two distinct measurement functions.
+
+The page is in German and describes a home Wi-Fi installation. It does not validate the design for Robots project use, remote outdoor deployment, or marine exposure. Check the newer WEATHERMAN-2 material and the underlying build documentation before relying on parts or implementation details.
+
+===== Source =====
+
+  * [[https://www.stall.biz/project/weatherman-die-perfekte-wetterstation-fuer-die-hausautomation/|STALL: “WEATHERMAN-1 … die perfekte Wetterstation für die Hausautomation”]] (accessed 2026-11-07).
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

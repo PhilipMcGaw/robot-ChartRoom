@@ -1,0 +1,30 @@
+====== Blue Robotics official resources ======
+{{tag>research blue-robotics rov blueos ardusub documentation}}
+
+~~META:
+description     = Entry point to Blue Robotics' product, software, integration, and engineering resources.
+type            = research
+status          = reference
+authority       = Blue Robotics official website
+~~
+
+===== Resource hub =====
+
+The Blue Robotics homepage is a manufacturer resource hub for the BlueROV2 remotely operated vehicle (ROV), BlueBoat uncrewed surface vessel (USV), components, sensors, sonars, cables, enclosures, and support material. Its navigation links to official documentation for BlueOS, Cockpit, ArduSub, and ArduRover; product setup and integration guides; community forums; and engineering tools including pressure-to-depth, buoyancy, pressure-vessel, and voltage-drop calculators.
+
+Use the homepage as a route to current primary documentation, then cite the specific product, manual, or guide that supports a technical claim. Product listings and site navigation can change; this note does not validate individual specifications or establish a project design choice.
+
+===== Related research =====
+
+For BlueROV2 software architecture and setup, see [[sites:chartroom:research:blue-robotics-software-setup|Blue Robotics BlueROV2 software setup]]. For community build examples, see [[sites:chartroom:research:ferret-3d-printed-rov-balance|The Ferret 3D-printed ROV and balance estimation]] and [[sites:chartroom:research:blue-robotics-forum-3d-printed-rov|Blue Robotics forum: 3D-printed DIY ROV]].
+
+===== Source =====
+
+  * [Blue Robotics](https://bluerobotics.com/), official product and learning-resource homepage; reviewed 2026-11-08.
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

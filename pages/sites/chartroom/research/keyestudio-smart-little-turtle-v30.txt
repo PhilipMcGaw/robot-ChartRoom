@@ -1,0 +1,40 @@
+====== Keyestudio Smart Little Turtle Robot Car V3.0 ======
+{{tag>research, robotics, education, arduino, robot-car, sensors }}
+
+~~META:
+description     = Supplier reference for an Arduino-oriented educational robot car kit with ultrasonic, infrared, and Bluetooth control.
+type            = research
+status          = reference
+authority       = Chartroom
+~~
+
+===== Scope =====
+
+This note summarises Keyestudio's product page for the Smart Little Turtle Robot Car V3.0. It is a supplier description of a small educational land robot, not an independently evaluated kit or an underwater vehicle.
+
+===== Supplier description =====
+
+Keyestudio describes the kit as supporting 16 learning projects. The product page lists a DRV8833 motor driver, 5 V working voltage, 6–9 V input voltage, and a pair of geared motors. It also lists ultrasonic detection, infrared remote control, and Bluetooth control for Android and iOS devices. The page states an ultrasonic detection range of 2–400 cm and describes the infrared and Bluetooth control ranges as measured values; these performance figures have not been independently tested here.
+
+===== Relevance =====
+
+This kit is a reference for introductory robot-car teaching that combines motor control, short-range obstacle sensing, and wireless manual control. Its project-based format may be useful when comparing educational robotics resources.
+
+===== Limitations =====
+
+Product specifications and learning-project counts are supplier claims. This note does not assess the lesson material, code quality, electronics protection, or real-world sensor and radio performance. The product page describes a land robot and does not establish sealing, pressure resistance, or suitability for underwater use.
+
+===== Source =====
+
+  * [Keyestudio Smart Little Turtle Robot Car V3.0](https://www.keyestudio.com/products/keyestudio-smart-little-turtle-robot-car-v30-for-arduino-stem-programable-robot-kit), supplier product description; accessed 2026-11-07.
+
+===== Related research =====
+
+For a 3D-printable Arduino tracked-robot reference, see [[sites:chartroom:research:arduino-robot-tank-velli20|Velli20 Arduino Robot Tank]]. For other classroom ROV resources, see [[sites:chartroom:research:mate-seamate-rov-kits|MATE SeaMATE educational ROV kits]] and [[sites:chartroom:research:elementary-auv-rov-education|Elementary AUV and ROV education]].
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

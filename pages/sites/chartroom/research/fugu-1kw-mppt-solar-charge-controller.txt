@@ -1,0 +1,40 @@
+====== FUGU DIY 1 kW MPPT solar charge controller ======
+{{tag>research solar mppt charger power-electronics esp32}}
+
+~~META:
+description     = Research reference for the FUGU ESP32 synchronous-buck MPPT solar charge-controller project.
+type            = research
+status          = reference
+authority       = Project author materials and linked firmware repository
+~~
+
+===== Scope =====
+
+The Instructables project by ASCAS presents a do-it-yourself maximum power point tracking (MPPT) solar charge controller using an ESP32. The linked project listing and firmware repository provide more readable design information than the Instructables page, which returned no readable content during this review. This note summarises published project claims; it is not a design review, replication, or validation of the power stage.
+
+===== Published design and claims =====
+
+The project listing describes a synchronous buck converter with an ESP32-WROOM32, ADS1115 or ADS1015 analogue-to-digital converter, ACS712-30A current sensor, IR2104 gate driver, and three CSD19505 N-channel MOSFETs. It describes perturb-and-observe MPPT with constant-current/constant-voltage charging, Wi-Fi and Bluetooth phone telemetry, an LCD interface, and adjustable PWM settings.
+
+The listing advertises up to 80 V and 30 A input, up to 50 V and 30 A output, and 98% peak conversion efficiency. These are project-published specifications and performance claims. The materials reviewed do not establish that the maxima can be used simultaneously, define a continuous thermal rating for a particular build, or provide independent efficiency and protection test evidence. The “1 kW” title should therefore not be treated as a verified continuous output rating.
+
+The firmware repository describes battery presets for lithium-ion, LiFePO4, lead-acid, and other chemistries. The exact battery chemistry, cell count, charge-voltage limits, current limits, sensor calibration, switching frequency, cooling, and protection thresholds must be configured and verified for the specific hardware and battery. Firmware support for a chemistry does not establish that the power stage, sensors, thermal design, or protection are suitable for a given pack.
+
+===== Relevance and limitations =====
+
+This is a reference for an open-source embedded MPPT charger with local controls and telemetry. It could inform research into solar-powered field stations, but it is a high-power switching-converter project and should not be treated as a ready-to-build or validated charger for the Robots project. Confirm the schematic, bill of materials, PCB layout, component ratings, thermal design, charge algorithm, calibration, isolation, fault handling, and test evidence before any hardware use. No battery was connected and no measurements or safety review were performed for this note.
+
+The project listing states a Creative Commons Attribution-ShareAlike licence for the project material. The linked firmware repository lists a separate CC0-1.0 licence. Check the applicable licence for each file before reusing or modifying it.
+
+===== Sources =====
+
+  * [DIY 1kW MPPT Solar Charge Controller](https://www.instructables.com/DIY-1kW-MPPT-Solar-Charge-Controller/), ASCAS; page returned no readable content during review, accessed 2026-11-07.
+  * [DIY 1kW Open Source MPPT Solar Charge Controller](https://www.pcbway.com/project/shareproject/DIY_1kW_Open_Source_MPPT_Solar_Charge_Controller.html), project listing, specifications, component list, and stated licence; accessed 2026-11-07.
+  * [FUGU-ARDUINO-MPPT-FIRMWARE](https://github.com/AngeloCasi/FUGU-ARDUINO-MPPT-FIRMWARE), firmware description and licence; accessed 2026-11-07.
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

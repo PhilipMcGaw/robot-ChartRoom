@@ -1,0 +1,44 @@
+====== Arduino e Cia Arduino RS-485 tutorial ======
+{{tag>research communications rs-485 arduino serial}}
+
+~~META:
+description     = Beginner Arduino Uno example for direction control and two-wire RS-485 serial communication.
+type            = research
+status          = reference
+authority       = Arduino e Cia tutorial; Texas Instruments design guide for physical-layer context
+~~
+
+===== Scope =====
+
+The Portuguese-language Arduino e Cia tutorial, published 2019-07-28, demonstrates a simple serial link between two Arduino Uno boards using RS-485 converter modules. It is useful as an introductory wiring and direction-control example, not as a multi-node bus protocol or a project design specification.
+
+===== Demonstrated arrangement =====
+
+The tutorial's converter module exposes RO (receiver output), RE (receiver enable), DE (driver enable), and DI (driver input), plus A and B bus terminals. The example joins RE and DE to one Arduino general-purpose input/output (GPIO) pin for transmit/receive direction control. It connects A to A and B to B between the two modules and includes a shared ground reference between the Arduino boards.
+
+The code uses SoftwareSerial on Arduino pins 10 and 11, a direction-control pin on pin 3, and a 4,800 baud link. A button on the transmitter sends a text string to the receiver. The tutorial therefore demonstrates a two-node point-to-point exchange. It does not define node addresses, bus arbitration, message integrity checks, retries, timeouts, or a multi-node application protocol.
+
+===== Source review notes =====
+
+The tutorial lists 1,200 m distance, 32 nodes, and 35 Mbit/s as RS-485 characteristics. These should not be treated as simultaneous operating limits. The achievable data rate depends on cable length and electrical loading; node count depends on transceiver unit-load specifications and any termination or bias network. Texas Instruments' RS-485 design guide explains these constraints and the need to consider termination, idle-bus fail-safe biasing, topology, and cable characteristics for the selected hardware.
+
+The receiver example as rendered compares an input character with `'n'`, while the transmitter sends the text with `println`. If the code literally checks for the letter `n` rather than a newline character, it does not match the stated end-of-string behaviour. Verify the original source and correct the terminator check before reusing the example.
+
+===== Relevance to the Robots RS-485 bus =====
+
+This is a useful demonstration of transceiver enable control and a basic serial-to-differential physical interface. The Robots architecture already specifies Modbus RTU (remote terminal unit) over a shared, half-duplex RS-485 bus. The tutorial's plain text string does not implement Modbus RTU and does not change that project decision. For project wiring and bus requirements, see [[sites:chartroom:architecture:communications|Communications architecture]]; for a custom packet-framing comparison, see [[sites:chartroom:research:gammon-rs485-arduino-library|Nick Gammon RS-485 Arduino protocol library]].
+
+The tutorial does not provide enough detail to design the project harness: select transceivers for the system voltage and required common-mode range, and determine termination, biasing, grounding, protection, topology, baud rate, and direction-control timing from the complete bus design and hardware datasheets.
+
+===== Sources =====
+
+  * [Como usar a comunicação RS485 com Arduino](https://arduinoecia.com.br/como-usar-comunicacao-rs485-com-arduino/), Arduino e Cia, 2019-07-28; accessed 2026-11-07.
+  * [The RS-485 Design Guide, Rev. D](https://www.ti.com/lit/an/slla272d/slla272d.pdf), Texas Instruments, revised 2021-05; bus loading, data-rate versus cable-length, termination, and fail-safe biasing; accessed 2026-11-07.
+  * [[sites:chartroom:architecture:communications|Chartroom communications architecture]], current project RS-485 and Modbus RTU design; accessed 2026-11-07.
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

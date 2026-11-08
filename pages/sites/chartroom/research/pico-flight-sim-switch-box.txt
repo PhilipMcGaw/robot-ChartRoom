@@ -1,0 +1,45 @@
+====== Raspberry Pi Pico flight-simulator switch box ======
+{{tag>research, raspberry-pi-pico, circuitpython, hid, controller, interface }}
+
+~~META:
+description     = Hackster and Reddit reference for a Raspberry Pi Pico USB switch box using CircuitPython gamepad and keyboard interfaces.
+type            = research
+status          = reference
+authority       = Chartroom
+~~
+
+===== Scope =====
+
+This note summarises Hackster.io's report on a custom flight-simulator switch box built by DarkfullDante. The Hackster report links to the builder's Reddit post for additional details. This is a desktop gaming control, not a flight-control system for a real aircraft or robot.
+
+===== Reported design =====
+
+The report describes a Raspberry Pi Pico running CircuitPython and presenting controls to a computer through a combination of USB Human Interface Device (HID) gamepad and keyboard inputs. The builder used physical switches, a rotary encoder, and linear potentiometers in a stock aluminium enclosure. The builder said some controls were salvaged from an old television amplifier.
+
+The article explains that the builder used keyboard function keys F13–F24 for rotary-encoder actions because the gamepad interface did not provide enough buttons for the desired nine-position selector behaviour. This is a reported workaround for that build and software environment, not a general requirement for CircuitPython controllers.
+
+The article says the box was intended for Microsoft Flight Simulator and Elite Dangerous. The linked Reddit post contains additional discussion and interior photographs.
+
+===== Relevance =====
+
+This is a reference for a low-cost, custom operator input panel using a microcontroller as a USB gamepad and keyboard. The input mapping approach may be useful when considering physical control panels, test fixtures, or simulator controls. It does not establish compatibility with Cockpit, BlueOS, ArduPilot, or any project robot.
+
+===== Limitations =====
+
+The available sources are a Hackster article and the builder's Reddit post. They do not provide a complete tested bill of materials, full source code, measured latency, or evidence of compatibility beyond the stated desktop games. The article's note about a future 64-bit gamepad protocol reflects the state described at publication and should not be treated as a current CircuitPython capability statement.
+
+===== Sources =====
+
+  * [DarkfullDante's Flight Sim Switch Box Is Powered by a Raspberry Pi Pico Running CircuitPython](https://www.hackster.io/news/darkfulldante-s-flight-sim-switch-box-is-powered-by-a-raspberry-pi-pico-running-circuitpython-27056125070c), Hackster.io; accessed 2026-11-07.
+  * [Saw people posting there RP2040 keyboard, not a keyboard, but I made a flight simulator switch board](https://www.reddit.com/r/raspberry_pi/comments/o6zlbn/saw_people_posting_there_rp2040_keyboard_not_a/), builder's Reddit post; accessed 2026-11-07.
+
+===== Related research =====
+
+For other control-interface references, see [[sites:chartroom:research:servo-diy-rc-controller|SERVO DIY radio-control controller]], [[sites:chartroom:research:robocenter|RoboCenter ROV]], and [[sites:chartroom:research:bit-driven-circuits-rov|Bit Driven Circuits ROV]].
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

@@ -1,0 +1,48 @@
+====== Green BMS SmartBMS — candidate BMS research ======
+{{tag>research battery-management lithium-ion lifepo4 bms k9 rov}}
+
+~~META:
+description     = Review of the Green BMS open-source battery-management project as a possible K9 or ROV candidate.
+type            = research
+status          = candidate
+authority       = Green BMS SmartBMS repository and build instructions
+~~
+
+===== Scope =====
+
+The Green BMS SmartBMS repository describes a do-it-yourself battery management system (BMS) for lithium chemistries including LiFePO4, Li-ion, and NCM. It is a research candidate for K9 or an ROV, not a selected, built, or validated system for either robot.
+
+===== Published design =====
+
+The repository describes four main parts: one cell module per cell, an Arduino Mega-based control unit, a limiter board, and an Android app. Cell modules use ATtiny microcontrollers to measure cell voltage and temperature and communicate with the control unit over an inter-integrated circuit (I²C) serial bus. The control unit is described as controlling charge and discharge relays, initiating cell balancing, and receiving pack current measurements. A Bluetooth HC-05 module connects the control unit to the Android app for pack and cell status and settings.
+
+The project build instructions show an example installation on a 16-series-cell, 48 V battery pack. This example does not establish the complete supported series-cell range. The documentation reviewed does not provide a single rated continuous discharge current for the assembled BMS: the discharge relay is to be selected for the required current, and the stated 40 A relay contact applies to an optional charge-limiter component. Do not treat that charge-side relay rating as a discharge rating.
+
+The repository warns that this is a do-it-yourself project supplied without warranty and that batteries can present a serious fire hazard. The README states a Creative Commons Attribution-ShareAlike 4.0 licence for the project material. Those statements are project documentation, not independent safety certification for a particular assembled battery system.
+
+===== K9 suitability questions =====
+
+K9's current design notes describe an intended 3S2P pack using 21700 lithium-ion cells, but the cell model, pack discharge rating, motor current, and required BMS rating are not yet known. The Green BMS repository's broad chemistry description alone does not establish compatibility with K9's series count, cells, charger, or dual-motor load.
+
+Before treating it as a K9 candidate, verify the exact cell chemistry and voltage limits; the firmware's supported series count and per-cell settings; cell-module accuracy and temperature limits; balancing current; current-sensor range; relay and board current ratings; and behaviour under motor start, stall, and fault conditions. Compare those limits with measured motor and pack currents, and document fuse coordination and cutoff behaviour. Until then, the BMS selection remains open in [[sites:chartroom:projects:k9-motor-control|K9 Motor Control — Initial Design Notes]].
+
+===== ROV suitability questions =====
+
+For an ROV, first establish the actual pack chemistry, series count, charging arrangement, maximum continuous and transient thruster current, and where the battery and BMS will be located. The repository does not establish a marine or pressure-hull rating, nor does its Android/Bluetooth feature establish an interface to the ROV control system. Confirm enclosure and pressure-boundary requirements, isolation, cable penetrations, corrosion protection, fault response, and safe loss-of-control behaviour for the specific vehicle before considering use.
+
+===== Assessment =====
+
+SmartBMS is useful as an open reference for per-cell monitoring, balancing, pack telemetry, and a modular control-unit arrangement. It is not currently a substantiated recommendation for K9 or an ROV because key electrical ratings, integration details, and application-specific safety evidence have not been established. No build, electrical review, or bench test was performed for this research note.
+
+===== Sources =====
+
+  * [Green-bms/SmartBMS](https://github.com/Green-bms/SmartBMS), README, project structure, and licence; accessed 2026-11-07.
+  * [Green BMS build instructions](https://hackaday.io/project/181453/instructions), components, wiring, and example 16S installation; accessed 2026-11-07.
+  * [[sites:chartroom:projects:k9-motor-control|K9 Motor Control — Initial Design Notes]], current Chartroom design investigation; accessed 2026-11-07.
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

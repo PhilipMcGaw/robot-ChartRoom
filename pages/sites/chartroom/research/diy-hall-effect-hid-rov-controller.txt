@@ -1,0 +1,41 @@
+====== DIY Hall-effect HID controls as an ROV controller reference ======
+{{tag>research rov operator-interface hid joystick hall-effect}}
+
+~~META:
+description     = Research reference for adapting 3D-printed USB flight controls to a topside ROV interface.
+type            = research
+status          = reference
+authority       = Hackaday article and linked Thingiverse project pages
+~~
+
+===== Scope =====
+
+Hackaday's article describes Akaki Kuumeri's 3D-printed flight-simulator controls. This note considers them as a possible reference for a do-it-yourself human-interface device (HID) for a remotely operated vehicle (ROV). The source project is for a flight simulator; it is not an ROV controller and has not been adapted or tested for ROV operation.
+
+===== Reported design =====
+
+The article describes a joystick, throttle, and pedals that use magnets and Hall-effect sensors to sense control movement. An Arduino Pro Micro based on the ATmega32U4 sends inputs to a computer over USB and can be configured as a USB input device. The designs are provided as Thingiverse projects. The article does not describe ROV command handling or control software.
+
+The linked Thingiverse pages could not be opened during review (HTTP 403), so the mechanical files, firmware, component details, and licence terms were not independently checked. The summary above is based on Hackaday's article.
+
+===== Possible ROV use =====
+
+A USB HID controller could be explored as a topside physical input device if the operator computer and control application can read its axes and buttons. A two-axis stick could provide pilot inputs, while a throttle or pedal could provide an additional command axis. The axis-to-vehicle mapping and USB input path would need to be confirmed against the selected topside control software; this reference does not establish compatibility with BlueOS, Cockpit, or ArduSub.
+
+ROV use would also need explicit treatment of axis calibration, dead zones, neutral position, button state, and loss of input. The control application should define how it returns to a safe command state when the USB device disconnects or stops reporting. These are adaptation requirements to investigate, not features documented in the flight-control build.
+
+===== Related research =====
+
+For another USB HID control-panel example, see [[sites:chartroom:research:pico-flight-sim-switch-box|Raspberry Pi Pico flight-simulator switch box]]. For ROV-specific control-system references, see [[sites:chartroom:research:bit-driven-circuits-rov|Bit Driven Circuits submersible ROV]] and [[sites:chartroom:research:ultrasonic-rov-micromouse-and-control-batch|Ultrasonic ROV, micromouse, and control batch]].
+
+===== Sources =====
+
+  * [3D-Printed Flight Controls Use Magnets For Enhanced Flight Simulator 2020 Experience](https://hackaday.com/2020/09/03/3d-printed-flight-controls-use-magnets-for-enhanced-flight-simulator-2020-experience/), Hackaday, 2020-09-03; accessed 2026-11-07.
+  * [Akaki Kuumeri joystick design](https://www.thingiverse.com/thing:4576634), [throttle design](https://www.thingiverse.com/thing:4578169), and [pedal design](https://www.thingiverse.com/thing:4578174), linked from Hackaday; Thingiverse pages returned HTTP 403 during review, accessed 2026-11-07.
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

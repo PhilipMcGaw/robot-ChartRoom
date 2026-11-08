@@ -1,0 +1,37 @@
+====== Raspberry Pi zRAM swap reference ======
+{{tag>research raspberry-pi linux memory zram swap}}
+
+~~META:
+description     = Research note on compressed zRAM swap and the Pi My Life Up setup guide.
+type            = research
+status          = reference
+authority       = Pi My Life Up guide and foundObjects zram-swap repository
+~~
+
+===== Principle =====
+
+zRAM is a Linux kernel feature that creates a compressed block device in system memory. When configured as swap, it can keep some swapped data in compressed RAM instead of writing that data to storage. Compression and decompression use processor time, and zRAM itself uses physical memory; its configured device size is not the amount of additional physical RAM available.
+
+===== Guide and implementation reference =====
+
+The Pi My Life Up guide was updated 2022-01-30 and reports testing on a Raspberry Pi 400 with an updated Raspberry Pi OS. It demonstrates the [[https://github.com/foundObjects/zram-swap|foundObjects zram-swap]] script. The script README describes a systemd service, with a default LZ4-compressed zRAM device sized so its fully populated contents use roughly half of physical memory. The guide describes running zRAM at higher swap priority than file-backed swap.
+
+The script README reports testing on Linux kernel versions 4.4 through 5.14. That statement and the 2022 tutorial do not establish compatibility with current Raspberry Pi OS releases, current kernels, or the Robots project's deployment image. Check the current system configuration first: a distribution or deployment may already configure zRAM or another swap policy. Do not install a second swap manager without checking for conflicts.
+
+===== Relevance and limits =====
+
+zRAM is a possible system-level option to investigate when a Raspberry Pi experiences memory pressure. It can trade processor time and some physical memory for compressed swap space. It does not replace capacity planning, memory profiling, or reducing unnecessary service load, and it does not guarantee lower storage writes or improved real-time behaviour. No zRAM configuration has been adopted or tested for a Robots project computer.
+
+For the maintained project deployment procedure, see [[sites:chartroom:development:raspberry-pi-deployment|Raspberry Pi deployment]]. This tutorial is a research reference, not a deployment instruction.
+
+===== Sources =====
+
+  * [Using zRAM with the Raspberry Pi](https://pimylifeup.com/raspberry-pi-zram/), Pi My Life Up; updated 2022-01-30; reports testing on Raspberry Pi 400; reviewed 2026-11-07.
+  * [foundObjects/zram-swap](https://github.com/foundObjects/zram-swap), script README, default configuration, systemd service, and stated kernel test range; reviewed 2026-11-07.
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

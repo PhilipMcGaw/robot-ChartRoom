@@ -1,0 +1,56 @@
+====== Nick Gammon RS-485 Arduino protocol library ======
+{{tag>research communications rs-485 arduino serial protocol}}
+
+~~META:
+description     = Reference for Nick Gammon's Arduino RS-485 packet library and its framing, integrity checks, and driver direction handling.
+type            = research
+status          = reference
+authority       = Nick Gammon forum and GitHub repository
+~~
+
+===== Scope =====
+
+This note records Nick Gammon's 2011 RS-485 communications forum thread and the associated [RS485_protocol Arduino library](https://github.com/nickgammon/RS485_protocol). The forum page was not directly retrievable during this review; the current GitHub README links to the thread and documents the library.
+
+===== Reported protocol approach =====
+
+The library provides packet framing for Arduino nodes communicating over RS-485 wiring. The README describes start- and end-of-packet markers, an encoding scheme that excludes those marker values from ordinary data, and a cyclic redundancy check (CRC) to help detect corrupted or incomplete packets. Packets can carry between 1 and 255 bytes.
+
+The example uses a message containing a destination address, command, and parameter, followed by a response from the receiving node. The library accepts callback functions for writing, checking available input, and reading data, so the packet logic can be connected to different serial interfaces.
+
+The README leaves RS-485 transceiver direction control to the application. It also documents a hardware-serial timing issue: the driver must remain enabled until the final byte has actually left the serial transmitter. The correct direction-control method depends on the hardware and serial port in use.
+
+The blocking repository links to a separate non-blocking version. Its README says the packet protocol is the same, but the receiving sketch calls `update()` to assemble input incrementally into an instance buffer and check when a packet is complete. The caller supplies a maximum receive-buffer length and calls `begin()` to allocate it. The class also exposes packet-progress and error information. This changes how the application services reception; it does not change the on-wire protocol.
+
+===== Related ATtiny45/85 baud-rate discussion =====
+
+In a 2013 Arduino Forum thread, a user working with an ATtiny45/85 asked whether internal-oscillator temperature drift mattered at about 1,200 bit/s. A later reply stated that asynchronous serial could tolerate around 9% clock error and noted that start bits re-synchronise reception between bytes. This is historical forum advice in the context of that user's low-rate setup, not a guaranteed error budget or a substitute for the microcontroller datasheet and timing analysis.
+
+The Robots communications page sets 115,200 baud as the RS-485 design baseline and explicitly requires testing clock error with the intended nodes and harness. The 2013 thread does not establish that rate for the project's current processors or network.
+
+===== Relevance and project boundary =====
+
+This is a useful historical example of a custom framed protocol over an RS-485 physical link, including addressing, acknowledgement, and error detection. The [[sites:chartroom:architecture:communications|Chartroom communications architecture]] specifies Modbus RTU over RS-485 for the project bus. Gammon's library is a comparison reference; it does not change that project design.
+
+===== Limitations =====
+
+The library README is not a complete system specification. The example does not establish behaviour for the Robots project's bus, node count, electrical design, fault recovery, timing budget, or security requirements. Its CRC and encoding should not be treated as a substitute for system-level validation. This research note does not record project bench testing of the library.
+
+===== Sources =====
+
+  * [RS485 communications](https://www.gammon.com.au/forum/threads/11428.html?id=11428), Nick Gammon forum thread, 2011-11-14; direct access returned a cache miss on 2026-11-07.
+  * [nickgammon/RS485_protocol](https://github.com/nickgammon/RS485_protocol), Arduino library README; accessed 2026-11-07.
+  * [nickgammon/RS485_non_blocking README](https://github.com/nickgammon/RS485_non_blocking/blob/main/README.md), non-blocking variant and receiving interface; accessed 2026-11-07.
+  * [RS485 with attiny45/85 [SOLVED], reply 5](https://forum.arduino.cc/t/rs485-with-attiny45-85-solved/175193/5), Arduino Forum, 2013-07-26; user question reviewed 2026-11-07.
+  * [Reply 6](https://forum.arduino.cc/t/rs485-with-attiny45-85-solved/175193/6), Nick Gammon's response in the same thread; reviewed 2026-11-07.
+
+===== Related research =====
+
+For the project bus design, see [[sites:chartroom:architecture:communications|Communications architecture]].
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

@@ -35,6 +35,10 @@ Choose the Navigator if the goal is to use the Raspberry Pi as the main onboard 
 
 The Navigator is the closest match to the proposed design, but the external IMU and Modbus depth sensor should not automatically replace its onboard control-state sensors. Any sensor used for stabilization or depth-hold needs to be integrated into ArduPilot's supported sensor path and validated under failure conditions.
 
+Blue Robotics' [[https://bluerobotics.com/learn/navigator-hardware-setup/#telemetry-radio|Navigator Hardware Setup]] guide says a telemetry radio can connect to any of the six-pin serial connectors and recommends SERIAL 1 for this purpose. Check the radio's supply and signal requirements against the Navigator connector specification before wiring it.
+
+For other serial devices, Blue Robotics documents the six-pin SERIAL 1, 3, 4, and 5 connectors, and says additional devices can connect through a Raspberry Pi 4 USB port with a USB-to-UART adapter. The published pinout for the SERIAL 1, 3, and 4 connectors identifies a 5 V supply pin, 3.3 V TX/RX signals, and ground. Match the device supply and logic levels to the connector specification; do not treat the 5 V supply pin as a 5 V serial signal. The guide lists the Linux device paths as ''/dev/ttyS0'' for SERIAL 1, ''/dev/ttyAMA1'' for SERIAL 3, ''/dev/ttyAMA2'' for SERIAL 4, and ''/dev/ttyAMA3'' for the UART on SERIAL 5 + I²C 6.
+
 ==== Cube Orange+ or Pixhawk 4 ====
 
 Choose a Cube Orange+ or Pixhawk 4 when reliability and a conventional separation of responsibilities matter more than reducing board count:
@@ -67,12 +71,25 @@ Before ordering, confirm the complete system rather than the controller price al
   * enclosure, vibration isolation, and power distribution;
   * ArduSub firmware support for the exact board and selected sensor drivers.
 
+===== Connection diagram reference =====
+
+The [[https://www.ardusub.com/introduction/hardware-options/connection-diagrams.html|ArduSub connection diagrams]] page gives a system-level view of the autopilot, companion computer, topside computer, tether, power, thrusters, and optional peripherals. It is useful as a conceptual reference when discussing how these components relate.
+
+The page carries an archive notice and says that the documentation is no longer maintained. Do not use it as the current authority for wiring, voltage limits, or hardware compatibility. The notice points readers to the [[https://ardupilot.org/sub/|ArduPilot Sub documentation]], which is being updated from the original ArduSub documentation.
+
+The archived [[https://www.ardusub.com/introduction/hardware-options/required-hardware.html|Required Hardware]] page gives a system-level checklist that includes an autopilot, companion and topside computers, joystick, camera, electronic speed controls, thrusters, power sensing and distribution, and a tether. Treat this as historical system context, not a current bill of materials or confirmation that each item is required for this vehicle.
+
 ===== References =====
 
   * [[https://blueos.cloud/docs/stable/integrations/hardware/required/flight-controller/|BlueOS flight controller guidance]]
   * [[https://blueos.cloud/docs/stable/integrations/hardware/required/onboard-computer/|BlueOS onboard computer guidance]]
   * [[https://bluerobotics.com/store/comm-control-power/control/navigator/|Blue Robotics Navigator]]
+  * [[https://bluerobotics.com/learn/navigator-hardware-setup/#telemetry-radio|Blue Robotics Navigator Hardware Setup — Telemetry Radio]]
+  * [[https://bluerobotics.com/learn/navigator-hardware-setup/#serial-devices|Blue Robotics Navigator Hardware Setup — Serial Devices]]
   * [[https://ardupilot.org/sub/docs/common-autopilots.html|ArduSub autopilot hardware list]]
+  * [[https://www.ardusub.com/introduction/hardware-options/connection-diagrams.html|ArduSub connection diagrams (archived)]]
+  * [[https://www.ardusub.com/introduction/hardware-options/required-hardware.html|ArduSub required hardware (archived)]]
+  * [[https://ardupilot.org/sub/|ArduPilot Sub documentation]]
   * [[sites:chartroom:architecture:blueos-adeept-robot-hat|Existing BlueOS and Adeept Robot HAT architecture page]]
 
 

@@ -1,0 +1,31 @@
+====== Miksrv Arduino Weather Station ======
+{{tag>research, weather-station, environmental-sensing, arduino, esp32 }}
+
+~~META:
+description     = Reference for a modular Arduino and ESP32 weather-monitoring project.
+type            = research
+status          = reference
+authority       = Chartroom
+~~
+
+===== Project summary =====
+
+The public [[https://github.com/miksrv/arduino-weather-station|miksrv/arduino-weather-station]] repository describes a do-it-yourself weather-monitoring platform using Arduino or ESP32 hardware. Its README presents firmware, sensor options, a PHP and MySQL backend API, and a Next.js web dashboard for current and historical weather data.
+
+The README lists temperature, humidity, dew point, ultraviolet intensity, solar energy and radiation, wind speed and direction, atmospheric pressure, precipitation, and cloud cover among its measured parameters. It also points to separate documentation for architecture, backend, frontend, development, testing, and 3D-printed models.
+
+===== Chartroom relevance =====
+
+This is a comparative reference for environmental sensing, sensor integration, data collection, and presentation. It may help frame discussions about weather stations or surface environmental monitoring alongside the [[sites:chartroom:research:smart-buoy-lora-network-infrastructure|Smart Buoy]] and other buoy research.
+
+This repository is an external project reference. Its design, hardware, measurements, and operating behaviour have not been independently validated for Robots project use. Consult its source documentation and implementation before relying on any detail.
+
+===== Source =====
+
+  * [[https://github.com/miksrv/arduino-weather-station|Project repository and README]] (accessed 2026-11-07)
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

@@ -1,0 +1,36 @@
+====== MoPi 2 Raspberry Pi mobile power ======
+{{tag>research raspberry-pi power battery-management mobile-power}}
+
+~~META:
+description     = Research note on MoPi 2 mobile power management and its documented limits.
+type            = research
+status          = reference
+authority       = SheffieldPi-Tronics MoPi 2 documentation
+~~
+
+===== Published capabilities =====
+
+The SheffieldPi-Tronics documentation describes MoPi 2 as a Raspberry Pi power-management board with two power inputs, automatic source switchover, and a 5 V output rated up to 2.5 A for the Pi and attached devices. It reports an input range of 6.5–24 V, configurable battery profiles, voltage monitoring, low-battery warnings, and a clean Pi shutdown when a configured critical battery level is reached. The documented 6.0 V auto-off is a final cutoff; the source also states that the board needs at least 6.5 V under load to operate reliably.
+
+MoPi 2 can be used with batteries, solar panels, or other supplies within its input limits. It has an external charger connection described as a gate only; charging functions depend on the separate charger. Software communicates with the board over I²C, and the page describes a Python API, command-line tools, and a monitoring daemon.
+
+===== Compatibility and limitations =====
+
+The page has mixed Raspberry Pi compatibility statements. Its introduction says MoPi 2 works with all Pi models and names the Raspberry Pi 3 B+, while its model list and test note specify only Raspberry Pi 2, Raspberry Pi 3, and Raspberry Pi 3 B+. The documented page dates the MoPi-2 release to 2018 and does not establish compatibility with newer Pi models or current Raspberry Pi OS releases. Verify current hardware and software support before choosing it.
+
+MoPi 2 is a Pi power supply and supervisory shutdown board, not a battery management system (BMS) for a high-current traction pack. The documentation does not describe per-cell monitoring, balancing, or a motor-current-rated output. Its 2.5 A at 5 V output limit applies to the Pi and attached devices; it is not a rating for driving motors. Battery configuration and safe discharge limits must be set correctly, and clean shutdown depends on the Raspberry Pi software functioning.
+
+===== Relevance =====
+
+MoPi 2 is a historical reference for dual-source Raspberry Pi power, input voltage monitoring, battery-profile configuration, and controlled shutdown. Those ideas may be useful when designing a separately regulated computer supply for a robot or field logger. The published limits and compatibility gaps mean this page alone does not establish suitability for a current ROV or K9 build.
+
+===== Source =====
+
+  * [MoPi 2: Hot-Swap Mobile Power for the Pi](https://pi.gate.ac.uk/pages/mopi.html#__RefHeading__5538_902516158), SheffieldPi-Tronics documentation; product features, operating limits, software, and compatibility statements; reviewed 2026-11-07.
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

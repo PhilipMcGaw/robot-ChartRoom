@@ -1,0 +1,37 @@
+====== Homebuilt ROVs Forum ======
+{{tag>research, rov, community, forum, diy }}
+
+~~META:
+description     = Community forum directory for home-built remotely operated vehicles, with boards for construction and systems topics.
+type            = research
+status          = reference
+authority       = Chartroom
+~~
+
+===== Scope =====
+
+This note records the Homebuilt ROVs Forum as a community research source. The forum index describes its purpose as exploring the hobby of building an ROV. The directory includes boards for beginner questions, computer-aided design, control systems and tethers, frames, hulls and buoyancy, thrusters, and cameras.
+
+===== Relevance =====
+
+The forum may help locate first-hand build discussions and practical questions across mechanical design, propulsion, control, tethering, and underwater imaging. Forum posts are individual contributions; they do not by themselves establish safe designs, verified performance, or generally applicable specifications. Assess specific claims against primary documentation and test evidence before relying on them.
+
+===== Limitations =====
+
+The forum index could not be opened directly through the available browser tool. The summary above is limited to the search-indexed forum title, description, and category excerpts. Individual discussions have not been reviewed in this note. A user-supplied link to `viewforum.php?f=7` returned a cache miss; its board title and contents could not be confirmed, so no topic is inferred from the numeric identifier.
+
+===== Source =====
+
+  * [Homebuilt ROVs Forum index](https://homebuiltrovs.com/rovforum/), forum directory; search-indexed content reviewed 2026-11-07. The user-provided URL included a session identifier, which is omitted from this saved link.
+  * [Forum board 7](https://www.homebuiltrovs.com/rovforum/viewforum.php?f=7), supplied link; direct page access returned a cache miss on 2026-11-07, and the board title remains unconfirmed.
+
+===== Related research =====
+
+For a specific community build log, see [[sites:chartroom:research:blue-robotics-forum-3d-printed-rov|Blue Robotics forum: 3D-printed DIY ROV]]. For other ROV build references, see [[sites:chartroom:research:community-robotics-and-sensing-batch|Community robotics and sensing references]] and the [[sites:chartroom:research:start|research catalogue]].
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

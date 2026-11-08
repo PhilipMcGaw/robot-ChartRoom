@@ -1,0 +1,32 @@
+====== Raspberry Pi submersible drone (2016) ======
+{{tag>research rov raspberry-pi underwater camera tether sensors}}
+
+~~META:
+description     = Historical Raspberry Pi News profile of Niels Affourtit's home-built tethered ROV.
+type            = research
+status          = reference
+authority       = Raspberry Pi News project profile
+~~
+
+===== Reported build =====
+
+Raspberry Pi News profiled Niels Affourtit's home-built remotely operated vehicle (ROV) on 2016-02-04. The brief article says the vehicle used a Raspberry Pi, an HD camera, 3D-printed propellers and a camera-tilt mechanism, a Bosch BMP180 pressure sensor, and an ADXL345 three-axis accelerometer. The system was controlled over an Ethernet tether.
+
+The article reports that a webpage displayed tilt, roll, heading, temperature, and internal pressure data, and that the vehicle had been tested to 12 m with a deeper design target. It also links to video footage. These are statements in a short Raspberry Pi News profile; the linked video was not reviewed here, and the project was not independently inspected or tested.
+
+===== Relevance and limits =====
+
+This is a historical example of combining a Raspberry Pi, tethered Ethernet control, live camera video, and onboard sensor telemetry in a home-built ROV. The article does not provide a build manual, wiring details, pressure-housing design, depth-test method, or enough evidence to validate the reported depth. Treat it as a project lead and architecture illustration, not a reproducible or validated ROV design.
+
+For other maker-built ROV references, see [[sites:chartroom:research:bit-driven-circuits-rov|Bit Driven Circuits submersible ROV]], [[sites:chartroom:research:diyrov-google-sites-build|DIY ROV Google Sites build]], and [[sites:chartroom:research:ferret-3d-printed-rov-balance|The Ferret 3D-printed ROV and balance estimation]].
+
+===== Source =====
+
+  * [Submersible Raspberry Pi drone](https://www.raspberrypi.com/news/submersible-raspberry-pi-drone/), Raspberry Pi News, Liz Upton; dated 2016-02-04; reviewed 2026-11-07.
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

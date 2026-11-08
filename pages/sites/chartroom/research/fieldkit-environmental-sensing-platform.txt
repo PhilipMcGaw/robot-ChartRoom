@@ -1,0 +1,49 @@
+====== FieldKit environmental sensing platform ======
+{{tag>research environmental-sensing datalogger sensors fieldkit}}
+
+~~META:
+description     = Manufacturer-described modular field logger, sensor modules, mobile app, and data portal.
+type            = research
+status          = reference
+authority       = FieldKit product documentation
+~~
+
+===== Scope =====
+
+FieldKit describes a modular environmental sensing platform for field science, community resilience, and related applications. Its product information covers a data logger, sensor modules, a mobile application, and a web data portal. This note records the vendor's published description and specifications; it is not an independent assessment or validation.
+
+===== Published platform description =====
+
+The platform page describes a logger using a SAMD51P-series 32-bit microcontroller, with up to four FieldKit sensor modules connected over I²C. It lists Wi-Fi, onboard microSD logging in CSV format, GPS-augmented timestamps, solar charging, battery backup, and a built-in wireless access point for data retrieval. The page describes LoRa as a future capability, so it should not be treated as implemented without further evidence.
+
+The listed modules cover water conductivity, dissolved oxygen, temperature, pH, weather, and distance or water level. The website describes configurable measurement intervals from 30 seconds to 24 hours, a 37 Wh included battery, a nominal 12 V solar panel (15 V maximum), and an operating temperature range of −20 to 60 °C. It says unattended operation can range from weeks to months depending on the sensor modules and configuration; this is a vendor claim, not a general runtime guarantee.
+
+The mobile app is described as supporting configuration, calibration, GPS tagging, local downloads, and uploads to the FieldKit portal. The portal supports data visualisation, collaboration, and downloads in open formats, according to the platform page.
+
+===== Source discrepancies and limits =====
+
+The same platform page gives conflicting flash-storage values: the logger specification lists 512 MB, while the comparison table lists 2 Gb for FieldKit. Confirm the current hardware specification with FieldKit before using either value for capacity planning.
+
+FieldKit's website describes the platform as open architecture and based on open hardware principles, but the sensor sections reviewed list design files and schematics as “Coming Soon”. The pages inspected do not establish the available licence terms or the extent to which the hardware can currently be reproduced. The listed technical and environmental claims are vendor-published; no independent measurement reports or marine qualification evidence were reviewed.
+
+===== Relevance =====
+
+FieldKit is a useful commercial and community-science reference for a modular environmental logger with local storage, GPS time and position context, field configuration, and a data portal. The product information may inform comparisons with the Robots project's environmental sensing and buoy research. It does not establish compatibility with the project's electronics, communications, enclosure, or deployment requirements.
+
+===== Proposed direction for investigation =====
+
+A modular weather-station and sensor-network concept is proposed for further investigation: allow compatible sensor modules or sensor nodes to be added to a shared sensing system, then send collected data to a gateway over LoRa or another suitable communications link. This is a research idea, not an approved architecture or implemented capability.
+
+The design should distinguish the local interface used to connect a sensor module to its logger or node from the network link used to return data to a gateway. These may have different power, distance, bandwidth, and reliability needs. The proposal leaves the module interface, node versus centralised layout, discovery and configuration process, data format, and backhaul transport open for comparison. FieldKit's website describes LoRa only as a future capability; it is not evidence that FieldKit currently provides this network behaviour.
+
+===== Sources =====
+
+  * [FieldKit home page](https://www.fieldkit.org/), product overview; accessed 2026-11-07.
+  * [FieldKit platform](https://www.fieldkit.org/platform/), logger, app, portal, and sensor descriptions and specifications; accessed 2026-11-07.
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

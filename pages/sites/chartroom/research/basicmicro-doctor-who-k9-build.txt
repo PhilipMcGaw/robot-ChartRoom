@@ -1,0 +1,36 @@
+====== BasicMicro Doctor Who K9 build ======
+{{tag>research k9 robotics differential-drive motor-control encoders sensors}}
+
+~~META:
+description     = Research note on Richard Hopkins's Doctor Who-inspired K9 robot as profiled by BasicMicro.
+type            = research
+status          = reference
+authority       = BasicMicro customer-project article
+~~
+
+===== Published build description =====
+
+BasicMicro's customer-project article, updated August 2026, describes Richard Hopkins's full-size Doctor Who-inspired K9 robot. The article reports two 24 V scooter motors controlled by a RoboClaw 2x15A motor controller, custom encoder wheels for closed-loop drive, a Raspberry Pi main computer, and a separate 12 V logic battery. It also describes Espruino microcontrollers for auxiliary functions and an Adafruit 16-channel servo board for outputs.
+
+The reported sensing and interaction hardware includes two servo-swept LIDAR units in the ears, five infrared proximity sensors, five ultrasonic receivers, a camera, microphone, speaker, moving tail, lights, and a screen. BasicMicro links to the builder's website for further project details and plans. These are claims in the customer-project profile; this review did not inspect the plans or independently verify the build.
+
+===== Relevance to K9 motor-control research =====
+
+The profile is a useful example of a two-motor robot using per-motor encoders and a dedicated motor controller, with a Raspberry Pi issuing movement commands. Its powertrain differs from the current K9 Motor Control design notes, which describe two 18 V motor/gearbox assemblies and an intended 3S2P lithium-ion pack. The 24 V motors, series-connected 12 V batteries, RoboClaw model, and reported current rating must not be copied as specifications or compatibility evidence for the current K9 design.
+
+The BasicMicro article is a vendor profile of a customer build, not a controlled test report or the implementation authority for the Robots project's K9 hardware. Consult the builder's own build documentation and the relevant RoboClaw manuals before relying on detailed wiring, software, or performance claims.
+
+===== Source =====
+
+  * [Doctor Who K9 Build](https://resources.basicmicro.com/doctor-who-k9-build/), BasicMicro customer-project profile; updated August 2026; reviewed 2026-11-07.
+
+===== Related research =====
+
+See [[sites:chartroom:projects:k9-motor-control|K9 Motor Control — Initial Design Notes]] for the Robots project's current drivetrain and battery investigation. BasicMicro links to [Richard Hopkins's K9 build website](https://k9-build.blogspot.com/) for further build details and plans.
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

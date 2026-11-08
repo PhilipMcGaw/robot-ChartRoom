@@ -1,0 +1,48 @@
+====== PhotonPower Zero solar Raspberry Pi Zero power board ======
+{{tag>research solar raspberry-pi-zero power-management battery outdoor}}
+
+~~META:
+description     = Open-hardware solar power-management HAT for Raspberry Pi Zero, with battery monitoring and graceful shutdown.
+type            = research
+status          = reference
+authority       = PhotonPower Zero project repository
+~~
+
+===== Scope =====
+
+This note records Hackaday's report on the PhotonPower Zero and the project's primary [GitHub repository](https://github.com/DavidMurrayP2P/PhotonPowerZero). The repository describes a Raspberry Pi Zero add-on board and supporting code, documentation, and 3D-printable parts for outdoor solar-powered deployments.
+
+===== Reported design =====
+
+The maintainer's design notes describe a power-management board built around a BQ2407 charger and an ATtiny84 microcontroller clocked at 1 MHz. The board accepts 5–9 V from USB or a solar panel, monitors the single-cell lithium-polymer battery, and controls a 5 V boost supply for the Raspberry Pi Zero when the battery has sufficient charge. The microcontroller can request a graceful Pi shutdown and send battery information to the Pi.
+
+The repository includes code, KiCad PCB files, 3D-printable parts, user documentation, energy-consumption guidance, and solar-panel enclosure builds. The project is released under the CERN Open Hardware Licence Version 2, Strongly Reciprocal (CERN-OHL-S-2.0), according to the repository's licence file.
+
+The README says 6 W solar panels were used during testing and that the maintainer now recommends 9–10 W panels described in the 10 W build guide. The maintainer and Hackaday report outdoor testing across Australian seasons; these are project reports, not an independent energy-yield or environmental qualification.
+
+===== Relevance =====
+
+This is a reference for separating low-power battery monitoring and power switching from a Raspberry Pi application. Graceful shutdown, battery telemetry, and planned energy consumption can support outdoor data loggers and environmental sensing nodes where the Pi must stop safely during low battery conditions.
+
+===== Limitations =====
+
+The repository says the board is designed for Raspberry Pi Zero-class power use and does not support Raspberry Pi 3, 4, or 5 or Jetson-class boards without a different design. The LiPo battery is not included and must be sourced separately. The project's solar and temperature reports do not establish suitability for a marine enclosure, saltwater exposure, or the Robots project's electronics and battery system.
+
+===== Sources =====
+
+  * [PhotonPower Zero for effortless solar Pi Zero projects](https://hackaday.com/2024/04/02/photonpower-zero-for-effortless-solar-pi-zero-projects/), Hackaday, 2024-04-02; accessed 2026-11-07.
+  * [DavidMurrayP2P/PhotonPowerZero](https://github.com/DavidMurrayP2P/PhotonPowerZero), project README and licence; accessed 2026-11-07.
+  * [Design and Decisions](https://github.com/DavidMurrayP2P/PhotonPowerZero/blob/main/DESIGN_AND_DECISIONS.md), maintainer's design rationale; accessed 2026-11-07.
+  * [User Documentation](https://github.com/DavidMurrayP2P/PhotonPowerZero/blob/main/USERDOCS.md), installation and shutdown configuration; accessed 2026-11-07.
+  * [10 W Voltaic Panel to Multicomp enclosure](https://github.com/DavidMurrayP2P/PhotonPowerZero/blob/main/FDM/10W_Voltaic_Panel_to_Multicomp_enclosure/README.md), printed outdoor mounting guide and bill of materials; accessed 2026-11-07.
+
+===== Related research =====
+
+For other solar-powered environmental sensing references, see [[sites:chartroom:research:solar-powered-wifi-weather-station-v40|Solar Powered WiFi Weather Station V4.0]], [[sites:chartroom:research:coin-cell-data-logger-low-power|Coin-cell data logger and low-power design]], and [[sites:chartroom:research:open-source-ocean-buoy-references|Open-source ocean buoy references]].
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

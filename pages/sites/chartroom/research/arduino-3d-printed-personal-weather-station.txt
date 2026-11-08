@@ -1,0 +1,35 @@
+====== Arduino 3D-printed personal weather station ======
+{{tag>research weather-station environmental-sensing arduino 3d-printing}}
+
+~~META:
+description     = Arduino Blog reference to a 3D-printed local weather station demonstration.
+type            = research
+status          = reference
+authority       = Arduino Blog article; original Thingiverse project page
+~~
+
+===== Reported design =====
+
+Arduino Blog's 2018 article describes a local weather-measurement station made for an arts and science exhibition. It combines a 3D-printed rain gauge, anemometer, and weather vane with a barometer and temperature sensor. The sensors connect to an Arduino Uno, and readings appear on a 4×20-character liquid-crystal display (LCD).
+
+The article explicitly says the demonstration needs calibration for real-world use. The quoted creator notes say the rainfall and wind-speed instruments need calibration, while temperature and barometric pressure do not. The weather vane uses eight reed switches and a magnet to encode sixteen directions; the quoted notes describe positioning the magnet so it can trigger adjacent switches between direction positions.
+
+===== Relevance and limits =====
+
+This is a reference for combining printed mechanical sensor parts with simple embedded electronics and a local display. The rain and wind mechanisms may be useful when comparing sensor-node designs, but their calibration and long-term outdoor performance are not established here. The Arduino Blog post does not describe a remote telemetry link or network service.
+
+The article links to an original Thingiverse model page, but that page returned HTTP 403 during this review. The design files, electronics schematic, firmware, and licence therefore remain unreviewed; use the original model page for those details if access becomes available.
+
+For other weather-station references, see [[sites:chartroom:research:arduino-weather-station-miksrv|Miksrv Arduino Weather Station]], [[sites:chartroom:research:solar-powered-wifi-weather-station-v40|Solar Powered WiFi Weather Station V4.0]], and [[sites:chartroom:research:stall-weatherman-home-automation|STALL WEATHERMAN home-automation weather station]]. For modular environmental sensing concepts, see [[sites:chartroom:research:fieldkit-environmental-sensing-platform|FieldKit environmental sensing platform]].
+
+===== Sources =====
+
+  * [A 3D-printed personal weather station](https://blog.arduino.cc/2018/04/09/a-3d-printed-personal-weather-station/), Arduino Blog, 2018-04-09; reviewed 2026-11-08.
+  * [Thingiverse model, thing:2849562](https://www.thingiverse.com/thing:2849562), linked from the Arduino Blog article; returned HTTP 403 and was not reviewed, 2026-11-08.
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

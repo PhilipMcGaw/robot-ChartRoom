@@ -1,0 +1,29 @@
+====== PHPoC Arduino dynamic web control ======
+{{tag>research arduino web-control websocket robotics education }}
+
+~~META:
+description     = Reference for browser-based servo control using an Arduino Uno and PHPoC Wi-Fi Shield.
+type            = research
+status          = reference
+authority       = Chartroom
+~~
+
+===== Project summary =====
+
+The [[https://www.hackster.io/phpoc_man/arduino-dynamic-web-control-8da805|Hackster.io Arduino Dynamic Web Control project]], published in 2017, demonstrates browser control of one servo. It uses an Arduino Uno, a PHPoC Wi-Fi Shield with a web server, and an SG90 servo. The browser sends angle updates over a WebSocket connection to the shield, which passes them to the Arduino; the Arduino sets the servo position on pin 9.
+
+===== Chartroom relevance and limits =====
+
+This is a small reference for a browser interface sending live actuator commands to a microcontroller. It may help explain the user-interface-to-device path in a simple bench demonstration.
+
+The example controls one servo and does not establish a multi-axis robot control design. It does not document authentication, link-loss behaviour, command validation, or safety interlocks. Do not treat it as a validated control interface or production-ready network design.
+
+===== Source =====
+
+  * [[https://www.hackster.io/phpoc_man/arduino-dynamic-web-control-8da805|Hackster.io: Arduino Dynamic Web Control]], published 2017-06-02 (accessed 2026-11-07).
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

@@ -1,0 +1,46 @@
+====== Blue Robotics Navigator flight controller ======
+{{tag>research blue-robotics navigator raspberry-pi ardupilot blueos flight-controller}}
+
+~~META:
+description     = Manufacturer reference for Blue Robotics Navigator hardware, interfaces, power, and listed software compatibility.
+type            = research
+status          = reference
+authority       = Blue Robotics Navigator product page
+~~
+
+===== Product role =====
+
+Blue Robotics describes Navigator as a flight-controller expansion board for Raspberry Pi 4. It adds the sensor inputs, actuator outputs, and expansion interfaces used by BlueOS and ArduPilot. The Pi 4 runs the onboard software; Navigator is not a standalone computer or a thruster power driver.
+
+The product page lists these onboard features:
+
+  * Six-axis inertial measurement unit (IMU), two three-axis magnetometers, and a barometer.
+  * Sixteen pulse-width modulation (PWM) outputs, with 3.3 V signal levels.
+  * Current and voltage analogue-to-digital converter (ADC) inputs; the specifications list one 3.3 V and one 6.6 V ADC input, with 16-bit ADC resolution.
+  * Two leak-probe inputs, an SBUS receiver input, and status indicators.
+  * Serial and I²C expansion ports. The overview lists four serial ports and two I²C ports; the connector table describes the individual serial, I²C, and combined serial/I²C connections. Use the current pinout and setup guide for wiring details.
+
+The board requires a 5–5.35 V supply. Blue Robotics lists maximum power delivery to the Raspberry Pi and peripherals as 4 A continuous and 4.5 A peak, and recommends a 5 V, 6 A supply in the product configuration. This rating does not power the thrusters; motor power and electronic speed controllers (ESCs) need their own power path.
+
+===== Software and kit notes =====
+
+The Navigator kit is listed with a microSD card loaded with BlueOS and two leak probes. The product configuration also presents a Raspberry Pi 4, power supply, power-sense module, camera, and Fathom-X as selectable options; check the selected kit contents before ordering.
+
+The product page's compatibility table lists ArduSub 4.5.1, ArduRover 4.6.0, ArduPlane 4.2.3, and ArduCopter 4.2.3. These are the versions shown by the manufacturer on the page reviewed 2026-11-08, not a claim that they are the latest releases. Verify current BlueOS and ArduPilot compatibility before selecting a software image.
+
+===== Relevance and limits =====
+
+Navigator is a useful reference for a Raspberry Pi-based robotics controller that separates onboard Linux computing from dedicated sensor and actuator interfaces. It is the hardware used in BlueROV2 and BlueBoat, and can inform comparison of the project’s BlueOS, autopilot, I/O, and expansion boundaries. The existence of these interfaces does not establish that Navigator is selected or suitable for the Robots project; exact sensor support, wiring, power integrity, and failure behaviour still require design-specific review.
+
+For project architecture comparison, see [[sites:chartroom:architecture:ardusub-flight-controller-options|ArduSub flight-controller options]] and [[sites:chartroom:architecture:blueos-adeept-robot-hat|BlueOS and Adeept Robot HAT architecture investigation]]. For manufacturer setup instructions, see [[https://bluerobotics.com/learn/navigator-hardware-setup/|Navigator Hardware Setup]].
+
+===== Source =====
+
+  * [Navigator Flight Controller](https://bluerobotics.com/store/comm-control-power/control/navigator/), Blue Robotics product description, configuration, specifications, and pinouts; reviewed 2026-11-08.
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
