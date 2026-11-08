@@ -22,6 +22,10 @@ The product page lists these onboard features:
 
 The board requires a 5–5.35 V supply. Blue Robotics lists maximum power delivery to the Raspberry Pi and peripherals as 4 A continuous and 4.5 A peak, and recommends a 5 V, 6 A supply in the product configuration. This rating does not power the thrusters; motor power and electronic speed controllers (ESCs) need their own power path.
 
+===== Launch-era architecture description =====
+
+In a 2022 launch post on DIYDrones, Blue Robotics described Navigator as a Raspberry Pi 4-based, ArduPilot-compatible flight controller intended primarily for ArduSub, with support for general ArduPilot use. The post says ArduPilot runs directly in Linux rather than on a separate flight-controller microcontroller, while BlueOS manages the autopilot, services, processes, networking, and updates. This is useful historical context for the product's architecture; use current Blue Robotics product and setup documentation for present hardware specifications and compatibility.
+
 ===== Software and kit notes =====
 
 The Navigator kit is listed with a microSD card loaded with BlueOS and two leak probes. The product configuration also presents a Raspberry Pi 4, power supply, power-sense module, camera, and Fathom-X as selectable options; check the selected kit contents before ordering.
@@ -37,6 +41,7 @@ For project architecture comparison, see [[sites:chartroom:architecture:ardusub-
 ===== Source =====
 
   * [Navigator Flight Controller](https://bluerobotics.com/store/comm-control-power/control/navigator/), Blue Robotics product description, configuration, specifications, and pinouts; reviewed 2026-11-08.
+  * [The Navigator: a Raspberry Pi 4 based flight controller](https://diydrones.com/profiles/blogs/the-navigator-a-raspberry-pi-4-based-flight-controller), launch announcement by Blue Robotics, posted 2022-06-02; historical architecture description; accessed 2026-11-08.
 
 
 ~~REFNOTES~~
