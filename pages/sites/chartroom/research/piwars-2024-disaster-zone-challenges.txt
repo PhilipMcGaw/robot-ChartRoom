@@ -18,6 +18,10 @@ The official Pi Wars 2024 page describes the event's theme as “Disaster Zone�
 
 The page also lists Blogging, Technical and Artistic Merit, and a Most Disastrous Robot special award as additional scoring opportunities. It notes that rules and points could be changed or clarified after competitor questions.
 
+===== Teams and team blogs =====
+
+The official [Pi Wars 2024 team list](https://piwars.org/2024-disaster-zone/team-list/) groups teams by competition category and links to team blogs where one was submitted. Use it as a directory for finding team-authored project reports. The directory does not verify the technical claims in those reports; cite and review each team's own source before relying on implementation details.
+
 ===== Relevance =====
 
 This is a historical reference for designing varied small-robot tasks: autonomous navigation, blind-maze exploration, object detection and interaction, teleoperation, obstacle traversal, and competition documentation. These categories describe the 2024 event and should not be treated as current Pi Wars rules.
@@ -27,6 +31,7 @@ For examples of PiWars robot work, see [[sites:chartroom:research:piwars-dan-ed-
 ===== Source =====
 
   * [Pi Wars 2024 – Challenges](https://piwars.org/2024-disaster-zone/challenges/), official challenge categories and rules disclaimer; reviewed 2026-11-07.
+  * [Pi Wars 2024 – list of teams and blogs](https://piwars.org/2024-disaster-zone/team-list/), official team directory and links to submitted blogs; reviewed 2026-11-08.
 
 
 ~~REFNOTES~~
