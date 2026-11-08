@@ -1,0 +1,41 @@
+====== YaRC RC vehicle: control, telemetry, and video ======
+{{tag>research raspberry-pi teensy esp8266 remote-control rover video telemetry motor-control}}
+
+~~META:
+description     = Historical model-car project documenting Raspberry Pi video and communications, microcontroller motor control, telemetry, and a later custom brushless motor controller.
+type            = research
+status          = reference
+authority       = Welters Hackz Hackaday.io project pages and linked DaWelter/RCCar repository
+~~
+
+===== V1 and V2 architecture =====
+
+Welters Hackz's [[https://hackaday.io/project/13026-yarc-vehicle-v1-2|YaRC Vehicle V1 & 2]] is a remote-controlled model car with a video feed, telemetry, and a custom laptop controller. The first version had no camera; the second focused on communication and video. In the described arrangement, a Teensy 3.2 handles the low-level vehicle electronics, while an ESP8266 relays packets between the Teensy and the base station over Wi-Fi. The author describes a Raspberry Pi later taking over packet relaying and video capture.
+
+The project describes separate logical paths for command, telemetry, and video. For the early ESP8266 link, the author used a simple ASCII-hex packet format over User Datagram Protocol (UDP) and a Universal Asynchronous Receiver-Transmitter (UART) serial link to the Teensy. For video, the Raspberry Pi used Wi-Fi Broadcast (Wifibroadcast) with `raspivid`. The author reports an approximately 70 m outdoor line-of-sight range for the ESP8266 test and a video-only 720p test over 100 m with about 300 ms delay. These are measurements from the author's test setup, not general performance guarantees.
+
+The Teensy board uses an L293 H-bridge motor driver, battery voltage measurement through a divider and operational-amplifier buffer, and an ACS711 Hall-effect current sensor. The author describes an initial motor-speed feedback attempt using paired Hall sensors and a proportional-integral controller, then a later back-electromotive-force (back-EMF) measurement method that required the motor to be driven below 100% duty cycle to leave time for sampling. These are project-specific experiments, not validated motor-control designs for another vehicle.
+
+===== V4 evolution =====
+
+The linked [[https://hackaday.io/project/162213-yarc-vehicle-v4|YaRC Vehicle V4]] is a later, separate project page for an iteration of the model car. It describes a Raspberry Pi 3 handling Wi-Fi messaging, video, and direct servo control, with a dedicated custom brushless direct-current (BLDC) motor controller. The V4 account reports outdoor driving, while noting that the vehicle had not yet been tried on steep climbs or rocky terrain.
+
+V4 replaces the earlier untyped ASCII-number protocol with Protocol Buffers (Protobuf) messages, Consistent Overhead Byte Stuffing (COBS) framing, and an 8-bit cyclic redundancy check (CRC) for control messages. The author explicitly distinguishes control data, where corrupted messages are discarded, from video, where the video decoder handles damaged packets. Telemetry includes battery voltage, phase current, motor speed, pulse-width-modulation duty cycle, and motor-controller temperature. The V4 page links to [[https://github.com/DaWelter/RCCar|DaWelter/RCCar]], which contains application code, motor-driver firmware, and KiCad schematics.
+
+===== Relevance and limits =====
+
+YaRC is a useful historical reference for separating vehicle-side motor control from higher-level video and operator communications, giving commands and video different transport/error-handling needs, and reporting motor and system telemetry to an operator. Its evolution also shows a concrete reason to move from ad-hoc numeric messages to a schema, framing, and integrity check as the protocol grows.
+
+This is a model car, and its hardware, radio link, and control behaviour are not validated for the Robots project's vehicles. The V4 author reports outdoor operation but leaves challenging terrain untested; the project does not demonstrate underwater use, tethered operation, fail-safe behaviour, or production reliability. Treat its performance claims and implementation details as the author's project account and repository, not as current product guidance.
+
+===== Sources =====
+
+  * Welters Hackz, [[https://hackaday.io/project/13026-yarc-vehicle-v1-2|YaRC Vehicle V1 & 2]], Hackaday.io, created 2016; accessed 2026-11-08.
+  * Welters Hackz, [[https://hackaday.io/project/162213-yarc-vehicle-v4|YaRC Vehicle V4]], Hackaday.io, created 2018; accessed 2026-11-08.
+  * [[https://github.com/DaWelter/RCCar|DaWelter/RCCar]], linked source repository for V4 application, BLDC-driver firmware, and KiCad schematics; accessed 2026-11-08.
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

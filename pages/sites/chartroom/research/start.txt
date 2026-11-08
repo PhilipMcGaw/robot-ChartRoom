@@ -185,6 +185,7 @@ The links below cover all research notes. Use the related-research links within 
   * [[sites:chartroom:research:alpakka-open-game-controller|Alpakka open game controller]]
   * [[sites:chartroom:research:howtomechatronics-diy-arduino-rc-receiver|HowToMechatronics DIY Arduino RC receiver]]
   * [[sites:chartroom:research:robotcontrol-javascript-tobiasweis|Raspberry Pi Robotcontrol JavaScript interface]]
+  * [[sites:chartroom:research:yarc-rc-vehicle-wifibroadcast|YaRC RC vehicle: control, telemetry, and video]]
   * [[sites:chartroom:research:adafruit-simple-raspberry-pi-robot|Adafruit Simple Raspberry Pi Robot]]
   * [[sites:chartroom:research:great-mojave-rover|The Great Mojave Rover]]
   * [[sites:chartroom:research:esp8266-tagged-release-ota-pipeline|ESP8266 tagged-release OTA delivery pipeline]]
