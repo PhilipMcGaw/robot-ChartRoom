@@ -223,6 +223,7 @@ The links below cover all research notes. Use the related-research links within 
   * [[sites:chartroom:research:circuitdigest-mosfet-h-bridge-tutorial|Circuit Digest MOSFET H-bridge tutorial — critical review]]
   * [[sites:chartroom:research:vedder-vesc-open-source-esc|VESC open-source electronic speed controller]]
   * [[sites:chartroom:research:fpv-rover-nerf-dart-launcher|Nerf dart launcher for an FPV rover]]
+  * [[sites:chartroom:research:printables-nerf-dart-turret-brushless-wifi|Printables brushless Wi-Fi Nerf dart turret — zombie activity reference]]
   * [[sites:chartroom:research:instructables-diy-phone-controlled-fpv-rover|DIY Phone Controlled FPV Rover (RoverBot)]]
   * [[sites:chartroom:research:antweight-fight-club-design-technology-tutor|Antweight Fight Club workshop]]
   * [[sites:chartroom:research:beatty-robotics-sojourner-rover|Beatty Robotics Sojourner rover]]

@@ -1,0 +1,32 @@
+====== Printables brushless Wi-Fi Nerf dart turret ======
+{{tag>research robotics piwars payload nerf}}
+
+~~META:
+description     = Work-in-progress Raspberry Pi and ESP32 controlled foam-dart turret reference, considered against the Pi Wars Zombie Apocalypse challenge.
+type            = research
+status          = reference
+authority       = Creator's Printables listing and linked GitHub repository
+~~
+
+===== Reference summary =====
+
+The Printables listing by M. Tops describes an automatic foam-dart turret with a two-axis gimbal, Raspberry Pi or ESP32 control, and an integrated dart-speed measurement feature. Its title labels it “WIP” (work in progress). The linked [Dart-Turret GitHub repository](https://github.com/Tops76/Dart-Turret) gives the same feature summary and states a maximum dart speed of 140 km/h. That figure is a creator-stated claim; this review found no independent measurement or validation. The Printables page reports a Creative Commons Attribution-NonCommercial-ShareAlike licence; check the live terms before reuse.
+
+===== Relevance to zombie-themed robot activities =====
+
+This is a relevant reference if the idea is a robot-based foam-dart target or “Zombie Apocalypse” activity. Pi Wars 2024 included a challenge with that name, but its published rules are historical and do not establish that a turret or projectile launcher was permitted. Treat this as inspiration only until the rules for the intended event or activity are checked. The source labels the project work in progress, and Chartroom has not established its safety, performance, or suitability for a robot competition.
+
+The existing [[sites:chartroom:research:fpv-rover-nerf-dart-launcher|FPV rover Nerf dart launcher]] is another foam-dart payload reference. Neither page records an adopted design or validated project hardware.
+
+===== Sources =====
+
+  * [Nerf Dart Turret – Brushless – WiFi – WIP — Printables](https://www.printables.com/model/338574-nerf-dart-turret-brushless-wifi-wip), creator listing and stated licence; reviewed 2026-11-08. Direct page access was unavailable during review; the listing details were cross-checked against the linked repository and an indexed listing mirror.
+  * [Dart-Turret — GitHub](https://github.com/Tops76/Dart-Turret), creator repository and feature summary; reviewed 2026-11-08.
+  * [[sites:chartroom:research:piwars-2024-disaster-zone-challenges|Pi Wars 2024 — “Disaster Zone” challenges]], historical challenge categories and source links.
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
