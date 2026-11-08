@@ -1,0 +1,39 @@
+====== Car inclinometer using ESP32 ======
+{{tag>research, esp32, imu, orientation, robotics }}
+
+~~META:
+description     = ESP32 car-inclinometer article retained for later technical review.
+type            = research
+status          = awaiting-review
+authority       = External reference
+~~
+
+===== Source =====
+
+  * [[:https://abidcg.blogspot.com/2026/11/car-inclinometer-esp32.html|Car Inclinometer ESP32 — abidcg.blogspot.com]]
+  * Published URL supplied on 2026-11-07.
+
+===== Review status =====
+
+**Awaiting review.** The article could not be retrieved and read in the current environment. Its implementation details have therefore not been assessed or verified.
+
+When the article is next reviewed, open it in Chrome on the project laptop. Update this note with the hardware, sensor, firmware, calculations, filtering, calibration method, and any useful design details actually confirmed from the article.
+
+===== Potential relevance to the Robots project =====
+
+The subject may be relevant to investigating chassis inclination and orientation sensing. Possible areas to assess after reading the source include:
+
+  * measurement of pitch and roll;
+  * accelerometer and gyroscope choice, if an inertial measurement unit (IMU) is used;
+  * filtering or sensor-fusion methods;
+  * zero-reference calibration and mounting alignment;
+  * presentation or logging of inclination data;
+  * whether the approach is suitable for a moving robot as well as a stationary vehicle.
+
+These are review questions, **not claims about the article's contents** and not approved design requirements.
+
+For a moving robot, an accelerometer-only inclination estimate can be affected by linear acceleration. Assess how the article handles this before considering its method for use in the robot architecture.
+
+===== Project status =====
+
+Retained as an external research reference only. No hardware selection, implementation, test, or architecture decision has been made from this source.
