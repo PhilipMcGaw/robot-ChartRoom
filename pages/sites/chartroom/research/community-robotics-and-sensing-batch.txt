@@ -30,6 +30,14 @@ A deliberately minimal ROV using PVC pipe, an Ethernet tether, simple brushed mo
 
 **Relevance:** useful for the ROV development sequence and early subsystem tests. The simplicity is valuable as a validation strategy even though the final ROV should retain proper protection, fault handling, telemetry, and controlled propulsion.
 
+==== Raspberry Pi-powered ROV at Maker Faire Trondheim ====
+
+In a [[https://makezine.com/article/maker-news/a-raspberry-pi-powered-underwater-rov-at-maker-faire-trondheim/|2014 Make: report from Maker Faire Trondheim]], Tim Jagenberg described an ROV concept using a plumbing tube for the housing and submersible electric pumps as thrusters. A Raspberry Pi and Camera Module were to provide live video over an Ethernet cable, while a Teensy 3.1 handled remote-control serial communications, sensors, and motor controllers. The project description said it would use the Micro Air Vehicle Link (MAVLink) protocol with the QGroundControl ground station.
+
+**Relevance:** a useful early example of separating video handling on a Raspberry Pi from sensor and motor-control work on a microcontroller. The proposed Ethernet video path and serial control path also make the vehicle/topside interfaces visible as separate design concerns.
+
+The article reports the vehicle was brought to the Maker Faire and quotes the project description. It describes MAVLink and QGroundControl integration as planned; it does not establish that those functions were completed or tested. The linked project page returned a cache miss during review, so no further build or performance details were confirmed.
+
 ===== Educational robots and vehicle platforms =====
 
 ==== Open Source Turtle Robot (OSTR) ====
