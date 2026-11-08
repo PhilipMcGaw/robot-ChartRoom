@@ -48,6 +48,14 @@ A deliberately simple two-wheel Arduino-compatible robot used to teach soldering
 
 **Relevance:** good reference for a staged beginner robotics curriculum and for explaining subsystem ownership. The tutorial is retired, so it should be treated as educational/historical material rather than a current hardware recommendation.
 
+==== Elegoo Smart Car Robot Kit Version 2.0 assembly tutorial ====
+
+The supplied [[https://www.instructables.com/Assemble-Elegoo-Arduino-Robot-Version-20/|Instructables assembly guide]] was not readable in the current review. A tutorial with the same title is available on the [[https://www.visuino.com/assemble-elegoo-arduino-robot-version-2-0/|Visuino site]] and describes assembling the Elegoo Smart Car Robot Kit Version 2.0. It covers a four-motor chassis, L298N motor-driver board, Arduino Uno and sensor shield, three line-following sensors, an infrared (IR) receiver, and a servo-mounted ultrasonic ranger. It also describes an optional HC-06 Bluetooth module and notes that it shares the Uno's serial communication channel used for programming.
+
+**Relevance:** a step-by-step example of assembling a small educational robot and connecting its drive, sensing, and control modules. The tutorial uses Visuino to centre the ultrasonic sensor and mentions future programming tutorials for remote control, obstacle avoidance, and line following; those planned topics are not evidence of tested behaviour in this guide.
+
+The details above come from the readable Visuino tutorial, not from direct inspection of the supplied Instructables page or an official Elegoo manual. Treat them as assembly-guide content, not as current kit specifications or an independently tested recommendation.
+
 ==== Skoobot ====
 
 https://hackaday.io/project/75832-skoobot
