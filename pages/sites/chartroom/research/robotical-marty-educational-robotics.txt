@@ -1,0 +1,110 @@
+====== Robotical Marty — educational robotics reference ======
+{{tag>research, educational-robotics, python, blocks, sensors, multi-robot, swarmbot }}
+
+~~META:
+description     = Assessment of Robotical Marty learning resources and their relevance to SwarmBot and Test in a Box.
+type            = research
+status          = reference
+authority       = Chartroom
+date            = 2026-11-09
+~~
+
+===== Scope and assessment =====
+
+Robotical's Marty is a programmable, sensor-equipped walking robot supported by a substantial set of free learning materials. This is a reference for **SwarmBot and Test in a Box**, not a proposed SwarmBot hardware platform or a dependency.
+
+The strongest contribution is the educational structure: a staged route from screen-free sequencing through visual programming to Python, with concepts revisited and extended rather than treated as unrelated programming environments. The materials also provide concrete classroom exercises for sensing, conditionals, loops, variables, functions, debugging, and multi-robot programming.
+
+Robotical's current Learning Portal lists resources for Marty V1 and V2, including material aligned to England's National Curriculum and Curriculum for Excellence. The portal advertises more than 100 lessons and supporting teacher resources. Always check the hardware version shown on an individual lesson: V1 and V2 differ significantly.
+
+===== Learning progression worth adopting as a pattern =====
+
+Robotical describes the following progression:
+
+  * **Unplugged:** screen-free sequencing using colour cards and directional language.
+  * **Marty Controller:** plan and sequence symbolic movement commands.
+  * **Blocks Jr:** icon-based, text-free visual programming for emerging readers.
+  * **Blocks:** a more expressive Scratch-based visual environment.
+  * **Python:** text-based programming with access to sensors, motors, and behaviour.
+  * **Extensions:** Raspberry Pi, micro:bit, sensors, and more advanced robotics concepts.
+
+The useful SwarmBot lesson is to keep the underlying computational concepts continuous across interfaces. A learner should be able to move from blocks to Python without learning a different robot model or losing the concepts already learned.
+
+For SwarmBot, this should be adapted to the actual platform and classroom audience. It does not imply that every stage or Robotical interface should be copied.
+
+===== Selected learning materials =====
+
+==== Highest-priority reading ====
+
+  * [[https://learn.robotical.io/|Robotical Learning Portal]] — browse the current lesson library. Useful filters include Marty V2, Python, sensors, debugging, and England's National Curriculum.
+  * [[https://robotical.io/about/educators/learning-progression/|Coding Environments and Learning Progression]] — concise explanation of the staged progression and the teaching rationale.
+  * [[https://learn.robotical.io/lessons/starting-with-python|4.01: Starting with Python]] — introduces the Python shell, simple scripts, commands, and comparison with Scratch. The lesson expects prior familiarity with Scratch commands.
+  * [[https://learn.robotical.io/lessons/programming-marty-with-python|4.03: Programming Marty with Python]] — command parameters, syntax, imports, and issuing movement commands.
+  * [[https://learn.robotical.io/lessons/martyVersions/2/environments/Python|Marty V2 Python lesson sequence]] — includes debugging, Python API exploration, Raspberry Pi use, and a Python project.
+  * [[https://learn.robotical.io/lessons/estimating-with-distance-sensors|Estimating with Distance Sensors]] — sensor readings, thresholds, conditional behaviour, and estimating real-world distance.
+  * [[https://learn.robotical.io/lesson/ground-detection-safety-first|2.16: Ground Detection — Safety First]] — a particularly relevant example of using sensing and program logic to stop a robot before it falls from an edge.
+
+==== Particularly relevant to multi-robot work ====
+
+  * [[https://learn.robotical.io/activity/an-army-of-martys|An Army of Martys]] — a Python activity that discovers multiple Marty robots on a network, stores connections in a list, and iterates over them to issue commands. It introduces a simple multi-robot programming model using lists and loops.
+  
+This is the most directly relevant SwarmBot example found. It demonstrates multi-robot discovery and group command dispatch, but it is not a swarm-coordination architecture: the activity does not establish distributed autonomy, collision avoidance, scheduling, deterministic synchronisation, fault isolation, or safe execution of untrusted student programs. Treat it as a beginner programming exercise, not a model for SwarmBot's control plane.
+
+==== Further useful material ====
+
+  * [[https://learn.robotical.io/lessons/light-sensors-and-conditional-statements|Light Sensors and Conditional Statements]] — sensor polling, loops, if/else logic, thresholds, and learner reflection.
+  * [[https://learn.robotical.io/lessons/light-sensors-with-function-blocks|Light Sensors with Function Blocks]] — functions, variables, and decomposition of behaviour.
+  * [[https://learn.robotical.io/lessons/trial-lesson-obstacles|Obstacles]] — obstacle sensing and reactive behaviour.
+  * [[https://userguides.robotical.io/martyv2/documentation/python_function_reference|Marty V2 Python Function Reference]] — API reference for the V2 Python interface.
+  * [[https://userguides.robotical.io/|Marty Knowledge Base and User Guides]] — version-specific setup, hardware, sensors, APIs, and troubleshooting.
+
+===== Technical documentation and version cautions =====
+
+The current V2 knowledge base exposes useful material beyond the classroom lessons, including Python setup, Raspberry Pi integration, sensor/add-on guides, position sensing, current/force sensing, RIC (Robot Interface Controller), serial framing, REST interfaces, and protocol documentation. These are useful examples of how a robot vendor can expose a documented capability model and progressively reveal lower-level interfaces.
+
+Robotical's older integration documentation describes ROS support and V-REP simulation, but the ROS guide specifies ROS Indigo, Jade, or Kinetic and dates from 2021. It must not be represented as current ROS 2 support. The older Marty V1 documentation and the multi-Marty tutorial also need to be kept distinct from the V2 platform.
+
+The V2 Python reference includes low-level and ROS-serial-related functions, but that alone does not demonstrate a supported ROS 2 driver or a suitable SwarmBot integration. No Robotical ROS 2 compatibility claim is adopted here.
+
+===== Relevance to SwarmBot and Test in a Box =====
+
+| Robotical example | SwarmBot learning / design relevance |
+| --- | --- |
+| Unplugged and block-based progression | Accessible learner onboarding; retain a consistent robot capability model across interfaces |
+| Python introduction and debugging | A useful structure for the Blocks-to-Python progression |
+| Sensor lessons | Teach sensing, thresholds, polling, conditionals, and reactive behaviour |
+| Functions and variables | Encourage reusable, named behaviours rather than long monolithic programs |
+| An Army of Martys | A direct teaching example for robot discovery, lists, iteration, and issuing commands to multiple robots |
+| V2 API and RIC documentation | Reference for capability abstraction, hardware interfaces, and documented protocol boundaries |
+
+The multi-robot activity suggests a useful SwarmBot classroom progression:
+
+  1. Program one robot with a small set of safe, bounded commands.
+  2. Read sensor values and use conditions to select behaviour.
+  3. Package repeated actions into named functions or reusable blocks.
+  4. Select and address more than one robot.
+  5. Issue a common command to a group.
+  6. Give individual robots different roles or parameters.
+  7. Introduce coordinated behaviour, shared objectives, and swarm experiments.
+
+This is a proposed teaching sequence, not an implemented SwarmBot feature set.
+
+Robotical's example should not be copied literally into the SwarmBot execution architecture. The existing roadmap direction remains appropriate: students use a constrained programming model; generated programs are validated and bounded before execution; student code does not receive arbitrary NATS access; robot control, communications, and safety remain outside the untrusted educational program.
+
+===== Source limitations =====
+
+The Learning Portal and V2 knowledge base were reviewed as web-readable sources on 2026-11-09. Selected lesson descriptions and the multi-robot activity were inspected. Individual downloadable lesson ZIPs, workbooks, presentations, teacher guides, firmware, and complete API implementation have not been downloaded or audited. This note records an assessment of the published learning structure and selected lesson content, not a full ingestion of every resource.
+
+===== Provenance =====
+
+  * Robotical, [[https://learn.robotical.io/|Learning Portal]].
+  * Robotical, [[https://robotical.io/about/educators/learning-progression/|Coding Environments and Learning Progression]].
+  * Robotical, [[https://learn.robotical.io/activity/an-army-of-martys|An Army of Martys]].
+  * Robotical, [[https://userguides.robotical.io/martyv2/documentation/python_function_reference|Marty V2 Python Function Reference]].
+  * Robotical, [[https://docs.robotical.io/ros/|Legacy ROS integration guide]] (ROS Indigo/Jade/Kinetic; last updated 2021-06-25).
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
