@@ -1,1 +1,3 @@
 /site
+/inbox/*
+!/inbox/README.md
