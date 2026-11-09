@@ -49,6 +49,8 @@ The architecture should preserve the separation between the educational programm
 
 **Read later:** [[sites:chartroom:research:swarmbot-berrybot-reference|BerryBot reference for SwarmBot education]].
 
+**Read later:** [[sites:chartroom:research:robotical-marty-educational-robotics|Robotical Marty educational robotics reference]].
+
 ==== ConstantRobotics video pipeline and low-latency research ====
 
 Review the [[sites:chartroom:research:constantrobotics-video-pipeline|ConstantRobotics/RapidPixel video research]] as a reference for the ROV video path. Focus on low-latency capture, hardware H.264/HEVC encoding, RTP and MediaMTX streaming, Raspberry Pi pipelines, tracking, image enhancement, and recording as an independent consumer of the encoded stream.
