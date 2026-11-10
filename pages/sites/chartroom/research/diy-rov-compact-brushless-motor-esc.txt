@@ -1,0 +1,67 @@
+====== DIY ROV compact brushless motor and bidirectional ESC reference ======
+{{tag>research rov diy propulsion brushless-motor esc thruster}}
+
+~~META:
+description     = Community-reported compact 100 W underwater brushless motor and 12 A bidirectional ESC combination for a portable DIY ROV.
+type            = research
+status          = research-candidate
+authority       = Community recommendation; manufacturer product listing
+~~
+
+===== Scope =====
+
+This note records a community recommendation seen in the DIY ROV Facebook group. It is a lead for further investigation, not a selected component, verified combination, or project specification.
+
+===== Reported configuration =====
+
+A group member, Steve Jacoby, reported using the following motor on his ROV:
+
+  * **Motor:** 100 W waterproof brushless motor, model/size designation 2418, marketed for underwater robots, ROVs, and unmanned boats.
+  * **Motor source:** [[https://www.underwaterthruster.com/collections/underwater-motor/products/waterproof-brushless-motor-100w-2418-corrosion-and-oxidation-resistant-for-use-in-underwater-robots-rovs-unmanned-boats-etc|Underwater Thruster — Waterproof brushless motor 100 W 2418]].
+  * **ESC:** 12 A bidirectional ESC, reportedly sourced from AliExpress. The contributor did not identify a specific listing or model.
+  * **Environment:** The contributor reported that the arrangement had worked in both salt water and fresh water. This is anecdotal operating experience; no duration, depth, duty cycle, test conditions, or inspection evidence was supplied.
+
+The original post was made by Marco Paccagnella in the DIY ROV Facebook group. The screenshot supplied for this research note showed the recommendation in a comment by Steve Jacoby. A direct permalink to the Facebook post was not available in the supplied screenshot.
+
+===== Engineering relevance =====
+
+The combination is potentially relevant to a compact, portable ROV because it suggests a small brushless motor paired with a bidirectional ESC. The arrangement could be investigated as a lower-cost alternative to purchasing complete integrated thruster units.
+
+Bidirectional operation is relevant to reversible thrust. However, the reported ESC rating alone does not establish compatibility, continuous current capability, thermal performance, or safe operation underwater.
+
+===== Further investigation required =====
+
+Before considering this combination for a prototype, establish:
+
+  * motor operating-voltage range, winding configuration, rated and peak current, and whether the 100 W rating is electrical input or mechanical output;
+  * motor thrust and torque curves with the intended propeller/nozzle, including forward/reverse asymmetry;
+  * continuous and peak ESC current ratings, thermal limits, cooling requirements, and suitability for the actual supply voltage;
+  * command interface, PWM frequency and pulse range, neutral calibration, arming sequence, reversal dead time, and failsafe behaviour;
+  * whether the ESC is intended to be immersed, potted, oil-filled, or installed in a dry pressure enclosure;
+  * cable-entry, connector, corrosion, galvanic-compatibility, and pressure/depth limits; and
+  * measured power consumption and temperature during representative sustained manoeuvres.
+
+A waterproof motor does not make the ESC, connectors, wiring, or complete assembly suitable for immersion. The supplier's claims and the community report need independent verification. A 12 A label should not be treated as a continuous rating without a datasheet and thermal test evidence.
+
+===== Relevance to the ROV project =====
+
+Keep this as a **research candidate only**. Compare it with complete commercial thrusters, including Blue Robotics-style units, on total installed cost, thrust per unit volume, efficiency, depth capability, serviceability, corrosion management, and integration effort.
+
+If investigated experimentally, retain the project's separation between high-level vehicle control and low-level propulsion/safety functions. Each thruster channel should have defined neutral behaviour, command timeout, communications-loss response, and a means of inhibiting unintended thrust. The specific ESC protocol and failsafe implementation remain unknown.
+
+No motor, ESC, or thruster architecture decision is made by this reference.
+
+===== Sources and provenance =====
+
+  * Underwater Thruster, [[https://www.underwaterthruster.com/collections/underwater-motor/products/waterproof-brushless-motor-100w-2418-corrosion-and-oxidation-resistant-for-use-in-underwater-robots-rovs-unmanned-boats-etc|Waterproof brushless motor 100 W 2418]] — manufacturer/supplier product listing.
+  * DIY ROV Facebook group post by Marco Paccagnella; comment by Steve Jacoby. User-supplied screenshot. The screenshot does not provide a stable post URL or enough information to identify the specific 12 A ESC listing.
+
+===== Related research =====
+
+For broader propulsion considerations, see [[sites:chartroom:research:rov-overview-and-applications|ROV overview and applications]], [[sites:chartroom:research:blue-robotics-forum-3d-printed-rov|Blue Robotics forum: 3D-printed DIY ROV]], and [[sites:chartroom:research:vedder-vesc-open-source-esc|VESC open-source electronic speed controller]].
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
