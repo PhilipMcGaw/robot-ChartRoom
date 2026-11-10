@@ -58,6 +58,25 @@ No motor, ESC, or thruster architecture decision is made by this reference.
 
 ===== Earlier project work =====
 
+The user's own ROV development history is documented on PhilipMcGaw.com and the older Skippy.org.uk site. These are the primary historical project references to check before repeating design or test work:
+
+  * [[https://philipmcgaw.com/projects/rov/|ROV project page]] — current project index, with links to development posts and the user's ROV source repository.
+  * [[https://philipmcgaw.com/diy-underwater-rov/|DIY underwater ROV (10 June 2023)]] — proposed system architecture, including power distribution, Raspberry Pi, control PCB, electronic speed controllers (ESCs), and six or eight thrusters. The article says early thruster design work had been done, but does not itself report a completed thruster performance test.
+  * [[https://philipmcgaw.com/transparent-rov-frame/|Transparent ROV frame (13 March 2024)]] — a dimensionally representative acrylic development frame intended to check packaging, mounting locations, thrusters, and lighting.
+  * [[https://philipmcgaw.com/pressure-vessel/|Pressure Vessel (12 June 2023)]], [[https://philipmcgaw.com/rov-viewport-dome/|ROV Viewport Dome (13 June 2023)]], and [[https://philipmcgaw.com/rov-pressure-vessel-end-cap-and-feed-throughs/|ROV Pressure Vessel end cap and feed-throughs (13 June 2023)]] — pressure-housing design calculations and construction planning. These are design records, not evidence of a completed pressure qualification test.
+  * [[https://philipmcgaw.com/serial-issues-with-the-arduino-pro-micro/|Serial issues with the Arduino Pro Micro (28 November 2025)]] — a reported control-electronics integration issue on the ROV hardware.
+  * [[https://philipmcgaw.com/setting-up-blueos-for-a-remote-operated-robot/|Setting up BlueOS for a Remote Operated Robot (14 October 2024)]] — software and control-platform investigation.
+
+  * [[https://skippy.org.uk/encyclopedia/projects/|Skippy.org.uk — Projects index]] and [[https://skippy.org.uk/encyclopedia/electronic-speed-controllers/|Electronic Speed Controllers (18 July 2018)]] — legacy project and ESC setup notes. The latter records practical difficulties with RC ESC setup and start-up routines; it does not identify the 100 W 2418 motor or the specific 12 A bidirectional ESC in the current community recommendation.
+  * [[https://skippy.org.uk/encyclopedia/nuclear-wessel/|Pressure Vessel (18 July 2018)]] — earlier pressure-vessel project material.
+
+The user's own indexed project pages establish design and development history, but do not currently establish that the newly suggested 100 W 2418 motor/12 A ESC combination was previously tested. Do not conflate these records with the separate third-party experimental ROV archive below.
+
+===== Related third-party experimental reference =====
+
+Hamish Trolove's [[https://www.techmonkeybusiness.com/articles/OpenSource_ROV.html|TechMonkeyBusiness OpenSource ROV]] archive is a separate builder's project, not the user's own experiment. It contains useful comparative reports on [[https://www.techmonkeybusiness.com/articles/ROV_Thruster_Testing.html|brushless thruster testing]], [[https://www.techmonkeybusiness.com/articles/ROV_Thrusters.html|thruster designs]], [[https://www.techmonkeybusiness.com/articles/ROV_Motor_Upgrade.html|motor corrosion mitigation]], [[https://www.techmonkeybusiness.com/articles/ROV_ESC_Calibration.html|ESC calibration]], and [[https://www.techmonkeybusiness.com/articles/ROV_Pool_Trial.html|pool trials]]. The results are builder-reported and should be treated as historical reference evidence, not as tests performed by the user or validation of the current motor/ESC candidate.
+
+
 The current ROV research should be read alongside the earlier ROV work documented on the user's websites:
 
   * [[https://skippy.org.uk/encyclopedia/projects/|Skippy.org.uk — Projects index]], including the legacy **Remotely Operated Underwater Vehicle** project.
