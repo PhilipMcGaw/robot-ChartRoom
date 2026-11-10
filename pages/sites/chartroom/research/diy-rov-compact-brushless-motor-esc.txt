@@ -56,6 +56,18 @@ No motor, ESC, or thruster architecture decision is made by this reference.
   * Underwater Thruster, [[https://www.underwaterthruster.com/collections/underwater-motor/products/waterproof-brushless-motor-100w-2418-corrosion-and-oxidation-resistant-for-use-in-underwater-robots-rovs-unmanned-boats-etc|Waterproof brushless motor 100 W 2418]] — manufacturer/supplier product listing.
   * DIY ROV Facebook group post by Marco Paccagnella; comment by Steve Jacoby. User-supplied screenshot. The screenshot does not provide a stable post URL or enough information to identify the specific 12 A ESC listing.
 
+===== Earlier project work =====
+
+The current ROV research should be read alongside the earlier ROV work documented on the user's websites:
+
+  * [[https://skippy.org.uk/encyclopedia/projects/|Skippy.org.uk — Projects index]], including the legacy **Remotely Operated Underwater Vehicle** project.
+  * [[https://skippy.org.uk/encyclopedia/electronic-speed-controllers/|Electronic Speed Controllers (18 July 2018)]] — an earlier note recording practical difficulties with RC ESC setup and start-up routines. This is relevant historical experience, but it does not identify a tested underwater ESC/motor combination.
+  * [[https://skippy.org.uk/encyclopedia/nuclear-wessel/|Pressure Vessel (18 July 2018)]] — an earlier ROV pressure-vessel entry.
+  * [[https://philipmcgaw.com/diy-underwater-rov/|DIY underwater ROV (10 June 2023)]] — records the proposed vehicle architecture, including ESC motor-control boards and six or eight thrusters, with early thruster design work noted.
+  * [[https://philipmcgaw.com/transparent-rov-frame/|Transparent ROV frame (13 March 2024)]] — describes the clear frame intended to support development work on thrusters, lights, and auxiliary equipment.
+
+These are historical project references, not evidence that the specific 100 W 2418 motor and 12 A bidirectional ESC in this research note were previously tested.
+
 ===== Related research =====
 
 For broader propulsion considerations, see [[sites:chartroom:research:rov-overview-and-applications|ROV overview and applications]], [[sites:chartroom:research:blue-robotics-forum-3d-printed-rov|Blue Robotics forum: 3D-printed DIY ROV]], and [[sites:chartroom:research:vedder-vesc-open-source-esc|VESC open-source electronic speed controller]].
