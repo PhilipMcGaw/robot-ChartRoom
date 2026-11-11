@@ -1,0 +1,61 @@
+====== Raspberry Pi RGB LED matrix display — Reddit project reference ======
+{{tag>research, rov, raspberry-pi, led-matrix, display, telemetry, operator-interface }}
+
+~~META:
+description     = Reddit project using a Raspberry Pi and RGB LED matrix panels; retained as an ROV display/interface research candidate.
+type            = research
+status          = research-candidate
+authority       = Chartroom
+~~
+
+**Status:** Research candidate — retain for later ROV review  
+**Source type:** Community project post and comments  
+**Added:** 2026-11-11
+
+===== Primary source =====
+
+  * [[https://www.reddit.com/r/RASPBERRY_PI_PROJECTS/s/wQpmGxFURS|Reddit — Raspberry Pi RGB LED matrix display project]]
+
+The source is a community post in r/RASPBERRY_PI_PROJECTS. The project description/comments identify a Raspberry Pi 4, an Adafruit RGB LED Matrix Bonnet, and two 64 × 64 RGB LED matrix panels. The post describes software developed with AI assistance. A commenter also describes a related display driven by their own 433 MHz weather sensors.
+
+**Provenance:** The hardware and implementation details above are reported by the Reddit author/commenter. They have not been independently verified, and this note does not treat them as a tested design or a complete build specification. The Reddit thread is the source for the project; no separate source repository or full design documentation has been identified.
+
+===== Potential relevance to the ROV =====
+
+Retain this as a display and operator-interface idea for review, not as a proposed ROV requirement.
+
+Potential areas to investigate:
+
+  * **Topside status display:** whether a matrix display could present a concise at-a-glance summary of vehicle state, communications, depth, leak alarms, battery condition, and active warnings.
+  * **Telemetry presentation:** whether the display could show selected live values or event/status messages received from the ROV control system.
+  * **Operator awareness:** whether large, simple symbols and colour-coded states add value alongside the browser-based Cockpit, rather than duplicating information already presented there.
+  * **Physical integration:** panel dimensions, enclosure, viewing distance, brightness, viewing angle, environmental protection, and power consumption.
+  * **Electrical integration:** Raspberry Pi interface compatibility, panel refresh and processor loading, supply-current requirements, wiring, and EMC implications.
+
+A matrix panel would be more plausible as a **topsides** display or workshop/test-station accessory than as an exposed underwater component. Any underwater installation would introduce substantial enclosure, sealing, pressure, thermal, and serviceability requirements that are not addressed by the Reddit project.
+
+===== Review questions =====
+
+  * Does a dedicated matrix display provide useful information when the main ROV Cockpit is already browser-based?
+  * Would it be better used as a simple alarm/status annunciator than as a second full telemetry interface?
+  * Could a smaller, lower-power display or the already planned external status LED meet the same need?
+  * What are the actual panel current demand, refresh behaviour, and EMC characteristics?
+  * Is the software available in a repository, and can its data-input and display abstractions be inspected?
+
+===== Assessment and limitations =====
+
+This is an early-stage inspiration reference only. The Reddit post does not establish suitability for marine use, ROV operation, safety annunciation, or integration with the existing ROV software architecture. No implementation, purchase, or design decision follows from retaining this link.
+
+The reported 433 MHz weather-sensor example is a separate commenter project and should not be attributed to the main LED-matrix build.
+
+===== Related research =====
+
+  * [[sites:chartroom:research:cyberdeck-control-station|Cyberdeck-style base station / control station]]
+  * [[sites:chartroom:research:constantrobotics-video-pipeline|ConstantRobotics video pipeline]]
+  * [[sites:chartroom:research:gtg-1-glass-to-glass-latency|GTG-1 glass-to-glass latency measurement]]
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
