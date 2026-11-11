@@ -15,7 +15,7 @@ authority       = Chartroom
   * **Source title/caption visible in screenshot:** “Line following robot sensor array”.
   * **Source description visible in screenshot:** “Fourteen TCRT5000 sensors”.
 
-The Facebook post itself has not been independently retrieved or its full description inspected. This note therefore distinguishes observations from the supplied screenshot from engineering interpretation.
+The Facebook post itself has not been independently retrieved or its full description inspected. The user also reports that the accompanying video appeared to mention three ultrasonic transducers; the video has not been independently reviewed, so this remains a user-observed lead rather than a verified specification. This note distinguishes screenshot observations, user-reported video content, independently retrieved technical documentation, and engineering interpretation.
 
 ===== Direct observations =====
 
@@ -24,6 +24,42 @@ The Facebook post itself has not been independently retrieved or its full descri
   * The sensors appear arranged as a broad, curved/transverse array, with some positions following the outer portions of the board.
   * The graphic is a rendered PCB/assembly illustration, not evidence of a manufactured or tested board.
   * The screenshot shows a sensor-count indicator of 02/14; this appears to be part of the social-media presentation and is not interpreted as a test result.
+
+
+===== Related public 14-channel design =====
+
+A public GitHub repository by Sarvesh Dujari describes a 14-channel QTR-style array using 14 Vishay TCRT5000 sensors: https://github.com/SarveshDujari/14QTR-Custom-Sensor-IR-Array-PCB---for-line-following-robot-V2
+
+Its README describes a U-shaped curved PCB with angled outer sensors; fourteen analogue outputs; a 16-pin 2.54 mm header; 5 V supply; 200 Ω IR LED series resistors; 10 kΩ phototransistor pull-down resistors; a 100 nF decoupling capacitor; a two-layer KiCad 9.0 design; and included Gerbers. Proposed future work includes comparator-based digital outputs, adjustable thresholds, an onboard I²C ADC, per-channel LEDs, and weighted-centroid/autocalibration/PID firmware examples.
+
+This is a close visual and technical match to the Facebook graphic, but the identity of the designer/source has not been established. Do not assume it is the same PCB or creator.
+
+**Important schematic/README inconsistency:** the README's described phototransistor circuit places the collector at 5 V and the emitter through 10 kΩ to ground, with the output at the emitter/resistor junction. That arrangement would ordinarily produce a higher output voltage as phototransistor conduction increases, whereas the README's sensor-behaviour table states white/reflective = LOW and black/non-reflective = HIGH. Verify the actual KiCad schematic and polarity before copying the circuit or firmware assumptions.
+
+===== Ultrasonic sensing observation =====
+
+The user reports that the Facebook video appeared to mention **three ultrasonic transducers**. Their arrangement, type, purpose, and whether they are three complete ranging modules or individual transducers in a shared arrangement have not been confirmed. If arranged across the front of the robot, three range measurements could potentially support left/centre/right obstacle or wall detection, but this is a hypothesis only. Do not treat the ultrasonic system as part of the verified 14-channel PCB design without further source evidence.
+
+Follow-up checks if the video or a clearer frame becomes available:
+
+  * Identify the transducer/module part number and whether each unit has independent trigger/echo connections.
+  * Establish mounting direction, spacing, field of view, minimum range, and update rate.
+  * Determine whether the three units are time-multiplexed to reduce acoustic cross-talk.
+  * Establish whether the intended task is obstacle avoidance, wall following, or micromouse wall/maze sensing. Ultrasonic sensing should not be assumed to replace close-range optical or contact sensing.
+
+===== Component sourcing — Vishay TCRT5000 =====
+
+The bare Vishay TCRT5000 reflective optical sensor is listed by both major UK distributors:
+
+  * **Farnell UK:** order code **1470066**, manufacturer part **TCRT5000** — https://uk.farnell.com/vishay/tcrt5000/photo-interrupter-reflective-2/dp/1470066
+  * **RS UK:** stock number **708-5017**, manufacturer part **TCRT5000** — https://uk.rs-online.com/web/p/reflective-optical-sensors/7085017
+  * **Farnell UK TCRT5000L:** order code **1703519**, long-lead variant — https://uk.farnell.com/c/sensors-transducers/sensors/optical-sensors/optical-slot-sensors
+
+A supplier-page check on 11 November 2026 showed RS listing the TCRT5000 in a pack of five at £3.94 ex VAT (£0.788 each), with stock shown; Farnell's individual product page showed £1.13 ex VAT each and 5,928 in stock. These are time-sensitive catalogue snapshots, not guaranteed prices or availability. Confirm current price, pack quantity, and lead time before procurement.
+
+The Vishay datasheet identifies the TCRT5000 as a leaded reflective sensor containing an IR emitter and phototransistor, with a 950 nm emitter and daylight-blocking filter: https://www.vishay.com/docs/83760/tcrt5000.pdf. It specifies a **peak operating distance of 2.5 mm**; the stated 0.2 mm to 15 mm range is the range over which relative collector current remains above 20%, not a guarantee of equal sensitivity or accuracy throughout that distance. Mechanical height and calibration therefore matter.
+
+For a custom array PCB, the bare component is the appropriate starting point rather than an Arduino-style breakout module, but the LED current-limiting resistor, phototransistor load, ADC range, optical crosstalk, and ambient-light behaviour still need to be designed and validated.
 
 ===== Engineering relevance =====
 
@@ -42,7 +78,7 @@ Potential investigation points:
 
 This is a **reference image**, not a verified design. The screenshot does not establish the PCB dimensions, component orientation/part variants, schematic, circuit values, channel spacing, sensor height, firmware, calibration method, measured performance, or successful operation. No design is adopted for K9, PiWars, or another robot by recording this reference.
 
-Further review should use the original post, any linked build log, and the actual PCB/schematic files if published.
+Further review should use the original post/video, any linked build log, and the actual PCB/schematic files if published. The GitHub project is a useful independently accessible design reference, not proof that it is the exact board shown in the Facebook post.
 
 ===== Related research =====
 
