@@ -202,6 +202,8 @@ The links below cover all research notes. Use the related-research links within 
 
 ==== Robotics software and development environments ====
 
+  * [[sites:chartroom:research:self-hosted-robot-coding-portal|Self-hosted robot coding portal — Blocks, Python, and Web editors]]
+
   * [[sites:chartroom:research:robotics-electronics-reference-batch-nov-2026|Robotics, ROV, and electronics reference batch (November 2026)]]
   * [[sites:chartroom:research:ev3dev-mqtt-motor-control-tutorial|EV3dev MQTT messaging and motor-control tutorial]]
   * [[sites:chartroom:research:emqx-mqtt-js-tutorial|EMQX MQTT.js JavaScript tutorial]]
