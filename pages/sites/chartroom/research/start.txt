@@ -47,6 +47,18 @@ The links below cover all research notes. Use the related-research links within 
   * [[sites:chartroom:research:makeuseof-rugged-raspberry-pi-outdoor-projects-access-pending|MakeUseOf rugged Raspberry Pi outdoor projects — access pending]]
   * [[sites:chartroom:research:printables-arduino-rover-access-pending|Printables Arduino Rover — access pending]]
 
+==== PiWars and community robotics ====
+
+  * [[sites:chartroom:research:piwars-team-blogs|PiWars team blogs — reading list]]
+  * [[sites:chartroom:research:small-robot-code-test-platform|Small robot as a code test platform — ROV and PiWars]]
+  * [[sites:chartroom:research:piwars-footleg-motor2040-pid-mecanum|PiWars 2024 — Motor2040 PID control, mecanum drive, and field-oriented driving]]
+  * [[sites:chartroom:research:piwars-pidrogen-interchangeable-tracks-mecanum|PiWars 2024 — interchangeable tracks and mecanum wheels]]
+  * [[sites:chartroom:research:piwars-dan-ed-opencv-blob-tracking|PiWars 2024 — Dan-ED OpenCV colour blob tracking]]
+  * [[sites:chartroom:research:piwars-destructorpi-wall-detecting-simulation|Destructor Pi — wall-detecting simulation (awaiting source review)]]
+  * [[sites:chartroom:research:east-devon-pirates-piwars-2024-chassis|East Devon PiRates — PiWars 2024 chassis development]]
+  * [[sites:chartroom:research:east-devon-pirates-december-show-and-tell|East Devon PiRates — December 2023 show-and-tell]]
+  * [[sites:chartroom:research:adventures-with-pi-size-matters-piwars-2024|Adventures with a Raspberry Pi — “Size Matters” (PiWars 2024)]]
+
 ==== Underwater robotics and ROVs ====
 
   * [[sites:chartroom:research:techmonkeybusiness-open-source-rov-and-robotics|TechMonkeyBusiness open-source ROV and robotics references]]
@@ -224,11 +236,6 @@ The links below cover all research notes. Use the related-research links within 
   * [[sites:chartroom:research:car-inclinometer-esp32|Car inclinometer using ESP32 (awaiting review)]]
   * [[sites:chartroom:research:kerbal-controller-design-guide|Kerbal Controller design guide]]
   * [[sites:chartroom:research:kerbalcontroller-hugopeeters|KerbalController by hugopeeters]]
-  * [[sites:chartroom:research:small-robot-code-test-platform|Small robot as a code test platform — ROV and PiWars]]
-  * [[sites:chartroom:research:piwars-footleg-motor2040-pid-mecanum|PiWars 2024 — Motor2040 PID control, mecanum drive, and field-oriented driving]]
-  * [[sites:chartroom:research:piwars-pidrogen-interchangeable-tracks-mecanum|PiWars 2024 — Interchangeable tracks and mecanum wheels]]
-  * [[sites:chartroom:research:piwars-dan-ed-opencv-blob-tracking|PiWars 2024 — Dan-ED OpenCV colour blob tracking]]
-  * [[sites:chartroom:research:piwars-destructorpi-wall-detecting-simulation|Destructor Pi — wall-detecting simulation (awaiting source review)]]
   * [[sites:chartroom:research:sunfounder-picrawler-software|SunFounder PiCrawler software ecosystem]]
 
 ==== Robotics, education, and hardware ====

@@ -21,3 +21,7 @@ Repository guidance records the user's standing preference that project-relevant
 ## 2026-11-09 — Robotical learning resources assessed for SwarmBot
 
 Robotical Marty is recorded as an educational robotics reference for SwarmBot and Test in a Box, not as a selected hardware platform or software dependency. The useful material is the staged progression from unplugged sequencing and visual blocks to Python, plus lessons on debugging, sensor-driven conditionals, loops, functions, and multi-robot programming. The V1/V2 distinction matters: the published “An Army of Martys” multi-robot tutorial is a useful beginner example of network discovery, lists, and command iteration, but it is not a swarm-control architecture. Older ROS documentation refers to ROS Indigo/Jade/Kinetic and must not be presented as ROS 2 support. Detailed assessment and selected reading links are in [the Robotical Marty research note](pages/sites/chartroom/research/robotical-marty-educational-robotics.txt).
+
+## 2026-11-10 — PiWars blog reading list
+
+The user supplied 25 unique blog and team-site links associated with PiWars for future reading. They are recorded in [the PiWars team blogs index](pages/sites/chartroom/research/piwars-team-blogs.txt); the links are user-supplied discovery references, and their site contents were not reviewed as part of indexing them. The duplicated PiWars Reactor URL is listed once.

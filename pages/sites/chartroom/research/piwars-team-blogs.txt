@@ -1,0 +1,51 @@
+====== PiWars team blogs — reading list ======
+{{tag>research piwars blogs community robotics}}
+
+~~META:
+description     = User-supplied index of PiWars team and maker blogs for future research.
+type            = research
+status          = reference
+authority       = User-supplied links; Chartroom index
+~~
+
+This page records blogs supplied by the user as PiWars reading references. It is a discovery list, not an assessment of the sites or their claims. The sites have not been reviewed as part of adding this index. Use separate source notes for any technical details later extracted from them.
+
+The PiWars Reactor URL appeared twice in the supplied list and is recorded once here.
+
+===== Blogs =====
+
+  * [Adventures with a Raspberry Pi](https://adventures-with-pi.blogspot.com/)
+  * [Brian Squared](https://brian-squared.github.io/www/)
+  * [Dan-ED PiWars 2020](https://dan-ed-piwars2020.blogspot.com/)
+  * [Davenant Robotics](https://davenantrobotics.blogspot.com/)
+  * [Destructor Pi](https://destructorpi.wordpress.com/)
+  * [Dutch Rescue Team](https://dutch-rescue-team.blogspot.com/)
+  * [East Devon PiRates](https://eastdevonpirates.blogspot.com/)
+  * [Hardware Hacker](https://www.hardwarehacker.co.uk/blog)
+  * [Make Jönköping](https://www.makejkpg.se/)
+  * [MCs PiWars](https://calvindai1234.wixsite.com/mcspiwars/blog)
+  * [My IT Instructor — PiWars 2024](https://www.myitinstructor.com/piwars-2024)
+  * [Neave Engineering](https://neave.engineering/)
+  * [OrangeBot PiWars 2024](https://orangebot-piwars-2024.blogspot.com/)
+  * [Orion Robots](https://orionrobots.co.uk/)
+  * [PiWars Reactor](https://piwarsreactor.blogspot.com/)
+  * [SevillaBot](https://sevillabot.blog/)
+  * [Simtek Systems](https://simteksystems.wixsite.com/simtek/blog)
+  * [Cerc PiWars 2024](https://cercpiwars2024.blogspot.com/)
+  * [Team Lead Blogging](https://csct60.wixsite.com/teamlead-blogging)
+  * [Pidrogen](https://pidrogen.com/)
+  * [TechnoFire 2023](https://technofire2023.blogspot.com/)
+  * [Terror Byte PiWars](https://terror-byte-piwars.blogspot.com/)
+  * [The Young Pioneers PiWars](https://theyoungpioneers-piwars.blogspot.com/)
+  * [Turing Incomplete 7](https://turingincomplete7.wordpress.com/)
+  * [Wroboteers PiWars 2024](https://wroboteerspiwars2024.wordpress.com/)
+
+===== Related research =====
+
+  * [[sites:chartroom:research:adventures-with-pi-size-matters-piwars-2024|Adventures with a Raspberry Pi — “Size Matters” (PiWars 2024)]]
+  * [[sites:chartroom:research:east-devon-pirates-piwars-2024-chassis|East Devon PiRates — PiWars 2024 chassis development]]
+  * [[sites:chartroom:research:east-devon-pirates-december-show-and-tell|East Devon PiRates — December 2023 show-and-tell]]
+  * [[sites:chartroom:research:piwars-dan-ed-opencv-blob-tracking|Dan-ED PiWars — OpenCV colour blob tracking]]
+  * [[sites:chartroom:research:piwars-destructorpi-wall-detecting-simulation|Destructor Pi — wall-detecting simulation]]
+  * [[sites:chartroom:research:piwars-footleg-motor2040-pid-mecanum|PiWars 2024 — Motor2040 PID control, mecanum drive, and field-oriented driving]]
+  * [[sites:chartroom:research:piwars-pidrogen-interchangeable-tracks-mecanum|PiWars 2024 — interchangeable tracks and mecanum wheels]]
