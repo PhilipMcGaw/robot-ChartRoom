@@ -1,0 +1,124 @@
+====== Self-hosted robot coding portal — Blocks, Python, and Web editors ======
+{{tag>research education software web-interface blocks scratch python javascript swarmbot piwars}}
+
+~~META:
+description     = Research candidate for a self-hosted browser coding environment on PiWars and SwarmBot robots, using Blocks, Python, and Web editors behind a common robot API.
+type            = research
+status          = research-candidate
+authority       = Chartroom
+~~
+
+**Status:** Research candidate; no implementation decision made  
+**Added:** 2026-11-11  
+**Potential applications:** SwarmBot (primary educational use case), PiWars (secondary reuse)
+
+===== Origin and source =====
+
+  * [[https://classroom.raspberrypi.org/en|Raspberry Pi Code Classroom]]
+
+The user identified Raspberry Pi Code Classroom as a potential source of ideas. The three editor categories discussed are:
+
+  * **Blocks** — Scratch-based visual programming.
+  * **Python** — text-based Python programming.
+  * **Web** — HTML, CSS, and JavaScript.
+
+Code Classroom is a hosted classroom/teaching platform. The proposal here is to reuse the editor concepts or suitable open-source editor components in a separate self-hosted robot portal; it is not a proposal to port the complete Code Classroom service or to assume its backend is available for self-hosting.
+
+===== Concept =====
+
+Host a local web portal on a Raspberry Pi carried by the robot, or on a designated gateway for a group of robots. A phone, tablet, or laptop connects over Wi-Fi and opens a local hostname/address. The portal provides the three coding interfaces and robot-specific learning material without requiring internet access.
+
+The editors should be treated as front ends. They should not directly access GPIO, motor drivers, or privileged operating-system functions. Instead, all generated programs interact with a defined **Robot API**.
+
+===== Proposed logical architecture =====
+
+  * **Browser portal:** landing page, project selection, editor interfaces, documentation, and status.
+  * **Blocks editor:** visual programming, with robot-specific blocks for motion, sensors, events, and behaviours.
+  * **Python editor:** browser editing with code submitted to a controlled execution service.
+  * **Web editor:** HTML/CSS/JavaScript editing, with a live preview isolated from robot control services.
+  * **Project storage:** local save/load, import/export, and potentially version history.
+  * **Execution services:** separate, constrained execution environments for user programs.
+  * **Robot API:** documented commands, telemetry, sensor readings, and event interfaces.
+  * **Control layer:** validates commands and retains authority over limits, arbitration, watchdogs, and emergency-stop behaviour.
+  * **Hardware interfaces:** existing robot-specific software and embedded controllers.
+
+The same application-facing Robot API should ideally be available from physical and simulated backends. This would allow users to develop and test programs in simulation before deploying them to a physical robot, subject to explicit differences between simulated and real capabilities.
+
+===== SwarmBot application =====
+
+SwarmBot is the stronger initial educational use case. A portal could provide:
+
+  * visual programming for introductory behaviours;
+  * Python for more advanced control and experimentation;
+  * Web technologies for dashboards, visualisations, and user-created interfaces;
+  * robot discovery and status for multiple robots;
+  * assignment of programs to an individual robot or a group;
+  * coordinated swarm behaviours and experiments;
+  * teacher/operator supervision and controlled access to robot functions.
+
+For a multi-robot setup, investigate a **single swarm portal/gateway** that discovers and manages robots, rather than requiring users to connect to every robot separately. The gateway role and the robots' autonomy/control boundaries need separate design.
+
+===== PiWars application =====
+
+The same portal could be deployed on the PiWars robot as a self-contained programming and demonstration station. Potential activities include line following, sensor inspection, motion experiments, autonomous challenge routines, and telemetry visualisation. The PiWars implementation may be simpler and single-robot focused, while reusing the same editor and API concepts.
+
+===== Hosting and connectivity =====
+
+Candidate deployment models:
+
+  * **Robot-hosted:** the robot's Raspberry Pi hosts the portal and provides a Wi-Fi access point.
+  * **Network-hosted:** the robot joins an existing home, school, or event network and the portal is accessed over that network.
+  * **Swarm gateway:** one designated device hosts the portal and coordinates access to multiple robots.
+
+The preferred model is unresolved. Offline-first operation is desirable: editor assets, documentation, and project storage should be available locally without internet access. Network mode, authentication, user roles, and simultaneous-user policy need to be considered.
+
+===== Safety and execution boundaries =====
+
+User-authored code must not be allowed unrestricted access to the host operating system or hardware. In particular:
+
+  * isolate and constrain Python and JavaScript execution;
+  * keep editor/preview content separate from privileged robot services;
+  * expose a narrow, documented Robot API;
+  * validate commands and enforce rate, speed, and operating limits centrally;
+  * preserve emergency-stop authority, command timeouts, and watchdog behaviour in the control system;
+  * arbitrate control ownership so that multiple users or programs cannot unintentionally command the same robot;
+  * ensure that loss of the portal, browser, or network cannot defeat local safety behaviour.
+
+The coding portal is an educational/application layer, not a replacement for deterministic low-level motor control or embedded safety functions.
+
+===== Relationship to Robot Code repositories =====
+
+  * **ChartRoom:** own this concept, architecture, requirements, research provenance, and design decisions.
+  * **CuttleOS:** likely owner of portal services, editor integration, project management, and the robot-facing API implementation, subject to architecture review.
+  * **SquidLink:** provide simulated API/backend and integration tests so programs can be exercised without physical hardware.
+  * **NautiPi:** own the physical hardware interfaces and embedded control boundaries.
+
+These are proposed ownership boundaries, not approved implementation assignments. Keep the Robot API contract authoritative in one place and link to it from the other repositories.
+
+===== Research questions and next steps =====
+
+  * Identify suitable open-source Blocks, Python, and Web editor components and verify their licences, maintenance status, offline bundling, and embedding requirements.
+  * Establish whether Raspberry Pi Code Classroom itself exposes reusable editor components independently of its hosted classroom service; do not assume it does.
+  * Compare browser-based Python execution approaches, including isolation, resource limits, package management, and hardware access restrictions.
+  * Define the Robot API and decide how it maps to the existing CuttleOS Cockpit / Control / DataLogger architecture.
+  * Decide whether the portal runs on each robot, on a shared gateway, or supports both deployment modes.
+  * Define project persistence, export/import, user access, and concurrent-control behaviour.
+  * Prototype the portal against a simulated robot before enabling physical actuation.
+  * Assess resource requirements on the intended Raspberry Pi hardware.
+
+===== Related ChartRoom research =====
+
+  * [[sites:chartroom:research:small-robot-code-test-platform|Small robot as a code test platform — hardware abstraction and simulation]] — mock and physical backends behind common interfaces.
+  * [[sites:chartroom:research:robotical-marty-educational-robotics|Robotical Marty educational robotics]] — staged blocks-to-Python learning progression and multi-robot teaching examples.
+  * [[sites:chartroom:research:sunfounder-picrawler-software|SunFounder PiCrawler software ecosystem]] — software API and developer-experience reference.
+  * [[sites:chartroom:research:documentation-design|Documentation and technical communication design]] — documentation presentation and usability.
+
+===== Provenance and limitations =====
+
+This page records a concept discussed with the user after they supplied the Raspberry Pi Code Classroom URL. The portal architecture, application ideas, and repository ownership mapping are engineering proposals from that discussion, not claims made by Raspberry Pi. No editor component, licence, or self-hosting capability has yet been independently assessed for adoption. No implementation, deployment, or robot integration has been performed.
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
