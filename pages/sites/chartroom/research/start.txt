@@ -61,6 +61,8 @@ The links below cover all research notes. Use the related-research links within 
 
 ==== Underwater robotics and ROVs ====
 
+  * [[sites:chartroom:research:reddit-raspberry-pi-rgb-led-matrix-display|Reddit Raspberry Pi RGB LED matrix display — review candidate]]
+
   * [[sites:chartroom:research:techmonkeybusiness-open-source-rov-and-robotics|TechMonkeyBusiness open-source ROV and robotics references]]
   * [[sites:chartroom:research:mercator-origins-diver-navigation-telemetry|Mercator Origins diver navigation and telemetry project]]
   * [[sites:chartroom:research:alioli-arduino-rov-software-framework|Alioli Arduino ROV software framework]]
