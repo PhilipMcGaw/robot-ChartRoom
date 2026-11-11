@@ -1,0 +1,53 @@
+====== TCRT5000 line-sensor array — micromouse and line-following reference ======
+{{tag>research piwars micromouse line-following sensors electronics}}
+
+~~META:
+description     = Fourteen-element TCRT5000 reflective optical sensor array shown in a community robotics graphic.
+type            = research
+status          = reference
+authority       = Chartroom
+~~
+===== Source and provenance =====
+
+  * **Original social-media source:** https://www.facebook.com/share/1CQfuzV1y3/?mibextid=wwXIfr
+  * **Publisher shown in supplied screenshot:** RoboNest Stem Lab.
+  * **Supplied evidence:** user-provided screenshot of the Facebook post, captured 11 November 2026.
+  * **Source title/caption visible in screenshot:** “Line following robot sensor array”.
+  * **Source description visible in screenshot:** “Fourteen TCRT5000 sensors”.
+
+The Facebook post itself has not been independently retrieved or its full description inspected. This note therefore distinguishes observations from the supplied screenshot from engineering interpretation.
+
+===== Direct observations =====
+
+  * The graphic depicts a custom PCB shaped to span the front of a small mobile robot.
+  * Fourteen TCRT5000 reflective optical sensor positions are indicated across the PCB.
+  * The sensors appear arranged as a broad, curved/transverse array, with some positions following the outer portions of the board.
+  * The graphic is a rendered PCB/assembly illustration, not evidence of a manufactured or tested board.
+  * The screenshot shows a sensor-count indicator of 02/14; this appears to be part of the social-media presentation and is not interpreted as a test result.
+
+===== Engineering relevance =====
+
+A multi-element reflective array is relevant to **line-following robots and micromouse experiments**. Compared with a small central array, a wider sensor footprint may provide more spatial information about line position and direction, and may help detect line edges, curvature, and intersections. Actual benefit depends on sensor pitch, array geometry, optical/electrical design, mounting height, surface reflectivity, and the control algorithm.
+
+Potential investigation points:
+
+  * Determine sensor pitch and physical sensing footprint from the original PCB artwork or dimensions, if available.
+  * Establish whether each TCRT5000 is operated as an analogue reflectance channel or as a thresholded digital channel.
+  * Review emitter drive, phototransistor bias, ambient-light rejection, channel-to-channel variation, and calibration.
+  * Consider multiplexing or external ADC requirements, processor input count, sample rate, and acquisition synchronisation.
+  * Evaluate whether the full 14-channel array is useful, or whether a smaller number of strategically positioned sensors would meet the robot's needs.
+  * For micromouse use, assess whether the geometry supports wall/edge and junction detection as well as line tracking; do not assume the pictured array is a complete maze-navigation sensor suite.
+
+===== Limitations and status =====
+
+This is a **reference image**, not a verified design. The screenshot does not establish the PCB dimensions, component orientation/part variants, schematic, circuit values, channel spacing, sensor height, firmware, calibration method, measured performance, or successful operation. No design is adopted for K9, PiWars, or another robot by recording this reference.
+
+Further review should use the original post, any linked build log, and the actual PCB/schematic files if published.
+
+===== Related research =====
+
+  * [[sites:chartroom:research:ukmars-micromouse-reference|UKMARS and Micromouse reference]]
+  * [[sites:chartroom:research:piwars-team-blogs|PiWars team blogs — reading list]]
+  * [[sites:chartroom:research:ultrasonic-rov-micromouse-and-control-batch|Ultrasonic, ROV, and micromouse references]]
+
+~~REFNOTES~~
