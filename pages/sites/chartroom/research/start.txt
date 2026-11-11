@@ -57,6 +57,7 @@ The links below cover all research notes. Use the related-research links within 
   * [[sites:chartroom:research:piwars-destructorpi-wall-detecting-simulation|Destructor Pi — wall-detecting simulation (awaiting source review)]]
   * [[sites:chartroom:research:east-devon-pirates-piwars-2024-chassis|East Devon PiRates — PiWars 2024 chassis development]]
   * [[sites:chartroom:research:east-devon-pirates-december-show-and-tell|East Devon PiRates — December 2023 show-and-tell]]
+  * [[sites:chartroom:research:tcrt5000-line-sensor-array|TCRT5000 14-element line-sensor array — micromouse and line-following reference]]
   * [[sites:chartroom:research:adventures-with-pi-size-matters-piwars-2024|Adventures with a Raspberry Pi — “Size Matters” (PiWars 2024)]]
 
 ==== Underwater robotics and ROVs ====
