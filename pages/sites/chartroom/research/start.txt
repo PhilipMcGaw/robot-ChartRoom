@@ -311,6 +311,7 @@ The links below cover all research notes. Use the related-research links within 
   * [[sites:chartroom:research:miharix-wifi-rc|Miharix WiFi RC]]
   * [[sites:chartroom:research:osoyoo|OSOYOO robotics references]]
   * [[sites:chartroom:research:pca9685|PCA9685 PWM/servo driver]]
+  * [[sites:chartroom:research:qwiic-stemma-qt-i2c-connector|Qwiic and STEMMA QT I²C peripheral connector standard]]
   * [[sites:chartroom:research:east-devon-pirates-piwars-2024-chassis|East Devon PiRates — PiWars 2024 chassis development]]
   * [[sites:chartroom:research:east-devon-pirates-december-show-and-tell|East Devon PiRates — December 2023 show-and-tell]]
   * [[sites:chartroom:research:adventures-with-pi-size-matters-piwars-2024|Adventures with a Raspberry Pi — “Size Matters” (PiWars 2024)]]
