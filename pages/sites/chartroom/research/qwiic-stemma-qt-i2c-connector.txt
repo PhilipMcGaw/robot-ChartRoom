@@ -1,0 +1,93 @@
+====== Qwiic and STEMMA QT for robot I²C peripherals ======
+{{tag>research robotics electronics hardware i2c qwiic stemma-qt k9 piwars swarmbot}}
+
+~~META:
+description     = Research note on using the Qwiic/STEMMA QT connector ecosystem as a common short-range I²C peripheral and debug interface across robot projects.
+type            = research
+status          = reference
+authority       = Chartroom
+~~
+
+===== Source and scope =====
+
+**Primary discussion:** [[https://hackaday.com/2026/11/12/just-use-qwiic-already/|Hackaday — Just Use QWIIC Already]], Arya Voronova, 2026-11-12.
+
+The article's central recommendation is to standardise the physical connector used to expose I²C buses on custom boards, rather than requiring every project to adopt a particular branded sensor range. The author describes using Qwiic connections for modular peripheral wiring, board bring-up, and direct logic-analyser access to the bus.
+
+This note records the connector/interface concept and its potential relevance to the Robots projects. It does not record a completed design decision, selected component, or implemented hardware change.
+
+===== Interface summary =====
+
+Qwiic is SparkFun's 3.3 V I²C interconnect system using a keyed four-pin JST-SH connector with 1.0 mm pitch. Adafruit STEMMA QT uses the same JST-SH connector and pin order, so the two connector ecosystems are mechanically compatible. Electrical compatibility still requires checking the supply and logic specifications of the particular controller and peripheral: Qwiic is a 3.3 V system, while some STEMMA QT devices include their own regulation or level shifting and accept a wider supply range.
+
+The standard Qwiic cable colour convention is:
+
+| Pin | Signal | Cable colour |
+|---|---|---|
+| 1 | GND | Black |
+| 2 | 3.3 V | Red |
+| 3 | SDA | Blue |
+| 4 | SCL | Yellow |
+
+The connector exposes power and the two I²C signals only. It does not include an interrupt line, reset, or general-purpose I/O. Devices that require an interrupt should use a separately routed host GPIO or another suitable interface.
+
+SparkFun gives a conservative maximum current of 226 mA for a Qwiic cable. Treat this as a low-power peripheral connection, not a supply for motors, servos, or other substantial loads. Check the current budget of the host board, cable, connector, and each attached peripheral.
+
+===== Engineering value =====
+
+The principal benefit is a repeatable, detachable interface, not a change to the I²C protocol:
+
+  * **Peripheral modularity:** compatible sensors and small modules can be connected or replaced without soldering.
+  * **Board bring-up:** a standard connector provides a convenient point to scan, exercise, and verify devices before integrating them into the complete firmware.
+  * **Debug access:** the exposed SDA, SCL, and ground provide a convenient logic-analyser connection for observing bus transactions and diagnosing software/device-interface faults.
+  * **Reusable hardware:** common cables and adapter boards can be shared between robot controllers and peripheral breakouts.
+  * **PCB design consistency:** custom boards can expose a consistent I²C expansion/debug connector, even when the connected device is not sold as a Qwiic-branded product.
+
+The Hackaday article identifies a useful KiCad starting point: symbol `Conn_01x04_MountingPin` and horizontal JST-SH footprint `JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal`. Check the selected library version and manufacturer's recommended land pattern before using these in a released PCB. The article also warns that the vertical connector footprint variant has a different pin orientation; verify pin-to-signal mapping against the exact part and footprint rather than assuming the horizontal mapping carries over.
+
+===== Relevance to the Robots projects =====
+
+Potential common applications include:
+
+  * **K9:** IMU, compass, time-of-flight distance sensors, environmental sensors, and small auxiliary displays.
+  * **PiWars:** modular distance sensors, IMUs, GPIO expanders, and test/debug access on custom controller boards.
+  * **SwarmBot:** reusable sensor modules and peripheral interfaces across multiple robot units, supporting common wiring and educational experimentation.
+
+These are candidate applications, not selected components or confirmed requirements. Check each device's I²C address, voltage, current, library support, and interrupt requirements before selection. Where devices have fixed or conflicting addresses, consider address selection, a suitable I²C multiplexer, or a different interface as appropriate.
+
+===== Design guidance =====
+
+The user has explicitly noted awareness of I²C signal-integrity constraints. This research is about connector standardisation, modularity, and debug access; it is not an argument that Qwiic makes I²C suitable for arbitrary cable lengths, wiring topologies, or electrically noisy environments.
+
+Proposed convention for future robot controller and peripheral PCBs:
+
+  * Use Qwiic/STEMMA QT-compatible JST-SH connectors for suitable short-range, low-power I²C peripheral connections.
+  * Expose each relevant I²C bus at an accessible, clearly labelled connector or test point so that firmware bring-up and logic-analyser measurements do not require probing fine-pitch IC pins.
+  * Identify the bus/controller and supply voltage at each connector. Do not assume two physically identical connectors belong to the same I²C bus.
+  * Check the exact peripheral's voltage compatibility; do not apply 5 V to a Qwiic-only device.
+  * Account for aggregate pull-ups, bus capacitance, cable characteristics, topology, clock rate, and the electrical environment during the actual design review. Connector choice does not remove these requirements.
+  * Route any required interrupt signal separately, or select a connector/interface that explicitly includes it.
+  * Keep the Qwiic power rail within its verified current budget and provide separate power distribution for actuators.
+  * Use CAN, RS-485, or another suitable link where a distributed module or longer/noisier connection needs a more robust communications interface.
+
+This is a proposed shared design convention for consideration across K9, PiWars, and SwarmBot. It is not yet a project-wide implementation decision. No PCB, cable harness, or robot has been modified or validated as a result of this research.
+
+===== Related research =====
+
+  * [[sites:chartroom:research:pca9685|PCA9685 PWM/servo driver]] — an example of an I²C peripheral that could be exposed through a standard connector, subject to its own electrical and application constraints.
+  * [[sites:chartroom:research:small-robot-code-test-platform|Small robot as a code test platform — ROV and PiWars]]
+
+===== Sources =====
+
+  * [[https://hackaday.com/2026/11/12/just-use-qwiic-already/|Hackaday — Just Use QWIIC Already]], 2026-11-12.
+  * [[https://www.sparkfun.com/qwiic|SparkFun — Qwiic]] — connector, pinout, cable, and current guidance.
+  * [[https://learn.adafruit.com/introducing-adafruit-stemma-qt/sparkfun-qwiic|Adafruit — SparkFun Qwiic, Arduino Modulino and Compatibles]] — STEMMA QT/Qwiic connector and compatibility guidance.
+  * [[https://learn.adafruit.com/introducing-adafruit-stemma-qt/technical-specs|Adafruit — STEMMA and STEMMA QT technical specifications]].
+
+**Status:** Reviewed research reference and proposed common hardware convention. Not an implementation record or validated project decision.
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
