@@ -1,0 +1,44 @@
+====== ESP32 Matter BME280 environmental sensor ======
+{{tag>research esp32 matter bme280 remote-sensing environmental-sensing iot}}
+
+~~META:
+description     = Research reference for an ESP32 publishing BME280 temperature, humidity, and pressure readings as Matter sensors, including a deep-sleep example.
+type            = research
+status          = reference
+authority       = Random Nerd Tutorials guide; Espressif Arduino-ESP32 documentation
+~~
+
+===== Project summary =====
+
+The [[https://randomnerdtutorials.com/esp32-matter-temperature-humidity-bme280-arduino/|Random Nerd Tutorials ESP32 Matter BME280 guide]] shows an ESP32 reading a BME280 over I²C and exposing temperature, relative humidity, and atmospheric pressure through Matter sensor endpoints. The example uses the Arduino-ESP32 Matter library and commissions the device to a Matter controller such as Home Assistant, Apple Home, Google Home, or Amazon Alexa. The guide says that controller support for the pressure endpoint varies; it identifies Home Assistant as a controller that can display all three values.
+
+This is a different data path from the existing LoRa, LoRaWAN, and sub-GHz remote weather-station references. It is useful where a sensor node and its controller share a suitable local IP network. Matter does not, by itself, provide a long-range field link from a remote node to a base station.
+
+===== Deep-sleep example =====
+
+The guide includes a periodic deep-sleep sketch. Its example remains awake for five minutes after start-up to allow commissioning, then sleeps for 60 seconds, reconnects to the network and Matter controller, publishes measurements, and stays awake for another 20 seconds to allow reports to arrive. These are example timings, not measured power or delivery results.
+
+This makes the guide relevant to low-duty-cycle sensor-node research, but does not establish battery suitability. The radio and Matter reconnection/reporting time can dominate energy use at short sample intervals. A field design would need measured wake-to-report time, current over a complete cycle, missed-report behaviour, battery and regulator losses, and runtime under the intended network conditions. The guide and its comments are not independent validation of an energy budget.
+
+===== Relevance and limits =====
+
+  * **Local environmental monitoring:** Matter provides a standard way to expose environmental measurements to an existing compatible controller, without a project-specific dashboard being the only way to view them.
+  * **Remote sensor comparison:** compare this Wi-Fi/IP-connected approach with [[sites:chartroom:research:solar-powered-wifi-weather-station-v40|Solar Powered WiFi Weather Station V4.0]], [[sites:chartroom:research:printables-weather-station-one-central-station|Weather Station One]], and the [[sites:chartroom:research:core-electronics-pico-lorawan-weather-station|Core Electronics LoRaWAN weather station]]. Those examples use different network topologies and should be compared against range, infrastructure, energy, and data-retention needs.
+  * **Sensor limits:** the BME280 measures atmospheric pressure; it is not a submerged depth sensor. See the [[sites:chartroom:research:piicodev-bme280-atmospheric-sensor|BME280 sensor reference]] for measurement and environmental limits.
+  * **Controller dependency:** commissioning, network coverage, controller support for each endpoint, and behaviour when the controller is offline need to be checked for the intended deployment.
+  * **Marine use:** this example does not establish enclosure, condensation, corrosion, pressure, radio-link, or long-term field suitability.
+
+The source describes a tutorial build, not a project implementation or validated remote-sensor design. No Matter, ESP32, or BME280 platform is selected for a Robots project by recording this reference.
+
+===== Sources =====
+
+  * [ESP32 Matter: Temperature and Humidity with BME280 (Arduino)](https://randomnerdtutorials.com/esp32-matter-temperature-humidity-bme280-arduino/), Random Nerd Tutorials; reviewed 2026-11-14. Includes the standard reporting sketch and a periodic deep-sleep example. The guide is secondary tutorial material; its example timings and behaviour are not independently tested here.
+  * [Matter — Arduino ESP32 documentation](https://docs.espressif.com/projects/arduino-esp32/en/latest/matter/matter.html), Espressif; accessed 2026-11-14. Primary documentation for the Arduino Matter library and supported device interfaces.
+  * [Matter APIs — Arduino ESP32 documentation](https://docs.espressif.com/projects/arduino-esp32/en/latest/libraries.html), Espressif; accessed 2026-11-14. Lists environmental sensor endpoint APIs, including temperature, humidity, and pressure.
+  * [Deep Sleep — Arduino ESP32 documentation](https://docs.espressif.com/projects/arduino-esp32/en/latest/api/deepsleep.html), Espressif; accessed 2026-11-14. Primary reference for ESP32 deep-sleep behaviour; this documentation page notes that its section is still a work in progress.
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
