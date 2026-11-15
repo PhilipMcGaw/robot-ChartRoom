@@ -1,0 +1,44 @@
+====== Weather SenseBox Arduino thesis ======
+{{tag>research weather-station arduino sensing education data-logging calibration}}
+
+~~META:
+description     = 2012 school weather-station thesis with a modular Arduino logger and comparative field observations.
+type            = research
+status          = reference
+authority       = Jan Alexander Wirwahn, University of Münster thesis; current senseBox publication listing
+~~
+
+===== Summary =====
+
+Jan Alexander Wirwahn's 2012 bachelor's thesis describes an Arduino-based weather station intended for school projects. The prototype combines an Arduino Mega 2560 and Ethernet Shield with microSD logging, a real-time clock, temperature and humidity, pressure, rain, wind-speed, and wind-direction sensors. It is designed as a modular platform that can be extended with more sensors.
+
+Temperature, humidity, and pressure are sampled every 10 seconds and averaged over 10 minutes before timestamped comma-separated-value (CSV) records are written to the SD card. Wind direction is sampled and stored at a shorter interval because the analogue vane output varied enough that longer averaging could produce misleading directions. This is a useful example of recording data locally before adding a network service.
+
+===== Reported comparison and limitations =====
+
+The thesis reports two comparison sessions totalling about 50 hours and more than 300 measurement series against a professional station. The author adjusted the temperature and pressure readings after the first session. The humidity readings failed above about 70% relative humidity. Wind speed was lower than the reference station; the author notes the prototype's anemometer was at about 2 m while the reference was at 5 m, with a rooftop obstacle also potentially affecting exposure. Wind direction varied substantially, and the author identified placement as a possible cause. The thesis therefore illustrates commissioning and comparison problems; it does not establish long-term accuracy of the prototype.
+
+The hardware is now historical: its listed sensors include SHT15 and BMP085 devices. The thesis's educational platform and data-quality lessons remain useful, but its parts, libraries, and wiring should not be treated as current build instructions.
+
+===== Relevance =====
+
+The example supports separating sensor acquisition and timestamped local logging from later data sharing. It also shows why reference comparisons need similar sensor exposure and why a plausible sensor output does not establish representative measurements. These are research lessons for weather-station and buoy planning, not evidence of an implemented Robots project system.
+
+===== Sources and provenance =====
+
+  * User-supplied thesis PDF: Jan Alexander Wirwahn, ''Weather SenseBox: An Arduino Based Approach to Integrate the Work on Sensor Platforms in High School Classes'', bachelor's thesis, Institute for Geoinformatics, University of Münster, October 2012.
+  * [[https://sensebox.de/en/research-publications.html|senseBox publications list]], which lists Wirwahn's 2012 thesis; accessed 2026-11-15. The thesis itself was reviewed from the user-supplied PDF. A current public download link was not found in the publication listing.
+
+===== Related research =====
+
+For buoy and field-node concepts, see [[sites:chartroom:research:remote-environmental-monitoring-buoy|remote environmental monitoring buoy]], [[sites:chartroom:research:fieldkit-environmental-sensing-platform|FieldKit environmental sensing platform]], and [[sites:chartroom:research:solar-powered-wifi-weather-station-v40|Solar Powered WiFi Weather Station V4.0]].
+
+===== Status =====
+
+Historical research reference only. The prototype's reported comparisons are not project validation.
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

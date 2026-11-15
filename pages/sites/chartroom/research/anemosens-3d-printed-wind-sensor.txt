@@ -20,6 +20,8 @@ The optional AnemoSens microcontroller unit (MCU) PCB connects an ESP32 to the s
 
 The author states that rotor speed must be calibrated against a known wind speed to obtain accurate wind-speed readings. A 2022 project log says a small printable wind tunnel was still being developed for this purpose. That source does not report a completed calibration curve or measurement accuracy. The same log says the then-current MCU board was not optimised for battery operation, and that a revised board was being developed. Do not assume the published design provides calibrated wind speed or low-power remote deployment without further evidence.
 
+The 2012 study by Pindado, Pérez, and Avila-Sanchez tested 21 rotor configurations on two cup anemometers. It found that rotor geometry, including cup centre-rotation radius and cup front area, affects the anemometer's calibration transfer function. This supports calibrating the complete printed rotor and sensor assembly rather than transferring a calibration from a different rotor. The study does not provide a calibration curve for AnemoSens.
+
 The project is useful for comparing compact wind-vane sensing, separate speed and direction measurements, and an environmental sensor node with local logging and wired or wireless data interfaces. It has not been validated for the Robots project's use, nor does the available material establish long-term outdoor durability of the printed assembly, bearings, or electronics.
 
 ===== Source and licence notes =====
@@ -27,6 +29,8 @@ The project is useful for comparing compact wind-vane sensing, separate speed an
   * Fabian, [[https://nerdiy.de/en/howto-anemosens-ein-3d-gedruckten-windsensor-anemometer-aufbauen/|HowTo: Anemosens – Build a 3D-printed wind sensor / anemometer]], Nerdiy.de, published 2022-02-09; accessed 2026-11-08.
   * [[https://hackaday.io/project/185642-anemosens-sla-printed-anemometer|AnemoSens – SLA printed anemometer]], Hackaday.io project page and development logs; accessed 2026-11-08.
   * [[https://github.com/Nerdiyde/Anemosens|Nerdiyde/Anemosens]], linked PCB, software, and design repository; accessed 2026-11-08.
+  * Pindado, S., Pérez, J., and Avila-Sanchez, S., [[https://www.mdpi.com/1424-8220/12/5/6198|“On Cup Anemometer Rotor Aerodynamics”]], ''Sensors'', 12(5), 6198–6217 (2012), DOI 10.3390/s120506198. The publisher copy states CC BY 3.0. The unchanged paper is retained at {{:sites:chartroom:research:evidence:pindado-2012-cup-anemometer-rotor-aerodynamics.pdf?linkonly|download the article}}. The institutional repository lists a more restrictive licence; refer to the licence notice in the publisher copy for reuse terms.
+  * [[https://oa.upm.es/16019/|UPM institutional repository record for the paper]], which lists a more restrictive licence classification; accessed 2026-11-15.
 
 The Nerdiyde project page states that non-code works are licensed under CC BY-NC-SA 4.0 and software/code works under GNU Affero General Public License version 3.0 (AGPL-3.0), unless otherwise stated. Check the current licence files and notices before adapting or redistributing any design or software.
 

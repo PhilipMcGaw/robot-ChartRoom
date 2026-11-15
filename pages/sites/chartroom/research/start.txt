@@ -170,6 +170,9 @@ The links below cover all research notes. Use the related-research links within 
 
   * [[sites:chartroom:research:arduino-3d-printed-personal-weather-station|Arduino 3D-printed personal weather station]]
   * [[sites:chartroom:research:anemosens-3d-printed-wind-sensor|AnemoSens 3D-printed wind sensor]]
+  * [[sites:chartroom:research:weather-sensebox-arduino-thesis|Weather SenseBox Arduino thesis]]
+  * [[sites:chartroom:research:esp8266-weather-station-getting-started|ESP8266 Weather Station getting-started guide]]
+  * [[sites:chartroom:research:delta-t-spn1-measurement-best-practices|Delta-T SPN1 measurement best practices]]
   * [[sites:chartroom:research:pluvion-esp8266-tipping-bucket-rain-gauge|Pluvi.On ESP8266 tipping-bucket rain gauge]]
   * [[sites:chartroom:research:printables-weather-station-one-central-station|Weather Station One central station]]
   * [[sites:chartroom:research:fieldkit-environmental-sensing-platform|FieldKit environmental sensing platform]]

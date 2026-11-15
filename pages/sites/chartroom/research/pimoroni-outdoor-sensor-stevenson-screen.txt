@@ -25,6 +25,7 @@ The manufacturer listing provides no ingress-protection rating, quantified envir
   * [TFA Dostmann manufacturer page for model 98.1114.02](https://www.tfa-dostmann.de/en/product/protective-cover-for-outdoor-transmitter-98-1114/); accessed 2026-11-08.
   * [Pimoroni product listing, product 981114](https://shop.pimoroni.com/products/weatherproof-cover-for-outdoor-sensors); accessed 2026-11-08.
   * [Core Electronics product listing, CE08801](https://core-electronics.com.au/weatherproof-coverenclosure-for-outdoor-sensors-stevenson-screen.html); accessed 2026-11-08.
+  * For introductory background on repeatable weather measurements and protecting an outdoor temperature sensor from direct sun while permitting airflow, see Emily Gertz and Patrick Di Justo, [[https://www.oreilly.com/library/view/environmental-monitoring-with/9781449328603/|''Environmental Monitoring with Arduino'']], O'Reilly Media, 2012, Chapter 7. The book's component details are historical and are not used as current sensor specifications.
 
 ~~REFNOTES~~
 ---------

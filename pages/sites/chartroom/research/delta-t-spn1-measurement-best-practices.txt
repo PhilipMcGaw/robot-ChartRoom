@@ -1,0 +1,48 @@
+====== Delta-T SPN1 measurement best practices ======
+{{tag>research weather-station solar irradiance pyranometer calibration data-quality}}
+
+~~META:
+description     = Manufacturer guidance on installing, logging, validating, and checking a Delta-T SPN1 Sunshine Pyranometer.
+type            = research
+status          = reference
+authority       = Delta-T Devices; John Wood, SPN1 Best Practice revision 3
+~~
+
+===== Instrument and measurement =====
+
+The SPN1 is a pyranometer that measures global and diffuse horizontal irradiance using seven thermopile detectors beneath a fixed shadow mask. The manufacturer describes it as having no moving parts and low power for its core measurement function. This note covers the instrument-specific guidance in John Wood's revision 3 best-practice document; it is not a recommendation to use this sensor on a Robots weather station or buoy.
+
+===== Installation and data logging =====
+
+Delta-T says to mount the instrument on a firm support and level it using the bubble indicator in the dome. The core sensor draws approximately 2 mA at 5–15 V according to the guide. Its built-in heater, used to clear dew, frost, rain, or snow, may require up to 1.5 A at 12 V; that load could dominate a small solar-powered node's energy budget if heater operation is required.
+
+The SPN1 needs an external data logger. The guide describes either a 0–2 V analogue output or digital output over Recommended Standard 232 (RS-232) at 9600 baud. It recommends digital readings where available; analogue logging requires at least 12-bit resolution and a fully differential input to reduce cable-current errors. The logger and communications equipment add to the sensor's system power and integration needs.
+
+===== Calibration, checks, and limits =====
+
+The guide recommends recalibration every two years. It describes checking detector matching and comparing readings with a reference instrument. It also recommends reviewing night-time values: for the instrument, readings are normally 0–3 W/m² when temperature is stable; values above 6 W/m² or below zero indicate an installation or logging problem to investigate. These thresholds are specific to the SPN1 guidance.
+
+The manufacturer-stated total accuracy for global and diffuse radiation is given as ±5% for daily integrals, ±5% and ±10 W/m² for hourly averages, and ±8% and ±10 W/m² for individual readings. The guide also reports that diffuse irradiance may be understated and direct normal irradiance overstated by about 5% in comparisons with tracker-based systems, depending on how circumsolar light is classified. Treat these as the guide's stated specifications and comparison findings, not a guarantee of performance in a particular installation.
+
+===== Relevance =====
+
+This reference may help assess whether solar-irradiance measurement is useful alongside weather and photovoltaic monitoring. It shows that the sensing head can draw little power while its heater and required logger materially change the system budget. Measuring irradiance alone does not establish a solar panel's energy yield or a node's autonomy; those require system-specific measurements and energy accounting.
+
+===== Sources and provenance =====
+
+  * [[https://delta-t.co.uk/wp-content/uploads/2016/10/SPN1_Best_Practices-v3.pdf|SPN1 Measurement Best Practices]], John Wood, revision 3, official Delta-T Devices document; accessed 2026-11-15.
+  * [[https://delta-t.co.uk/product/spn1-pv/|SPN1 Sunshine Pyranometer product page]], Delta-T Devices, lists the best-practice document and current instrument documentation; accessed 2026-11-15.
+
+===== Related research =====
+
+For solar-powered weather-node examples, see [[sites:chartroom:research:solar-powered-wifi-weather-station-v40|Solar Powered WiFi Weather Station V4.0]] and [[sites:chartroom:research:raspberry-pi-mobile-self-sufficient-weather-station|Raspberry Pi self-sufficient mobile weather station]]. For buoy-level power and environmental-sensing questions, see [[sites:chartroom:research:remote-environmental-monitoring-buoy|remote environmental monitoring buoy]].
+
+===== Status =====
+
+Manufacturer reference only. No SPN1 or irradiance logger has been selected, integrated, or validated for a project system.
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
