@@ -1,0 +1,40 @@
+====== Raspberry Pi self-sufficient mobile weather station ======
+{{tag>research weather-station raspberry-pi solar environmental-sensing enclosure field-test buoy}}
+
+~~META:
+description     = Raspberry Pi report on a portable solar-powered weather station, including its modular enclosure and creator-reported field-test findings.
+type            = research
+status          = reference
+authority       = Raspberry Pi news article reporting the creator's project and test observations
+~~
+
+===== Project overview =====
+
+The [[https://www.raspberrypi.com/news/self-sufficient-mobile-weather-station/|Raspberry Pi article “Self-sufficient mobile weather station”]] describes a portable weather station built around a Raspberry Pi Zero W. The creator reports using a solar panel and a modular kit that can be assembled for measurement and taken apart for transport. The article identifies temperature and humidity sensing, a Hall-effect anemometer for wind speed, and light measurement using the solar panel. It also reports that the station established a web server and stored sampled data during a field test on the Gower Peninsula in Wales.
+
+The article says the enclosure was iterated to achieve a reported IP65 rating, with gaskets and cable grommets sealing the electronics. This is the creator's description of the design target; no independent ingress-protection test report is provided in the article.
+
+===== Reported field findings =====
+
+The creator reports that the anemometer bearings stalled at slower wind speeds because friction prevented rotation. Lubricating the bearings improved its behaviour. The temperature sensor consistently read approximately 1–2 °C higher than expected; the creator attributed this to heat trapped in the sensor head, possibly including self-heating, with insufficient heat escape. These are reported observations from the project's field test, not independent measurements or a complete calibration study.
+
+The article does not give a quantified battery or solar-energy budget, operating duration through cloudy conditions, detailed sensor models, or long-term deployment data. The creator lists easier sampling-rate adjustment, improved modularity, and correction of the temperature issue as future improvements. Do not treat these as completed changes.
+
+===== Relevance to weather station and buoy work =====
+
+  * **Portable weather station:** the removable modules and transport-focused packaging may inform a field kit that can be deployed at different sites. The reported sensor-heating problem makes thermal separation and ventilation important topics for any compact enclosure.
+  * **Self-powered sensing:** solar charging and local data storage are relevant patterns to compare with the [[sites:chartroom:research:solar-powered-wifi-weather-station-v40|Solar Powered WiFi Weather Station V4.0]], [[sites:chartroom:research:printables-weather-station-one-central-station|Weather Station One]], and the [[sites:chartroom:research:pimoroni-enviro-weather|Pimoroni Enviro Weather station kit]]. The article does not supply enough power data to size a system.
+  * **Smart buoy:** modular payload packaging, solar power, environmental measurements, and logging are useful comparison points for the [[sites:chartroom:research:open-source-ocean-buoy-references|open-source ocean buoy references]]. The reported station is a land-based weather instrument; it provides no evidence of buoyancy design, saltwater corrosion resistance, water ingress performance in marine service, or reliable radio telemetry from a buoy.
+  * **Wind measurement:** the low-speed bearing stall is a concrete reminder to examine starting threshold, friction, and calibration in the chosen anemometer rather than assuming rotation begins at all useful wind speeds.
+
+This is a third-party project reference. It is not an adopted design, a validated weather instrument, or evidence of a tested Smart Buoy subsystem.
+
+===== Source =====
+
+  * [Self-sufficient mobile weather station](https://www.raspberrypi.com/news/self-sufficient-mobile-weather-station/), Raspberry Pi, 2026-11-09. News report based on an interview with the creator; field performance and design details above are attributed to the creator as reported in that article. Reviewed 2026-11-15.
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
