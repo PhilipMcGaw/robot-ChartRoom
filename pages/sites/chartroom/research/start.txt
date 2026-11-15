@@ -204,6 +204,8 @@ The links below cover all research notes. Use the related-research links within 
 
 ==== Robotics software and development environments ====
 
+  * [[sites:chartroom:research:pyinfra-infrastructure-automation|PyInfra — Python-based infrastructure automation]]
+
   * [[sites:chartroom:research:self-hosted-robot-coding-portal|Self-hosted robot coding portal — Blocks, Python, and Web editors]]
 
   * [[sites:chartroom:research:robotics-electronics-reference-batch-nov-2026|Robotics, ROV, and electronics reference batch (November 2026)]]
