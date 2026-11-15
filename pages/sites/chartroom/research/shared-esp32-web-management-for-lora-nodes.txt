@@ -61,6 +61,8 @@ ESP-IDF is the framework used by the supplied tutorial, but the project has not 
 
 ===== Relationship to existing research =====
 
+  * [[sites:chartroom:research:pyinfra-infrastructure-automation|PyInfra — Python-based infrastructure automation]] — possible deployment automation for Linux hosts that provide remote access to ESP32 management endpoints; PyInfra does not run on the ESP32 itself.
+
   * [[sites:chartroom:research:pico-micropython-web-server-control|MicroPython web-server control for Pico and ESP boards]] — another reference for browser interfaces on small Wi-Fi microcontrollers; it uses MicroPython and is not the same implementation approach.
   * [[sites:chartroom:research:esp32-github-ota-updates|ESP32 over-the-air updates from GitHub]] — separate OTA delivery research; not evidence that OTA is part of this interface yet.
   * [[sites:chartroom:research:smart-buoy-lora-network-infrastructure|Smart Buoy LoRa Network Infrastructure]] — existing LoRa-to-HTTPS telemetry and gateway context.
