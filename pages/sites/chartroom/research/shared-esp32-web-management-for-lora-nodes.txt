@@ -1,0 +1,90 @@
+====== Shared ESP32 web-management interface for LoRa nodes ======
+{{tag>research esp32 lora web-server configuration provisioning diagnostics gateway sensor-nodes}}
+
+~~META:
+description     = Research note for a reusable browser-based configuration and maintenance interface across ESP32 LoRa sensor nodes and the Internet gateway.
+type            = research
+status          = research-candidate
+authority       = User-directed project concept; Random Nerd Tutorials ESP-IDF access-point guide
+~~
+
+===== Project idea =====
+
+The user wants a common, browser-based configuration and management interface for the ESP32 devices used in the LoRa projects. The same management layer should be reusable across sensor nodes and the LoRa Internet gateway, while remaining separate from each device's LoRa application logic.
+
+The intended interface is for configuration, status, diagnostics, and maintenance. It is not intended to carry normal LoRa telemetry or replace the LoRa communications protocol.
+
+===== Reference implementation =====
+
+The user supplied the [Random Nerd Tutorials ESP-IDF: ESP32 Web Server Access Point (AP) Mode guide](https://randomnerdtutorials.com/esp-idf-esp32-web-server-access-point/). It demonstrates an ESP32 configured as a Wi-Fi access point and serving a basic HTML page through the ESP-IDF HTTP server. A phone, tablet, or computer connects directly to the ESP32's network and opens the page in a browser.
+
+The guide uses ESP-IDF components including Wi-Fi, event handling, network interfaces, NVS, and `esp_http_server`. It is a useful starting reference for the AP and local HTTP-server mechanism. The example is deliberately basic: it serves a static page and demonstrates AP-only operation. It does not implement the proposed configuration application, captive-portal workflow, AP-plus-station operation, device-specific settings, authentication design, or secure OTA process.
+
+===== Proposed shared capabilities =====
+
+The framework could provide common pages and services, with device-specific settings supplied by each node application:
+
+  * **Dashboard:** device identity, firmware version, uptime, operating mode, and connection status.
+  * **Wi-Fi provisioning:** configure credentials for a trusted local network and provide a temporary device-hosted AP for initial setup or recovery.
+  * **LoRa configuration:** expose only parameters supported by the particular radio and application, such as frequency plan, bandwidth, spreading factor, coding rate, transmit power, and node/network identity.
+  * **Sensor configuration:** sampling interval, reporting interval, calibration values, and enabled sensors where applicable.
+  * **Diagnostics:** packet counts, received signal strength indicator (RSSI), signal-to-noise ratio (SNR), queue depth, error counters, and relevant power/battery measurements.
+  * **Maintenance:** controlled restart, configuration reset, firmware version display, and a future firmware-update workflow.
+
+The interface should be responsive and usable from a phone or laptop without a dedicated application.
+
+===== Operating model to investigate =====
+
+A preferred operating pattern is:
+
+  - In normal operation, the device uses its configured network and keeps the management service available only where appropriate for the device's power, security, and deployment constraints.
+  - A deliberate provisioning/configuration action (for example, a physical button or defined boot mode) enables the device-hosted AP.
+  - The user connects directly and opens the local management page. A captive-portal-style redirect may improve usability, but is an additional feature to design and test; it is not demonstrated by the cited guide.
+  - Submitted settings are validated, stored persistently, and applied safely. Settings that require a restart should be clearly identified.
+  - The AP is disabled again when configuration mode ends, where appropriate.
+
+For a mains-powered gateway, simultaneous AP and station operation (AP+STA) may be useful so that the gateway can remain connected to the home network while offering a local configuration network. This mode is a proposed requirement to investigate, not a feature demonstrated by the cited AP-only tutorial.
+
+For battery-powered sensor nodes, the AP and web server should normally be off outside a deliberate maintenance window. Their energy cost and effect on radio coexistence must be measured on the actual hardware before selecting timeouts or operating policies.
+
+===== Architecture and implementation considerations =====
+
+  * Keep the web-management layer independent of the LoRa application and radio-driver interfaces. A common management API should call device-specific configuration and status providers rather than embedding application logic in page handlers.
+  * Use a structured configuration model and persistent storage such as ESP-IDF Non-Volatile Storage (NVS), with schema/version handling and safe defaults.
+  * Validate every setting against the hardware, radio plan, regulatory constraints, and application limits before saving or applying it.
+  * Protect configuration and maintenance operations. Do not ship an open AP or shared default password; consider per-device credentials, a deliberate physical provisioning action, and appropriate session protection.
+  * Treat OTA as a related but separately designed capability. Firmware authenticity, transport security, rollback/recovery, partition capacity, and interrupted-update behaviour require explicit design and validation. The web interface alone does not make OTA secure.
+  * Keep the management interface lightweight, with static assets served locally and no dependency on cloud access for local configuration.
+  * Consider a common core plus device-specific pages or modules, so the gateway can expose queue/network/NTP status while a sensor node exposes sampling and battery information.
+
+ESP-IDF is the framework used by the supplied tutorial, but the project has not yet selected or standardised its ESP32 firmware framework. Confirm the existing firmware/toolchain in the relevant implementation repository before adopting ESP-IDF-specific APIs or libraries.
+
+===== Relationship to existing research =====
+
+  * [[sites:chartroom:research:pico-micropython-web-server-control|MicroPython web-server control for Pico and ESP boards]] — another reference for browser interfaces on small Wi-Fi microcontrollers; it uses MicroPython and is not the same implementation approach.
+  * [[sites:chartroom:research:esp32-github-ota-updates|ESP32 over-the-air updates from GitHub]] — separate OTA delivery research; not evidence that OTA is part of this interface yet.
+  * [[sites:chartroom:research:smart-buoy-lora-network-infrastructure|Smart Buoy LoRa Network Infrastructure]] — existing LoRa-to-HTTPS telemetry and gateway context.
+
+===== Status and open questions =====
+
+This is a user-requested research/design concept, not an approved detailed specification or implemented feature. No firmware framework, web UI library, captive-portal implementation, authentication mechanism, or OTA solution has been selected.
+
+Before implementation, inspect the relevant ESP32 firmware repositories and resolve:
+
+  * which LoRa nodes and gateway are in scope, and their ESP32 variants;
+  * current firmware frameworks and whether a shared component can be built without forcing a framework migration;
+  * AP-only versus AP+STA behaviour for each device class;
+  * configuration schema, persistence, validation, and migration;
+  * authentication and physical access requirements;
+  * low-power maintenance-mode behaviour and measured energy cost;
+  * whether OTA belongs in the first version or a later phase.
+
+===== Source =====
+
+  * [ESP-IDF: ESP32 Web Server Access Point (AP) Mode](https://randomnerdtutorials.com/esp-idf-esp32-web-server-access-point/), Random Nerd Tutorials; accessed 2026-11-15. Demonstrates a basic ESP-IDF AP and HTTP-served HTML page. It is a tutorial reference, not a tested project implementation.
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
