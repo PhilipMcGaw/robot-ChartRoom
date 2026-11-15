@@ -73,6 +73,10 @@ These are general reference articles. Numerical claims and classifications shoul
 
 The [Deep Ocean Education Project's “What is an ROV?” page](https://deepoceaneducation.org/resources/what-is-an-rov/) links to an illustrated fact sheet hosted by [NOAA Ocean Exploration](https://oceanexplorer.noaa.gov/wp-content/uploads/2025/04/rov-fact-sheet.pdf). The fact sheet provides a visual guide to common components, including cameras, lights, sample baskets, a manipulator arm, tether, thrusters, syntactic foam, davit, and control room. It is an educational overview, not a technical specification. Its photographs include named credits, so link to the source rather than copying the images into Chartroom.
 
+===== Further reading =====
+
+Two user-supplied books provide broader background for ROV construction and design. Harry Bohm and Vickie Jensen's ''Build Your Own Underwater Robot and Other Wet Projects'' is an older practical introduction to underwater robots and wet projects; see the [[https://cbra.library.utoronto.ca/items/show/18431|Canadian Book Review Annual bibliographic entry]]. Steven W. Moore, Harry Bohm, and Vickie Jensen's ''Underwater Robotics: Science, Design & Fabrication'' (MATE Center, 2010) is a larger reference covering vehicle design, working underwater, structures, buoyancy, propulsion, power, control, payloads, and operations; see the [[https://bluerobotics.com/store/the-reef/book-moore-ed1/|publisher's contents and book description]]. These books are background reading, not current project specifications. The supplied scans were not reviewed page-by-page, so use current manufacturer documentation and project evidence for design decisions.
+
 ===== Related research =====
 
 For educational ROV kits and teaching resources, see the [[sites:chartroom:research:rovmaker-stem-kits-and-learning-resources|ROVmaker STEM kits and learning resources]] note.

@@ -1,0 +1,40 @@
+====== Underwater umbilical management between two robots ======
+{{tag>research rov tether umbilical control vision simulation}}
+
+~~META:
+description     = Research presentation on visual tracking of a cable between ROVs and active tether management between an ROV and USV.
+type            = research
+status          = reference
+authority       = Hugel, Laranjeira, Tortorici, and Gartner presentation
+~~
+
+===== Summary =====
+
+A 2019 presentation by Vincent Hugel, Matheus Laranjeira, Ornella Tortorici, and Nicolas Gartner discusses two related problems: following a cable between two small remotely operated vehicles (ROVs), and managing the tether between an ROV and an unmanned surface vehicle (USV).
+
+In the first study, a follower vehicle uses a camera to detect a slightly negatively buoyant cable. The authors describe colour-based image segmentation, morphological filtering, skeletonisation, and fitting a catenary curve to estimate cable shape. The follower then uses cable features for visual-servo control. The presentation reports pool experiments with a 1.50 m cable and a BlueROV1, while also noting oscillations and possible causes including thruster deadband and water disturbances. This is a reported research experiment, not validation for the Robots project.
+
+The second study considers a powered winch on a USV to manage the tether between surface and underwater vehicles. The presentation identifies cable forces on the ROV, tether-length control, force sensing, and cable stiffness as design concerns. It describes cable characterisation, simulation, and an additively manufactured winch prototype. The slides do not establish a production-ready winch or a validated deployment system.
+
+===== Engineering relevance =====
+
+The work is a useful prompt to treat tether shape and management as part of vehicle control and surface-vehicle integration. For a buoy or ROV, tether force, payout, bending and torsional stiffness, and vehicle motion may interact. Visual cable tracking is another possible measurement when cable geometry matters, but it depends on visible cable features and a constrained viewing geometry. Any project application would need its own sensing, control, environmental, and safety validation.
+
+===== Sources and provenance =====
+
+  * User-supplied presentation PDF: [[https://webperso.ensta.fr/jaulin/sm19_hugel.pdf|Underwater umbilical management between two robots]], by Vincent Hugel, Matheus Laranjeira, Ornella Tortorici, and Nicolas Gartner, Laboratoire COSMER / University of Toulon. Its title slide is dated 2019-06-14.
+  * [[https://emra-19.marinerobotics.eu/wp-content/uploads/2019/05/EMRA19-programme-Update.pdf|EMRA'19 programme]] lists a presentation with this title and Vincent Hugel on 2019-05-16. This date differs from the date on the supplied PDF; it may refer to a separate presentation of related material, but the available sources do not resolve this.
+
+===== Related research =====
+
+For general ROV operating and tether context, see [[sites:chartroom:research:rov-overview-and-applications|ROV overview and applications]]. For buoy and surface-system references, see [[sites:chartroom:research:open-source-ocean-buoy-references|open-source ocean buoy references]].
+
+===== Status =====
+
+Research reference only. The presentation's reported experiments are not project testing or validation.
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

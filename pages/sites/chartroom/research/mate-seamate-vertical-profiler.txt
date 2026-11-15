@@ -1,0 +1,41 @@
+====== MATE SeaMATE vertical profiler ======
+{{tag>research rov mate seamate education profiling sensors tether}}
+
+~~META:
+description     = SeaMATE's educational vertical-profiler kit and ideas for tethered water-column measurements.
+type            = research
+status          = reference
+authority       = MATE / SeaMATE product and educational materials
+~~
+
+===== Summary =====
+
+The supplied SeaMATE guide describes a simple tethered platform that moves vertically under one motor. It is intended as an educational introduction to vertical profiling and the MATE Floats! task; the guide explicitly says the kit is not a true float. The current [[https://seamate.org/products/mate-floats-profiler-non-rov-kit|SeaMATE product page]] likewise describes a single-thruster, non-ROV profiler and optional sensor wiring.
+
+The guide's example construction uses a ½-inch PVC frame, flotation near the top, and the motor as ballast near the bottom. The frame is to be trimmed towards neutral buoyancy, with the propeller protected inside the frame. A 7.6 m tether is described with six 18 AWG conductors: two for the motor, two optional conductors for a temperature sensor, and two spare. The guide gives a maximum frame height of 50 cm. These are instructions for this educational kit, not verified design limits for a Robots project vehicle.
+
+The optional sensor arrangement is a useful concept for a small water-column profiler: send sensor readings or sensor connections along a tether while a surface operator controls vertical travel. The supplied guide names an RTD temperature probe and suggests measurements in air and at surface, mid-water, and bottom. It does not provide evidence of calibrated measurements, field deployment, marine suitability, depth rating, or autonomous profiling.
+
+===== Engineering relevance =====
+
+The concept can inform early discussion of a buoy or ROV payload that samples at several depths. It raises practical questions about tether conductor allocation, strain relief, sensor placement, propeller guarding, neutral buoyancy, and keeping the vehicle stable while profiling. A project design would need its own requirements and testing for water ingress, corrosion, tether loads, buoyancy, sensor calibration, safe motor control, and operating depth.
+
+===== Sources and provenance =====
+
+  * User-supplied presentation, ''SeaMATE Vertical Profiler'', 15 slides. The presentation credits MATE educational resources and states that the materials are licensed under CC BY-NC-SA 4.0. This note summarises the guide and does not reproduce its figures.
+  * [[https://seamate.org/products/mate-floats-profiler-non-rov-kit|SeaMATE MATE Floats! Vertical Profiler Kit]], current product description; accessed 2026-11-15.
+  * [[https://seamate.org/collections/rov-kits|MATE Floats! educational resources]], SeaMATE catalogue; accessed 2026-11-15.
+
+===== Related research =====
+
+For SeaMATE's ROV kit range, see [[sites:chartroom:research:mate-seamate-rov-kits|MATE SeaMATE educational ROV kits]]. For other water-column and buoy concepts, see [[sites:chartroom:research:remote-environmental-monitoring-buoy|remote environmental monitoring buoy]] and [[sites:chartroom:research:open-source-ocean-buoy-references|open-source ocean buoy references]].
+
+===== Status =====
+
+Reference material only. No project profiler has been designed, built, or validated from this source.
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

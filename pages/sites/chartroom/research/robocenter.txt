@@ -20,6 +20,8 @@ This page records ideas worth revisiting. It is **inspiration and comparative re
   * **Payload modularity:** treat manipulators, cameras, and other payloads as replaceable modules rather than hard-coded vehicle functions.
   * **Buoyancy and sealing as first-class design work:** include buoyancy, pressure/sealing, cable routing, and serviceability in the same design loop as the frame and electronics.
 
+The supplied Russian-language [[https://robocenter.net/projects/opengrabber/|OpenGrabber assembly guide]] describes a printed-jaw manipulator driven by a small geared motor and lead screw. It recommends mechanical limit switches as an option for controlling travel and specifies stainless steel or equivalent material for the lead screw when used underwater. These are build-guide recommendations; the supplied guide is undated, and it does not provide evidence of pressure, corrosion-life, or operational testing. Check the current source and material requirements before using the design.
+
 ===== Electrical and embedded systems =====
 
   * **Distributed propulsion/control:** study the separation between high-level vehicle commands and the low-level actuator/sensor layer. This is compatible with the existing ROV Control boundary, while leaving NATS as the project communications layer.
@@ -83,6 +85,7 @@ This supports the existing **ROV - HiL-and-SiL** direction and the aim of making
   * [[https://robocenter.net/materials/|RoboCenter materials index]] — surviving project and software material.
   * [[https://robocenter.net/projects/openthruster-150/|OpenThruster 150]] — open thruster project.
   * [[https://robocenter.net/projects/opengrabber/|OpenGrabber]] — modular manipulator/grabber reference.
+  * User-supplied, undated Russian-language OpenGrabber assembly guide — identifies the parts and assembly sequence, recommends travel limit switches as an option, and calls for a stainless steel or equivalent lead screw for underwater use. The guide does not establish a pressure or corrosion rating.
   * [[https://robocenter.net/projects/mesh/|Thruster meshes and guards]] — propulsion protection and mechanical reference.
   * [[https://robocenter.net/media/documents/HighROV_Manual_RUS.pdf|HighROV Manual]] — vehicle software, telemetry, payload, and control workflow.
   * [[https://robocenter.net/media/documents/%D0%A0%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%BE_HighROV_2022.pdf|HighROV 2022 Manual]] — operator UI, control computer/network, telemetry, logging, and custom-UI reference.
