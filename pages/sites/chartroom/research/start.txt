@@ -175,6 +175,7 @@ The links below cover all research notes. Use the related-research links within 
   * [[sites:chartroom:research:core-electronics-pico-lorawan-weather-station|Core Electronics Raspberry Pi Pico LoRaWAN weather station]]
   * [[sites:chartroom:research:esp32-matter-bme280-remote-sensor|ESP32 Matter BME280 environmental sensor]]
   * [[sites:chartroom:research:raspberry-pi-mobile-self-sufficient-weather-station|Raspberry Pi self-sufficient mobile weather station]]
+  * [[sites:chartroom:research:shared-esp32-web-management-for-lora-nodes|Shared ESP32 web-management interface for LoRa nodes]]
   * [[sites:chartroom:research:pimoroni-enviro-weather|Pimoroni Enviro Weather station kit]]
   * [[sites:chartroom:research:element14-lorawan-iot-applications|element14 LoRaWAN for Internet of Things applications]]
   * [[sites:chartroom:research:pimoroni-outdoor-sensor-stevenson-screen|Pimoroni outdoor sensor cover (Stevenson screen)]]
@@ -203,6 +204,8 @@ The links below cover all research notes. Use the related-research links within 
   * [[sites:chartroom:research:autonomous-uav-ground-station|Autonomous UAV ground station]]
 
 ==== Robotics software and development environments ====
+
+  * [[sites:chartroom:research:pyinfra-infrastructure-automation|PyInfra — Python-based infrastructure automation]]
 
   * [[sites:chartroom:research:self-hosted-robot-coding-portal|Self-hosted robot coding portal — Blocks, Python, and Web editors]]
 

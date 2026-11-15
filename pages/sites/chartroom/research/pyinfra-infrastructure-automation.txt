@@ -1,0 +1,124 @@
+====== PyInfra — Python-based infrastructure automation ======
+{{tag>research pyinfra python infrastructure-automation deployment raspberry-pi linux ssh tailscale}}
+
+~~META:
+description     = Research note on PyInfra for repeatable deployment and configuration of Linux-based robotics computers.
+type            = research
+status          = research-candidate
+authority       = Official PyInfra documentation and Orion Robots Raspberry Pi/Tailscale example
+~~
+
+===== Overview =====
+
+[https://pyinfra.com/ PyInfra] is an agentless infrastructure automation and deployment tool. It uses Python deployment files to describe operations against target machines, commonly over Secure Shell (SSH). It can be used for one Linux computer or a grouped inventory of hosts, and also supports local and Docker targets.
+
+The central idea is to define the desired state of a machine in code, then let PyInfra inspect the target and apply the required changes. Deployment definitions can be kept in Git and reused when rebuilding, updating, or maintaining systems.
+
+PyInfra is conceptually comparable to Ansible, but its deployment logic is written in Python rather than primarily in YAML playbooks. This is a difference in authoring model, not by itself a reason to replace an existing Ansible workflow.
+
+===== How it works =====
+
+A typical deployment has two main ingredients:
+
+  * **Inventory:** identifies target hosts, groups, and host/group-specific data.
+  * **Operations:** describe the commands or desired state to apply to those targets.
+
+A deployment is normally a Python file containing operations. For example, an operation can ensure that an APT package is installed, a configuration file has specified contents, or a systemd service is enabled and running.
+
+PyInfra distinguishes two operation styles:
+
+  * **Declarative operations:** describe an end state, such as ensuring a package or user exists. PyInfra checks the current state and determines whether a change is required. Re-running an unchanged deployment should therefore make no further change for these operations.
+  * **Imperative operations:** run a command or script as requested. These are useful where no suitable declarative operation exists, but they are not automatically idempotent.
+
+The documented deployment process gathers information from each host, prepares the operation sequence, then executes the required commands. The `--dry` option allows a deployment to report proposed changes without applying them. This is useful for review, but it does not replace backups, testing, or a recovery route.
+
+===== Example use in the Robots project =====
+
+A shared deployment repository or directory could define common baseline configuration and machine-role-specific configuration for Linux computers.
+
+Potential common tasks include:
+
+  * install baseline packages and development utilities;
+  * create service accounts and configure SSH access;
+  * install and configure Tailscale;
+  * deploy version-controlled configuration files;
+  * create or update systemd services and timers;
+  * configure log rotation, firewall rules, and operational settings;
+  * install pinned application dependencies;
+  * apply role-specific configuration for a robot, controller, or simulation host.
+
+An inventory could group machines by role, for example physical robot computers, operator/control computers, and HIL/SiL hosts. Shared operations could then be applied to all relevant machines, with additional operations for each group.
+
+This could reduce configuration drift and make rebuilding a known Linux environment more repeatable. It would also make the configuration changes reviewable in Git.
+
+===== Tailscale and the Orion Robots example =====
+
+The article [https://orionrobots.co.uk/2026/09/02/02-reach-your-robot-anywhere-tailscale-pyinfra-on-a-raspberry-pi.html Reach Your Robot Anywhere: Tailscale + PyInfra on a Raspberry Pi] by Danny Staple (2026-09-02) is a practical example relevant to the user's existing use of Tailscale.
+
+The article uses PyInfra to automate the installation and configuration of Tailscale on a Raspberry Pi robot computer. It demonstrates:
+
+  * installing Tailscale from its official package repository;
+  * selecting and pinning a package version;
+  * enabling and starting the Tailscale service;
+  * checking whether the machine is already joined before attempting to join it again;
+  * validating required configuration before making changes;
+  * keeping the authentication key outside version control;
+  * transferring the key through a restricted temporary file rather than exposing it in shell arguments or history;
+  * enabling Tailscale SSH and using the robot's tailnet identity for remote access.
+
+The article also highlights an important operational hazard: do not change the Tailscale configuration through the same Tailscale connection that is being modified. If the change interrupts that connection, the deployment process can lose access to the target. Use a local network or other out-of-band route when changing the target's Tailscale configuration, then verify connectivity before returning to remote administration.
+
+The example is a Raspberry Pi/Linux deployment. It does not mean PyInfra runs on an ESP32, nor does it make a Tailscale client available for ESP32 firmware.
+
+===== Relevance and possible application =====
+
+PyInfra is worth evaluating for the Linux-based parts of the Robots project, especially where several computers share a common operating-system baseline or need repeatable setup.
+
+Possible candidates include:
+
+  * Raspberry Pi computers used for robot-side services and control;
+  * Linux-based operator or development machines where automated configuration is appropriate;
+  * HIL/SiL Linux hosts and virtual machines;
+  * future Linux gateway or support computers used alongside embedded LoRa devices.
+
+The exact applicability depends on the operating systems, access methods, and existing deployment practices in each implementation repository. The implementation repositories remain authoritative for their own deployment scripts and runtime configuration; Chartroom should hold the cross-project approach and shared rationale.
+
+PyInfra is not a firmware build/deployment system for microcontrollers, a replacement for ROS 2, a container runtime, or a network overlay. It can install and configure software that uses those systems on a Linux host, but each remains a separate concern.
+
+===== Limitations and engineering considerations =====
+
+  * A target normally needs a working SSH service and a suitable shell; privilege escalation may be required for system-level changes.
+  * A working SSH connection is a prerequisite, not something PyInfra automatically provides. Tailscale can provide network reachability, but its installation and initial enrolment still need a bootstrap path.
+  * Secrets such as Tailscale authentication keys MUST NOT be committed to Git or embedded in deployment files. Use an appropriate secret-injection method and restrict temporary secret files and their lifetime.
+  * Review deployments before applying them. Use dry-run output, test on a non-critical machine, and retain a local or out-of-band recovery path for network changes.
+  * Pin important package versions where predictable behaviour is required, and define an intentional update process.
+  * Declarative operations are designed to converge on a desired state; arbitrary imperative commands may repeat side effects if not written carefully.
+  * Automation can make a mistake repeatable across every target. Limit inventories and deployment scope, review diffs, and roll out changes in stages.
+  * Do not migrate existing configuration management to PyInfra until the current setup has been inspected and the practical benefit demonstrated.
+
+===== PyInfra compared with Ansible =====
+
+Both tools can automate Linux configuration over SSH and support reusable deployment definitions.
+
+  * PyInfra uses Python for inventories and deployment logic. This may suit workflows where Python is already the preferred automation language.
+  * Ansible commonly uses YAML playbooks and its established module ecosystem. It may be preferable where existing roles, playbooks, team knowledge, or integrations already exist.
+  * The appropriate choice should be based on maintainability, available modules, testing, operational familiarity, and the existing project estate—not a general claim that one tool is always faster or better.
+
+===== Status =====
+
+This is a research candidate, not a selected project standard or implemented deployment system. No PyInfra inventory, deployment code, or changes to the existing robot repositories have been made as part of this note.
+
+Before adoption, inspect the current deployment and provisioning arrangements in CuttleOS, SquidLink, and NautiPi. Identify which Linux hosts would benefit, what is already automated, and whether a small pilot can demonstrate repeatable setup without disrupting current workflows.
+
+===== Sources =====
+
+  * [https://docs.pyinfra.com/en/3.x/getting-started.html PyInfra v3 — Getting Started]. Official documentation covering inventories, operations, SSH targets, declarative state, and reusable deploy files.
+  * [https://docs.pyinfra.com/en/3.x/using-operations.html PyInfra v3 — Using Operations]. Official documentation explaining declarative and imperative operations, dry runs, and change detection.
+  * [https://docs.pyinfra.com/en/3.x/deploy-process.html PyInfra v3 — How PyInfra Works]. Official description of preparation and execution phases.
+  * [https://orionrobots.co.uk/2026/09/02/02-reach-your-robot-anywhere-tailscale-pyinfra-on-a-raspberry-pi.html Reach Your Robot Anywhere: Tailscale + PyInfra on a Raspberry Pi], Danny Staple, Orion Robots, 2026-09-02. Practical third-party example; its deployment details are not independently validated by Chartroom.
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
