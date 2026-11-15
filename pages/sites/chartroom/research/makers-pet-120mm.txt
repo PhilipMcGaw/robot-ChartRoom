@@ -24,6 +24,29 @@ The material is primarily relevant to **SwarmBot and MarsBot**, and parts of the
 
 The e-book's source repository contains the chapter Markdown and authoring/build instructions. The source README describes the PDF as the companion to the video course and identifies the robot as the BLD-120MM-PACK Arduino/ESP32/ROS 2 LiDAR build. The repository includes an Apache License 2.0 file; before mirroring the generated PDF in this public repository, confirm that the licence and any embedded video-derived illustrations are covered by the same redistribution terms. The PDF is therefore linked to its publisher rather than copied into Chartroom media at this stage.
 
+===== Maker's Pet GitHub organisation and related projects =====
+
+Maker's Pet maintains a public GitHub organisation:
+
+  * [[https://github.com/makerspet|Maker's Pet — GitHub organisation]]
+
+The organisation is a useful source of implementation material beyond the 120 mm e-book. Repositories of particular interest include:
+
+  * [[https://github.com/makerspet/ebook|ebook]] — Markdown source and build material for the self-driving robot e-book. Useful for searching and cross-referencing the guide's technical content.
+  * [[https://github.com/makerspet/oomwoo|oomwoo]] — OOMWOO open-source robot vacuum project. Its stated architecture combines Raspberry Pi, ROS 2/Nav2, 2D LiDAR, 3D-printed mechanical parts, Arduino/ESP32 and local Home Assistant integration. The repository describes the project as not yet buildable as a complete physical robot; simulation and software development are available ahead of validated hardware/build instructions. Treat it as an active design/research project, not a production-proven platform.
+  * [[https://github.com/makerspet/oomwoo-one|oomwoo-one]] — ROS 2 robot description package, including URDF and configuration for the OOMWOO One model.
+  * [[https://github.com/makerspet/oomwoo_gazebo|oomwoo_gazebo]] — Gazebo simulation package. Its README documents ROS 2 Jazzy/Gazebo use, worlds, models, contact sensors, headless operation, and simulation options. This is particularly relevant to the Robots project's Jazzy and SiL work.
+  * [[https://github.com/makerspet/oomwoo-install|oomwoo-install]] — ROS 2/Docker installation and environment setup.
+  * [[https://github.com/makerspet/oomwoo-firmware|oomwoo-firmware]] — firmware for the OOMWOO I/O board.
+  * [[https://github.com/makerspet/oomwoo-one-cad|oomwoo-one-cad]] — OOMWOO One CAD design files.
+  * [[https://github.com/makerspet/oomwoo-pcb|oomwoo-pcb]] — OOMWOO I/O board hardware.
+  * [[https://github.com/makerspet/makerspet_loki|makerspet_loki]] — a 200 mm 3D-printed ESP32 pet robot compatible with the Kaia.ai robotics software platform; includes mechanical, PCB and software material.
+  * [[https://github.com/makerspet/makerspet_mini|makerspet_mini]] — an entry-level 170 mm ROS 2/Arduino educational robot with LiDAR.
+
+The OOMWOO repositories are particularly worth examining as a connected example spanning robot description, Gazebo simulation, installation, firmware, PCB and mechanical CAD. The Gazebo repository explicitly documents a Jazzy baseline, making it a more directly comparable reference for the current Robots workspace than the e-book's primary Iron baseline. OOMWOO itself remains under development; do not treat its proposed hardware or architecture as validated.
+
+For Chartroom, use the organisation page as the index and link to individual repositories from relevant project notes. Keep this research as external reference material; it does not supersede the architecture or implementation authority of any Robots project.
+
 ===== Platform and architecture =====
 
 The documented 120 mm robot combines:
