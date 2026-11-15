@@ -1,0 +1,60 @@
+====== JL-12ZN20-43-06450 yellow gearmotor ======
+{{tag>research hardware motor actuator robotics dimensions}}
+
+~~META:
+description     = Dimensions and nameplate-style specifications transcribed from a user-supplied yellow gearmotor drawing.
+type            = research
+status          = reference
+authority       = User-supplied one-page motor specification drawing; manufacturer unidentified
+~~
+
+===== Identification =====
+
+The user says they have examples of this yellow gearmotor and wants its dimensions retained as a useful reference for this common-sized motor type. The supplied drawing gives model ''JL-12ZN20-43-06450''. It resembles the small 12 mm gearmotor / N20 form factor, but neither the manufacturer nor the relationship between the model number and the user's physical motors has been confirmed. Treat the values below as a transcription from the drawing, not measurements of a particular motor.
+
+===== Drawing dimensions =====
+
+The drawing labels dimensions in millimetres:
+
+^ Feature ^ Drawing value ^ Notes ^
+| Gearbox face | 12 mm wide × 18 mm high | Face view dimensions. |
+| Gearbox depth | 10 mm | Axial dimension in the side view. |
+| Motor can | Ø12 mm; 10 mm across in the side view | The drawing gives both view-specific dimensions. Confirm the can shape on the physical part. |
+| Motor and gearbox body | 33 mm overall | Drawing dimension across the assembly, excluding the output shaft. |
+| Mounting holes | 2 × Ø1.5 mm; 8.5 mm centre-to-centre | The drawing also shows 4.25 mm from the centreline to one hole. Check the hole pattern against the actual unit before making a bracket. |
+| Output shaft projection | 12 ± 0.3 mm and 11.5 ± 0.2 mm | The drawing uses two different reference faces for these dimensions; do not treat them as contradictory overall lengths without checking the part. |
+| Output shaft diameter | Ø3 mm, tolerance 0/−0.03 mm; also Ø2.5 mm, tolerance 0/−0.05 mm | The drawing conflicts between views. Measure the shaft before selecting a coupler or preparing a CAD model. |
+
+The sheet does not provide a reliable drawing revision or manufacturer identity. Its face and shaft callouts are not sufficient for production fit. Measure the actual motor, including mounting-hole locations, shaft diameter, and shaft projection from the gearbox face, before designing around it.
+
+===== Electrical and performance values on the sheet =====
+
+The drawing states:
+
+^ Property ^ Stated value ^
+| Rated voltage | 6 V |
+| Operating temperature | −10 to +60 °C |
+| No-load speed | 450 ± 10% rpm |
+| On-load speed | 400 ± 10% rpm |
+| No-load current | ≤ 80 mA |
+| Rated current | ≤ 180 mA |
+| Rated torque | 0.05 kgf·cm |
+| Stall current | 750 mA (reference) |
+| Stall torque | ≥ 0.4 kgf·cm |
+| Direction | CW (as labelled on the sheet) |
+| Noise | 65 dBA maximum at 300 mm |
+| Axial gap | 0.02–0.3 mm |
+
+These are supplier-sheet figures, not independently measured results. The sheet does not specify test conditions, gearbox ratio, gear material, life, ingress protection, or a continuous-duty rating. Do not use the stated stall figures as allowable operating conditions; verify motor and driver limits for the intended application.
+
+===== Provenance and status =====
+
+Transcribed from the user-supplied one-page PDF ''Yellow Motor - Unknown.pdf''. The sheet identifies model ''JL-12ZN20-43-06450'', but has no legible manufacturer name or document date. PDF metadata identifies an author string ''ed27'' and file creation date 2020-09-25; this is metadata for the supplied PDF, not confirmation of the datasheet's issue date. The drawing contains conflicting shaft-diameter callouts, so direct measurement is required before use in a design.
+
+Reference material only. No project hardware has been identified as this exact model, measured, tested, or approved.
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

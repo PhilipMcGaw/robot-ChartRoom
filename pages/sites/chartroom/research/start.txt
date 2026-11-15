@@ -111,6 +111,7 @@ The links below cover all research notes. Use the related-research links within 
   * [[sites:chartroom:research:mate-seamate-rov-kits|MATE SeaMATE educational ROV kits]]
   * [[sites:chartroom:research:mate-seamate-vertical-profiler|MATE SeaMATE vertical profiler]]
   * [[sites:chartroom:research:underwater-umbilical-management-two-robots|Underwater umbilical management between two robots]]
+  * [[sites:chartroom:research:jl-12zn20-43-06450-yellow-gearmotor|JL-12ZN20-43-06450 yellow gearmotor dimensions and specifications]]
   * [[sites:chartroom:research:mate-rov-requirements-summary|MATE ROV engineering requirements summary]]
   * [[sites:chartroom:research:mate-rov-competition-official-site|MATE ROV Competition official resources]]
   * [[sites:chartroom:research:mate-scottish-school-rov|Scottish school MATE ROV project]]
