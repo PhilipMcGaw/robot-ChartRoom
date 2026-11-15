@@ -22,7 +22,7 @@ The concept can inform early discussion of a buoy or ROV payload that samples at
 
 ===== Sources and provenance =====
 
-  * User-supplied presentation, ''SeaMATE Vertical Profiler'', 15 slides. The presentation credits MATE educational resources and states that the materials are licensed under CC BY-NC-SA 4.0. This note summarises the guide and does not reproduce its figures.
+  * User-supplied presentation, ''SeaMATE Vertical Profiler'', 15 slides. The presentation credits MATE educational resources and states that the materials are licensed under CC BY-NC-SA 4.0. The original presentation is retained unchanged at {{:sites:chartroom:research:evidence:mate-seamate-vertical-profiler.pptx?linkonly|download the presentation}}.
   * [[https://seamate.org/products/mate-floats-profiler-non-rov-kit|SeaMATE MATE Floats! Vertical Profiler Kit]], current product description; accessed 2026-11-15.
   * [[https://seamate.org/collections/rov-kits|MATE Floats! educational resources]], SeaMATE catalogue; accessed 2026-11-15.
 

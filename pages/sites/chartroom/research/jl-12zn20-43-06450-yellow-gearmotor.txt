@@ -49,7 +49,7 @@ These are supplier-sheet figures, not independently measured results. The sheet 
 
 ===== Provenance and status =====
 
-Transcribed from the user-supplied one-page PDF ''Yellow Motor - Unknown.pdf''. The sheet identifies model ''JL-12ZN20-43-06450'', but has no legible manufacturer name or document date. PDF metadata identifies an author string ''ed27'' and file creation date 2020-09-25; this is metadata for the supplied PDF, not confirmation of the datasheet's issue date. The drawing contains conflicting shaft-diameter callouts, so direct measurement is required before use in a design.
+Transcribed from the user-supplied one-page PDF ''Yellow Motor - Unknown.pdf'', retained at {{:sites:chartroom:research:evidence:jl-12zn20-43-06450-yellow-motor.pdf?linkonly|download the motor drawing}}. The sheet identifies model ''JL-12ZN20-43-06450'', but has no legible manufacturer name or document date. PDF metadata identifies an author string ''ed27'' and file creation date 2020-09-25; this is metadata for the supplied PDF, not confirmation of the datasheet's issue date. No reuse licence is stated in the sheet. The drawing contains conflicting shaft-diameter callouts, so direct measurement is required before use in a design.
 
 Reference material only. No project hardware has been identified as this exact model, measured, tested, or approved.
 
