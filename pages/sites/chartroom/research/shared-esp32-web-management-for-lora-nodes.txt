@@ -65,6 +65,34 @@ ESP-IDF is the framework used by the supplied tutorial, but the project has not 
   * [[sites:chartroom:research:esp32-github-ota-updates|ESP32 over-the-air updates from GitHub]] — separate OTA delivery research; not evidence that OTA is part of this interface yet.
   * [[sites:chartroom:research:smart-buoy-lora-network-infrastructure|Smart Buoy LoRa Network Infrastructure]] — existing LoRa-to-HTTPS telemetry and gateway context.
 
+===== Remote access using Tailscale =====
+
+The user already uses Tailscale. The Orion Robots article [Reach Your Robot Anywhere: Tailscale + PyInfra on a Raspberry Pi](https://orionrobots.co.uk/2026/09/02/02-reach-your-robot-anywhere-tailscale-pyinfra-on-a-raspberry-pi.html), published 2026-09-02, is relevant to the wider robot-management architecture.
+
+The article demonstrates joining a Raspberry Pi robot computer to a tailnet, using its stable tailnet identity for remote access, enabling Tailscale SSH, and automating installation/configuration with PyInfra. Its deployment example also demonstrates useful operational practices: keep auth keys out of version control, validate required secrets before making changes, stage secrets with restrictive permissions, pin the Tailscale package version, make deployment re-runnable, and avoid changing Tailscale's own connectivity configuration over the Tailscale connection being modified. These are practices from the article's Raspberry Pi/Linux example; they are not an ESP32 implementation.
+
+===== Possible integration with the LoRa management interface =====
+
+Tailscale should be considered an optional remote-access path to the browser-based management interface, not a replacement for the ESP32's local configuration AP.
+
+  * **Local provisioning remains available:** the ESP32-hosted AP provides direct access when first configuring a node, recovering Wi-Fi credentials, or when no upstream network or tailnet connection is available.
+  * **Remote access over trusted Wi-Fi:** where an ESP32 is connected to a LAN, a separate always-on or suitably available Linux device (for example, a Raspberry Pi) running Tailscale could act as a subnet router. Tailnet clients could then reach the ESP32's LAN address and management HTTP service, subject to route approval and access policy.
+  * **Alternative proxy arrangement:** a Linux host on the same network could provide a narrowly scoped reverse proxy to the ESP32 management endpoint, exposed only to authorised tailnet clients. This may be preferable to advertising an entire LAN subnet where only one service is required.
+  * **Linux robot/gateway computers:** where a project already has a Raspberry Pi or other supported Linux host, the Tailscale client can run directly on that host. PyInfra could provide repeatable installation and configuration, as in the article.
+  * **ESP32 limitation:** do not assume the standard Tailscale client can run directly on the Heltec ESP32. Tailscale documents subnet routers as the way to reach devices that cannot run the client themselves.
+
+Tailscale's [subnet router documentation](https://tailscale.com/docs/features/subnet-routers) explains how a tailnet device can advertise routes to a local subnet and provide access to devices behind it. The [remote access to devices without Tailscale guide](https://tailscale.com/docs/use-cases/personal-or-at-home-use/access-devices-without-tailscale) describes the same pattern for devices that cannot run the client.
+
+Security considerations:
+
+  * Do not expose an unauthenticated configuration interface merely because it is reachable through a private tailnet. Apply explicit authentication to configuration-changing operations and use restrictive Tailscale access controls.
+  * Prefer access to the specific management host/service over broad subnet access where practical. If subnet routing is used, advertise only the required subnet and constrain access with tailnet policy.
+  * Keep the ESP32's local AP as a deliberate, time-limited provisioning/recovery mode, with its own authentication; remote access should not depend on leaving that AP permanently enabled.
+  * Do not store reusable Tailscale auth keys in firmware, source control, or ordinary project configuration. If automation needs a key, use a controlled secret-injection mechanism and suitable key lifecycle/expiry.
+  * Changing a subnet router's Tailscale configuration remotely can interrupt the very path used to administer it. Retain a local or out-of-band recovery route.
+
+The subnet-router approach requires the ESP32 to be reachable from the Linux router over its LAN interface. It does not automatically make an isolated ESP32 provisioning AP reachable from the tailnet. This is an architectural option to investigate, not a confirmed configuration of the user's existing tailnet or any LoRa node.
+
 ===== Status and open questions =====
 
 This is a user-requested research/design concept, not an approved detailed specification or implemented feature. No firmware framework, web UI library, captive-portal implementation, authentication mechanism, or OTA solution has been selected.
@@ -74,6 +102,8 @@ Before implementation, inspect the relevant ESP32 firmware repositories and reso
   * which LoRa nodes and gateway are in scope, and their ESP32 variants;
   * current firmware frameworks and whether a shared component can be built without forcing a framework migration;
   * AP-only versus AP+STA behaviour for each device class;
+  * whether remote management is needed, and if so whether a dedicated Linux subnet router or a narrowly scoped reverse proxy is appropriate;
+  * how Tailscale access policies, ESP32-side authentication, and local recovery access will be enforced;
   * configuration schema, persistence, validation, and migration;
   * authentication and physical access requirements;
   * low-power maintenance-mode behaviour and measured energy cost;
@@ -82,6 +112,9 @@ Before implementation, inspect the relevant ESP32 firmware repositories and reso
 ===== Source =====
 
   * [ESP-IDF: ESP32 Web Server Access Point (AP) Mode](https://randomnerdtutorials.com/esp-idf-esp32-web-server-access-point/), Random Nerd Tutorials; accessed 2026-11-15. Demonstrates a basic ESP-IDF AP and HTTP-served HTML page. It is a tutorial reference, not a tested project implementation.
+  * [Reach Your Robot Anywhere: Tailscale + PyInfra on a Raspberry Pi](https://orionrobots.co.uk/2026/09/02/02-reach-your-robot-anywhere-tailscale-pyinfra-on-a-raspberry-pi.html), Orion Robots, 2026-09-02; accessed 2026-11-15. Raspberry Pi/Linux remote-access and deployment example; not an ESP32 Tailscale client implementation.
+  * [Subnet routers](https://tailscale.com/docs/features/subnet-routers), Tailscale documentation; accessed 2026-11-15. Official guidance for reaching devices that cannot run Tailscale through a subnet router.
+  * [Remotely access devices that can't run Tailscale](https://tailscale.com/docs/use-cases/personal-or-at-home-use/access-devices-without-tailscale), Tailscale documentation; accessed 2026-11-15.
 
 ~~REFNOTES~~
 ---------
