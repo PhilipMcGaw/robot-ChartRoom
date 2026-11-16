@@ -56,6 +56,16 @@ Before use:
 
 GY-91 boards are not necessarily consistent across vendors. A board labelled MPU-9250 may contain an MPU-9255 or a lower-quality substitute.
 
+===== Current project plan (November 2026) =====
+
+The user has purchased an MPU-6050 for initial bring-up with the Adeept Raspberry Pi HAT. The intended sequence is to establish reliable MPU-6050 operation before moving to a GY-91 module.
+
+The GY-91 is a possible next experimental sensor package if the MPU-6050 work is successful. The intended benefit is the addition of a three-axis magnetometer for heading experiments. Verify the actual fitted parts and board electrical characteristics before connection; GY-91 variants may contain MPU-9250 or MPU-9255 devices and board implementations differ.
+
+The user considers GNSS more important for K9 navigation. For the ROV, GNSS is intended primarily to record surface position fixes, including dive start and surfacing/end positions. Underwater dead-reckoning drift remains an acknowledged limitation. The existing dedicated ROV pressure transducer remains the depth-measurement provision; the GY-91's BMP280 is not a replacement.
+
+This is a staged development plan, not a selected or validated sensor architecture. The magnetometer's performance must be assessed in the assembled vehicle, particularly around propulsion motors, high-current wiring, ferrous structure, and electronics.
+
 ===== Recommendation =====
 
 Use this module as an inexpensive experimental external IMU only.
