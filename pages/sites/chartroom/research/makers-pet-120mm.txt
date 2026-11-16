@@ -21,8 +21,9 @@ The material is primarily relevant to **SwarmBot and MarsBot**, and parts of the
   * [[https://makerspet.com/product/arduino-ros2-self-driving-robot-120mm-build-pack/|Maker's Pet — 120 mm Build Pack]]
   * [[https://makerspet.com/blog/bld-120mm-pack/|Maker's Pet — current build instructions and troubleshooting]]
   * [[https://www.youtube.com/playlist?list=PLOSXKDW70aR8uA1IFahSKVuk5ODDfjTZV|Maker's Pet — build and programming video course]]
+  * The publisher's PDF is also retained in Chartroom media: {{:sites:chartroom:research:evidence:makers-pet-build-program-self-driving-robot.pdf?linkonly|download the e-book}}.
 
-The e-book's source repository contains the chapter Markdown and authoring/build instructions. The source README describes the PDF as the companion to the video course and identifies the robot as the BLD-120MM-PACK Arduino/ESP32/ROS 2 LiDAR build. The repository includes an Apache License 2.0 file; before mirroring the generated PDF in this public repository, confirm that the licence and any embedded video-derived illustrations are covered by the same redistribution terms. The PDF is therefore linked to its publisher rather than copied into Chartroom media at this stage.
+The e-book's source repository contains the chapter Markdown and authoring/build instructions. The source README describes the PDF as the companion to the video course and identifies the robot as the BLD-120MM-PACK Arduino/ESP32/ROS 2 LiDAR build. The source repository includes an Apache License 2.0 file, but its coverage of the rendered PDF and any embedded video-derived illustrations has not been confirmed. Use the publisher's page as the canonical source and check its terms before reusing the e-book content.
 
 ===== Maker's Pet GitHub organisation and related projects =====
 
@@ -184,7 +185,7 @@ For the most transferable material, prioritise:
 
 **Status:** Research / learning reference. Not a selected hardware platform, adopted software dependency, or validated Robots project design.
 
-**Review basis:** Maker's Pet's e-book announcement and product documentation, plus the published Markdown source chapters and authoring instructions in the Maker's Pet e-book repository. The PDF itself was not mirrored into Chartroom during this update.
+**Review basis:** Maker's Pet's e-book announcement and product documentation, plus the published Markdown source chapters and authoring instructions in the Maker's Pet e-book repository. A copy of the publisher PDF supplied for Chartroom is retained in media for reference.
 
 **Further work:** If this material is used for a hands-on ROS 2 exercise, reproduce the concepts in the project's Jazzy/SquidLink environment and record any differences. Keep any project-specific implementation and test results in the authoritative repository.
 
