@@ -1,0 +1,112 @@
+====== MiddleAUV autonomous underwater vehicle ======
+{{tag>research, auv, rov, underwater, raspberry-pi, robotics, simulation, control }}
+
+~~META:
+description     = Manufacturer reference and software ecosystem for the MiddleAUV Raspberry Pi autonomous underwater vehicle kit.
+type            = research
+status          = reference
+authority       = RoboCenter / MUR Project
+~~
+
+===== Overview =====
+
+**MiddleAUV** is an educational and competition-oriented autonomous underwater vehicle (AUV) kit produced by ООО «Центр робототехники» (RoboCenter), based in Vladivostok, Russia. The manufacturer describes it as a ready-to-use platform for demonstration, education, competitions, and underwater research. It can execute a pre-programmed mission, and the kit can be extended with additional payloads, electronics, and software.
+
+The user identified online material about MiddleAUV associated with Dmitry Lyakhov. The manufacturer's current website lists `dmitry_lyakhov@mail.ru` as its contact address, but the reviewed product and company pages do not provide an individual author/byline. Attribute the product to RoboCenter; retain Dmitry Lyakhov as the user-identified online contact/attribution rather than claiming sole authorship.
+
+This page records external research and design inspiration. MiddleAUV is an **AUV**, not a directly equivalent tethered ROV, and it is not a selected platform or specification for the user's ROV.
+
+===== Current published hardware =====
+
+The current RoboCenter product page and 2022 operating manual describe the following configuration. The manufacturer warns that specifications can vary by kit version.
+
+^ Item ^ Published information ^
+| Onboard computer | Raspberry Pi Compute Module 4; 1.2 GHz processor, 1 GB RAM |
+| Thrusters | 4; PWM interface |
+| Cameras | 2 digital cameras; 5 MP sensor, 1080p stated camera resolution |
+| Vision throughput | 10–20 frames/s at 640 × 480, per current product listing/manual |
+| Navigation sensing | Depth, heading, roll, and pitch / attitude sensing |
+| Communications | Wi-Fi and Ethernet |
+| Programming | Python 3 through MUR IDE |
+| Maximum vehicle depth | 10 m |
+| Vehicle dimensions | Approximately 300 × 200 × 100 mm |
+| Vehicle mass | Approximately 1.0 kg on current product page; 1.1 kg in the 2022 manual |
+| Battery | 3 × 18650 cells; 9–12.6 V; 3,000 mAh; 25 A maximum discharge current |
+| Ethernet tether | 20 m, neutral buoyancy, two twisted pairs |
+| Electronics housing | 60 mm diameter acrylic tube, 55 mm dome, sealed penetrators and blanking plugs |
+| Buoyancy | Syntactic foam; 280 kg/m³ density, 6.5 MPa compressive strength, stated foam working depth up to 300 m |
+
+The 300 m figure applies to the syntactic foam material, **not the complete vehicle**. The complete MiddleAUV operating depth is limited to 10 m.
+
+The MT200 thruster specification on the current product page gives a 37 mm propeller, up to 0.2 kgf forward thrust and 0.15 kgf reverse thrust at 12 V, a 7.5–12.6 V supply range, and a maximum stated current of 15 A per thruster. The page explicitly says the motor has no short-circuit protection. The battery is separately specified with a maximum discharge current of 25 A. These are published maximum ratings, not evidence that all four thrusters can continuously draw their individual maximum simultaneously; the apparent system-level current-rating relationship needs clarification before any electrical design is copied.
+
+The product page gives a net kit mass of 1 kg, while the 2022 manual gives 1.1 kg for the robot and 3.5 kg gross kit mass. Treat these as version/document differences rather than silently choosing one figure.
+
+===== Software and development environment =====
+
+The MUR software ecosystem is the most interesting aspect for comparison with the existing ROV and SquidLink work.
+
+  * **MUR IDE** — desktop development environment for writing and running Python programs on MiddleAUV and in the simulator. It also provides telemetry viewing, camera feeds, and gamepad-based teleoperation.
+  * **MUR Simulator** — virtual underwater vehicle described by the project as a virtual MiddleAUV; integrated into the MUR IDE workflow.
+  * **PYMURAPI** — Python API for programming the physical AUV and virtual vehicle in the simulator.
+  * **Onboard MUR software** — runs on the Raspberry Pi and initialises the user API, LEDs, PWM motor outputs, I²C, ADC/voltage monitoring, pressure sensor, IMU, cameras, and WebSocket service, as shown in the 2022 manual.
+  * **Computer-vision lessons** — public MUR Project lessons include Python/OpenCV examples and underwater image-recognition material, including a Google Coral example. Confirm hardware and software compatibility before assuming every lesson applies to the current kit revision.
+
+The 2022 manual describes the onboard software as a system service, with a configuration file at `/etc/mur/config.ini`. Configuration includes thruster direction multipliers and regulator coefficients. The manual documents telemetry for yaw, pitch, roll, depth, and battery state, as well as example scripts for motor tests and depth/heading regulator tests.
+
+MUR IDE provides a remote-control mode with two camera feeds and gamepad input. The manual describes **Auto Yaw** and **Auto Depth** functions: these regulate heading and depth respectively. These are documented control functions; they should not be mistaken for proof of full autonomous navigation, obstacle avoidance, or mission-planning capability.
+
+The manual says Wi-Fi is suitable for dry testing but not for underwater operation; the vehicle is connected by its Ethernet cable for in-water testing. A separate computer with Wi-Fi and Ethernet is required and is not included in the kit. Do not copy the default access credentials printed in the manual into project documentation or deployment configurations.
+
+===== Version and source discrepancies =====
+
+An older RoboCenter specification PDF describes an earlier MiddleAUV version based on Raspberry Pi 3. The current product listing and the 2022 operating manual identify Raspberry Pi Compute Module 4. The newer CM4 specification is therefore the appropriate current reference, while the older Pi 3 document is retained as evidence that hardware revisions have existed.
+
+The current product page and 2022 manual are not identical in every presentation detail (for example, robot mass). RoboCenter also warns that specifications vary by version. Confirm the supplied revision and its actual bill of materials before relying on any value for procurement, mechanical design, power budgeting, or software compatibility.
+
+===== Relevance to the ROV and Chartroom projects =====
+
+MiddleAUV is more useful as a software, control, and simulation reference than as a hardware design to reproduce.
+
+  * **Control separation:** compare the Python mission/API layer, onboard actuator/sensor service, and operator-facing MUR IDE with the existing Cockpit → Control → Datalogger responsibilities. The useful question is where the command and control boundaries sit, not whether to adopt MUR's implementation.
+  * **Closed-loop control:** study the documented heading and depth regulators, sensor feedback, thruster direction configuration, and tuning workflow. Compare these with the ROV's planned low-level closed-loop control and command interfaces.
+  * **Simulation:** assess whether the MUR simulator offers useful concepts or test cases for the existing SquidLink / HiL-and-SiL environment. Do not assume the simulator can be embedded or used as a standalone library without checking its build and API.
+  * **Python interface:** inspect PYMURAPI to understand how vehicle functions are exposed to mission scripts and how the same API is presented to a simulated vehicle.
+  * **Telemetry and diagnostics:** compare the documented yaw, pitch, roll, depth, battery, camera, and actuator diagnostics with the ROV telemetry model.
+  * **Computer vision:** review the MUR lessons for underwater imaging and OpenCV examples, while keeping vision processing separate from deterministic low-level vehicle control.
+  * **Electrical caution:** the thruster current and battery current ratings, and the absence of thruster short-circuit protection, are useful prompts for reviewing power distribution, branch protection, fault handling, and worst-case current assumptions. They are not validated design values for the user's vehicle.
+
+The distinction between AUV and ROV remains important. MiddleAUV is designed to run onboard programmes and can also be teleoperated for testing. The user's ROV architecture is tethered and operator-led. The transferable material is therefore the lower-level vehicle-control model, API design, telemetry, diagnostics, and simulation workflow—not necessarily the AUV's autonomy or communications arrangement.
+
+===== Further investigation =====
+
+  * Inspect the MUR simulator source and determine its dependencies, build process, vehicle model, and whether it can run independently of MUR IDE.
+  * Inspect PYMURAPI to understand the physical/simulated backend boundary, command abstraction, telemetry types, and execution model.
+  * Inspect MUR IDE's Python execution and operator-interface architecture.
+  * Establish whether the simulator models actuator dynamics, buoyancy, hydrodynamics, sensor noise, or only a simplified control environment; do not infer model fidelity from the repository description.
+  * Compare the documented Auto Yaw / Auto Depth regulators with the ROV control-loop requirements and decide whether any test cases should be reproduced in SquidLink.
+  * Confirm current kit revision, battery/propulsion electrical limits, and any later manuals before using the kit as a detailed engineering reference.
+
+===== Sources =====
+
+  * [RoboCenter — MiddleAUV kit](https://robocenter.net/goods/kit/middleauv/) — current product description and published specifications; accessed 2026-11-16.
+  * [RoboCenter — MiddleAUV operating manual (2022 PDF)](https://robocenter.net/media/documents/%D0%A0%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%BE_MiddleAUV_2022.pdf) — hardware, safe operation, software initialisation, telemetry, remote operation, and heading/depth regulator checks; accessed 2026-11-16.
+  * [RoboCenter — IT activity and MUR software](https://robocenter.net/about_company/) — official description of MUR IDE, MUR Simulator, PYMURAPI, and the public GitHub organisation; accessed 2026-11-16.
+  * [MUR Project GitHub organisation](https://github.com/murproject) — public source repositories; accessed 2026-11-16.
+  * [MUR IDE](https://github.com/murproject/mur_ide) — desktop IDE; repository identifies the MIT licence; accessed 2026-11-16.
+  * [MUR simulator](https://github.com/murproject/mur_simulator) — virtual MiddleAUV simulator; repository identifies the MIT licence; accessed 2026-11-16.
+  * [PYMURAPI](https://github.com/murproject/pymurapi) — Python API for murSimulator/murAUV; repository identifies the MIT licence; accessed 2026-11-16.
+  * [MUR computer-vision lessons](https://github.com/murproject/lessons) — educational Python/OpenCV and underwater vision examples; accessed 2026-11-16.
+  * [Older MiddleAUV specification PDF](https://robocenter.net/media/documents/MiddleAUV_specs_RUS__1.pdf) — earlier Raspberry Pi 3 version; accessed 2026-11-16.
+
+===== Related research =====
+
+  * [[sites:chartroom:research:robocenter|RoboCenter ROV research notes]] — related MUR/HighROV software, propulsion, payload, and simulation references.
+  * [[sites:chartroom:research:borgcube-rov|BorgCube ROV research notes]] — Raspberry Pi-based maker ROV and stabilisation history.
+  * [[sites:chartroom:research:rov-overview-and-applications|ROV overview and applications]] — broader vehicle architecture and project context.
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
