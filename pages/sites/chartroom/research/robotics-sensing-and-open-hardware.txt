@@ -1,0 +1,43 @@
+====== Robotics sensing, control, and open-hardware references ======
+{{tag>research robotics sensing control open-hardware education rov}}
+
+~~META:
+description     = Thematic overview of selected robotics sensing, control, open-hardware, and education references.
+type            = research
+status          = reference
+authority       = Linked sources; Chartroom summaries
+~~
+
+This overview consolidates two earlier research batches. These links are research leads, not adopted designs or validated project behaviour. Source claims and access limits are retained below; follow the links for the source material.
+
+===== Sensing and perception =====
+
+  * [[https://www.hackster.io/platisd/sonicdisc-a-360-ultrasonic-scanner-211e6a|SonicDisc]] describes an eight-sensor HC-SR04 ring using an ATmega328P for 360° proximity sensing. It is a low-cost example of presenting distance with bearing; compare its resolution and limitations with LiDAR before applying it to a vehicle.
+  * The [[https://www.instructables.com/Modify-Ultrasonic-Sensors-for-3-Volts-Logic-prepar/|3 V ultrasonic sensor modification]] is a reminder to engineer and validate logic-level interfaces between inexpensive 5 V modules and 3.3 V processors. The Raspberry Pi Foundation's [[https://projects.raspberrypi.org/en/projects/physical-computing/12|ultrasonic lesson, step 12]] could not be reviewed because the page required JavaScript; do not use it as build guidance without checking the exact sensor and interface.
+  * The [[https://micbooster.com/product/ultrasonic-mic-board/|MicBooster ultrasonic microphone board]] uses a Knowles SPU0410LR5H-QB microphone. It is a possible acoustic sensing lead; waterproofing, bandwidth, analogue design, signal processing, and suitability remain unverified.
+  * The [[https://www.hackster.io/bluetiger9/stereo-vision-and-lidar-powered-donkey-car-575769|stereo-vision and LiDAR Donkey Car]] is a terrestrial autonomy example combining perception modalities. Its architecture and performance have not been independently assessed here.
+
+===== ROV and operator software =====
+
+OpenROV is a historical open-source ROV reference. Its repositories describe separate vehicle, electronics, and operator-software projects. The [[https://github.com/openrov/openrov-cockpit|Cockpit repository]] describes browser-based piloting, configurable input devices, video, telemetry recording, plugins, and upgrade functions. Its [[https://github.com/OpenROV/openrov-cockpit/blob/master/docs/DEV-HOWTO.md|development guide]] describes mock interfaces for work without embedded hardware and a physical-vehicle validation workflow. These are source-reported historical patterns, not a Chartroom dependency or validation of the current ROV architecture.
+
+Other construction leads include the Instructables [[https://www.instructables.com/Build-Your-Own-Underwater-ROV-From-Scratch/|DIY underwater ROV]]. Review it alongside dedicated ROV research pages; do not infer that its construction or waterproofing is suitable for project hardware.
+
+===== Embedded interfaces and hardware =====
+
+  * The [[https://www.abelectronics.co.uk/p/54/io-pi-plus|AB Electronics IO Pi Plus]] uses MCP23017 devices for I²C GPIO expansion. It is an example for discrete I/O, not deterministic control.
+  * An [[https://forum.arduino.cc/t/use-an-arduino-as-i2c-expander/886365/23|Arduino used as an I²C peripheral]] illustrates an alternative where a microcontroller handles local sampling, timing, or filtering. The interface contract and implementation would need separate review.
+  * [[https://www.crowdsupply.com/thomas-mckahan/obsidian-esp32|Obsidian ESP32]] combines an ESP32-WROVER-B with a Raspberry Pi-compatible form factor and header. The project reports support for Arduino, MicroPython, and ESP-IDF and CERN OHL v1.2 licensing. Treat this as a historical MCU/SBC packaging reference, not a current hardware recommendation.
+  * [[https://www.ukmars.org/|UKMARS]] and [[https://github.com/ukmars/ukmarsbot|UKMARSBOT]] provide educational robotics and open-hardware references. UKMARSBOT separates documentation, ECAD, mechanical work, and software; this structure may inform repeatable educational platforms.
+  * The [[https://github.com/joshuaccl/Micromouse|Joshua CCL Micromouse]] repository records an STM32 development workflow and branches for sensor and motion calibration and wall tracking. It is a reference for embedded diagnostics, not a complete project architecture.
+
+===== Education and other leads =====
+
+The [[https://www.instructables.com/Using-an-Arduino-Drawing-Robot-with-Hour-of-Code-T/|Arduino Drawing Robot / Engineering Kit]] material suggests a progression from direct actuator control through calibration and coordinate mapping to path generation. This is a possible teaching pattern; it has not been translated into a Chartroom exercise. A separate [[https://www.instructables.com/Arduino-Drawing-Robot/|Arduino Drawing Robot]] link in the November 2026 batch was not readable during review, and its relationship to the Engineering Kit project is unconfirmed.
+
+The [[https://ozrobotics.com/product-category/robotics/robotic-kits/|OZ Robotics kit catalogue]] is a broad packaging and education lead, not a specific architecture. The [[https://www.hackaday.com/2021/05/27/wifi-penetration-testing-with-an-esp32/|ESP32 Wi-Fi project]] is a historical capability reference; it is a security-testing project and is not a recommendation to add such functions to robot control software.
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

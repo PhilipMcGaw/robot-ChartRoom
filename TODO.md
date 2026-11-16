@@ -1,3 +1,3 @@
 ﻿# TODO
 
-- [ ] Consolidate overlapping research batch pages into concise thematic overviews; preserve unique source notes and link to standalone references where available.
+- [x] Consolidate the overlapping ultrasonic robotics research batches into one thematic overview; preserve unique source notes and keep legacy page links working.

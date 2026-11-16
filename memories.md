@@ -89,3 +89,7 @@ The user recalled an internet-controlled robot roaming around EMF Camp, supplied
 ## 2026-11-16 — HTML5 UP as a Cockpit visual reference
 
 The user asked whether HTML5 UP's responsive HTML/CSS website templates could help with Cockpit. The templates appear useful for responsive layout and visual prototyping, but they do not provide robotics data, controls, or Cockpit integrations. HTML5 UP states that its templates use CC BY 3.0 and require attribution; bundled assets need separate licence review. No template has been selected or adopted. See the [HTML5 UP research note](pages/sites/chartroom/research/html5up-responsive-templates.txt), linked from the [Cockpit page](pages/sites/chartroom/cockpit/start.txt).
+
+## 2026-11-16 — Consolidated ultrasonic robotics reference batches
+
+The two overlapping ultrasonic robotics batches have been consolidated into one thematic overview covering sensing/perception, ROV operator software, embedded interfaces, hardware, and education. Unique source links and relevant access limitations were retained; the former page IDs remain as short links to the overview because other research pages refer to them. The community robotics/sensing and robotics/electronics collections remain separate because they cover broader, distinct groups of references.
