@@ -141,6 +141,7 @@ The links below cover all research notes. Use the related-research links within 
 
 ==== Video, imaging, and remote operation ====
 
+  * [[sites:chartroom:research:emf-roamer|EMF Roamer internet-controlled robot]]
   * [[sites:chartroom:research:constantrobotics-video-pipeline|ConstantRobotics video pipeline]]
   * [[sites:chartroom:research:gtg-1-glass-to-glass-latency|GTG-1 glass-to-glass latency measurement]]
   * [[sites:chartroom:research:learnrobotics-rpi-video-streaming|Learn Robotics Raspberry Pi video streaming]]

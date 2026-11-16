@@ -1,0 +1,44 @@
+====== EMF Roamer internet-controlled robot ======
+{{tag>research robotics emf remote-control web-interface video queue education}}
+
+~~META:
+description     = Historical EMF Camp robot reference for internet control, live video and location feedback, and queued operator access.
+type            = research
+status          = reference
+authority       = Chartroom
+~~
+
+The user recalled a robot roaming around Electromagnetic Field (EMF) Camp several years ago. The matching project is the EMF Roamer, a remotely controlled robot documented at EMF 2022. It is a useful historical example of browser-based remote operation and managed access to a shared robot; it is not an adopted Robots project design.
+
+===== Sources =====
+
+  * [[https://developer.vonage.com/en/blog/building-a-queue-for-the-emf-roamer-with-the-vonage-sms-api-and-php|Chris Stubbs, “Building a Queue for the EMF Roamer with the Vonage SMS API and PHP”]], Vonage Developer Center, published 2022-10-06; accessed 2026-11-16.
+  * [[https://github.com/chrisstubbs93/WebUserQueue|WebUserQueue source repository]], PHP and MySQL queue described by its author as designed for the EMF Roamer; accessed 2026-11-16.
+  * [[https://wiki.emfcamp.org/2022/wiki/Village:Roambase|EMF 2022 Village:Roambase]], event wiki page describing the Roamer's home and repair shop; accessed 2026-11-16.
+  * [[https://electricnoodlebox.com/author/aidanrtaylor/|Aidan Taylor, “EMF Festival 2018 Retrospective”]], includes a photograph captioned as a possible EMF Roamer, with the author's identification explicitly tentative; accessed 2026-11-16.
+
+===== Documented operation =====
+
+The 2022 account describes the Roamer as a quarter-scale wooden Tesla Cybertruck that attendees could drive over the internet. The remote operator received a live camera stream and the robot's location on a map. A web queue gave one person control at a time; people could wait in a browser and could choose to receive a text message when their turn began.
+
+The associated queue example uses PHP and a MySQL database on shared hosting. It demonstrates session timing and queue management for single-user-at-a-time control. It does not document the robot's drive electronics, network topology, safety limits, emergency stop, or behaviour after loss of the internet connection. Do not infer those details from the queue example.
+
+The EMF 2022 Roambase page identifies the project team's village as the Roamer's home and repair shop. A 2018 retrospective shows a robot the author thinks may be the EMF Roamer, but that source alone does not establish that the pictured robot is the same build as the 2022 project.
+
+===== Relevance to Robots projects =====
+
+The Roamer is a useful reference for combining three operator-facing functions: live video, location context, and clear control ownership while users wait for access. Those patterns may inform the [[sites:chartroom:research:self-hosted-robot-coding-portal|self-hosted robot coding portal]] concept, especially event demonstrations or shared educational robots.
+
+The queue is an access-coordination example, not a complete safety system. Any project implementation would still need to retain local command validation, operating limits, timeouts, watchdogs, and emergency-stop authority in the robot control layer.
+
+===== Status =====
+
+**Status:** Historical research reference. No EMF Roamer hardware or software has been adopted, reproduced, or validated in the Robots project.
+
+**Review basis:** The EMF 2022 event wiki, the queue author's 2022 technical article and source repository, and a 2018 attendee retrospective. The 2018 identification remains tentative.
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

@@ -108,6 +108,7 @@ These are proposed ownership boundaries, not approved implementation assignments
 
 ===== Related ChartRoom research =====
 
+  * [[sites:chartroom:research:emf-roamer|EMF Roamer internet-controlled robot]] — historical example of remote video, location feedback, and queued access to a shared robot.
   * [[sites:chartroom:research:small-robot-code-test-platform|Small robot as a code test platform — hardware abstraction and simulation]] — mock and physical backends behind common interfaces.
   * [[sites:chartroom:research:robotical-marty-educational-robotics|Robotical Marty educational robotics]] — staged blocks-to-Python learning progression and multi-robot teaching examples.
   * [[sites:chartroom:research:sunfounder-picrawler-software|SunFounder PiCrawler software ecosystem]] — software API and developer-experience reference.
