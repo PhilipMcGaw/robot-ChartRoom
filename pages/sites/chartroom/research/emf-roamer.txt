@@ -8,22 +8,28 @@ status          = reference
 authority       = Chartroom
 ~~
 
-The user recalled a robot roaming around Electromagnetic Field (EMF) Camp several years ago. The matching project is the EMF Roamer, a remotely controlled robot documented at EMF 2022. It is a useful historical example of browser-based remote operation and managed access to a shared robot; it is not an adopted Robots project design.
+The user recalled a robot roaming around Electromagnetic Field (EMF) Camp several years ago and supplied a video showing the robot and Global Positioning System (GPS) plots. The EMF Roamer project is documented at EMF 2018 and EMF 2022. The sources describe two iterations: a small tracked Raspberry Pi robot in 2018, followed by a much larger quarter-scale wooden Cybertruck in 2022. It is a useful historical example of browser-based remote operation and managed access to a shared robot; it is not an adopted Robots project design.
 
 ===== Sources =====
 
+  * [[https://chris-stubbs.co.uk/wp/?p=637|Chris Stubbs, The EMF Roamer]], builder's account of the 2018 robot, its camera, GPS, web control, networking issues, and reported event statistics; published 2018-09-19; accessed 2026-11-16.
+  * [[https://www.youtube.com/watch?v=-xYkNSc8EvU|EMF Roamer video with GPS plots]], supplied by the user. The video is embedded in the builder's 2018 account, which says the map animation was made in Excel 3D Maps from comma-separated values (CSV) GPS logs. YouTube playback could not be retrieved during this review.
   * [[https://developer.vonage.com/en/blog/building-a-queue-for-the-emf-roamer-with-the-vonage-sms-api-and-php|Chris Stubbs, “Building a Queue for the EMF Roamer with the Vonage SMS API and PHP”]], Vonage Developer Center, published 2022-10-06; accessed 2026-11-16.
   * [[https://github.com/chrisstubbs93/WebUserQueue|WebUserQueue source repository]], PHP and MySQL queue described by its author as designed for the EMF Roamer; accessed 2026-11-16.
   * [[https://wiki.emfcamp.org/2022/wiki/Village:Roambase|EMF 2022 Village:Roambase]], event wiki page describing the Roamer's home and repair shop; accessed 2026-11-16.
-  * [[https://electricnoodlebox.com/author/aidanrtaylor/|Aidan Taylor, “EMF Festival 2018 Retrospective”]], includes a photograph captioned as a possible EMF Roamer, with the author's identification explicitly tentative; accessed 2026-11-16.
+  * [[https://hackyracers.co.uk/wiki/index.php/CYBR_TRK|CYBR TRK — Hacky Racers Wiki]], identifies the 2022 CYBR TRK as a follow-on from the smaller 2018 EMF Roamer; accessed 2026-11-16.
 
 ===== Documented operation =====
 
-The 2022 account describes the Roamer as a quarter-scale wooden Tesla Cybertruck that attendees could drive over the internet. The remote operator received a live camera stream and the robot's location on a map. A web queue gave one person control at a time; people could wait in a browser and could choose to receive a text message when their turn began.
+The 2018 builder's account describes a small tracked robot based on a Raspberry Pi, with a camera stream, GPS location, and a browser queue for control over the internet. GPS data was sent to a web server and stored in a MySQL database. The author reports 1,632 GPS updates, 3.217918922 miles (approximately 5.18 km) travelled, and 6 hours 19 minutes of video. These are builder-reported event figures, not independently verified measurements. The video supplied by the user is embedded in this account; the article says the GPS-log animation was produced with Excel 3D Maps.
 
-The associated queue example uses PHP and a MySQL database on shared hosting. It demonstrates session timing and queue management for single-user-at-a-time control. It does not document the robot's drive electronics, network topology, safety limits, emergency stop, or behaviour after loss of the internet connection. Do not infer those details from the queue example.
+The author also reports that patchy Wi-Fi caused missed stop packets and that the motors could continue moving. A watchdog stopped the motors after a period without new control packets; the author first set this to 3 seconds, then reduced it to 1 second while replacing Hypertext Transfer Protocol (HTTP) control with WebSockets. These are details of that historical build, not recommended timeout values or evidence of a complete safety system.
 
-The EMF 2022 Roambase page identifies the project team's village as the Roamer's home and repair shop. A 2018 retrospective shows a robot the author thinks may be the EMF Roamer, but that source alone does not establish that the pictured robot is the same build as the 2022 project.
+The 2022 account describes the later Roamer as a quarter-scale wooden Tesla Cybertruck that attendees could drive over the internet. The remote operator received live camera video and the robot's location on a map. A web queue gave one person control at a time; people could wait in a browser and could choose to receive a text message when their turn began. The Hacky Racers profile identifies this vehicle as a follow-on from the smaller 2018 robot.
+
+The associated queue example uses PHP and a MySQL database on shared hosting. It demonstrates session timing and queue management for single-user-at-a-time control. It does not document the 2022 vehicle's drive electronics, network topology, safety limits, emergency stop, or behaviour after loss of the internet connection. Do not infer those details from the queue example.
+
+The EMF 2022 Roambase page identifies the project team's village as the Roamer's home and repair shop.
 
 ===== Relevance to Robots projects =====
 
@@ -35,7 +41,7 @@ The queue is an access-coordination example, not a complete safety system. Any p
 
 **Status:** Historical research reference. No EMF Roamer hardware or software has been adopted, reproduced, or validated in the Robots project.
 
-**Review basis:** The EMF 2022 event wiki, the queue author's 2022 technical article and source repository, and a 2018 attendee retrospective. The 2018 identification remains tentative.
+**Review basis:** The builder's 2018 account and embedded GPS video, the queue author's 2022 technical article and source repository, the EMF 2022 event wiki, and the Hacky Racers profile. The supplied YouTube page could not be retrieved directly; the GPS plot description is supported by the builder's accompanying account.
 
 ~~REFNOTES~~
 ---------
