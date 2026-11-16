@@ -214,6 +214,7 @@ The links below cover all research notes. Use the related-research links within 
 
 ==== Robotics software and development environments ====
 
+  * [[sites:chartroom:research:html5up-responsive-templates|HTML5 UP responsive website templates — Cockpit visual reference]]
   * [[sites:chartroom:research:pyinfra-infrastructure-automation|PyInfra — Python-based infrastructure automation]]
 
   * [[sites:chartroom:research:self-hosted-robot-coding-portal|Self-hosted robot coding portal — Blocks, Python, and Web editors]]

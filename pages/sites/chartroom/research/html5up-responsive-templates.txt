@@ -1,0 +1,39 @@
+====== HTML5 UP responsive website templates ======
+{{tag>research cockpit web-interface responsive html css licensing}}
+
+~~META:
+description     = Assessment of HTML5 UP website templates as visual and layout references for the Robots Cockpit.
+type            = research
+status          = reference
+authority       = Chartroom
+~~
+
+HTML5 UP provides a collection of customisable, responsive website templates built with HTML5 and CSS3. The templates may be useful as visual references or starting points for Cockpit page layout, navigation, and responsive presentation. They are website templates, not a ready-made robotics dashboard or Cockpit implementation.
+
+===== Sources =====
+
+  * [[https://html5up.net/|HTML5 UP template catalogue]], accessed 2026-11-16.
+  * [[https://html5up.net/license|HTML5 UP licence page]], which states that its templates use the Creative Commons Attribution 3.0 licence (CC BY 3.0); accessed 2026-11-16.
+  * [[https://creativecommons.org/licenses/by/3.0/|Creative Commons Attribution 3.0 deed]], accessed 2026-11-16.
+
+===== Licence =====
+
+HTML5 UP states that its templates may be used and modified for personal or commercial work under CC BY 3.0, with credit to HTML5 UP. The Creative Commons deed requires appropriate credit, a link to the licence, and an indication of changes when a derivative is made. Review the notices and licences included with any selected template's images, fonts, icons, or other bundled assets; individual template packages were not inspected for this note.
+
+===== Relevance to Cockpit =====
+
+Cockpit is the operator-facing web interface for the Robots ecosystem. HTML5 UP can help compare responsive layouts, navigation patterns, typography, and visual hierarchy across desktop, tablet, and mobile views. A template could also provide CSS and page structure for an early visual prototype if it suits the current Cockpit front end.
+
+The catalogue presents website templates and responsive previews; it does not document live robot data, command handling, or integration with Cockpit. Those functions would need to be implemented in the authoritative Cockpit code. Treat HTML5 UP as a design reference or prototype starting point, not as a selected framework or approved Cockpit dependency.
+
+===== Status =====
+
+**Status:** Research reference only. No HTML5 UP template has been selected, integrated, or validated for Cockpit.
+
+**Review basis:** HTML5 UP's catalogue and licence page, plus the Creative Commons CC BY 3.0 deed. No template archive or bundled asset was downloaded or reviewed.
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
