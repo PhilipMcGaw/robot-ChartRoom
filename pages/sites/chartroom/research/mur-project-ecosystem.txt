@@ -1,0 +1,140 @@
+====== MUR Project and RoboCenter wider ecosystem ======
+{{tag>research, robotics, rov, auv, buoy, education, simulation, software }}
+
+~~META:
+description     = Wider MUR Project and RoboCenter references covering vehicle fabrication, buoy firmware, educational tools, training, and competition missions.
+type            = research
+status          = reference
+authority       = Chartroom
+~~
+
+The MUR Project and RoboCenter publish a wider set of underwater-robotics resources than the MiddleAUV kit alone. This note records adjacent projects and educational material that may inform ChartRoom, the tethered ROV, SquidLink, and the wider Robots learning activities.
+
+This is **research and comparative reference**, not an adopted architecture, selected hardware platform, or evidence that any of the referenced designs have been validated for our use. Repository names and project descriptions identify material worth examining; they do not establish the quality, completeness, licensing, or operational suitability of the implementations.
+
+===== HighROV fabrication material =====
+
+The MUR Project GitHub organisation includes [[https://github.com/murproject/HighROV_CuttingPatterns|HighROV_CuttingPatterns]], described as cutting patterns for the HighROV frame and buoyancy components.
+
+Potential relevance:
+
+  * compare frame construction and component arrangement;
+  * examine how buoyancy is distributed around the vehicle;
+  * review panel geometry and fabrication methods; and
+  * compare modularity and service access with the existing ROV mechanical design.
+
+The repository should be inspected at drawing level before any dimensions or construction details are reused. Material, thickness, tolerances, sealing method, and suitability for the intended depth must be independently established. A cutting pattern is not, by itself, evidence of pressure-vessel or structural qualification.
+
+===== Buoy projects and distributed systems =====
+
+The MUR Project organisation also publishes firmware repositories for several buoy-related projects:
+
+  * [[https://github.com/murproject/HighBuoy|HighBuoy]].
+  * [[https://github.com/murproject/MiddleBuoy_Surface|MiddleBuoy Surface firmware]].
+  * [[https://github.com/murproject/MiddleBuoy_Bottom|MiddleBuoy Bottom firmware]].
+  * [[https://github.com/murproject/ElementaryBuoy|ElementaryBuoy firmware]].
+
+The separate MiddleBuoy Surface and Bottom repositories make this a useful candidate for studying how responsibilities are divided between surface and submerged equipment. This is a research question, not confirmation of a particular communications protocol or distributed architecture: inspect the source, wiring, and project documentation before drawing conclusions.
+
+Potential cross-project relevance includes environmental sensing, remote telemetry, surface/submerged node boundaries, power management, and field-serviceable embedded systems. These are comparison points for the existing buoy and LoRa work, not a recommendation to replace its current architecture.
+
+===== ElementaryAUV visual programming =====
+
+The [[https://github.com/murproject/elauv-app|ElementaryAUV application]] is an Android-based educational interface associated with the MUR ecosystem. Its published description includes block-based programming, vehicle telemetry, Bluetooth connectivity, project import/export, and an interactive 3D vehicle model.
+
+Potential relevance:
+
+  * a visual-programming example for introductory underwater robotics;
+  * a way to expose vehicle concepts without requiring learners to begin with text-based code; and
+  * a reference for presenting vehicle state alongside a 3D representation.
+
+This is an educational interface reference. It should not be treated as evidence of a reusable control stack or a suitable operator interface for the tethered ROV.
+
+===== MUR IDE, simulator, and software ecosystem =====
+
+The wider MUR software ecosystem includes:
+
+  * [[https://github.com/murproject/mur_ide|MUR IDE]] — development environment.
+  * [[https://github.com/murproject/mur_simulator|MUR simulator]] — simulation environment.
+  * [[https://github.com/murproject/pymurapi|PYMURAPI]] — Python API.
+  * [[https://github.com/murproject/lessons|MUR lessons]] — educational examples and material.
+  * [[https://github.com/murproject|MUR Project GitHub organisation]] — project repositories.
+
+The existing [[sites:chartroom:research:middleauv|MiddleAUV note]] records the kit-specific hardware and software observations. The existing [[sites:chartroom:research:robocenter|RoboCenter ROV note]] records the HighROV software decomposition, operator-interface ideas, and the relevance to Cockpit, Control, Datalogger, and HiL/SiL.
+
+For ChartRoom, the main investigation questions are:
+
+  * How much of the simulator is a physical vehicle model, and how much is a competition or mission environment?
+  * Can the same application-facing API operate against simulation and physical hardware?
+  * How are sensors, actuators, telemetry, and vehicle configuration represented?
+  * What is the boundary between the Python user program and the safety-critical vehicle-control layer?
+  * Which concepts can be compared with SquidLink's ROS 2/Gazebo environment without importing an unrelated architecture?
+
+===== Educational programme and practical engineering =====
+
+The [[https://marine.robocenter.org/|Marine Robotics educational site]] publishes underwater-robotics training and competition material. The programme material is notable for spanning practical engineering as well as programming.
+
+Topics identified in the published training material include:
+
+  * system diagrams and initial vehicle design;
+  * tether calculations;
+  * serial communications, including UART, RS-485, and RS-232;
+  * electrical connections, sensors, and fault-finding with oscilloscopes and multimeters;
+  * computer-aided design, frame construction, sealing, and buoyancy;
+  * PWM and electronic speed controller (ESC) operation;
+  * payload integration;
+  * OpenCV and computer vision; and
+  * simulator-based programming and missions.
+
+This is a useful curriculum reference because it treats the vehicle as an integrated electromechanical system. In particular, tether calculations, electrical test, sealing, buoyancy, and payload integration are useful topics to compare against our own ROV learning and development material.
+
+The site also describes ROV/AUV competitions, vehicle requirements, mission tasks, and simulator-based autonomous programming. The missions are presented as being inspired by real research and underwater applications. They may therefore provide useful scenarios for developing repeatable test cases, operator exercises, and future autonomy experiments.
+
+Competition descriptions are mission inspiration, not engineering requirements for our vehicle. Any mission adapted for testing should be translated into explicit, measurable acceptance criteria and safe test conditions.
+
+===== Relevance to the Robots projects =====
+
+  * **Tethered ROV:** HighROV drawings and the training material are useful comparisons for frame construction, buoyancy, tether engineering, sealing, payloads, and electrical integration.
+  * **ChartRoom:** use the wider ecosystem as a source of cross-project research links and educational material; keep implementation-specific claims in the authoritative project repositories.
+  * **SquidLink:** investigate the MUR simulator's model and mission workflow as a comparison, not as a replacement for the existing ROS 2/Gazebo implementation.
+  * **Buoy and environmental sensing projects:** inspect the buoy firmware for possible patterns in surface/submerged responsibilities, telemetry, and embedded-node design.
+  * **Educational robotics:** consider the ElementaryAUV visual-programming approach and the Marine Robotics curriculum as references for staged learning and practical exercises.
+
+No MUR hardware, firmware, API, simulator, or educational application has been selected or adopted for a Robots project.
+
+===== Further investigation =====
+
+  * Inspect the HighROV cutting files and record materials, dimensions, fabrication assumptions, and any licence restrictions before considering reuse.
+  * Read the MiddleBuoy Surface and Bottom firmware together; identify the physical interfaces, communications protocol, message ownership, and failure behaviour.
+  * Review the simulator source and document its physics, sensor models, actuator models, and integration interfaces.
+  * Compare the MUR programming/API boundary with the existing Cockpit → Control → Datalogger separation and SquidLink's ROS 2 interfaces.
+  * Extract suitable competition missions into candidate ROV test scenarios, with measurable outcomes and safe test conditions.
+  * Check licences and attribution requirements before copying code, drawings, course material, or other assets.
+
+===== Sources =====
+
+  * [[https://marine.robocenter.org/|Marine Robotics educational site]] — training programme and competition information.
+  * [[https://github.com/murproject|MUR Project GitHub organisation]] — source repositories.
+  * [[https://github.com/murproject/HighROV_CuttingPatterns|HighROV_CuttingPatterns]] — frame and buoyancy cutting patterns.
+  * [[https://github.com/murproject/HighBuoy|HighBuoy firmware]].
+  * [[https://github.com/murproject/MiddleBuoy_Surface|MiddleBuoy Surface firmware]].
+  * [[https://github.com/murproject/MiddleBuoy_Bottom|MiddleBuoy Bottom firmware]].
+  * [[https://github.com/murproject/ElementaryBuoy|ElementaryBuoy firmware]].
+  * [[https://github.com/murproject/elauv-app|ElementaryAUV application]].
+  * [[https://github.com/murproject/mur_ide|MUR IDE]].
+  * [[https://github.com/murproject/mur_simulator|MUR simulator]].
+  * [[https://github.com/murproject/pymurapi|PYMURAPI]].
+  * [[https://github.com/murproject/lessons|MUR lessons]].
+
+===== Related research =====
+
+  * [[sites:chartroom:research:middleauv|MiddleAUV autonomous underwater vehicle]] — kit hardware, MUR software, control, and telemetry.
+  * [[sites:chartroom:research:robocenter|RoboCenter ROV research notes]] — HighROV mechanical, electrical, software, operator-interface, and simulation references.
+  * [[sites:chartroom:research:mate-rov-requirements-summary|MATE ROV engineering requirements summary]] — competition and engineering requirements context.
+  * [[sites:chartroom:research:underwater-robotics-competitions-overview|Underwater robotics competitions overview]] — wider competition reference.
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
