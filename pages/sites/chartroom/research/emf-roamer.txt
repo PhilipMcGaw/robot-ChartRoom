@@ -13,6 +13,7 @@ The user recalled a robot roaming around Electromagnetic Field (EMF) Camp severa
 ===== Sources =====
 
   * [[https://chris-stubbs.co.uk/wp/?p=637|Chris Stubbs, The EMF Roamer]], builder's account of the 2018 robot, its camera, GPS, web control, networking issues, and reported event statistics; published 2018-09-19; accessed 2026-11-16.
+  * [[https://github.com/chrisstubbs93/roamerpi|Chris Stubbs, roamerpi source repository]], titled “Roamer Pi Source”; its top-level folders include control, GPS, video, and LED code; accessed 2026-11-16.
   * [[https://www.youtube.com/watch?v=-xYkNSc8EvU|EMF Roamer video with GPS plots]], supplied by the user. The video is embedded in the builder's 2018 account, which says the map animation was made in Excel 3D Maps from comma-separated values (CSV) GPS logs. YouTube playback could not be retrieved during this review.
   * [[https://developer.vonage.com/en/blog/building-a-queue-for-the-emf-roamer-with-the-vonage-sms-api-and-php|Chris Stubbs, “Building a Queue for the EMF Roamer with the Vonage SMS API and PHP”]], Vonage Developer Center, published 2022-10-06; accessed 2026-11-16.
   * [[https://github.com/chrisstubbs93/WebUserQueue|WebUserQueue source repository]], PHP and MySQL queue described by its author as designed for the EMF Roamer; accessed 2026-11-16.
@@ -22,6 +23,8 @@ The user recalled a robot roaming around Electromagnetic Field (EMF) Camp severa
 ===== Documented operation =====
 
 The 2018 builder's account describes a small tracked robot based on a Raspberry Pi, with a camera stream, GPS location, and a browser queue for control over the internet. GPS data was sent to a web server and stored in a MySQL database. The author reports 1,632 GPS updates, 3.217918922 miles (approximately 5.18 km) travelled, and 6 hours 19 minutes of video. These are builder-reported event figures, not independently verified measurements. The video supplied by the user is embedded in this account; the article says the GPS-log animation was produced with Excel 3D Maps.
+
+The `roamerpi` repository is a strong match for the 2018 Raspberry Pi build: its owner is Chris Stubbs, the same builder, and its repository description and folders align with the blog's reported Raspberry Pi, control, GPS, and video components. The repository's individual source files and setup instructions could not be retrieved in this review, so its exact version, completeness, and relationship to the later 2022 vehicle remain unverified.
 
 The author also reports that patchy Wi-Fi caused missed stop packets and that the motors could continue moving. A watchdog stopped the motors after a period without new control packets; the author first set this to 3 seconds, then reduced it to 1 second while replacing Hypertext Transfer Protocol (HTTP) control with WebSockets. These are details of that historical build, not recommended timeout values or evidence of a complete safety system.
 
