@@ -24,6 +24,16 @@ The MPU-6050 is a six-degree-of-freedom (6-DoF) device with a three-axis acceler
 
 The reviewed Python directory contains the script but no dependency installation instructions or wiring diagram. The code assumes that the `mpu6050` Python module is installed and that the sensor is reachable at address `0x68`. Confirm the actual breakout board, I²C wiring, address, and electrical levels before use.
 
+===== Current hardware status and intended use =====
+
+The user has purchased an MPU-6050 for use with the Adeept Raspberry Pi HAT. This is the initial IMU bring-up platform; purchase does not imply that the sensor has been connected, configured, or tested.
+
+The intended first steps are to verify I²C communication, confirm the sensor address and electrical levels, acquire raw accelerometer and gyroscope readings, establish axis orientation, and measure stationary bias/noise. The supplied example is a starting reference only; it has not been confirmed as working with the user's physical HAT and module.
+
+The MPU-6050 has no magnetometer. The user intends to consider a GY-91 as the next step if the MPU-6050 is successful, to investigate magnetometer-assisted heading. See the linked GY-91 assessment for board-variant and magnetic-interference limitations.
+
+GNSS is considered more important for K9 navigation. For the ROV, the intended use is to record surface fixes at dive start and surfacing, providing geographical references around underwater dead reckoning. The ROV already has a dedicated pressure transducer provision for depth; the BMP280 on a GY-91 must not be substituted for it.
+
 ===== Relevance =====
 
 This is a compact Raspberry Pi Python example for reading the MPU-6050 and displaying simple tilt values. It complements the [[sites:chartroom:research:randomnerdtutorials-arduino-mpu6050|Random Nerd Tutorials Arduino MPU-6050 guide]] and the [[sites:chartroom:research:arduino-processing-mpu6050-artificial-horizon|Arduino and Processing artificial horizon example]].
