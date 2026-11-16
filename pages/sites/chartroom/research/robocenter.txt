@@ -12,6 +12,8 @@ RoboCenter is a useful reference for the ROV project because its surviving docum
 
 This page records ideas worth revisiting. It is **inspiration and comparative research, not a specification**. We should not copy RoboCenter implementations or make its architecture a dependency.
 
+The wider MUR Project ecosystem includes additional buoy firmware, HighROV fabrication patterns, an ElementaryAUV visual-programming application, and Marine Robotics training and competition material. These are catalogued separately in the [[sites:chartroom:research:mur-project-ecosystem|MUR Project and RoboCenter wider ecosystem note]] to keep the detailed source list and follow-up investigations together.
+
 ===== Mechanical =====
 
   * **Open thruster design:** study the OpenThruster projects as a reference for inexpensive, inspectable thruster construction and modular propulsion hardware.
