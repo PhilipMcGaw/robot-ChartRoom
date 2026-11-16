@@ -120,6 +120,7 @@ The links below cover all research notes. Use the related-research links within 
   * [[sites:chartroom:research:mts-rov-photo-challenge-2025|2025 MTS ROV Photo Challenge]]
   * [[sites:chartroom:research:underwater-robotics-competitions-overview|Underwater robotics competitions overview]]
   * [[sites:chartroom:research:middleauv|MiddleAUV autonomous underwater vehicle]]
+  * [[sites:chartroom:research:mur-project-ecosystem|MUR Project and RoboCenter wider ecosystem]]
   * [[sites:chartroom:research:robocenter|RoboCenter ROV]]
   * [[sites:chartroom:research:rovmaker-edge|RovMaker Edge]]
   * [[sites:chartroom:research:moki-rov2-software|Moki-ROV2 software reference]]
