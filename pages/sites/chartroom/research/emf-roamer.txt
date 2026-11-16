@@ -19,7 +19,7 @@ The user recalled a robot roaming around Electromagnetic Field (EMF) Camp severa
   * [[https://chris-stubbs.co.uk/wp/?p=695|Chris Stubbs, CYBR TRK – Hacky Racer Build Log]], published 2024-07-01; the post says it is auto-populated from the Hacky Racers Wiki; accessed 2026-11-16.
   * [[https://github.com/chrisstubbs93/WebUserQueue|WebUserQueue source repository]], PHP and MySQL queue described by its author as designed for the EMF Roamer; accessed 2026-11-16.
   * [[https://wiki.emfcamp.org/2022/wiki/Village:Roambase|EMF 2022 Village:Roambase]], event wiki page describing the Roamer's home and repair shop; accessed 2026-11-16.
-  * [[https://hackyracers.co.uk/wiki/index.php/CYBR_TRK|CYBR TRK — Hacky Racers Wiki]]; its indexed preview identifies the 2022 vehicle as a follow-on from the smaller 2018 Roamer. The page returned HTTP 403 when opened directly; accessed 2026-11-16.
+  * [[https://www.hackyracers.co.uk/wiki/index.php/CYBR_TRK|CYBR TRK — Hacky Racers Wiki]], whose indexed page text identifies the 2022 vehicle as a follow-on from the smaller 2018 Roamer and describes its later configuration; accessed 2026-11-16. A direct page request returned HTTP 403, so the indexed text was used.
 
 ===== Documented operation =====
 
@@ -29,11 +29,15 @@ The `roamerpi` repository is a strong match for the 2018 Raspberry Pi build: its
 
 The author also reports that patchy Wi-Fi caused missed stop packets and that the motors could continue moving. A watchdog stopped the motors after a period without new control packets; the author first set this to 3 seconds, then reduced it to 1 second while replacing Hypertext Transfer Protocol (HTTP) control with WebSockets. These are details of that historical build, not recommended timeout values or evidence of a complete safety system.
 
-The 2022 account describes the later Roamer as a quarter-scale wooden Tesla Cybertruck that attendees could drive over the internet. The remote operator received live camera video and the robot's location on a map. A web queue gave one person control at a time; people could wait in a browser and could choose to receive a text message when their turn began. The indexed preview of the Hacky Racers profile describes this as a follow-on from the smaller 2018 robot; the full page could not be checked.
+The 2022 account describes the later Roamer as a quarter-scale wooden Tesla Cybertruck that attendees could drive over the internet. The remote operator received live camera video and the robot's location on a map. A web queue gave one person control at a time; people could wait in a browser and could choose to receive a text message when their turn began. The Hacky Racers profile identifies CYBR TRK as a follow-on from the smaller 2018 Roamer and says it began as the public-control vehicle at EMF 2022.
 
-The associated queue example uses PHP and a MySQL database on shared hosting. It demonstrates session timing and queue management for single-user-at-a-time control. It does not document the 2022 vehicle's drive electronics, network topology, safety limits, emergency stop, or behaviour after loss of the internet connection. Do not infer those details from the queue example.
+The Hacky Racers profile lists four 6.5-inch (approximately 165 mm), 350 W hoverboard hub motors, two original hoverboard controller boards running a fork of EFeru's field-oriented control (FOC) firmware, and a 48 V lithium-ion battery configuration. It describes two custom 6S3P packs using Samsung 30T 21700 cells, each with a 40 A continuous-rated battery management system (BMS), as well as a separate 6S4P pack set used for testing. The profile does not date every hardware detail, so treat these as reported CYBR TRK specifications, not a confirmed bill of materials for the 2022 EMF deployment.
 
-Chris's 2024 CYBR TRK post points to the Hacky Racers Wiki for later build details. That wiki page returned an HTTP 403 error during this review, so no additional hardware or electrical specifications from it are included here. The EMF 2022 Roambase page identifies the project team's village as the Roamer's home and repair shop.
+For remote EMF operation, the profile reports browser-based control over WebSockets and live video using JSMpeg. It also says the Raspberry Pi logs hoverboard and Arduino telemetry locally through Message Queuing Telemetry Transport (MQTT), Node-RED, and Grafana. The source does not describe the complete network path, remote-control loss behaviour, or emergency-stop arrangement.
+
+The profile describes an earlier steering setup that used a windscreen-wiper motor, potentiometer feedback, and an Arduino controller for position control, current limiting, and fault detection. It says this was later removed in favour of mechanical steering at the Hacky Racers' request for safety and competition-rule compliance. The profile also reports frequent tipping, hot battery management systems, and a 30 A fuse that can blow under hard or prolonged acceleration; it does not tie each limitation to a dated configuration.
+
+The associated queue example uses PHP and a MySQL database on shared hosting. It demonstrates session timing and queue management for single-user-at-a-time control. The EMF 2022 Roambase page identifies the project team's village as the Roamer's home and repair shop.
 
 ===== Relevance to Robots projects =====
 
@@ -45,7 +49,7 @@ The queue is an access-coordination example, not a complete safety system. Any p
 
 **Status:** Historical research reference. No EMF Roamer hardware or software has been adopted, reproduced, or validated in the Robots project.
 
-**Review basis:** The builder's 2018 and 2022 blog posts, the Roamer Pi repository landing page, the EMF 2022 event wiki, and the 2024 CYBR TRK blog wrapper. The supplied YouTube player and linked Hacky Racers Wiki page could not be retrieved directly; the GPS plot description is supported by the builder's accompanying 2018 account.
+**Review basis:** The builder's 2018 and 2022 blog posts, the Roamer Pi repository landing page, the EMF 2022 event wiki, the 2024 CYBR TRK blog wrapper, and indexed text from the Hacky Racers Wiki. Direct requests to YouTube and the Hacky Racers Wiki returned errors; the associated indexed text was available for review. All build specifications and performance limitations above are source-reported and have not been independently verified.
 
 ~~REFNOTES~~
 ---------
