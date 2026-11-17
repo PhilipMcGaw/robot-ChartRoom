@@ -63,7 +63,7 @@ The user's [[https://philipmcgaw.com/adeept-robot-hat-for-raspberry-pi/|Adeept R
 
 ===== Reported hardware fault =====
 
-On 2026-11-17, the user reported that the Adeept board at home does not appear to work and suspects that the SS34 diode marked D1 has failed open-circuit. This is an unverified diagnosis: no symptom details or electrical measurements have been recorded. The earlier channel 0 servo test is historical evidence of a successful test at that time and does not establish the current board's condition. Check the supplied schematic and the fitted board revision before concluding what D1 does in the power path or replacing it. The [[https://www.vishay.com/docs/88751/ss32.pdf|Vishay SS32–SS36 datasheet]] is a manufacturer reference for an SS34-family Schottky rectifier; it does not identify the maker of the diode fitted to this board.
+On 2026-11-17, the user reported that the Adeept board at home does not appear to work and suspects that the SS34 diode marked D1 has failed open-circuit. The user identifies the fitted part as an **onsemi SS34, 40 V, 3 A, DO-214AB Schottky diode**. onsemi's [[https://www.onsemi.com/download/reference-designs/pdf/tnd6319-d.pdf|TND6319/D bill of materials]] lists an SS34 with those ratings and package. The fault diagnosis remains unverified: no symptom details or electrical measurements have been recorded. The earlier channel 0 servo test is historical evidence of a successful test at that time and does not establish the current board's condition. Check the supplied schematic and the fitted board revision before concluding what D1 does in the power path or replacing it.
 
 ===== Schematic and hardware resources =====
 
