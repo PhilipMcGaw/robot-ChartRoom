@@ -59,7 +59,7 @@ Raspberry Pi
 
 The BlueOS work is consequently an **integration exercise**, not a basic PCA9685 bring-up exercise.
 
-See the existing hardware notes: [[https://philipmcgaw.com/adeept-robot-hat-for-raspberry-pi/|Adeept Robot HAT for Raspberry Pi]].
+The user's [[https://philipmcgaw.com/adeept-robot-hat-for-raspberry-pi/|Adeept Robot HAT for Raspberry Pi post]] (2025-11-30) records the board's reported peripheral inventory, setup issues with Python dependencies and I²C, and a servo example working on channel 0. This is the user's account of bench bring-up. The later [[https://philipmcgaw.com/adeept-vs-navigation-raspberry-pi-hats/|Adeept vs Navigation Raspberry Pi HATs post]] (2026-02-03) compares interfaces and pin mappings and describes the intention to map the HAT into a BlueOS configuration. The post presents a comparison and planned work; it does not establish that the BlueOS configuration was completed or validated.
 
 ===== Schematic and hardware resources =====
 
