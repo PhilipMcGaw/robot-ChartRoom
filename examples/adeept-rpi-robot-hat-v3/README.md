@@ -41,7 +41,7 @@ Package versions and compatibility with the current Raspberry Pi OS have not bee
 
 ## Automated setup with PyInfra
 
-The `pyinfra/` directory contains a PyInfra deployment for Raspberry Pi OS. It installs the host packages used by the examples, creates `/opt/adeept-rpi-robot-hat-v3/.venv` with access to those host packages, installs the Adafruit and MPU-6050 Python libraries in that virtual environment, and copies examples `01`–`13` to `/opt/adeept-rpi-robot-hat-v3/`. It does not run the examples or Adeept's `setup.py`, enable I²C/SPI, or change GPIO permissions. The deployment uses `sudo` for APT and `/opt` writes.
+The `pyinfra/` directory contains a PyInfra deployment for Raspberry Pi OS. It enables I²C and SPI in `config.txt`, creates a dated backup before changing that file, installs the host packages used by the examples, creates `/opt/adeept-rpi-robot-hat-v3/.venv` with access to those host packages, installs the Adafruit and MPU-6050 Python libraries in that virtual environment, and copies examples `01`–`13` to `/opt/adeept-rpi-robot-hat-v3/`. The interface settings require a manual reboot to take effect. The deployment does not run the examples or Adeept's `setup.py`, or change GPIO permissions. It uses `sudo` for APT, boot configuration, and `/opt` writes.
 
 Install PyInfra on the computer that will control the Pi, then review the proposed changes with a dry run:
 
@@ -58,7 +58,7 @@ cd /opt/adeept-rpi-robot-hat-v3
 sudo .venv/bin/python 01_Servo.py
 ```
 
-Use `sudo` when running examples because the GPIO and bus permissions vary by Raspberry Pi OS configuration. Configure the required I²C or SPI interface separately using Raspberry Pi OS tools. Check the D1/power-path and hardware cautions above before powering the HAT; the deployment does not establish board safety or example compatibility. The Pi OS version and target hardware have not been checked, and this deployment has not yet been run against a Pi.
+Use `sudo` when running examples because the GPIO and bus permissions vary by Raspberry Pi OS configuration. Check the D1/power-path and hardware cautions above before powering the HAT; the deployment does not establish board safety or example compatibility. The Pi OS version and target hardware have not been checked, and this deployment has not yet been run against a Pi.
 ## Suggested bench sequence
 
 1. **Check D1 and the power path first.** The examples do not test D1. Disconnect power and peripherals before checking the SS34 with a multimeter in diode mode. An in-circuit reading can be affected by other components; confirm the D1 orientation and circuit against the supplied schematic and fitted board revision. Do not power the HAT or run demos until the fault and power path are understood.

@@ -2,12 +2,30 @@
 
 from pathlib import Path
 
+from pyinfra import host
+from pyinfra.facts.files import File
 from pyinfra.operations import apt, files, pip
 
 
 EXAMPLE_DIR = Path(__file__).resolve().parent.parent
 INSTALL_DIR = "/opt/adeept-rpi-robot-hat-v3"
 VENV_DIR = f"{INSTALL_DIR}/.venv"
+BOOT_CONFIG_PATHS = ["/boot/firmware/config.txt", "/boot/config.txt"]
+
+BOOT_CONFIG = next(
+    (
+        path
+        for path in BOOT_CONFIG_PATHS
+        if host.get_fact(File, path=path) is not None
+    ),
+    None,
+)
+
+if BOOT_CONFIG is None:
+    raise RuntimeError(
+        "Could not find Raspberry Pi config.txt at /boot/firmware/config.txt "
+        "or /boot/config.txt"
+    )
 
 apt.packages(
     name="Install host packages for the Adeept examples",
@@ -24,6 +42,15 @@ apt.packages(
         "python3-venv",
     ],
     update=True,
+    sudo=True,
+)
+
+files.block(
+    name="Enable I2C and SPI interfaces in Raspberry Pi boot configuration",
+    path=BOOT_CONFIG,
+    content="[all]\ndtparam=i2c_arm=on\ndtparam=spi=on",
+    marker="# {mark} ADEEPT ROBOT HAT V3 INTERFACES",
+    backup=True,
     sudo=True,
 )
 

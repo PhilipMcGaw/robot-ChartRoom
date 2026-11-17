@@ -1,6 +1,6 @@
 # PyInfra setup for Adeept Robot HAT V3 examples
 
-This deployment installs the example dependencies on a Raspberry Pi OS target and copies example scripts `01`–`13` into `/opt/adeept-rpi-robot-hat-v3/`. It leaves the archived Adeept `setup.py` on the source computer and does not execute any demo.
+This deployment enables I²C and SPI in the Raspberry Pi boot configuration, installs the example dependencies, and copies example scripts `01`–`13` into `/opt/adeept-rpi-robot-hat-v3/`. It checks `/boot/firmware/config.txt` first and falls back to `/boot/config.txt`. Before changing the file, PyInfra creates a dated backup. It leaves the archived Adeept `setup.py` on the source computer and does not execute any demo.
 
 PyInfra runs from the computer administering the Pi over SSH. Install PyInfra 3.5.1 on that computer, review a dry run, then apply it:
 
@@ -18,4 +18,4 @@ Run an example manually after checking its hardware and interface requirements:
 sudo /opt/adeept-rpi-robot-hat-v3/.venv/bin/python /opt/adeept-rpi-robot-hat-v3/01_Servo.py
 ```
 
-This configuration has not been run on a Raspberry Pi. It does not enable I²C or SPI, change permissions, check the HAT power path, or validate the packages against a particular Raspberry Pi OS release. Resolve the D1/power-path concern before powering the board.
+The interface settings take effect after a reboot. The deployment does not reboot the Pi, so reboot it manually after a successful run. It does not change permissions, check the HAT power path, or validate the packages against a particular Raspberry Pi OS release. This configuration has not been run on a Raspberry Pi. Resolve the D1/power-path concern before powering the board.
