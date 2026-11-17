@@ -1,5 +1,9 @@
 # Project memories
 
+## 2026-11-17 — PyInfra pilot for Adeept Robot HAT examples
+
+The user asked to use PyInfra to install non-default libraries for the Adeept Robot HAT V3 examples. A bounded deployment is now in `examples/adeept-rpi-robot-hat-v3/pyinfra/`: it installs APT dependencies, creates a virtual environment that can access those system packages, installs Adafruit and MPU-6050 libraries, and copies examples 01–13 under `/opt`. It does not enable I²C/SPI or execute examples. This is a configuration-only pilot; it has not been run against the Pi, and PyInfra remains a research candidate for broader provisioning. Before deployment, inspect the dry-run output; hardware testing remains gated on the D1/power-path check. See the [demo-code index](pages/sites/chartroom/research/adeept-rpi-robot-hat-v3-demo-code.txt) and the [PyInfra research note](pages/sites/chartroom/research/pyinfra-infrastructure-automation.txt).
+
 ## 2026-11-10 — ROV historical project evidence and propulsion research
 
 The user's own ROV development history is documented on PhilipMcGaw.com and the legacy Skippy.org.uk site. Before repeating ROV design work, check the [[https://philipmcgaw.com/projects/rov/|ROV project index]] and its linked posts: the 2023 DIY ROV architecture, pressure vessel, viewport dome, and end-cap/feed-through design; the 2024 transparent development frame; and later control-electronics/software work including the 2025 Arduino Pro Micro serial issue and BlueOS investigation. The 2018 Skippy.org.uk ESC note records earlier setup/start-up difficulties. These sources document design and development history, but do not establish that the recently discussed 100 W 2418 motor and 12 A bidirectional ESC combination was previously tested.

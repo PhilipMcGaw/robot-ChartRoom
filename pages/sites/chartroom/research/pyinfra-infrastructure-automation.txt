@@ -106,9 +106,11 @@ Both tools can automate Linux configuration over SSH and support reusable deploy
 
 ===== Status =====
 
-This is a research candidate, not a selected project standard or implemented deployment system. No PyInfra inventory, deployment code, or changes to the existing robot repositories have been made as part of this note.
+This remains a research candidate, not a selected project-wide standard. A narrow pilot deployment now exists alongside the Adeept Robot HAT V3 examples; it has not been run on a Raspberry Pi. No PyInfra inventory or project-wide deployment system has been created, and no changes to the implementation repositories have been made.
 
 Before adoption, inspect the current deployment and provisioning arrangements in CuttleOS, SquidLink, and NautiPi. Identify which Linux hosts would benefit, what is already automated, and whether a small pilot can demonstrate repeatable setup without disrupting current workflows.
+
+The Adeept example setup is recorded separately in the [[adeept-rpi-robot-hat-v3-demo-code|Adeept Robot HAT V3 demo-code note]]. It demonstrates one bounded use case and is not evidence for broader adoption.
 
 ===== Sources =====
 

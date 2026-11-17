@@ -29,6 +29,7 @@ These examples have not been tested in this repository. They target Raspberry Pi
 The imports in the examples indicate these third-party Python packages:
 
 - `gpiozero`: `02_Ultra.py`, `03_LineTracking.py`, `06_LED.py`, `09_Buzzer.py`, `10_IR_Receiver.py`, and `11_RGB.py`.
+- Adafruit Blinka: `board` and `busio` compatibility modules used by examples `01`, `05`, `07`, `12`, and `13`.
 - `spidev` and `numpy`: `04_WS2812.py`.
 - Adafruit CircuitPython PCA9685 and motor libraries, plus `board` and `busio` support: `01_Servo.py` and `05_Motor.py`.
 - Adafruit CircuitPython SSD1306, Pillow, and `board`/`busio` support: `07_OLED.py`.
@@ -37,6 +38,27 @@ The imports in the examples indicate these third-party Python packages:
 - Adafruit CircuitPython ADS7830 and `board` support: `13_LightTracking.py`.
 
 Package versions and compatibility with the current Raspberry Pi OS have not been verified. Enable the required I²C or SPI interface only for the matching test. Do not run a system-wide installer as a substitute for checking each dependency.
+
+## Automated setup with PyInfra
+
+The `pyinfra/` directory contains a PyInfra deployment for Raspberry Pi OS. It installs the host packages used by the examples, creates `/opt/adeept-rpi-robot-hat-v3/.venv` with access to those host packages, installs the Adafruit and MPU-6050 Python libraries in that virtual environment, and copies examples `01`–`13` to `/opt/adeept-rpi-robot-hat-v3/`. It does not run the examples or Adeept's `setup.py`, enable I²C/SPI, or change GPIO permissions. The deployment uses `sudo` for APT and `/opt` writes.
+
+Install PyInfra on the computer that will control the Pi, then review the proposed changes with a dry run:
+
+```sh
+uv tool install pyinfra==3.5.1
+pyinfra pi-user@raspberrypi.local examples/adeept-rpi-robot-hat-v3/pyinfra/deploy.py --dry
+```
+
+Replace `pi-user@raspberrypi.local` with the SSH user and hostname for the target. If the dry-run output is correct, run the same command without `--dry` to apply it. After deployment, run an example with its specific setup, for example:
+
+```sh
+ssh pi-user@raspberrypi.local
+cd /opt/adeept-rpi-robot-hat-v3
+sudo .venv/bin/python 01_Servo.py
+```
+
+Use `sudo` when running examples because the GPIO and bus permissions vary by Raspberry Pi OS configuration. Configure the required I²C or SPI interface separately using Raspberry Pi OS tools. Check the D1/power-path and hardware cautions above before powering the HAT; the deployment does not establish board safety or example compatibility. The Pi OS version and target hardware have not been checked, and this deployment has not yet been run against a Pi.
 ## Suggested bench sequence
 
 1. **Check D1 and the power path first.** The examples do not test D1. Disconnect power and peripherals before checking the SS34 with a multimeter in diode mode. An in-circuit reading can be affected by other components; confirm the D1 orientation and circuit against the supplied schematic and fitted board revision. Do not power the HAT or run demos until the fault and power path are understood.

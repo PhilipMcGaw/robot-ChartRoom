@@ -35,6 +35,12 @@ The examples have been inspected as source only; none was run as part of this re
 
 A fuller source-by-source index and a suggested test order are in the example folder's ''README.md''.
 
+===== PyInfra setup pilot =====
+
+The example folder includes ''pyinfra/deploy.py'', a focused PyInfra deployment for a Raspberry Pi OS host. It installs APT packages for GPIO, I²C, SPI, Pillow, and NumPy; creates a virtual environment under ''/opt/adeept-rpi-robot-hat-v3/.venv'' with access to those system packages; installs Adafruit Blinka and the example-specific Adafruit and MPU-6050 packages; and copies examples 01 to 13 to ''/opt/adeept-rpi-robot-hat-v3/''.
+
+Run PyInfra from an administration computer over SSH. Review with the ''--dry'' option before applying. The deployment does not execute Adeept's ''setup.py'' or any example, enable I²C/SPI, or check the board's power path. Its dependencies and operation have not been verified on the target Pi. This is a narrow setup pilot, not a decision to adopt PyInfra for project-wide provisioning. See the example folder's ''pyinfra/README.md'' for commands and limitations.
+
 ===== D1 and bench-test sequence =====
 
 The code examples do not test D1. Check the reported SS34 fault and the board's power path before powering the HAT for software tests. A diode-mode reading on an unpowered board can be affected by other components, so confirm the D1 orientation and circuit against the supplied schematic and fitted board revision. Do not treat a successful example as evidence that D1 is healthy.
