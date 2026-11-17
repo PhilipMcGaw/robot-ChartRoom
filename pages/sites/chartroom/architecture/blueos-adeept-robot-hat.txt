@@ -208,6 +208,17 @@ This means the ROV control software does not need to know about the Adafruit/PCA
 
 The Adeept HAT provides an I²C interface for an external MPU6050 module. This creates a potential future path:
 
+The user reports that the fitted HAT's eight-position MPU-6050 module header J1 has only pins 1–4 populated/connected:
+
+^ J1 pin ^ User-reported connection ^
+| 1 | 3V3 |
+| 2 | GND |
+| 3 | GPIO03 — SCL (serial clock) |
+| 4 | GPIO02 — SDA (serial data) |
+| 5–8 | Not connected |
+
+This pinout is a user observation of the board, reported on 2026-11-17; it has not been independently checked against the PCB revision or schematic.
+
 <code text>
                     Raspberry Pi
                          │
