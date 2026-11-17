@@ -4,7 +4,8 @@ from pathlib import Path
 
 from pyinfra import host
 from pyinfra.facts.files import File
-from pyinfra.operations import apt, files, pip, systemd
+from pyinfra.facts.server import Home, User
+from pyinfra.operations import apt, files, pip, server, systemd
 
 
 EXAMPLE_DIR = Path(__file__).resolve().parent.parent
@@ -27,12 +28,43 @@ if BOOT_CONFIG is None:
         "or /boot/config.txt"
     )
 
+LOGIN_USER = host.get_fact(User)
+LOGIN_HOME = host.get_fact(Home, user=LOGIN_USER)
+
+if not LOGIN_USER or not LOGIN_HOME:
+    raise RuntimeError("Could not identify the SSH login user's home directory")
+
+ZSH_CONFIG = '''export ZSH="$HOME/.oh-my-zsh"
+ZSH_THEME="clean"
+plugins=(git)
+source "$ZSH/oh-my-zsh.sh"'''
+
+ZPROFILE_CONFIG = '''export PATH="$HOME/.local/bin:$PATH"
+if [[ -o interactive ]]; then
+  clear
+  hyfetch
+fi'''
+
+apt.update(
+    name="Update APT package lists",
+    sudo=True,
+)
+
+apt.dist_upgrade(
+    name="Upgrade the Raspberry Pi OS packages and remove unused dependencies",
+    auto_remove=True,
+    sudo=True,
+)
+
 apt.packages(
-    name="Install host packages for the Adeept examples",
+    name="Install Linux defaults and host packages for the Adeept examples",
     packages=[
+        "git",
         "i2c-tools",
         "libgpiod-dev",
+        "nano",
         "openssh-server",
+        "pipx",
         "python3-gpiozero",
         "python3-lgpio",
         "python3-libgpiod",
@@ -41,8 +73,8 @@ apt.packages(
         "python3-smbus",
         "python3-spidev",
         "python3-venv",
+        "zsh",
     ],
-    update=True,
     sudo=True,
 )
 
@@ -51,6 +83,40 @@ systemd.service(
     service="ssh.service",
     running=True,
     enabled=True,
+    sudo=True,
+)
+
+server.shell(
+    name="Install Oh My Zsh and Hyfetch for the SSH login user",
+    commands=[
+        'if [ ! -d "$HOME/.oh-my-zsh" ]; then '
+        'git clone --depth=1 https://github.com/ohmyzsh/ohmyzsh.git '
+        '"$HOME/.oh-my-zsh"; fi',
+        'if ! command -v hyfetch >/dev/null 2>&1; then '
+        'pipx install hyfetch; fi',
+    ],
+)
+
+files.block(
+    name="Set the clean Oh My Zsh theme for the SSH login user",
+    path=f"{LOGIN_HOME}/.zshrc",
+    content=ZSH_CONFIG,
+    marker="# {mark} ADEEPT ROBOT LINUX DEFAULTS",
+    backup=True,
+)
+
+files.block(
+    name="Show Hyfetch at interactive Zsh login",
+    path=f"{LOGIN_HOME}/.zprofile",
+    content=ZPROFILE_CONFIG,
+    marker="# {mark} ADEEPT ROBOT LINUX DEFAULTS",
+    backup=True,
+)
+
+server.user(
+    name="Set Zsh as the login shell for the SSH login user",
+    user=LOGIN_USER,
+    shell="/usr/bin/zsh",
     sudo=True,
 )
 
