@@ -105,7 +105,7 @@ The supplied schematic PDF now has the Chinese label 合金采样电阻 translat
 
 ## 2026-11-17 — Adeept Robot HAT V3 examples retained for testing
 
-The user reports Adeept authorised redistribution of examples 02–13. Unmodified files are retained under `examples/adeept-rpi-robot-hat-v3/`; `01_Servo.py` was already covered in the user's blog post and is not duplicated. The supplied `setup.py` was excluded because it installs system packages through privileged package commands. No example was run. D1's suspected SS34 fault remains unverified; see the pending bench task in [TODO](TODO.md) and the [example index](pages/sites/chartroom/research/adeept-rpi-robot-hat-v3-demo-code.txt).
+The user reports Adeept authorised redistribution of examples 02–13. Unmodified files 01–13 are retained under `examples/adeept-rpi-robot-hat-v3/`; `01_Servo.py` carries an MIT identifier in its source docstring, and the user's blog records it being used on channel 0. The supplied `setup.py` was excluded because it installs system packages through privileged package commands. No example was run. D1's suspected SS34 fault remains unverified; see the pending bench task in [TODO](TODO.md) and the [example index](pages/sites/chartroom/research/adeept-rpi-robot-hat-v3-demo-code.txt).
 
 ## 2026-11-17 — MPU-6050 breakout header still needs soldering
 

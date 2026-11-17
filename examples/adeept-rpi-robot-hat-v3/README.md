@@ -1,8 +1,8 @@
 # Adeept Robot HAT V3 example code
 
-This folder contains unmodified copies of Adeept examples `02`–`13` from the user-supplied files in `inbox/Adeept_Robot_HAT-V3/`. The source headers identify Adeept as author and give the date as 2025-04-02. The user reports that Adeept authorised redistribution of these examples in Chartroom on 2026-11-17. The upstream source repository is [Adeept_Robot_HAT-V3](https://github.com/adeept/Adeept_Robot_HAT-V3).
+This folder contains unmodified copies of Adeept examples `01`–`13` from the user-supplied files in `inbox/Adeept_Robot_HAT-V3/`. The source headers identify Adeept as author and give the date as 2025-04-02. The user reports that Adeept authorised redistribution of examples 02–13 in Chartroom on 2026-11-17. `01_Servo.py` contains an MIT identifier inside its source docstring. The upstream source repository is [Adeept_Robot_HAT-V3](https://github.com/adeept/Adeept_Robot_HAT-V3).
 
-`01_Servo.py` is indexed below but is not copied here; the user's [Adeept HAT blog post](https://philipmcgaw.com/adeept-robot-hat-for-raspberry-pi/) describes running that example on channel 0. The supplied `setup.py` is also not copied: it runs package-manager commands with `sudo`, installs packages globally, and uses `--break-system-packages` on newer Debian releases. It has not been run.
+`01_Servo.py` is included for a complete example set; the user's [Adeept HAT blog post](https://philipmcgaw.com/adeept-robot-hat-for-raspberry-pi/) describes previously running it on channel 0. The supplied `setup.py` is also not copied: it runs package-manager commands with `sudo`, installs packages globally, and uses `--break-system-packages` on newer Debian releases. It has not been run.
 
 These examples have not been tested in this repository. They target Raspberry Pi GPIO and the Adeept HAT interfaces. Confirm the fitted HAT revision, wiring, enabled interfaces, and dependencies before use. The source's pin assignments and assumptions have not been checked against the user's physical board.
 
@@ -10,7 +10,7 @@ These examples have not been tested in this repository. They target Raspberry Pi
 
 | File | Function | Initial test consideration |
 | --- | --- | --- |
-| `01_Servo.py` (not copied) | PCA9685 servo sweep on channel 0, I²C address `0x5f`. | Previously used according to the blog post. The script repeatedly moves the servo; start with one unloaded servo. |
+| `01_Servo.py` | PCA9685 servo sweep on channel 0, I²C address `0x5f`. | Previously used according to the blog post. The script repeatedly moves the servo; start with one unloaded servo. |
 | `02_Ultra.py` | Ultrasonic distance readout using GPIO 23 (trigger) and GPIO 24 (echo). | Requires the matching ultrasonic module and correct echo-level interface. |
 | `03_LineTracking.py` | Reads three line-tracking inputs on GPIO 22, 27, and 17. | Source appears to print the right input under the `left` label; confirm before interpreting readings. |
 | `04_WS2812.py` | Drives eight WS2812 pixels over SPI, using bus 0/device 0 by default. | Enables SPI and uses GPIO 10 as MOSI; check for pin conflicts and LED power first. |
@@ -30,7 +30,7 @@ The imports in the examples indicate these third-party Python packages:
 
 - `gpiozero`: `02_Ultra.py`, `03_LineTracking.py`, `06_LED.py`, `09_Buzzer.py`, `10_IR_Receiver.py`, and `11_RGB.py`.
 - `spidev` and `numpy`: `04_WS2812.py`.
-- Adafruit CircuitPython PCA9685 and motor libraries, plus `board` and `busio` support: `05_Motor.py`.
+- Adafruit CircuitPython PCA9685 and motor libraries, plus `board` and `busio` support: `01_Servo.py` and `05_Motor.py`.
 - Adafruit CircuitPython SSD1306, Pillow, and `board`/`busio` support: `07_OLED.py`.
 - `mpu6050-raspberrypi`: `08_Mpu6050.py`.
 - Adafruit CircuitPython bus-device and `board`/`busio` support: `12_Battrey_Level.py`.

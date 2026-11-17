@@ -75,7 +75,7 @@ Adeept also publishes a standalone [[https://www.adeept.com/video/static1/itemsf
 
 ===== Adeept example code =====
 
-Unmodified copies of Adeept examples 02 to 13, the example index, and a suggested test sequence are in the [[https://github.com/PhilipMcGaw/robot-ChartRoom/tree/main/examples/adeept-rpi-robot-hat-v3|Adeept Robot HAT V3 example folder]]. The user reports Adeept authorised redistribution on 2026-11-17. The examples have not been bench-tested here. Check the reported D1 fault and power path before running them; the code cannot establish D1 functionality. See the [[sites:chartroom:research:adeept-rpi-robot-hat-v3-demo-code|demo-code research note]].
+Unmodified copies of Adeept examples 01 to 13, the example index, and a suggested test sequence are in the [[https://github.com/PhilipMcGaw/robot-ChartRoom/tree/main/examples/adeept-rpi-robot-hat-v3|Adeept Robot HAT V3 example folder]]. The user reports Adeept authorised redistribution of examples 02 to 13 on 2026-11-17; '01_Servo.py' carries an MIT identifier inside its source docstring. The examples have not been bench-tested here. Check the reported D1 fault and power path before running them; the code cannot establish D1 functionality. See the [[sites:chartroom:research:adeept-rpi-robot-hat-v3-demo-code|demo-code research note]].
 
 ===== Physical MPU-6050 breakout module =====
 
