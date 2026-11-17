@@ -74,9 +74,11 @@ Potential investigation points:
   * Evaluate whether the full 14-channel array is useful, or whether a smaller number of strategically positioned sensors would meet the robot's needs.
   * For micromouse use, assess whether the geometry supports wall/edge and junction detection as well as line tracking; do not assume the pictured array is a complete maze-navigation sensor suite.
 
+The user is also considering commercially advertised 16-element IR reflectance arrays for PiWars. One described interface uses a CD74HC4067 16-channel analogue multiplexer to scan the sensor outputs through a smaller number of controller inputs. This is a user-reported product category and interface example, not a reviewed module specification or selected PiWars design. Before choosing one, check the module schematic, sensor spacing and footprint, whether the outputs are analogue or thresholded, supply and logic levels, multiplexer wiring, achievable scan rate, and calibration needs. The 14-element TCRT5000 reference above is a separate design and should not be assumed to use this interface.
+
 ===== Limitations and status =====
 
-This is a **reference image**, not a verified design. The screenshot does not establish the PCB dimensions, component orientation/part variants, schematic, circuit values, channel spacing, sensor height, firmware, calibration method, measured performance, or successful operation. No design is adopted for K9, PiWars, or another robot by recording this reference.
+This is a **reference image**, not a verified design. The screenshot does not establish the PCB dimensions, component orientation/part variants, schematic, circuit values, channel spacing, sensor height, firmware, calibration method, measured performance, or successful operation. The 16-element array is only a PiWars investigation lead; no module or design is selected or adopted for K9, PiWars, or another robot by recording these references.
 
 Further review should use the original post/video, any linked build log, and the actual PCB/schematic files if published. The GitHub project is a useful independently accessible design reference, not proof that it is the exact board shown in the Facebook post.
 
