@@ -65,6 +65,8 @@ See the existing hardware notes: [[https://philipmcgaw.com/adeept-robot-hat-for-
 
 The project hardware reference identifies the fitted board as the **Adeept ADM133 Robot HAT V3.1**. Adeept's current [[https://www.adeept.com/learn/detail-84.html|Robot HAT V3 resource page]] lists a downloadable package named ''ADM133-Adeept_Robot_HAT-V3-20260119.zip''. This is the closest official hardware-design resource found for the board in use. The package contents have not been inspected here, so whether it includes a complete schematic, and whether that schematic matches the fitted V3.1 revision, remain to be confirmed. Adeept's [[https://github.com/adeept/Adeept_Robot_HAT-V3|official V3 software repository]] identifies its product as ADM133 but does not expose schematic files in the repository listing.
 
+The user supplied a PDF named ''Adeept RPi Robot HAT V3.1''. A copy is retained with the canonical Chartroom media at [[sites:chartroom:architecture:adeept-rpi-robot-hat-v3-1-schematic.pdf|Adeept RPi Robot HAT V3.1 schematic (PDF)]]. Its title block and revision have not yet been checked against the physical board.
+
 Adeept also publishes a standalone [[https://www.adeept.com/video/static1/itemsfile/Circuit%20Schematic.pdf|Circuit Schematic PDF]] from its separate [[https://www.adeept.com/learn/detail-56.html|Adeept Robot HAT resource page]]. Adeept's product index distinguishes this older Robot HAT as item **ADM099** and the V3 board as **ADM133**. Treat that PDF as an older-board reference, not as the schematic for the fitted ADM133 V3.1 unless the board revision and circuit are checked against the physical HAT.
 
 ===== Proposed BlueOS architecture =====
