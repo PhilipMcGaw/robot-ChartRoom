@@ -79,7 +79,7 @@ Unmodified copies of Adeept examples 02 to 13, the example index, and a suggeste
 
 ===== Physical MPU-6050 breakout module =====
 
-The user supplied the following photograph on 2026-11-17. It shows the blue MPU-6050 breakout module positioned over the Adeept Robot HAT. The module PCB markings visible in the photograph are VCC, GND, SCL, SDA, XDA, XCL, AD0, and INT. This is a user-supplied visual record of the module and its printed labels; the manufacturer, exact breakout-board model, fitted component marking, and electrical implementation have not been independently verified from the photograph.
+The user supplied the following photograph on 2026-11-17. It shows the blue MPU-6050 breakout module positioned over the Adeept Robot HAT. The module PCB markings visible in the photograph are VCC, GND, SCL, SDA, XDA, XCL, AD0, and INT. This is a user-supplied visual record of the module and its printed labels; the manufacturer, exact breakout-board model, fitted component marking, and electrical implementation have not been independently verified from the photograph. The user reports that the module header still needs to be soldered. Before fitting it to J1, check the chosen mounting orientation and align VCC, GND, SCL, and SDA with J1 pins 1–4 as mapped below. Keep the module unpowered during soldering; soldering and installation have not yet been done.
 
 {{sites:chartroom:architecture:mpu6050-breakout-board.jpg?direct|User-supplied photograph of the MPU-6050 breakout module, 2026-11-17}}
 

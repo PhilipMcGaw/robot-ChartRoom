@@ -17,7 +17,7 @@ These examples have not been tested in this repository. They target Raspberry Pi
 | `05_Motor.py` | Drives four motor channels through the PCA9685 at `0x5f`. | **Motion test.** The script runs M1 forward and reverse at 50% for 2 s each, repeated 100 times. Keep the robot secured and wheels clear; do not run until the HAT power path is checked. |
 | `06_LED.py` | Cycles three status LEDs on GPIO 9, 25, and 11. | Output test; confirm the board revision's mapping. |
 | `07_OLED.py` | Displays date and time on an I²C SSD1306 128 × 64 display. | Requires a compatible OLED connected on the expected I²C bus. |
-| `08_Mpu6050.py` | Reads and averages accelerometer values from an MPU-6050 at I²C address `0x68`. | Sensor-only readout. The broad exception handler suppresses errors, so a silent exit is not proof of success. |
+| `08_Mpu6050.py` | Reads and averages accelerometer values from an MPU-6050 at I²C address `0x68`. | Requires the breakout header to be soldered and its VCC, GND, SCL, SDA pins aligned with HAT J1 pins 1–4. The broad exception handler suppresses errors, so a silent exit is not proof of success. |
 | `09_Buzzer.py` | Plays a short tune through a tonal buzzer on GPIO 18. | Audible output test. |
 | `10_IR_Receiver.py` | Waits for a receiver input on GPIO 12 and prints when pressed. | The callback does not decode or print a signal value. |
 | `11_RGB.py` | Cycles two RGB outputs using GPIO 13, 19, 0, 1, 5, and 6. | GPIO output test; confirm pin mapping and active-low LED wiring. |

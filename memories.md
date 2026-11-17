@@ -106,3 +106,7 @@ The supplied schematic PDF now has the Chinese label 合金采样电阻 translat
 ## 2026-11-17 — Adeept Robot HAT V3 examples retained for testing
 
 The user reports Adeept authorised redistribution of examples 02–13. Unmodified files are retained under `examples/adeept-rpi-robot-hat-v3/`; `01_Servo.py` was already covered in the user's blog post and is not duplicated. The supplied `setup.py` was excluded because it installs system packages through privileged package commands. No example was run. D1's suspected SS34 fault remains unverified; see the pending bench task in [TODO](TODO.md) and the [example index](pages/sites/chartroom/research/adeept-rpi-robot-hat-v3-demo-code.txt).
+
+## 2026-11-17 — MPU-6050 breakout header still needs soldering
+
+The user reports the MPU-6050 module header has not yet been soldered. Before fitting the module to Adeept HAT J1, confirm the chosen mounting orientation and align VCC, GND, SCL, and SDA with J1 pins 1–4. Soldering and installation are pending; see the [hardware TODO](TODO.md).
