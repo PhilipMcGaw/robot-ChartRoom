@@ -73,6 +73,12 @@ The user supplied two PDFs for this HAT. The first, named ''Adeept RPi Robot HAT
 
 Adeept also publishes a standalone [[https://www.adeept.com/video/static1/itemsfile/Circuit%20Schematic.pdf|Circuit Schematic PDF]] from its separate [[https://www.adeept.com/learn/detail-56.html|Adeept Robot HAT resource page]]. Adeept's product index distinguishes this older Robot HAT as item **ADM099** and the V3 board as **ADM133**. Treat that PDF as an older-board reference, not as the schematic for the fitted ADM133 V3.1 unless the board revision and circuit are checked against the physical HAT.
 
+===== Physical MPU-6050 breakout module =====
+
+The user supplied the following photograph on 2026-11-17. It shows the blue MPU-6050 breakout module positioned over the Adeept Robot HAT. The module PCB markings visible in the photograph are VCC, GND, SCL, SDA, XDA, XCL, AD0, and INT. This is a user-supplied visual record of the module and its printed labels; the manufacturer, exact breakout-board model, fitted component marking, and electrical implementation have not been independently verified from the photograph.
+
+{{sites:chartroom:architecture:mpu6050-breakout-board.jpg?direct|User-supplied photograph of the MPU-6050 breakout module, 2026-11-17}}
+
 ===== Proposed BlueOS architecture =====
 
 <code text>

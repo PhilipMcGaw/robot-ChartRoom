@@ -93,3 +93,8 @@ The user asked whether HTML5 UP's responsive HTML/CSS website templates could he
 ## 2026-11-16 — Consolidated ultrasonic robotics reference batches
 
 The two overlapping ultrasonic robotics batches have been consolidated into one thematic overview covering sensing/perception, ROV operator software, embedded interfaces, hardware, and education. Unique source links and relevant access limitations were retained; the former page IDs remain as short links to the overview because other research pages refer to them. The community robotics/sensing and robotics/electronics collections remain separate because they cover broader, distinct groups of references.
+
+
+## 2026-11-17 — MPU-6050 breakout module photograph
+
+The user supplied a photograph of the blue MPU-6050 breakout module used with the Adeept Robot HAT. The visible module PCB labels are VCC, GND, SCL, SDA, XDA, XCL, AD0, and INT. The photograph is retained in Chartroom media and embedded in the [BlueOS and Adeept Robot HAT architecture page](pages/sites/chartroom/architecture/blueos-adeept-robot-hat.txt). It is a user-supplied visual record, not a manufacturer schematic; the exact breakout-board model, fitted IC marking, and electrical implementation remain unverified.
