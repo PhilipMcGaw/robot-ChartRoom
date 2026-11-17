@@ -37,9 +37,9 @@ A fuller source-by-source index and a suggested test order are in the example fo
 
 ===== PyInfra setup pilot =====
 
-The example folder includes ''pyinfra/deploy.py'', a focused PyInfra deployment for a Raspberry Pi OS host. It enables I²C and SPI by adding a managed block to ''/boot/firmware/config.txt'', or ''/boot/config.txt'' on older images; it creates a dated backup before changing the file. It installs APT packages for GPIO, I²C, SPI, Pillow, and NumPy; creates a virtual environment under ''/opt/adeept-rpi-robot-hat-v3/.venv'' with access to those system packages; installs Adafruit Blinka and the example-specific Adafruit and MPU-6050 packages; and copies examples 01 to 13 to ''/opt/adeept-rpi-robot-hat-v3/''.
+The example folder includes ''pyinfra/deploy.py'', a focused PyInfra deployment for a Raspberry Pi OS host. It installs ''openssh-server'' and ensures ''ssh.service'' is running and enabled. It enables I²C and SPI by adding a managed block to ''/boot/firmware/config.txt'', or ''/boot/config.txt'' on older images; it creates a dated backup before changing the file. It installs APT packages for GPIO, I²C, SPI, Pillow, and NumPy; creates a virtual environment under ''/opt/adeept-rpi-robot-hat-v3/.venv'' with access to those system packages; installs Adafruit Blinka and the example-specific Adafruit and MPU-6050 packages; and copies examples 01 to 13 to ''/opt/adeept-rpi-robot-hat-v3/''.
 
-Run PyInfra from an administration computer over SSH. Review with the ''--dry'' option before applying. The interface changes take effect after a reboot; the deployment leaves rebooting to the operator. It does not execute Adeept's ''setup.py'' or any example, or check the board's power path. Its dependencies and operation have not been verified on the target Pi. This is a narrow setup pilot, not a decision to adopt PyInfra for project-wide provisioning. See the example folder's ''pyinfra/README.md'' for commands and limitations.
+Run PyInfra from an administration computer over SSH. This deployment can maintain an already reachable SSH server, but it cannot bootstrap remote access when SSH is disabled; use Raspberry Pi Imager or local access for first-time setup. Review with the ''--dry'' option before applying. The interface changes take effect after a reboot; the deployment leaves rebooting to the operator. It does not change SSH authentication settings or firewall rules, execute Adeept's ''setup.py'' or any example, or check the board's power path. Its dependencies and operation have not been verified on the target Pi. This is a narrow setup pilot, not a decision to adopt PyInfra for project-wide provisioning. See the example folder's ''pyinfra/README.md'' for commands and limitations.
 
 ===== D1 and bench-test sequence =====
 
@@ -52,6 +52,7 @@ After the power path is understood, test one example at a time. Start with senso
   * [[https://github.com/adeept/Adeept_Robot_HAT-V3|Adeept Robot HAT V3 source repository]], example files and author/date headers; accessed 2026-11-17.
   * [[https://philipmcgaw.com/adeept-robot-hat-for-raspberry-pi/|Adeept Robot HAT for Raspberry Pi]], user account of running ''01_Servo.py'' on channel 0; 2025-11-30.
   * [[https://www.raspberrypi.com/documentation/computers/config_txt.html|Raspberry Pi config.txt documentation]], interface parameters and boot configuration location; accessed 2026-11-17.
+  * [[https://docs.pyinfra.com/en/3.x/operations/systemd.html|PyInfra systemd operations]], service state and enablement; accessed 2026-11-17.
   * User-reported permission to redistribute examples 02 to 13 in Chartroom, 2026-11-17.
 
 ~~REFNOTES~~

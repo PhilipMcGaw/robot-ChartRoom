@@ -41,7 +41,7 @@ Package versions and compatibility with the current Raspberry Pi OS have not bee
 
 ## Automated setup with PyInfra
 
-The `pyinfra/` directory contains a PyInfra deployment for Raspberry Pi OS. It enables I²C and SPI in `config.txt`, creates a dated backup before changing that file, installs the host packages used by the examples, creates `/opt/adeept-rpi-robot-hat-v3/.venv` with access to those host packages, installs the Adafruit and MPU-6050 Python libraries in that virtual environment, and copies examples `01`–`13` to `/opt/adeept-rpi-robot-hat-v3/`. The interface settings require a manual reboot to take effect. The deployment does not run the examples or Adeept's `setup.py`, or change GPIO permissions. It uses `sudo` for APT, boot configuration, and `/opt` writes.
+The `pyinfra/` directory contains a PyInfra deployment for Raspberry Pi OS. It installs and enables the OpenSSH server; enables I²C and SPI in `config.txt` with a dated backup; installs the host packages used by the examples; creates `/opt/adeept-rpi-robot-hat-v3/.venv` with access to those host packages; installs the Adafruit and MPU-6050 Python libraries in that virtual environment; and copies examples `01`–`13` to `/opt/adeept-rpi-robot-hat-v3/`. The interface settings require a manual reboot to take effect. PyInfra itself requires an existing SSH connection, so it cannot provide the first remote access to a Pi with SSH disabled. The deployment does not change SSH authentication settings or firewall rules, run the examples or Adeept's `setup.py`, or change GPIO permissions. It uses `sudo` for APT, service management, boot configuration, and `/opt` writes.
 
 Install PyInfra on the computer that will control the Pi, then review the proposed changes with a dry run:
 

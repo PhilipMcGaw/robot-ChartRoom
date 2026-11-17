@@ -4,7 +4,7 @@ from pathlib import Path
 
 from pyinfra import host
 from pyinfra.facts.files import File
-from pyinfra.operations import apt, files, pip
+from pyinfra.operations import apt, files, pip, systemd
 
 
 EXAMPLE_DIR = Path(__file__).resolve().parent.parent
@@ -32,6 +32,7 @@ apt.packages(
     packages=[
         "i2c-tools",
         "libgpiod-dev",
+        "openssh-server",
         "python3-gpiozero",
         "python3-lgpio",
         "python3-libgpiod",
@@ -42,6 +43,14 @@ apt.packages(
         "python3-venv",
     ],
     update=True,
+    sudo=True,
+)
+
+systemd.service(
+    name="Enable and start the OpenSSH server",
+    service="ssh.service",
+    running=True,
+    enabled=True,
     sudo=True,
 )
 
