@@ -225,7 +225,7 @@ The user also reports that the MPU-6050 module PCB itself labels its pins 5–8 
 | 7 | AD0 | I²C address select. Logic low selects 0x68; logic high selects 0x69 (7-bit addresses). |
 | 8 | INT | Programmable interrupt output. It can signal configured events, such as new sensor data being ready or a FIFO overflow. |
 
-The J1 and module pin labels are user observations reported on 2026-11-17. In the board configuration reported here, only 3V3, ground, and the main I²C pair are connected through J1; XDA, XCL, AD0, and INT are not connected to the HAT through this header. The pin functions above follow the [[https://invensense.tdk.com/wp-content/uploads/2015/02/MPU-6000-Datasheet.pdf|InvenSense MPU-6000/MPU-6050 Product Specification]], revision 3.4.
+The J1 and module pin labels are user observations reported on 2026-11-17. In the board configuration reported here, only 3V3, ground, and the main I²C pair are connected through J1; XDA, XCL, AD0, and INT are not connected to the HAT through this header. The pin functions above follow the [[https://product.tdk.com/system/files/dam/doc/product/sensor/mortion-inertial/imu/data_sheet/mpu-6000-datasheet1.pdf|InvenSense MPU-6000/MPU-6050 Product Specification]], revision 3.4. For register definitions and programming details, see the user-supplied [[https://cdn.sparkfun.com/datasheets/Sensors/Accelerometers/RM-MPU-6000A.pdf|MPU-6000/MPU-6050 Register Map and Descriptions]], revision 4.0. This is a register reference, not the product specification.
 
 <code text>
                     Raspberry Pi
