@@ -1,8 +1,8 @@
 # Adeept Robot HAT V3 example code
 
-This folder contains unmodified copies of Adeept examples `01`–`13` from the user-supplied files in `inbox/Adeept_Robot_HAT-V3/`. The source headers identify Adeept as author and give the date as 2025-04-02. The user reports that Adeept authorised redistribution of examples 02–13 in Chartroom on 2026-11-17. `01_Servo.py` contains an MIT identifier inside its source docstring. The upstream source repository is [Adeept_Robot_HAT-V3](https://github.com/adeept/Adeept_Robot_HAT-V3).
+This folder contains unmodified Adeept examples `01`–`13` and the supplied `setup.py`, originally provided by Adeept and now archived here. The source headers identify Adeept as author and give the date as 2025-04-02. The user reports that Adeept authorised redistribution of examples 02–13 in Chartroom on 2026-11-17. `01_Servo.py` contains an MIT identifier inside its source docstring. The upstream source repository is [Adeept_Robot_HAT-V3](https://github.com/adeept/Adeept_Robot_HAT-V3).
 
-`01_Servo.py` is included for a complete example set; the user's [Adeept HAT blog post](https://philipmcgaw.com/adeept-robot-hat-for-raspberry-pi/) describes previously running it on channel 0. The supplied `setup.py` is also not copied: it runs package-manager commands with `sudo`, installs packages globally, and uses `--break-system-packages` on newer Debian releases. It has not been run.
+`01_Servo.py` is included for a complete example set; the user's [Adeept HAT blog post](https://philipmcgaw.com/adeept-robot-hat-for-raspberry-pi/) describes previously running it on channel 0. The supplied `setup.py` is archived as a reference but has not been run. It invokes `sudo apt-get` and global `sudo pip3` installs, including `--break-system-packages` on newer Debian releases. Review it before any use.
 
 These examples have not been tested in this repository. They target Raspberry Pi GPIO and the Adeept HAT interfaces. Confirm the fitted HAT revision, wiring, enabled interfaces, and dependencies before use. The source's pin assignments and assumptions have not been checked against the user's physical board.
 
