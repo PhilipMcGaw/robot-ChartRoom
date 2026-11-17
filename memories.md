@@ -1,4 +1,4 @@
-﻿# Project memories
+# Project memories
 
 ## 2026-11-10 — ROV historical project evidence and propulsion research
 
@@ -98,3 +98,7 @@ The two overlapping ultrasonic robotics batches have been consolidated into one 
 ## 2026-11-17 — MPU-6050 breakout module photograph
 
 The user supplied a photograph of the blue MPU-6050 breakout module used with the Adeept Robot HAT. The visible module PCB labels are VCC, GND, SCL, SDA, XDA, XCL, AD0, and INT. The photograph is retained in Chartroom media and embedded in the [BlueOS and Adeept Robot HAT architecture page](pages/sites/chartroom/architecture/blueos-adeept-robot-hat.txt). It is a user-supplied visual record, not a manufacturer schematic; the exact breakout-board model, fitted IC marking, and electrical implementation remain unverified.
+
+## 2026-11-17 — Adeept Robot HAT V3.1 schematic label translation
+
+The supplied schematic PDF now has the Chinese label 合金采样电阻 translated as “Alloy current-sense resistor”. Only that label was changed; the schematic has not been electrically reviewed. The original Chinese PDF remains beside the translated file. See the [Adeept Robot HAT architecture note](pages/sites/chartroom/architecture/blueos-adeept-robot-hat.txt).
