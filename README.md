@@ -11,6 +11,7 @@ The intended DokuWiki destination is the [`sites:chartroom` namespace](https://l
 ### Where to find information
 
 - `pages/sites/chartroom/architecture/` — cross-project architecture, communications, NATS, and robot profiles.
+- `examples/adeept-rpi-robot-hat-v3/` — retained Adeept HAT V3 example code and a bench-test index.
 - `pages/sites/chartroom/cuttleos/` — cross-project knowledge concerning CuttleOS; implementation-specific documentation remains in CuttleOS.
 - `pages/sites/chartroom/cockpit/` — cross-project knowledge concerning Cockpit; implementation-specific documentation remains in CuttleOS where Cockpit is currently hosted.
 - `pages/sites/chartroom/datalogger/` — cross-project knowledge concerning DataLogger; implementation-specific documentation remains in CuttleOS where DataLogger is currently hosted.
@@ -53,6 +54,8 @@ Each of the three implementation repositories should link back to Chartroom so t
 
 ```text
 robot-ChartRoom/
+├── examples/             # Retained hardware example source
+│   └── adeept-rpi-robot-hat-v3/
 ├── pages/sites/chartroom/ # DokuWiki page text
 ├── media/sites/chartroom/ # DokuWiki media
 ├── AGENTS.md          # Repository working rules

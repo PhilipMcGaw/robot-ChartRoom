@@ -1,0 +1,54 @@
+====== Adeept Robot HAT V3 example code ======
+{{tag>research adeept raspberry-pi robot-hat python hardware-testing}}
+
+~~META:
+description     = Index and bench-test guidance for Adeept Robot HAT V3 Python examples.
+type            = research
+status          = reference
+authority       = Adeept example source; user-reported redistribution permission; Chartroom test notes
+~~
+
+===== Source and reuse =====
+
+Adeept's [[https://github.com/adeept/Adeept_Robot_HAT-V3|official Robot HAT V3 repository]] contains examples numbered 01 to 13. The source headers identify Adeept as author and give the date as 2025-04-02. The user reports that Adeept authorised redistribution of examples 02 to 13 in Chartroom on 2026-11-17. Unmodified copies of those files are in the repository's [[https://github.com/PhilipMcGaw/robot-ChartRoom/tree/main/examples/adeept-rpi-robot-hat-v3|Adeept Robot HAT V3 example folder]].
+
+The user's [[https://philipmcgaw.com/adeept-robot-hat-for-raspberry-pi/|Adeept Robot HAT for Raspberry Pi post]] documents using ''01_Servo.py'' on servo channel 0. That source is not duplicated in the example folder. Adeept's supplied ''setup.py'' is also not included: it runs package-manager installation commands with ''sudo'', installs Python packages globally, and uses ''--break-system-packages'' on newer Debian releases. It has not been run.
+
+The examples have been inspected as source only; none was run as part of this review. They were written for the Adeept Robot HAT V3. Confirm that their GPIO, I²C, SPI, and peripheral assumptions match the fitted HAT revision before testing. The HAT in use is identified as V3.1, but the supplied schematic revision has not yet been matched to the physical board.
+
+===== Example index =====
+
+^File^Function^Notes from source inspection^
+|''01_Servo.py'' (not copied)|PCA9685 servo sweep on channel 0, I²C address ''0x5f''.|The user reports this was used on channel 0; it repeatedly sweeps the servo.|
+|''02_Ultra.py''|Ultrasonic distance readout; trigger GPIO 23, echo GPIO 24.|Requires the matching sensor and correct echo-level interface.|
+|''03_LineTracking.py''|Reads three line-tracking inputs on GPIO 22, 27, and 17.|The source appears to print the right input under the ''left'' label; check readings before interpreting them.|
+|''04_WS2812.py''|Drives eight WS2812 pixels over SPI bus 0, device 0 by default.|Uses GPIO 10 as MOSI; check pin conflicts and LED power.|
+|''05_Motor.py''|Drives four motor channels through the PCA9685 at ''0x5f''.|Moving output. It runs M1 forward and reverse at 50% for 2 s each, repeated 100 times. Keep wheels clear and do not run until the power path is checked.|
+|''06_LED.py''|Cycles three status LEDs on GPIO 9, 25, and 11.|Confirm the physical board revision's mapping.|
+|''07_OLED.py''|Displays date and time on an I²C SSD1306 128 × 64 display.|Requires a compatible display on the expected I²C bus.|
+|''08_Mpu6050.py''|Reads and averages accelerometer values from an MPU-6050 at ''0x68''.|The broad exception handler suppresses errors; a silent exit is not evidence of success.|
+|''09_Buzzer.py''|Plays a short tune through a tonal buzzer on GPIO 18.|Audible output.|
+|''10_IR_Receiver.py''|Waits for an input on GPIO 12.|The callback prints a generic message and does not decode a signal value.|
+|''11_RGB.py''|Cycles two RGB outputs using GPIO 13, 19, 0, 1, 5, and 6.|Confirm the pin mapping and active-low LED wiring.|
+|''12_Battrey_Level.py''|Reads ADS7830 channel 0 at ''0x48'' and estimates battery percentage.|The original filename has the spelling ''Battrey''. The calculation hard-codes an 8.4 V reference, a 6.0 V warning point, and divider resistor values; verify these against the actual circuit and battery before using its result.|
+|''13_LightTracking.py''|Reads ADS7830 channel 1 at ''0x48''.|Requires the light sensor on the expected analogue channel.|
+
+A fuller source-by-source index and a suggested test order are in the example folder's ''README.md''.
+
+===== D1 and bench-test sequence =====
+
+The code examples do not test D1. Check the reported SS34 fault and the board's power path before powering the HAT for software tests. A diode-mode reading on an unpowered board can be affected by other components, so confirm the D1 orientation and circuit against the supplied schematic and fitted board revision. Do not treat a successful example as evidence that D1 is healthy.
+
+After the power path is understood, test one example at a time. Start with sensor readouts whose matching modules are connected, then test the indicator outputs. Test moving outputs last: use one unloaded servo for ''01_Servo.py'', and secure the robot with its wheels clear before running ''05_Motor.py''. Record the fitted revision, supply, connected loads, and observations as bench-test evidence; none is recorded yet.
+
+===== Sources =====
+
+  * [[https://github.com/adeept/Adeept_Robot_HAT-V3|Adeept Robot HAT V3 source repository]], example files and author/date headers; accessed 2026-11-17.
+  * [[https://philipmcgaw.com/adeept-robot-hat-for-raspberry-pi/|Adeept Robot HAT for Raspberry Pi]], user account of running ''01_Servo.py'' on channel 0; 2025-11-30.
+  * User-reported permission to redistribute examples 02 to 13 in Chartroom, 2026-11-17.
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

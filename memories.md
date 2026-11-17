@@ -102,3 +102,7 @@ The user supplied a photograph of the blue MPU-6050 breakout module used with th
 ## 2026-11-17 — Adeept Robot HAT V3.1 schematic label translation
 
 The supplied schematic PDF now has the Chinese label 合金采样电阻 translated as “Alloy current-sense resistor”. Only that label was changed; the schematic has not been electrically reviewed. The original Chinese PDF remains beside the translated file. See the [Adeept Robot HAT architecture note](pages/sites/chartroom/architecture/blueos-adeept-robot-hat.txt).
+
+## 2026-11-17 — Adeept Robot HAT V3 examples retained for testing
+
+The user reports Adeept authorised redistribution of examples 02–13. Unmodified files are retained under `examples/adeept-rpi-robot-hat-v3/`; `01_Servo.py` was already covered in the user's blog post and is not duplicated. The supplied `setup.py` was excluded because it installs system packages through privileged package commands. No example was run. D1's suspected SS34 fault remains unverified; see the pending bench task in [TODO](TODO.md) and the [example index](pages/sites/chartroom/research/adeept-rpi-robot-hat-v3-demo-code.txt).

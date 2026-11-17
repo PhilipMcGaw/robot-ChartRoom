@@ -73,6 +73,10 @@ The user supplied two PDFs for this HAT. The first, named ''Adeept RPi Robot HAT
 
 Adeept also publishes a standalone [[https://www.adeept.com/video/static1/itemsfile/Circuit%20Schematic.pdf|Circuit Schematic PDF]] from its separate [[https://www.adeept.com/learn/detail-56.html|Adeept Robot HAT resource page]]. Adeept's product index distinguishes this older Robot HAT as item **ADM099** and the V3 board as **ADM133**. Treat that PDF as an older-board reference, not as the schematic for the fitted ADM133 V3.1 unless the board revision and circuit are checked against the physical HAT.
 
+===== Adeept example code =====
+
+Unmodified copies of Adeept examples 02 to 13, the example index, and a suggested test sequence are in the [[https://github.com/PhilipMcGaw/robot-ChartRoom/tree/main/examples/adeept-rpi-robot-hat-v3|Adeept Robot HAT V3 example folder]]. The user reports Adeept authorised redistribution on 2026-11-17. The examples have not been bench-tested here. Check the reported D1 fault and power path before running them; the code cannot establish D1 functionality. See the [[sites:chartroom:research:adeept-rpi-robot-hat-v3-demo-code|demo-code research note]].
+
 ===== Physical MPU-6050 breakout module =====
 
 The user supplied the following photograph on 2026-11-17. It shows the blue MPU-6050 breakout module positioned over the Adeept Robot HAT. The module PCB markings visible in the photograph are VCC, GND, SCL, SDA, XDA, XCL, AD0, and INT. This is a user-supplied visual record of the module and its printed labels; the manufacturer, exact breakout-board model, fitted component marking, and electrical implementation have not been independently verified from the photograph.

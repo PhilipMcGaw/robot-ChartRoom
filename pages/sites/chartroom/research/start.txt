@@ -203,6 +203,7 @@ The links below cover all research notes. Use the related-research links within 
   * [[sites:chartroom:research:arduino-processing-mpu6050-artificial-horizon|Arduino and Processing artificial horizon using MPU-6050]]
   * [[sites:chartroom:research:randomnerdtutorials-arduino-mpu6050|Random Nerd Tutorials Arduino MPU-6050 guide]]
   * [[sites:chartroom:research:adeept-rpi-mpu6050-python-example|Adeept Raspberry Pi MPU-6050 Python example]]
+  * [[sites:chartroom:research:adeept-rpi-robot-hat-v3-demo-code|Adeept Robot HAT V3 example code]]
 
 ==== LiDAR, mapping, and autonomy ====
 
