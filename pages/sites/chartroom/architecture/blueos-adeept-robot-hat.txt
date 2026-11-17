@@ -217,7 +217,15 @@ The user reports that the fitted HAT's eight-position MPU-6050 module header J1 
 | 4 | GPIO02 — SDA (serial data) |
 | 5–8 | Not connected |
 
-This pinout is a user observation of the board, reported on 2026-11-17; it has not been independently checked against the PCB revision or schematic.
+The user also reports that the MPU-6050 module PCB itself labels its pins 5–8 as follows. These are module pin labels; they do not indicate that the corresponding HAT J1 positions are connected.
+
+^ Module pin ^ Label ^ Function ^
+| 5 | XDA | Auxiliary I²C data (AUX_DA in the InvenSense specification) |
+| 6 | XCL | Auxiliary I²C clock (AUX_CL in the InvenSense specification) |
+| 7 | AD0 | Selects the least-significant bit of the I²C address |
+| 8 | INT | Programmable interrupt output |
+
+The J1 and module pin labels are user observations reported on 2026-11-17. The MPU-6000/MPU-6050 specification describes AUX_DA/AUX_CL as the auxiliary I²C bus, AD0 as the I²C address least-significant bit, and INT as the programmable interrupt output; see the [[https://invensense.tdk.com/wp-content/uploads/2015/02/MPU-6000-Datasheet.pdf|InvenSense MPU-6000/MPU-6050 Product Specification]], revision 3.4.
 
 <code text>
                     Raspberry Pi
