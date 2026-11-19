@@ -1,0 +1,126 @@
+====== RoverKit — interactive robot-building workbench and simulator ======
+{{tag>research piwars swarmbot robotics simulation education esp32 arduino}}
+
+~~META:
+description     = Research reference for RoverKit, a browser-based four-wheel robot build guide, simulator, and visual code walkthrough.
+type            = research
+status          = reference
+author          = Chartroom
+~~~
+
+===== Purpose and overview =====
+
+RoverKit is an interactive browser application by Dilum Sanjaya. It presents a step-by-step build of a four-wheel educational robot car using either an Arduino UNO or an ESP32, then provides a simulator and visual explanation of the robot's programme.
+
+The creator's public description says the application is intended to make robot building easier to approach in stages, combining a simulator, customisable arena, and visual code walkthrough. It supports Arduino and ESP32.
+
+The application is best treated as an educational build guide and interactive demonstration, rather than a general-purpose robotics development environment or validated physics simulator.
+
+===== Sources =====
+
+==== Primary source ====
+
+  * **RoverKit live application:** https://roverkit.vercel.app/#decks
+    * The application itself is the primary source for its interface, build sequence, simulator controls, and advertised hardware connection.
+  * **Creator:** Dilum Sanjaya, public account https://x.com/DilumSanjaya
+    * Creator's announcement, dated 13 November 2026, describes the step-by-step robot-building app, simulator, customisable arena, visual code walkthrough, and Arduino/ESP32 support. The announcement is indexed by the following secondary records.
+
+==== Secondary discovery and descriptive sources ====
+
+  * PromptShipped, *RoverKit: Build an Arduino robot car step by step in 3D*: https://www.promptshipped.com/app/roverkit-arduino-robot-car-built-with-claude
+    * Provides a detailed description of the build sequence, example bill of materials, obstacle-avoidance sketch, simulator controls, and ESP32 Wi-Fi connection option. This is a third-party description, not a substitute for checking the live application or source code.
+  * Dropday.ai, *RoverKit*: https://dropday.ai/c/roverkit
+    * Describes the application as a 3D workbench and simulator for an Arduino/ESP32 robot car, with a customisable arena and live-hardware Wi-Fi connection.
+  * What People Made, *A step-by-step robot-building app with simulator and code walkthrough*: https://www.whatpeoplemade.com/i/a-step-by-step-robot-building-app-with-simulator-and-cod-651085.html
+    * Reproduces the creator's public description and identifies the 13 November 2026 announcement.
+
+===== Features and workflow =====
+
+The application presents a guided build in approximately ten stages:
+
+  - Gather the parts.
+  - Fit motors and wheels.
+  - Stack the chassis decks.
+  - Fit the motor driver.
+  - Mount the selected controller board.
+  - Assemble the ultrasonic sensor head.
+  - Install the power source.
+  - Complete the wiring.
+  - Upload the example code.
+  - Drive the robot.
+
+The live application includes a 3D workbench/deck view, an arena simulator, and a visual programme walkthrough. The arena is described as a customisable 3 × 3 m space where obstacles can be placed, resized, and rotated. The simulator includes manual driving and an automatic obstacle-avoidance mode, along with controls and indicators for features such as the LED, buzzer, and servo.
+
+A settings option is described as allowing the Drive stage to connect to a physical ESP32 robot over Wi-Fi. This is an advertised capability; the interface alone does not establish the robustness, security, latency, or safety of the hardware-control link.
+
+===== Example hardware described by secondary source =====
+
+PromptShipped describes the example build as comprising:
+
+  * Acrylic multi-deck chassis.
+  * Four TT geared DC motors and 65 mm wheels.
+  * L9110S dual motor driver.
+  * HC-SR04 ultrasonic distance sensor mounted on an SG90 servo.
+  * Two 18650 lithium-ion cells.
+  * Slide switch, red LED, and active buzzer.
+  * Arduino UNO R3 with Sensor Shield V5, or ESP32 DevKit V1 with an expansion board.
+
+These details are transcribed from a secondary description and should be checked against the live build guide before being treated as a definitive bill of materials. In particular, the stated battery arrangement, motor-driver current capability, wiring, and protection provisions require independent engineering review before reproducing the design.
+
+The example obstacle-avoidance behaviour is described as driving until an obstacle is detected within 22 cm, then sweeping the ultrasonic sensor to the right and left and turning towards the side with more space. This is a simple reactive behaviour, not mapping, localisation, path planning, or robust navigation.
+
+===== Potential relevance to our projects =====
+
+==== PiWars ====
+
+Potentially useful as:
+
+  * A reference for a low-cost, multi-deck educational chassis and component layout.
+  * A guided assembly and wiring presentation.
+  * A simple arena for rehearsing obstacle-avoidance behaviours.
+  * A way to make programme decisions visible to learners and reviewers.
+  * A source of ideas for browser-based robot configuration and demonstration.
+
+The example's four-wheel drive arrangement is not automatically suitable for K9 or a PiWars competition robot. Wheel geometry, drivetrain losses, motor characteristics, encoder feedback, traction, turning behaviour, and competition-specific constraints would need separate assessment.
+
+==== SwarmBot ====
+
+Potentially useful as a user-interface and learning-experience reference:
+
+  * Browser-based setup and configuration.
+  * A visual representation of robot hardware and deck arrangement.
+  * A simple simulator for demonstrating behaviours before running physical hardware.
+  * A visual explanation of programme decisions.
+
+RoverKit appears to focus on one robot. It does not demonstrate swarm coordination, multi-agent addressing, fleet management, distributed task allocation, inter-robot communications, or synchronised behaviour. Those would be separate capabilities to design and implement for SwarmBot.
+
+==== ChartRoom, CuttleOS, and SquidLink ====
+
+The separation between a guided hardware build, a simulator, and a physical controller is conceptually relevant to our software architecture work. It is worth investigating how the application separates robot behaviour from its simulated and physical interfaces.
+
+Do not assume that RoverKit's simulator is a physics-accurate model or that it runs identical firmware in simulation and on the ESP32. That needs source-code and implementation review. Our own software-in-the-loop and hardware-in-the-loop arrangements should retain explicit interface contracts and independent test evidence.
+
+===== Limitations and questions for review =====
+
+  * **Simulation fidelity:** Does the simulator model motor dynamics, acceleration, wheel slip, turning geometry, sensor field of view, sensor noise, and collision response, or is it primarily a visual/behavioural demonstration?
+  * **Firmware equivalence:** Does the simulator execute the same programme as the physical ESP32, or a separate JavaScript implementation of the behaviour?
+  * **Hardware interface:** What protocol and message format are used over Wi-Fi? Are commands time-limited, and is there a communications-loss failsafe?
+  * **Control architecture:** Is motor control open-loop PWM, or is encoder-based closed-loop velocity control implemented?
+  * **Electrical design:** Confirm driver ratings, motor stall current, battery chemistry and protection, charging arrangements, low-voltage cut-off, and wiring details.
+  * **Extensibility:** Is the source code available, and can the simulator or hardware abstraction be adapted for other chassis and controller configurations?
+  * **Accessibility and persistence:** Determine whether projects, arena layouts, and code can be saved/exported and whether the application works without an internet connection.
+
+===== Assessment ======
+
+**Status: reference / research candidate.** RoverKit is worth retaining as an example of an approachable browser-based robot-building and simulation experience. Its most interesting potential contribution to our work is the combination of guided assembly, configurable test arena, and visual programme explanation.
+
+No RoverKit hardware has been built or tested as part of our projects. No claims are made here about simulation accuracy, safe physical operation, closed-loop control, or suitability for direct reuse.
+
+===== Related research ======
+
+  * [[sites:chartroom:research:small-robot-code-test-platform|Small robot as a code test platform — ROV and PiWars]]
+  * [[sites:chartroom:research:sunfounder-picrawler-software|SunFounder PiCrawler software ecosystem]]
+  * [[sites:chartroom:research:self-hosted-robot-coding-portal|Self-hosted robot coding portal — Blocks, Python, and Web editors]]
+  * [[sites:chartroom:research:piwars-team-blogs|PiWars team blogs — reading list]]
+
+~~REFNOTES~~
