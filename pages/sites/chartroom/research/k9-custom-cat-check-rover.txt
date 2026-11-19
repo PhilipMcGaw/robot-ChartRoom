@@ -1,0 +1,71 @@
+====== Custom cat-check rover — Raspberry Pi 5, BLDC drive, and Tailscale teleoperation ======
+{{tag>research, k9, rover, raspberry-pi, teleoperation, camera, brushless-motor, power-management}}
+
+~~META:
+description     = Research reference for a custom remote-operated pet rover using Raspberry Pi 5, camera, BLDC motors, LiFePO4 battery, custom PCBs, and Tailscale.
+type            = research
+status          = research-candidate
+authority       = Chartroom
+~~~
+
+===== Source =====
+
+  * Video demonstration: [[https://youtu.be/7d6gPzREK-k|Custom cat-check rover — YouTube]]
+  * Author's accompanying description was supplied in the research discussion. The author describes a year-long custom build intended to let them check on and interact with their cats while away.
+  * Source claims and specifications below are attributed to the author; they have not been independently verified from schematics, source code, measurements, or a full teardown.
+
+===== Author-reported system =====
+
+The author describes the following implementation:
+
+  * **Compute:** Raspberry Pi 5.
+  * **Imaging:** Raspberry Pi Camera Module 3 Wide.
+  * **Drive and camera gimbal:** brushless DC (BLDC) motors.
+  * **Battery:** 128 Wh LiFePO₄ battery.
+  * **Power management:** custom power-management electronics and low-power sleep/standby modes, intended to extend unattended operating time.
+  * **Electronics:** custom-designed PCBs.
+  * **Mechanical construction:** resin 3D-printed enclosure/casing.
+  * **Remote access and control:** custom iOS application and Tailscale, described as providing low-latency remote teleoperation over a private network without routing video through a commercial pet-camera cloud service.
+
+The author characterises the rover as functional but not fully polished. The stated objective is remote observation and interaction with pets while travelling.
+
+===== Relevance to K9 =====
+
+This is a useful systems-integration reference rather than a design to copy wholesale.
+
+  * **Onboard compute and camera:** Raspberry Pi 5 and Camera Module 3 Wide provide a concrete reference for combining mobile robotics compute with remote visual feedback. Consider camera field of view, mounting, lighting, video latency, thermal load, and camera access from the operator interface.
+  * **Teleoperation and networking:** Tailscale is worth investigating as a secure remote-access overlay for reaching a rover on a private network. Assess peer-to-peer connectivity, relay behaviour when direct paths are unavailable, authentication, device-key lifecycle, network availability, and recovery after disconnection. Do not assume that a private overlay alone provides application-level safety or deterministic control.
+  * **Control separation:** For K9, retain the intended separation between high-level Raspberry Pi functions and a dedicated low-level motor controller. Network and application latency must not be part of the wheel-speed control loop.
+  * **BLDC drive:** The author's use of BLDC motors is a comparison point only. K9's current investigation concerns two RS550 brushed DC geared motors with independent encoder-feedback speed loops. A change to BLDC would require a separate assessment of motor controllers, commutation, feedback, braking, current limits, and control interfaces.
+  * **Camera gimbal:** The reported motorised gimbal may provide ideas for camera positioning, but the actuator type, feedback, stabilisation method, and control implementation are not stated in the supplied description.
+  * **Power management:** The 128 Wh LiFePO₄ pack and low-power standby approach are worth examining for energy budgeting, controlled shutdown, wake-up strategy, and standby current. The battery chemistry and capacity are not a direct recommendation for K9; K9's current battery investigation is a 3S2P 21700 lithium-ion pack.
+  * **Custom PCBs and enclosure:** The project is an example of integrated custom electronics and a resin-printed enclosure. Inspect PCB partitioning, serviceability, thermal management, connector strategy, ingress protection, and repairability before drawing conclusions.
+
+===== Questions for further investigation =====
+
+  - [ ] Inspect the video for chassis layout, wheel arrangement, suspension, motor mounting, and camera placement.
+  - [ ] Establish whether the BLDC drive motors have integrated encoders or other speed/position feedback.
+  - [ ] Determine whether the camera gimbal is independently controlled and whether it has position feedback or stabilisation.
+  - [ ] Establish the software architecture between the iOS application, Tailscale connection, Raspberry Pi application, and motor-control hardware.
+  - [ ] Determine how video is transported, what latency is achieved, and whether the author uses direct peer-to-peer paths or Tailscale DERP relays in typical operation.
+  - [ ] Identify the behaviour on loss of network, stale commands, application crash, or Pi reboot; confirm that propulsion defaults to a safe state locally.
+  - [ ] Investigate the power-management circuit, standby current, wake-up mechanism, battery protection, and shutdown sequencing.
+  - [ ] Look for published PCB design files, firmware, application code, and measured runtime data.
+
+===== Limitations =====
+
+The available source material for this record is the author's supplied description and linked video. The following are not established by that description alone: detailed chassis dimensions or materials beyond the reported resin-printed casing; BLDC motor type and ratings; motor feedback architecture; motor-controller design; gimbal mechanism; battery cell configuration and BMS; measured runtime; power-saving current; video codec, bitrate, and latency; network topology under real-world conditions; and the safety response to communications failure.
+
+Do not treat the author's performance descriptions (including “low latency”, “silent”, or “extreme power-saving”) as measured or independently validated results.
+
+===== Status and relationship to K9 =====
+
+**Status: Research candidate.** This is an external reference for investigation, not an adopted K9 design, component selection, or validated implementation.
+
+The K9 project design and implementation remain authoritative for K9 requirements and decisions. The cross-project research record is maintained here in Chartroom; K9-specific design implications should be transferred into the relevant K9 project documentation only when supported by further investigation.
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
