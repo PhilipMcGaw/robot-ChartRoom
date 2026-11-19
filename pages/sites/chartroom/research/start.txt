@@ -48,6 +48,8 @@ The links below cover all research notes. Use the related-research links within 
   * [[sites:chartroom:research:printables-arduino-rover-access-pending|Printables Arduino Rover — access pending]]
 
 ==== PiWars and community robotics ====
+  * [[sites:chartroom:research:roverkit-robot-building-workbench|RoverKit — robot-building workbench and simulator (PiWars / SwarmBot reference)]]
+
 
   * [[sites:chartroom:research:piwars-team-blogs|PiWars team blogs — reading list]]
   * [[sites:chartroom:research:small-robot-code-test-platform|Small robot as a code test platform — ROV and PiWars]]
