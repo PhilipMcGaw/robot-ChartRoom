@@ -300,6 +300,7 @@ The links below cover all research notes. Use the related-research links within 
   * [[sites:chartroom:research:basicmicro-doctor-who-k9-build|BasicMicro Doctor Who K9 build]]
   * [[sites:chartroom:research:abertay-k9-restoration|Abertay University Doctor Who K-9 restoration]]
   * [[sites:chartroom:research:k9-builder-software-reference|Richard Hopkins K9 software reference]]
+  * [[sites:chartroom:research:k9-custom-cat-check-rover|Custom cat-check rover — Raspberry Pi 5, BLDC drive, and Tailscale teleoperation]]
   * [[sites:chartroom:research:pimoroni-trilobot|Pimoroni Trilobot]]
   * [[sites:chartroom:research:dfrobot-miniq-2wd-chassis|DFRobot miniQ 2WD Robot Chassis]]
   * [[sites:chartroom:research:ukmars-robotics-resources|UKMARS robotics resources]]
