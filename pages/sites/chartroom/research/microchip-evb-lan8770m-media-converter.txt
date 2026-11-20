@@ -50,6 +50,20 @@ For the ROV architecture, this would require compatible optical interfaces at th
 
 This is an alternative physical link to the copper 100BASE-T1 proposal, not a selected design. No fibre cable, BiDi module pair, or Ethernet media converter has been selected or tested. Compare both options using the actual tether length and construction, available endpoint ports, data rate, power budget, connector/strain-relief design, serviceability, and wet/pressure boundaries.
 
+===== User tether requirements and construction leads =====
+
+The user wants the tether to be thin and flexible, physically strong, neutrally buoyant, and difficult to tangle. These are system-level requirements, not yet quantified acceptance criteria. Record the required length and depth, working and peak tension, maximum outside diameter, allowable drag, medium (freshwater or seawater), data and power cores, minimum bend radius, deployment/retrieval method, and expected twist/cycle life before comparing finished tether designs.
+
+Neutral buoyancy does not by itself mean low drag or tangle resistance. Fibron's tether guidance treats diameter, submerged weight, buoyancy, flexibility, tensile strength, current loading, twist, and reel/deployment behaviour as linked design parameters. A small diameter can reduce the area presented to current, while strength members and jacket construction must carry load and protect the data core. The selected buoyancy target should specify freshwater or seawater; it can also be near-neutral or slightly positive/negative to suit the vehicle and operating plan.
+
+Useful construction references, not confirmed product selections:
+
+  * **Blue Robotics Fathom Slim ROV Tether:** The manufacturer lists a 4.0 mm cable with one unshielded twisted pair, Kevlar strength fibres, water blocking, and a polyurethane foam jacket. Its published figures are neutral in freshwater, slightly positive in seawater, 35 kgf working strength, and 155 kgf breaking strength. Blue Robotics says its stiffness is chosen to balance flexibility with reduced tangling. The maker describes it for the primary communications link of a BlueROV2; that does not establish compatibility with this project's Ethernet PHY, 100BASE-T1, or a chosen optical system. Treat it as a mechanical construction reference until the complete electrical link is checked.
+  * **Buoyant optical tether:** TEBAOFLEX describes a 5 mm 4-fibre ROV tether with two 9/125 µm single-mode fibres, two multimode fibres, a braided LCP tensile member, foam buoyancy layer, and polyurethane jacket. This is a manufacturer-listed example of a thin, buoyant optical cable, not evidence that its stated construction meets this ROV's working load, depth, abrasion, bend-cycle, or termination needs. Obtain the controlled datasheet and confirm the exact build and test values before considering it.
+  * **Custom hybrid construction:** Winchester Interconnect's ROV tether brochure describes custom designs combining power, shielded data pairs, and optical fibres, with aramid reinforcement and buoyancy/jacket options. Fibron describes engineering tether diameter, in-water weight, tensile properties, flexibility, and handling around a specific vehicle and operating profile. These indicate that a custom hybrid tether may be scoped if one cable must carry power and optical data, but no quotation or design has been assessed.
+
+For the anti-tangle requirement, ask suppliers for bending and torsional behaviour, twist/torque balance, minimum dynamic bend radius, abrasion and crush limits, working-load rating, buoyancy at the intended water salinity, and representative deployment/retrieval test evidence. Plan strain relief and a reel or fairlead as part of the system; a tether that is neutrally buoyant may still twist, loop, snag, or drag in current.
+
 ===== More integrated converter options =====
 
 Several enclosed products are available as alternatives to open evaluation boards. Their product descriptions target automotive, industrial, or development use; an enclosure alone does not make a converter suitable for exposure to water.
@@ -83,6 +97,10 @@ Amazon UK searches did not identify listings for the PEAK, Datron TE-1000, or I-
   * I-NOVATIVE GmbH, [[https://www.i-novative.de/en/products/broadreach/factory-link-spe-m_100BASE-T1|Factory-Link-SPE-M product and order page]] and [[https://i-novative.de/downloads/facM/INO_Factory-Link-SPE-M_User_Manual_V1.0.pdf|User Manual 1.0]], 2022.
   * Cisco, [[https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/best-practices-multimode-bidi-plug-transceiver-wp.html|Transceiver Modules: Best Practices for Deploying Multimode Bidirectional Pluggable Transceivers]]. This explains BiDi wavelength-separated transmit and receive over one fibre; the article is not specific to the proposed single-mode tether.
   * Smartoptics, [[https://smartoptics.com/wp-content/uploads/2024/02/ds-tsf086-bxxc-so-sfp-1g-bidi-20km-3155-sc-r6.0.pdf|1G BiDi 20 km SFP datasheet]], showing complementary 1310/1550 nm and 1550/1310 nm modules. This is an example module specification, not a product selection.
+  * Blue Robotics, [[https://bluerobotics.com/store/cables-connectors/cables/fathom-rov-tether-rov-ready/|Fathom ROV Tether (ROV-ready) product page]] and [[https://bluerobotics.com/learn/technical-reference/|Technical Reference]], including the Fathom Slim specifications.
+  * TEBAOFLEX, [[https://tebaoflex-cable.com/product/buoyant-fiber-optic-rov-tether-cable/|4GAX181 Buoyant Fiber-Optic ROV Tether Cable product page]]; manufacturer construction example, not selected or independently verified.
+  * Winchester Interconnect, [[https://www.winconn.com/wp-content/uploads/2022/10/ROV-Tether-Cable.pdf|ROV Tether Cable brochure]], describing neutral-buoyancy and fibre/copper custom configurations.
+  * Fibron, [[https://fibron.com/products/tethers|ROV tether design and manufacture]], including buoyancy, diameter, strength, flexibility, and handling considerations.
 
 
 ~~REFNOTES~~
