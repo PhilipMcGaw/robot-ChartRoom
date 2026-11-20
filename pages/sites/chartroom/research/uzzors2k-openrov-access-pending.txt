@@ -10,7 +10,9 @@ authority       = Chartroom
 
 ===== Source and access status =====
 
-The supplied [[http://uzzors2k.com/index.php?page=openrov|Uzzors2k OpenROV page]] could not be retrieved by the web reader on 2026-11-08; the request timed out. Search did not confirm the page contents. No build details, measurements, or claims about this page are recorded until it can be reviewed.
+The user supplied the [[http://uzzors2k.com/index.php?page=openrov|Uzzors2k OpenROV page]] again on 2026-11-20. The web reader timed out when opening it, and exact-URL searches returned no results. The page contents therefore remain unverified. No build details, measurements, or claims about this page are recorded until it can be reviewed.
+
+Search results for broader queries returned descriptions of OpenROV using a thin two-wire tether, but they did not establish that those descriptions came from this Uzzors2k page. They are not used here as evidence about its contents.
 
 Chartroom already records separate historical OpenROV software and hardware references in [[sites:chartroom:research:rovmaker-edge|RovMaker Edge research notes]]. Those sources do not establish what is on this Uzzors2k page.
 
