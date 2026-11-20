@@ -64,6 +64,12 @@ Useful construction references, not confirmed product selections:
 
 For the anti-tangle requirement, ask suppliers for bending and torsional behaviour, twist/torque balance, minimum dynamic bend radius, abrasion and crush limits, working-load rating, buoyancy at the intended water salinity, and representative deployment/retrieval test evidence. Plan strain relief and a reel or fairlead as part of the system; a tether that is neutrally buoyant may still twist, loop, snag, or drag in current.
 
+===== Possible first experiment: Ethernet over power =====
+
+The user reports already having Ethernet-over-power adapters used by the do-it-yourself community and will probably try these before buying a dedicated 100BASE-T1 or optical converter. This is a user-reported exploratory plan, not a selected or validated ROV link. The adapter make/model, supported power-line protocol, electrical arrangement, and intended tether conductors have not been provided, so compatibility and performance cannot yet be assessed.
+
+Before drawing conclusions, record the adapter models and test conditions, including the cable and length, power source and load arrangement, link establishment, sustained throughput, packet loss/latency, and recovery after power cycling or interruptions. Confirm that the adapter's electrical ratings and isolation suit the actual ROV power architecture before connecting it to the vehicle. Do not treat a successful short bench link as evidence that the complete tether will work under load, at depth, or during vehicle operation.
+
 ===== More integrated converter options =====
 
 Several enclosed products are available as alternatives to open evaluation boards. Their product descriptions target automotive, industrial, or development use; an enclosure alone does not make a converter suitable for exposure to water.
