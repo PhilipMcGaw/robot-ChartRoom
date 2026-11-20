@@ -40,12 +40,25 @@ The pair of boards appears to provide a practical conversion path between a cont
 
 This proposal concerns the Ethernet physical link only. It does not establish network addressing, routing, control-software compatibility, bandwidth under video load, or safe behaviour on link loss. The existing [[sites:chartroom:architecture:communications|communications architecture]] page describes the planned embedded RS-485 bus; this 100BASE-T1 candidate would be a separate Ethernet path and is not an adopted replacement for that bus.
 
+===== More integrated converter options =====
+
+Several enclosed products are available as alternatives to open evaluation boards. Their product descriptions target automotive, industrial, or development use; an enclosure alone does not make a converter suitable for exposure to water.
+
+  * **PEAK-System PAE-Media Converter (IPEH-101101):** The manufacturer's manual version 1.1.1 (2026-11-18) specifies an aluminium-profile enclosure, RJ45 for 100BASE-TX/1000BASE-T, H-MTD and MATEnet T1 connectors, configurable operation at 100 or 1000 Mb/s, and 6–36 V DC or USB-C power. The stated ingress protection is IP20. Its connectors are a more integrated option than screw terminals and pigtails, but IP20 means the unit needs a dry, protected location; it is not a wet or pressure-rated enclosure. The product is described for automotive development and test environments.
+  * **Datron Technology TE-1000 100BASE-T1 BCM:** The UK supplier describes bidirectional 100BASE-T1/100BASE-TX conversion in a powder-coated galvanised-steel housing, with DIP-switch configuration for master/slave. The reviewed product page does not state an ingress-protection rating or substantiate underwater suitability; request the full specifications before considering installation.
+  * **I-NOVATIVE Factory-Link-SPE-M:** The manufacturer's manual specifies an aluminium housing, an IEC 63171-6 T1 industrial jack, RJ45, 5–28 V input, and a −40 to +65 °C operating range. However, the same manual explicitly says it is for development and testing and is not intended for series production. The reviewed manual does not establish a water-ingress rating.
+
+For this ROV, check that any candidate fits inside a dry, pressure-protected compartment or a separately qualified enclosure. Also confirm operating temperature, power input, T1 connector mating parts, cable construction, master/slave operation, availability, and whether the manufacturer supports the intended continuous use. None of these listed units is documented here as submersible or pressure-rated.
+
 ===== Sources =====
 
   * Microchip, [[https://www.microchip.com/en-us/development-tool/EV02N47A|EVB-LAN8770M_MC (EV02N47A) product page]], including the board overview, features, and official documentation links.
   * Microchip, [[https://ww1.microchip.com/downloads/aemDocuments/documents/UNG/ProductDocuments/UserGuides/EVB-LAN8770M-MC-Eval-Board-User-Guide-50002979A.pdf|EVB-LAN8770M_MC Evaluation Board User's Guide]], DS50002979A, 2020.
   * RS, [[https://uk.rs-online.com/web/p/communication-wireless-development-tools/2097642|product listing, RS stock number 209-7642]].
   * RS-hosted copy of the [[https://docs.rs-online.com/ba52/A700000007207128.pdf|Microchip evaluation board user's guide]].
+  * PEAK-System, [[https://www.peak-system.com/de/produkte/hardware/koppler-konverter/pae-media-converter/|PAE-Media Converter product page]] and [[https://www.peak-system.com/produktcd/Pdf/English/PAE-Media-Converter_UserMan_eng.pdf|User Manual 1.1.1]], IPEH-101101, 2026-11-18.
+  * Datron Technology, [[https://datrontechnology.co.uk/product/100base-t1-bcm/|100BASE-T1 BCM product page]], model TE-1000.
+  * I-NOVATIVE GmbH, [[https://i-novative.de/downloads/facM/INO_Factory-Link-SPE-M_User_Manual_V1.0.pdf|Factory-Link-SPE-M User Manual 1.0]], 2022.
 
 
 ~~REFNOTES~~
