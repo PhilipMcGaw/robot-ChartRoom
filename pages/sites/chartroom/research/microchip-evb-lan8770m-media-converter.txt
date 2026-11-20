@@ -78,6 +78,52 @@ The user supplied the [[https://github.com/OpenROV/openrov-electronics/tree/mast
 
 The user also supplied the [[https://github.com/OpenROV/openrov-electronics|OpenROV electronics repository]]. Its README describes the repository as electronics files for OpenROV do-it-yourself kits, including schematics, Gerbers, and diagrams. The repository groups several hardware generations and modules, including controller boards and separate topside adapter folders. Use the relevant board revision's files when researching a circuit; do not treat the repository as one interchangeable design or as evidence about the user's adapters.
 
+===== OpenROV historical implementation: Tenda P200 and HomePlug AV =====
+
+Two primary historical OpenROV references now provide more detail than the repository directory listing alone. They describe different generations/context and should not be collapsed into one hardware revision.
+
+==== OpenROV v2.5 assembly guide (2014) ====
+
+The archived OpenROV v2.5 assembly guide explicitly identifies the **communication PCB from a Tenda P200 HomePlug adapter** as the vehicle-side Ethernet-over-twisted-pair modem. The guide instructs the builder to open the P200 enclosure and separate the Ethernet communication PCB from its power-regulation PCB, retaining the board with the RJ45 connector. It describes plugging that communication PCB into headers on the OpenROV Controller Board and connecting it to the BeagleBone Black Ethernet port with a short Ethernet jumper.
+
+The guide also warns that Tenda changed the P200 PCB between revisions: its July 2013 note says the newer v2 board was laid out as a mirror image of v1 and used female 2×6 headers rather than board stackers. The guide says the newer revision had not yet been worked through in that document. This is a material compatibility warning: do not assume a salvaged P200 communication board has the same orientation, header arrangement, or pinout as the board shown in the guide.
+
+For the topside endpoint, the guide describes using a second HomePlug adapter board in a separate topside enclosure. Its build procedure uses a USB regulator board and custom wiring to power/interface the HomePlug PCB, then brings the tether pair to a two-way terminal block. It states that either tether conductor may be connected to either terminal; the pair has no required polarity for the HomePlug data connection. The laptop connects to the topside adapter through Ethernet, while USB power is applied to the topside assembly. The guide's wiring steps are specific to the described board and revision; they are not a generic wiring diagram for arbitrary HomePlug adapters.
+
+This assembly guide is an archived secondary-hosted copy of OpenROV's 2014 Dozuki instructions. It is useful historical build evidence, but the underlying OpenROV schematic and bill of materials have not yet been traced component-by-component in this review.
+
+==== OpenROV presentation (2017) — reported link performance ====
+
+Charles Cross's *Bridging the Gap Between Industrial and Consumer IoT With DDS* presentation, delivered under the OpenROV heading, contains a slide titled **“Communication Solution: Homeplug AV”**. It states that OpenROV used HomePlug AV over twisted pair and reports:
+
+  * approximately **80 Mbit/s at the MAC layer**;
+  * operation as an Ethernet bridge;
+  * only two tether wires required;
+  * a tested range of approximately **350 m**;
+  * an Atheros power-line-communications chipset, packaged in a PCI Express form factor.
+
+These are figures reported in the 2017 presentation, not a guaranteed performance specification for the Tenda P200, the 2.5 assembly, the 2.6 topside board, or the user's own adapters. The presentation does not provide a test method, cable construction, noise environment, packet-loss result, application throughput, or latency distribution on that slide. In particular, the approximately 80 Mbit/s figure is explicitly MAC-layer bandwidth and must not be represented as measured application payload throughput.
+
+The presentation's Atheros/PCI Express description should not be assumed to identify the Tenda P200 communication PCB used in the 2014 v2.5 build guide. They are separate source observations from different dates and may describe different OpenROV hardware iterations.
+
+==== Tenda P200 product specification context ====
+
+Tenda's P200 user guide describes the complete retail adapter as a HomePlug AV device rated at a nominal 200 Mbit/s PLC link rate, with a 10/100 Mbit/s RJ45 interface and a stated power-line transmission distance of up to 300 m. It specifies AC 100–240 V input for the complete retail product. These are manufacturer product ratings for the intact mains-powered adapter, not the OpenROV tether's measured throughput or range. The 200 Mbit/s PHY/PLC rate, OpenROV's 80 Mbit/s MAC-layer figure, and application payload throughput are different measures and must not be compared as if equivalent.
+
+OpenROV's v2.5 guide removes the P200 communication PCB from its original mains power-regulation PCB and provides a separate, board-level power/interface arrangement. This does **not** mean an intact Tenda P200 adapter can be powered directly from a low-voltage ROV supply, nor does it establish that arbitrary DC can safely be injected onto the tether pair. The precise coupling, filtering, isolation, and power-injection circuit must be checked for the exact board revision before combining DC power and HomePlug signalling on shared conductors.
+
+==== Relevance to this ROV investigation ====
+
+The useful architectural precedent is a pair of HomePlug endpoints forming an Ethernet bridge over a two-conductor tether, with one endpoint inside the vehicle and a separately packaged topside endpoint. It supports keeping the vehicle computer's interface as ordinary Ethernet while the tether modem handles the physical transport.
+
+For our investigation, the OpenROV implementation is a reference architecture, not a ready-to-copy wiring design. The user's existing powerline adapters and the APISQUEEN module remain distinct hardware candidates; neither has been identified as the Tenda P200 revision used by OpenROV. Before bench connection, identify each modem and board revision, determine its DC input and line-coupling arrangement, and establish whether the tether pair carries data only or data plus DC. Then test link establishment, sustained application throughput, latency/jitter, packet loss, and recovery while operating the propulsion electronics. The 2017 350 m result is a useful historical range reference, not an acceptance criterion for our tether.
+
+===== Additional OpenROV and Tenda sources =====
+
+  * OpenROV, [[https://abcdocz.com/doc/227200/openrov-how-to-assemble-openrov-v2.5-written-by--openrov|How to Assemble OpenROV v2.5]], archived copy of the 2014 Dozuki guide, especially steps 59–63 and 76–80 (Tenda P200 communication PCB, revision warning, controller/BeagleBone connection, topside adapter, USB regulator wiring, and two-wire terminal block).
+  * Charles Cross / OpenROV, [[https://info.rti.com/hubfs/US%20Connext%20Conference%202017%20Presentations/Open%20ROV%20Presentation%20.pdf|Bridging the Gap Between Industrial and Consumer IoT With DDS]], 2017, slide “Communication Solution: Homeplug AV” (reported ~80 Mbit/s MAC-layer bandwidth and ~350 m tested range).
+  * Tenda, [[https://www.tenda.cz/sites/Upload/P200/P200_UG.pdf|P200 200Mbps PowerLine Mini Adapter User Guide]], including stated HomePlug AV compatibility, 200 Mbit/s PLC rate, 10/100 Mbit/s Ethernet interface, 300 m power-line distance, and AC input rating. These are retail-adapter specifications, not underwater tether ratings.
+
 ==== How HomePlug / power-line communication uses a two-wire tether ====
 
 HomePlug AV, based on IEEE 1901 physical-layer and media-access methods, carries network data as a high-frequency modulated signal over a conductor pair. The Ethernet-facing adapter takes Ethernet frames and its power-line modem encodes them across many narrow frequency subcarriers using orthogonal frequency-division multiplexing (OFDM). The receiving modem decodes the signal and returns the frames to Ethernet. Both directions share the same pair under the protocol's channel-access control; the two tether wires are not separate Ethernet transmit and receive wires. The modem can adapt transmission across subcarriers to suit channel conditions. The advertised physical or link rate is not the same as application throughput.
