@@ -121,4 +121,4 @@ The user is considering two Microchip EVB-LAN8770M_MC boards (EV02N47A; RS 209-7
 
 ## 2026-11-20 — Ethernet-over-power tether experiment
 
-The user reports having Ethernet-over-power adapters used by the DIY community and will probably test them first for the ROV tether. Their make/model and electrical arrangement are unknown; no compatibility or test result is established. A bench-evaluation task is listed in [TODO](TODO.md), and the ROV communications research note records the open evidence needed.
+The user reports having Ethernet-over-power adapters used by the DIY community and will probably test them first for the ROV tether. The supplied “Power Carrier Wiring Diagram” appears to show two adapters connected to hosts by network cables, an umbilical between adapters, and 9–13 V DC power at each end; the board model, pinout, and power/data conductor arrangement are unidentified. No compatibility or test result is established. A bench-evaluation task is listed in [TODO](TODO.md), and the ROV communications research note records the open evidence needed.

@@ -66,9 +66,11 @@ For the anti-tangle requirement, ask suppliers for bending and torsional behavio
 
 ===== Possible first experiment: Ethernet over power =====
 
-The user reports already having Ethernet-over-power adapters used by the do-it-yourself community and will probably try these before buying a dedicated 100BASE-T1 or optical converter. This is a user-reported exploratory plan, not a selected or validated ROV link. The adapter make/model, supported power-line protocol, electrical arrangement, and intended tether conductors have not been provided, so compatibility and performance cannot yet be assessed.
+The user reports already having Ethernet-over-power adapters used by the do-it-yourself community and will probably try these before buying a dedicated 100BASE-T1 or optical converter. This is a user-reported exploratory plan, not a selected or validated ROV link. The adapter make/model and supported power-line protocol have not been provided, so compatibility and performance cannot yet be assessed.
 
-Before drawing conclusions, record the adapter models and test conditions, including the cable and length, power source and load arrangement, link establishment, sustained throughput, packet loss/latency, and recovery after power cycling or interruptions. Confirm that the adapter's electrical ratings and isolation suit the actual ROV power architecture before connecting it to the vehicle. Do not treat a successful short bench link as evidence that the complete tether will work under load, at depth, or during vehicle operation.
+The user supplied an image titled **Power Carrier Wiring Diagram**. It appears to show one adapter at each end, a network cable from each adapter to a host (a Raspberry Pi 3 Model B is labelled at one end), an interconnecting cable labelled “umbilical cord cable”, and 9–13 V DC power connections shown at both adapters. The diagram does not identify a manufacturer, board model, pinout, power-source relationship, or the exact conductors used for power and data. Treat this as a user-supplied topology reference, not as a wiring specification or evidence of a tested ROV link.
+
+Before drawing conclusions, record the adapter models and test conditions, including the umbilical conductors and cable length, how power is supplied at each end, link establishment, sustained throughput, packet loss/latency, and recovery after power cycling or interruptions. Confirm that the adapter's electrical ratings and isolation suit the actual ROV power architecture before connecting it to the vehicle. Do not treat a successful short bench link as evidence that the complete tether will work under load, at depth, or during vehicle operation.
 
 ===== More integrated converter options =====
 
