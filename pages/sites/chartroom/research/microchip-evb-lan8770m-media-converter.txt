@@ -50,6 +50,17 @@ Several enclosed products are available as alternatives to open evaluation board
 
 For this ROV, check that any candidate fits inside a dry, pressure-protected compartment or a separately qualified enclosure. Also confirm operating temperature, power input, T1 connector mating parts, cable construction, master/slave operation, availability, and whether the manufacturer supports the intended continuous use. None of these listed units is documented here as submersible or pressure-rated.
 
+===== Retailer links and availability snapshot (2026-11-20) =====
+
+Prices and stock status below are a dated web check and can change. Prices are shown as listed; VAT and delivery may be extra.
+
+  * **PEAK-System PAE-Media Converter (IPEH-101101):** [[https://controltech.uk.com/collections/most-popular/products/pae-media-converter|Control Technologies UK product listing]] showed £555 per unit, excluding VAT, available to order from the manufacturer. The listing advised contacting the supplier to confirm lead time. Its product description said H-MTD and MATEnet cables would be available soon; confirm that suitable cables and mating connectors can be supplied before ordering two units. The [[https://www.peak-system.com/de/produkte/hardware/koppler-konverter/pae-media-converter/|PEAK manufacturer page]] provides product information.
+  * **Datron Technology / Technica Engineering TE-1000:** [[https://datrontechnology.co.uk/product/100base-t1-bcm/|Datron Technology UK product page]] describes the TE-1000 100BASE-T1 BCM and links a datasheet. The reviewed page did not show a price or stock status; request a quote and confirm supply of the matching cable/connectors.
+  * **I-NOVATIVE Factory-Link-SPE-M:** [[https://www.i-novative.de/en/products/broadreach/factory-link-spe-m_100BASE-T1|I-NOVATIVE manufacturer's product and order page]] showed €265.56 per unit, excluding VAT and delivery, and stated a delivery time of within seven days. The manufacturer's manual limits the model to development and testing and says it is not intended for series production.
+  * **Microchip EV02N47A (RS 209-7642):** [[https://uk.rs-online.com/web/p/communication-wireless-development-tools/2097642|RS product listing]] showed £49.77 per unit excluding VAT and temporarily out of stock. At the time checked, it listed incoming batches shipping from 2026-11-24, 2027-01-05, and 2027-01-19. This is the evaluation board, not one of the enclosed alternatives.
+
+Amazon UK searches did not identify listings for the PEAK, Datron TE-1000, or I-NOVATIVE converter at the time checked. No RS listing was found for those three enclosed alternatives. The links above are to Control Technologies UK, Datron Technology UK, I-NOVATIVE, PEAK, and RS respectively.
+
 ===== Sources =====
 
   * Microchip, [[https://www.microchip.com/en-us/development-tool/EV02N47A|EVB-LAN8770M_MC (EV02N47A) product page]], including the board overview, features, and official documentation links.
@@ -57,8 +68,9 @@ For this ROV, check that any candidate fits inside a dry, pressure-protected com
   * RS, [[https://uk.rs-online.com/web/p/communication-wireless-development-tools/2097642|product listing, RS stock number 209-7642]].
   * RS-hosted copy of the [[https://docs.rs-online.com/ba52/A700000007207128.pdf|Microchip evaluation board user's guide]].
   * PEAK-System, [[https://www.peak-system.com/de/produkte/hardware/koppler-konverter/pae-media-converter/|PAE-Media Converter product page]] and [[https://www.peak-system.com/produktcd/Pdf/English/PAE-Media-Converter_UserMan_eng.pdf|User Manual 1.1.1]], IPEH-101101, 2026-11-18.
+  * Control Technologies UK, [[https://controltech.uk.com/collections/most-popular/products/pae-media-converter|PAE-Media Converter product listing]], accessed 2026-11-20.
   * Datron Technology, [[https://datrontechnology.co.uk/product/100base-t1-bcm/|100BASE-T1 BCM product page]], model TE-1000.
-  * I-NOVATIVE GmbH, [[https://i-novative.de/downloads/facM/INO_Factory-Link-SPE-M_User_Manual_V1.0.pdf|Factory-Link-SPE-M User Manual 1.0]], 2022.
+  * I-NOVATIVE GmbH, [[https://www.i-novative.de/en/products/broadreach/factory-link-spe-m_100BASE-T1|Factory-Link-SPE-M product and order page]] and [[https://i-novative.de/downloads/facM/INO_Factory-Link-SPE-M_User_Manual_V1.0.pdf|User Manual 1.0]], 2022.
 
 
 ~~REFNOTES~~
