@@ -40,6 +40,16 @@ The pair of boards appears to provide a practical conversion path between a cont
 
 This proposal concerns the Ethernet physical link only. It does not establish network addressing, routing, control-software compatibility, bandwidth under video load, or safe behaviour on link loss. The existing [[sites:chartroom:architecture:communications|communications architecture]] page describes the planned embedded RS-485 bus; this 100BASE-T1 candidate would be a separate Ethernet path and is not an adopted replacement for that bus.
 
+===== Alternative under consideration: simplex optical fibre =====
+
+The user is also considering a single-fibre optical Ethernet link to carry data to and from the ROV. The proposed medium is single-mode fibre, described as 9/125 µm, with bidirectional operation over one strand using wavelength-division multiplexing (WDM), often sold as a BiDi transceiver pair.
+
+In a BiDi arrangement, each end transmits and receives on different wavelengths over the same strand. The two modules must be a complementary pair: for example, one end transmits at 1310 nm and receives at 1550 nm, while the other transmits at 1550 nm and receives at 1310 nm. Matching the physical connector, fibre type, Ethernet speed, wavelength pair, optical reach, and transceiver host interface is essential. Cisco's transceiver guidance describes the wavelength-separated transmit/receive operation; the Smartoptics 1G BiDi datasheet gives the complementary 1310/1550 nm and 1550/1310 nm example.
+
+For the ROV architecture, this would require compatible optical interfaces at the control-PC and ROV ends. If either host lacks an optical Ethernet port, an Ethernet-to-fibre media converter or switch with the correct BiDi optics would be needed at that end. The glass fibre carries data, not electrical power, so vehicle power must be provided separately. A fibre link could avoid a conductive data pair along the tether and offers galvanic isolation, but the cable, terminations, protection, and handling still need to suit tether deployment. Confirm bend radius, tensile and crush protection, water blocking, connector retention, sealing, and pressure/environmental requirements with the cable and connector manufacturers.
+
+This is an alternative physical link to the copper 100BASE-T1 proposal, not a selected design. No fibre cable, BiDi module pair, or Ethernet media converter has been selected or tested. Compare both options using the actual tether length and construction, available endpoint ports, data rate, power budget, connector/strain-relief design, serviceability, and wet/pressure boundaries.
+
 ===== More integrated converter options =====
 
 Several enclosed products are available as alternatives to open evaluation boards. Their product descriptions target automotive, industrial, or development use; an enclosure alone does not make a converter suitable for exposure to water.
@@ -71,6 +81,8 @@ Amazon UK searches did not identify listings for the PEAK, Datron TE-1000, or I-
   * Control Technologies UK, [[https://controltech.uk.com/collections/most-popular/products/pae-media-converter|PAE-Media Converter product listing]], accessed 2026-11-20.
   * Datron Technology, [[https://datrontechnology.co.uk/product/100base-t1-bcm/|100BASE-T1 BCM product page]], model TE-1000.
   * I-NOVATIVE GmbH, [[https://www.i-novative.de/en/products/broadreach/factory-link-spe-m_100BASE-T1|Factory-Link-SPE-M product and order page]] and [[https://i-novative.de/downloads/facM/INO_Factory-Link-SPE-M_User_Manual_V1.0.pdf|User Manual 1.0]], 2022.
+  * Cisco, [[https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/best-practices-multimode-bidi-plug-transceiver-wp.html|Transceiver Modules: Best Practices for Deploying Multimode Bidirectional Pluggable Transceivers]]. This explains BiDi wavelength-separated transmit and receive over one fibre; the article is not specific to the proposed single-mode tether.
+  * Smartoptics, [[https://smartoptics.com/wp-content/uploads/2024/02/ds-tsf086-bxxc-so-sfp-1g-bidi-20km-3155-sc-r6.0.pdf|1G BiDi 20 km SFP datasheet]], showing complementary 1310/1550 nm and 1550/1310 nm modules. This is an example module specification, not a product selection.
 
 
 ~~REFNOTES~~
