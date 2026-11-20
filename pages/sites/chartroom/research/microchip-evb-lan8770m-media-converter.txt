@@ -181,3 +181,40 @@ Amazon UK searches did not identify listings for the PEAK, Datron TE-1000, or I-
 Backlinks:
 
 {{backlinks>.}}
+
+
+===== Tether power delivery discussion (2026-11-20) =====
+
+The user considered transmitting 24 V DC over the same two-conductor HomePlug tether pair to provide low-rate battery charging. The discussion considered 5 A initially, then 2 A over a 100 m one-way cable, and compared 22 AWG with 20 AWG copper. This remains an investigated concept only; no power-injection circuit or charging system has been designed, built, or tested.
+
+==== Corrected cable calculations ====
+
+For a two-conductor circuit with 100 m one-way length, current travels 100 m out and 100 m back (200 m total conductor length). Approximate nominal copper resistance at 20 °C is 53.0 Ω/km per conductor for 22 AWG and 33.3 Ω/km per conductor for 20 AWG. On that basis:
+
+^ Conductor ^ Loop resistance (200 m) ^ Drop at 2 A ^ Cable loss at 2 A ^ ROV-end voltage from 24 V ^
+| 22 AWG copper | 10.6 Ω | 21.2 V | 42.4 W | 2.8 V |
+| 20 AWG copper | 6.66 Ω | 13.3 V | 26.6 W | 10.7 V |
+
+These are first-order DC calculations, not cable ampacity ratings or a design approval. They exclude connector/contact resistance and temperature rise; copper resistance increases with temperature. The earlier conversational estimate of 3.22 Ω loop resistance for 22 AWG was incorrect. The subsequent 20 AWG estimate of 6.56 Ω was close but should be treated as approximately 6.66 Ω using 33.3 Ω/km. Neither conductor is suitable for 24 V, 2 A over this assumed 100 m one-way run if the intention is to deliver a useful charging voltage at the ROV.
+
+A lower current reduces voltage drop and loss, but does not establish a safe continuous current. Cable ampacity depends on the actual cable construction, insulation, bundling, thermal environment, allowable temperature rise, connectors, and installation. No maximum design current has been established for the user's cable.
+
+==== HomePlug coexistence and design separation ====
+
+Blue Robotics' Fathom-X documentation and forum discussion provide a useful precedent: HomePlug AV data can coexist with DC on a tether pair when the data interface is capacitively coupled and the DC is tapped separately. Blue Robotics explicitly cautions that DC must not be routed through the Fathom-X communication board; power is separately extracted/injected. Its forum discussion also notes that switching-converter noise can reduce link performance or cause disconnections. This is evidence about the Fathom-X design and reported use, not proof that the OpenROV/Tenda P200 boards or the user's adapters tolerate the same arrangement.
+
+Sources:
+  * Blue Robotics, [[https://bluerobotics.com/store/comm-control-power/tether-interface/fathom-x-tether-interface-board-set-copy/|Fathom-X Tether Interface Board Set]], product information and technical details.
+  * Blue Robotics forum, [[https://discuss.bluerobotics.com/t/external-power-via-tether/686|External Power via Tether]], discussion of capacitive signal coupling and separate DC tapping.
+  * Blue Robotics forum, [[https://discuss.bluerobotics.com/t/powering-fathom-x-from-tether/18129|Powering Fathom X from tether]], 2024 discussion of DC coexistence and possible communication degradation from noisy loads.
+  * Blue Robotics forum, [[https://discuss.bluerobotics.com/t/fathom-x-tether-maximum-current-rating/18833|Fathom X tether maximum current rating]], discussion of conductor current and the need not to route power through the Fathom-X board.
+
+The OpenROV Topside Adapter Board 2.6 is a separate design. Its documented 5 V tether bias is a low-current power-on signalling arrangement, not a 24 V power feed. Do not replace or bypass its bias components to apply 24 V. The exact OpenROV schematic, P200 revision, line coupling, protection, and isolation would need a component-level review before any shared-pair DC experiment. The OpenROV v2.5 assembly guide also warns that Tenda P200 PCB revisions differ.
+
+==== Current design position ====
+
+Following the discussion, the preferred initial arrangement is to keep the HomePlug pair **communications-only** and not transmit battery-charging current over it. This is a design preference for the initial ROV architecture, not a validated implementation or a permanent prohibition on future tether power.
+
+If an operational requirement for continuous external power emerges, investigate a tether with separate power conductors and a dedicated power-distribution design, rather than combining charging current with the HomePlug pair. Otherwise, recharge the vehicle battery when the ROV is recovered. Any onboard charger must be appropriate to the battery chemistry and cell configuration; do not connect the tether supply directly to the battery.
+
+No current rating, charging power, battery chemistry, tether conductor specification, or approved power-delivery topology has been selected. The proposed 24 V / 5 A (120 W) and 24 V / 2 A (48 W) concepts are not adopted requirements. The 100 m length used in the calculations was a scenario posed in the discussion, not a confirmed final tether length.
