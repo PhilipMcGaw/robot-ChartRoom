@@ -4,4 +4,4 @@
 - [ ] Solder the MPU-6050 breakout header; confirm the mounting orientation and align VCC, GND, SCL, and SDA with J1 pins 1–4 before fitting it.
 - [ ] Check D1 (SS34) and the Adeept HAT power path, then bench-test the example set and record conditions and results in the [demo-code index](pages/sites/chartroom/research/adeept-rpi-robot-hat-v3-demo-code.txt).
 - [ ] Review the Adeept examples PyInfra deployment with `--dry`, then apply it over SSH, reboot for I²C/SPI or OS upgrades, verify the shell defaults, and record the Raspberry Pi OS version and setup outcome before testing examples.
-- [ ] Bench-evaluate the existing Ethernet-over-power adapters for the ROV tether; record adapter models, electrical setup, cable/length, link stability, throughput, and recovery before choosing a dedicated converter.
+- [ ] Identify the exact variant of the APISQUEEN 500Mbps power-carrier module, then bench-evaluate the existing adapters for the ROV tether; record the electrical setup, cable/length, link stability, throughput, and recovery before choosing a dedicated converter.
