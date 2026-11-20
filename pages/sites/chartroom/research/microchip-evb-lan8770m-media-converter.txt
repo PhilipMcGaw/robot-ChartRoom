@@ -1,0 +1,47 @@
+====== Microchip EVB-LAN8770M_MC single-pair Ethernet converter ======
+{{tag>research rov ethernet 100base-t1 100base-tx hardware}}
+
+~~META:
+description     = Research note on using the Microchip EVB-LAN8770M_MC for an ROV single-pair Ethernet link.
+type            = research
+status          = candidate
+authority       = Microchip product documentation; RS product listing
+~~
+
+===== Candidate use =====
+
+The user is considering the Microchip EVB-LAN8770M_MC development board (EV02N47A; RS stock number 209-7642) to connect a control PC to the ROV over 100BASE-T1 single-pair Ethernet. This is a research candidate only. It has not been purchased, integrated, or tested with the ROV or its tether.
+
+Microchip describes the board as a media converter between 100BASE-TX on an RJ45 connector and 100BASE-T1 on a single-pair interface. It can let a conventional Ethernet host connect to a compatible 100BASE-T1 endpoint. A single EVB-LAN8770M_MC does not provide both ends of the link: the ROV must itself have a compatible 100BASE-T1 PHY and Ethernet interface, or use a suitable second media-conversion arrangement. Compatibility with the ROV computer and its network stack has not been established.
+
+===== Manufacturer-documented setup =====
+
+The Microchip evaluation board user's guide (document DS50002979A, 2020) states:
+
+  * the board is powered through micro-USB;
+  * the RJ45 side uses a Category 5 Ethernet cable and must link at 100 Mb/s, not 10 Mb/s;
+  * the single twisted-pair 100BASE-T1 connection uses screw terminal J9;
+  * the 100BASE-T1 link requires one end configured as master and the other as slave; on this board, J3 open selects master and J3 closed selects slave;
+  * jumpers J6 and J11 must be fitted for normal operation when USB-powered.
+
+These are evaluation-board setup details, not a confirmed installation procedure for the ROV. Confirm the board revision and its guide before wiring. The guide's setup uses a single twisted pair; the cited material does not establish suitability of a particular underwater tether, connector, cable length, shielding, or environmental enclosure.
+
+===== Assessment and open checks =====
+
+The board appears to provide a practical PC-side conversion point if the ROV side already supports 100BASE-T1. Before selecting it, identify the ROV-side MAC/PHY hardware and its master/slave configuration, then confirm the tether pair and connector meet that interface's requirements. Bench-test link establishment and sustained traffic at the intended cable length, and test recovery after disconnects and power cycles. Assess whether this evaluation board is suitable for the intended control-station installation and operating environment.
+
+This proposal concerns the Ethernet physical link only. It does not establish network addressing, routing, control-software compatibility, bandwidth under video load, or safe behaviour on link loss. The existing [[sites:chartroom:architecture:communications|communications architecture]] page describes the planned embedded RS-485 bus; this 100BASE-T1 candidate would be a separate Ethernet path and is not an adopted replacement for that bus.
+
+===== Sources =====
+
+  * Microchip, [[https://www.microchip.com/en-us/development-tool/EV02N47A|EVB-LAN8770M_MC (EV02N47A) product page]], including the board overview, features, and official documentation links.
+  * Microchip, [[https://ww1.microchip.com/downloads/aemDocuments/documents/UNG/ProductDocuments/UserGuides/EVB-LAN8770M-MC-Eval-Board-User-Guide-50002979A.pdf|EVB-LAN8770M_MC Evaluation Board User's Guide]], DS50002979A, 2020.
+  * RS, [[https://uk.rs-online.com/web/p/communication-wireless-development-tools/2097642|product listing, RS stock number 209-7642]].
+  * RS-hosted copy of the [[https://docs.rs-online.com/ba52/A700000007207128.pdf|Microchip evaluation board user's guide]].
+
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}

@@ -64,6 +64,8 @@ The links below cover all research notes. Use the related-research links within 
 
 ==== Underwater robotics and ROVs ====
 
+  * [[sites:chartroom:research:microchip-evb-lan8770m-media-converter|Microchip EVB-LAN8770M_MC single-pair Ethernet converter]]
+
   * [[sites:chartroom:research:reddit-raspberry-pi-rgb-led-matrix-display|Reddit Raspberry Pi RGB LED matrix display — review candidate]]
 
   * [[sites:chartroom:research:techmonkeybusiness-open-source-rov-and-robotics|TechMonkeyBusiness open-source ROV and robotics references]]

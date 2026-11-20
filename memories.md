@@ -114,3 +114,7 @@ The user reports Adeept authorised redistribution of examples 02–13. Unmodifie
 ## 2026-11-17 — MPU-6050 breakout header still needs soldering
 
 The user reports the MPU-6050 module header has not yet been soldered. Before fitting the module to Adeept HAT J1, confirm the chosen mounting orientation and align VCC, GND, SCL, and SDA with J1 pins 1–4. Soldering and installation are pending; see the [hardware TODO](TODO.md).
+
+## 2026-11-20 — ROV single-pair Ethernet converter candidate
+
+The user is considering Microchip's EVB-LAN8770M_MC (EV02N47A; RS 209-7642) for a control-PC-to-ROV 100BASE-T1 connection. The manufacturer's documentation describes a 100BASE-TX RJ45 to 100BASE-T1 single-pair evaluation-board converter. One board is only one conversion endpoint; ROV-side 100BASE-T1 support, master/slave configuration, tether compatibility, and environmental suitability remain unconfirmed. No selection or test has occurred. See the [Chartroom research note](pages/sites/chartroom/research/microchip-evb-lan8770m-media-converter.txt).
