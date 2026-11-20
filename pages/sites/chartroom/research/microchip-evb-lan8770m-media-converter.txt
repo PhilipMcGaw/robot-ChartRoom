@@ -12,7 +12,13 @@ authority       = Microchip product documentation; RS product listing
 
 The user is considering the Microchip EVB-LAN8770M_MC development board (EV02N47A; RS stock number 209-7642) to connect a control PC to the ROV over 100BASE-T1 single-pair Ethernet. This is a research candidate only. It has not been purchased, integrated, or tested with the ROV or its tether.
 
-Microchip describes the board as a media converter between 100BASE-TX on an RJ45 connector and 100BASE-T1 on a single-pair interface. It can let a conventional Ethernet host connect to a compatible 100BASE-T1 endpoint. A single EVB-LAN8770M_MC does not provide both ends of the link: the ROV must itself have a compatible 100BASE-T1 PHY and Ethernet interface, or use a suitable second media-conversion arrangement. Compatibility with the ROV computer and its network stack has not been established.
+Microchip describes the board as a media converter between 100BASE-TX on an RJ45 connector and 100BASE-T1 on a single-pair interface. Two boards could provide the proposed topology:
+
+<code>
+Control PC — 100BASE-TX — surface EVB-LAN8770M_MC — 100BASE-T1 tether pair — ROV EVB-LAN8770M_MC — 100BASE-TX — ROV computer
+</code>
+
+This uses each board for one media-conversion endpoint. The user proposes locating one board at the surface and one in the ROV. Compatibility with the ROV computer, including its Ethernet interface and network configuration, has not been established. Both boards also need suitable power at their respective locations.
 
 ===== Manufacturer-documented setup =====
 
@@ -24,11 +30,13 @@ The Microchip evaluation board user's guide (document DS50002979A, 2020) states:
   * the 100BASE-T1 link requires one end configured as master and the other as slave; on this board, J3 open selects master and J3 closed selects slave;
   * jumpers J6 and J11 must be fitted for normal operation when USB-powered.
 
-These are evaluation-board setup details, not a confirmed installation procedure for the ROV. Confirm the board revision and its guide before wiring. The guide's setup uses a single twisted pair; the cited material does not establish suitability of a particular underwater tether, connector, cable length, shielding, or environmental enclosure.
+These are evaluation-board setup details, not a confirmed installation procedure for the ROV. Confirm the board revisions and guide before wiring. For the proposed two-board arrangement, configure one 100BASE-T1 port as master and the other as slave. The guide's setup uses a single twisted pair; the cited material does not establish suitability of a particular underwater tether, connector, cable length, shielding, or environmental enclosure.
+
+The user proposes short pigtails from each board's T1 screw terminal to a more mechanically robust connector for the inter-board tether link. This keeps the evaluation-board screw terminals at the board end of the pigtails rather than using them as the tether's mechanical termination. The connector type and its electrical, sealing, strain-relief, and mechanical suitability are not yet selected or validated.
 
 ===== Assessment and open checks =====
 
-The board appears to provide a practical PC-side conversion point if the ROV side already supports 100BASE-T1. Before selecting it, identify the ROV-side MAC/PHY hardware and its master/slave configuration, then confirm the tether pair and connector meet that interface's requirements. Bench-test link establishment and sustained traffic at the intended cable length, and test recovery after disconnects and power cycles. Assess whether this evaluation board is suitable for the intended control-station installation and operating environment.
+The pair of boards appears to provide a practical conversion path between a control PC and an ROV computer with a conventional 100BASE-TX Ethernet port. Before selecting it, confirm both host interfaces, board power arrangements, the T1 master/slave settings, and the tether pair and connector requirements. Bench-test link establishment and sustained traffic at the intended cable length, and test recovery after disconnects and power cycles. Assess whether the evaluation boards are suitable for their intended surface and ROV environments.
 
 This proposal concerns the Ethernet physical link only. It does not establish network addressing, routing, control-software compatibility, bandwidth under video load, or safe behaviour on link loss. The existing [[sites:chartroom:architecture:communications|communications architecture]] page describes the planned embedded RS-485 bus; this 100BASE-T1 candidate would be a separate Ethernet path and is not an adopted replacement for that bus.
 
