@@ -1,0 +1,90 @@
+====== Robotical Cog — physical computing device ======
+{{tag>research, robotical, physical-computing, sensors, educational-robotics, coding }}
+
+~~META:
+description     = Robotical Cog as an inexpensive sensor-and-output physical computing platform and educational reference.
+type            = research
+status          = reference
+authority       = Chartroom
+date            = 2026-11-22
+~~
+
+===== Overview =====
+
+Robotical Cog is a compact physical-computing device aimed at introducing programming through physical inputs and outputs. It pairs with Robotical's free app and block-based environments, letting learners control lights, sounds, and on-screen sprites while also using onboard sensors as programming inputs.
+
+This is a **research reference**, not a selected ChartRoom, SwarmBot, PiWars, or K9 hardware platform. Its main value is the educational interaction model and compact sensor/I/O integration.
+
+===== Hardware and capabilities =====
+
+The official product page describes:
+
+  * Force-sensitive central button.
+  * Multicolour LED outputs (the product overview advertises 13 LEDs).
+  * Built-in speaker / sound output.
+  * Motion sensing, including acceleration, tilt, and rotation.
+  * Ambient light sensor.
+  * Proximity / obstacle sensing; the quick-start guide describes simple detection and rough distance values through the Blocks environment.
+  * Bluetooth, Wi-Fi, and USB-C connectivity listed by the product page; the quick-start guide details Bluetooth pairing/connection workflows.
+  * Power from two AA batteries or USB-C.
+
+The sensor dashboard can display live sensor readings from connected Cogs. The device is also able to interact with virtual sprites, providing a physical-to-digital and digital-to-physical feedback loop.
+
+===== Software and teaching environments =====
+
+The Robotical App supports Cog and Marty. Cog is presented through:
+
+  * **Introductory games and Code Wheel** — very simple interaction and sequencing.
+  * **Blocks Jr** — icon-based visual programming based on ScratchJr, suited to early readers and beginners.
+  * **Blocks** — Scratch-style block coding with expanded access to sensors, outputs, logic, and multiple connected devices.
+  * **Sensor Dashboard** — live display of sensor data.
+
+The app is advertised as available on web, iOS, Android, Windows, macOS, and Chromebooks (availability varies by form factor/app delivery). Robotical states that the app has no subscription/paywall and no account sign-up requirement for basic use.
+
+===== Project relevance =====
+
+==== SwarmBot and Robot Code learning materials ====
+
+Cog is a useful reference for how to present physical computing to learners with low setup overhead: combine a tactile control, simple sensors, visible outputs, guided starter activities, and an exploratory sandbox. The educational progression—from guided games and sequencing to block programming and live sensor data—is more relevant than the specific hardware.
+
+Potential ideas worth considering in SwarmBot or Robot Code:
+
+  * Beginner exercises for input/output, events, thresholds, loops, and timing.
+  * Live sensor dashboard as a debugging/learning aid.
+  * Simple reaction-time or balance/tilt experiments.
+  * Small data-collection exercises to introduce sampling and sensor interpretation.
+  * Connecting physical robot actions to virtual sprites or simulation for immediate feedback.
+  * Keep the learning interface accessible and beginner-friendly, but allow progression toward more expressive programming.
+
+Cog is not a replacement for SwarmBot's robot control or safety architecture. It is a dedicated educational physical-computing device; its wireless features and sensor set should not be assumed to translate directly to the SwarmBot hardware.
+
+==== PiWars and K9 ====
+
+No direct hardware adoption is proposed. As a teaching/reference device, Cog's sensor-dashboard and I/O examples could inform small exercises or interface ideas, but the existing PiWars and K9 designs have their own hardware and closed-loop-control requirements. Do not infer motor control, encoder feedback, or drive-control capability from Cog.
+
+===== Cost indication =====
+
+The UK product page lists a single Cog from **£20** and a 10-pack from **£195**. Prices and availability may change; these are the page's published price indications observed during research, not a purchase recommendation.
+
+===== Limitations and review status =====
+
+  * This note is based on Robotical's product page, quick-start guide, and app overview.
+  * No hardware has been purchased, inspected, or tested.
+  * Connectivity and individual sensor performance/ranges have not been independently verified.
+  * The product is primarily educational; it is not presented as a general-purpose embedded development board.
+  * Confirm actual sensor range, sample rates, interface availability, and app support from current documentation before considering it for a project.
+
+===== Sources =====
+
+  * Robotical Cog product page: [[https://robotical.io/cog/]]
+  * Cog quick-start guide: [[https://userguides.robotical.io/cog/quickstart]]
+  * Robotical App overview: [[https://robotical.io/the-robotical-app/]]
+  * Robotical, “Why Robotical Cog” product PDF: [[https://robotical.io/wp-content/uploads/2026/04/Why-Robotical-Cog.pdf]]
+
+Related ChartRoom research: [[sites:chartroom:research:robotical-marty-educational-robotics|Robotical Marty — educational robotics reference]].
+
+~~REFNOTES~~
+---------
+Backlinks:
+
+{{backlinks>.}}
