@@ -28,6 +28,10 @@ Prefer primary sources and stable official documentation. Preserve provenance ra
 
 The links below cover all research notes. Use the related-research links within a note to move between sources on the same topic.
 
+
+==== Robotical / physical computing ====
+  * [[sites:chartroom:research:robotical-cog-physical-computing|Robotical Cog — physical computing device and educational I/O reference]]
+
 ==== Sources awaiting review ====
 
   * [[sites:chartroom:research:instructables-cardboard-spectrometer-access-pending|Instructables cardboard spectrometer — access pending]]
